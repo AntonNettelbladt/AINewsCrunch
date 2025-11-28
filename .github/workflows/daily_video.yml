@@ -34,9 +34,15 @@ jobs:
       - name: Setup Google Cloud Credentials
         run: |
           if [ -n "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" ]; then
+            echo "Creating credentials file..."
             echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > $HOME/gcloud_credentials.json
             chmod 600 $HOME/gcloud_credentials.json
             echo "GCLOUD_CREDS_PATH=$HOME/gcloud_credentials.json" >> $GITHUB_ENV
+            echo "Credentials file created at $HOME/gcloud_credentials.json"
+            ls -la $HOME/gcloud_credentials.json
+            echo "File size: $(wc -c < $HOME/gcloud_credentials.json) bytes"
+          else
+            echo "GOOGLE_APPLICATION_CREDENTIALS secret is empty or not set"
           fi
 
       - name: Run Tech News Pipeline
