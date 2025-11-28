@@ -109,7 +109,7 @@ class Config:
     # Google API settings
     gemini_api_key: Optional[str] = None
     gcloud_tts_credentials_path: Optional[str] = None
-    gcloud_tts_voice_name: str = "en-US-Neural2-D"
+    gcloud_tts_voice_name: str = "Achird"  # Chirp3-HD voice
     gemini_model: str = "gemini-pro"
     use_gemini: bool = True
     use_gcloud_tts: bool = True
@@ -454,7 +454,7 @@ def load_config() -> Config:
         # Google API settings
         gemini_api_key=os.getenv("GEMINI_API_KEY"),
         gcloud_tts_credentials_path=gcloud_creds,
-        gcloud_tts_voice_name=os.getenv("GCLOUD_TTS_VOICE", "en-US-Neural2-D"),
+        gcloud_tts_voice_name=os.getenv("GCLOUD_TTS_VOICE", "Achird"),  # Default to Chirp3-HD Achird voice
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-pro"),
         use_gemini=os.getenv("USE_GEMINI", "true").lower() == "true",
         use_gcloud_tts=os.getenv("USE_GCLOUD_TTS", "true").lower() == "true",
@@ -1823,39 +1823,48 @@ def extract_keywords_for_search(article: ArticleCandidate) -> List[str]:
     return keywords[:3]
 
 
-def fetch_stock_video(keywords: List[str], config: Config) -> Optional[str]:
-    """Fetch stock video from Pexels or Pixabay APIs."""
-    search_query = " ".join(keywords[:2]) if keywords else "technology"
+def fetch_stock_video(keywords: List[str], config: Config, count: int = 3) -> List[str]:
+    """Fetch multiple stock videos from Pexels API.
     
-    # Try Pexels videos first
+    Args:
+        keywords: Search keywords
+        config: Config object with API keys
+        count: Number of videos to fetch (default: 3)
+    
+    Returns:
+        List of video URLs
+    """
+    search_query = " ".join(keywords[:2]) if keywords else "technology"
+    video_urls = []
+    
+    # Try Pexels videos
     if config.pexels_api_key:
         try:
             url = "https://api.pexels.com/videos/search"
             headers = {"Authorization": config.pexels_api_key}
-            params = {"query": search_query, "per_page": 1, "orientation": "portrait"}
+            params = {"query": search_query, "per_page": min(count * 2, 15), "orientation": "portrait"}
             response = requests.get(url, headers=headers, params=params, timeout=10)
             response.raise_for_status()
             if response.status_code == 200:
                 data = response.json()
-                if data.get("videos") and len(data["videos"]) > 0:
-                    video = data["videos"][0]
-                    # Get the best quality video file
+                videos = data.get("videos", [])
+                for video in videos[:count]:
                     video_files = video.get("video_files", [])
                     if video_files:
                         # Prefer HD quality, fallback to any available
                         hd_video = next((vf for vf in video_files if vf.get("quality") == "hd"), None)
                         video_url = (hd_video or video_files[0]).get("link")
-                        if video_url:
-                            logging.info("Fetched stock video from Pexels: %s", search_query)
-                            return video_url
+                        if video_url and video_url not in video_urls:
+                            video_urls.append(video_url)
+                if video_urls:
+                    logging.info("Fetched %d stock video(s) from Pexels: %s", len(video_urls), search_query)
+                    return video_urls
         except requests.RequestException as exc:
             logging.debug("Pexels video API request failed: %s", exc)
         except Exception as exc:
             logging.debug("Pexels video API error: %s", exc)
     
-    # Pixabay doesn't have a video API in the same way, skip for now
-    logging.debug("No stock video available")
-    return None
+    return video_urls
 
 
 def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "photo", count: int = 1) -> List[str]:
@@ -1955,19 +1964,19 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
     return results[:count]
 
 
-def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Path, count: int = 5) -> Tuple[Optional[str], List[Path]]:
+def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Path, count: int = 5) -> Tuple[List[str], List[Path]]:
     """Prepare stock media (videos and images) for video assembly.
-    Returns: (video_path, list_of_image_paths)"""
+    Returns: (list_of_video_paths, list_of_image_paths)"""
     keywords = extract_keywords_for_search(article)
-    video_path = None
+    video_paths = []
     image_paths = []
     
-    # Try to fetch stock video first (most engaging)
+    # Try to fetch multiple stock videos first (most engaging)
     if config.pexels_api_key:
-        video_url = fetch_stock_video(keywords, config)
-        if video_url:
+        video_urls = fetch_stock_video(keywords, config, count=3)  # Fetch 3 videos
+        for i, video_url in enumerate(video_urls):
             try:
-                video_file = tmp_path / "stock_video.mp4"
+                video_file = tmp_path / f"stock_video_{i}.mp4"
                 response = requests.get(video_url, timeout=30, stream=True)
                 response.raise_for_status()
                 
@@ -1984,18 +1993,22 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
                 # Verify download completed
                 if expected_size > 0 and total_size < expected_size:
                     logging.warning("Video download incomplete: %d/%d bytes", total_size, expected_size)
-                    return None, image_paths
+                    continue
                 
                 # Verify file is not empty and has reasonable size
                 if video_file.stat().st_size < 1000:  # Less than 1KB is suspicious
                     logging.warning("Downloaded video file is too small, likely corrupted")
-                    return None, image_paths
+                    continue
                 
-                video_path = str(video_file)
-                logging.info("Downloaded stock video from Pexels (%d KB)", video_file.stat().st_size // 1024)
-                return video_path, image_paths
+                video_paths.append(str(video_file))
+                logging.info("Downloaded stock video %d from Pexels (%d KB)", i+1, video_file.stat().st_size // 1024)
             except Exception as exc:
-                logging.warning("Failed to download stock video: %s, falling back to images", exc)
+                logging.warning("Failed to download stock video %d: %s", i+1, exc)
+                continue
+        
+        if video_paths:
+            logging.info("Prepared %d stock video(s) for video", len(video_paths))
+            return video_paths, image_paths
     
     # Fetch multiple stock images
     stock_image_urls = fetch_stock_media(keywords, config, media_type="photo", count=count)
@@ -2030,7 +2043,7 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
     
     if image_paths:
         logging.info("Prepared %d stock image(s) for video", len(image_paths))
-        return None, image_paths
+        return [], image_paths
     
     # Fallback to article image if available
     if article.image_url:
@@ -2188,12 +2201,20 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
     # Configure synthesis input
     synthesis_input = texttospeech.SynthesisInput(text=clean_script)
     
-    # Configure voice (Google will infer gender from voice name)
-    # Voice names like "en-US-Neural2-D" (D=male) or "en-US-Neural2-F" (F=female)
-    voice = texttospeech.VoiceSelectionParams(
-        language_code="en-US",
-        name=config.gcloud_tts_voice_name,
-    )
+    # Configure voice
+    # For Chirp3-HD voices (like "Achird"), set model to "chirp-3-hd"
+    # For Neural2 voices (like "en-US-Neural2-D"), don't set model (uses default)
+    voice_params = {
+        "language_code": "en-US",
+        "name": config.gcloud_tts_voice_name,
+    }
+    
+    # Check if this is a Chirp3-HD voice (voices like "Achird" don't have language prefix)
+    if config.gcloud_tts_voice_name and not config.gcloud_tts_voice_name.startswith("en-US-"):
+        # This is likely a Chirp3-HD voice, set the model
+        voice_params["model"] = "chirp-3-hd"
+    
+    voice = texttospeech.VoiceSelectionParams(**voice_params)
     
     # Configure audio encoding
     audio_config = texttospeech.AudioConfig(
@@ -2331,22 +2352,50 @@ def ease_in_out(progress: float) -> float:
 
 
 def create_captions(script: str, duration: float, video_size: tuple) -> List[TextClip]:
-    """Create modern stylish captions with rounded backgrounds, gradients, and smooth animations."""
+    """Create modern stylish captions with word-level timing synchronization to match audio."""
     captions = []
     video_width, video_height = video_size
     
-    # Clean script and split into sentences
+    # Clean script and split into words
     clean_script = re.sub(r"\s+", " ", script).strip()
-    phrases = re.split(r"[.!?]+\s+", clean_script)
-    phrases = [p.strip() for p in phrases if p.strip() and len(p.strip()) > 10][:5]  # Max 5 captions for better coverage
+    words = clean_script.split()
     
-    if not phrases:
+    if not words:
         return captions
     
-    # Calculate timing with slight overlap for smoother transitions
-    total_phrase_time = duration * 0.95  # Use 95% of duration, leaving buffer
-    time_per_phrase = total_phrase_time / len(phrases)
-    overlap_time = 0.2  # 0.2s overlap between captions
+    # Estimate speaking rate: average ~150 words per minute = 2.5 words per second
+    # Adjust based on actual duration to sync with audio
+    words_per_second = len(words) / duration if duration > 0 else 2.5
+    seconds_per_word = 1.0 / words_per_second if words_per_second > 0 else 0.4
+    
+    # Group words into caption chunks (max ~8-10 words per caption for readability)
+    max_words_per_caption = 8
+    caption_chunks = []
+    current_chunk = []
+    current_chunk_start_time = 0.0
+    
+    for i, word in enumerate(words):
+        word_start_time = i * seconds_per_word
+        word_end_time = (i + 1) * seconds_per_word
+        
+        # Start new chunk if current is full or at natural break (punctuation)
+        if len(current_chunk) >= max_words_per_caption or (word.endswith(('.', '!', '?', ',')) and len(current_chunk) >= 4):
+            if current_chunk:
+                chunk_text = " ".join(current_chunk)
+                chunk_start = current_chunk_start_time
+                chunk_end = word_start_time
+                caption_chunks.append((chunk_text, chunk_start, chunk_end))
+            current_chunk = [word]
+            current_chunk_start_time = word_start_time
+        else:
+            current_chunk.append(word)
+    
+    # Add final chunk
+    if current_chunk:
+        chunk_text = " ".join(current_chunk)
+        chunk_start = current_chunk_start_time
+        chunk_end = duration
+        caption_chunks.append((chunk_text, chunk_start, chunk_end))
     
     # Modern styling constants
     font_size = 50
@@ -2364,7 +2413,15 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
     with tempfile.TemporaryDirectory() as tmp_dir:
         tmp_path = Path(tmp_dir)
         
-        for i, phrase in enumerate(phrases):
+        for i, (phrase, start_time, end_time) in enumerate(caption_chunks):
+            # Ensure timing is within video duration
+            start_time = max(0.0, min(start_time, duration - 0.5))
+            end_time = max(start_time + 0.5, min(end_time, duration))
+            phrase_duration = end_time - start_time
+            
+            if phrase_duration < 0.3:  # Skip very short captions
+                continue
+            
             # Smart truncation - break at word boundaries if needed
             if len(phrase) > 80:
                 words = phrase.split()
@@ -2376,14 +2433,6 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
                     truncated.append(word)
                     char_count += len(word) + 1
                 phrase = " ".join(truncated) + "..."
-            
-            # Calculate timing with overlap
-            start_time = i * time_per_phrase
-            end_time = min((i + 1) * time_per_phrase + overlap_time, duration)
-            phrase_duration = end_time - start_time
-            
-            if phrase_duration < 0.4:  # Skip very short captions
-                continue
             
             try:
                 # Create text clip first to determine size
@@ -2527,42 +2576,90 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config) -> Pa
 
         duration_seconds = max(15.0, min(60.0, audio_duration))  # Clamp between 15-60 seconds
 
-        # Prepare stock media (videos or multiple images)
-        stock_video_path, stock_image_paths = prepare_stock_media(article, config, tmp_path, count=5)
+        # Prepare stock media (multiple videos and images)
+        stock_video_paths, stock_image_paths = prepare_stock_media(article, config, tmp_path, count=5)
         
         # Create video clips
         video_clips = []
         clips_to_close = []  # Track clips that need explicit closing
         
-        if stock_video_path:
-            # Use stock video
+        # Use multiple stock videos if available
+        if stock_video_paths:
             try:
-                # Verify video file exists and is not empty
-                if not Path(stock_video_path).exists() or Path(stock_video_path).stat().st_size == 0:
-                    raise ValueError("Stock video file is missing or empty")
+                # Calculate target duration per video, with some overlap for fades
+                fade_overlap = 0.5  # Fade transition overlap
+                effective_duration = duration_seconds + (fade_overlap * (len(stock_video_paths) - 1))
+                duration_per_video = effective_duration / len(stock_video_paths)
                 
-                stock_video = VideoFileClip(stock_video_path)
-                clips_to_close.append(stock_video)  # Track for cleanup
+                accumulated_duration = 0.0
+                for i, video_path in enumerate(stock_video_paths):
+                    try:
+                        # Verify video file exists and is not empty
+                        if not Path(video_path).exists() or Path(video_path).stat().st_size == 0:
+                            logging.warning("Stock video file %d is missing or empty, skipping", i+1)
+                            continue
+                        
+                        stock_video = VideoFileClip(video_path)
+                        clips_to_close.append(stock_video)  # Track for cleanup
+                        
+                        # Resize video to 1080x1920
+                        stock_video = stock_video.resize(height=1920)
+                        if stock_video.w > 1080:
+                            stock_video = stock_video.crop(x_center=stock_video.w/2, width=1080)
+                        elif stock_video.w < 1080:
+                            stock_video = stock_video.resize(width=1080)
+                        
+                        # Calculate how much duration we still need
+                        remaining_duration = duration_seconds - accumulated_duration
+                        if remaining_duration <= 0:
+                            break
+                        
+                        # Use video segment for this portion of duration
+                        # For last video, use remaining duration; otherwise use calculated duration
+                        if i == len(stock_video_paths) - 1:
+                            video_segment_duration = min(stock_video.duration, remaining_duration)
+                        else:
+                            video_segment_duration = min(stock_video.duration, duration_per_video)
+                        
+                        video_segment = stock_video.subclip(0, video_segment_duration)
+                        
+                        # Add fade transitions between videos
+                        if i > 0:
+                            video_segment = video_segment.fadein(0.5)
+                        if i < len(stock_video_paths) - 1:
+                            video_segment = video_segment.fadeout(0.5)
+                        
+                        video_clips.append(video_segment)
+                        accumulated_duration += video_segment_duration
+                    except Exception as exc:
+                        logging.warning("Failed to use stock video %d: %s, skipping", i+1, exc)
+                        continue
                 
-                # Resize video to 1080x1920
-                stock_video = stock_video.resize(height=1920)
-                if stock_video.w > 1080:
-                    stock_video = stock_video.crop(x_center=stock_video.w/2, width=1080)
-                elif stock_video.w < 1080:
-                    stock_video = stock_video.resize(width=1080)
+                # If we don't have enough duration, fill with images
+                if accumulated_duration < duration_seconds and stock_image_paths:
+                    remaining = duration_seconds - accumulated_duration
+                    logging.info("Filling remaining %.2fs with images", remaining)
+                    # Use first available image to fill remaining time
+                    if stock_image_paths:
+                        img_clip = ImageClip(str(stock_image_paths[0])).set_duration(remaining)
+                        img_clip = img_clip.resize(lambda t: 1.0 + 0.1 * (t / remaining))
+                        img_clip = img_clip.set_position(("center", "center"))
+                        img_clip = img_clip.fadein(0.5)
+                        video_clips.append(img_clip)
                 
-                # Loop or trim video to match audio duration
-                if stock_video.duration < duration_seconds:
-                    # Loop the video
-                    loops_needed = int(duration_seconds / stock_video.duration) + 1
-                    stock_video = concatenate_videoclips([stock_video] * loops_needed)
-                    clips_to_close.append(stock_video)  # Track concatenated clip
-                
-                stock_video = stock_video.subclip(0, duration_seconds)
-                video_clips.append(stock_video)
-                logging.info("Using stock video for entire duration")
+                if video_clips:
+                    logging.info("Using %d stock video(s) for video", len(video_clips))
+                else:
+                    logging.warning("No stock videos could be used, falling back to images")
+                    # Close any clips that were created before the error
+                    for clip in clips_to_close:
+                        try:
+                            clip.close()
+                        except:
+                            pass
+                    clips_to_close.clear()
             except Exception as exc:
-                logging.warning("Failed to use stock video: %s, falling back to images", exc)
+                logging.warning("Failed to process stock videos: %s, falling back to images", exc)
                 # Close any clips that were created before the error
                 for clip in clips_to_close:
                     try:
@@ -2570,9 +2667,9 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config) -> Pa
                     except:
                         pass
                 clips_to_close.clear()
-                stock_video_path = None
         
-        if not stock_video_path and stock_image_paths:
+        # Use multiple images if no videos available
+        if not video_clips and stock_image_paths:
             # Use multiple images with transitions
             clips_per_image = max(1, len(stock_image_paths))
             duration_per_image = duration_seconds / len(stock_image_paths)
