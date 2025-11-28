@@ -95,6 +95,7 @@ class ArticleCandidate:
 class Config:
     output_dir: Path
     max_articles: int = 10
+    max_videos_per_day: int = 5  # Number of videos to create per day
     max_script_points: int = 3
     max_script_words: int = 150  # Max words for 60-second script (~2.5 words/second)
     tts_voice: str = "en-US-AriaNeural"  # Fallback for Edge-TTS
@@ -110,6 +111,7 @@ class Config:
     gemini_api_key: Optional[str] = None
     gcloud_tts_credentials_path: Optional[str] = None
     gcloud_tts_voice_name: str = "Achird"  # Chirp3-HD voice
+    gcloud_tts_language_code: str = "en-US"  # Language/locale code (e.g., "en-US", "en-GB", "es-ES")
     gemini_model: str = "gemini-pro"
     use_gemini: bool = True
     use_gcloud_tts: bool = True
@@ -440,6 +442,7 @@ def load_config() -> Config:
 
     config = Config(
         output_dir=output_dir,
+        max_videos_per_day=int(os.getenv("MAX_VIDEOS_PER_DAY", "5")),  # Default to 5 videos
         max_script_points=int(os.getenv("MAX_SCRIPT_POINTS", "3")),
         max_script_words=int(os.getenv("MAX_SCRIPT_WORDS", "150")),
         tts_voice=os.getenv("TTS_VOICE", "en-US-AriaNeural"),
@@ -455,6 +458,7 @@ def load_config() -> Config:
         gemini_api_key=os.getenv("GEMINI_API_KEY"),
         gcloud_tts_credentials_path=gcloud_creds,
         gcloud_tts_voice_name=os.getenv("GCLOUD_TTS_VOICE", "Achird"),  # Default to Chirp3-HD Achird voice
+        gcloud_tts_language_code=os.getenv("GCLOUD_TTS_LANGUAGE", "en-US"),  # Language/locale code
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-pro"),
         use_gemini=os.getenv("USE_GEMINI", "true").lower() == "true",
         use_gcloud_tts=os.getenv("USE_GCLOUD_TTS", "true").lower() == "true",
@@ -1034,25 +1038,47 @@ def collect_candidates(sources: List[SourceFeed], max_articles: int, config: Con
 
 
 def select_top_story(sources: List[SourceFeed], max_articles: int, config: Config) -> Optional[ArticleCandidate]:
+    """Select the top story (backward compatibility)."""
+    stories = select_top_stories(sources, max_articles, 1, config)
+    return stories[0] if stories else None
+
+
+def select_top_stories(sources: List[SourceFeed], max_articles: int, max_stories: int, config: Config) -> List[ArticleCandidate]:
+    """Select top N unique stories for video generation."""
     candidates = collect_candidates(sources, max_articles, config)
     if not candidates:
         if config.ai_only_mode:
             logging.error("No AI-related articles available for selection")
         else:
             logging.error("No articles available for selection")
-        return None
+        return []
+    
     ranked = rank_articles(candidates, sources, config)
     if not ranked:
         if config.ai_only_mode:
             logging.error("No AI-related articles available for selection")
         else:
             logging.error("No articles available for selection")
-        return None
+        return []
     
-    top = ranked[0]
+    # Select top N unique stories (avoid duplicates by URL)
+    selected_stories = []
+    seen_urls = set()
     
-    # Log detailed information about selected article
-    density = calculate_ai_density(top)
+    for story in ranked:
+        if len(selected_stories) >= max_stories:
+            break
+        # Skip if we've already used this URL
+        if story.url not in seen_urls:
+            selected_stories.append(story)
+            seen_urls.add(story.url)
+            density = calculate_ai_density(story) if config.ai_only_mode else 0.0
+            ai_keywords_found = [k for k in AI_KEYWORDS.keys() if k.lower() in story.title.lower() or k.lower() in story.summary.lower()][:3] if config.ai_only_mode else []
+            logging.info("Selected story %d: '%s' (score: %.2f, density: %.2f%%) - %s", 
+                        len(selected_stories), story.title[:60], story.score, density,
+                        "AI keywords: " + ", ".join(ai_keywords_found) if ai_keywords_found else "general news")
+    
+    return selected_stories
     text_lower = f"{top.title} {top.summary}".lower()
     major_indicators = [ind for ind in MAJOR_NEWS_INDICATORS.keys() if ind.lower() in text_lower]
     
@@ -2205,14 +2231,30 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
     # For Chirp3-HD voices (like "Achird"), set model to "chirp-3-hd"
     # For Neural2 voices (like "en-US-Neural2-D"), don't set model (uses default)
     voice_params = {
-        "language_code": "en-US",
+        "language_code": config.gcloud_tts_language_code,
         "name": config.gcloud_tts_voice_name,
     }
     
-    # Check if this is a Chirp3-HD voice (voices like "Achird" don't have language prefix)
-    if config.gcloud_tts_voice_name and not config.gcloud_tts_voice_name.startswith("en-US-"):
+    # Determine TTS model based on voice name
+    tts_model = None
+    if config.gcloud_tts_voice_name and not config.gcloud_tts_voice_name.startswith("en-US-") and not config.gcloud_tts_voice_name.startswith(config.gcloud_tts_language_code + "-"):
         # This is likely a Chirp3-HD voice, set the model
         voice_params["model"] = "chirp-3-hd"
+        tts_model = "Chirp3-HD"
+    else:
+        # Neural2 or other standard voices
+        tts_model = "Neural2 (default)"
+    
+    # Log detailed TTS configuration
+    logging.info("=" * 60)
+    logging.info("Google Cloud TTS Configuration:")
+    logging.info("  Model: %s", tts_model)
+    logging.info("  Voice Name: %s", config.gcloud_tts_voice_name)
+    logging.info("  Language/Locale: %s", config.gcloud_tts_language_code)
+    logging.info("  Audio Encoding: MP3")
+    logging.info("  Speaking Rate: 1.0")
+    logging.info("  Pitch: 0.0")
+    logging.info("=" * 60)
     
     voice = texttospeech.VoiceSelectionParams(**voice_params)
     
@@ -2237,7 +2279,10 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
             # Log character usage for cost tracking
             char_count = len(clean_script)
             if output_path.exists() and output_path.stat().st_size > 0:
-                logging.info("Generated audio with Google Cloud TTS (%d characters, %.2f KB)", 
+                logging.info("Successfully generated audio with Google Cloud TTS")
+                logging.info("  Model: %s | Voice: %s | Language: %s", 
+                            tts_model, config.gcloud_tts_voice_name, config.gcloud_tts_language_code)
+                logging.info("  Characters: %d | File size: %.2f KB", 
                             char_count, output_path.stat().st_size / 1024)
                 return output_path
             else:
@@ -2265,6 +2310,13 @@ def generate_audio_with_edge_tts(script: str, output_path: Path, config: Config)
     try:
         import asyncio
         
+        # Log Edge-TTS configuration
+        logging.info("=" * 60)
+        logging.info("Edge-TTS Configuration (Fallback):")
+        logging.info("  Provider: Microsoft Edge TTS")
+        logging.info("  Voice: %s", config.tts_voice)
+        logging.info("=" * 60)
+        
         async def _generate():
             # Clean script for TTS (remove markdown, formatting, etc.)
             clean_script = clean_script_for_tts(script)
@@ -2277,7 +2329,9 @@ def generate_audio_with_edge_tts(script: str, output_path: Path, config: Config)
         asyncio.run(_generate())
         
         if output_path.exists() and output_path.stat().st_size > 0:
-            logging.info("Generated audio narration with Edge-TTS (%.2f KB)", output_path.stat().st_size / 1024)
+            logging.info("Successfully generated audio with Edge-TTS")
+            logging.info("  Voice: %s | File size: %.2f KB", 
+                        config.tts_voice, output_path.stat().st_size / 1024)
             return output_path
         else:
             logging.warning("Audio file was not created or is empty")
@@ -2289,17 +2343,27 @@ def generate_audio_with_edge_tts(script: str, output_path: Path, config: Config)
 
 def generate_audio(script: str, output_path: Path, config: Config) -> Optional[Path]:
     """Generate audio narration with fallback chain: Google Cloud TTS -> Edge-TTS -> None."""
+    logging.info("Starting audio generation...")
+    
     # Try Google Cloud TTS first
     if config.use_gcloud_tts:
+        logging.info("Attempting Google Cloud TTS (primary)...")
         gcloud_audio = generate_audio_with_gcloud_tts(script, output_path, config)
         if gcloud_audio:
+            logging.info("Audio generation completed using Google Cloud TTS")
             return gcloud_audio
-        logging.info("Falling back to Edge-TTS")
+        logging.info("Google Cloud TTS unavailable, falling back to Edge-TTS")
+    else:
+        logging.info("Google Cloud TTS disabled in config, using Edge-TTS")
     
     # Fallback to Edge-TTS
+    logging.info("Attempting Edge-TTS (fallback)...")
     edge_audio = generate_audio_with_edge_tts(script, output_path, config)
     if edge_audio:
+        logging.info("Audio generation completed using Edge-TTS")
         return edge_audio
+    
+    logging.error("All TTS methods failed - no audio generated")
     
     # Final fallback: silent video with captions
     logging.warning("All audio generation methods failed, video will be silent with captions")
@@ -2352,7 +2416,7 @@ def ease_in_out(progress: float) -> float:
 
 
 def create_captions(script: str, duration: float, video_size: tuple) -> List[TextClip]:
-    """Create modern stylish captions with word-level timing synchronization to match audio."""
+    """Create word-by-word captions with simple fade-in animation, no background."""
     captions = []
     video_width, video_height = video_size
     
@@ -2386,47 +2450,71 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
     if current_line:
         lines.append(current_line)
     
-    # Simple, clean styling constants (matching reference design)
-    font_size = 48
-    max_text_width = 1000  # Max width for text
-    padding = 20  # Padding around text in background box
-    corner_radius = 15  # Rounded corner radius
+    # Clean styling - no background, just text
+    font_size = 52
+    max_text_width = 1000
     subtitle_y_position = video_height - 150  # Position near bottom center
-    
-    # Simple color scheme - dark grey background, white text
     text_color = "#FFFFFF"  # White text
-    bg_color = (64, 64, 64)  # Dark grey (RGB for ~#404040)
-    bg_opacity = 0.95  # Slightly transparent but mostly opaque
     
     # Word animation settings
-    word_fade_in = 0.15  # Quick fade in for each word
-    word_duration_overlap = 0.1  # Small overlap between words
+    word_fade_in = 0.3  # Smooth fade-in duration for each word
     
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_path = Path(tmp_dir)
+    word_index = 0
+    for line_index, line_words in enumerate(lines):
+        if not line_words:
+            continue
         
-        word_index = 0
-        for line_index, line_words in enumerate(lines):
-            if not line_words:
-                continue
-            
-            # Calculate timing for this line
-            line_start_time = word_index * seconds_per_word
-            line_end_time = (word_index + len(line_words)) * seconds_per_word
-            line_duration = line_end_time - line_start_time
-            
-            # Ensure timing is within video duration
-            if line_start_time >= duration:
-                break
-            line_end_time = min(line_end_time, duration)
-            
-            # Build the full line text for background sizing
+        # Calculate timing for this line
+        line_start_time = word_index * seconds_per_word
+        line_end_time = (word_index + len(line_words)) * seconds_per_word
+        
+        # Ensure timing is within video duration
+        if line_start_time >= duration:
+            break
+        line_end_time = min(line_end_time, duration)
+        
+        try:
+            # Build the full line text to get dimensions for positioning
             full_line_text = " ".join(line_words)
+            full_txt_clip = TextClip(
+                full_line_text,
+                fontsize=font_size,
+                color=text_color,
+                method="caption",
+                size=(max_text_width, None),
+                align="center",
+                font="Arial",
+            )
             
-            try:
-                # Create full line text clip to determine background size
-                full_txt_clip = TextClip(
-                    full_line_text,
+            # Get the full line dimensions for centering
+            full_line_width, full_line_height = full_txt_clip.size
+            
+            # Create individual word clips that fade in one by one
+            # We'll build up the line word by word, positioning each word correctly
+            displayed_text = ""
+            cumulative_width = 0
+            
+            for word_idx, word in enumerate(line_words):
+                word_start_time = (word_index + word_idx) * seconds_per_word
+                # Each word stays visible until the line ends
+                word_end_time = line_end_time
+                
+                word_start_time = max(0.0, min(word_start_time, duration))
+                word_end_time = max(word_start_time + 0.1, min(word_end_time, duration))
+                word_duration = word_end_time - word_start_time
+                
+                if word_duration < 0.1:
+                    continue
+                
+                # Build text showing all words up to and including this word
+                if displayed_text:
+                    displayed_text += " " + word
+                else:
+                    displayed_text = word
+                
+                # Create text clip for current state (all words shown so far)
+                word_txt_clip = TextClip(
+                    displayed_text,
                     fontsize=font_size,
                     color=text_color,
                     method="caption",
@@ -2435,90 +2523,39 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
                     font="Arial",
                 )
                 
-                # Get text dimensions for background
-                text_w, text_h = full_txt_clip.size
-                bg_width = min(text_w + padding * 2, max_text_width + padding * 2)
-                bg_height = text_h + padding * 2
+                # Position centered
+                word_txt_clip = word_txt_clip.set_duration(word_duration).set_start(word_start_time)
+                word_txt_clip = word_txt_clip.set_position(("center", subtitle_y_position))
                 
-                # Create background for this line (appears at start of line, stays until end)
-                bg_image = Image.new('RGBA', (bg_width, bg_height), (0, 0, 0, 0))
-                bg_draw = ImageDraw.Draw(bg_image)
-                bg_draw.rounded_rectangle(
-                    [(0, 0), (bg_width, bg_height)],
-                    radius=corner_radius,
-                    fill=(*bg_color, int(255 * bg_opacity))
-                )
+                # Smooth fade-in animation for the new word
+                # Use a longer fade-in for smoother appearance
+                word_txt_clip = word_txt_clip.fadein(word_fade_in)
                 
-                bg_path = tmp_path / f"subtitle_bg_line_{line_index}.png"
-                bg_image.save(bg_path, "PNG")
+                # Fade out at the end if it's the last word in the last line
+                if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
+                    word_txt_clip = word_txt_clip.fadeout(0.3)
                 
-                # Create background clip for entire line duration
-                bg_clip = ImageClip(str(bg_path)).set_duration(line_duration).set_start(line_start_time)
-                bg_clip = bg_clip.set_position(("center", subtitle_y_position))
-                bg_clip = bg_clip.fadein(0.2).fadeout(0.2)
-                captions.append(bg_clip)
-                
-                # Create individual word clips that appear sequentially
-                displayed_words = []  # Track words shown so far
-                
-                for word_idx, word in enumerate(line_words):
-                    word_start_time = (word_index + word_idx) * seconds_per_word
-                    # Word stays visible until next word appears (with small overlap)
-                    if word_idx < len(line_words) - 1:
-                        word_end_time = (word_index + word_idx + 1) * seconds_per_word + word_duration_overlap
-                    else:
-                        # Last word in line stays until line ends
-                        word_end_time = line_end_time
-                    
-                    word_start_time = max(0.0, min(word_start_time, duration))
-                    word_end_time = max(word_start_time + 0.1, min(word_end_time, duration))
-                    word_duration = word_end_time - word_start_time
-                    
-                    if word_duration < 0.1:
-                        continue
-                    
-                    # Build text showing all words up to and including this word
-                    displayed_words.append(word)
-                    current_text = " ".join(displayed_words)
-                    
-                    # Create text clip for current state (all words shown so far)
-                    word_txt_clip = TextClip(
-                        current_text,
-                        fontsize=font_size,
-                        color=text_color,
-                        method="caption",
-                        size=(max_text_width, None),
-                        align="center",
-                        font="Arial",
-                    )
-                    
-                    # Position and animate word
-                    word_txt_clip = word_txt_clip.set_duration(word_duration).set_start(word_start_time)
-                    word_txt_clip = word_txt_clip.set_position(("center", subtitle_y_position))
-                    
-                    # Fade in this word (only the new word, but we show all words so far)
-                    # To make it look like words appear one by one, we fade in quickly
-                    word_txt_clip = word_txt_clip.fadein(word_fade_in)
-                    
-                    # Fade out at the end if it's the last word in line
-                    if word_idx == len(line_words) - 1:
-                        word_txt_clip = word_txt_clip.fadeout(0.2)
-                    
-                    captions.append(word_txt_clip)
-                
-                word_index += len(line_words)
-                
-            except Exception as exc:
-                logging.warning("Failed to create word-animated caption line %d: %s", line_index, exc)
-                # Fallback: skip this line and continue
-                word_index += len(line_words)
-                continue
+                captions.append(word_txt_clip)
+            
+            word_index += len(line_words)
+            
+        except Exception as exc:
+            logging.warning("Failed to create word-animated caption line %d: %s", line_index, exc)
+            # Fallback: skip this line and continue
+            word_index += len(line_words)
+            continue
     
     return captions
 
 
-def assemble_video(article: ArticleCandidate, script: str, config: Config) -> Path:
-    output_path = config.output_dir / "daily_tech_news.mp4"
+def assemble_video(article: ArticleCandidate, script: str, config: Config, video_index: int = 0) -> Path:
+    # Generate unique filename based on story title and index
+    # Sanitize title for filename
+    safe_title = re.sub(r'[^\w\s-]', '', article.title)[:50].strip().replace(' ', '_')
+    if not safe_title:
+        safe_title = f"story_{video_index + 1}"
+    filename = f"tech_news_{video_index + 1}_{safe_title}.mp4"
+    output_path = config.output_dir / filename
     video_size = (1080, 1920)
 
     with tempfile.TemporaryDirectory() as tmp_dir:
@@ -2804,78 +2841,102 @@ def main() -> None:
     if config.ai_only_mode:
         logging.info("Running in AI-only mode (minimum %d AI keywords required)", config.min_ai_keywords)
 
-    story = select_top_story(DEFAULT_SOURCES, config.max_articles, config)
-    if not story:
+    # Select multiple top stories (up to max_videos_per_day)
+    stories = select_top_stories(DEFAULT_SOURCES, config.max_articles, config.max_videos_per_day, config)
+    if not stories:
         if config.ai_only_mode:
             logging.error("Pipeline halted: no AI-related stories available")
         else:
-            logging.error("Pipeline halted: no story available")
+            logging.error("Pipeline halted: no stories available")
         return
-
-    script = generate_script(story, config)
-    metadata = generate_metadata(story, script)
-    video_path = assemble_video(story, script, config)
-
-    logging.info("Video generation completed successfully")
-    logging.info("Video path: %s", video_path)
-    logging.info("Metadata: %s", metadata)
     
-    # Upload to platforms
-    youtube_video_id = None
-    tiktok_video_id = None
+    logging.info("Selected %d story/stories for video generation", len(stories))
     
-    # Upload to YouTube
-    if config.upload_to_youtube:
-        logging.info("Attempting to upload to YouTube...")
+    # Process each story
+    successful_videos = 0
+    failed_videos = 0
+    
+    for video_index, story in enumerate(stories):
+        logging.info("=" * 60)
+        logging.info("Processing video %d/%d: %s", video_index + 1, len(stories), story.title[:60])
+        logging.info("=" * 60)
+        
         try:
-            youtube_video_id = upload_to_youtube(
-                video_path,
-                metadata["title"],
-                metadata["description"],
-                metadata["tags"],
-                config,
-            )
+            script = generate_script(story, config)
+            metadata = generate_metadata(story, script)
+            video_path = assemble_video(story, script, config, video_index)
+
+            logging.info("Video generation completed successfully")
+            logging.info("Video path: %s", video_path)
+            logging.info("Metadata: %s", metadata)
+            
+            # Upload to platforms
+            youtube_video_id = None
+            tiktok_video_id = None
+            
+            # Upload to YouTube
+            if config.upload_to_youtube:
+                logging.info("Attempting to upload to YouTube...")
+                try:
+                    youtube_video_id = upload_to_youtube(
+                        video_path,
+                        metadata["title"],
+                        metadata["description"],
+                        metadata["tags"],
+                        config,
+                    )
+                    if youtube_video_id:
+                        logging.info("YouTube upload successful: https://www.youtube.com/watch?v=%s", youtube_video_id)
+                    else:
+                        logging.warning("YouTube upload failed, but continuing with pipeline")
+                except Exception as exc:
+                    logging.error("YouTube upload error: %s", exc, exc_info=True)
+                    logging.warning("Continuing with pipeline despite YouTube upload failure")
+            else:
+                logging.info("YouTube upload disabled in config")
+            
+            # Upload to TikTok
+            if config.upload_to_tiktok:
+                logging.info("Attempting to upload to TikTok...")
+                try:
+                    tiktok_video_id = upload_to_tiktok(
+                        video_path,
+                        metadata["title"],
+                        config,
+                    )
+                    if tiktok_video_id:
+                        logging.info("TikTok upload successful: %s", tiktok_video_id)
+                    else:
+                        logging.warning("TikTok upload failed, but continuing with pipeline")
+                except Exception as exc:
+                    logging.error("TikTok upload error: %s", exc, exc_info=True)
+                    logging.warning("Continuing with pipeline despite TikTok upload failure")
+            else:
+                logging.info("TikTok upload disabled in config")
+            
+            # Log success for this video
+            logging.info("Video %d/%d completed:", video_index + 1, len(stories))
+            logging.info("  File: %s", video_path)
             if youtube_video_id:
-                logging.info("YouTube upload successful: https://www.youtube.com/watch?v=%s", youtube_video_id)
-            else:
-                logging.warning("YouTube upload failed, but continuing with pipeline")
-        except Exception as exc:
-            logging.error("YouTube upload error: %s", exc, exc_info=True)
-            logging.warning("Continuing with pipeline despite YouTube upload failure")
-    else:
-        logging.info("YouTube upload disabled in config")
-    
-    # Upload to TikTok
-    if config.upload_to_tiktok:
-        logging.info("Attempting to upload to TikTok...")
-        try:
-            tiktok_video_id = upload_to_tiktok(
-                video_path,
-                metadata["title"],
-                config,
-            )
+                logging.info("  YouTube: https://www.youtube.com/watch?v=%s", youtube_video_id)
             if tiktok_video_id:
-                logging.info("TikTok upload successful: %s", tiktok_video_id)
-            else:
-                logging.warning("TikTok upload failed, but continuing with pipeline")
+                logging.info("  TikTok: %s", tiktok_video_id)
+            
+            successful_videos += 1
+            
         except Exception as exc:
-            logging.error("TikTok upload error: %s", exc, exc_info=True)
-            logging.warning("Continuing with pipeline despite TikTok upload failure")
-    else:
-        logging.info("TikTok upload disabled in config")
+            logging.error("Failed to process video %d/%d for story '%s': %s", 
+                         video_index + 1, len(stories), story.title[:60], exc, exc_info=True)
+            failed_videos += 1
+            continue
     
     # Final summary
     logging.info("=" * 60)
-    logging.info("Pipeline completed successfully")
+    logging.info("Pipeline completed: %d successful, %d failed out of %d videos", 
+                successful_videos, failed_videos, len(stories))
     logging.info("=" * 60)
-    logging.info("Video file: %s", video_path)
-    if youtube_video_id:
-        logging.info("YouTube: https://www.youtube.com/watch?v=%s", youtube_video_id)
-    if tiktok_video_id:
-        logging.info("TikTok: %s", tiktok_video_id)
-    if not youtube_video_id and not tiktok_video_id:
-        logging.warning("No videos were uploaded to any platform")
-    logging.info("=" * 60)
+    if successful_videos == 0:
+        logging.warning("No videos were successfully created")
 
 
 if __name__ == "__main__":

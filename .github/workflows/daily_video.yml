@@ -79,7 +79,21 @@ jobs:
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}  # Optional: for stock media fallback
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # Required: for script generation
           GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GCLOUD_CREDS_PATH }}  # Path to credentials file (set in previous step)
-          GCLOUD_TTS_VOICE: ${{ secrets.GCLOUD_TTS_VOICE }}  # Optional: TTS voice name (default: en-US-Neural2-D)
+          # TTS Voice Configuration (Google Cloud TTS - Primary):
+          # GCLOUD_TTS_VOICE: Voice name (default: "Achird" for Chirp3-HD)
+          #   - Chirp3-HD voices: "Achird", "Aurora", "Charon", "Fenrir", "Kore", "Puck", "Rhea", "Triton"
+          #   - Neural2 voices: "en-US-Neural2-D" (male), "en-US-Neural2-F" (female), etc.
+          #   - See: https://cloud.google.com/text-to-speech/docs/voices
+          GCLOUD_TTS_VOICE: ${{ secrets.GCLOUD_TTS_VOICE }}  # Optional: TTS voice name (default: Achird)
+          # GCLOUD_TTS_LANGUAGE: Language/locale code (default: "en-US")
+          #   Examples: "en-US" (English US), "en-GB" (English UK), "es-ES" (Spanish), "fr-FR" (French), "de-DE" (German)
+          #   Must match the voice's language. For Chirp3-HD voices, use "en-US"
+          GCLOUD_TTS_LANGUAGE: ${{ secrets.GCLOUD_TTS_LANGUAGE }}  # Optional: Language/locale code (default: en-US)
+          # TTS Voice Configuration (Edge-TTS - Fallback):
+          # TTS_VOICE: Edge-TTS voice name (default: "en-US-AriaNeural")
+          #   Examples: "en-US-AriaNeural", "en-GB-SoniaNeural", "es-ES-ElviraNeural"
+          #   See: https://github.com/rany2/edge-tts/blob/master/edge_tts/list_voices.py
+          TTS_VOICE: ${{ secrets.TTS_VOICE }}  # Optional: Edge-TTS voice (fallback, default: en-US-AriaNeural)
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}  # Optional: Gemini model (default: gemini-pro)
           USE_GEMINI: ${{ secrets.USE_GEMINI }}  # Optional: Enable Gemini (default: true)
           USE_GCLOUD_TTS: ${{ secrets.USE_GCLOUD_TTS }}  # Optional: Enable Google Cloud TTS (default: true)
