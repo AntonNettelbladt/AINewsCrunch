@@ -1,3 +1,4 @@
+import hashlib
 import json
 import logging
 import os
@@ -9,10 +10,10 @@ import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from io import BytesIO
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Set
 
 import requests
 from moviepy.editor import (
@@ -1276,6 +1277,96 @@ def collect_candidates(sources: List[SourceFeed], max_articles: int, config: Con
     return candidates
 
 
+def load_covered_stories(config: Config) -> Set[str]:
+    """Load set of already covered story URLs from JSON file.
+    
+    Returns:
+        Set of story URLs that have already been covered
+    """
+    covered_file = config.output_dir / "covered_stories.json"
+    
+    if not covered_file.exists():
+        logging.debug("No covered stories file found, starting fresh")
+        return set()
+    
+    try:
+        with open(covered_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Extract URLs from the data structure
+        # Data format: {url: {title, date_covered, ...}}
+        covered_urls = set(data.keys())
+        
+        # Clean up old entries (older than 30 days)
+        cutoff_date = datetime.now(timezone.utc) - timedelta(days=30)
+        cleaned_data = {}
+        for url, info in data.items():
+            try:
+                date_covered = datetime.fromisoformat(info.get('date_covered', ''))
+                if date_covered >= cutoff_date:
+                    cleaned_data[url] = info
+            except (ValueError, TypeError):
+                # Keep entries with invalid dates (better safe than sorry)
+                cleaned_data[url] = info
+        
+        # Save cleaned data if we removed entries
+        if len(cleaned_data) < len(data):
+            with open(covered_file, 'w', encoding='utf-8') as f:
+                json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
+            logging.info("Cleaned up %d old covered stories (kept %d)", 
+                        len(data) - len(cleaned_data), len(cleaned_data))
+        
+        logging.info("Loaded %d covered stories from history", len(cleaned_data))
+        return set(cleaned_data.keys())
+        
+    except (json.JSONDecodeError, IOError, Exception) as exc:
+        logging.warning("Failed to load covered stories file: %s", exc)
+        return set()
+
+
+def save_covered_story(story: ArticleCandidate, config: Config, youtube_id: Optional[str] = None, tiktok_id: Optional[str] = None) -> None:
+    """Save a story as covered in the JSON file.
+    
+    Args:
+        story: The article candidate that was covered
+        config: Config object with output directory
+        youtube_id: Optional YouTube video ID if uploaded
+        tiktok_id: Optional TikTok video ID if uploaded
+    """
+    covered_file = config.output_dir / "covered_stories.json"
+    
+    # Load existing data
+    data = {}
+    if covered_file.exists():
+        try:
+            with open(covered_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError) as exc:
+            logging.warning("Failed to load covered stories for update: %s", exc)
+            data = {}
+    
+    # Add or update entry
+    data[story.url] = {
+        'title': story.title,
+        'date_covered': datetime.now(timezone.utc).isoformat(),
+        'source': story.source,
+        'youtube_id': youtube_id,
+        'tiktok_id': tiktok_id,
+    }
+    
+    # Save updated data
+    try:
+        # Ensure output directory exists
+        config.output_dir.mkdir(parents=True, exist_ok=True)
+        
+        with open(covered_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        
+        logging.info("Saved story as covered: %s", story.url)
+    except (IOError, Exception) as exc:
+        logging.warning("Failed to save covered story: %s", exc)
+
+
 def select_top_story(sources: List[SourceFeed], max_articles: int, config: Config) -> Optional[ArticleCandidate]:
     """Select the top story (backward compatibility)."""
     stories = select_top_stories(sources, max_articles, 1, config)
@@ -1283,13 +1374,28 @@ def select_top_story(sources: List[SourceFeed], max_articles: int, config: Confi
 
 
 def select_top_stories(sources: List[SourceFeed], max_articles: int, max_stories: int, config: Config) -> List[ArticleCandidate]:
-    """Select top N unique stories for video generation."""
+    """Select top N unique stories for video generation, excluding already covered stories."""
+    # Load already covered stories
+    covered_urls = load_covered_stories(config)
+    
     candidates = collect_candidates(sources, max_articles, config)
     if not candidates:
         if config.ai_only_mode:
             logging.error("No AI-related articles available for selection")
         else:
             logging.error("No articles available for selection")
+        return []
+    
+    # Filter out already covered stories
+    if covered_urls:
+        original_count = len(candidates)
+        candidates = [c for c in candidates if c.url not in covered_urls]
+        filtered_count = original_count - len(candidates)
+        if filtered_count > 0:
+            logging.info("Filtered out %d already covered stories", filtered_count)
+    
+    if not candidates:
+        logging.warning("All candidates were already covered. No new stories available.")
         return []
     
     ranked = rank_articles(candidates, sources, config)
@@ -1307,8 +1413,8 @@ def select_top_stories(sources: List[SourceFeed], max_articles: int, max_stories
     for story in ranked:
         if len(selected_stories) >= max_stories:
             break
-        # Skip if we've already used this URL
-        if story.url not in seen_urls:
+        # Skip if we've already used this URL in this run, or if it's already covered
+        if story.url not in seen_urls and story.url not in covered_urls:
             selected_stories.append(story)
             seen_urls.add(story.url)
             density = calculate_ai_density(story) if config.ai_only_mode else 0.0
@@ -3480,6 +3586,12 @@ def main() -> None:
                 logging.info("  YouTube: https://www.youtube.com/watch?v=%s", youtube_video_id)
             if tiktok_video_id:
                 logging.info("  TikTok: %s", tiktok_video_id)
+            
+            # Mark story as covered (only if video was successfully created)
+            try:
+                save_covered_story(story, config, youtube_video_id, tiktok_video_id)
+            except Exception as exc:
+                logging.warning("Failed to save covered story: %s", exc)
             
             successful_videos += 1
             
