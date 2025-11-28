@@ -33,17 +33,37 @@ jobs:
 
       - name: Setup Google Cloud Credentials
         run: |
-          if [ -n "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" ]; then
-            echo "Creating credentials file..."
-            echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > $HOME/gcloud_credentials.json
-            chmod 600 $HOME/gcloud_credentials.json
-            echo "GCLOUD_CREDS_PATH=$HOME/gcloud_credentials.json" >> $GITHUB_ENV
-            echo "Credentials file created at $HOME/gcloud_credentials.json"
-            ls -la $HOME/gcloud_credentials.json
-            echo "File size: $(wc -c < $HOME/gcloud_credentials.json) bytes"
-          else
-            echo "GOOGLE_APPLICATION_CREDENTIALS secret is empty or not set"
-          fi
+          python3 << 'EOF'
+          import os
+          import json
+          import sys
+          
+          creds_secret = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS_SECRET', '')
+          
+          if creds_secret:
+              try:
+                  # Validate it's valid JSON
+                  json.loads(creds_secret)
+                  # Write to file
+                  creds_path = os.path.expanduser('~/gcloud_credentials.json')
+                  with open(creds_path, 'w') as f:
+                      f.write(creds_secret)
+                  os.chmod(creds_path, 0o600)
+                  print(f"Credentials file created at {creds_path}")
+                  print(f"File size: {os.path.getsize(creds_path)} bytes")
+                  # Set environment variable for next step
+                  github_env = os.environ.get('GITHUB_ENV')
+                  if github_env:
+                      with open(github_env, 'a') as f:
+                          f.write(f"GCLOUD_CREDS_PATH={creds_path}\n")
+              except json.JSONDecodeError as e:
+                  print(f"ERROR: Invalid JSON in GOOGLE_APPLICATION_CREDENTIALS secret: {e}")
+                  sys.exit(1)
+          else:
+              print("GOOGLE_APPLICATION_CREDENTIALS secret is empty or not set")
+          EOF
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS_SECRET: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
 
       - name: Run Tech News Pipeline
         env:
