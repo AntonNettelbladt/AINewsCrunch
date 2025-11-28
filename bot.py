@@ -95,7 +95,7 @@ class ArticleCandidate:
 class Config:
     output_dir: Path
     max_articles: int = 10
-    max_videos_per_day: int = 5  # Number of videos to create per day
+    max_videos_per_day: int = 1  # Number of videos to create per run (workflow runs multiple times per day)
     max_script_points: int = 3
     max_script_words: int = 150  # Max words for 60-second script (~2.5 words/second)
     tts_voice: str = "en-US-AriaNeural"  # Fallback for Edge-TTS
@@ -442,7 +442,7 @@ def load_config() -> Config:
 
     config = Config(
         output_dir=output_dir,
-        max_videos_per_day=int(os.getenv("MAX_VIDEOS_PER_DAY", "5")),  # Default to 5 videos
+        max_videos_per_day=int(os.getenv("MAX_VIDEOS_PER_DAY", "1")),  # Default to 1 video per run
         max_script_points=int(os.getenv("MAX_SCRIPT_POINTS", "3")),
         max_script_words=int(os.getenv("MAX_SCRIPT_WORDS", "150")),
         tts_voice=os.getenv("TTS_VOICE") or "en-US-AriaNeural",  # Default Edge-TTS voice (handles empty strings)
@@ -2518,8 +2518,15 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
             
             for word_idx, word in enumerate(line_words):
                 word_start_time = (word_index + word_idx) * seconds_per_word
-                # Each word stays visible until the line ends
-                word_end_time = line_end_time
+                
+                # Calculate when this clip should end
+                # If there's a next word, end just before it starts (no overlap)
+                if word_idx < len(line_words) - 1:
+                    # Next word starts at the next time slot
+                    word_end_time = (word_index + word_idx + 1) * seconds_per_word
+                else:
+                    # Last word in line stays until line ends
+                    word_end_time = line_end_time
                 
                 word_start_time = max(0.0, min(word_start_time, duration))
                 word_end_time = max(word_start_time + 0.1, min(word_end_time, duration))
@@ -2550,7 +2557,6 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
                 word_txt_clip = word_txt_clip.set_position(("center", subtitle_y_position))
                 
                 # Smooth fade-in animation for the new word
-                # Use a longer fade-in for smoother appearance
                 word_txt_clip = word_txt_clip.fadein(word_fade_in)
                 
                 # Fade out at the end if it's the last word in the last line

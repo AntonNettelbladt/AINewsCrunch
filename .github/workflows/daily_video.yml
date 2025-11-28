@@ -2,7 +2,9 @@ name: Daily Tech News Generator
 
 on:
   schedule:
-    - cron: '0 20 * * *' # 8 PM UTC
+    # Run every 4 hours throughout the day (6 times per day)
+    # Times: 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC
+    - cron: '0 */4 * * *' # Every 4 hours
   workflow_dispatch:
 
 jobs:
