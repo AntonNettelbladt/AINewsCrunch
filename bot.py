@@ -445,7 +445,7 @@ def load_config() -> Config:
         max_videos_per_day=int(os.getenv("MAX_VIDEOS_PER_DAY", "5")),  # Default to 5 videos
         max_script_points=int(os.getenv("MAX_SCRIPT_POINTS", "3")),
         max_script_words=int(os.getenv("MAX_SCRIPT_WORDS", "150")),
-        tts_voice=os.getenv("TTS_VOICE", "en-US-AriaNeural"),
+        tts_voice=os.getenv("TTS_VOICE") or "en-US-AriaNeural",  # Default Edge-TTS voice (handles empty strings)
         pexels_api_key=os.getenv("PEXELS_API_KEY"),
         pixabay_api_key=os.getenv("PIXABAY_API_KEY"),
         unsplash_api_key=os.getenv("UNSPLASH_API_KEY"),
@@ -457,8 +457,8 @@ def load_config() -> Config:
         # Google API settings
         gemini_api_key=os.getenv("GEMINI_API_KEY"),
         gcloud_tts_credentials_path=gcloud_creds,
-        gcloud_tts_voice_name=os.getenv("GCLOUD_TTS_VOICE", "Achird"),  # Default to Chirp3-HD Achird voice
-        gcloud_tts_language_code=os.getenv("GCLOUD_TTS_LANGUAGE", "en-US"),  # Language/locale code
+        gcloud_tts_voice_name=os.getenv("GCLOUD_TTS_VOICE") or "Achird",  # Default to Chirp3-HD Achird voice (handles empty strings)
+        gcloud_tts_language_code=os.getenv("GCLOUD_TTS_LANGUAGE") or "en-US",  # Language/locale code (handles empty strings)
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-pro"),
         use_gemini=os.getenv("USE_GEMINI", "true").lower() == "true",
         use_gcloud_tts=os.getenv("USE_GCLOUD_TTS", "true").lower() == "true",
