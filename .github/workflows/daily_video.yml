@@ -27,6 +27,10 @@ jobs:
       - name: Install Python Dependencies
         run: pip install -r requirements.txt
 
+      - name: Download NLTK Data
+        run: |
+          python -c "import nltk; nltk.download('punkt_tab', quiet=True)"
+
       - name: Run Tech News Pipeline
         env:
           YT_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}

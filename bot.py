@@ -390,6 +390,23 @@ def setup_logging() -> None:
     )
 
 
+def setup_nltk() -> None:
+    """Download required NLTK data for newspaper3k."""
+    try:
+        import nltk
+        # Download punkt_tab tokenizer (required for newspaper3k)
+        try:
+            nltk.data.find('tokenizers/punkt_tab')
+        except LookupError:
+            logging.info("Downloading NLTK punkt_tab tokenizer...")
+            nltk.download('punkt_tab', quiet=True)
+            logging.info("NLTK punkt_tab tokenizer downloaded successfully")
+    except ImportError:
+        logging.warning("NLTK not available, newspaper3k may have issues parsing articles")
+    except Exception as exc:
+        logging.warning("Failed to setup NLTK: %s", exc)
+
+
 def load_config() -> Config:
     if load_dotenv:
         load_dotenv()
@@ -514,26 +531,33 @@ def fetch_google_news_rss(query: str, max_entries: int = 10) -> List[str]:
 
 
 def fetch_reddit_posts(subreddit: str, max_posts: int = 10) -> List[str]:
-    """Fetch Reddit posts from a subreddit (no auth needed for read)."""
+    """Fetch Reddit posts from a subreddit using RSS feed (no auth needed)."""
     try:
-        url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit={max_posts}"
+        # Use RSS feed instead of JSON API to avoid 403 blocks
+        url = f"https://www.reddit.com/r/{subreddit}/.rss"
         headers = get_headers()
-        headers["User-Agent"] = "TechNewsDailyBot/1.0"  # Reddit-friendly user agent
+        headers["User-Agent"] = "TechNewsDailyBot/1.0 (Contact: github.com/yourusername)"  # Reddit-friendly user agent
         
-        response = fetch_with_retry(url, headers=headers)
+        response = fetch_with_retry(url, headers=headers, timeout=20)
         if not response:
             return []
         
-        data = response.json()
-        links = []
+        # Parse RSS XML
+        try:
+            root = ET.fromstring(response.content)
+        except ET.ParseError as exc:
+            logging.warning("Malformed RSS for Reddit r/%s: %s", subreddit, exc)
+            return []
         
-        if "data" in data and "children" in data["data"]:
-            for child in data["data"]["children"]:
-                if "data" in child:
-                    post_data = child["data"]
-                    # Only get external links (not Reddit self-posts)
-                    if "url" in post_data and not post_data["url"].startswith("https://www.reddit.com"):
-                        links.append(post_data["url"])
+        links = []
+        # Extract links from RSS items
+        for item in root.findall(".//item")[:max_posts]:
+            link_element = item.find("link")
+            if link_element is not None and link_element.text:
+                link_url = link_element.text.strip()
+                # Only get external links (not Reddit self-posts)
+                if not link_url.startswith("https://www.reddit.com"):
+                    links.append(link_url)
         
         logging.debug("Found %d links from r/%s", len(links), subreddit)
         return links
@@ -2647,6 +2671,7 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config) -> Pa
 
 def main() -> None:
     setup_logging()
+    setup_nltk()  # Initialize NLTK data for newspaper3k
     config = load_config()
     
     if config.ai_only_mode:
