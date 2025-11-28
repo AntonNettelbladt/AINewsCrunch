@@ -2621,20 +2621,60 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
     
     # Modern styling
     font_size = 56
-    subtitle_y_position = video_height - 180
     text_color = "#FFFFFF"
     stroke_color = "#000000"
     stroke_width = 2
     
-    # Calculate max text width with padding on sides
-    # Video width is 1080px, add 80px padding on each side (160px total)
-    side_padding = 80
+    # Calculate max text width with more padding on sides to prevent cutoff
+    # Video width is 1080px, add 100px padding on each side (200px total)
+    side_padding = 100
     max_text_width = video_width - (side_padding * 2)
+    
+    # Calculate line spacing and starting position
+    # Position subtitles near bottom with spacing between lines
+    line_spacing = 20  # Space between lines in pixels
+    base_subtitle_y = video_height - 200  # Base position from bottom
+    
+    # Calculate y positions for each line with spacing
+    # Lines are positioned from bottom to top
+    line_heights = []
+    for line_index, (line_words, line_start, line_end) in enumerate(lines):
+        if not line_words:
+            line_heights.append(0)
+            continue
+        # Estimate line height (will be refined when we create the clip)
+        # line_words is a list of tuples: (word, start_time, end_time)
+        final_line_text = " ".join([w[0] for w in line_words])
+        try:
+            temp_clip = TextClip(
+                final_line_text,
+                fontsize=font_size,
+                color=text_color,
+                font=font_name,
+                method="label",
+                stroke_color=stroke_color,
+                stroke_width=stroke_width,
+            )
+            _, line_height = temp_clip.size
+            line_heights.append(line_height)
+        except:
+            line_heights.append(font_size + 10)  # Fallback estimate
+    
+    # Calculate y positions for each line (stacked from bottom)
+    line_y_positions = []
+    current_y = base_subtitle_y
+    for i, line_height in enumerate(reversed(line_heights)):  # Reverse to stack from bottom
+        if line_height > 0:
+            line_y_positions.insert(0, current_y - line_height / 2)  # Center vertically on line
+            current_y = current_y - line_height - line_spacing
     
     # Create individual word clips positioned to form lines
     for line_index, (line_words, line_start, line_end) in enumerate(lines):
         if not line_words:
             continue
+        
+        # Get y position for this line
+        subtitle_y_position = line_y_positions[line_index] if line_index < len(line_y_positions) else base_subtitle_y
         
         # First pass: measure all words to calculate total line width for centering
         word_measurements = []
@@ -2661,20 +2701,21 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
         
         # Calculate the final line width to determine fixed center position
         # This ensures all clips are positioned at the same x-coordinate (no movement)
-        final_line_text = " ".join([w[0] for w in word_measurements])
+        final_line_text = " ".join([w[0] for w in word_measurements])  # w is (word, start_time, end_time, width, height)
         try:
             final_line_clip_temp = TextClip(
                 final_line_text,
                 fontsize=font_size,
                 color=text_color,
                 font=font_name,
-                method="caption",
-                size=(max_text_width, None),
-                align="center",
+                method="label",  # Use same method as actual clips for consistency
                 stroke_color=stroke_color,
                 stroke_width=stroke_width,
             )
             final_line_width, final_line_height = final_line_clip_temp.size
+            # Scale if needed to fit within max width
+            if final_line_width > max_text_width:
+                final_line_width = max_text_width
             # Calculate fixed center x position based on final line width
             fixed_center_x = (video_width - final_line_width) / 2
         except Exception as exc:
@@ -2718,37 +2759,27 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
             
             try:
                 # Create cumulative line clip (shows all words up to current word)
-                # Use 'caption' method with proper size constraints to prevent text cutoff
-                # The size parameter ensures text wraps within the padded area
+                # Use 'label' method for better control and to prevent text cutoff
                 line_clip = TextClip(
                     displayed_text,
                     fontsize=font_size,
                     color=text_color,
                     font=font_name,
-                    method="caption",  # 'caption' method handles wrapping better
-                    size=(max_text_width, None),  # None height allows auto-sizing
-                    align="center",
+                    method="label",  # 'label' method gives better control over text rendering
                     stroke_color=stroke_color,
                     stroke_width=stroke_width,
                 )
                 
-                # Verify the clip size is within bounds
+                # Verify the clip size is within bounds and scale if needed
                 clip_width, clip_height = line_clip.size
-                if clip_width > max_text_width + 10:  # Allow small tolerance
-                    # If text is still too wide, scale it down proportionally
-                    scale_factor = (max_text_width - 10) / clip_width
+                if clip_width > max_text_width:
+                    # Scale down proportionally to fit within padded area
+                    scale_factor = max_text_width / clip_width
                     line_clip = line_clip.resize(scale_factor)
                     clip_width, clip_height = line_clip.size  # Update after resize
                     logging.debug("Scaled down text clip from %.0fpx to fit %.0fpx", clip_width, max_text_width)
                 
-                # Smooth animation: only animate the first word of each line
-                # Subsequent words appear instantly to avoid flashing
-                if word_idx == 0:
-                    # First word: smooth fade-in with longer duration
-                    fade_duration = min(0.3, word_duration * 0.6)  # Longer, smoother fade
-                    line_clip = line_clip.fadein(fade_duration)
-                # For subsequent words, no fade-in - they appear instantly
-                # This prevents flashing since most of the text is already visible
+                # No fade-in animation - words appear instantly
                 
                 # Set timing and position
                 # Use fixed center position to prevent text movement when new words are added
