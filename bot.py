@@ -2515,10 +2515,10 @@ def extract_word_timestamps_from_audio(audio_path: Path, script: str) -> Optiona
 
 
 def create_captions(script: str, audio_path: Optional[Path], duration: float, video_size: tuple, config: Config) -> List[TextClip]:
-    """Create modern word-by-word captions with accurate timing and smooth animations.
+    """Create word-by-word captions with accurate timing.
     
-    Uses Whisper to extract accurate word timestamps from audio, then creates individual
-    word clips positioned to form lines with smooth scale and fade animations.
+    Uses Whisper to extract accurate word timestamps from audio, then creates
+    cumulative text clips that build up word by word, positioned safely at the bottom.
     """
     captions = []
     video_width, video_height = video_size
@@ -2539,23 +2539,17 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
     if audio_path and audio_path.exists():
         whisper_timings = extract_word_timestamps_from_audio(audio_path, clean_script)
     
-    # Map Whisper timestamps to script words
-    # If Whisper returned timestamps and word count is similar, use them
-    # Otherwise, use estimated timing based on speaking rate
+    # Map Whisper timestamps to script words or use estimated timing
     word_timings = []
     if whisper_timings and len(whisper_timings) > 0:
-        # Check if word counts are similar (within 20% difference)
         whisper_word_count = len(whisper_timings)
         script_word_count = len(script_words)
         count_ratio = min(whisper_word_count, script_word_count) / max(whisper_word_count, script_word_count)
         
         if count_ratio >= 0.8:  # At least 80% match
-            # Use Whisper timestamps but map to script words
-            # Distribute timestamps proportionally
             logging.info("Using Whisper timestamps mapped to script words (ratio: %.2f)", count_ratio)
             for i, script_word in enumerate(script_words):
                 if i < len(whisper_timings):
-                    # Use corresponding Whisper timestamp
                     _, start_time, end_time = whisper_timings[i]
                     word_timings.append((script_word, start_time, end_time))
                 else:
@@ -2563,25 +2557,18 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
                     if whisper_timings:
                         last_end = whisper_timings[-1][2]
                         avg_duration = (last_end - whisper_timings[0][1]) / len(whisper_timings)
-                        start_time = last_end
-                        end_time = start_time + avg_duration
-                        word_timings.append((script_word, start_time, end_time))
+                        word_timings.append((script_word, last_end, last_end + avg_duration))
                     else:
-                        # Fallback to estimated
                         words_per_second = len(script_words) / duration if duration > 0 else 2.5
-                        start_time = i / words_per_second
-                        end_time = (i + 1) / words_per_second
-                        word_timings.append((script_word, start_time, end_time))
+                        word_timings.append((script_word, i / words_per_second, (i + 1) / words_per_second))
         else:
             logging.info("Whisper word count mismatch (ratio: %.2f), using estimated timing", count_ratio)
-            # Word counts don't match well, use estimated timing
             words_per_second = len(script_words) / duration if duration > 0 else 2.5
             word_timings = [
                 (word, i / words_per_second, (i + 1) / words_per_second)
                 for i, word in enumerate(script_words)
             ]
     else:
-        # Fallback to estimated timing
         logging.info("Using estimated word timing based on speaking rate")
         words_per_second = len(script_words) / duration if duration > 0 else 2.5
         word_timings = [
@@ -2589,17 +2576,13 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
             for i, word in enumerate(script_words)
         ]
     
-    # Group words into lines based on timing and natural breaks
+    # Group words into lines (max 8 words per line)
     max_words_per_line = 8
     lines = []
     current_line = []
     current_line_start = word_timings[0][1] if word_timings else 0.0
     
     for i, (word, start_time, end_time) in enumerate(word_timings):
-        # Start new line if:
-        # 1. Current line is full
-        # 2. Natural break (punctuation) and line has at least 4 words
-        # 3. Time gap between words is significant (>0.5s)
         should_break = False
         if len(current_line) >= max_words_per_line:
             should_break = True
@@ -2615,39 +2598,31 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
         else:
             current_line.append((word, start_time, end_time))
     
-    # Add final line
     if current_line:
         lines.append((current_line, current_line_start, word_timings[-1][2]))
     
-    # Modern styling
+    # Styling
     font_size = 56
     text_color = "#FFFFFF"
     stroke_color = "#000000"
     stroke_width = 2
     
-    # Calculate max text width with more padding on sides to prevent cutoff
-    # Video width is 1080px, add 100px padding on each side (200px total)
-    side_padding = 100
+    # Safe area: leave 120px padding on sides and 250px from bottom
+    side_padding = 120
+    bottom_margin = 250
     max_text_width = video_width - (side_padding * 2)
     
-    # Calculate line spacing and starting position
-    # Position subtitles near bottom with spacing between lines
-    line_spacing = 20  # Space between lines in pixels
-    base_subtitle_y = video_height - 200  # Base position from bottom
-    
-    # Calculate y positions for each line with spacing
-    # Lines are positioned from bottom to top
-    line_heights = []
+    # Create clips for each line
     for line_index, (line_words, line_start, line_end) in enumerate(lines):
         if not line_words:
-            line_heights.append(0)
             continue
-        # Estimate line height (will be refined when we create the clip)
-        # line_words is a list of tuples: (word, start_time, end_time)
-        final_line_text = " ".join([w[0] for w in line_words])
+        
+        # Calculate y position for this line (stack from bottom)
+        # Estimate line height first
+        line_text = " ".join([w[0] for w in line_words])
         try:
-            temp_clip = TextClip(
-                final_line_text,
+            test_clip = TextClip(
+                line_text,
                 fontsize=font_size,
                 color=text_color,
                 font=font_name,
@@ -2655,155 +2630,72 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
                 stroke_color=stroke_color,
                 stroke_width=stroke_width,
             )
-            _, line_height = temp_clip.size
-            line_heights.append(line_height)
+            _, estimated_line_height = test_clip.size
         except:
-            line_heights.append(font_size + 10)  # Fallback estimate
-    
-    # Calculate y positions for each line (stacked from bottom)
-    line_y_positions = []
-    current_y = base_subtitle_y
-    for i, line_height in enumerate(reversed(line_heights)):  # Reverse to stack from bottom
-        if line_height > 0:
-            line_y_positions.insert(0, current_y - line_height / 2)  # Center vertically on line
-            current_y = current_y - line_height - line_spacing
-    
-    # Create individual word clips positioned to form lines
-    for line_index, (line_words, line_start, line_end) in enumerate(lines):
-        if not line_words:
-            continue
+            estimated_line_height = font_size + 20
         
-        # Get y position for this line
-        subtitle_y_position = line_y_positions[line_index] if line_index < len(line_y_positions) else base_subtitle_y
+        # Calculate y position: bottom margin + (line_index * (line_height + spacing))
+        line_spacing = 25
+        y_offset = bottom_margin + (len(lines) - 1 - line_index) * (estimated_line_height + line_spacing)
+        subtitle_y = video_height - y_offset
         
-        # First pass: measure all words to calculate total line width for centering
-        word_measurements = []
-        for word, start_time, end_time in line_words:
-            try:
-                # Create temporary clip to measure word dimensions
-                word_clip_temp = TextClip(
-                    word,
-                    fontsize=font_size,
-                    color=text_color,
-                    font=font_name,
-                    method="caption",
-                    stroke_color=stroke_color,
-                    stroke_width=stroke_width,
-                )
-                word_width, word_height = word_clip_temp.size
-                word_measurements.append((word, start_time, end_time, word_width, word_height))
-            except Exception as exc:
-                logging.debug("Failed to measure word '%s': %s", word, exc)
-                continue
-        
-        if not word_measurements:
-            continue
-        
-        # Calculate the final line width to determine fixed center position
-        # This ensures all clips are positioned at the same x-coordinate (no movement)
-        final_line_text = " ".join([w[0] for w in word_measurements])  # w is (word, start_time, end_time, width, height)
-        try:
-            final_line_clip_temp = TextClip(
-                final_line_text,
-                fontsize=font_size,
-                color=text_color,
-                font=font_name,
-                method="label",  # Use same method as actual clips for consistency
-                stroke_color=stroke_color,
-                stroke_width=stroke_width,
-            )
-            final_line_width, final_line_height = final_line_clip_temp.size
-            # Scale if needed to fit within max width
-            if final_line_width > max_text_width:
-                final_line_width = max_text_width
-            # Calculate fixed center x position based on final line width
-            fixed_center_x = (video_width - final_line_width) / 2
-        except Exception as exc:
-            logging.debug("Failed to calculate final line width: %s, using center positioning", exc)
-            fixed_center_x = None  # Fallback to center positioning
-        
-        # Second pass: create cumulative line clips (each shows all words up to current word)
-        # This way, as each new word appears, the entire line up to that point is visible
+        # Create cumulative word clips for this line
         displayed_text = ""
-        # max_text_width is already set above with proper padding
-        
-        for word_idx, (word, start_time, end_time, word_width, word_height) in enumerate(word_measurements):
-            # Build cumulative text (all words up to and including current word)
+        for word_idx, (word, start_time, end_time) in enumerate(line_words):
+            # Build cumulative text
             if displayed_text:
                 displayed_text += " " + word
             else:
                 displayed_text = word
             
             # Calculate clip duration
-            # This clip should end when the next word's clip starts (with small overlap)
-            overlap = 0.05  # 50ms overlap for smooth transition
-            if word_idx < len(word_measurements) - 1:
-                # Next word's start time
-                next_start = word_measurements[word_idx + 1][1]
+            overlap = 0.05
+            if word_idx < len(line_words) - 1:
+                next_start = line_words[word_idx + 1][1]
                 clip_end_time = next_start + overlap
             else:
-                # Last word in line: use the word's end time
                 clip_end_time = end_time
             
-            word_duration = clip_end_time - start_time
-            
-            # Ensure minimum duration
-            if word_duration < 0.1:
-                word_duration = 0.1
-                clip_end_time = start_time + word_duration
-            
-            # Clamp timing to video duration
+            word_duration = max(0.1, clip_end_time - start_time)
             start_time = max(0.0, min(start_time, duration))
-            clip_end_time = max(start_time + 0.1, min(clip_end_time, duration))
+            clip_end_time = max(start_time + 0.1, min(start_time + word_duration, duration))
             word_duration = clip_end_time - start_time
             
             try:
-                # Create cumulative line clip (shows all words up to current word)
-                # Use 'label' method for better control and to prevent text cutoff
+                # Create text clip
                 line_clip = TextClip(
                     displayed_text,
                     fontsize=font_size,
                     color=text_color,
                     font=font_name,
-                    method="label",  # 'label' method gives better control over text rendering
+                    method="label",
                     stroke_color=stroke_color,
                     stroke_width=stroke_width,
                 )
                 
-                # Verify the clip size is within bounds and scale if needed
+                # Scale if too wide
                 clip_width, clip_height = line_clip.size
                 if clip_width > max_text_width:
-                    # Scale down proportionally to fit within padded area
                     scale_factor = max_text_width / clip_width
                     line_clip = line_clip.resize(scale_factor)
-                    clip_width, clip_height = line_clip.size  # Update after resize
-                    logging.debug("Scaled down text clip from %.0fpx to fit %.0fpx", clip_width, max_text_width)
+                    clip_width, clip_height = line_clip.size
                 
-                # No fade-in animation - words appear instantly
-                
-                # Set timing and position
-                # Use fixed center position to prevent text movement when new words are added
+                # Position: center horizontally, fixed y position
+                # Use 'center' for x to ensure proper centering
                 line_clip = line_clip.set_duration(word_duration).set_start(start_time)
+                line_clip = line_clip.set_position(("center", subtitle_y))
                 
-                if fixed_center_x is not None:
-                    # Position at fixed x-coordinate (left edge of final line)
-                    # This keeps text stable as it grows
-                    line_clip = line_clip.set_position((fixed_center_x, subtitle_y_position))
-                else:
-                    # Fallback to center positioning if calculation failed
-                    line_clip = line_clip.set_position(("center", subtitle_y_position))
-                
-                # Smooth fade out at the end if it's the last word in the last line
-                if line_index == len(lines) - 1 and word_idx == len(word_measurements) - 1:
-                    line_clip = line_clip.fadeout(0.4)  # Longer fade out for smoother transition
+                # Fade out only at the very end
+                if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
+                    line_clip = line_clip.fadeout(0.4)
                 
                 captions.append(line_clip)
                 
             except Exception as exc:
-                logging.warning("Failed to create cumulative line clip for word '%s': %s", word, exc)
+                logging.warning("Failed to create caption clip for word '%s': %s", word, exc)
                 continue
     
-    logging.info("Created %d word caption clips", len(captions))
+    logging.info("Created %d caption clips for %d lines", len(captions), len(lines))
     return captions
 
 
