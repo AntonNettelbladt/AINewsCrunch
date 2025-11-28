@@ -2437,142 +2437,257 @@ def ease_in_out(progress: float) -> float:
     return progress * progress * (3 - 2 * progress)
 
 
-def create_captions(script: str, duration: float, video_size: tuple) -> List[TextClip]:
-    """Create word-by-word captions with simple fade-in animation, no background."""
+def extract_word_timestamps_from_audio(audio_path: Path, script: str) -> Optional[List[Tuple[str, float, float]]]:
+    """Extract word-level timestamps from audio using faster-whisper.
+    Returns: List of (word, start_time, end_time) tuples, or None if extraction fails."""
+    try:
+        from faster_whisper import WhisperModel
+        
+        logging.info("Extracting word-level timestamps from audio using Whisper...")
+        # Use base model for good balance of speed and accuracy
+        model = WhisperModel("base", device="cpu", compute_type="int8")
+        
+        # Transcribe with word timestamps
+        segments, info = model.transcribe(
+            str(audio_path),
+            word_timestamps=True,
+            language="en",
+            beam_size=5,
+        )
+        
+        word_timings = []
+        for segment in segments:
+            for word_info in segment.words:
+                word = word_info.word.strip()
+                # Remove punctuation-only "words" that Whisper sometimes creates
+                if not word or word in [".", ",", "!", "?", ":", ";", "-"]:
+                    continue
+                start = word_info.start
+                end = word_info.end
+                word_timings.append((word, start, end))
+        
+        if word_timings:
+            logging.info("Extracted %d word timestamps from audio", len(word_timings))
+            return word_timings
+        else:
+            logging.warning("No word timestamps extracted, falling back to estimated timing")
+            return None
+            
+    except ImportError:
+        logging.warning("faster-whisper not available, falling back to estimated timing")
+        return None
+    except Exception as exc:
+        logging.warning("Failed to extract word timestamps: %s, falling back to estimated timing", exc)
+        return None
+
+
+def create_captions(script: str, audio_path: Optional[Path], duration: float, video_size: tuple) -> List[TextClip]:
+    """Create modern word-by-word captions with accurate timing and smooth animations.
+    
+    Uses Whisper to extract accurate word timestamps from audio, then creates individual
+    word clips positioned to form lines with smooth scale and fade animations.
+    """
     captions = []
     video_width, video_height = video_size
     
     # Clean script and split into words
     clean_script = re.sub(r"\s+", " ", script).strip()
-    words = clean_script.split()
+    script_words = clean_script.split()
     
-    if not words:
+    if not script_words:
         return captions
     
-    # Estimate speaking rate: average ~150 words per minute = 2.5 words per second
-    # Adjust based on actual duration to sync with audio
-    words_per_second = len(words) / duration if duration > 0 else 2.5
-    seconds_per_word = 1.0 / words_per_second if words_per_second > 0 else 0.4
+    # Extract accurate word timestamps from audio
+    whisper_timings = None
+    if audio_path and audio_path.exists():
+        whisper_timings = extract_word_timestamps_from_audio(audio_path, clean_script)
     
-    # Group words into lines (max ~8-10 words per line for readability)
+    # Map Whisper timestamps to script words
+    # If Whisper returned timestamps and word count is similar, use them
+    # Otherwise, use estimated timing based on speaking rate
+    word_timings = []
+    if whisper_timings and len(whisper_timings) > 0:
+        # Check if word counts are similar (within 20% difference)
+        whisper_word_count = len(whisper_timings)
+        script_word_count = len(script_words)
+        count_ratio = min(whisper_word_count, script_word_count) / max(whisper_word_count, script_word_count)
+        
+        if count_ratio >= 0.8:  # At least 80% match
+            # Use Whisper timestamps but map to script words
+            # Distribute timestamps proportionally
+            logging.info("Using Whisper timestamps mapped to script words (ratio: %.2f)", count_ratio)
+            for i, script_word in enumerate(script_words):
+                if i < len(whisper_timings):
+                    # Use corresponding Whisper timestamp
+                    _, start_time, end_time = whisper_timings[i]
+                    word_timings.append((script_word, start_time, end_time))
+                else:
+                    # Extend last timestamp for extra script words
+                    if whisper_timings:
+                        last_end = whisper_timings[-1][2]
+                        avg_duration = (last_end - whisper_timings[0][1]) / len(whisper_timings)
+                        start_time = last_end
+                        end_time = start_time + avg_duration
+                        word_timings.append((script_word, start_time, end_time))
+                    else:
+                        # Fallback to estimated
+                        words_per_second = len(script_words) / duration if duration > 0 else 2.5
+                        start_time = i / words_per_second
+                        end_time = (i + 1) / words_per_second
+                        word_timings.append((script_word, start_time, end_time))
+        else:
+            logging.info("Whisper word count mismatch (ratio: %.2f), using estimated timing", count_ratio)
+            # Word counts don't match well, use estimated timing
+            words_per_second = len(script_words) / duration if duration > 0 else 2.5
+            word_timings = [
+                (word, i / words_per_second, (i + 1) / words_per_second)
+                for i, word in enumerate(script_words)
+            ]
+    else:
+        # Fallback to estimated timing
+        logging.info("Using estimated word timing based on speaking rate")
+        words_per_second = len(script_words) / duration if duration > 0 else 2.5
+        word_timings = [
+            (word, i / words_per_second, (i + 1) / words_per_second)
+            for i, word in enumerate(script_words)
+        ]
+    
+    # Group words into lines based on timing and natural breaks
     max_words_per_line = 8
     lines = []
     current_line = []
+    current_line_start = word_timings[0][1] if word_timings else 0.0
     
-    for word in words:
-        # Start new line if current is full or at natural break (punctuation)
-        if len(current_line) >= max_words_per_line or (word.endswith(('.', '!', '?', ',')) and len(current_line) >= 4):
-            if current_line:
-                lines.append(current_line)
-            current_line = [word]
+    for i, (word, start_time, end_time) in enumerate(word_timings):
+        # Start new line if:
+        # 1. Current line is full
+        # 2. Natural break (punctuation) and line has at least 4 words
+        # 3. Time gap between words is significant (>0.5s)
+        should_break = False
+        if len(current_line) >= max_words_per_line:
+            should_break = True
+        elif word.endswith(('.', '!', '?', ',')) and len(current_line) >= 4:
+            should_break = True
+        elif i > 0 and start_time - word_timings[i-1][2] > 0.5:
+            should_break = True
+        
+        if should_break and current_line:
+            lines.append((current_line, current_line_start, word_timings[i-1][2]))
+            current_line = [(word, start_time, end_time)]
+            current_line_start = start_time
         else:
-            current_line.append(word)
+            current_line.append((word, start_time, end_time))
     
     # Add final line
     if current_line:
-        lines.append(current_line)
+        lines.append((current_line, current_line_start, word_timings[-1][2]))
     
-    # Clean styling - no background, just text
-    font_size = 52
-    max_text_width = 1000
-    subtitle_y_position = video_height - 150  # Position near bottom center
-    text_color = "#FFFFFF"  # White text
+    # Modern styling
+    font_size = 56
+    subtitle_y_position = video_height - 180
+    text_color = "#FFFFFF"
+    stroke_color = "#000000"
+    stroke_width = 2
     
-    # Word animation settings
-    word_fade_in = 0.3  # Smooth fade-in duration for each word
-    
-    word_index = 0
-    for line_index, line_words in enumerate(lines):
+    # Create individual word clips positioned to form lines
+    for line_index, (line_words, line_start, line_end) in enumerate(lines):
         if not line_words:
             continue
         
-        # Calculate timing for this line
-        line_start_time = word_index * seconds_per_word
-        line_end_time = (word_index + len(line_words)) * seconds_per_word
-        
-        # Ensure timing is within video duration
-        if line_start_time >= duration:
-            break
-        line_end_time = min(line_end_time, duration)
-        
-        try:
-            # Build the full line text to get dimensions for positioning
-            full_line_text = " ".join(line_words)
-            full_txt_clip = TextClip(
-                full_line_text,
-                fontsize=font_size,
-                color=text_color,
-                method="caption",
-                size=(max_text_width, None),
-                align="center",
-                font="Arial",
-            )
-            
-            # Get the full line dimensions for centering
-            full_line_width, full_line_height = full_txt_clip.size
-            
-            # Create individual word clips that fade in one by one
-            # We'll build up the line word by word, positioning each word correctly
-            displayed_text = ""
-            cumulative_width = 0
-            
-            for word_idx, word in enumerate(line_words):
-                word_start_time = (word_index + word_idx) * seconds_per_word
-                
-                # Calculate when this clip should end
-                # If there's a next word, end just before it starts (no overlap)
-                if word_idx < len(line_words) - 1:
-                    # Next word starts at the next time slot
-                    word_end_time = (word_index + word_idx + 1) * seconds_per_word
-                else:
-                    # Last word in line stays until line ends
-                    word_end_time = line_end_time
-                
-                word_start_time = max(0.0, min(word_start_time, duration))
-                word_end_time = max(word_start_time + 0.1, min(word_end_time, duration))
-                word_duration = word_end_time - word_start_time
-                
-                if word_duration < 0.1:
-                    continue
-                
-                # Build text showing all words up to and including this word
-                if displayed_text:
-                    displayed_text += " " + word
-                else:
-                    displayed_text = word
-                
-                # Create text clip for current state (all words shown so far)
-                word_txt_clip = TextClip(
-                    displayed_text,
+        # First pass: measure all words to calculate total line width for centering
+        word_measurements = []
+        for word, start_time, end_time in line_words:
+            try:
+                # Create temporary clip to measure word dimensions
+                word_clip_temp = TextClip(
+                    word,
                     fontsize=font_size,
                     color=text_color,
+                    font="Arial-Bold",
                     method="caption",
-                    size=(max_text_width, None),
-                    align="center",
-                    font="Arial",
+                    stroke_color=stroke_color,
+                    stroke_width=stroke_width,
+                )
+                word_width, word_height = word_clip_temp.size
+                word_measurements.append((word, start_time, end_time, word_width, word_height))
+            except Exception as exc:
+                logging.debug("Failed to measure word '%s': %s", word, exc)
+                continue
+        
+        if not word_measurements:
+            continue
+        
+        # Calculate total line width (words + spacing)
+        word_spacing = 12  # Space between words in pixels
+        total_line_width = sum(w[3] for w in word_measurements) + (len(word_measurements) - 1) * word_spacing
+        line_x_start = (video_width - total_line_width) / 2
+        
+        # Second pass: create and position each word clip with animations
+        current_x = line_x_start
+        for word_idx, (word, start_time, end_time, word_width, word_height) in enumerate(word_measurements):
+            word_duration = end_time - start_time
+            
+            # Ensure minimum duration
+            if word_duration < 0.1:
+                word_duration = 0.1
+                end_time = start_time + word_duration
+            
+            # Clamp timing to video duration
+            start_time = max(0.0, min(start_time, duration))
+            end_time = max(start_time + 0.1, min(end_time, duration))
+            word_duration = end_time - start_time
+            
+            try:
+                # Create word clip with modern styling
+                word_clip = TextClip(
+                    word,
+                    fontsize=font_size,
+                    color=text_color,
+                    font="Arial-Bold",
+                    method="caption",
+                    stroke_color=stroke_color,
+                    stroke_width=stroke_width,
                 )
                 
-                # Position centered
-                word_txt_clip = word_txt_clip.set_duration(word_duration).set_start(word_start_time)
-                word_txt_clip = word_txt_clip.set_position(("center", subtitle_y_position))
+                # Modern animation: scale up from 0.85 to 1.0 with smooth easing
+                # Animation duration: 0.2 seconds
+                animation_duration = min(0.2, word_duration * 0.5)
                 
-                # Smooth fade-in animation for the new word
-                word_txt_clip = word_txt_clip.fadein(word_fade_in)
+                def make_scale_func(anim_dur):
+                    def scale_func(t):
+                        if t < anim_dur:
+                            # Smooth ease-out curve: 1 - (1-t)^3
+                            progress = t / anim_dur
+                            ease_out = 1 - (1 - progress) ** 3
+                            return 0.85 + (0.15 * ease_out)
+                        return 1.0
+                    return scale_func
+                
+                # Apply scale animation
+                word_clip = word_clip.resize(make_scale_func(animation_duration))
+                
+                # Set timing and position
+                word_clip = word_clip.set_duration(word_duration).set_start(start_time)
+                word_clip = word_clip.set_position((current_x, subtitle_y_position))
+                
+                # Fade in animation (smooth opacity transition)
+                fade_duration = min(0.15, word_duration * 0.4)
+                word_clip = word_clip.fadein(fade_duration)
                 
                 # Fade out at the end if it's the last word in the last line
-                if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
-                    word_txt_clip = word_txt_clip.fadeout(0.3)
+                if line_index == len(lines) - 1 and word_idx == len(word_measurements) - 1:
+                    word_clip = word_clip.fadeout(0.3)
                 
-                captions.append(word_txt_clip)
-            
-            word_index += len(line_words)
-            
-        except Exception as exc:
-            logging.warning("Failed to create word-animated caption line %d: %s", line_index, exc)
-            # Fallback: skip this line and continue
-            word_index += len(line_words)
-            continue
+                captions.append(word_clip)
+                
+                # Move to next word position
+                current_x += word_width + word_spacing
+                
+            except Exception as exc:
+                logging.warning("Failed to create word clip for '%s': %s", word, exc)
+                continue
     
+    logging.info("Created %d word caption clips", len(captions))
     return captions
 
 
@@ -2767,8 +2882,8 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
         if base_video.duration != duration_seconds:
             base_video = base_video.subclip(0, duration_seconds)
 
-        # Create captions
-        captions = create_captions(script, duration_seconds, video_size)
+        # Create captions with accurate word-level timing
+        captions = create_captions(script, audio_path if generated_audio else None, duration_seconds, video_size)
         
         # Create subtle gradient overlay at bottom (lighter since subtitles have their own backgrounds)
         # This helps with readability on bright backgrounds
