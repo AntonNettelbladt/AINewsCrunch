@@ -2659,6 +2659,28 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
         if not word_measurements:
             continue
         
+        # Calculate the final line width to determine fixed center position
+        # This ensures all clips are positioned at the same x-coordinate (no movement)
+        final_line_text = " ".join([w[0] for w in word_measurements])
+        try:
+            final_line_clip_temp = TextClip(
+                final_line_text,
+                fontsize=font_size,
+                color=text_color,
+                font=font_name,
+                method="caption",
+                size=(max_text_width, None),
+                align="center",
+                stroke_color=stroke_color,
+                stroke_width=stroke_width,
+            )
+            final_line_width, final_line_height = final_line_clip_temp.size
+            # Calculate fixed center x position based on final line width
+            fixed_center_x = (video_width - final_line_width) / 2
+        except Exception as exc:
+            logging.debug("Failed to calculate final line width: %s, using center positioning", exc)
+            fixed_center_x = None  # Fallback to center positioning
+        
         # Second pass: create cumulative line clips (each shows all words up to current word)
         # This way, as each new word appears, the entire line up to that point is visible
         displayed_text = ""
@@ -2696,50 +2718,53 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
             
             try:
                 # Create cumulative line clip (shows all words up to current word)
+                # Use 'caption' method with proper size constraints to prevent text cutoff
+                # The size parameter ensures text wraps within the padded area
                 line_clip = TextClip(
                     displayed_text,
                     fontsize=font_size,
                     color=text_color,
                     font=font_name,
-                    method="caption",
-                    size=(max_text_width, None),
+                    method="caption",  # 'caption' method handles wrapping better
+                    size=(max_text_width, None),  # None height allows auto-sizing
                     align="center",
                     stroke_color=stroke_color,
                     stroke_width=stroke_width,
                 )
                 
-                # Modern animation: only animate the newly added word
-                # For the first word, animate the entire line
-                # For subsequent words, the line just updates (most text stays the same)
-                animation_duration = min(0.2, word_duration * 0.5)
+                # Verify the clip size is within bounds
+                clip_width, clip_height = line_clip.size
+                if clip_width > max_text_width + 10:  # Allow small tolerance
+                    # If text is still too wide, scale it down proportionally
+                    scale_factor = (max_text_width - 10) / clip_width
+                    line_clip = line_clip.resize(scale_factor)
+                    clip_width, clip_height = line_clip.size  # Update after resize
+                    logging.debug("Scaled down text clip from %.0fpx to fit %.0fpx", clip_width, max_text_width)
                 
+                # Smooth animation: only animate the first word of each line
+                # Subsequent words appear instantly to avoid flashing
                 if word_idx == 0:
-                    # First word: animate the entire line with scale
-                    def make_scale_func(anim_dur):
-                        def scale_func(t):
-                            if t < anim_dur:
-                                # Smooth ease-out curve: 1 - (1-t)^3
-                                progress = t / anim_dur
-                                ease_out = 1 - (1 - progress) ** 3
-                                return 0.85 + (0.15 * ease_out)
-                            return 1.0
-                        return scale_func
-                    
-                    line_clip = line_clip.resize(make_scale_func(animation_duration))
-                    fade_duration = min(0.15, word_duration * 0.4)
+                    # First word: smooth fade-in with longer duration
+                    fade_duration = min(0.3, word_duration * 0.6)  # Longer, smoother fade
                     line_clip = line_clip.fadein(fade_duration)
-                else:
-                    # Subsequent words: just fade in smoothly (no scale to avoid jarring effect)
-                    fade_duration = min(0.1, word_duration * 0.3)
-                    line_clip = line_clip.fadein(fade_duration)
+                # For subsequent words, no fade-in - they appear instantly
+                # This prevents flashing since most of the text is already visible
                 
-                # Set timing and position (centered)
+                # Set timing and position
+                # Use fixed center position to prevent text movement when new words are added
                 line_clip = line_clip.set_duration(word_duration).set_start(start_time)
-                line_clip = line_clip.set_position(("center", subtitle_y_position))
                 
-                # Fade out at the end if it's the last word in the last line
+                if fixed_center_x is not None:
+                    # Position at fixed x-coordinate (left edge of final line)
+                    # This keeps text stable as it grows
+                    line_clip = line_clip.set_position((fixed_center_x, subtitle_y_position))
+                else:
+                    # Fallback to center positioning if calculation failed
+                    line_clip = line_clip.set_position(("center", subtitle_y_position))
+                
+                # Smooth fade out at the end if it's the last word in the last line
                 if line_index == len(lines) - 1 and word_idx == len(word_measurements) - 1:
-                    line_clip = line_clip.fadeout(0.3)
+                    line_clip = line_clip.fadeout(0.4)  # Longer fade out for smoother transition
                 
                 captions.append(line_clip)
                 
