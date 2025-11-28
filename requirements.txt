@@ -4,6 +4,8 @@ requests
 google-api-python-client
 google-generativeai
 google-cloud-texttospeech
+google-auth-oauthlib>=0.5.0  # For YouTube OAuth flow
+google-auth-httplib2>=0.1.0  # For OAuth HTTP transport
 oauth2client
 imageio[ffmpeg]
 Pillow>=10.0.0

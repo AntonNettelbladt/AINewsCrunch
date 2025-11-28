@@ -35,3 +35,10 @@ Thumbs.db
 *.json
 !package.json
 !package-lock.json
+
+# OAuth credentials (sensitive)
+credentials.json
+token.json
+client_secret.json
+oauth_credentials.json
+client_id.json

@@ -47,6 +47,21 @@ try:
 except ImportError:  # pragma: no cover - optional dependency
     load_dotenv = None
 
+try:
+    from google.oauth2.credentials import Credentials
+    from google_auth_oauthlib.flow import InstalledAppFlow
+    from google.auth.transport.requests import Request
+    from googleapiclient.discovery import build
+    from googleapiclient.http import MediaFileUpload
+    from googleapiclient.errors import HttpError
+except ImportError:  # pragma: no cover - optional dependency
+    Credentials = None
+    InstalledAppFlow = None
+    Request = None
+    build = None
+    MediaFileUpload = None
+    HttpError = None
+
 
 @dataclass
 class SourceFeed:
@@ -93,6 +108,16 @@ class Config:
     gemini_model: str = "gemini-pro"
     use_gemini: bool = True
     use_gcloud_tts: bool = True
+    # YouTube API settings
+    youtube_client_id: Optional[str] = None
+    youtube_client_secret: Optional[str] = None
+    youtube_refresh_token: Optional[str] = None
+    upload_to_youtube: bool = True
+    # TikTok API settings
+    tiktok_client_key: Optional[str] = None
+    tiktok_client_secret: Optional[str] = None
+    tiktok_access_token: Optional[str] = None
+    upload_to_tiktok: bool = True
 
 
 DEFAULT_SOURCES: List[SourceFeed] = [
@@ -391,6 +416,16 @@ def load_config() -> Config:
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-pro"),
         use_gemini=os.getenv("USE_GEMINI", "true").lower() == "true",
         use_gcloud_tts=os.getenv("USE_GCLOUD_TTS", "true").lower() == "true",
+        # YouTube API settings
+        youtube_client_id=os.getenv("YT_CLIENT_ID"),
+        youtube_client_secret=os.getenv("YT_CLIENT_SECRET"),
+        youtube_refresh_token=os.getenv("YT_REFRESH_TOKEN"),
+        upload_to_youtube=os.getenv("UPLOAD_TO_YOUTUBE", "true").lower() == "true",
+        # TikTok API settings
+        tiktok_client_key=os.getenv("TIKTOK_CLIENT_KEY"),
+        tiktok_client_secret=os.getenv("TIKTOK_CLIENT_SECRET"),
+        tiktok_access_token=os.getenv("TIKTOK_ACCESS_TOKEN"),
+        upload_to_tiktok=os.getenv("UPLOAD_TO_TIKTOK", "true").lower() == "true",
     )
     logging.debug("Loaded config: %s", config)
     return config
@@ -1245,6 +1280,354 @@ def generate_metadata(article: ArticleCandidate, script: str) -> Dict[str, str]:
     }
     logging.debug("Metadata: %s", metadata)
     return metadata
+
+
+def upload_to_youtube(video_path: Path, title: str, description: str, tags: str, config: Config, max_retries: int = 3) -> Optional[str]:
+    """Upload video to YouTube using OAuth 2.0 and YouTube Data API v3.
+    
+    Args:
+        video_path: Path to the video file to upload
+        title: Video title
+        description: Video description
+        tags: Comma-separated tags
+        config: Config object with YouTube credentials
+        max_retries: Maximum number of retry attempts
+        
+    Returns:
+        Video ID if successful, None otherwise
+    """
+    if not config.upload_to_youtube:
+        logging.info("YouTube upload disabled in config")
+        return None
+    
+    if not all([config.youtube_client_id, config.youtube_client_secret, config.youtube_refresh_token]):
+        logging.warning("YouTube credentials not configured, skipping upload")
+        return None
+    
+    if not video_path.exists():
+        logging.error("Video file not found: %s", video_path)
+        return None
+    
+    if build is None or Credentials is None or MediaFileUpload is None:
+        logging.warning("YouTube API libraries not available, skipping upload")
+        return None
+    
+    # Check file size (YouTube accepts up to 256GB, but we should warn if very large)
+    file_size_mb = video_path.stat().st_size / (1024 * 1024)
+    if file_size_mb > 100:
+        logging.warning("Video file is large (%.2f MB), upload may take a while", file_size_mb)
+    
+    for attempt in range(max_retries):
+        try:
+            # Create credentials from refresh token
+            creds = Credentials(
+                token=None,
+                refresh_token=config.youtube_refresh_token,
+                token_uri="https://oauth2.googleapis.com/token",
+                client_id=config.youtube_client_id,
+                client_secret=config.youtube_client_secret,
+            )
+            
+            # Refresh the access token
+            request = Request()
+            creds.refresh(request)
+            
+            # Build YouTube service
+            youtube = build("youtube", "v3", credentials=creds)
+            
+            # Prepare video metadata
+            body = {
+                "snippet": {
+                    "title": title[:100],  # YouTube title limit is 100 characters
+                    "description": description[:5000],  # YouTube description limit is 5000 characters
+                    "tags": tags.split(",")[:500] if tags else [],  # YouTube allows up to 500 tags
+                    "categoryId": "22",  # People & Blogs category
+                },
+                "status": {
+                    "privacyStatus": "public",
+                    "selfDeclaredMadeForKids": False,
+                },
+            }
+            
+            # Prepare media file upload with resumable upload
+            media = MediaFileUpload(
+                str(video_path),
+                chunksize=-1,  # Use default chunk size for resumable uploads
+                resumable=True,
+            )
+            
+            # Insert video
+            logging.info("Uploading video to YouTube (attempt %d/%d)...", attempt + 1, max_retries)
+            insert_request = youtube.videos().insert(
+                part=",".join(body.keys()),
+                body=body,
+                media_body=media,
+            )
+            
+            # Execute resumable upload
+            response = None
+            chunk_count = 0
+            while response is None:
+                status, response = insert_request.next_chunk()
+                if status:
+                    chunk_count += 1
+                    # Try to get progress percentage if available
+                    try:
+                        if hasattr(status, 'resumable_progress'):
+                            progress_obj = status.resumable_progress
+                            if hasattr(progress_obj, 'bytes_uploaded') and hasattr(progress_obj, 'total_bytes_uploaded'):
+                                uploaded = progress_obj.bytes_uploaded
+                                total = progress_obj.total_bytes_uploaded
+                                if total > 0:
+                                    progress = int((uploaded / total) * 100)
+                                    logging.info("Upload progress: %d%% (%d/%d bytes)", progress, uploaded, total)
+                        else:
+                            logging.debug("Upload in progress (chunk %d)...", chunk_count)
+                    except Exception:
+                        logging.debug("Upload in progress (chunk %d)...", chunk_count)
+            
+            if "id" in response:
+                video_id = response["id"]
+                logging.info("Successfully uploaded video to YouTube: https://www.youtube.com/watch?v=%s", video_id)
+                return video_id
+            else:
+                logging.error("YouTube upload completed but no video ID returned")
+                return None
+                
+        except HttpError as exc:
+            error_details = exc.error_details if hasattr(exc, 'error_details') else str(exc)
+            if exc.resp.status == 401:
+                logging.error("YouTube authentication failed. Refresh token may be expired. "
+                            "Please regenerate the token using youtube_oauth.py script.")
+                return None
+            elif exc.resp.status == 403:
+                logging.error("YouTube API quota exceeded or permission denied: %s", error_details)
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    logging.info("Retrying in %d seconds...", wait_time)
+                    time.sleep(wait_time)
+                else:
+                    return None
+            else:
+                logging.error("YouTube API error (attempt %d/%d): %s", attempt + 1, max_retries, error_details)
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    logging.info("Retrying in %d seconds...", wait_time)
+                    time.sleep(wait_time)
+                else:
+                    return None
+                    
+        except Exception as exc:
+            logging.error("YouTube upload error (attempt %d/%d): %s", attempt + 1, max_retries, exc)
+            if attempt < max_retries - 1:
+                wait_time = 2 ** attempt
+                logging.info("Retrying in %d seconds...", wait_time)
+                time.sleep(wait_time)
+            else:
+                return None
+    
+    return None
+
+
+def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: int = 3) -> Optional[str]:
+    """Upload video to TikTok using Content Posting API v2.
+    
+    Args:
+        video_path: Path to the video file to upload
+        title: Video title/caption
+        config: Config object with TikTok credentials
+        max_retries: Maximum number of retry attempts
+        
+    Returns:
+        Video ID if successful, None otherwise
+    """
+    if not config.upload_to_tiktok:
+        logging.info("TikTok upload disabled in config")
+        return None
+    
+    if not all([config.tiktok_client_key, config.tiktok_client_secret, config.tiktok_access_token]):
+        logging.warning("TikTok credentials not configured, skipping upload")
+        return None
+    
+    if not video_path.exists():
+        logging.error("Video file not found: %s", video_path)
+        return None
+    
+    # Check file size (TikTok limit is 50MB)
+    file_size_mb = video_path.stat().st_size / (1024 * 1024)
+    if file_size_mb > 50:
+        logging.error("Video file size (%.2f MB) exceeds TikTok limit (50 MB)", file_size_mb)
+        return None
+    
+    # TikTok API base URL
+    base_url = "https://open.tiktokapis.com/v2/"
+    headers = {
+        "Authorization": f"Bearer {config.tiktok_access_token}",
+    }
+    
+    for attempt in range(max_retries):
+        try:
+            # Step 1: Initialize upload to get upload_url
+            logging.info("Initializing TikTok upload (attempt %d/%d)...", attempt + 1, max_retries)
+            
+            init_payload = {
+                "post_info": {
+                    "title": title[:150],  # TikTok title limit is 150 characters
+                    "privacy_level": "PUBLIC_TO_EVERYONE",
+                    "disable_duet": False,
+                    "disable_comment": False,
+                    "disable_stitch": False,
+                    "video_cover_timestamp_ms": 1000,  # Use 1 second as cover
+                },
+                "source_info": {
+                    "source": "FILE_UPLOAD",
+                },
+            }
+            
+            init_response = requests.post(
+                f"{base_url}post/publish/video/init/",
+                headers=headers,
+                json=init_payload,
+                timeout=30,
+            )
+            init_response.raise_for_status()
+            init_data = init_response.json()
+            
+            if init_data.get("error"):
+                error_msg = init_data["error"].get("message", "Unknown error")
+                logging.error("TikTok upload initialization failed: %s", error_msg)
+                return None
+            
+            publish_id = init_data.get("data", {}).get("publish_id")
+            upload_url = init_data.get("data", {}).get("upload_url")
+            
+            if not publish_id or not upload_url:
+                logging.error("TikTok upload initialization failed: missing publish_id or upload_url")
+                return None
+            
+            logging.info("TikTok upload initialized, publish_id: %s", publish_id)
+            
+            # Step 2: Upload video file (chunked if >20MB)
+            file_size = video_path.stat().st_size
+            chunk_size = 20 * 1024 * 1024  # 20MB chunks (TikTok recommendation)
+            
+            if file_size > chunk_size:
+                # Chunked upload
+                logging.info("Uploading video in chunks (file size: %.2f MB)...", file_size_mb)
+                with open(video_path, "rb") as f:
+                    chunk_num = 0
+                    while True:
+                        chunk = f.read(chunk_size)
+                        if not chunk:
+                            break
+                        
+                        chunk_headers = {
+                            "Content-Type": "video/mp4",
+                            "Content-Range": f"bytes {chunk_num * chunk_size}-{chunk_num * chunk_size + len(chunk) - 1}/{file_size}",
+                        }
+                        
+                        chunk_response = requests.put(
+                            upload_url,
+                            headers=chunk_headers,
+                            data=chunk,
+                            timeout=60,
+                        )
+                        chunk_response.raise_for_status()
+                        chunk_num += 1
+                        logging.debug("Uploaded chunk %d", chunk_num)
+            else:
+                # Single upload
+                logging.info("Uploading video file (%.2f MB)...", file_size_mb)
+                with open(video_path, "rb") as f:
+                    upload_headers = {
+                        "Content-Type": "video/mp4",
+                    }
+                    upload_response = requests.put(
+                        upload_url,
+                        headers=upload_headers,
+                        data=f.read(),
+                        timeout=60,
+                    )
+                    upload_response.raise_for_status()
+            
+            logging.info("Video file uploaded successfully")
+            
+            # Step 3: Poll upload status until published
+            max_poll_attempts = 60  # Poll for up to 3 minutes (60 * 3 seconds)
+            poll_interval = 3  # Poll every 3 seconds
+            
+            for poll_attempt in range(max_poll_attempts):
+                status_response = requests.post(
+                    f"{base_url}post/publish/status/fetch/",
+                    headers=headers,
+                    json={"publish_id": publish_id},
+                    timeout=30,
+                )
+                status_response.raise_for_status()
+                status_data = status_response.json()
+                
+                if status_data.get("error"):
+                    error_msg = status_data["error"].get("message", "Unknown error")
+                    logging.error("TikTok status check failed: %s", error_msg)
+                    return None
+                
+                status_code = status_data.get("data", {}).get("status")
+                
+                if status_code == "PUBLISHED":
+                    video_id = status_data.get("data", {}).get("publish_id")
+                    logging.info("Successfully published video to TikTok: %s", video_id)
+                    return video_id
+                elif status_code == "FAILED":
+                    failure_reason = status_data.get("data", {}).get("fail_reason", "Unknown reason")
+                    logging.error("TikTok upload failed: %s", failure_reason)
+                    return None
+                elif status_code in ["PROCESSING", "PUBLISHING"]:
+                    logging.debug("TikTok upload status: %s (polling...)", status_code)
+                    time.sleep(poll_interval)
+                else:
+                    logging.warning("Unknown TikTok status: %s", status_code)
+                    time.sleep(poll_interval)
+            
+            logging.error("TikTok upload timed out after %d polling attempts", max_poll_attempts)
+            return None
+            
+        except requests.HTTPError as exc:
+            if exc.response.status_code == 401:
+                logging.error("TikTok authentication failed. Access token may be expired or invalid.")
+                return None
+            elif exc.response.status_code == 429:
+                logging.error("TikTok rate limit exceeded")
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt * 10  # Longer wait for rate limits
+                    logging.info("Retrying in %d seconds...", wait_time)
+                    time.sleep(wait_time)
+                else:
+                    return None
+            else:
+                error_msg = "Unknown error"
+                try:
+                    error_data = exc.response.json()
+                    error_msg = error_data.get("error", {}).get("message", str(exc))
+                except:
+                    error_msg = str(exc)
+                logging.error("TikTok API error (attempt %d/%d): %s", attempt + 1, max_retries, error_msg)
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    logging.info("Retrying in %d seconds...", wait_time)
+                    time.sleep(wait_time)
+                else:
+                    return None
+                    
+        except Exception as exc:
+            logging.error("TikTok upload error (attempt %d/%d): %s", attempt + 1, max_retries, exc)
+            if attempt < max_retries - 1:
+                wait_time = 2 ** attempt
+                logging.info("Retrying in %d seconds...", wait_time)
+                time.sleep(wait_time)
+            else:
+                return None
+    
+    return None
 
 
 def extract_keywords_for_search(article: ArticleCandidate) -> List[str]:
@@ -2180,9 +2563,66 @@ def main() -> None:
     metadata = generate_metadata(story, script)
     video_path = assemble_video(story, script, config)
 
-    logging.info("Pipeline completed successfully")
+    logging.info("Video generation completed successfully")
     logging.info("Video path: %s", video_path)
     logging.info("Metadata: %s", metadata)
+    
+    # Upload to platforms
+    youtube_video_id = None
+    tiktok_video_id = None
+    
+    # Upload to YouTube
+    if config.upload_to_youtube:
+        logging.info("Attempting to upload to YouTube...")
+        try:
+            youtube_video_id = upload_to_youtube(
+                video_path,
+                metadata["title"],
+                metadata["description"],
+                metadata["tags"],
+                config,
+            )
+            if youtube_video_id:
+                logging.info("YouTube upload successful: https://www.youtube.com/watch?v=%s", youtube_video_id)
+            else:
+                logging.warning("YouTube upload failed, but continuing with pipeline")
+        except Exception as exc:
+            logging.error("YouTube upload error: %s", exc, exc_info=True)
+            logging.warning("Continuing with pipeline despite YouTube upload failure")
+    else:
+        logging.info("YouTube upload disabled in config")
+    
+    # Upload to TikTok
+    if config.upload_to_tiktok:
+        logging.info("Attempting to upload to TikTok...")
+        try:
+            tiktok_video_id = upload_to_tiktok(
+                video_path,
+                metadata["title"],
+                config,
+            )
+            if tiktok_video_id:
+                logging.info("TikTok upload successful: %s", tiktok_video_id)
+            else:
+                logging.warning("TikTok upload failed, but continuing with pipeline")
+        except Exception as exc:
+            logging.error("TikTok upload error: %s", exc, exc_info=True)
+            logging.warning("Continuing with pipeline despite TikTok upload failure")
+    else:
+        logging.info("TikTok upload disabled in config")
+    
+    # Final summary
+    logging.info("=" * 60)
+    logging.info("Pipeline completed successfully")
+    logging.info("=" * 60)
+    logging.info("Video file: %s", video_path)
+    if youtube_video_id:
+        logging.info("YouTube: https://www.youtube.com/watch?v=%s", youtube_video_id)
+    if tiktok_video_id:
+        logging.info("TikTok: %s", tiktok_video_id)
+    if not youtube_video_id and not tiktok_video_id:
+        logging.warning("No videos were uploaded to any platform")
+    logging.info("=" * 60)
 
 
 if __name__ == "__main__":
