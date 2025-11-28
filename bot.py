@@ -2437,6 +2437,39 @@ def ease_in_out(progress: float) -> float:
     return progress * progress * (3 - 2 * progress)
 
 
+def get_coiny_font_path(config: Config) -> Optional[str]:
+    """Download and return path to Coiny font from Google Fonts.
+    Returns the font file path, or None if download fails."""
+    fonts_dir = Path(__file__).parent / "fonts"
+    fonts_dir.mkdir(exist_ok=True)
+    
+    font_path = fonts_dir / "Coiny-Regular.ttf"
+    
+    # Return cached font if it exists
+    if font_path.exists():
+        return str(font_path)
+    
+    # Download Coiny font from Google Fonts
+    try:
+        logging.info("Downloading Coiny font from Google Fonts...")
+        # Direct download link for Coiny Regular TTF
+        font_url = "https://github.com/google/fonts/raw/main/ofl/coiny/Coiny-Regular.ttf"
+        
+        response = requests.get(font_url, timeout=30)
+        response.raise_for_status()
+        
+        # Save font file
+        with open(font_path, "wb") as f:
+            f.write(response.content)
+        
+        logging.info("Coiny font downloaded successfully to %s", font_path)
+        return str(font_path)
+        
+    except Exception as exc:
+        logging.warning("Failed to download Coiny font: %s, falling back to Arial", exc)
+        return None
+
+
 def extract_word_timestamps_from_audio(audio_path: Path, script: str) -> Optional[List[Tuple[str, float, float]]]:
     """Extract word-level timestamps from audio using faster-whisper.
     Returns: List of (word, start_time, end_time) tuples, or None if extraction fails."""
@@ -2481,7 +2514,7 @@ def extract_word_timestamps_from_audio(audio_path: Path, script: str) -> Optiona
         return None
 
 
-def create_captions(script: str, audio_path: Optional[Path], duration: float, video_size: tuple) -> List[TextClip]:
+def create_captions(script: str, audio_path: Optional[Path], duration: float, video_size: tuple, config: Config) -> List[TextClip]:
     """Create modern word-by-word captions with accurate timing and smooth animations.
     
     Uses Whisper to extract accurate word timestamps from audio, then creates individual
@@ -2489,6 +2522,10 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
     """
     captions = []
     video_width, video_height = video_size
+    
+    # Get Coiny font path (downloads if needed)
+    font_path = get_coiny_font_path(config)
+    font_name = font_path if font_path else "Arial-Bold"  # Fallback to Arial if Coiny unavailable
     
     # Clean script and split into words
     clean_script = re.sub(r"\s+", " ", script).strip()
@@ -2589,6 +2626,11 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
     stroke_color = "#000000"
     stroke_width = 2
     
+    # Calculate max text width with padding on sides
+    # Video width is 1080px, add 80px padding on each side (160px total)
+    side_padding = 80
+    max_text_width = video_width - (side_padding * 2)
+    
     # Create individual word clips positioned to form lines
     for line_index, (line_words, line_start, line_end) in enumerate(lines):
         if not line_words:
@@ -2603,7 +2645,7 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
                     word,
                     fontsize=font_size,
                     color=text_color,
-                    font="Arial-Bold",
+                    font=font_name,
                     method="caption",
                     stroke_color=stroke_color,
                     stroke_width=stroke_width,
@@ -2617,74 +2659,92 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
         if not word_measurements:
             continue
         
-        # Calculate total line width (words + spacing)
-        word_spacing = 12  # Space between words in pixels
-        total_line_width = sum(w[3] for w in word_measurements) + (len(word_measurements) - 1) * word_spacing
-        line_x_start = (video_width - total_line_width) / 2
+        # Second pass: create cumulative line clips (each shows all words up to current word)
+        # This way, as each new word appears, the entire line up to that point is visible
+        displayed_text = ""
+        # max_text_width is already set above with proper padding
         
-        # Second pass: create and position each word clip with animations
-        current_x = line_x_start
         for word_idx, (word, start_time, end_time, word_width, word_height) in enumerate(word_measurements):
-            word_duration = end_time - start_time
+            # Build cumulative text (all words up to and including current word)
+            if displayed_text:
+                displayed_text += " " + word
+            else:
+                displayed_text = word
+            
+            # Calculate clip duration
+            # This clip should end when the next word's clip starts (with small overlap)
+            overlap = 0.05  # 50ms overlap for smooth transition
+            if word_idx < len(word_measurements) - 1:
+                # Next word's start time
+                next_start = word_measurements[word_idx + 1][1]
+                clip_end_time = next_start + overlap
+            else:
+                # Last word in line: use the word's end time
+                clip_end_time = end_time
+            
+            word_duration = clip_end_time - start_time
             
             # Ensure minimum duration
             if word_duration < 0.1:
                 word_duration = 0.1
-                end_time = start_time + word_duration
+                clip_end_time = start_time + word_duration
             
             # Clamp timing to video duration
             start_time = max(0.0, min(start_time, duration))
-            end_time = max(start_time + 0.1, min(end_time, duration))
-            word_duration = end_time - start_time
+            clip_end_time = max(start_time + 0.1, min(clip_end_time, duration))
+            word_duration = clip_end_time - start_time
             
             try:
-                # Create word clip with modern styling
-                word_clip = TextClip(
-                    word,
+                # Create cumulative line clip (shows all words up to current word)
+                line_clip = TextClip(
+                    displayed_text,
                     fontsize=font_size,
                     color=text_color,
-                    font="Arial-Bold",
+                    font=font_name,
                     method="caption",
+                    size=(max_text_width, None),
+                    align="center",
                     stroke_color=stroke_color,
                     stroke_width=stroke_width,
                 )
                 
-                # Modern animation: scale up from 0.85 to 1.0 with smooth easing
-                # Animation duration: 0.2 seconds
+                # Modern animation: only animate the newly added word
+                # For the first word, animate the entire line
+                # For subsequent words, the line just updates (most text stays the same)
                 animation_duration = min(0.2, word_duration * 0.5)
                 
-                def make_scale_func(anim_dur):
-                    def scale_func(t):
-                        if t < anim_dur:
-                            # Smooth ease-out curve: 1 - (1-t)^3
-                            progress = t / anim_dur
-                            ease_out = 1 - (1 - progress) ** 3
-                            return 0.85 + (0.15 * ease_out)
-                        return 1.0
-                    return scale_func
+                if word_idx == 0:
+                    # First word: animate the entire line with scale
+                    def make_scale_func(anim_dur):
+                        def scale_func(t):
+                            if t < anim_dur:
+                                # Smooth ease-out curve: 1 - (1-t)^3
+                                progress = t / anim_dur
+                                ease_out = 1 - (1 - progress) ** 3
+                                return 0.85 + (0.15 * ease_out)
+                            return 1.0
+                        return scale_func
+                    
+                    line_clip = line_clip.resize(make_scale_func(animation_duration))
+                    fade_duration = min(0.15, word_duration * 0.4)
+                    line_clip = line_clip.fadein(fade_duration)
+                else:
+                    # Subsequent words: just fade in smoothly (no scale to avoid jarring effect)
+                    fade_duration = min(0.1, word_duration * 0.3)
+                    line_clip = line_clip.fadein(fade_duration)
                 
-                # Apply scale animation
-                word_clip = word_clip.resize(make_scale_func(animation_duration))
-                
-                # Set timing and position
-                word_clip = word_clip.set_duration(word_duration).set_start(start_time)
-                word_clip = word_clip.set_position((current_x, subtitle_y_position))
-                
-                # Fade in animation (smooth opacity transition)
-                fade_duration = min(0.15, word_duration * 0.4)
-                word_clip = word_clip.fadein(fade_duration)
+                # Set timing and position (centered)
+                line_clip = line_clip.set_duration(word_duration).set_start(start_time)
+                line_clip = line_clip.set_position(("center", subtitle_y_position))
                 
                 # Fade out at the end if it's the last word in the last line
                 if line_index == len(lines) - 1 and word_idx == len(word_measurements) - 1:
-                    word_clip = word_clip.fadeout(0.3)
+                    line_clip = line_clip.fadeout(0.3)
                 
-                captions.append(word_clip)
-                
-                # Move to next word position
-                current_x += word_width + word_spacing
+                captions.append(line_clip)
                 
             except Exception as exc:
-                logging.warning("Failed to create word clip for '%s': %s", word, exc)
+                logging.warning("Failed to create cumulative line clip for word '%s': %s", word, exc)
                 continue
     
     logging.info("Created %d word caption clips", len(captions))
@@ -2883,7 +2943,7 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
             base_video = base_video.subclip(0, duration_seconds)
 
         # Create captions with accurate word-level timing
-        captions = create_captions(script, audio_path if generated_audio else None, duration_seconds, video_size)
+        captions = create_captions(script, audio_path if generated_audio else None, duration_seconds, video_size, config)
         
         # Create subtle gradient overlay at bottom (lighter since subtitles have their own backgrounds)
         # This helps with readability on bright backgrounds
