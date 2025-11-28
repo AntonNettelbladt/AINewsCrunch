@@ -25,7 +25,7 @@ from moviepy.editor import (
     concatenate_videoclips,
 )
 from newspaper import Article
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 # Compatibility shim for MoviePy with Pillow >= 10.0.0
 # MoviePy uses Image.ANTIALIAS which was removed in Pillow 10.0.0
@@ -163,6 +163,11 @@ DEFAULT_SOURCES: List[SourceFeed] = [
         weight=1.6,
     ),
     SourceFeed(
+        name="Reddit: LocalLLaMA",
+        source_type="reddit",
+        weight=1.5,
+    ),
+    SourceFeed(
         name="Hacker News AI Stories",
         source_type="hackernews",
         weight=1.6,
@@ -177,13 +182,13 @@ DEFAULT_SOURCES: List[SourceFeed] = [
     ),
     SourceFeed(
         name="VentureBeat AI",
-        rss_url="https://venturebeat.com/ai/feed/",
+        rss_url="https://venturebeat.com/feed/",
         source_type="rss",
         weight=1.5,
     ),
     SourceFeed(
         name="The Decoder",
-        rss_url="https://www.the-decoder.com/feed/",
+        rss_url="https://the-decoder.com/feed/",
         source_type="rss",
         weight=1.4,
     ),
@@ -193,6 +198,114 @@ DEFAULT_SOURCES: List[SourceFeed] = [
         source_type="rss",
         weight=1.4,
     ),
+    SourceFeed(
+        name="The Verge AI",
+        rss_url="https://www.theverge.com/rss/index.xml",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="ZDNet AI",
+        rss_url="https://www.zdnet.com/topic/artificial-intelligence/rss.xml",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="IEEE Spectrum AI",
+        rss_url="https://spectrum.ieee.org/rss/topic/artificial-intelligence/fulltext",
+        source_type="rss",
+        weight=1.4,
+    ),
+    SourceFeed(
+        name="AI Business",
+        rss_url="https://aibusiness.com/feed",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="Synced Review",
+        rss_url="https://syncedreview.com/feed/",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="Towards Data Science",
+        rss_url="https://towardsdatascience.com/feed",
+        source_type="rss",
+        weight=1.2,
+    ),
+    SourceFeed(
+        name="Analytics Insight",
+        rss_url="https://www.analyticsinsight.net/feed/",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="AI Trends",
+        rss_url="https://www.aitrends.com/feed/",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="KDnuggets",
+        rss_url="https://www.kdnuggets.com/feed",
+        source_type="rss",
+        weight=1.2,
+    ),
+    SourceFeed(
+        name="ScienceDaily AI",
+        rss_url="https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+        source_type="rss",
+        weight=1.2,
+    ),
+    SourceFeed(
+        name="Wired AI",
+        rss_url="https://www.wired.com/feed/category/artificial-intelligence/rss",
+        source_type="rss",
+        weight=1.1,
+    ),
+    SourceFeed(
+        name="NVIDIA Blog",
+        rss_url="https://feeds.feedburner.com/nvidiablog",
+        source_type="rss",
+        weight=1.4,
+    ),
+    SourceFeed(
+        name="NVIDIA News",
+        rss_url="https://nvidianews.nvidia.com/news/feed",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="OpenAI Blog",
+        rss_url="https://openai.com/blog/rss.xml",
+        source_type="rss",
+        weight=1.5,
+    ),
+    SourceFeed(
+        name="Anthropic Blog",
+        rss_url="https://www.anthropic.com/index.xml",
+        source_type="rss",
+        weight=1.4,
+    ),
+    SourceFeed(
+        name="Google AI Blog",
+        rss_url="https://ai.googleblog.com/feeds/posts/default",
+        source_type="rss",
+        weight=1.4,
+    ),
+    SourceFeed(
+        name="Microsoft AI Blog",
+        rss_url="https://blogs.microsoft.com/ai/feed/",
+        source_type="rss",
+        weight=1.3,
+    ),
+    SourceFeed(
+        name="Meta AI Research",
+        rss_url="https://ai.meta.com/blog/feed/",
+        source_type="rss",
+        weight=1.3,
+    ),
     
     # Tier 3: General Tech (Filtered for AI)
     SourceFeed(
@@ -200,6 +313,18 @@ DEFAULT_SOURCES: List[SourceFeed] = [
         rss_url="https://techcrunch.com/feed/",
         source_type="rss",
         weight=1.2,
+    ),
+    SourceFeed(
+        name="The Information",
+        rss_url="https://www.theinformation.com/feed",
+        source_type="rss",
+        weight=1.1,
+    ),
+    SourceFeed(
+        name="TechRadar AI",
+        rss_url="https://www.techradar.com/rss/news/artificial-intelligence",
+        source_type="rss",
+        weight=1.1,
     ),
     SourceFeed(
         name="Ars Technica",
@@ -212,6 +337,66 @@ DEFAULT_SOURCES: List[SourceFeed] = [
         rss_url="https://www.wired.com/feed/rss",
         source_type="rss",
         weight=1.0,
+    ),
+    SourceFeed(
+        name="Forbes AI",
+        rss_url="https://www.forbes.com/real-time/feed2/",
+        source_type="rss",
+        weight=1.0,
+    ),
+    SourceFeed(
+        name="Reuters Technology",
+        rss_url="https://www.reutersagency.com/feed/?best-topics=tech&post_type=best",
+        source_type="rss",
+        weight=0.9,
+    ),
+    SourceFeed(
+        name="Bloomberg Technology",
+        rss_url="https://www.bloomberg.com/feeds/sites/2/technology.rss",
+        source_type="rss",
+        weight=0.9,
+    ),
+    SourceFeed(
+        name="Engadget",
+        rss_url="https://www.engadget.com/rss.xml",
+        source_type="rss",
+        weight=0.9,
+    ),
+    SourceFeed(
+        name="Gizmodo",
+        rss_url="https://gizmodo.com/rss",
+        source_type="rss",
+        weight=0.9,
+    ),
+    SourceFeed(
+        name="Fast Company",
+        rss_url="https://www.fastcompany.com/feed",
+        source_type="rss",
+        weight=0.8,
+    ),
+    SourceFeed(
+        name="Quartz",
+        rss_url="https://qz.com/feed/",
+        source_type="rss",
+        weight=0.8,
+    ),
+    SourceFeed(
+        name="The Next Web",
+        rss_url="https://thenextweb.com/feed",
+        source_type="rss",
+        weight=0.8,
+    ),
+    SourceFeed(
+        name="CNET Technology",
+        rss_url="https://www.cnet.com/rss/news/",
+        source_type="rss",
+        weight=0.8,
+    ),
+    SourceFeed(
+        name="Digital Trends",
+        rss_url="https://www.digitaltrends.com/feed/",
+        source_type="rss",
+        weight=0.7,
     ),
 ]
 
@@ -484,6 +669,12 @@ USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0",
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
 ]
 
 
@@ -491,11 +682,12 @@ def get_headers(custom_headers: Optional[Dict[str, str]] = None) -> Dict[str, st
     """Get default headers with random user agent, optionally merged with custom headers."""
     headers = {
         "User-Agent": random.choice(USER_AGENTS),
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,application/rss+xml,application/atom+xml",
         "Accept-Language": "en-US,en;q=0.5",
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
         "Upgrade-Insecure-Requests": "1",
+        "Referer": "https://www.google.com/",  # Make requests look like they came from Google
     }
     if custom_headers:
         headers.update(custom_headers)
@@ -664,24 +856,67 @@ def fetch_rss_links(source: SourceFeed, max_entries: int = 5) -> List[str]:
         return ai_stories
     
     elif source.source_type == "rss" and source.rss_url:
-        # Standard RSS feed
+        # Standard RSS feed (handles RSS 2.0, Atom, and other formats)
         headers = get_headers(source.headers) if source.headers else get_headers()
         response = fetch_with_retry(source.rss_url, headers=headers)
         if not response:
             return []
 
-        try:
-            root = ET.fromstring(response.content)
-        except ET.ParseError as exc:
-            logging.warning("Malformed RSS for %s: %s", source.name, exc)
-            return []
-
         links: List[str] = []
-        for item in root.findall(".//item")[:max_entries]:
-            link_element = item.find("link")
-            if link_element is not None and link_element.text:
-                links.append(link_element.text.strip())
-        logging.debug("Found %d links for %s", len(links), source.name)
+        try:
+            # Try to parse as XML
+            root = ET.fromstring(response.content)
+            
+            # Handle RSS 2.0 format (items in <item> tags)
+            for item in root.findall(".//item")[:max_entries]:
+                link_element = item.find("link")
+                if link_element is not None and link_element.text:
+                    links.append(link_element.text.strip())
+                else:
+                    # Some RSS feeds use <guid> as link
+                    guid_element = item.find("guid")
+                    if guid_element is not None and guid_element.text:
+                        links.append(guid_element.text.strip())
+            
+            # Handle Atom format (entries in <entry> tags)
+            if not links:
+                for entry in root.findall(".//{http://www.w3.org/2005/Atom}entry")[:max_entries]:
+                    link_element = entry.find("{http://www.w3.org/2005/Atom}link")
+                    if link_element is not None:
+                        # Atom links can be in href attribute
+                        link_url = link_element.get("href") or link_element.text
+                        if link_url:
+                            links.append(link_url.strip())
+                    else:
+                        # Try id element in Atom
+                        id_element = entry.find("{http://www.w3.org/2005/Atom}id")
+                        if id_element is not None and id_element.text:
+                            links.append(id_element.text.strip())
+            
+            # Handle RSS 1.0 format (items in <item> tags with different namespace)
+            if not links:
+                for item in root.findall(".//{http://purl.org/rss/1.0/}item")[:max_entries]:
+                    link_element = item.find("{http://purl.org/rss/1.0/}link")
+                    if link_element is not None and link_element.text:
+                        links.append(link_element.text.strip())
+            
+            if links:
+                logging.debug("Found %d links for %s", len(links), source.name)
+            else:
+                logging.warning("No links found in RSS feed for %s (may be empty or different format)", source.name)
+            
+        except ET.ParseError as exc:
+            # Try to handle HTML responses that might be returned instead of RSS
+            content_str = response.content.decode('utf-8', errors='ignore')[:500]
+            if '<html' in content_str.lower() or '<!doctype' in content_str.lower():
+                logging.warning("RSS feed for %s returned HTML instead of XML (may be blocked or URL incorrect)", source.name)
+            else:
+                logging.warning("Malformed RSS for %s: %s (content preview: %s)", source.name, exc, content_str[:200])
+            return []
+        except Exception as exc:
+            logging.warning("Error parsing RSS for %s: %s", source.name, exc)
+            return []
+        
         return links
     
     return []
@@ -987,6 +1222,10 @@ def collect_candidates(sources: List[SourceFeed], max_articles: int, config: Con
             break
         
         try:
+            # Add small random delay between source requests to avoid rate limiting
+            if sources_succeeded > 0 or sources_failed > 0:  # Don't delay the first source
+                time.sleep(random.uniform(0.5, 2.0))
+            
             links = fetch_rss_links(source, max_entries=10)  # Get more links per source
             
             if not links:
@@ -1358,6 +1597,146 @@ def generate_metadata(article: ArticleCandidate, script: str) -> Dict[str, str]:
     return metadata
 
 
+def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, config: Config) -> Optional[Path]:
+    """Create a captivating thumbnail with bold text for YouTube Shorts.
+    
+    Args:
+        article: Article candidate with image URL
+        title: Video title (will be used as thumbnail text)
+        output_path: Path where thumbnail should be saved
+        config: Config object
+        
+    Returns:
+        Path to thumbnail image if successful, None otherwise
+    """
+    try:
+        # YouTube Shorts thumbnail size: 1280x720 (16:9) or 1280x1280 (1:1) for Shorts
+        # We'll use 1280x720 for better compatibility
+        thumbnail_width = 1280
+        thumbnail_height = 720
+        
+        # Create base image with gradient background
+        img = Image.new('RGB', (thumbnail_width, thumbnail_height), color='#1a1a2e')
+        draw = ImageDraw.Draw(img)
+        
+        # Add gradient background (dark blue to darker blue)
+        for y in range(thumbnail_height):
+            ratio = y / thumbnail_height
+            r = int(26 + (10 * ratio))
+            g = int(26 + (10 * ratio))
+            b = int(46 + (20 * ratio))
+            draw.line([(0, y), (thumbnail_width, y)], fill=(r, g, b))
+        
+        # Try to get article image as background
+        background_image = None
+        if article.image_url:
+            try:
+                response = requests.get(article.image_url, timeout=10, headers=get_headers())
+                if response.status_code == 200:
+                    bg_img = Image.open(BytesIO(response.content))
+                    # Resize and crop to fit
+                    bg_img = bg_img.convert('RGB')
+                    # Resize to cover the thumbnail area
+                    bg_img.thumbnail((thumbnail_width * 2, thumbnail_height * 2), Image.LANCZOS)
+                    # Center crop
+                    bg_width, bg_height = bg_img.size
+                    left = int((bg_width - thumbnail_width) / 2) if bg_width > thumbnail_width else 0
+                    top = int((bg_height - thumbnail_height) / 2) if bg_height > thumbnail_height else 0
+                    bg_img = bg_img.crop((left, top, left + thumbnail_width, top + thumbnail_height))
+                    # Darken the background image
+                    bg_img = bg_img.convert('RGB')
+                    overlay = Image.new('RGB', (thumbnail_width, thumbnail_height), color='#000000')
+                    bg_img = Image.blend(bg_img, overlay, 0.6)  # 60% dark overlay
+                    background_image = bg_img
+            except Exception as exc:
+                logging.debug("Could not load article image for thumbnail: %s", exc)
+        
+        # Paste background image if available
+        if background_image:
+            img.paste(background_image, (0, 0))
+        
+        # Get Coiny font for bold text
+        font_path = get_coiny_font_path(config)
+        
+        # Prepare text - use a shorter, punchier version of the title
+        # Limit to ~50 characters for readability
+        thumbnail_text = title[:50]
+        if len(title) > 50:
+            thumbnail_text = title[:47] + "..."
+        
+        # Split text into lines if needed (max 2 lines)
+        words = thumbnail_text.split()
+        lines = []
+        current_line = ""
+        for word in words:
+            test_line = current_line + " " + word if current_line else word
+            if len(test_line) <= 30:  # ~30 chars per line
+                current_line = test_line
+            else:
+                if current_line:
+                    lines.append(current_line)
+                current_line = word
+        if current_line:
+            lines.append(current_line)
+        lines = lines[:2]  # Max 2 lines
+        
+        # Draw text with bold styling
+        try:
+            if font_path:
+                # Use Coiny font - try different sizes
+                font_size = 80 if len(lines) == 1 else 65
+                try:
+                    font = ImageFont.truetype(font_path, font_size)
+                except:
+                    font = ImageFont.load_default()
+            else:
+                # Fallback to default bold font
+                try:
+                    font = ImageFont.truetype("arial.ttf", 80)
+                except:
+                    font = ImageFont.load_default()
+        except:
+            font = ImageFont.load_default()
+        
+        # Calculate text position (centered)
+        text_y_start = thumbnail_height // 2 - (len(lines) * 80) // 2
+        
+        # Draw text with outline (shadow effect for readability)
+        for line_idx, line in enumerate(lines):
+            # Get text dimensions
+            bbox = draw.textbbox((0, 0), line, font=font)
+            text_width = bbox[2] - bbox[0]
+            text_height = bbox[3] - bbox[1]
+            
+            # Center horizontally
+            text_x = (thumbnail_width - text_width) // 2
+            text_y = text_y_start + (line_idx * 90)
+            
+            # Draw black outline (shadow) - draw multiple times for thicker outline
+            outline_color = (0, 0, 0)
+            for adj in [(-2, -2), (-2, 2), (2, -2), (2, 2), (-2, 0), (2, 0), (0, -2), (0, 2)]:
+                draw.text((text_x + adj[0], text_y + adj[1]), line, font=font, fill=outline_color)
+            
+            # Draw white text on top
+            draw.text((text_x, text_y), line, font=font, fill='#FFFFFF')
+        
+        # Add a subtle accent bar at the bottom
+        accent_height = 8
+        draw.rectangle(
+            [(0, thumbnail_height - accent_height), (thumbnail_width, thumbnail_height)],
+            fill='#FF6B6B'  # Bright red accent
+        )
+        
+        # Save thumbnail
+        img.save(str(output_path), 'PNG', quality=95)
+        logging.info("Created thumbnail: %s", output_path)
+        return output_path
+        
+    except Exception as exc:
+        logging.error("Failed to create thumbnail: %s", exc, exc_info=True)
+        return None
+
+
 def find_youtube_channel(youtube, channel_name: str) -> Optional[str]:
     """Find YouTube channel ID by channel name or handle.
     
@@ -1432,7 +1811,7 @@ def find_youtube_channel(youtube, channel_name: str) -> Optional[str]:
         return None
 
 
-def upload_to_youtube(video_path: Path, title: str, description: str, tags: str, config: Config, max_retries: int = 3) -> Optional[str]:
+def upload_to_youtube(video_path: Path, title: str, description: str, tags: str, config: Config, thumbnail_path: Optional[Path] = None, max_retries: int = 3) -> Optional[str]:
     """Upload video to YouTube using OAuth 2.0 and YouTube Data API v3.
     
     Args:
@@ -1568,6 +1947,20 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
             if "id" in response:
                 video_id = response["id"]
                 logging.info("Successfully uploaded video to YouTube: https://www.youtube.com/watch?v=%s", video_id)
+                
+                # Upload thumbnail if provided
+                if thumbnail_path and thumbnail_path.exists():
+                    try:
+                        logging.info("Uploading thumbnail to YouTube...")
+                        youtube.thumbnails().set(
+                            videoId=video_id,
+                            media_body=MediaFileUpload(str(thumbnail_path), mimetype='image/png', resumable=False)
+                        ).execute()
+                        logging.info("Thumbnail uploaded successfully")
+                    except Exception as exc:
+                        logging.warning("Failed to upload thumbnail: %s", exc)
+                        # Don't fail the whole upload if thumbnail fails
+                
                 return video_id
             else:
                 logging.error("YouTube upload completed but no video ID returned")
@@ -3021,6 +3414,20 @@ def main() -> None:
             logging.info("Video path: %s", video_path)
             logging.info("Metadata: %s", metadata)
             
+            # Create thumbnail
+            thumbnail_path = None
+            if config.upload_to_youtube:
+                try:
+                    thumbnail_filename = f"thumbnail_{video_index + 1}_{re.sub(r'[^\w\s-]', '', story.title)[:30].strip().replace(' ', '_')}.png"
+                    thumbnail_path = config.output_dir / thumbnail_filename
+                    thumbnail_path = create_thumbnail(story, metadata["title"], thumbnail_path, config)
+                    if thumbnail_path:
+                        logging.info("Thumbnail created: %s", thumbnail_path)
+                    else:
+                        logging.warning("Thumbnail creation failed, continuing without thumbnail")
+                except Exception as exc:
+                    logging.warning("Failed to create thumbnail: %s", exc)
+            
             # Upload to platforms
             youtube_video_id = None
             tiktok_video_id = None
@@ -3035,6 +3442,7 @@ def main() -> None:
                         metadata["description"],
                         metadata["tags"],
                         config,
+                        thumbnail_path,
                     )
                     if youtube_video_id:
                         logging.info("YouTube upload successful: https://www.youtube.com/watch?v=%s", youtube_video_id)
