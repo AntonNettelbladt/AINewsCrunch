@@ -32,11 +32,12 @@ jobs:
           python -c "import nltk; nltk.download('punkt_tab', quiet=True)"
 
       - name: Setup Google Cloud Credentials
-        if: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS != '' }}
         run: |
-          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > $HOME/gcloud_credentials.json
-          chmod 600 $HOME/gcloud_credentials.json
-          echo "GCLOUD_CREDS_PATH=$HOME/gcloud_credentials.json" >> $GITHUB_ENV
+          if [ -n "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" ]; then
+            echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > $HOME/gcloud_credentials.json
+            chmod 600 $HOME/gcloud_credentials.json
+            echo "GCLOUD_CREDS_PATH=$HOME/gcloud_credentials.json" >> $GITHUB_ENV
+          fi
 
       - name: Run Tech News Pipeline
         env:
