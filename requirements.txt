@@ -11,4 +11,5 @@ imageio[ffmpeg]
 Pillow>=10.0.0
 python-dotenv
 newspaper3k
+lxml_html_clean  # Required for newspaper3k with newer lxml versions
 
