@@ -27,6 +27,11 @@ from moviepy.editor import (
 from newspaper import Article
 from PIL import Image, ImageDraw, ImageFilter
 
+# Compatibility shim for MoviePy with Pillow >= 10.0.0
+# MoviePy uses Image.ANTIALIAS which was removed in Pillow 10.0.0
+if not hasattr(Image, 'ANTIALIAS'):
+    Image.ANTIALIAS = Image.LANCZOS
+
 try:
     import edge_tts
 except ImportError:  # pragma: no cover - optional dependency
@@ -2113,9 +2118,28 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
         logging.warning("google-cloud-texttospeech not available")
         return None
     
-    # Initialize TTS client
-    if config.gcloud_tts_credentials_path:
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = config.gcloud_tts_credentials_path
+    # Handle credentials: could be a file path or JSON content (from GitHub secrets)
+    credentials_path = config.gcloud_tts_credentials_path
+    if credentials_path:
+        # Check if it's JSON content (starts with {) or a file path
+        if credentials_path.strip().startswith('{'):
+            # It's JSON content, write to temp file
+            import tempfile
+            temp_creds_file = tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False)
+            try:
+                temp_creds_file.write(credentials_path)
+                temp_creds_file.close()
+                credentials_path = temp_creds_file.name
+                logging.debug("Wrote Google Cloud credentials to temporary file")
+            except Exception as exc:
+                logging.warning("Failed to write credentials to temp file: %s", exc)
+                return None
+        elif not Path(credentials_path).exists():
+            # File path doesn't exist
+            logging.warning("Google Cloud credentials file not found: %s", credentials_path)
+            return None
+        
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
     
     try:
         client = texttospeech.TextToSpeechClient()

@@ -31,6 +31,13 @@ jobs:
         run: |
           python -c "import nltk; nltk.download('punkt_tab', quiet=True)"
 
+      - name: Setup Google Cloud Credentials
+        if: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS != '' }}
+        run: |
+          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > $HOME/gcloud_credentials.json
+          chmod 600 $HOME/gcloud_credentials.json
+          echo "GCLOUD_CREDS_PATH=$HOME/gcloud_credentials.json" >> $GITHUB_ENV
+
       - name: Run Tech News Pipeline
         env:
           YT_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -44,7 +51,7 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}  # Optional: for stock media fallback
           UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}  # Optional: for stock media fallback
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  # Required: for script generation
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}  # Optional: for TTS (or use default)
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GCLOUD_CREDS_PATH }}  # Path to credentials file (set in previous step)
           GCLOUD_TTS_VOICE: ${{ secrets.GCLOUD_TTS_VOICE }}  # Optional: TTS voice name (default: en-US-Neural2-D)
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}  # Optional: Gemini model (default: gemini-pro)
           USE_GEMINI: ${{ secrets.USE_GEMINI }}  # Optional: Enable Gemini (default: true)
