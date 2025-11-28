@@ -1,0 +1,12 @@
+moviepy==1.0.3
+edge-tts  # Optional fallback for TTS
+requests
+google-api-python-client
+google-generativeai
+google-cloud-texttospeech
+oauth2client
+imageio[ffmpeg]
+Pillow>=10.0.0
+python-dotenv
+newspaper3k
+
