@@ -419,6 +419,25 @@ def load_config() -> Config:
     output_dir = Path(os.getenv("OUTPUT_DIR", "artifacts"))
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Debug: Check if credentials are being read (without exposing values)
+    yt_client_id = os.getenv("YT_CLIENT_ID")
+    yt_client_secret = os.getenv("YT_CLIENT_SECRET")
+    yt_refresh_token = os.getenv("YT_REFRESH_TOKEN")
+    tiktok_client_key = os.getenv("TIKTOK_CLIENT_KEY")
+    tiktok_client_secret = os.getenv("TIKTOK_CLIENT_SECRET")
+    tiktok_access_token = os.getenv("TIKTOK_ACCESS_TOKEN")
+    gcloud_creds = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+    
+    logging.debug("YouTube credentials present: client_id=%s, client_secret=%s, refresh_token=%s", 
+                 "yes" if yt_client_id else "no",
+                 "yes" if yt_client_secret else "no", 
+                 "yes" if yt_refresh_token else "no")
+    logging.debug("TikTok credentials present: client_key=%s, client_secret=%s, access_token=%s",
+                 "yes" if tiktok_client_key else "no",
+                 "yes" if tiktok_client_secret else "no",
+                 "yes" if tiktok_access_token else "no")
+    logging.debug("Google Cloud TTS credentials present: %s", "yes" if gcloud_creds else "no")
+
     config = Config(
         output_dir=output_dir,
         max_script_points=int(os.getenv("MAX_SCRIPT_POINTS", "3")),
@@ -434,21 +453,21 @@ def load_config() -> Config:
         min_ai_density=float(os.getenv("MIN_AI_DENSITY", "0.3")),
         # Google API settings
         gemini_api_key=os.getenv("GEMINI_API_KEY"),
-        gcloud_tts_credentials_path=os.getenv("GOOGLE_APPLICATION_CREDENTIALS"),
+        gcloud_tts_credentials_path=gcloud_creds,
         gcloud_tts_voice_name=os.getenv("GCLOUD_TTS_VOICE", "en-US-Neural2-D"),
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-pro"),
         use_gemini=os.getenv("USE_GEMINI", "true").lower() == "true",
         use_gcloud_tts=os.getenv("USE_GCLOUD_TTS", "true").lower() == "true",
         # YouTube API settings
-        youtube_client_id=os.getenv("YT_CLIENT_ID"),
-        youtube_client_secret=os.getenv("YT_CLIENT_SECRET"),
-        youtube_refresh_token=os.getenv("YT_REFRESH_TOKEN"),
+        youtube_client_id=yt_client_id,
+        youtube_client_secret=yt_client_secret,
+        youtube_refresh_token=yt_refresh_token,
         youtube_channel_name=os.getenv("YT_CHANNEL_NAME", "Code Rush"),  # Default to "Code Rush"
         upload_to_youtube=os.getenv("UPLOAD_TO_YOUTUBE", "true").lower() == "true",
         # TikTok API settings
-        tiktok_client_key=os.getenv("TIKTOK_CLIENT_KEY"),
-        tiktok_client_secret=os.getenv("TIKTOK_CLIENT_SECRET"),
-        tiktok_access_token=os.getenv("TIKTOK_ACCESS_TOKEN"),
+        tiktok_client_key=tiktok_client_key,
+        tiktok_client_secret=tiktok_client_secret,
+        tiktok_access_token=tiktok_access_token,
         upload_to_tiktok=os.getenv("UPLOAD_TO_TIKTOK", "true").lower() == "true",
     )
     logging.debug("Loaded config: %s", config)
@@ -1406,7 +1425,11 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
         return None
     
     if not all([config.youtube_client_id, config.youtube_client_secret, config.youtube_refresh_token]):
-        logging.warning("YouTube credentials not configured, skipping upload")
+        missing = []
+        if not config.youtube_client_id: missing.append("YT_CLIENT_ID")
+        if not config.youtube_client_secret: missing.append("YT_CLIENT_SECRET")
+        if not config.youtube_refresh_token: missing.append("YT_REFRESH_TOKEN")
+        logging.warning("YouTube credentials not configured, missing: %s", ", ".join(missing))
         return None
     
     if not video_path.exists():
@@ -1576,7 +1599,11 @@ def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: 
         return None
     
     if not all([config.tiktok_client_key, config.tiktok_client_secret, config.tiktok_access_token]):
-        logging.warning("TikTok credentials not configured, skipping upload")
+        missing = []
+        if not config.tiktok_client_key: missing.append("TIKTOK_CLIENT_KEY")
+        if not config.tiktok_client_secret: missing.append("TIKTOK_CLIENT_SECRET")
+        if not config.tiktok_access_token: missing.append("TIKTOK_ACCESS_TOKEN")
+        logging.warning("TikTok credentials not configured, missing: %s", ", ".join(missing))
         return None
     
     if not video_path.exists():
@@ -2120,6 +2147,11 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
     
     # Handle credentials: could be a file path or JSON content (from GitHub secrets)
     credentials_path = config.gcloud_tts_credentials_path
+    if not credentials_path or not credentials_path.strip():
+        # No credentials provided, skip Google Cloud TTS
+        logging.debug("Google Cloud TTS credentials not provided, skipping")
+        return None
+    
     if credentials_path:
         # Check if it's JSON content (starts with {) or a file path
         if credentials_path.strip().startswith('{'):
