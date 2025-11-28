@@ -428,15 +428,15 @@ def load_config() -> Config:
     tiktok_access_token = os.getenv("TIKTOK_ACCESS_TOKEN")
     gcloud_creds = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
     
-    logging.debug("YouTube credentials present: client_id=%s, client_secret=%s, refresh_token=%s", 
+    logging.info("YouTube credentials present: client_id=%s, client_secret=%s, refresh_token=%s", 
                  "yes" if yt_client_id else "no",
                  "yes" if yt_client_secret else "no", 
                  "yes" if yt_refresh_token else "no")
-    logging.debug("TikTok credentials present: client_key=%s, client_secret=%s, access_token=%s",
+    logging.info("TikTok credentials present: client_key=%s, client_secret=%s, access_token=%s",
                  "yes" if tiktok_client_key else "no",
                  "yes" if tiktok_client_secret else "no",
                  "yes" if tiktok_access_token else "no")
-    logging.debug("Google Cloud TTS credentials present: %s", "yes" if gcloud_creds else "no")
+    logging.info("Google Cloud TTS credentials present: %s", "yes" if gcloud_creds else "no")
 
     config = Config(
         output_dir=output_dir,
@@ -2149,7 +2149,7 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
     credentials_path = config.gcloud_tts_credentials_path
     if not credentials_path or not credentials_path.strip():
         # No credentials provided, skip Google Cloud TTS
-        logging.debug("Google Cloud TTS credentials not provided, skipping")
+        logging.info("Google Cloud TTS credentials not provided, skipping")
         return None
     
     if credentials_path:
