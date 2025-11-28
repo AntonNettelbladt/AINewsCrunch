@@ -2228,29 +2228,55 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
     synthesis_input = texttospeech.SynthesisInput(text=clean_script)
     
     # Configure voice
-    # For Chirp3-HD voices (like "Achird"), set model to "chirp-3-hd"
-    # For Neural2 voices (like "en-US-Neural2-D"), don't set model (uses default)
+    # Chirp3-HD voices can be specified in two ways:
+    # 1. Full format: "en-US-Chirp3-HD-Achird" (model not needed)
+    # 2. Short format: "Achird" (requires model="chirp-3-hd")
+    # Neural2 voices use format: "en-US-Neural2-D" or "en-US-Neural2-F"
+    
+    # Determine if this is a Chirp3-HD voice and construct proper voice name
+    is_chirp3_hd = False
+    voice_name = config.gcloud_tts_voice_name
     voice_params = {
         "language_code": config.gcloud_tts_language_code,
-        "name": config.gcloud_tts_voice_name,
     }
     
-    # Determine TTS model based on voice name
-    tts_model = None
-    if config.gcloud_tts_voice_name and not config.gcloud_tts_voice_name.startswith("en-US-") and not config.gcloud_tts_voice_name.startswith(config.gcloud_tts_language_code + "-"):
-        # This is likely a Chirp3-HD voice, set the model
-        voice_params["model"] = "chirp-3-hd"
+    # Check if voice name already contains "Chirp3-HD" in the name (full format)
+    if "Chirp3-HD" in voice_name or "chirp3-hd" in voice_name.lower():
+        is_chirp3_hd = True
+        voice_params["name"] = voice_name
+        # Full format already includes model, no need to set model parameter
+    else:
+        # Check if it's a known Chirp3-HD short name
+        chirp3_hd_voices = ["Achird", "Aurora", "Charon", "Fenrir", "Kore", "Puck", "Rhea", "Triton"]
+        if voice_name in chirp3_hd_voices:
+            is_chirp3_hd = True
+            # Construct full voice name: "en-US-Chirp3-HD-Achird"
+            voice_params["name"] = f"{config.gcloud_tts_language_code}-Chirp3-HD-{voice_name}"
+            # Also set model parameter for compatibility
+            voice_params["model"] = "chirp-3-hd"
+        elif voice_name and not voice_name.startswith(config.gcloud_tts_language_code + "-Neural"):
+            # Short name that might be Chirp3-HD, construct full name and set model
+            voice_params["name"] = f"{config.gcloud_tts_language_code}-Chirp3-HD-{voice_name}"
+            voice_params["model"] = "chirp-3-hd"
+            is_chirp3_hd = True
+        else:
+            # Neural2 or other standard voices
+            voice_params["name"] = voice_name
+    
+    # Determine TTS model for logging
+    if is_chirp3_hd:
         tts_model = "Chirp3-HD"
     else:
-        # Neural2 or other standard voices
         tts_model = "Neural2 (default)"
     
     # Log detailed TTS configuration
     logging.info("=" * 60)
     logging.info("Google Cloud TTS Configuration:")
     logging.info("  Model: %s", tts_model)
-    logging.info("  Voice Name: %s", config.gcloud_tts_voice_name)
+    logging.info("  Voice Name: %s", voice_params["name"])
     logging.info("  Language/Locale: %s", config.gcloud_tts_language_code)
+    if "model" in voice_params:
+        logging.info("  Model Parameter: %s", voice_params["model"])
     logging.info("  Audio Encoding: MP3")
     logging.info("  Speaking Rate: 1.0")
     logging.info("  Pitch: 0.0")
