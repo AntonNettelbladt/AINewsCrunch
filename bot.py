@@ -3524,7 +3524,9 @@ def main() -> None:
             thumbnail_path = None
             if config.upload_to_youtube:
                 try:
-                    thumbnail_filename = f"thumbnail_{video_index + 1}_{re.sub(r'[^\w\s-]', '', story.title)[:30].strip().replace(' ', '_')}.png"
+                    # Clean title for filename (move regex outside f-string to avoid backslash issue)
+                    safe_title = re.sub(r'[^\w\s-]', '', story.title)[:30].strip().replace(' ', '_')
+                    thumbnail_filename = f"thumbnail_{video_index + 1}_{safe_title}.png"
                     thumbnail_path = config.output_dir / thumbnail_filename
                     thumbnail_path = create_thumbnail(story, metadata["title"], thumbnail_path, config)
                     if thumbnail_path:
