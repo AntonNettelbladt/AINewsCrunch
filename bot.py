@@ -2368,177 +2368,151 @@ def create_captions(script: str, duration: float, video_size: tuple) -> List[Tex
     words_per_second = len(words) / duration if duration > 0 else 2.5
     seconds_per_word = 1.0 / words_per_second if words_per_second > 0 else 0.4
     
-    # Group words into caption chunks (max ~8-10 words per caption for readability)
-    max_words_per_caption = 8
-    caption_chunks = []
-    current_chunk = []
-    current_chunk_start_time = 0.0
+    # Group words into lines (max ~8-10 words per line for readability)
+    max_words_per_line = 8
+    lines = []
+    current_line = []
     
-    for i, word in enumerate(words):
-        word_start_time = i * seconds_per_word
-        word_end_time = (i + 1) * seconds_per_word
-        
-        # Start new chunk if current is full or at natural break (punctuation)
-        if len(current_chunk) >= max_words_per_caption or (word.endswith(('.', '!', '?', ',')) and len(current_chunk) >= 4):
-            if current_chunk:
-                chunk_text = " ".join(current_chunk)
-                chunk_start = current_chunk_start_time
-                chunk_end = word_start_time
-                caption_chunks.append((chunk_text, chunk_start, chunk_end))
-            current_chunk = [word]
-            current_chunk_start_time = word_start_time
+    for word in words:
+        # Start new line if current is full or at natural break (punctuation)
+        if len(current_line) >= max_words_per_line or (word.endswith(('.', '!', '?', ',')) and len(current_line) >= 4):
+            if current_line:
+                lines.append(current_line)
+            current_line = [word]
         else:
-            current_chunk.append(word)
+            current_line.append(word)
     
-    # Add final chunk
-    if current_chunk:
-        chunk_text = " ".join(current_chunk)
-        chunk_start = current_chunk_start_time
-        chunk_end = duration
-        caption_chunks.append((chunk_text, chunk_start, chunk_end))
+    # Add final line
+    if current_line:
+        lines.append(current_line)
     
-    # Modern styling constants
-    font_size = 50
-    max_text_width = 900  # Max width for text (with margins)
-    padding = 25  # Padding around text in background box
-    corner_radius = 20  # Rounded corner radius
-    subtitle_y_position = video_height - 320  # Position in lower third, not at bottom
+    # Simple, clean styling constants (matching reference design)
+    font_size = 48
+    max_text_width = 1000  # Max width for text
+    padding = 20  # Padding around text in background box
+    corner_radius = 15  # Rounded corner radius
+    subtitle_y_position = video_height - 150  # Position near bottom center
     
-    # Modern color scheme
-    text_color = "#FFFFFF"  # Bright white
-    start_bg_color = (30, 30, 50)  # Dark blue-purple
-    end_bg_color = (0, 0, 0)  # Black
-    bg_opacity = 0.85
+    # Simple color scheme - dark grey background, white text
+    text_color = "#FFFFFF"  # White text
+    bg_color = (64, 64, 64)  # Dark grey (RGB for ~#404040)
+    bg_opacity = 0.95  # Slightly transparent but mostly opaque
+    
+    # Word animation settings
+    word_fade_in = 0.15  # Quick fade in for each word
+    word_duration_overlap = 0.1  # Small overlap between words
     
     with tempfile.TemporaryDirectory() as tmp_dir:
         tmp_path = Path(tmp_dir)
         
-        for i, (phrase, start_time, end_time) in enumerate(caption_chunks):
-            # Ensure timing is within video duration
-            start_time = max(0.0, min(start_time, duration - 0.5))
-            end_time = max(start_time + 0.5, min(end_time, duration))
-            phrase_duration = end_time - start_time
-            
-            if phrase_duration < 0.3:  # Skip very short captions
+        word_index = 0
+        for line_index, line_words in enumerate(lines):
+            if not line_words:
                 continue
             
-            # Smart truncation - break at word boundaries if needed
-            if len(phrase) > 80:
-                words = phrase.split()
-                truncated = []
-                char_count = 0
-                for word in words:
-                    if char_count + len(word) + 1 > 77:
-                        break
-                    truncated.append(word)
-                    char_count += len(word) + 1
-                phrase = " ".join(truncated) + "..."
+            # Calculate timing for this line
+            line_start_time = word_index * seconds_per_word
+            line_end_time = (word_index + len(line_words)) * seconds_per_word
+            line_duration = line_end_time - line_start_time
+            
+            # Ensure timing is within video duration
+            if line_start_time >= duration:
+                break
+            line_end_time = min(line_end_time, duration)
+            
+            # Build the full line text for background sizing
+            full_line_text = " ".join(line_words)
             
             try:
-                # Create text clip first to determine size
-                txt_clip = TextClip(
-                    phrase,
+                # Create full line text clip to determine background size
+                full_txt_clip = TextClip(
+                    full_line_text,
                     fontsize=font_size,
                     color=text_color,
-                    stroke_color="black",
-                    stroke_width=2,
                     method="caption",
                     size=(max_text_width, None),
                     align="center",
-                    font="Arial-Bold",  # Use bold for better readability
+                    font="Arial",
                 )
                 
-                # Get text dimensions
-                text_w, text_h = txt_clip.size
-                
-                # Create background box with padding
+                # Get text dimensions for background
+                text_w, text_h = full_txt_clip.size
                 bg_width = min(text_w + padding * 2, max_text_width + padding * 2)
                 bg_height = text_h + padding * 2
                 
-                # Create gradient background
-                bg_image = create_gradient_background(
-                    bg_width, bg_height, start_bg_color, end_bg_color, bg_opacity
-                )
-                
-                # Create rounded rectangle mask
-                mask = Image.new('L', (bg_width, bg_height), 0)
-                mask_draw = ImageDraw.Draw(mask)
-                mask_draw.rounded_rectangle(
+                # Create background for this line (appears at start of line, stays until end)
+                bg_image = Image.new('RGBA', (bg_width, bg_height), (0, 0, 0, 0))
+                bg_draw = ImageDraw.Draw(bg_image)
+                bg_draw.rounded_rectangle(
                     [(0, 0), (bg_width, bg_height)],
                     radius=corner_radius,
-                    fill=255  # White for visible area
+                    fill=(*bg_color, int(255 * bg_opacity))
                 )
                 
-                # Apply rounded mask to gradient background
-                final_bg = Image.new('RGBA', (bg_width, bg_height), (0, 0, 0, 0))
-                final_bg.paste(bg_image, (0, 0))
-                final_bg.putalpha(mask)
+                bg_path = tmp_path / f"subtitle_bg_line_{line_index}.png"
+                bg_image.save(bg_path, "PNG")
                 
-                # Save background to temp file
-                bg_path = tmp_path / f"subtitle_bg_{i}.png"
-                final_bg.save(bg_path, "PNG")
-                
-                # Create background clip
-                bg_clip = ImageClip(str(bg_path)).set_duration(phrase_duration).set_start(start_time)
-                
-                # Position background (will be animated)
-                final_y = subtitle_y_position
-                start_y = final_y + 30  # Start 30px below final position
-                
-                # Animate position with easing
-                def animate_y(t):
-                    if t < 0.4:  # Animation duration
-                        progress = t / 0.4
-                        eased = ease_out_cubic(progress)
-                        return start_y + (final_y - start_y) * eased
-                    return final_y
-                
-                # Animate scale
-                def animate_scale(t):
-                    if t < 0.4:  # Animation duration
-                        progress = t / 0.4
-                        eased = ease_out_cubic(progress)
-                        return 0.9 + 0.1 * eased  # Scale from 0.9 to 1.0
-                    return 1.0
-                
-                bg_clip = bg_clip.set_position(lambda t: ("center", animate_y(t)))
-                bg_clip = bg_clip.resize(lambda t: animate_scale(t))
-                
-                # Position text centered on background
-                # Both background and text use "center" alignment, so they align at the same y position
-                txt_clip = txt_clip.set_duration(phrase_duration).set_start(start_time)
-                txt_clip = txt_clip.set_position(lambda t: ("center", animate_y(t)))
-                
-                # Enhanced fade transitions
-                fade_in_duration = 0.3
-                fade_out_duration = 0.4
-                
-                # Apply fades
-                bg_clip = bg_clip.fadein(fade_in_duration).fadeout(fade_out_duration)
-                txt_clip = txt_clip.fadein(fade_in_duration).fadeout(fade_out_duration)
-                
-                # Add both background and text to captions
+                # Create background clip for entire line duration
+                bg_clip = ImageClip(str(bg_path)).set_duration(line_duration).set_start(line_start_time)
+                bg_clip = bg_clip.set_position(("center", subtitle_y_position))
+                bg_clip = bg_clip.fadein(0.2).fadeout(0.2)
                 captions.append(bg_clip)
-                captions.append(txt_clip)
                 
-            except Exception as exc:
-                logging.warning("Failed to create modern caption '%s': %s", phrase[:30], exc)
-                # Fallback to simple text clip
-                try:
-                    simple_clip = TextClip(
-                        phrase,
+                # Create individual word clips that appear sequentially
+                displayed_words = []  # Track words shown so far
+                
+                for word_idx, word in enumerate(line_words):
+                    word_start_time = (word_index + word_idx) * seconds_per_word
+                    # Word stays visible until next word appears (with small overlap)
+                    if word_idx < len(line_words) - 1:
+                        word_end_time = (word_index + word_idx + 1) * seconds_per_word + word_duration_overlap
+                    else:
+                        # Last word in line stays until line ends
+                        word_end_time = line_end_time
+                    
+                    word_start_time = max(0.0, min(word_start_time, duration))
+                    word_end_time = max(word_start_time + 0.1, min(word_end_time, duration))
+                    word_duration = word_end_time - word_start_time
+                    
+                    if word_duration < 0.1:
+                        continue
+                    
+                    # Build text showing all words up to and including this word
+                    displayed_words.append(word)
+                    current_text = " ".join(displayed_words)
+                    
+                    # Create text clip for current state (all words shown so far)
+                    word_txt_clip = TextClip(
+                        current_text,
                         fontsize=font_size,
                         color=text_color,
-                        stroke_color="black",
-                        stroke_width=2,
                         method="caption",
                         size=(max_text_width, None),
                         align="center",
-                    ).set_duration(phrase_duration).set_start(start_time).set_position(("center", subtitle_y_position))
-                    simple_clip = simple_clip.fadein(0.3).fadeout(0.4)
-                    captions.append(simple_clip)
-                except:
-                    logging.debug("Failed to create fallback caption")
+                        font="Arial",
+                    )
+                    
+                    # Position and animate word
+                    word_txt_clip = word_txt_clip.set_duration(word_duration).set_start(word_start_time)
+                    word_txt_clip = word_txt_clip.set_position(("center", subtitle_y_position))
+                    
+                    # Fade in this word (only the new word, but we show all words so far)
+                    # To make it look like words appear one by one, we fade in quickly
+                    word_txt_clip = word_txt_clip.fadein(word_fade_in)
+                    
+                    # Fade out at the end if it's the last word in line
+                    if word_idx == len(line_words) - 1:
+                        word_txt_clip = word_txt_clip.fadeout(0.2)
+                    
+                    captions.append(word_txt_clip)
+                
+                word_index += len(line_words)
+                
+            except Exception as exc:
+                logging.warning("Failed to create word-animated caption line %d: %s", line_index, exc)
+                # Fallback: skip this line and continue
+                word_index += len(line_words)
+                continue
     
     return captions
 
