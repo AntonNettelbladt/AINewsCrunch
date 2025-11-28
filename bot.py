@@ -112,6 +112,7 @@ class Config:
     youtube_client_id: Optional[str] = None
     youtube_client_secret: Optional[str] = None
     youtube_refresh_token: Optional[str] = None
+    youtube_channel_name: Optional[str] = None  # Channel name or handle to upload to (e.g., "Code Rush" or "@CodeRush_AI")
     upload_to_youtube: bool = True
     # TikTok API settings
     tiktok_client_key: Optional[str] = None
@@ -420,6 +421,7 @@ def load_config() -> Config:
         youtube_client_id=os.getenv("YT_CLIENT_ID"),
         youtube_client_secret=os.getenv("YT_CLIENT_SECRET"),
         youtube_refresh_token=os.getenv("YT_REFRESH_TOKEN"),
+        youtube_channel_name=os.getenv("YT_CHANNEL_NAME", "Code Rush"),  # Default to "Code Rush"
         upload_to_youtube=os.getenv("UPLOAD_TO_YOUTUBE", "true").lower() == "true",
         # TikTok API settings
         tiktok_client_key=os.getenv("TIKTOK_CLIENT_KEY"),
@@ -1282,6 +1284,80 @@ def generate_metadata(article: ArticleCandidate, script: str) -> Dict[str, str]:
     return metadata
 
 
+def find_youtube_channel(youtube, channel_name: str) -> Optional[str]:
+    """Find YouTube channel ID by channel name or handle.
+    
+    Args:
+        youtube: Authenticated YouTube API service object
+        channel_name: Channel name (e.g., "Code Rush") or handle (e.g., "@CodeRush_AI")
+        
+    Returns:
+        Channel ID if found, None otherwise
+    """
+    try:
+        # List all channels accessible by the authenticated user
+        channels_response = youtube.channels().list(
+            part="snippet,id",
+            mine=True,
+            maxResults=50
+        ).execute()
+        
+        channels = channels_response.get("items", [])
+        
+        if not channels:
+            logging.warning("No channels found for authenticated account")
+            return None
+        
+        # Normalize search terms
+        search_name = channel_name.lower().strip()
+        # Remove @ symbol if present
+        if search_name.startswith("@"):
+            search_name = search_name[1:]
+        
+        # Search for matching channel
+        for channel in channels:
+            channel_id = channel["id"]
+            snippet = channel.get("snippet", {})
+            title = snippet.get("title", "").lower()
+            custom_url = snippet.get("customUrl", "").lower()
+            # Remove @ from custom URL for comparison
+            if custom_url.startswith("@"):
+                custom_url = custom_url[1:]
+            
+            # Check if channel name or handle matches
+            if (search_name in title or 
+                search_name == custom_url or
+                search_name in custom_url or
+                custom_url in search_name):
+                channel_title = snippet.get("title", "Unknown")
+                channel_handle = snippet.get("customUrl", "")
+                logging.info("Found matching channel: '%s' (%s) - ID: %s", 
+                           channel_title, channel_handle or "no handle", channel_id)
+                return channel_id
+        
+        # If no exact match, log available channels for debugging
+        logging.warning("Channel '%s' not found. Available channels:", channel_name)
+        for channel in channels:
+            snippet = channel.get("snippet", {})
+            title = snippet.get("title", "Unknown")
+            handle = snippet.get("customUrl", "")
+            logging.warning("  - '%s' (%s)", title, handle or "no handle")
+        
+        # Return the first channel as fallback (default channel)
+        if channels:
+            default_channel = channels[0]
+            default_title = default_channel.get("snippet", {}).get("title", "Unknown")
+            default_id = default_channel["id"]
+            logging.warning("Using default channel '%s' (ID: %s) as fallback", default_title, default_id)
+            return default_id
+        
+        return None
+        
+    except Exception as exc:
+        logging.error("Error finding YouTube channel: %s", exc)
+        return None
+
+
 def upload_to_youtube(video_path: Path, title: str, description: str, tags: str, config: Config, max_retries: int = 3) -> Optional[str]:
     """Upload video to YouTube using OAuth 2.0 and YouTube Data API v3.
     
@@ -1334,6 +1410,31 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
             
             # Build YouTube service
             youtube = build("youtube", "v3", credentials=creds)
+            
+            # Find and verify the target channel
+            target_channel_id = None
+            if config.youtube_channel_name:
+                logging.info("Looking for YouTube channel: '%s'", config.youtube_channel_name)
+                target_channel_id = find_youtube_channel(youtube, config.youtube_channel_name)
+                if target_channel_id:
+                    logging.info("Will upload to channel ID: %s", target_channel_id)
+                else:
+                    logging.warning("Could not find specified channel '%s', will use default channel", 
+                                  config.youtube_channel_name)
+            else:
+                # Get default channel
+                try:
+                    channels_response = youtube.channels().list(
+                        part="snippet,id",
+                        mine=True,
+                        maxResults=1
+                    ).execute()
+                    if channels_response.get("items"):
+                        target_channel_id = channels_response["items"][0]["id"]
+                        channel_title = channels_response["items"][0].get("snippet", {}).get("title", "Unknown")
+                        logging.info("Using default channel: '%s' (ID: %s)", channel_title, target_channel_id)
+                except Exception as exc:
+                    logging.warning("Could not determine channel, proceeding with upload: %s", exc)
             
             # Prepare video metadata
             body = {
