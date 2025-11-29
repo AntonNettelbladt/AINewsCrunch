@@ -2056,16 +2056,68 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
                 
                 # Upload thumbnail if provided
                 if thumbnail_path and thumbnail_path.exists():
-                    try:
-                        logging.info("Uploading thumbnail to YouTube...")
-                        youtube.thumbnails().set(
-                            videoId=video_id,
-                            media_body=MediaFileUpload(str(thumbnail_path), mimetype='image/png', resumable=False)
-                        ).execute()
-                        logging.info("Thumbnail uploaded successfully")
-                    except Exception as exc:
-                        logging.warning("Failed to upload thumbnail: %s", exc)
-                        # Don't fail the whole upload if thumbnail fails
+                    # YouTube requires a short delay after video upload before thumbnail can be set
+                    # Wait a few seconds to ensure video is processed
+                    logging.info("Waiting 5 seconds before uploading thumbnail (YouTube processing delay)...")
+                    time.sleep(5)
+                    
+                    # Retry thumbnail upload up to 3 times
+                    thumbnail_uploaded = False
+                    for thumb_attempt in range(3):
+                        try:
+                            logging.info("Uploading thumbnail to YouTube (attempt %d/3)...", thumb_attempt + 1)
+                            
+                            # Verify thumbnail file is valid and is PNG format
+                            try:
+                                img = Image.open(thumbnail_path)
+                                if img.format != 'PNG':
+                                    logging.warning("Thumbnail is not PNG format (%s), converting to PNG...", img.format)
+                                    # Convert to PNG if needed
+                                    png_path = thumbnail_path.with_suffix('.png')
+                                    img.save(png_path, 'PNG')
+                                    thumbnail_path = png_path
+                                    logging.info("Converted thumbnail to PNG: %s", thumbnail_path)
+                                img.close()  # Close the image file
+                            except Exception as img_exc:
+                                logging.warning("Thumbnail image validation failed: %s", img_exc)
+                                # Continue anyway - YouTube API will reject if invalid
+                            
+                            # Upload thumbnail
+                            youtube.thumbnails().set(
+                                videoId=video_id,
+                                media_body=MediaFileUpload(str(thumbnail_path), mimetype='image/png', resumable=False)
+                            ).execute()
+                            
+                            logging.info("Thumbnail uploaded successfully")
+                            thumbnail_uploaded = True
+                            break
+                            
+                        except HttpError as exc:
+                            error_details = exc.error_details if hasattr(exc, 'error_details') else str(exc)
+                            if exc.resp.status == 404:
+                                # Video might not be ready yet, wait longer and retry
+                                if thumb_attempt < 2:
+                                    wait_time = 5 * (thumb_attempt + 1)  # 5, 10, 15 seconds
+                                    logging.warning("Video not ready for thumbnail upload (404), waiting %d seconds before retry...", wait_time)
+                                    time.sleep(wait_time)
+                                else:
+                                    logging.error("Failed to upload thumbnail after retries: Video not found (404)")
+                            elif exc.resp.status == 403:
+                                logging.error("Permission denied for thumbnail upload (403): %s", error_details)
+                                break  # Don't retry on permission errors
+                            else:
+                                logging.warning("Thumbnail upload failed (attempt %d/3): %s", thumb_attempt + 1, error_details)
+                                if thumb_attempt < 2:
+                                    time.sleep(3)
+                        except Exception as exc:
+                            logging.warning("Thumbnail upload error (attempt %d/3): %s", thumb_attempt + 1, exc)
+                            if thumb_attempt < 2:
+                                time.sleep(3)
+                    
+                    if not thumbnail_uploaded:
+                        logging.warning("Failed to upload thumbnail after all retries, but video upload was successful")
+                elif thumbnail_path:
+                    logging.warning("Thumbnail path provided but file does not exist: %s", thumbnail_path)
                 
                 return video_id
             else:
