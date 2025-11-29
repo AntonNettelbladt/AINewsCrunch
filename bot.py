@@ -3111,14 +3111,18 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
     bottom_margin = 250
     max_text_width = video_width - (side_padding * 2)
     
-    # Create clips for each line
+    # Pre-calculate line heights and positions for consistent stacking
+    # First, create test clips for all lines to get accurate heights
+    line_heights = []
+    line_texts = []
     for line_index, (line_words, line_start, line_end) in enumerate(lines):
         if not line_words:
+            line_heights.append(0)
+            line_texts.append("")
             continue
         
-        # Calculate y position for this line (stack from bottom)
-        # Estimate line height first
         line_text = " ".join([w[0] for w in line_words])
+        line_texts.append(line_text)
         try:
             test_clip = TextClip(
                 line_text,
@@ -3129,14 +3133,41 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
                 stroke_color=stroke_color,
                 stroke_width=stroke_width,
             )
-            _, estimated_line_height = test_clip.size
+            # Check if scaling is needed
+            test_width, test_height = test_clip.size
+            if test_width > max_text_width:
+                scale_factor = max_text_width / test_width
+                test_clip = test_clip.resize(scale_factor)
+                _, test_height = test_clip.size
+            line_heights.append(test_height)
         except:
-            estimated_line_height = font_size + 20
+            # Fallback height estimate
+            line_heights.append(font_size + 20)
+    
+    # Calculate fixed y positions for each line (stacking from bottom)
+    # Position from bottom, accounting for actual text heights
+    line_spacing = 15  # Reduced spacing for better visual consistency
+    line_positions = []  # Store bottom y-coordinate for each line
+    
+    # Calculate cumulative height from bottom
+    cumulative_height = bottom_margin
+    for line_index in range(len(lines) - 1, -1, -1):  # Iterate from last line to first
+        if line_heights[line_index] > 0:
+            # Position is from bottom: video_height - cumulative_height - line_height
+            # But set_position uses top coordinate, so we use: video_height - cumulative_height
+            line_bottom_y = video_height - cumulative_height
+            line_positions.insert(0, line_bottom_y)  # Insert at beginning to maintain order
+            cumulative_height += line_heights[line_index] + line_spacing
+        else:
+            line_positions.insert(0, 0)
+    
+    # Create clips for each line
+    for line_index, (line_words, line_start, line_end) in enumerate(lines):
+        if not line_words:
+            continue
         
-        # Calculate y position: bottom margin + (line_index * (line_height + spacing))
-        line_spacing = 25
-        y_offset = bottom_margin + (len(lines) - 1 - line_index) * (estimated_line_height + line_spacing)
-        subtitle_y = video_height - y_offset
+        # Get pre-calculated position for this line (this is the bottom y-coordinate)
+        line_bottom_y = line_positions[line_index]
         
         # Create cumulative word clips for this line
         displayed_text = ""
@@ -3179,8 +3210,16 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
                     line_clip = line_clip.resize(scale_factor)
                     clip_width, clip_height = line_clip.size
                 
+                # Position: center horizontally, fixed y position from bottom
+                # set_position uses top coordinate, so subtract the actual clip height
+                # This ensures the text bottom aligns with line_bottom_y
+                subtitle_y = line_bottom_y - clip_height
+                
+                # Ensure text doesn't go above safe area (top padding)
+                top_padding = 100  # Safe area from top
+                subtitle_y = max(top_padding, subtitle_y)
+                
                 # Position: center horizontally, fixed y position
-                # Use 'center' for x to ensure proper centering
                 line_clip = line_clip.set_duration(word_duration).set_start(start_time)
                 line_clip = line_clip.set_position(("center", subtitle_y))
                 
