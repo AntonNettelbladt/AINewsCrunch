@@ -14,4 +14,5 @@ newspaper3k
 lxml_html_clean  # Required for newspaper3k with newer lxml versions
 nltk  # Required for newspaper3k tokenization
 faster-whisper>=1.0.0  # For accurate word-level timestamp extraction
+pysubs2>=1.6.0  # For ASS subtitle file generation
 

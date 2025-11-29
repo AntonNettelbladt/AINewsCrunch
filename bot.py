@@ -4,6 +4,8 @@ import logging
 import os
 import random
 import re
+import shutil
+import subprocess
 import tempfile
 import textwrap
 import time
@@ -47,6 +49,11 @@ try:
     from google.cloud import texttospeech
 except ImportError:  # pragma: no cover - optional dependency
     texttospeech = None
+
+try:
+    import pysubs2
+except ImportError:  # pragma: no cover - optional dependency
+    pysubs2 = None
 
 try:
     from dotenv import load_dotenv
@@ -3065,27 +3072,34 @@ def extract_word_timestamps_from_audio(audio_path: Path, script: str) -> Optiona
         return None
 
 
-def create_captions(script: str, audio_path: Optional[Path], duration: float, video_size: tuple, config: Config) -> List[TextClip]:
-    """Create word-by-word captions with accurate timing.
+def create_subtitle_file(script: str, audio_path: Optional[Path], duration: float, video_size: tuple, config: Config, output_path: Path) -> Optional[Path]:
+    """Create ASS subtitle file with word-by-word captions and accurate timing.
     
     Uses Whisper to extract accurate word timestamps from audio, then creates
-    cumulative text clips that build up word by word, positioned safely at the bottom.
+    an ASS subtitle file with cumulative word-by-word display, positioned safely at the bottom.
+    
+    Returns:
+        Path to the ASS subtitle file if successful, None otherwise
     """
-    captions = []
+    if pysubs2 is None:
+        logging.error("pysubs2 not available, cannot create subtitles")
+        return None
+    
     video_width, video_height = video_size
     
     # Get Coiny font path (downloads if needed)
     font_path = get_coiny_font_path(config)
-    font_name = font_path if font_path else "Arial-Bold"  # Fallback to Arial if Coiny unavailable
+    font_name = "Coiny" if font_path else "Arial"  # Use font name, not path for ASS
     
     # Clean script and split into words
     clean_script = re.sub(r"\s+", " ", script).strip()
     script_words = clean_script.split()
     
     if not script_words:
-        return captions
+        logging.warning("No words in script, cannot create subtitles")
+        return None
     
-    # Extract accurate word timestamps from audio
+    # Extract accurate word timestamps from audio using Whisper
     whisper_timings = None
     if audio_path and audio_path.exists():
         whisper_timings = extract_word_timestamps_from_audio(audio_path, clean_script)
@@ -3127,7 +3141,7 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
             for i, word in enumerate(script_words)
         ]
     
-    # Group words into lines (max 8 words per line)
+    # Group words into lines (max 8 words per line, or break on punctuation)
     max_words_per_line = 8
     lines = []
     current_line = []
@@ -3152,74 +3166,31 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
     if current_line:
         lines.append((current_line, current_line_start, word_timings[-1][2]))
     
-    # Styling
-    font_size = 56
-    text_color = "#FFFFFF"
-    stroke_color = "#000000"
-    stroke_width = 2
+    # Create ASS subtitle file
+    subs = pysubs2.SSAFile()
     
-    # Safe area: leave 120px padding on sides and 250px from bottom
-    side_padding = 120
-    bottom_margin = 250
-    max_text_width = video_width - (side_padding * 2)
+    # Define styles for subtitles
+    # ASS uses a specific format: StyleName,FontName,FontSize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+    style = pysubs2.SSAStyle()
+    style.fontname = font_name
+    style.fontsize = 38  # Good balance for 1080x1920 video subtitles
+    style.primarycolor = pysubs2.Color(255, 255, 255, 0)  # White text
+    style.outlinecolor = pysubs2.Color(0, 0, 0, 0)  # Black outline
+    style.backcolor = pysubs2.Color(0, 0, 0, 128)  # Semi-transparent black background for better visibility
+    style.bold = True
+    style.outline = 3  # Thicker outline for better visibility
+    style.shadow = 2  # Add shadow for better contrast
+    style.alignment = 2  # Bottom center alignment
+    style.marginl = 80  # Left margin
+    style.marginr = 80  # Right margin
+    style.marginv = 200  # Bottom margin (distance from bottom edge)
     
-    # Pre-calculate line heights and positions for consistent stacking
-    # First, create test clips for all lines to get accurate heights
-    line_heights = []
-    line_texts = []
-    for line_index, (line_words, line_start, line_end) in enumerate(lines):
-        if not line_words:
-            line_heights.append(0)
-            line_texts.append("")
-            continue
-        
-        line_text = " ".join([w[0] for w in line_words])
-        line_texts.append(line_text)
-        try:
-            test_clip = TextClip(
-                line_text,
-                fontsize=font_size,
-                color=text_color,
-                font=font_name,
-                method="label",
-                stroke_color=stroke_color,
-                stroke_width=stroke_width,
-            )
-            # Check if scaling is needed
-            test_width, test_height = test_clip.size
-            if test_width > max_text_width:
-                scale_factor = max_text_width / test_width
-                test_clip = test_clip.resize(scale_factor)
-                _, test_height = test_clip.size
-            line_heights.append(test_height)
-        except:
-            # Fallback height estimate
-            line_heights.append(font_size + 20)
+    subs.styles["Default"] = style
     
-    # Calculate fixed y positions for each line (stacking from bottom)
-    # Position from bottom, accounting for actual text heights
-    line_spacing = 15  # Reduced spacing for better visual consistency
-    line_positions = []  # Store bottom y-coordinate for each line
-    
-    # Calculate cumulative height from bottom
-    cumulative_height = bottom_margin
-    for line_index in range(len(lines) - 1, -1, -1):  # Iterate from last line to first
-        if line_heights[line_index] > 0:
-            # Position is from bottom: video_height - cumulative_height - line_height
-            # But set_position uses top coordinate, so we use: video_height - cumulative_height
-            line_bottom_y = video_height - cumulative_height
-            line_positions.insert(0, line_bottom_y)  # Insert at beginning to maintain order
-            cumulative_height += line_heights[line_index] + line_spacing
-        else:
-            line_positions.insert(0, 0)
-    
-    # Create clips for each line
+    # Create subtitle events with cumulative word-by-word display
     for line_index, (line_words, line_start, line_end) in enumerate(lines):
         if not line_words:
             continue
-        
-        # Get pre-calculated position for this line (this is the bottom y-coordinate)
-        line_bottom_y = line_positions[line_index]
         
         # Create cumulative word clips for this line
         displayed_text = ""
@@ -3230,7 +3201,7 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
             else:
                 displayed_text = word
             
-            # Calculate clip duration
+            # Calculate clip duration with small overlap
             overlap = 0.05
             if word_idx < len(line_words) - 1:
                 next_start = line_words[word_idx + 1][1]
@@ -3238,55 +3209,65 @@ def create_captions(script: str, audio_path: Optional[Path], duration: float, vi
             else:
                 clip_end_time = end_time
             
-            word_duration = max(0.1, clip_end_time - start_time)
+            # Ensure times are within video duration
             start_time = max(0.0, min(start_time, duration))
-            clip_end_time = max(start_time + 0.1, min(start_time + word_duration, duration))
-            word_duration = clip_end_time - start_time
+            clip_end_time = max(start_time + 0.1, min(clip_end_time, duration))
             
-            try:
-                # Create text clip
-                line_clip = TextClip(
-                    displayed_text,
-                    fontsize=font_size,
-                    color=text_color,
-                    font=font_name,
-                    method="label",
-                    stroke_color=stroke_color,
-                    stroke_width=stroke_width,
-                )
-                
-                # Scale if too wide
-                clip_width, clip_height = line_clip.size
-                if clip_width > max_text_width:
-                    scale_factor = max_text_width / clip_width
-                    line_clip = line_clip.resize(scale_factor)
-                    clip_width, clip_height = line_clip.size
-                
-                # Position: center horizontally, fixed y position from bottom
-                # set_position uses top coordinate, so subtract the actual clip height
-                # This ensures the text bottom aligns with line_bottom_y
-                subtitle_y = line_bottom_y - clip_height
-                
-                # Ensure text doesn't go above safe area (top padding)
-                top_padding = 100  # Safe area from top
-                subtitle_y = max(top_padding, subtitle_y)
-                
-                # Position: center horizontally, fixed y position
-                line_clip = line_clip.set_duration(word_duration).set_start(start_time)
-                line_clip = line_clip.set_position(("center", subtitle_y))
-                
-                # Fade out only at the very end
-                if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
-                    line_clip = line_clip.fadeout(0.4)
-                
-                captions.append(line_clip)
-                
-            except Exception as exc:
-                logging.warning("Failed to create caption clip for word '%s': %s", word, exc)
+            if clip_end_time <= start_time:
                 continue
+            
+            # Create subtitle event
+            event = pysubs2.SSAEvent()
+            event.start = pysubs2.make_time(s=start_time)
+            event.end = pysubs2.make_time(s=clip_end_time)
+            event.style = "Default"
+            
+            # Use simple text without positioning tags - let the style alignment and margins handle it
+            # This is more reliable than using \pos which can sometimes cause issues
+            event.text = displayed_text
+            
+            # Add fade effect for the last word of the last line
+            if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
+                # Add fade out effect using ASS tags
+                fade_duration = 0.4
+                fade_frames = int(fade_duration * 25)  # 25 fps for fade
+                event.text = f"{{\\fad(0,{fade_frames})}}{displayed_text}"
+            
+            subs.events.append(event)
     
-    logging.info("Created %d caption clips for %d lines", len(captions), len(lines))
-    return captions
+    # Save ASS file
+    try:
+        subs.save(str(output_path), format_="ass")
+        logging.info("Created ASS subtitle file with %d events for %d lines", len(subs.events), len(lines))
+        
+        # Verify the file was created and has content
+        if output_path.exists():
+            file_size = output_path.stat().st_size
+            logging.info("ASS file saved: %s (%d bytes)", output_path, file_size)
+            if file_size == 0:
+                logging.error("ASS file is empty!")
+                return None
+            
+            # Read first few events to verify content
+            try:
+                with open(output_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    if 'Dialogue:' not in content:
+                        logging.error("ASS file does not contain Dialogue events!")
+                        return None
+                    logging.debug("ASS file contains Dialogue events, first 500 chars:\n%s", content[:500])
+            except Exception as e:
+                logging.warning("Could not verify ASS file content: %s", e)
+        else:
+            logging.error("ASS file was not created at %s", output_path)
+            return None
+            
+        return output_path
+    except Exception as exc:
+        logging.error("Failed to save ASS subtitle file: %s", exc)
+        import traceback
+        logging.error(traceback.format_exc())
+        return None
 
 
 def assemble_video(article: ArticleCandidate, script: str, config: Config, video_index: int = 0) -> Path:
@@ -3480,9 +3461,6 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
         if base_video.duration != duration_seconds:
             base_video = base_video.subclip(0, duration_seconds)
 
-        # Create captions with accurate word-level timing
-        captions = create_captions(script, audio_path if generated_audio else None, duration_seconds, video_size, config)
-        
         # Create subtle gradient overlay at bottom (lighter since subtitles have their own backgrounds)
         # This helps with readability on bright backgrounds
         overlay = ColorClip(
@@ -3490,8 +3468,8 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
             color=(0, 0, 0)
         ).set_opacity(0.2).set_position(("center", video_size[1] - 200)).set_duration(duration_seconds)
 
-        # Composite all elements
-        clips = [base_video, overlay] + captions
+        # Composite base video and overlay (without subtitles for now)
+        clips = [base_video, overlay]
         composite = CompositeVideoClip(clips, size=video_size)
         composite = composite.set_duration(duration_seconds)
         
@@ -3507,8 +3485,10 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
 
         # Write video file with error handling
         try:
+            # Write video file without subtitles first
+            temp_video_path = tmp_path / "video_no_subs.mp4"
             composite.write_videofile(
-                str(output_path),
+                str(temp_video_path),
                 fps=24,
                 codec="libx264",
                 audio_codec="aac" if audio_clip else None,
@@ -3517,6 +3497,89 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                 logger=None,
                 preset="medium",  # Balance between speed and file size
             )
+            
+            # Create ASS subtitle file
+            subtitle_path = tmp_path / "subtitles.ass"
+            subtitle_file = create_subtitle_file(
+                script, 
+                audio_path if generated_audio else None, 
+                duration_seconds, 
+                video_size, 
+                config,
+                subtitle_path
+            )
+            
+            # Burn subtitles into video using ffmpeg
+            if subtitle_file and subtitle_file.exists():
+                try:
+                    logging.info("Burning subtitles into video using ffmpeg...")
+                    logging.info("Subtitle file path: %s (exists: %s, size: %d bytes)", 
+                               subtitle_file, subtitle_file.exists(), subtitle_file.stat().st_size if subtitle_file.exists() else 0)
+                    
+                    # Read and log first few lines of ASS file for debugging
+                    try:
+                        with open(subtitle_file, 'r', encoding='utf-8') as f:
+                            first_lines = f.readlines()[:10]
+                            logging.debug("First 10 lines of ASS file:\n%s", "".join(first_lines))
+                    except Exception as e:
+                        logging.warning("Could not read ASS file for debugging: %s", e)
+                    
+                    # Get font name for ffmpeg
+                    font_path_for_ffmpeg = get_coiny_font_path(config)
+                    font_name_for_ffmpeg = "Coiny" if font_path_for_ffmpeg else "Arial"
+                    
+                    # For better compatibility, especially on Windows, use a simpler path
+                    # Copy subtitle file to same directory as video with a simple name
+                    simple_subtitle_name = "subtitles.ass"
+                    simple_subtitle_path = tmp_path / simple_subtitle_name
+                    shutil.copy2(subtitle_file, simple_subtitle_path)
+                    
+                    # Use forward slashes for the filter (works on both Windows and Unix)
+                    subtitle_file_str = str(simple_subtitle_path).replace('\\', '/')
+                    
+                    # Use the ass filter - it's specifically designed for ASS/SSA subtitle files
+                    # This is more reliable than the subtitles filter for ASS files
+                    ffmpeg_cmd = [
+                        "ffmpeg",
+                        "-i", str(temp_video_path),
+                        "-vf", f"ass={subtitle_file_str}",
+                        "-c:v", "libx264",
+                        "-preset", "medium",
+                        "-crf", "23",
+                        "-c:a", "copy",  # Copy audio without re-encoding
+                        "-y",  # Overwrite output file
+                        str(output_path)
+                    ]
+                    
+                    logging.info("FFmpeg command: %s", " ".join(ffmpeg_cmd))
+                    
+                    result = subprocess.run(
+                        ffmpeg_cmd,
+                        capture_output=True,
+                        text=True,
+                        check=False
+                    )
+                    
+                    if result.returncode != 0:
+                        logging.error("ffmpeg subtitle burn failed with return code %d", result.returncode)
+                        logging.error("FFmpeg stderr: %s", result.stderr)
+                        logging.error("FFmpeg stdout: %s", result.stdout)
+                        # Fallback: copy video without subtitles
+                        logging.warning("Falling back to video without subtitles")
+                        shutil.copy2(temp_video_path, output_path)
+                    else:
+                        logging.info("Successfully burned subtitles into video")
+                        if result.stderr:
+                            logging.debug("FFmpeg output: %s", result.stderr)
+                except FileNotFoundError:
+                    logging.warning("ffmpeg not found, video will be created without subtitles")
+                    shutil.copy2(temp_video_path, output_path)
+                except Exception as exc:
+                    logging.warning("Failed to burn subtitles with ffmpeg: %s, using video without subtitles", exc)
+                    shutil.copy2(temp_video_path, output_path)
+            else:
+                logging.warning("Subtitle file not created, video will be without subtitles")
+                shutil.copy2(temp_video_path, output_path)
             
             # Verify output file
             if not output_path.exists():
