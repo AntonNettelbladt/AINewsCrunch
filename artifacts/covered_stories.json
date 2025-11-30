@@ -5,5 +5,12 @@
     "source": "NVIDIA Blog",
     "youtube_id": "AqHAusNMyWQ",
     "tiktok_id": null
+  },
+  "https://towardsdatascience.com/how-to-scale-your-llm-usage/": {
+    "title": "How to Scale Your LLM Usage",
+    "date_covered": "2025-11-30T18:10:50.141852+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "D06JceID5ro",
+    "tiktok_id": null
   }
 }
