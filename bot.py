@@ -3546,38 +3546,27 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                     else:
                         logging.debug("Using system font fallback (Arial or default)")
                     
-                    # For better compatibility, especially on Windows, use a simpler path
-                    # Copy subtitle file to same directory as video with a simple name
-                    simple_subtitle_name = "subtitles.ass"
-                    simple_subtitle_path = tmp_path / simple_subtitle_name
-                    shutil.copy2(subtitle_file, simple_subtitle_path)
-                    
-                    # Use absolute path and normalize it for ffmpeg
-                    # Convert to absolute path to avoid relative path issues
-                    abs_subtitle_path = simple_subtitle_path.resolve()
-                    
-                    # Escape the path properly for ffmpeg ass filter
-                    # The ass filter requires proper escaping of special characters
-                    # First convert to string, then escape special characters
-                    subtitle_file_str = str(abs_subtitle_path)
-                    # Convert Windows backslashes to forward slashes (ffmpeg prefers forward slashes)
-                    subtitle_file_str = subtitle_file_str.replace('\\', '/')
-                    # Escape special characters that have meaning in ffmpeg filter syntax
-                    # These need to be escaped with backslashes for the filter parser
-                    subtitle_file_str_escaped = subtitle_file_str.replace(':', '\\:')
-                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace('[', '\\[')
-                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace(']', '\\]')
-                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace(',', '\\,')
-                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace(';', '\\;')
-                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace('=', '\\=')
-                    
                     # Build ffmpeg command with proper font handling
-                    # The ass filter will use the font specified in the ASS file
-                    # If the font isn't found, ffmpeg will fall back to a default font
+                    # Get fonts directory for custom fonts like Coiny
+                    fonts_dir = Path(__file__).parent / "fonts"
+                    
+                    # Use absolute path for ffmpeg
+                    # Convert backslashes to forward slashes (ffmpeg on Windows accepts forward slashes)
+                    subtitle_path_str = str(subtitle_file.resolve()).replace('\\', '/')
+                    
+                    # Build the ass filter - include fontsdir if fonts exist
+                    if fonts_dir.exists() and font_path_for_ffmpeg:
+                        fonts_dir_str = str(fonts_dir.resolve()).replace('\\', '/')
+                        # On Linux (GitHub Actions), paths don't have drive letter colons
+                        # On Windows, we convert backslashes to forward slashes which ffmpeg accepts
+                        vf_filter = f"ass='{subtitle_path_str}':fontsdir='{fonts_dir_str}'"
+                    else:
+                        vf_filter = f"ass='{subtitle_path_str}'"
+                    
                     ffmpeg_cmd = [
                         "ffmpeg",
                         "-i", str(temp_video_path),
-                        "-vf", f"ass={subtitle_file_str_escaped}",  # Use escaped path
+                        "-vf", vf_filter,
                         "-c:v", "libx264",
                         "-preset", "medium",
                         "-crf", "23",
@@ -3586,9 +3575,7 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                         str(output_path)
                     ]
                     
-                    logging.debug("Subtitle file path (original): %s", abs_subtitle_path)
-                    logging.debug("Subtitle file path (escaped): %s", subtitle_file_str_escaped)
-                    
+                    logging.debug("Subtitle file path: %s", subtitle_path_str)
                     logging.info("FFmpeg command: %s", " ".join(ffmpeg_cmd))
                     
                     result = subprocess.run(
@@ -3606,11 +3593,18 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                         # Try alternative approach: use subtitles filter as fallback
                         logging.info("Attempting fallback: using subtitles filter instead of ass filter...")
                         try:
-                            # The subtitles filter is more forgiving with paths
+                            # The subtitles filter uses similar syntax
+                            if fonts_dir.exists() and font_path_for_ffmpeg:
+                                # Ensure fonts_dir_str is defined with forward slashes
+                                fonts_dir_str_fallback = str(fonts_dir.resolve()).replace('\\', '/')
+                                vf_filter_fallback = f"subtitles='{subtitle_path_str}':fontsdir='{fonts_dir_str_fallback}'"
+                            else:
+                                vf_filter_fallback = f"subtitles='{subtitle_path_str}'"
+                            
                             ffmpeg_cmd_fallback = [
                                 "ffmpeg",
                                 "-i", str(temp_video_path),
-                                "-vf", f"subtitles={subtitle_file_str}",  # Use unescaped path with subtitles filter
+                                "-vf", vf_filter_fallback,
                                 "-c:v", "libx264",
                                 "-preset", "medium",
                                 "-crf", "23",

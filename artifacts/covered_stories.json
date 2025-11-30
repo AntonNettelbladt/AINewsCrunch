@@ -1,23 +1,37 @@
 {
-  "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/": {
-    "title": "FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs",
-    "date_covered": "2025-11-30T17:49:59.471980+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "AqHAusNMyWQ",
+  "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/": {
+    "title": "MIT Researchers Unveil “SEAL”: A New Step Towards Self-Improving AI",
+    "date_covered": "2025-11-30T22:00:48.327139+00:00",
+    "source": "Synced Review",
+    "youtube_id": null,
     "tiktok_id": null
   },
-  "https://towardsdatascience.com/how-to-scale-your-llm-usage/": {
-    "title": "How to Scale Your LLM Usage",
-    "date_covered": "2025-11-30T18:10:50.141852+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "D06JceID5ro",
+  "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/": {
+    "title": "FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs",
+    "date_covered": "2025-11-30T22:06:52.704345+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.theverge.com/podcast/833993/raycast-ai-models-vergecast": {
+    "title": "I just want AI to rename my photos",
+    "date_covered": "2025-11-30T22:15:37.238064+00:00",
+    "source": "The Verge AI",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://the-decoder.com/pinokio-5-0-turns-local-machines-into-personal-ai-clouds/": {
+    "title": "Pinokio 5.0 turns local machines into personal AI clouds",
+    "date_covered": "2025-11-30T22:24:25.046751+00:00",
+    "source": "The Decoder",
+    "youtube_id": null,
     "tiktok_id": null
   },
   "https://www.artificialintelligence-news.com/news/sap-outlines-new-approach-to-european-ai-and-cloud-sovereignty/": {
     "title": "SAP outlines new approach to European AI and cloud sovereignty",
-    "date_covered": "2025-11-30T20:26:08.707746+00:00",
+    "date_covered": "2025-11-30T22:33:55.428359+00:00",
     "source": "AI News",
-    "youtube_id": "scJxiIbTcSo",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
