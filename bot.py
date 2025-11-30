@@ -1431,22 +1431,6 @@ def select_top_stories(sources: List[SourceFeed], max_articles: int, max_stories
                         "AI keywords: " + ", ".join(ai_keywords_found) if ai_keywords_found else "general news")
     
     return selected_stories
-    text_lower = f"{top.title} {top.summary}".lower()
-    major_indicators = [ind for ind in MAJOR_NEWS_INDICATORS.keys() if ind.lower() in text_lower]
-    
-    # Find AI keywords in primary context
-    primary_text = f"{top.title} {top.summary[:200]}".lower()
-    primary_ai_keywords = [kw for kw in AI_KEYWORDS.keys() if kw.lower() in primary_text]
-    
-    if major_indicators:
-        logging.info("Selected major AI story '%s' (score: %.2f, density: %.2f%%) - Indicators: %s, AI keywords: %s", 
-                    top.title[:60], top.score, density, ", ".join(major_indicators[:3]), 
-                    ", ".join(primary_ai_keywords[:5]))
-    else:
-        logging.info("Selected AI story '%s' (score: %.2f, density: %.2f%%) - AI keywords: %s", 
-                    top.title[:60], top.score, density, ", ".join(primary_ai_keywords[:5]))
-    
-    return top
 
 
 def extract_key_points(text: str, max_points: int) -> List[str]:
