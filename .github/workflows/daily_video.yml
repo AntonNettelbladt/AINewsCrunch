@@ -114,7 +114,7 @@ jobs:
           # Check if covered_stories.json exists and has changes
           if [ -f "artifacts/covered_stories.json" ]; then
             echo "Found covered_stories.json, checking for changes..."
-            git add artifacts/covered_stories.json
+            git add -f artifacts/covered_stories.json
             
             # Check if there are staged changes
             if ! git diff --staged --quiet; then
