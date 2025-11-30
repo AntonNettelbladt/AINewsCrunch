@@ -10,10 +10,14 @@ on:
 jobs:
   build-and-post:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to commit and push covered_stories.json
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # Required to push commits back to the repository
 
       - name: Install System Dependencies
         run: |
@@ -100,4 +104,48 @@ jobs:
           USE_GEMINI: ${{ secrets.USE_GEMINI }}  # Optional: Enable Gemini (default: true)
           USE_GCLOUD_TTS: ${{ secrets.USE_GCLOUD_TTS }}  # Optional: Enable Google Cloud TTS (default: true)
         run: python bot.py
+
+      - name: Commit and Push Covered Stories Log
+        if: always()  # Run even if previous step failed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if covered_stories.json exists and has changes
+          if [ -f "artifacts/covered_stories.json" ]; then
+            echo "Found covered_stories.json, checking for changes..."
+            git add artifacts/covered_stories.json
+            
+            # Check if there are staged changes
+            if ! git diff --staged --quiet; then
+              echo "Changes detected in covered_stories.json, committing..."
+              git commit -m "Update covered stories log [skip ci]"
+              
+              # Attempt to push with retry logic
+              max_retries=3
+              retry_count=0
+              while [ $retry_count -lt $max_retries ]; do
+                if git push; then
+                  echo "Successfully pushed covered_stories.json"
+                  break
+                else
+                  retry_count=$((retry_count + 1))
+                  if [ $retry_count -lt $max_retries ]; then
+                    echo "Push failed, retrying in 5 seconds... (attempt $retry_count/$max_retries)"
+                    sleep 5
+                    # Fetch latest changes before retrying
+                    git pull --rebase || true
+                  else
+                    echo "ERROR: Failed to push covered_stories.json after $max_retries attempts"
+                    exit 1
+                  fi
+                fi
+              done
+            else
+              echo "No changes to covered_stories.json"
+            fi
+          else
+            echo "WARNING: covered_stories.json not found at artifacts/covered_stories.json"
+            echo "This may indicate the bot did not save any stories, or the file path is incorrect"
+          fi
 
