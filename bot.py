@@ -4109,6 +4109,23 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
             time.sleep(0.1)
 
     logging.info("Video assembled at %s", output_path)
+    
+    # Ensure video is also saved to artifacts folder (for GitHub Actions)
+    # This ensures videos are available in the artifacts folder even if OUTPUT_DIR is set elsewhere
+    artifacts_dir = Path("artifacts")
+    artifacts_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Copy video to artifacts folder if it's not already there
+    artifacts_video_path = artifacts_dir / output_path.name
+    if output_path.resolve() != artifacts_video_path.resolve() and output_path.exists():
+        try:
+            shutil.copy2(output_path, artifacts_video_path)
+            logging.info("Video also saved to artifacts folder: %s", artifacts_video_path)
+        except Exception as exc:
+            logging.warning("Failed to copy video to artifacts folder: %s", exc)
+    elif output_path.resolve() == artifacts_video_path.resolve():
+        logging.debug("Video already in artifacts folder: %s", output_path)
+    
     return output_path
 
 
