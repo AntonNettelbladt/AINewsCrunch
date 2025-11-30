@@ -3168,8 +3168,8 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
     style = pysubs2.SSAStyle()
     style.fontname = font_name
     style.fontsize = 38  # Good balance for 1080x1920 video subtitles
-    style.primarycolor = pysubs2.Color(255, 255, 255, 0)  # White text
-    style.outlinecolor = pysubs2.Color(0, 0, 0, 0)  # Black outline
+    style.primarycolor = pysubs2.Color(255, 255, 255, 255)  # White text (fully opaque)
+    style.outlinecolor = pysubs2.Color(0, 0, 0, 255)  # Black outline (fully opaque)
     style.backcolor = pysubs2.Color(0, 0, 0, 128)  # Semi-transparent black background for better visibility
     style.bold = True
     style.outline = 3  # Thicker outline for better visibility
