@@ -33,5 +33,12 @@
     "source": "AI News",
     "youtube_id": null,
     "tiktok_id": null
+  },
+  "https://towardsdatascience.com/how-to-scale-your-llm-usage/": {
+    "title": "How to Scale Your LLM Usage",
+    "date_covered": "2025-11-30T23:15:23.793513+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "xA_u7GwNnus",
+    "tiktok_id": null
   }
 }
