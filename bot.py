@@ -3073,7 +3073,17 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
     
     # Get Coiny font path (downloads if needed)
     font_path = get_coiny_font_path(config)
-    font_name = "Coiny" if font_path else "Arial"  # Use font name, not path for ASS
+    # Use font name for ASS file - ffmpeg will try to find it via fontconfig
+    # If Coiny isn't available, fall back to common system fonts
+    # Priority: Coiny > Arial > DejaVu Sans > Liberation Sans > Sans
+    if font_path:
+        font_name = "Coiny"
+        logging.debug("Using Coiny font for subtitles (font file: %s)", font_path)
+    else:
+        # Use a system font that's more likely to be available
+        # Arial is common on Windows/Mac, DejaVu Sans on Linux
+        font_name = "Arial"  # Will fall back to system default if not found
+        logging.debug("Using Arial font for subtitles (Coiny not available)")
     
     # Clean script and split into words
     clean_script = re.sub(r"\s+", " ", script).strip()
@@ -3496,21 +3506,45 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
             # Burn subtitles into video using ffmpeg
             if subtitle_file and subtitle_file.exists():
                 try:
+                    # Validate ASS file before attempting to burn
+                    ass_file_size = subtitle_file.stat().st_size
+                    if ass_file_size == 0:
+                        logging.error("ASS subtitle file is empty, skipping subtitle burn")
+                        shutil.copy2(temp_video_path, output_path)
+                        return output_path
+                    
                     logging.info("Burning subtitles into video using ffmpeg...")
                     logging.info("Subtitle file path: %s (exists: %s, size: %d bytes)", 
-                               subtitle_file, subtitle_file.exists(), subtitle_file.stat().st_size if subtitle_file.exists() else 0)
+                               subtitle_file, subtitle_file.exists(), ass_file_size)
                     
-                    # Read and log first few lines of ASS file for debugging
+                    # Read and validate ASS file content
                     try:
                         with open(subtitle_file, 'r', encoding='utf-8') as f:
-                            first_lines = f.readlines()[:10]
-                            logging.debug("First 10 lines of ASS file:\n%s", "".join(first_lines))
+                            content = f.read()
+                            if 'Dialogue:' not in content:
+                                logging.error("ASS file does not contain Dialogue events, skipping subtitle burn")
+                                shutil.copy2(temp_video_path, output_path)
+                                return output_path
+                            
+                            # Count dialogue events
+                            dialogue_count = content.count('Dialogue:')
+                            logging.info("ASS file contains %d dialogue events", dialogue_count)
+                            
+                            # Log first few lines for debugging
+                            first_lines = content.split('\n')[:15]
+                            logging.debug("First 15 lines of ASS file:\n%s", "\n".join(first_lines))
                     except Exception as e:
-                        logging.warning("Could not read ASS file for debugging: %s", e)
+                        logging.error("Could not read/validate ASS file: %s, skipping subtitle burn", e)
+                        shutil.copy2(temp_video_path, output_path)
+                        return output_path
                     
-                    # Get font name for ffmpeg
+                    # Get font path for reference (ffmpeg uses fontconfig to find fonts by name)
+                    # The ASS file specifies the font name, and ffmpeg will look it up via fontconfig
                     font_path_for_ffmpeg = get_coiny_font_path(config)
-                    font_name_for_ffmpeg = "Coiny" if font_path_for_ffmpeg else "Arial"
+                    if font_path_for_ffmpeg:
+                        logging.debug("Font file available at: %s (ffmpeg will use fontconfig to locate by name)", font_path_for_ffmpeg)
+                    else:
+                        logging.debug("Using system font fallback (Arial or default)")
                     
                     # For better compatibility, especially on Windows, use a simpler path
                     # Copy subtitle file to same directory as video with a simple name
@@ -3518,15 +3552,32 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                     simple_subtitle_path = tmp_path / simple_subtitle_name
                     shutil.copy2(subtitle_file, simple_subtitle_path)
                     
-                    # Use forward slashes for the filter (works on both Windows and Unix)
-                    subtitle_file_str = str(simple_subtitle_path).replace('\\', '/')
+                    # Use absolute path and normalize it for ffmpeg
+                    # Convert to absolute path to avoid relative path issues
+                    abs_subtitle_path = simple_subtitle_path.resolve()
                     
-                    # Use the ass filter - it's specifically designed for ASS/SSA subtitle files
-                    # This is more reliable than the subtitles filter for ASS files
+                    # Escape the path properly for ffmpeg ass filter
+                    # The ass filter requires proper escaping of special characters
+                    # First convert to string, then escape special characters
+                    subtitle_file_str = str(abs_subtitle_path)
+                    # Convert Windows backslashes to forward slashes (ffmpeg prefers forward slashes)
+                    subtitle_file_str = subtitle_file_str.replace('\\', '/')
+                    # Escape special characters that have meaning in ffmpeg filter syntax
+                    # These need to be escaped with backslashes for the filter parser
+                    subtitle_file_str_escaped = subtitle_file_str.replace(':', '\\:')
+                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace('[', '\\[')
+                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace(']', '\\]')
+                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace(',', '\\,')
+                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace(';', '\\;')
+                    subtitle_file_str_escaped = subtitle_file_str_escaped.replace('=', '\\=')
+                    
+                    # Build ffmpeg command with proper font handling
+                    # The ass filter will use the font specified in the ASS file
+                    # If the font isn't found, ffmpeg will fall back to a default font
                     ffmpeg_cmd = [
                         "ffmpeg",
                         "-i", str(temp_video_path),
-                        "-vf", f"ass={subtitle_file_str}",
+                        "-vf", f"ass={subtitle_file_str_escaped}",  # Use escaped path
                         "-c:v", "libx264",
                         "-preset", "medium",
                         "-crf", "23",
@@ -3534,6 +3585,9 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                         "-y",  # Overwrite output file
                         str(output_path)
                     ]
+                    
+                    logging.debug("Subtitle file path (original): %s", abs_subtitle_path)
+                    logging.debug("Subtitle file path (escaped): %s", subtitle_file_str_escaped)
                     
                     logging.info("FFmpeg command: %s", " ".join(ffmpeg_cmd))
                     
@@ -3548,13 +3602,51 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                         logging.error("ffmpeg subtitle burn failed with return code %d", result.returncode)
                         logging.error("FFmpeg stderr: %s", result.stderr)
                         logging.error("FFmpeg stdout: %s", result.stdout)
-                        # Fallback: copy video without subtitles
-                        logging.warning("Falling back to video without subtitles")
-                        shutil.copy2(temp_video_path, output_path)
+                        
+                        # Try alternative approach: use subtitles filter as fallback
+                        logging.info("Attempting fallback: using subtitles filter instead of ass filter...")
+                        try:
+                            # The subtitles filter is more forgiving with paths
+                            ffmpeg_cmd_fallback = [
+                                "ffmpeg",
+                                "-i", str(temp_video_path),
+                                "-vf", f"subtitles={subtitle_file_str}",  # Use unescaped path with subtitles filter
+                                "-c:v", "libx264",
+                                "-preset", "medium",
+                                "-crf", "23",
+                                "-c:a", "copy",
+                                "-y",
+                                str(output_path)
+                            ]
+                            
+                            logging.info("FFmpeg fallback command: %s", " ".join(ffmpeg_cmd_fallback))
+                            result_fallback = subprocess.run(
+                                ffmpeg_cmd_fallback,
+                                capture_output=True,
+                                text=True,
+                                check=False
+                            )
+                            
+                            if result_fallback.returncode == 0:
+                                logging.info("Successfully burned subtitles using fallback subtitles filter")
+                            else:
+                                logging.error("Fallback also failed with return code %d", result_fallback.returncode)
+                                logging.error("FFmpeg fallback stderr: %s", result_fallback.stderr)
+                                logging.warning("Falling back to video without subtitles")
+                                shutil.copy2(temp_video_path, output_path)
+                        except Exception as fallback_exc:
+                            logging.error("Fallback attempt failed: %s", fallback_exc)
+                            logging.warning("Falling back to video without subtitles")
+                            shutil.copy2(temp_video_path, output_path)
                     else:
                         logging.info("Successfully burned subtitles into video")
                         if result.stderr:
-                            logging.debug("FFmpeg output: %s", result.stderr)
+                            # Check for warnings in stderr that might indicate issues
+                            stderr_lower = result.stderr.lower()
+                            if 'font' in stderr_lower or 'subtitle' in stderr_lower:
+                                logging.warning("FFmpeg output contains font/subtitle warnings: %s", result.stderr[:500])
+                            else:
+                                logging.debug("FFmpeg output: %s", result.stderr[:500])
                 except FileNotFoundError:
                     logging.warning("ffmpeg not found, video will be created without subtitles")
                     shutil.copy2(temp_video_path, output_path)
