@@ -3561,17 +3561,19 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
     # ASS uses a specific format: StyleName,FontName,FontSize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
     style = pysubs2.SSAStyle()
     style.fontname = font_name
-    style.fontsize = 38  # Good balance for 1080x1920 video subtitles
+    # Calculate appropriate font size for 1080x1920 video (portrait)
+    # For vertical videos, use smaller font - typically 16-18px is readable
+    style.fontsize = 16  # Much smaller - appropriate for mobile/vertical video
     style.primarycolor = pysubs2.Color(255, 255, 255, 255)  # White text (fully opaque)
     style.outlinecolor = pysubs2.Color(0, 0, 0, 255)  # Black outline (fully opaque)
-    style.backcolor = pysubs2.Color(0, 0, 0, 128)  # Semi-transparent black background for better visibility
+    style.backcolor = pysubs2.Color(0, 0, 0, 180)  # Semi-transparent black background for better visibility
     style.bold = True
-    style.outline = 3  # Thicker outline for better visibility
-    style.shadow = 2  # Add shadow for better contrast
-    style.alignment = 2  # Bottom center alignment
-    style.marginl = 80  # Left margin
-    style.marginr = 80  # Right margin
-    style.marginv = 200  # Bottom margin (distance from bottom edge)
+    style.outline = 1  # Thin outline for readability
+    style.shadow = 1  # Subtle shadow
+    style.alignment = 5  # Center alignment (both horizontal and vertical)
+    style.marginl = 40  # Left margin
+    style.marginr = 40  # Right margin
+    style.marginv = 40  # Bottom margin (not used when \pos is specified, but kept for fallback)
     
     subs.styles["Default"] = style
     
@@ -3581,6 +3583,7 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
             continue
         
         # Create cumulative word clips for this line
+        # Each event shows progressively more words, replacing the previous one
         displayed_text = ""
         for word_idx, (word, start_time, end_time) in enumerate(line_words):
             # Build cumulative text
@@ -3589,17 +3592,17 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
             else:
                 displayed_text = word
             
-            # Calculate clip duration with small overlap
-            overlap = 0.05
+            # Calculate clip end time - end exactly when next word starts (no overlap)
+            # This prevents multiple events from rendering on top of each other
             if word_idx < len(line_words) - 1:
                 next_start = line_words[word_idx + 1][1]
-                clip_end_time = next_start + overlap
+                clip_end_time = next_start  # No overlap - end exactly when next starts
             else:
                 clip_end_time = end_time
             
             # Ensure times are within video duration
             start_time = max(0.0, min(start_time, duration))
-            clip_end_time = max(start_time + 0.1, min(clip_end_time, duration))
+            clip_end_time = max(start_time + 0.05, min(clip_end_time, duration))  # Minimum 0.05s duration
             
             if clip_end_time <= start_time:
                 continue
@@ -3610,9 +3613,17 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
             event.end = pysubs2.make_time(s=clip_end_time)
             event.style = "Default"
             
-            # Use simple text without positioning tags - let the style alignment and margins handle it
-            # This is more reliable than using \pos which can sometimes cause issues
-            event.text = displayed_text
+            # Calculate explicit position to ensure subtitles appear at vertical center
+            # Video dimensions: 1080x1920 (width x height)
+            # Position horizontally centered, vertically centered
+            center_x = video_width // 2  # 540 (center of 1080px width)
+            center_y = video_height // 2  # 960 (center of 1920px height)
+            
+            # Use explicit positioning with \pos tag to ensure correct placement
+            # \an5 = center alignment (both horizontal and vertical center)
+            # \pos(x,y) = absolute position in pixels
+            # All events use the same position, but they don't overlap in time, so they replace each other
+            event.text = f"{{\\an5\\pos({center_x},{center_y})}}{displayed_text}"
             
             # Add fade effect for the last word of the last line
             if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
