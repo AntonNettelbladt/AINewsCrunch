@@ -408,21 +408,104 @@ DEFAULT_SOURCES: List[SourceFeed] = [
     ),
 ]
 
-EXCLUSION_KEYWORDS = {
-    # Sales terms
-    "black friday", "cyber monday", "sale", "deal", "discount", "coupon", "promo", 
-    "save", "cheap", "bargain", "on sale", "clearance", "flash sale",
-    # Product review terms
-    "review", "hands-on", "unboxing", "first look", "buyer's guide", "best ", 
-    "top ", "ranking", "comparison", "vs ", "versus",
-    # Shopping terms
-    "where to buy", "price", "cost", "affordable", "budget", "pricing",
-    "buy now", "shop", "shopping", "purchase", "order",
-    # Deals/offers
-    "limited time", "special offer", "flash sale", "clearance", "promotion",
-    "get it now", "order now", "buy it", "add to cart",
-    # Low-value content indicators
-    "sponsored", "advertisement", "ad", "sponsor", "promoted",
+EXCLUSION_KEYWORD_WEIGHTS = {
+    # High severity (3-4 points) - Strong indicators of low-value content
+    "black friday": 4, "cyber monday": 4, "flash sale": 4, "clearance": 3,
+    "buy now": 3, "add to cart": 3, "get it now": 3, "order now": 3, "where to buy": 3,
+    
+    # Medium-high severity (2-3 points)
+    "sale": 2, "deal": 2, "discount": 2, "coupon": 2, "promo": 2,
+    "cheap": 2, "bargain": 2, "on sale": 2, "sponsored": 3, "advertisement": 3,
+    "ad": 2, "sponsor": 2, "promoted": 2, "promotion": 2,
+    
+    # Medium severity (1-2 points) - Can appear in legitimate content
+    "review": 1, "hands-on": 1, "unboxing": 2, "first look": 1, "buyer's guide": 2,
+    "best ": 1, "top ": 1, "ranking": 1, "comparison": 1, "vs ": 1, "versus": 1,
+    "price": 1, "cost": 1, "affordable": 1, "budget": 1, "pricing": 1,
+    "shop": 2, "shopping": 2, "purchase": 1, "order": 1, "save": 1,
+    "limited time": 2, "special offer": 2, "buy it": 2,
+}
+
+PRACTICAL_AI_USE_CASES = {
+    # Programming/AI coding (high boost)
+    "ai coding": 3, "code generation": 3, "programming assistant": 3, "coding assistant": 3,
+    "ai developer": 2, "copilot": 3, "ai tool": 2, "ai plugin": 2, "ai extension": 2,
+    
+    # AI art/image generation (high boost)
+    "ai art": 3, "image generation": 3, "ai image": 3, "ai drawing": 2, "ai design": 2,
+    "ai graphics": 2, "text to image": 3, "image to image": 2,
+    
+    # AI chat/conversation (high boost)
+    "ai chat": 3, "chatbot": 3, "ai conversation": 2, "ai assistant": 2, "ai companion": 2,
+    
+    # AI video generation (high boost)
+    "ai video": 3, "video generation": 3, "text to video": 3, "ai animation": 2, "video ai": 2,
+    
+    # AI music/audio (high boost)
+    "ai music": 3, "ai audio": 2, "music generation": 3, "ai voice": 2, "voice generation": 2,
+    "text to speech": 2, "ai voiceover": 3, "voice cloning": 2,
+    
+    # AI productivity (medium boost)
+    "ai workflow": 2, "ai automation": 2, "ai productivity": 2, "ai app": 2, "ai software": 2,
+}
+
+ACADEMIC_RESEARCH_INDICATORS = {
+    # High severity - likely academic paper
+    "arxiv": 4, "preprint": 3, "peer reviewed": 3, "academic paper": 4, "research paper": 3,
+    "scientific paper": 3, "journal": 3, "conference paper": 3, "doi:": 3,
+    "citation": 2, "references": 2,
+    
+    # Medium severity - research-focused
+    "methodology": 2, "hypothesis": 2, "experiment": 2, "dataset": 2,
+    "theoretical": 2, "framework": 1,  # framework can be practical too
+}
+
+LEGITIMATE_PATTERNS = {
+    "deal": [
+        r'\bdeal\s+(with|between|announced|signed|reached|struck|closed|finalized)',
+        r'\b(partnership|merger|acquisition|business|investment|funding)\s+deal',
+        r'\bdeal\s+(worth|valued|valued at|amounting to)',
+        r'\b(multi.?million|billion)\s+deal',
+    ],
+    "review": [
+        r'\b(review|reviewed|reviewing)\s+(of|the|findings|research|study|paper|data|literature)',
+        r'\b(peer|scientific|academic|research|systematic|meta)\s+review',
+        r'\b(review|reviewed)\s+(by|from|according|published)',
+        r'\breview\s+(process|board|committee)',
+    ],
+    "best": [
+        r'\bbest\s+(practices|methods|approaches|ways|strategies|solutions|techniques|tools)',
+        r'\bbest\s+(for|in|at|to|way|approach)\s+',
+        r'\b(best|top)\s+(ai|tech|technology|companies|models|frameworks|libraries)',
+        r'\b(best|top)\s+\d+\s+(ai|tech|tools|frameworks)',
+    ],
+    "price": [
+        r'\bprice\s+(of|for|per|tag|point|target|range|action|stability)',
+        r'\b(pricing|cost)\s+(strategy|model|analysis|structure|tier|plan)',
+        r'\b(cost|price)\s+(to|of|for)\s+(train|develop|build|create|run|operate)',
+        r'\b(cost|price)\s+(efficiency|effective|reduction|optimization)',
+        r'\bmarket\s+price',
+    ],
+    "promotion": [
+        r'\bpromotion\s+(to|of|within|at|from)',
+        r'\b(promoted|promoting)\s+(to|as|within|from)',
+        r'\b(job|career|executive|employee|staff)\s+promotion',
+        r'\bpromotion\s+(campaign|strategy|effort)',
+    ],
+    "sale": [
+        r'\b(sales|selling)\s+(team|force|department|process|strategy|growth)',
+        r'\b(sales|selling)\s+(of|for|to)\s+',
+        r'\bannual\s+sales',
+        r'\bsales\s+(figures|data|numbers|report|target)',
+    ],
+    "discount": [
+        r'\b(discount|discounting)\s+(rate|factor|model|method)',
+        r'\b(discount|discounting)\s+(for|on|applied)',
+    ],
+    "sponsored": [
+        r'\bsponsored\s+(by|content|post|article)',
+        r'\b(sponsor|sponsoring)\s+(organization|company|institution)',
+    ],
 }
 
 MAJOR_NEWS_INDICATORS = {
@@ -930,14 +1013,325 @@ def fetch_rss_links(source: SourceFeed, max_entries: int = 5) -> List[str]:
     return []
 
 
+def is_shopping_context(text: str, keyword: str, position: int) -> bool:
+    """Check if keyword appears in shopping/sales context."""
+    shopping_indicators = ["buy", "shop", "cart", "checkout", "purchase", "order", "sale", "discount"]
+    context_window = text[max(0, position-50):min(len(text), position+50)]
+    return any(indicator in context_window for indicator in shopping_indicators)
+
+
+def is_news_context(text: str, keyword: str, position: int) -> bool:
+    """Check if keyword appears in legitimate news context."""
+    news_indicators = ["announces", "reports", "reveals", "according", "study", "research", 
+                       "findings", "analysis", "data", "company", "partnership", "acquisition"]
+    context_window = text[max(0, position-50):min(len(text), position+50)]
+    return any(indicator in context_window for indicator in news_indicators)
+
+
+def has_ai_tech_context(text: str, keyword: str, position: int) -> bool:
+    """Check if keyword appears near AI/tech terms (whitelist exception)."""
+    ai_tech_terms = ["ai", "artificial intelligence", "machine learning", "neural", "model", 
+                     "algorithm", "tech", "technology", "software", "platform", "system"]
+    context_window = text[max(0, position-100):min(len(text), position+100)]
+    return any(term in context_window for term in ai_tech_terms)
+
+
+def has_practical_ai_focus(candidate: ArticleCandidate) -> bool:
+    """Check if article focuses on practical AI applications."""
+    text = f"{candidate.title} {candidate.summary}".lower()
+    practical_score = 0
+    for term, weight in PRACTICAL_AI_USE_CASES.items():
+        if term in text:
+            practical_score += weight
+    return practical_score >= 3  # At least one high-weight term or multiple medium terms
+
+
+def is_overly_academic(candidate: ArticleCandidate) -> bool:
+    """Check if article is overly academic/research-focused."""
+    text = f"{candidate.title} {candidate.summary}".lower()
+    academic_score = 0
+    for term, weight in ACADEMIC_RESEARCH_INDICATORS.items():
+        if term in text:
+            academic_score += weight
+    # Exclude if high academic score AND no practical AI focus
+    if academic_score >= 4 and not has_practical_ai_focus(candidate):
+        return True
+    return False
+
+
+def get_domain_from_url(url: str) -> str:
+    """Extract domain from URL."""
+    try:
+        parsed = urllib.parse.urlparse(url)
+        domain = parsed.netloc.lower()
+        # Remove www. prefix
+        if domain.startswith("www."):
+            domain = domain[4:]
+        return domain
+    except:
+        return ""
+
+
+def is_shopping_domain(url: str) -> bool:
+    """Check if URL is from a known shopping/retail domain."""
+    domain = get_domain_from_url(url)
+    shopping_domains = [
+        "amazon.com", "ebay.com", "etsy.com", "shopify.com", "alibaba.com",
+        "walmart.com", "target.com", "bestbuy.com", "newegg.com", "overstock.com",
+        "zappos.com", "wayfair.com", "homedepot.com", "lowes.com", "costco.com",
+        "aliexpress.com", "wish.com", "groupon.com", "livingsocial.com",
+        "dealnews.com", "slickdeals.net", "retailmenot.com", "honey.com",
+    ]
+    return any(shop_domain in domain for shop_domain in shopping_domains)
+
+
+def has_negation_nearby(text: str, position: int, window: int = 30) -> bool:
+    """Check if there's a negation word near the keyword position."""
+    negation_words = ["not", "no", "never", "none", "neither", "without", "lack", "free from"]
+    context_window = text[max(0, position-window):min(len(text), position+window)]
+    # Check for negation patterns
+    negation_patterns = [
+        r'\b(not|no|never)\s+\w+\s+(sale|deal|discount|promotion|ad|sponsored)',
+        r'\b(without|free from|lack of)\s+(ads?|sponsors?|promotions?)',
+    ]
+    for pattern in negation_patterns:
+        if re.search(pattern, context_window, re.IGNORECASE):
+            return True
+    # Check for negation words in context window
+    return any(neg_word in context_window for neg_word in negation_words)
+
+
+def get_sentence_boundaries(text: str) -> List[Tuple[int, int]]:
+    """Get sentence boundaries (start, end positions) in text."""
+    # Simple sentence boundary detection using punctuation
+    sentences = []
+    start = 0
+    for match in re.finditer(r'[.!?]+\s+', text):
+        end = match.end()
+        sentences.append((start, end))
+        start = end
+    if start < len(text):
+        sentences.append((start, len(text)))
+    return sentences
+
+
+def is_in_same_sentence(text: str, pos1: int, pos2: int) -> bool:
+    """Check if two positions are in the same sentence."""
+    sentences = get_sentence_boundaries(text)
+    for start, end in sentences:
+        if start <= pos1 < end and start <= pos2 < end:
+            return True
+    return False
+
+
+def count_keyword_clusters(text: str, keywords: List[str], max_distance: int = 100) -> int:
+    """Count clusters of exclusion keywords appearing close together."""
+    keyword_positions = []
+    for keyword in keywords:
+        keyword_lower = keyword.lower()
+        if " " not in keyword:
+            pattern = r'\b' + re.escape(keyword_lower) + r'\b'
+        else:
+            pattern = re.escape(keyword_lower)
+        for match in re.finditer(pattern, text):
+            keyword_positions.append((match.start(), keyword))
+    
+    if len(keyword_positions) < 2:
+        return 0
+    
+    # Sort by position
+    keyword_positions.sort()
+    
+    clusters = 0
+    i = 0
+    while i < len(keyword_positions) - 1:
+        cluster_size = 1
+        j = i + 1
+        while j < len(keyword_positions):
+            if keyword_positions[j][0] - keyword_positions[i][0] <= max_distance:
+                cluster_size += 1
+                j += 1
+            else:
+                break
+        if cluster_size >= 2:
+            clusters += 1
+        i = j if cluster_size > 1 else i + 1
+    
+    return clusters
+
+
+def calculate_promotional_density(text: str) -> float:
+    """Calculate density of promotional language in text."""
+    promotional_phrases = [
+        "limited time", "act now", "don't miss", "exclusive", "special offer",
+        "one-time", "today only", "while supplies last", "hurry", "urgent",
+        "last chance", "expires soon", "order now", "buy now", "click here",
+        "sign up now", "free trial", "no credit card", "money back guarantee",
+    ]
+    words = text.split()
+    if not words:
+        return 0.0
+    
+    promotional_count = 0
+    text_lower = text.lower()
+    for phrase in promotional_phrases:
+        promotional_count += text_lower.count(phrase.lower())
+    
+    return (promotional_count / len(words)) * 100 if words else 0.0
+
+
+def is_article_too_short(candidate: ArticleCandidate) -> bool:
+    """Check if article is suspiciously short (likely an ad or low-value content)."""
+    word_count = len(candidate.text.split()) if candidate.text else 0
+    # Very short articles (< 150 words) with exclusion keywords are suspicious
+    return word_count < 150
+
+
+def analyze_title_vs_body(candidate: ArticleCandidate, keyword: str) -> int:
+    """Analyze if keyword appears in title (more significant) vs body."""
+    title_lower = candidate.title.lower() if candidate.title else ""
+    summary_lower = candidate.summary.lower() if candidate.summary else ""
+    text_lower = candidate.text.lower() if candidate.text else ""
+    
+    keyword_lower = keyword.lower()
+    if " " not in keyword:
+        pattern = r'\b' + re.escape(keyword_lower) + r'\b'
+    else:
+        pattern = re.escape(keyword_lower)
+    
+    in_title = bool(re.search(pattern, title_lower))
+    in_summary = bool(re.search(pattern, summary_lower))
+    in_body = bool(re.search(pattern, text_lower))
+    
+    # Title matches are most significant (weight x2)
+    # Summary matches are significant (weight x1.5)
+    # Body matches are normal (weight x1)
+    if in_title:
+        return 2
+    elif in_summary:
+        return 1
+    elif in_body:
+        return 0
+    return 0
+
+
 def should_exclude_article(candidate: ArticleCandidate) -> Optional[str]:
-    """Check if article should be excluded based on low-value content keywords.
+    """Check if article should be excluded using weighted scoring system.
     Returns exclusion reason if article should be excluded, None otherwise."""
+    full_text = f"{candidate.title} {candidate.summary} {candidate.text}".lower()
     text = f"{candidate.title} {candidate.summary}".lower()
     
-    for keyword in EXCLUSION_KEYWORDS:
-        if keyword.lower() in text:
-            return f"contains '{keyword}'"
+    # First check: Exclude overly academic papers without practical focus
+    if is_overly_academic(candidate):
+        return "overly academic/research paper without practical AI focus"
+    
+    # Check if URL is from shopping domain (strong indicator)
+    if is_shopping_domain(candidate.url):
+        return "shopping/retail domain"
+    
+    # Check if article is suspiciously short with exclusion keywords
+    if is_article_too_short(candidate):
+        # Only exclude if it also has exclusion keywords
+        has_exclusion_keywords = any(
+            kw.lower() in text for kw in ["sale", "deal", "discount", "buy now", "order now", "sponsored", "ad"]
+        )
+        if has_exclusion_keywords:
+            return "suspiciously short article with exclusion keywords"
+    
+    exclusion_score = 0
+    exclusion_reasons = []
+    exclusion_threshold = 5  # Only exclude if score >= threshold
+    
+    # Check if article has practical AI focus (reduces exclusion score)
+    has_practical_focus = has_practical_ai_focus(candidate)
+    practical_boost = -3 if has_practical_focus else 0  # Increased boost for practical articles
+    
+    # Calculate promotional language density
+    promotional_density = calculate_promotional_density(full_text)
+    if promotional_density > 2.0:  # More than 2% promotional phrases
+        exclusion_score += int(promotional_density)
+        exclusion_reasons.append("high promotional density")
+    
+    # Track keyword positions for clustering analysis
+    keyword_matches = []
+    
+    # Check each keyword with context awareness
+    for keyword, base_weight in EXCLUSION_KEYWORD_WEIGHTS.items():
+        keyword_lower = keyword.lower()
+        
+        # Use word boundaries for single words
+        if " " not in keyword:
+            pattern = r'\b' + re.escape(keyword_lower) + r'\b'
+            matches = list(re.finditer(pattern, full_text))
+        else:
+            matches = list(re.finditer(re.escape(keyword_lower), full_text))
+        
+        if not matches:
+            continue
+        
+        # Check each match for context
+        for match in matches:
+            position = match.start()
+            weight = base_weight
+            
+            # Check for negation nearby (reduces weight significantly)
+            if has_negation_nearby(full_text, position):
+                weight = 0  # Don't count negated keywords
+                continue
+            
+            # Apply title/body weighting (keywords in title are more significant)
+            title_weight_boost = analyze_title_vs_body(candidate, keyword)
+            if title_weight_boost > 0:
+                weight = int(weight * (1 + title_weight_boost * 0.5))  # 50% boost for title, 25% for summary
+            
+            # Apply context-based adjustments
+            if keyword in LEGITIMATE_PATTERNS:
+                for pattern in LEGITIMATE_PATTERNS[keyword]:
+                    if re.search(pattern, full_text[max(0, position-30):min(len(full_text), position+30)]):
+                        weight = 0  # Don't count this match
+                        break
+            
+            # Whitelist: Reduce weight if in AI/tech context
+            if has_ai_tech_context(full_text, keyword, position):
+                weight = max(0, weight - 1)
+            
+            # Reduce weight if in news context (not shopping)
+            if is_news_context(full_text, keyword, position) and not is_shopping_context(full_text, keyword, position):
+                weight = max(0, weight - 1)
+            
+            # Increase weight if in shopping context
+            if is_shopping_context(full_text, keyword, position):
+                weight = min(weight + 1, 4)
+            
+            if weight > 0:
+                exclusion_score += weight
+                keyword_matches.append((position, keyword, weight))
+                if keyword not in exclusion_reasons:
+                    exclusion_reasons.append(keyword)
+    
+    # Check for keyword clustering (multiple exclusion keywords close together)
+    if len(keyword_matches) >= 2:
+        keywords_found = [kw for _, kw, _ in keyword_matches]
+        clusters = count_keyword_clusters(full_text, keywords_found, max_distance=150)
+        if clusters > 0:
+            exclusion_score += clusters * 2  # Add 2 points per cluster
+            exclusion_reasons.append(f"{clusters} keyword cluster(s)")
+    
+    # Apply practical AI boost (reduces exclusion score)
+    exclusion_score = max(0, exclusion_score + practical_boost)
+    
+    # Dynamic threshold adjustment based on article quality
+    # Longer, well-written articles get benefit of the doubt
+    word_count = len(candidate.text.split()) if candidate.text else 0
+    if word_count > 500 and has_practical_focus:
+        exclusion_threshold += 2  # Raise threshold for longer practical articles
+    
+    # Only exclude if score exceeds threshold
+    if exclusion_score >= exclusion_threshold:
+        reason_parts = [f"exclusion score {exclusion_score}"]
+        if exclusion_reasons:
+            reason_parts.append(f"keywords: {', '.join(exclusion_reasons[:3])}")
+        return " | ".join(reason_parts)
     
     return None
 
