@@ -51,11 +51,6 @@ except ImportError:  # pragma: no cover - optional dependency
     texttospeech = None
 
 try:
-    import pysubs2
-except ImportError:  # pragma: no cover - optional dependency
-    pysubs2 = None
-
-try:
     from dotenv import load_dotenv
 except ImportError:  # pragma: no cover - optional dependency
     load_dotenv = None
@@ -100,6 +95,23 @@ class ArticleCandidate:
 
 
 @dataclass
+class WordTiming:
+    """Represents a word with its timing information."""
+    word: str
+    start_time: float
+    end_time: float
+
+
+@dataclass
+class Phrase:
+    """Represents a caption phrase with timing and words."""
+    text: str
+    start_time: float
+    end_time: float
+    words: List[WordTiming]
+
+
+@dataclass
 class Config:
     output_dir: Path
     max_articles: int = 10
@@ -134,6 +146,12 @@ class Config:
     tiktok_client_secret: Optional[str] = None
     tiktok_access_token: Optional[str] = None
     upload_to_tiktok: bool = True
+    # Caption settings
+    enable_captions: bool = True
+    caption_font_size: int = 60
+    caption_max_chars_per_line: int = 40
+    caption_fade_duration: float = 0.3
+    caption_position: str = "bottom"  # bottom/center/top
 
 
 DEFAULT_SOURCES: List[SourceFeed] = [
@@ -749,6 +767,12 @@ def load_config() -> Config:
         tiktok_client_secret=tiktok_client_secret,
         tiktok_access_token=tiktok_access_token,
         upload_to_tiktok=os.getenv("UPLOAD_TO_TIKTOK", "true").lower() == "true",
+        # Caption settings
+        enable_captions=os.getenv("ENABLE_CAPTIONS", "true").lower() == "true",
+        caption_font_size=int(os.getenv("CAPTION_FONT_SIZE", "60")),
+        caption_max_chars_per_line=int(os.getenv("CAPTION_MAX_CHARS_PER_LINE", "40")),
+        caption_fade_duration=float(os.getenv("CAPTION_FADE_DURATION", "0.3")),
+        caption_position=os.getenv("CAPTION_POSITION", "bottom"),
     )
     logging.debug("Loaded config: %s", config)
     return config
@@ -1725,6 +1749,90 @@ def load_covered_stories(config: Config) -> Set[str]:
         return set()
 
 
+def load_used_media_ids(config: Config) -> Set[str]:
+    """Load set of already used stock media IDs to avoid reuse.
+    
+    Returns:
+        Set of media IDs (from Pexels, Pixabay, Unsplash) that have been used
+    """
+    used_media_file = config.output_dir / "used_media_ids.json"
+    
+    if not used_media_file.exists():
+        logging.debug("No used media file found, starting fresh")
+        return set()
+    
+    try:
+        with open(used_media_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Data format: {media_id: date_used}
+        used_ids = set(data.keys())
+        
+        # Clean up old entries (older than 3 days to allow some reuse after a while)
+        cutoff_date = datetime.now(timezone.utc) - timedelta(days=3)
+        cleaned_data = {}
+        for media_id, date_str in data.items():
+            try:
+                date_used = datetime.fromisoformat(date_str)
+                if date_used >= cutoff_date:
+                    cleaned_data[media_id] = date_str
+            except (ValueError, TypeError):
+                # Keep entries with invalid dates
+                cleaned_data[media_id] = date_str
+        
+        # Save cleaned data if we removed entries
+        if len(cleaned_data) < len(data):
+            with open(used_media_file, 'w', encoding='utf-8') as f:
+                json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
+            logging.info("Cleaned up %d old used media IDs (kept %d)", 
+                        len(data) - len(cleaned_data), len(cleaned_data))
+        
+        logging.debug("Loaded %d used media IDs from history", len(cleaned_data))
+        return set(cleaned_data.keys())
+        
+    except (json.JSONDecodeError, IOError, Exception) as exc:
+        logging.warning("Failed to load used media file: %s", exc)
+        return set()
+
+
+def save_used_media_ids(media_ids: List[str], config: Config) -> None:
+    """Save media IDs that were used to avoid reuse.
+    
+    Args:
+        media_ids: List of media IDs to mark as used
+        config: Config object with output directory
+    """
+    if not media_ids:
+        return
+    
+    used_media_file = config.output_dir / "used_media_ids.json"
+    
+    # Load existing data
+    data = {}
+    if used_media_file.exists():
+        try:
+            with open(used_media_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError) as exc:
+            logging.warning("Failed to load used media for update: %s", exc)
+            data = {}
+    
+    # Add new entries
+    current_date = datetime.now(timezone.utc).isoformat()
+    for media_id in media_ids:
+        if media_id:  # Only save non-empty IDs
+            data[media_id] = current_date
+    
+    # Save updated data
+    try:
+        config.output_dir.mkdir(parents=True, exist_ok=True)
+        with open(used_media_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        logging.debug("Saved %d media ID(s) as used", len(media_ids))
+    except (IOError, Exception) as exc:
+        logging.warning("Failed to save used media IDs: %s", exc)
+
+
 def save_covered_story(story: ArticleCandidate, config: Config, youtube_id: Optional[str] = None, tiktok_id: Optional[str] = None) -> None:
     """Save a story as covered in the JSON file.
     
@@ -1925,6 +2033,13 @@ def clean_script_for_tts(script: str) -> str:
     # Remove trailing punctuation issues
     script = re.sub(r"\s+([.!?])+", r"\1", script)  # Multiple punctuation -> single
     
+    # Replace "AI" with "Artificial Intelligence" for better TTS pronunciation
+    # Use word boundaries to match "AI" as a standalone word, not part of other words
+    # Handle possessive case first: "AI's" -> "Artificial Intelligence's"
+    script = re.sub(r'\bAI\'s\b', "Artificial Intelligence's", script, flags=re.IGNORECASE)
+    # Then handle standalone "AI" -> "Artificial Intelligence"
+    script = re.sub(r'\bAI\b', 'Artificial Intelligence', script, flags=re.IGNORECASE)
+    
     return script
 
 
@@ -2089,7 +2204,7 @@ def generate_metadata(article: ArticleCandidate, script: str) -> Dict[str, str]:
 
 
 def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, config: Config) -> Optional[Path]:
-    """Create a captivating thumbnail with bold text for YouTube Shorts.
+    """Create a captivating thumbnail with bold text and cool gradient for YouTube Shorts.
     
     Args:
         article: Article candidate with image URL
@@ -2101,67 +2216,65 @@ def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, c
         Path to thumbnail image if successful, None otherwise
     """
     try:
-        # YouTube Shorts thumbnail size: 1280x720 (16:9) or 1280x1280 (1:1) for Shorts
-        # We'll use 1280x720 for better compatibility
-        thumbnail_width = 1280
-        thumbnail_height = 720
+        # YouTube Shorts thumbnail size: 1080x1920 (9:16 vertical format)
+        thumbnail_width = 1080
+        thumbnail_height = 1920
         
-        # Create base image with gradient background
+        # Create base image
         img = Image.new('RGB', (thumbnail_width, thumbnail_height), color='#1a1a2e')
         draw = ImageDraw.Draw(img)
         
-        # Add gradient background (dark blue to darker blue)
+        # Cool gradient color combinations
+        gradients = [
+            # Purple to Blue
+            ((138, 43, 226), (30, 144, 255)),
+            # Deep Blue to Cyan
+            ((25, 25, 112), (0, 191, 255)),
+            # Dark Purple to Pink
+            ((75, 0, 130), (255, 20, 147)),
+            # Navy to Teal
+            ((0, 0, 128), (0, 128, 128)),
+            # Indigo to Purple
+            ((75, 0, 130), (138, 43, 226)),
+            # Dark Blue to Light Blue
+            ((0, 0, 139), (135, 206, 250)),
+            # Magenta to Purple
+            ((255, 0, 255), (128, 0, 128)),
+            # Orange to Red
+            ((255, 140, 0), (220, 20, 60)),
+            # Teal to Green
+            ((0, 128, 128), (0, 255, 127)),
+            # Dark Red to Orange
+            ((139, 0, 0), (255, 165, 0)),
+        ]
+        
+        # Randomly select a gradient
+        start_color, end_color = random.choice(gradients)
+        
+        # Create vertical gradient background
         for y in range(thumbnail_height):
             ratio = y / thumbnail_height
-            r = int(26 + (10 * ratio))
-            g = int(26 + (10 * ratio))
-            b = int(46 + (20 * ratio))
+            r = int(start_color[0] + (end_color[0] - start_color[0]) * ratio)
+            g = int(start_color[1] + (end_color[1] - start_color[1]) * ratio)
+            b = int(start_color[2] + (end_color[2] - start_color[2]) * ratio)
             draw.line([(0, y), (thumbnail_width, y)], fill=(r, g, b))
-        
-        # Try to get article image as background
-        background_image = None
-        if article.image_url:
-            try:
-                response = requests.get(article.image_url, timeout=10, headers=get_headers())
-                if response.status_code == 200:
-                    bg_img = Image.open(BytesIO(response.content))
-                    # Resize and crop to fit
-                    bg_img = bg_img.convert('RGB')
-                    # Resize to cover the thumbnail area
-                    bg_img.thumbnail((thumbnail_width * 2, thumbnail_height * 2), Image.LANCZOS)
-                    # Center crop
-                    bg_width, bg_height = bg_img.size
-                    left = int((bg_width - thumbnail_width) / 2) if bg_width > thumbnail_width else 0
-                    top = int((bg_height - thumbnail_height) / 2) if bg_height > thumbnail_height else 0
-                    bg_img = bg_img.crop((left, top, left + thumbnail_width, top + thumbnail_height))
-                    # Darken the background image
-                    bg_img = bg_img.convert('RGB')
-                    overlay = Image.new('RGB', (thumbnail_width, thumbnail_height), color='#000000')
-                    bg_img = Image.blend(bg_img, overlay, 0.6)  # 60% dark overlay
-                    background_image = bg_img
-            except Exception as exc:
-                logging.debug("Could not load article image for thumbnail: %s", exc)
-        
-        # Paste background image if available
-        if background_image:
-            img.paste(background_image, (0, 0))
         
         # Get Coiny font for bold text
         font_path = get_coiny_font_path(config)
         
         # Prepare text - use a shorter, punchier version of the title
-        # Limit to ~50 characters for readability
-        thumbnail_text = title[:50]
-        if len(title) > 50:
-            thumbnail_text = title[:47] + "..."
+        # Limit to ~60 characters for vertical format
+        thumbnail_text = title[:60]
+        if len(title) > 60:
+            thumbnail_text = title[:57] + "..."
         
-        # Split text into lines if needed (max 2 lines)
+        # Split text into lines if needed (max 3 lines for vertical format)
         words = thumbnail_text.split()
         lines = []
         current_line = ""
         for word in words:
             test_line = current_line + " " + word if current_line else word
-            if len(test_line) <= 30:  # ~30 chars per line
+            if len(test_line) <= 35:  # ~35 chars per line for vertical format
                 current_line = test_line
             else:
                 if current_line:
@@ -2169,13 +2282,13 @@ def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, c
                 current_line = word
         if current_line:
             lines.append(current_line)
-        lines = lines[:2]  # Max 2 lines
+        lines = lines[:3]  # Max 3 lines for vertical format
         
         # Draw text with bold styling
         try:
             if font_path:
-                # Use Coiny font - try different sizes
-                font_size = 80 if len(lines) == 1 else 65
+                # Use Coiny font - larger size for vertical format
+                font_size = 120 if len(lines) == 1 else (100 if len(lines) == 2 else 85)
                 try:
                     font = ImageFont.truetype(font_path, font_size)
                 except:
@@ -2183,14 +2296,15 @@ def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, c
             else:
                 # Fallback to default bold font
                 try:
-                    font = ImageFont.truetype("arial.ttf", 80)
+                    font = ImageFont.truetype("arial.ttf", 120)
                 except:
                     font = ImageFont.load_default()
         except:
             font = ImageFont.load_default()
         
-        # Calculate text position (centered)
-        text_y_start = thumbnail_height // 2 - (len(lines) * 80) // 2
+        # Calculate text position (centered vertically)
+        total_text_height = len(lines) * 140  # Approximate line height
+        text_y_start = thumbnail_height // 2 - total_text_height // 2
         
         # Draw text with outline (shadow effect for readability)
         for line_idx, line in enumerate(lines):
@@ -2201,22 +2315,19 @@ def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, c
             
             # Center horizontally
             text_x = (thumbnail_width - text_width) // 2
-            text_y = text_y_start + (line_idx * 90)
+            text_y = text_y_start + (line_idx * 140)
             
             # Draw black outline (shadow) - draw multiple times for thicker outline
             outline_color = (0, 0, 0)
-            for adj in [(-2, -2), (-2, 2), (2, -2), (2, 2), (-2, 0), (2, 0), (0, -2), (0, 2)]:
+            outline_thickness = 4
+            for adj in [(-outline_thickness, -outline_thickness), (-outline_thickness, outline_thickness), 
+                       (outline_thickness, -outline_thickness), (outline_thickness, outline_thickness),
+                       (-outline_thickness, 0), (outline_thickness, 0), (0, -outline_thickness), (0, outline_thickness),
+                       (-2, -2), (-2, 2), (2, -2), (2, 2)]:
                 draw.text((text_x + adj[0], text_y + adj[1]), line, font=font, fill=outline_color)
             
             # Draw white text on top
             draw.text((text_x, text_y), line, font=font, fill='#FFFFFF')
-        
-        # Add a subtle accent bar at the bottom
-        accent_height = 8
-        draw.rectangle(
-            [(0, thumbnail_height - accent_height), (thumbnail_width, thumbnail_height)],
-            fill='#FF6B6B'  # Bright red accent
-        )
         
         # Save thumbnail
         img.save(str(output_path), 'PNG', quality=95)
@@ -2750,97 +2861,181 @@ def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: 
 
 
 def extract_keywords_for_search(article: ArticleCandidate) -> List[str]:
-    """Extract AI-focused searchable keywords from article for stock media search."""
-    text = f"{article.title} {article.summary}".lower()
+    """Extract specific, article-focused searchable keywords from article for stock media search.
+    Returns more specific keywords based on article content to get better matching stock media."""
+    # Combine title, summary, and first paragraph for better context
+    text = f"{article.title} {article.summary} {article.text[:500]}".lower()
     keywords = []
     
-    # Prioritize AI-related keywords
-    ai_keywords_priority = [
-        "artificial intelligence", "ai", "machine learning", "deep learning",
-        "neural network", "generative ai", "chatbot", "llm", "gpt", "claude"
+    # Extract specific technology/product names (more specific than generic AI terms)
+    specific_terms = []
+    
+    # Look for specific AI models, products, or technologies mentioned
+    specific_patterns = [
+        r'\b(gpt-\d+|claude|gemini|llama|mistral|palm|dall-e|midjourney|stable diffusion|flux)\b',
+        r'\b(transformer|diffusion|gan|rnn|cnn|bert|t5)\b',
+        r'\b(chatbot|assistant|agent|autonomous|robotics|computer vision|nlp)\b',
+        r'\b(gpu|cpu|tensor|neural|algorithm|model|training|inference)\b',
     ]
     
-    for kw in ai_keywords_priority:
-        if kw in text:
-            keywords.append(kw)
-            if len(keywords) >= 2:  # Get 2 AI keywords if available
-                break
-    
-    # Extract AI company names
-    ai_companies = ["openai", "anthropic", "google ai", "microsoft ai", "meta ai", "deepmind"]
-    for company in ai_companies:
-        if company in text:
-            keywords.append(company.replace(" ai", "").replace("ai", "").strip() or "ai")
+    for pattern in specific_patterns:
+        matches = re.findall(pattern, text)
+        specific_terms.extend([m for m in matches if m not in specific_terms])
+        if len(specific_terms) >= 3:
             break
     
-    # Fallback to AI-focused defaults if no keywords found
-    if not keywords:
-        keywords = ["artificial intelligence", "ai technology", "machine learning"]
-    elif len(keywords) < 2:
-        # Add AI context to single keyword
-        if keywords[0] not in ["ai", "artificial intelligence"]:
-            keywords.insert(0, "ai")
+    # Extract company/product names
+    company_patterns = [
+        r'\b(openai|anthropic|google|microsoft|meta|facebook|nvidia|amd|intel|apple|amazon|tesla)\b',
+        r'\b(deepmind|stability ai|midjourney|cohere|mistral ai|hugging face)\b',
+    ]
     
-    # Use first 2-3 keywords, prioritizing AI terms
-    return keywords[:3]
+    for pattern in company_patterns:
+        matches = re.findall(pattern, text)
+        for match in matches:
+            if match not in specific_terms:
+                specific_terms.append(match)
+                if len(specific_terms) >= 4:
+                    break
+        if len(specific_terms) >= 4:
+            break
+    
+    # Extract action/application keywords from title (what is the AI doing?)
+    action_keywords = []
+    action_patterns = [
+        r'\b(generate|create|detect|analyze|predict|recognize|translate|summarize|optimize|automate)\b',
+        r'\b(breakthrough|launch|release|announce|develop|train|deploy|integrate)\b',
+    ]
+    
+    for pattern in action_patterns:
+        matches = re.findall(pattern, text)
+        action_keywords.extend([m for m in matches if m not in action_keywords])
+        if len(action_keywords) >= 2:
+            break
+    
+    # Build keyword list: specific terms + action + AI context
+    if specific_terms:
+        keywords.extend(specific_terms[:2])  # Use 2 most specific terms
+    
+    if action_keywords:
+        keywords.append(action_keywords[0])  # Add one action keyword
+    
+    # Add AI context if not already present
+    has_ai_context = any(kw in text for kw in ["ai", "artificial intelligence", "machine learning"])
+    if has_ai_context and not any("ai" in kw or "intelligence" in kw or "learning" in kw for kw in keywords):
+        keywords.append("ai")
+    
+    # Fallback to more specific AI terms if no keywords found
+    if not keywords:
+        # Try to extract from title words
+        title_words = [w for w in article.title.lower().split() if len(w) > 4]
+        if title_words:
+            keywords = title_words[:2] + ["ai"]
+        else:
+            keywords = ["artificial intelligence", "technology"]
+    
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_keywords = []
+    for kw in keywords:
+        if kw not in seen:
+            seen.add(kw)
+            unique_keywords.append(kw)
+    
+    # Return 2-3 most relevant keywords for better search specificity
+    return unique_keywords[:3]
 
 
-def fetch_stock_video(keywords: List[str], config: Config, count: int = 3) -> List[str]:
-    """Fetch multiple stock videos from Pexels API.
+def fetch_stock_video(keywords: List[str], config: Config, count: int = 3, used_media_ids: Optional[Set[str]] = None) -> List[Tuple[str, str]]:
+    """Fetch multiple stock videos from Pexels API with randomization and reuse prevention.
     
     Args:
         keywords: Search keywords
         config: Config object with API keys
         count: Number of videos to fetch (default: 3)
+        used_media_ids: Set of already-used media IDs to exclude
     
     Returns:
-        List of video URLs
+        List of tuples (video_url, media_id) for tracking
     """
-    search_query = " ".join(keywords[:2]) if keywords else "technology"
-    video_urls = []
+    if used_media_ids is None:
+        used_media_ids = set()
+    
+    # Create more specific search query from keywords
+    search_query = " ".join(keywords) if keywords else "technology"
+    video_results = []
     
     # Try Pexels videos
     if config.pexels_api_key:
         try:
             url = "https://api.pexels.com/videos/search"
             headers = {"Authorization": config.pexels_api_key}
-            params = {"query": search_query, "per_page": min(count * 2, 15), "orientation": "portrait"}
+            
+            # Request more results to have options after filtering used ones
+            per_page = min(count * 5, 80)  # Request more to account for filtering
+            
+            # Add randomization: use random page (1-10) to get different results
+            # Pexels typically returns 15 per page, so page 1-10 gives us variety
+            random_page = random.randint(1, min(10, max(1, per_page // 15)))
+            
+            params = {
+                "query": search_query,
+                "per_page": per_page,
+                "orientation": "portrait",
+                "page": random_page
+            }
+            
             response = requests.get(url, headers=headers, params=params, timeout=10)
             response.raise_for_status()
             if response.status_code == 200:
                 data = response.json()
                 videos = data.get("videos", [])
-                for video in videos[:count]:
+                
+                # Shuffle videos to add more randomness
+                random.shuffle(videos)
+                
+                for video in videos:
+                    if len(video_results) >= count:
+                        break
+                    
+                    video_id = f"pexels_{video.get('id', '')}"
+                    # Skip if already used
+                    if video_id in used_media_ids:
+                        continue
+                    
                     video_files = video.get("video_files", [])
                     if video_files:
                         # Prefer HD quality, fallback to any available
                         hd_video = next((vf for vf in video_files if vf.get("quality") == "hd"), None)
                         video_url = (hd_video or video_files[0]).get("link")
-                        if video_url and video_url not in video_urls:
-                            video_urls.append(video_url)
-                if video_urls:
-                    logging.info("Fetched %d stock video(s) from Pexels: %s", len(video_urls), search_query)
-                    return video_urls
+                        if video_url:
+                            video_results.append((video_url, video_id))
+                
+                if video_results:
+                    logging.info("Fetched %d stock video(s) from Pexels (page %d): %s", 
+                               len(video_results), random_page, search_query)
+                    return video_results
         except requests.RequestException as exc:
             logging.debug("Pexels video API request failed: %s", exc)
         except Exception as exc:
             logging.debug("Pexels video API error: %s", exc)
     
-    return video_urls
+    return video_results
 
 
-def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "photo", count: int = 1) -> List[str]:
-    """Fetch stock media (images or videos) from Pexels, Pixabay, or Unsplash APIs.
-    Returns a list of URLs."""
-    search_query = " ".join(keywords[:2]) if keywords else "technology"
+def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "photo", count: int = 1, used_media_ids: Optional[Set[str]] = None) -> List[Tuple[str, str]]:
+    """Fetch stock media (images or videos) from Pexels, Pixabay, or Unsplash APIs with randomization and reuse prevention.
+    Returns a list of tuples (url, media_id) for tracking."""
+    if used_media_ids is None:
+        used_media_ids = set()
+    
+    search_query = " ".join(keywords) if keywords else "technology"
     results = []
     
     if media_type == "video":
         # Try to fetch videos
-        video_url = fetch_stock_video(keywords, config)
-        if video_url:
-            return [video_url]
-        return []
+        video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids)
+        return video_results
     
     # Fetch images
     # Try Pexels first
@@ -2848,18 +3043,43 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
         try:
             url = "https://api.pexels.com/v1/search"
             headers = {"Authorization": config.pexels_api_key}
-            params = {"query": search_query, "per_page": min(count, 15), "orientation": "portrait"}
+            
+            # Request more results to have options after filtering used ones
+            per_page = min(count * 5, 80)
+            # Add randomization: use random page (1-10)
+            random_page = random.randint(1, min(10, max(1, per_page // 15)))
+            
+            params = {
+                "query": search_query,
+                "per_page": per_page,
+                "orientation": "portrait",
+                "page": random_page
+            }
             response = requests.get(url, headers=headers, params=params, timeout=10)
             response.raise_for_status()
             if response.status_code == 200:
                 data = response.json()
                 photos = data.get("photos", [])
-                for photo in photos[:count]:
+                
+                # Shuffle photos to add more randomness
+                random.shuffle(photos)
+                
+                for photo in photos:
+                    if len(results) >= count:
+                        break
+                    
+                    photo_id = f"pexels_{photo.get('id', '')}"
+                    # Skip if already used
+                    if photo_id in used_media_ids:
+                        continue
+                    
                     image_url = photo.get("src", {}).get("large") or photo.get("src", {}).get("original")
                     if image_url:
-                        results.append(image_url)
+                        results.append((image_url, photo_id))
+                
                 if results:
-                    logging.info("Fetched %d stock image(s) from Pexels: %s", len(results), search_query)
+                    logging.info("Fetched %d stock image(s) from Pexels (page %d): %s", 
+                               len(results), random_page, search_query)
                     return results[:count]
         except requests.RequestException as exc:
             logging.debug("Pexels API request failed: %s", exc)
@@ -2870,26 +3090,44 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
     if config.pixabay_api_key and len(results) < count:
         try:
             url = "https://pixabay.com/api/"
+            
+            # Request more results and add randomization
+            per_page = min(count * 5, 200)
+            random_page = random.randint(1, min(10, max(1, per_page // 20)))
+            
             params = {
                 "key": config.pixabay_api_key,
                 "q": search_query,
                 "image_type": "photo",
                 "orientation": "vertical",
-                "per_page": min(count * 2, 20),
+                "per_page": per_page,
+                "page": random_page,
             }
             response = requests.get(url, params=params, timeout=10)
             response.raise_for_status()
             if response.status_code == 200:
                 data = response.json()
                 hits = data.get("hits", [])
+                
+                # Shuffle hits to add more randomness
+                random.shuffle(hits)
+                
                 for hit in hits:
                     if len(results) >= count:
                         break
+                    
+                    hit_id = f"pixabay_{hit.get('id', '')}"
+                    # Skip if already used
+                    if hit_id in used_media_ids:
+                        continue
+                    
                     image_url = hit.get("largeImageURL") or hit.get("webformatURL")
-                    if image_url and image_url not in results:
-                        results.append(image_url)
+                    if image_url:
+                        results.append((image_url, hit_id))
+                
                 if results:
-                    logging.info("Fetched %d stock image(s) from Pixabay: %s", len(results), search_query)
+                    logging.info("Fetched %d stock image(s) from Pixabay (page %d): %s", 
+                               len(results), random_page, search_query)
                     return results[:count]
         except requests.RequestException as exc:
             logging.debug("Pixabay API request failed: %s", exc)
@@ -2901,20 +3139,42 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
         try:
             url = "https://api.unsplash.com/search/photos"
             headers = {"Authorization": f"Client-ID {config.unsplash_api_key}"}
-            params = {"query": search_query, "per_page": min(count, 10), "orientation": "portrait"}
+            
+            # Request more results and add randomization
+            per_page = min(count * 5, 30)
+            random_page = random.randint(1, min(10, max(1, per_page // 10)))
+            
+            params = {
+                "query": search_query,
+                "per_page": per_page,
+                "orientation": "portrait",
+                "page": random_page
+            }
             response = requests.get(url, headers=headers, params=params, timeout=10)
             response.raise_for_status()
             if response.status_code == 200:
                 data = response.json()
                 photo_results = data.get("results", [])
+                
+                # Shuffle results to add more randomness
+                random.shuffle(photo_results)
+                
                 for result in photo_results:
                     if len(results) >= count:
                         break
+                    
+                    result_id = f"unsplash_{result.get('id', '')}"
+                    # Skip if already used
+                    if result_id in used_media_ids:
+                        continue
+                    
                     image_url = result.get("urls", {}).get("regular") or result.get("urls", {}).get("full")
-                    if image_url and image_url not in results:
-                        results.append(image_url)
+                    if image_url:
+                        results.append((image_url, result_id))
+                
                 if results:
-                    logging.info("Fetched %d stock image(s) from Unsplash: %s", len(results), search_query)
+                    logging.info("Fetched %d stock image(s) from Unsplash (page %d): %s", 
+                               len(results), random_page, search_query)
                     return results[:count]
         except requests.RequestException as exc:
             logging.debug("Unsplash API request failed: %s", exc)
@@ -2927,16 +3187,20 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
 
 
 def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Path, count: int = 5) -> Tuple[List[str], List[Path]]:
-    """Prepare stock media (videos and images) for video assembly.
+    """Prepare stock media (videos and images) for video assembly with reuse prevention.
     Returns: (list_of_video_paths, list_of_image_paths)"""
     keywords = extract_keywords_for_search(article)
     video_paths = []
     image_paths = []
+    used_media_ids_to_save = []  # Track IDs to save after successful download
+    
+    # Load previously used media IDs to avoid reuse
+    used_media_ids = load_used_media_ids(config)
     
     # Try to fetch multiple stock videos first (most engaging)
     if config.pexels_api_key:
-        video_urls = fetch_stock_video(keywords, config, count=3)  # Fetch 3 videos
-        for i, video_url in enumerate(video_urls):
+        video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids)  # Returns (url, media_id) tuples
+        for i, (video_url, media_id) in enumerate(video_results):
             try:
                 video_file = tmp_path / f"stock_video_{i}.mp4"
                 response = requests.get(video_url, timeout=30, stream=True)
@@ -2963,20 +3227,23 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
                     continue
                 
                 video_paths.append(str(video_file))
+                used_media_ids_to_save.append(media_id)  # Track for saving
                 logging.info("Downloaded stock video %d from Pexels (%d KB)", i+1, video_file.stat().st_size // 1024)
             except Exception as exc:
                 logging.warning("Failed to download stock video %d: %s", i+1, exc)
                 continue
         
         if video_paths:
+            # Save used media IDs
+            save_used_media_ids(used_media_ids_to_save, config)
             logging.info("Prepared %d stock video(s) for video", len(video_paths))
             return video_paths, image_paths
     
     # Fetch multiple stock images
-    stock_image_urls = fetch_stock_media(keywords, config, media_type="photo", count=count)
+    stock_image_results = fetch_stock_media(keywords, config, media_type="photo", count=count, used_media_ids=used_media_ids)  # Returns (url, media_id) tuples
     target_width, target_height = 1080, 1920
     
-    for i, image_url in enumerate(stock_image_urls):
+    for i, (image_url, media_id) in enumerate(stock_image_results):
         try:
             response = requests.get(image_url, timeout=15)
             response.raise_for_status()
@@ -2999,11 +3266,14 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
             image_file = tmp_path / f"stock_image_{i}.jpg"
             img.save(image_file, "JPEG", quality=90)
             image_paths.append(image_file)
+            used_media_ids_to_save.append(media_id)  # Track for saving
         except Exception as exc:
             logging.debug("Failed to download/process stock image %d: %s", i, exc)
             continue
     
     if image_paths:
+        # Save used media IDs
+        save_used_media_ids(used_media_ids_to_save, config)
         logging.info("Prepared %d stock image(s) for video", len(image_paths))
         return [], image_paths
     
@@ -3078,11 +3348,13 @@ def ensure_image(path: Path, article: ArticleCandidate, config: Config) -> Path:
     
     # Try stock media first (more engaging)
     keywords = extract_keywords_for_search(article)
-    stock_urls = fetch_stock_media(keywords, config, media_type="photo", count=1)
+    used_media_ids = load_used_media_ids(config)
+    stock_results = fetch_stock_media(keywords, config, media_type="photo", count=1, used_media_ids=used_media_ids)
     
-    if stock_urls:
+    if stock_results:
         try:
-            response = requests.get(stock_urls[0], timeout=15)
+            image_url, media_id = stock_results[0]  # Unpack tuple (url, media_id)
+            response = requests.get(image_url, timeout=15)
             response.raise_for_status()
             img = Image.open(BytesIO(response.content))
             img = img.convert("RGB")
@@ -3100,6 +3372,8 @@ def ensure_image(path: Path, article: ArticleCandidate, config: Config) -> Path:
                 img = img.crop((0, top, target_width, top + target_height))
             
             img.save(path, "JPEG", quality=90)
+            # Save the used media ID
+            save_used_media_ids([media_id], config)
             logging.info("Used stock media image")
             return path
         except Exception as exc:
@@ -3299,35 +3573,694 @@ def generate_audio_with_edge_tts(script: str, output_path: Path, config: Config)
         return None
 
 
+def enhance_audio_professional(raw_audio_path: Path, output_path: Path) -> Optional[Path]:
+    """Apply refined professional audio processing for TTS voiceover.
+    
+    Enhanced processing chain for natural, clear voiceover:
+    - Multi-band filtering to remove artifacts while preserving clarity
+    - Sophisticated EQ to reduce harshness and enhance intelligibility
+    - Advanced de-essing to tame sibilance
+    - Smooth compression for consistent levels
+    - Subtle saturation for warmth
+    - Professional limiting for broadcast-ready levels
+    
+    Args:
+        raw_audio_path: Path to the raw TTS-generated audio file
+        output_path: Path where the enhanced audio will be saved
+        
+    Returns:
+        Path to enhanced audio file if successful, None otherwise
+    """
+    if not raw_audio_path.exists() or raw_audio_path.stat().st_size == 0:
+        logging.warning("Raw audio file does not exist or is empty: %s", raw_audio_path)
+        return None
+    
+    try:
+        logging.info("Applying refined audio processing for TTS...")
+        
+        # Refined filter chain for professional TTS voiceover
+        # Each stage addresses specific TTS audio characteristics
+        
+        filter_chain = (
+            # Stage 1: High-pass filter at 70Hz (removes low-frequency rumble and plosives)
+            "highpass=f=70,"
+            # Stage 2: Low-pass filter at 14kHz (smooths digital artifacts, preserves clarity)
+            "lowpass=f=14000,"
+            # Stage 3: Multi-band EQ - targeted frequency adjustments for TTS
+            # Reduce mud in low-mids (200-400Hz range) - common TTS issue
+            "equalizer=f=300:width_type=h:width=400:g=-2.0,"
+            # Slight boost in vocal presence range (2-3kHz) for clarity and intelligibility
+            "equalizer=f=2500:width_type=h:width=1000:g=1.2,"
+            # Reduce harshness in upper mids (4-6kHz) where sibilance and digital artifacts live
+            "equalizer=f=5500:width_type=h:width=2000:g=-3.0,"
+            # Gentle reduction in very high frequencies (8-10kHz) to reduce digital harshness
+            "equalizer=f=9000:width_type=h:width=2000:g=-1.5,"
+            # Stage 4: Smooth compression for consistent levels (gentle, natural-sounding)
+            "acompressor=threshold=-20dB:ratio=3.5:attack=20:release=200:makeup=1.0,"
+            # Stage 5: Additional targeted compression on sibilance range (4-7kHz) for de-essing
+            "asplit[main][sibilance],"
+            "[sibilance]highpass=f=4000,lowpass=f=7000,acompressor=threshold=-18dB:ratio=6:attack=2:release=30[sibilance_processed],"
+            "[main][sibilance_processed]amix=inputs=2:weights=0.94 0.06:duration=first,"
+            # Stage 6: Professional peak limiter with lookahead (prevents clipping, maintains dynamics)
+            "alimiter=level_in=1:level_out=0.95:limit=0.95:attack=7:release=50"
+        )
+        
+        # Join filter chain into single string
+        filter_chain = "".join(filter_chain)
+        
+        # Build FFmpeg command
+        cmd = [
+            "ffmpeg",
+            "-i", str(raw_audio_path),
+            "-af", filter_chain,
+            "-ar", "44100",  # Professional sample rate
+            "-ac", "1",  # Mono (voiceover doesn't need stereo)
+            "-b:a", "192k",  # High-quality bitrate
+            "-y",  # Overwrite output file
+            str(output_path)
+        ]
+        
+        # Execute FFmpeg with error handling
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            check=False
+        )
+        
+        if result.returncode != 0:
+            logging.warning("FFmpeg audio enhancement failed: %s", result.stderr)
+            # Fallback: try simpler enhancement chain
+            logging.info("Attempting simplified audio enhancement as fallback...")
+            return enhance_audio_simple(raw_audio_path, output_path)
+        
+        # Verify output file was created and has content
+        if output_path.exists() and output_path.stat().st_size > 0:
+            original_size = raw_audio_path.stat().st_size
+            enhanced_size = output_path.stat().st_size
+            logging.info("Audio enhancement completed successfully")
+            logging.info("  Original size: %.2f KB | Enhanced size: %.2f KB", 
+                        original_size / 1024, enhanced_size / 1024)
+            return output_path
+        else:
+            logging.warning("Enhanced audio file was not created or is empty")
+            return enhance_audio_simple(raw_audio_path, output_path)
+            
+    except FileNotFoundError:
+        logging.warning("FFmpeg not found - audio enhancement skipped")
+        # Copy raw audio to output if FFmpeg is unavailable
+        try:
+            shutil.copy2(raw_audio_path, output_path)
+            return output_path
+        except Exception as exc:
+            logging.warning("Failed to copy raw audio: %s", exc)
+            return None
+    except Exception as exc:
+        logging.warning("Audio enhancement failed: %s", exc)
+        # Fallback to simple enhancement
+        return enhance_audio_simple(raw_audio_path, output_path)
+
+
+def enhance_audio_simple(raw_audio_path: Path, output_path: Path) -> Optional[Path]:
+    """Simplified audio processing fallback using basic FFmpeg filters.
+    
+    Used when the main enhancement chain fails. Still provides good cleanup.
+    
+    Args:
+        raw_audio_path: Path to the raw audio file
+        output_path: Path where the enhanced audio will be saved
+        
+    Returns:
+        Path to enhanced audio file if successful, None otherwise
+    """
+    try:
+        # Simplified but effective filter chain
+        simple_filter_parts = (
+            "highpass=f=70,",
+            "lowpass=f=14000,",
+            "equalizer=f=5500:width_type=h:width=2000:g=-2.0,",
+            "acompressor=threshold=-20dB:ratio=3:attack=15:release=150,",
+            "alimiter=level_in=1:level_out=0.95:limit=0.95"
+        )
+        simple_filter = "".join(simple_filter_parts)
+        
+        cmd = [
+            "ffmpeg",
+            "-i", str(raw_audio_path),
+            "-af", simple_filter,
+            "-ar", "44100",
+            "-ac", "1",
+            "-b:a", "192k",
+            "-y",
+            str(output_path)
+        ]
+        
+        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        
+        if result.returncode == 0 and output_path.exists() and output_path.stat().st_size > 0:
+            logging.info("Simplified audio enhancement completed")
+            return output_path
+        else:
+            # Last resort: just copy the file
+            logging.warning("Simplified enhancement failed, using raw audio")
+            shutil.copy2(raw_audio_path, output_path)
+            return output_path
+            
+    except Exception as exc:
+        logging.warning("Simplified audio enhancement failed: %s", exc)
+        try:
+            shutil.copy2(raw_audio_path, output_path)
+            return output_path
+        except Exception:
+            return None
+
+
 def generate_audio(script: str, output_path: Path, config: Config) -> Optional[Path]:
-    """Generate audio narration with fallback chain: Google Cloud TTS -> Edge-TTS -> None."""
+    """Generate audio narration with fallback chain: Google Cloud TTS -> Edge-TTS -> None.
+    
+    All generated audio is automatically enhanced with professional studio-quality processing.
+    """
     logging.info("Starting audio generation...")
+    
+    # Create temporary path for raw audio before enhancement
+    raw_audio_path = output_path.parent / f"raw_{output_path.name}"
     
     # Try Google Cloud TTS first
     if config.use_gcloud_tts:
         logging.info("Attempting Google Cloud TTS (primary)...")
-        gcloud_audio = generate_audio_with_gcloud_tts(script, output_path, config)
+        gcloud_audio = generate_audio_with_gcloud_tts(script, raw_audio_path, config)
         if gcloud_audio:
             logging.info("Audio generation completed using Google Cloud TTS")
-            return gcloud_audio
+            # Enhance the audio to studio quality
+            enhanced = enhance_audio_professional(raw_audio_path, output_path)
+            # Clean up raw audio file
+            try:
+                if raw_audio_path.exists():
+                    raw_audio_path.unlink()
+            except Exception:
+                pass  # Ignore cleanup errors
+            if enhanced:
+                return enhanced
+            # If enhancement failed, try to use raw audio
+            if raw_audio_path.exists():
+                shutil.copy2(raw_audio_path, output_path)
+                return output_path
         logging.info("Google Cloud TTS unavailable, falling back to Edge-TTS")
     else:
         logging.info("Google Cloud TTS disabled in config, using Edge-TTS")
     
     # Fallback to Edge-TTS
     logging.info("Attempting Edge-TTS (fallback)...")
-    edge_audio = generate_audio_with_edge_tts(script, output_path, config)
+    edge_audio = generate_audio_with_edge_tts(script, raw_audio_path, config)
     if edge_audio:
         logging.info("Audio generation completed using Edge-TTS")
-        return edge_audio
+        # Enhance the audio to studio quality
+        enhanced = enhance_audio_professional(raw_audio_path, output_path)
+        # Clean up raw audio file
+        try:
+            if raw_audio_path.exists():
+                raw_audio_path.unlink()
+        except Exception:
+            pass  # Ignore cleanup errors
+        if enhanced:
+            return enhanced
+        # If enhancement failed, try to use raw audio
+        if raw_audio_path.exists():
+            shutil.copy2(raw_audio_path, output_path)
+            return output_path
     
     logging.error("All TTS methods failed - no audio generated")
     
-    # Final fallback: silent video with captions
-    logging.warning("All audio generation methods failed, video will be silent with captions")
+    # Final fallback: silent video
+    logging.warning("All audio generation methods failed, video will be silent")
     return None
 
 
+def extract_word_timings(audio_path: Path, script: str, config: Config) -> List[WordTiming]:
+    """Extract word-level timings from audio file.
+    
+    Uses speech recognition (whisper-timestamped) to get word timings.
+    Falls back to estimated timing based on script if recognition fails.
+    
+    Args:
+        audio_path: Path to audio file
+        script: Original script text
+        config: Config object
+        
+    Returns:
+        List of WordTiming objects with word, start_time, end_time
+    """
+    try:
+        # Try to use whisper-timestamped for accurate word-level timing
+        try:
+            import whisper_timestamped as whisper
+            import torch
+            
+            logging.info("Extracting word timings using whisper-timestamped...")
+            # Try tiny model first (faster), fallback to base if needed
+            try:
+                model = whisper.load_model("tiny", device="cpu")
+            except:
+                model = whisper.load_model("base", device="cpu")
+            
+            audio = whisper.load_audio(str(audio_path))
+            result = whisper.transcribe(
+                model, 
+                audio, 
+                language="en",
+                word_timestamps=True,
+                verbose=False
+            )
+            
+            word_timings = []
+            for segment in result.get("segments", []):
+                for word_info in segment.get("words", []):
+                    word_text = word_info.get("text", "").strip()
+                    start_time = word_info.get("start", 0.0)
+                    end_time = word_info.get("end", 0.0)
+                    
+                    # Skip empty words
+                    if word_text:
+                        word_timings.append(WordTiming(
+                            word=word_text,
+                            start_time=start_time,
+                            end_time=end_time
+                        ))
+            
+            if word_timings:
+                logging.info("Extracted %d word timings from audio using whisper", len(word_timings))
+                return word_timings
+            else:
+                logging.warning("Whisper returned no word timings, using fallback")
+        except ImportError:
+            logging.debug("whisper-timestamped not available, using fallback timing")
+        except Exception as exc:
+            logging.warning("Failed to extract timings with whisper: %s, using fallback", exc)
+        
+        # Fallback: Estimate timing based on script and audio duration with improved algorithm
+        logging.info("Using improved estimated word timings based on script...")
+        try:
+            audio_clip = AudioFileClip(str(audio_path))
+            audio_duration = audio_clip.duration
+            audio_clip.close()
+        except Exception:
+            audio_duration = len(script.split()) * 0.5  # Estimate 0.5s per word
+        
+        words = script.split()
+        if not words:
+            return []
+        
+        # Improved timing estimation algorithm
+        # Calculate base speaking rate (words per second)
+        base_wps = len(words) / audio_duration
+        
+        # Estimate syllables per word (rough approximation)
+        def estimate_syllables(word):
+            word = word.lower()
+            if len(word) <= 3:
+                return 1
+            word = re.sub(r'[^aeiouy]', '', word)
+            syllables = len(word)
+            if syllables == 0:
+                return 1
+            return max(1, syllables)
+        
+        # Calculate total "speech units" (weighted by syllables and pauses)
+        total_units = 0.0
+        word_units = []
+        
+        for i, word in enumerate(words):
+            clean_word = re.sub(r'[^\w\s]', '', word)
+            if not clean_word:
+                word_units.append(0.0)
+                continue
+            
+            # Base unit: syllables in word
+            syllables = estimate_syllables(clean_word)
+            unit = syllables * 0.15  # ~150ms per syllable
+            
+            # Add pause time for punctuation
+            has_comma = ',' in word or ';' in word or ':' in word
+            has_period = '.' in word or '!' in word or '?' in word
+            
+            if has_period:
+                unit += 0.4  # Longer pause after sentence end
+            elif has_comma:
+                unit += 0.2  # Shorter pause after comma
+            
+            # Longer words get slightly more time
+            if len(clean_word) > 6:
+                unit += 0.1
+            
+            word_units.append(unit)
+            total_units += unit
+        
+        # Scale units to match audio duration
+        if total_units > 0:
+            scale_factor = audio_duration / total_units
+        else:
+            scale_factor = audio_duration / len(words)
+        
+        # Generate word timings
+        word_timings = []
+        current_time = 0.0
+        
+        for i, word in enumerate(words):
+            clean_word = re.sub(r'[^\w\s]', '', word)
+            if not clean_word:
+                # Still add timing for punctuation-only words
+                word_timings.append(WordTiming(
+                    word=word,
+                    start_time=current_time,
+                    end_time=current_time + 0.05
+                ))
+                current_time += 0.05
+                continue
+            
+            start_time = current_time
+            # Use scaled unit for duration
+            word_duration = word_units[i] * scale_factor
+            # Ensure minimum duration
+            word_duration = max(0.15, word_duration)
+            end_time = start_time + word_duration
+            
+            word_timings.append(WordTiming(
+                word=word,
+                start_time=start_time,
+                end_time=end_time
+            ))
+            
+            current_time = end_time
+        
+        # Adjust final timing to match audio duration exactly
+        if word_timings and current_time > 0:
+            final_time = word_timings[-1].end_time
+            if final_time < audio_duration:
+                # Stretch timings to fill audio duration
+                stretch_factor = audio_duration / final_time
+                for wt in word_timings:
+                    wt.start_time *= stretch_factor
+                    wt.end_time *= stretch_factor
+            elif final_time > audio_duration:
+                # Compress timings to fit audio duration
+                compress_factor = audio_duration / final_time
+                for wt in word_timings:
+                    wt.start_time *= compress_factor
+                    wt.end_time *= compress_factor
+        
+        logging.info("Estimated %d word timings from script (audio: %.2fs)", len(word_timings), audio_duration)
+        return word_timings
+        
+    except Exception as exc:
+        logging.error("Failed to extract word timings: %s", exc)
+        return []
+
+
+def group_words_into_phrases(word_timings: List[WordTiming], max_chars_per_line: int = 40) -> List[Phrase]:
+    """Group words into readable caption phrases.
+    
+    Groups words considering:
+    - Character limits per line (max_chars_per_line)
+    - Natural pauses (punctuation, longer gaps)
+    - Maximum 2 lines per phrase
+    
+    Args:
+        word_timings: List of WordTiming objects
+        max_chars_per_line: Maximum characters per line
+        
+    Returns:
+        List of Phrase objects
+    """
+    if not word_timings:
+        return []
+    
+    phrases = []
+    current_phrase_words = []
+    current_text = ""
+    phrase_start_time = word_timings[0].start_time if word_timings else 0.0
+    
+    for i, word_timing in enumerate(word_timings):
+        word = word_timing.word
+        clean_word = re.sub(r'[^\w\s]', '', word)
+        
+        # Check if adding this word would exceed character limit
+        test_text = current_text + (" " if current_text else "") + word
+        test_length = len(test_text)
+        
+        # Check for natural break points
+        is_punctuation = bool(re.search(r'[.!?,:;]', word))
+        is_end_punctuation = bool(re.search(r'[.!?]', word))
+        
+        # Check for pause (gap > 0.3 seconds)
+        has_pause = False
+        if i > 0:
+            gap = word_timing.start_time - word_timings[i-1].end_time
+            has_pause = gap > 0.3
+        
+        # Start new phrase if:
+        # 1. Exceeds character limit AND (has punctuation OR pause)
+        # 2. Has end punctuation (period, exclamation, question mark)
+        # 3. Current phrase is already long enough (> 30 chars) AND has pause
+        should_break = False
+        if test_length > max_chars_per_line:
+            if is_punctuation or has_pause or len(current_phrase_words) > 8:
+                should_break = True
+        elif is_end_punctuation and len(current_phrase_words) >= 3:
+            should_break = True
+        elif has_pause and len(current_phrase_words) >= 5 and test_length > 30:
+            should_break = True
+        
+        if should_break and current_phrase_words:
+            # Create phrase from current words
+            phrase_text = " ".join(wt.word for wt in current_phrase_words)
+            phrase_end_time = current_phrase_words[-1].end_time
+            
+            phrases.append(Phrase(
+                text=phrase_text,
+                start_time=phrase_start_time,
+                end_time=phrase_end_time,
+                words=current_phrase_words.copy()
+            ))
+            
+            # Start new phrase
+            current_phrase_words = [word_timing]
+            current_text = word
+            phrase_start_time = word_timing.start_time
+        else:
+            # Add word to current phrase
+            current_phrase_words.append(word_timing)
+            current_text = test_text
+    
+    # Add final phrase
+    if current_phrase_words:
+        phrase_text = " ".join(wt.word for wt in current_phrase_words)
+        phrase_end_time = current_phrase_words[-1].end_time
+        
+        phrases.append(Phrase(
+            text=phrase_text,
+            start_time=phrase_start_time,
+            end_time=phrase_end_time,
+            words=current_phrase_words.copy()
+        ))
+    
+    return phrases
+
+
+def create_caption_clip(phrase: Phrase, video_size: Tuple[int, int], config: Config) -> Optional[ImageClip]:
+    """Create a Capcut-style caption clip with rounded background.
+    
+    Uses PIL to render text (no ImageMagick required).
+    
+    Args:
+        phrase: Phrase object with text and timing
+        video_size: Tuple of (width, height) for video
+        config: Config object with caption settings
+        
+    Returns:
+        CompositeVideoClip with styling, or None if creation fails
+    """
+    try:
+        video_width, video_height = video_size
+        font_size = config.caption_font_size
+        fade_duration = config.caption_fade_duration
+        
+        # Get font path (prefer Coiny, fallback to system fonts)
+        font_path = get_coiny_font_path(config)
+        font = None
+        if font_path and Path(font_path).exists():
+            try:
+                font = ImageFont.truetype(font_path, font_size)
+            except Exception:
+                font = None
+        
+        # Fallback to default bold font
+        if font is None:
+            try:
+                # Try to load a bold system font
+                font = ImageFont.truetype("arial.ttf", font_size)
+            except Exception:
+                try:
+                    font = ImageFont.truetype("C:/Windows/Fonts/arialbd.ttf", font_size)
+                except Exception:
+                    # Final fallback to default font
+                    font = ImageFont.load_default()
+                    # Scale default font to approximate size
+                    if hasattr(font, 'size'):
+                        font = ImageFont.load_default()
+        
+        # Calculate caption position based on config
+        if config.caption_position == "bottom":
+            y_position = video_height - 250  # Position above bottom overlay
+        elif config.caption_position == "top":
+            y_position = 100
+        else:  # center
+            y_position = video_height // 2
+        
+        # Render text to image using PIL
+        # First, measure text to determine size
+        max_text_width = video_width - 100  # Leave margins
+        
+        # Split text into lines if needed (word wrap)
+        words = phrase.text.split()
+        lines = []
+        current_line = ""
+        
+        for word in words:
+            test_line = current_line + (" " if current_line else "") + word
+            # Get text width using a temporary image
+            test_img = Image.new('RGB', (1, 1))
+            test_draw = ImageDraw.Draw(test_img)
+            bbox = test_draw.textbbox((0, 0), test_line, font=font)
+            text_width = bbox[2] - bbox[0]
+            
+            if text_width <= max_text_width:
+                current_line = test_line
+            else:
+                if current_line:
+                    lines.append(current_line)
+                current_line = word
+        
+        if current_line:
+            lines.append(current_line)
+        
+        if not lines:
+            lines = [phrase.text]
+        
+        # Calculate text dimensions
+        line_heights = []
+        max_line_width = 0
+        for line in lines:
+            test_img = Image.new('RGB', (1, 1))
+            test_draw = ImageDraw.Draw(test_img)
+            bbox = test_draw.textbbox((0, 0), line, font=font)
+            line_width = bbox[2] - bbox[0]
+            line_height = bbox[3] - bbox[1]
+            line_heights.append(line_height)
+            max_line_width = max(max_line_width, line_width)
+        
+        total_text_height = sum(line_heights) + (len(lines) - 1) * 10  # 10px spacing between lines
+        
+        # Add padding
+        padding_x = 40
+        padding_y = 20
+        bg_width = int(max_line_width + padding_x * 2)
+        bg_height = int(total_text_height + padding_y * 2)
+        
+        # Create background image with rounded corners
+        bg_img = create_rounded_background(
+            width=bg_width,
+            height=bg_height,
+            corner_radius=12,
+            color=(0, 0, 0),  # Black
+            opacity=0.75  # 75% opacity
+        )
+        
+        # Draw text on background
+        draw = ImageDraw.Draw(bg_img)
+        text_y = padding_y
+        for i, line in enumerate(lines):
+            # Get text bbox for this line
+            bbox = draw.textbbox((0, 0), line, font=font)
+            line_width = bbox[2] - bbox[0]
+            line_height = bbox[3] - bbox[1]
+            
+            # Center text horizontally
+            text_x = (bg_width - line_width) // 2
+            
+            # Draw text with black outline (shadow effect)
+            outline_color = (0, 0, 0)
+            for adj in [(-2, -2), (-2, 2), (2, -2), (2, 2), (-2, 0), (2, 0), (0, -2), (0, 2)]:
+                draw.text((text_x + adj[0], text_y + adj[1]), line, font=font, fill=outline_color)
+            
+            # Draw white text on top
+            draw.text((text_x, text_y), line, font=font, fill='#FFFFFF')
+            
+            text_y += line_height + 10  # Move to next line with spacing
+        
+        # Save to temp file
+        with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp_file:
+            caption_img_path = tmp_file.name
+            bg_img.save(caption_img_path, "PNG")
+        
+        # Create image clip
+        phrase_duration = phrase.end_time - phrase.start_time
+        caption_img_clip = ImageClip(caption_img_path).set_duration(phrase_duration)
+        caption_img_clip = caption_img_clip.set_start(phrase.start_time)
+        caption_img_clip = caption_img_clip.set_position(("center", y_position))
+        
+        # Apply fade animations
+        caption_img_clip = caption_img_clip.fadein(fade_duration)
+        caption_img_clip = caption_img_clip.fadeout(fade_duration)
+        
+        return caption_img_clip
+        
+    except Exception as exc:
+        logging.warning("Failed to create caption clip: %s", exc, exc_info=True)
+        return None
+
+
+
+
+def generate_captions(audio_path: Path, script: str, video_size: Tuple[int, int], config: Config) -> List[ImageClip]:
+    """Generate all caption clips for a video.
+    
+    Args:
+        audio_path: Path to audio file
+        script: Original script text
+        video_size: Tuple of (width, height)
+        config: Config object
+        
+    Returns:
+        List of ImageClip objects for captions
+    """
+    if not config.enable_captions:
+        return []
+    
+    logging.info("Generating captions...")
+    
+    # Extract word timings
+    word_timings = extract_word_timings(audio_path, script, config)
+    if not word_timings:
+        logging.warning("No word timings extracted, skipping captions")
+        return []
+    
+    # Group into phrases
+    phrases = group_words_into_phrases(word_timings, config.caption_max_chars_per_line)
+    if not phrases:
+        logging.warning("No phrases created, skipping captions")
+        return []
+    
+    logging.info("Created %d caption phrases", len(phrases))
+    
+    # Create caption clips
+    caption_clips = []
+    for phrase in phrases:
+        clip = create_caption_clip(phrase, video_size, config)
+        if clip:
+            caption_clips.append(clip)
+    
+    logging.info("Generated %d caption clips", len(caption_clips))
+    return caption_clips
 
 
 def create_rounded_background(width: int, height: int, corner_radius: int, color: tuple, opacity: float) -> Image.Image:
@@ -3403,269 +4336,6 @@ def get_coiny_font_path(config: Config) -> Optional[str]:
         
     except Exception as exc:
         logging.warning("Failed to download Coiny font: %s, falling back to Arial", exc)
-        return None
-
-
-def extract_word_timestamps_from_audio(audio_path: Path, script: str) -> Optional[List[Tuple[str, float, float]]]:
-    """Extract word-level timestamps from audio using faster-whisper.
-    Returns: List of (word, start_time, end_time) tuples, or None if extraction fails."""
-    try:
-        from faster_whisper import WhisperModel
-        
-        logging.info("Extracting word-level timestamps from audio using Whisper...")
-        # Use base model for good balance of speed and accuracy
-        model = WhisperModel("base", device="cpu", compute_type="int8")
-        
-        # Transcribe with word timestamps
-        segments, info = model.transcribe(
-            str(audio_path),
-            word_timestamps=True,
-            language="en",
-            beam_size=5,
-        )
-        
-        word_timings = []
-        for segment in segments:
-            for word_info in segment.words:
-                word = word_info.word.strip()
-                # Remove punctuation-only "words" that Whisper sometimes creates
-                if not word or word in [".", ",", "!", "?", ":", ";", "-"]:
-                    continue
-                start = word_info.start
-                end = word_info.end
-                word_timings.append((word, start, end))
-        
-        if word_timings:
-            logging.info("Extracted %d word timestamps from audio", len(word_timings))
-            return word_timings
-        else:
-            logging.warning("No word timestamps extracted, falling back to estimated timing")
-            return None
-            
-    except ImportError:
-        logging.warning("faster-whisper not available, falling back to estimated timing")
-        return None
-    except Exception as exc:
-        logging.warning("Failed to extract word timestamps: %s, falling back to estimated timing", exc)
-        return None
-
-
-def create_subtitle_file(script: str, audio_path: Optional[Path], duration: float, video_size: tuple, config: Config, output_path: Path) -> Optional[Path]:
-    """Create ASS subtitle file with word-by-word captions and accurate timing.
-    
-    Uses Whisper to extract accurate word timestamps from audio, then creates
-    an ASS subtitle file with cumulative word-by-word display, positioned safely at the bottom.
-    
-    Returns:
-        Path to the ASS subtitle file if successful, None otherwise
-    """
-    if pysubs2 is None:
-        logging.error("pysubs2 not available, cannot create subtitles")
-        return None
-    
-    video_width, video_height = video_size
-    
-    # Get Coiny font path (downloads if needed)
-    font_path = get_coiny_font_path(config)
-    # Use font name for ASS file - ffmpeg will try to find it via fontconfig
-    # If Coiny isn't available, fall back to common system fonts
-    # Priority: Coiny > Arial > DejaVu Sans > Liberation Sans > Sans
-    if font_path:
-        font_name = "Coiny"
-        logging.debug("Using Coiny font for subtitles (font file: %s)", font_path)
-    else:
-        # Use a system font that's more likely to be available
-        # Arial is common on Windows/Mac, DejaVu Sans on Linux
-        font_name = "Arial"  # Will fall back to system default if not found
-        logging.debug("Using Arial font for subtitles (Coiny not available)")
-    
-    # Clean script and split into words
-    clean_script = re.sub(r"\s+", " ", script).strip()
-    script_words = clean_script.split()
-    
-    if not script_words:
-        logging.warning("No words in script, cannot create subtitles")
-        return None
-    
-    # Extract accurate word timestamps from audio using Whisper
-    whisper_timings = None
-    if audio_path and audio_path.exists():
-        whisper_timings = extract_word_timestamps_from_audio(audio_path, clean_script)
-    
-    # Map Whisper timestamps to script words or use estimated timing
-    word_timings = []
-    if whisper_timings and len(whisper_timings) > 0:
-        whisper_word_count = len(whisper_timings)
-        script_word_count = len(script_words)
-        count_ratio = min(whisper_word_count, script_word_count) / max(whisper_word_count, script_word_count)
-        
-        if count_ratio >= 0.8:  # At least 80% match
-            logging.info("Using Whisper timestamps mapped to script words (ratio: %.2f)", count_ratio)
-            for i, script_word in enumerate(script_words):
-                if i < len(whisper_timings):
-                    _, start_time, end_time = whisper_timings[i]
-                    word_timings.append((script_word, start_time, end_time))
-                else:
-                    # Extend last timestamp for extra script words
-                    if whisper_timings:
-                        last_end = whisper_timings[-1][2]
-                        avg_duration = (last_end - whisper_timings[0][1]) / len(whisper_timings)
-                        word_timings.append((script_word, last_end, last_end + avg_duration))
-                    else:
-                        words_per_second = len(script_words) / duration if duration > 0 else 2.5
-                        word_timings.append((script_word, i / words_per_second, (i + 1) / words_per_second))
-        else:
-            logging.info("Whisper word count mismatch (ratio: %.2f), using estimated timing", count_ratio)
-            words_per_second = len(script_words) / duration if duration > 0 else 2.5
-            word_timings = [
-                (word, i / words_per_second, (i + 1) / words_per_second)
-                for i, word in enumerate(script_words)
-            ]
-    else:
-        logging.info("Using estimated word timing based on speaking rate")
-        words_per_second = len(script_words) / duration if duration > 0 else 2.5
-        word_timings = [
-            (word, i / words_per_second, (i + 1) / words_per_second)
-            for i, word in enumerate(script_words)
-        ]
-    
-    # Group words into lines (max 8 words per line, or break on punctuation)
-    max_words_per_line = 8
-    lines = []
-    current_line = []
-    current_line_start = word_timings[0][1] if word_timings else 0.0
-    
-    for i, (word, start_time, end_time) in enumerate(word_timings):
-        should_break = False
-        if len(current_line) >= max_words_per_line:
-            should_break = True
-        elif word.endswith(('.', '!', '?', ',')) and len(current_line) >= 4:
-            should_break = True
-        elif i > 0 and start_time - word_timings[i-1][2] > 0.5:
-            should_break = True
-        
-        if should_break and current_line:
-            lines.append((current_line, current_line_start, word_timings[i-1][2]))
-            current_line = [(word, start_time, end_time)]
-            current_line_start = start_time
-        else:
-            current_line.append((word, start_time, end_time))
-    
-    if current_line:
-        lines.append((current_line, current_line_start, word_timings[-1][2]))
-    
-    # Create ASS subtitle file
-    subs = pysubs2.SSAFile()
-    
-    # Define styles for subtitles
-    # ASS uses a specific format: StyleName,FontName,FontSize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-    style = pysubs2.SSAStyle()
-    style.fontname = font_name
-    # Calculate appropriate font size for 1080x1920 video (portrait)
-    # For vertical videos, use smaller font - typically 16-18px is readable
-    style.fontsize = 16  # Much smaller - appropriate for mobile/vertical video
-    style.primarycolor = pysubs2.Color(255, 255, 255, 255)  # White text (fully opaque)
-    style.outlinecolor = pysubs2.Color(0, 0, 0, 255)  # Black outline (fully opaque)
-    style.backcolor = pysubs2.Color(0, 0, 0, 180)  # Semi-transparent black background for better visibility
-    style.bold = True
-    style.outline = 1  # Thin outline for readability
-    style.shadow = 1  # Subtle shadow
-    style.alignment = 5  # Center alignment (both horizontal and vertical)
-    style.marginl = 40  # Left margin
-    style.marginr = 40  # Right margin
-    style.marginv = 40  # Bottom margin (not used when \pos is specified, but kept for fallback)
-    
-    subs.styles["Default"] = style
-    
-    # Create subtitle events with cumulative word-by-word display
-    for line_index, (line_words, line_start, line_end) in enumerate(lines):
-        if not line_words:
-            continue
-        
-        # Create cumulative word clips for this line
-        # Each event shows progressively more words, replacing the previous one
-        displayed_text = ""
-        for word_idx, (word, start_time, end_time) in enumerate(line_words):
-            # Build cumulative text
-            if displayed_text:
-                displayed_text += " " + word
-            else:
-                displayed_text = word
-            
-            # Calculate clip end time - end exactly when next word starts (no overlap)
-            # This prevents multiple events from rendering on top of each other
-            if word_idx < len(line_words) - 1:
-                next_start = line_words[word_idx + 1][1]
-                clip_end_time = next_start  # No overlap - end exactly when next starts
-            else:
-                clip_end_time = end_time
-            
-            # Ensure times are within video duration
-            start_time = max(0.0, min(start_time, duration))
-            clip_end_time = max(start_time + 0.05, min(clip_end_time, duration))  # Minimum 0.05s duration
-            
-            if clip_end_time <= start_time:
-                continue
-            
-            # Create subtitle event
-            event = pysubs2.SSAEvent()
-            event.start = pysubs2.make_time(s=start_time)
-            event.end = pysubs2.make_time(s=clip_end_time)
-            event.style = "Default"
-            
-            # Calculate explicit position to ensure subtitles appear at vertical center
-            # Video dimensions: 1080x1920 (width x height)
-            # Position horizontally centered, vertically centered
-            center_x = video_width // 2  # 540 (center of 1080px width)
-            center_y = video_height // 2  # 960 (center of 1920px height)
-            
-            # Use explicit positioning with \pos tag to ensure correct placement
-            # \an5 = center alignment (both horizontal and vertical center)
-            # \pos(x,y) = absolute position in pixels
-            # All events use the same position, but they don't overlap in time, so they replace each other
-            event.text = f"{{\\an5\\pos({center_x},{center_y})}}{displayed_text}"
-            
-            # Add fade effect for the last word of the last line
-            if line_index == len(lines) - 1 and word_idx == len(line_words) - 1:
-                # Add fade out effect using ASS tags
-                fade_duration = 0.4
-                fade_frames = int(fade_duration * 25)  # 25 fps for fade
-                event.text = f"{{\\fad(0,{fade_frames})}}{displayed_text}"
-            
-            subs.events.append(event)
-    
-    # Save ASS file
-    try:
-        subs.save(str(output_path), format_="ass")
-        logging.info("Created ASS subtitle file with %d events for %d lines", len(subs.events), len(lines))
-        
-        # Verify the file was created and has content
-        if output_path.exists():
-            file_size = output_path.stat().st_size
-            logging.info("ASS file saved: %s (%d bytes)", output_path, file_size)
-            if file_size == 0:
-                logging.error("ASS file is empty!")
-                return None
-            
-            # Read first few events to verify content
-            try:
-                with open(output_path, 'r', encoding='utf-8') as f:
-                    content = f.read()
-                    if 'Dialogue:' not in content:
-                        logging.error("ASS file does not contain Dialogue events!")
-                        return None
-                    logging.debug("ASS file contains Dialogue events, first 500 chars:\n%s", content[:500])
-            except Exception as e:
-                logging.warning("Could not verify ASS file content: %s", e)
-        else:
-            logging.error("ASS file was not created at %s", output_path)
-            return None
-            
-        return output_path
-    except Exception as exc:
-        logging.error("Failed to save ASS subtitle file: %s", exc)
-        import traceback
-        logging.error(traceback.format_exc())
         return None
 
 
@@ -3816,79 +4486,190 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
 
         duration_seconds = max(15.0, min(60.0, audio_duration))  # Clamp between 15-60 seconds
 
-        # Prepare stock media (multiple videos and images)
-        stock_video_paths, stock_image_paths = prepare_stock_media(article, config, tmp_path, count=5)
+        # Prepare stock media (multiple videos and images) - fetch more to ensure we have enough
+        stock_video_paths, stock_image_paths = prepare_stock_media(article, config, tmp_path, count=10)
         
         # Create video clips
         video_clips = []
         clips_to_close = []  # Track clips that need explicit closing
         
-        # Use multiple stock videos if available
+        # Cache video durations to avoid reopening files
+        video_durations = {}
+        
+        # Helper function to get video duration (cached)
+        def get_video_duration(video_path):
+            if video_path not in video_durations:
+                try:
+                    temp_video = VideoFileClip(video_path)
+                    video_durations[video_path] = temp_video.duration
+                    temp_video.close()
+                except:
+                    video_durations[video_path] = 10.0  # Default fallback
+            return video_durations[video_path]
+        
+        # Helper function to create video clip from a video file
+        def create_video_clip(video_path, start_time, duration, fade_in=False, fade_out=False):
+            """Create a video clip segment with optional fades."""
+            stock_video = VideoFileClip(video_path)
+            clips_to_close.append(stock_video)
+            
+            # Resize video to 1080x1920
+            stock_video = stock_video.resize(height=1920)
+            if stock_video.w > 1080:
+                stock_video = stock_video.crop(x_center=stock_video.w/2, width=1080)
+            elif stock_video.w < 1080:
+                stock_video = stock_video.resize(width=1080)
+            
+            # Get segment from video (loop if needed)
+            video_duration = stock_video.duration
+            video_durations[video_path] = video_duration  # Cache it
+            
+            if start_time >= video_duration:
+                start_time = start_time % video_duration
+            end_time = min(start_time + duration, video_duration)
+            
+            video_segment = stock_video.subclip(start_time, end_time)
+            
+            # If we need more duration, loop the video
+            if video_segment.duration < duration:
+                remaining = duration - video_segment.duration
+                loop_segments = [video_segment]
+                loop_start = 0
+                while remaining > 0:
+                    loop_duration = min(remaining, video_duration)
+                    loop_segment = stock_video.subclip(loop_start, loop_start + loop_duration)
+                    loop_segments.append(loop_segment)
+                    remaining -= loop_duration
+                    loop_start = (loop_start + loop_duration) % video_duration
+                if len(loop_segments) > 1:
+                    video_segment = concatenate_videoclips(loop_segments)
+            
+            # Add fades
+            if fade_in:
+                video_segment = video_segment.fadein(0.5)
+            if fade_out:
+                video_segment = video_segment.fadeout(0.5)
+            
+            return video_segment
+        
+        # Helper function to create image clip
+        def create_image_clip(image_path, duration, zoom_start=1.1, zoom_end=1.0, fade_in=False, fade_out=False):
+            """Create an image clip with Ken Burns effect."""
+            img_clip = ImageClip(str(image_path)).set_duration(duration)
+            img_clip = img_clip.resize(lambda t: zoom_start + (zoom_end - zoom_start) * (t / duration))
+            img_clip = img_clip.set_position(("center", "center"))
+            if fade_in:
+                img_clip = img_clip.fadein(0.5)
+            if fade_out:
+                img_clip = img_clip.fadeout(0.5)
+            return img_clip
+        
+        # Try to fill duration with stock videos, looping through them as needed
+        accumulated_duration = 0.0
+        video_index = 0
+        video_start_time = 0.0
+        
         if stock_video_paths:
             try:
-                # Calculate target duration per video, with some overlap for fades
-                fade_overlap = 0.5  # Fade transition overlap
-                effective_duration = duration_seconds + (fade_overlap * (len(stock_video_paths) - 1))
-                duration_per_video = effective_duration / len(stock_video_paths)
-                
-                accumulated_duration = 0.0
-                for i, video_path in enumerate(stock_video_paths):
+                while accumulated_duration < duration_seconds and len(video_clips) < 100:  # Safety limit
+                    remaining = duration_seconds - accumulated_duration
+                    if remaining <= 0:
+                        break
+                    
+                    # Get next video (loop through list if needed)
+                    if video_index >= len(stock_video_paths):
+                        # Fetch more videos if we've used all and still need more
+                        if accumulated_duration < duration_seconds * 0.5:  # Only fetch more if we're less than halfway
+                            logging.info("Need more videos, fetching additional stock videos...")
+                            additional_videos, _ = prepare_stock_media(article, config, tmp_path, count=5)
+                            if additional_videos:
+                                stock_video_paths.extend(additional_videos)
+                            else:
+                                break  # No more videos available
+                        else:
+                            # Loop back to start of video list
+                            video_index = 0
+                            video_start_time = 0.0
+                    
+                    video_path = stock_video_paths[video_index]
+                    
                     try:
-                        # Verify video file exists and is not empty
                         if not Path(video_path).exists() or Path(video_path).stat().st_size == 0:
-                            logging.warning("Stock video file %d is missing or empty, skipping", i+1)
+                            video_index += 1
                             continue
                         
-                        stock_video = VideoFileClip(video_path)
-                        clips_to_close.append(stock_video)  # Track for cleanup
+                        # Determine segment duration (try to use at least 3 seconds per clip)
+                        segment_duration = min(remaining, max(3.0, remaining / max(1, len(stock_video_paths))))
                         
-                        # Resize video to 1080x1920
-                        stock_video = stock_video.resize(height=1920)
-                        if stock_video.w > 1080:
-                            stock_video = stock_video.crop(x_center=stock_video.w/2, width=1080)
-                        elif stock_video.w < 1080:
-                            stock_video = stock_video.resize(width=1080)
+                        # Create clip with fades
+                        fade_in = len(video_clips) > 0
+                        fade_out = (accumulated_duration + segment_duration) < duration_seconds
                         
-                        # Calculate how much duration we still need
-                        remaining_duration = duration_seconds - accumulated_duration
-                        if remaining_duration <= 0:
-                            break
-                        
-                        # Use video segment for this portion of duration
-                        # For last video, use remaining duration; otherwise use calculated duration
-                        if i == len(stock_video_paths) - 1:
-                            video_segment_duration = min(stock_video.duration, remaining_duration)
-                        else:
-                            video_segment_duration = min(stock_video.duration, duration_per_video)
-                        
-                        video_segment = stock_video.subclip(0, video_segment_duration)
-                        
-                        # Add fade transitions between videos
-                        if i > 0:
-                            video_segment = video_segment.fadein(0.5)
-                        if i < len(stock_video_paths) - 1:
-                            video_segment = video_segment.fadeout(0.5)
+                        video_segment = create_video_clip(
+                            video_path, 
+                            video_start_time, 
+                            segment_duration,
+                            fade_in=fade_in,
+                            fade_out=fade_out
+                        )
                         
                         video_clips.append(video_segment)
-                        accumulated_duration += video_segment_duration
+                        accumulated_duration += segment_duration
+                        video_start_time += segment_duration
+                        
+                        # Move to next video if we've used most of current one
+                        video_duration = get_video_duration(video_path)
+                        if video_start_time >= video_duration - 1.0:
+                            video_index += 1
+                            video_start_time = 0.0
                     except Exception as exc:
-                        logging.warning("Failed to use stock video %d: %s, skipping", i+1, exc)
+                        logging.warning("Failed to use stock video %d: %s, trying next", video_index + 1, exc)
+                        video_index += 1
+                        video_start_time = 0.0
                         continue
                 
-                # If we don't have enough duration, fill with images
+                # Fill remaining time with images if needed
                 if accumulated_duration < duration_seconds and stock_image_paths:
                     remaining = duration_seconds - accumulated_duration
                     logging.info("Filling remaining %.2fs with images", remaining)
-                    # Use first available image to fill remaining time
-                    if stock_image_paths:
-                        img_clip = ImageClip(str(stock_image_paths[0])).set_duration(remaining)
-                        img_clip = img_clip.resize(lambda t: 1.0 + 0.1 * (t / remaining))
-                        img_clip = img_clip.set_position(("center", "center"))
-                        img_clip = img_clip.fadein(0.5)
-                        video_clips.append(img_clip)
+                    image_index = 0
+                    image_duration_accum = 0.0
+                    
+                    while image_duration_accum < remaining:
+                        image_remaining = remaining - image_duration_accum
+                        duration_per_image = min(image_remaining, max(2.0, remaining / len(stock_image_paths)))
+                        
+                        if image_index >= len(stock_image_paths):
+                            image_index = 0  # Loop through images
+                        
+                        image_path = stock_image_paths[image_index]
+                        try:
+                            zoom_start = 1.1 if image_index % 2 == 0 else 1.0
+                            zoom_end = 1.0 if image_index % 2 == 0 else 1.1
+                            fade_in = len(video_clips) > 0 or image_index > 0
+                            fade_out = image_duration_accum + duration_per_image < remaining
+                            
+                            img_clip = create_image_clip(
+                                image_path,
+                                duration_per_image,
+                                zoom_start=zoom_start,
+                                zoom_end=zoom_end,
+                                fade_in=fade_in,
+                                fade_out=fade_out
+                            )
+                            video_clips.append(img_clip)
+                            image_duration_accum += duration_per_image
+                            image_index += 1
+                        except Exception as exc:
+                            logging.debug("Failed to create clip from image %d: %s", image_index, exc)
+                            image_index += 1
+                            continue
+                    
+                    accumulated_duration += image_duration_accum
                 
                 if video_clips:
-                    logging.info("Using %d stock video(s) for video", len(video_clips))
+                    logging.info("Created %d clip(s) for video (total duration: %.2fs, target: %.2fs)", 
+                               len(video_clips), accumulated_duration, duration_seconds)
                 else:
                     logging.warning("No stock videos could be used, falling back to images")
                     # Close any clips that were created before the error
@@ -3908,53 +4689,53 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                         pass
                 clips_to_close.clear()
         
-        # Use multiple images if no videos available
+        # Use multiple images if no videos available or videos didn't work
         if not video_clips and stock_image_paths:
-            # Use multiple images with transitions
-            clips_per_image = max(1, len(stock_image_paths))
-            duration_per_image = duration_seconds / len(stock_image_paths)
+            accumulated_duration = 0.0
+            image_index = 0
             
-            for i, image_path in enumerate(stock_image_paths):
+            while accumulated_duration < duration_seconds:
+                remaining = duration_seconds - accumulated_duration
+                duration_per_image = min(remaining, max(2.0, duration_seconds / len(stock_image_paths)))
+                
+                if image_index >= len(stock_image_paths):
+                    image_index = 0  # Loop through images
+                
+                image_path = stock_image_paths[image_index]
                 try:
-                    img_clip = ImageClip(str(image_path)).set_duration(duration_per_image)
+                    zoom_start = 1.1 if image_index % 2 == 0 else 1.0
+                    zoom_end = 1.0 if image_index % 2 == 0 else 1.1
+                    fade_in = image_index > 0
+                    fade_out = accumulated_duration + duration_per_image < duration_seconds
                     
-                    # Apply Ken Burns effect: zoom in/out
-                    zoom_start = 1.1 if i % 2 == 0 else 1.0
-                    zoom_end = 1.0 if i % 2 == 0 else 1.1
-                    img_clip = img_clip.resize(
-                        lambda t: zoom_start + (zoom_end - zoom_start) * (t / duration_per_image)
+                    img_clip = create_image_clip(
+                        image_path,
+                        duration_per_image,
+                        zoom_start=zoom_start,
+                        zoom_end=zoom_end,
+                        fade_in=fade_in,
+                        fade_out=fade_out
                     )
-                    img_clip = img_clip.set_position(("center", "center"))
-                    
-                    # Add fade transitions
-                    if i > 0:
-                        img_clip = img_clip.fadein(0.5)
-                    if i < len(stock_image_paths) - 1:
-                        img_clip = img_clip.fadeout(0.5)
-                    
                     video_clips.append(img_clip)
+                    accumulated_duration += duration_per_image
+                    image_index += 1
                 except Exception as exc:
-                    logging.debug("Failed to create clip from image %d: %s", i, exc)
+                    logging.debug("Failed to create clip from image %d: %s", image_index, exc)
+                    image_index += 1
                     continue
             
             if not video_clips:
                 # Fallback to single image
                 image_path = tmp_path / "frame.jpg"
                 ensure_image(image_path, article, config)
-                img_clip = ImageClip(str(image_path)).set_duration(duration_seconds)
-                zoom_start, zoom_end = 1.2, 1.0
-                img_clip = img_clip.resize(lambda t: zoom_start - (zoom_start - zoom_end) * (t / duration_seconds))
-                img_clip = img_clip.set_position(("center", "center"))
+                img_clip = create_image_clip(image_path, duration_seconds, zoom_start=1.2, zoom_end=1.0)
                 video_clips.append(img_clip)
         
         if not video_clips:
             # Final fallback: single placeholder image
             image_path = tmp_path / "frame.jpg"
             ensure_image(image_path, article, config)
-            img_clip = ImageClip(str(image_path)).set_duration(duration_seconds)
-            zoom_start, zoom_end = 1.2, 1.0
-            img_clip = img_clip.resize(lambda t: zoom_start - (zoom_start - zoom_end) * (t / duration_seconds))
-            img_clip = img_clip.set_position(("center", "center"))
+            img_clip = create_image_clip(image_path, duration_seconds, zoom_start=1.2, zoom_end=1.0)
             video_clips.append(img_clip)
         
         # Concatenate all video clips
@@ -3964,19 +4745,55 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
         else:
             base_video = video_clips[0]
         
-        # Ensure exact duration
-        if base_video.duration != duration_seconds:
+        # Ensure exact duration - extend if too short, trim if too long
+        if base_video.duration < duration_seconds:
+            # Video is too short - loop the last segment to fill
+            remaining = duration_seconds - base_video.duration
+            logging.warning("Video too short (%.2fs < %.2fs), extending by %.2fs", 
+                       base_video.duration, duration_seconds, remaining)
+            
+            if remaining > 0.1:  # Only extend if meaningful duration needed
+                try:
+                    # Simple approach: loop the last second of the video to fill remaining time
+                    last_segment_duration = min(remaining, max(1.0, base_video.duration))
+                    last_segment = base_video.subclip(max(0, base_video.duration - last_segment_duration), base_video.duration)
+                    
+                    # Loop this segment to fill remaining time
+                    num_loops = int(remaining / last_segment_duration) + 1
+                    looped_segments = [last_segment] * num_loops
+                    extension_clip = concatenate_videoclips(looped_segments).subclip(0, remaining)
+                    
+                    # Concatenate with original
+                    base_video = concatenate_videoclips([base_video, extension_clip]).set_duration(duration_seconds)
+                    logging.info("Extended video to %.2fs by looping last segment", duration_seconds)
+                except Exception as exc:
+                    logging.warning("Failed to extend video by looping, setting duration directly: %s", exc)
+                    # Fallback: just set duration (will freeze on last frame)
+                    base_video = base_video.set_duration(duration_seconds)
+            else:
+                base_video = base_video.set_duration(duration_seconds)
+        elif base_video.duration > duration_seconds:
+            # Video is too long - trim to exact duration
             base_video = base_video.subclip(0, duration_seconds)
 
-        # Create subtle gradient overlay at bottom (lighter since subtitles have their own backgrounds)
+        # Create subtle gradient overlay at bottom
         # This helps with readability on bright backgrounds
         overlay = ColorClip(
             size=(video_size[0], 200), 
             color=(0, 0, 0)
         ).set_opacity(0.2).set_position(("center", video_size[1] - 200)).set_duration(duration_seconds)
 
-        # Composite base video and overlay (without subtitles for now)
-        clips = [base_video, overlay]
+        # Generate captions if enabled
+        caption_clips = []
+        if config.enable_captions and generated_audio and generated_audio.exists():
+            try:
+                caption_clips = generate_captions(audio_path, script, video_size, config)
+            except Exception as exc:
+                logging.warning("Failed to generate captions: %s", exc)
+                caption_clips = []
+
+        # Composite base video, overlay, and captions
+        clips = [base_video, overlay] + caption_clips
         composite = CompositeVideoClip(clips, size=video_size)
         composite = composite.set_duration(duration_seconds)
         
@@ -3992,10 +4809,8 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
 
         # Write video file with error handling
         try:
-            # Write video file without subtitles first
-            temp_video_path = tmp_path / "video_no_subs.mp4"
             composite.write_videofile(
-                str(temp_video_path),
+                str(output_path),
                 fps=24,
                 codec="libx264",
                 audio_codec="aac" if audio_clip else None,
@@ -4004,206 +4819,6 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                 logger=None,
                 preset="medium",  # Balance between speed and file size
             )
-            
-            # Create ASS subtitle file
-            subtitle_path = tmp_path / "subtitles.ass"
-            subtitle_file = create_subtitle_file(
-                script, 
-                audio_path if generated_audio else None, 
-                duration_seconds, 
-                video_size, 
-                config,
-                subtitle_path
-            )
-            
-            # Burn subtitles into video using ffmpeg
-            if subtitle_file and subtitle_file.exists():
-                try:
-                    # Validate ASS file before attempting to burn
-                    ass_file_size = subtitle_file.stat().st_size
-                    if ass_file_size == 0:
-                        logging.error("ASS subtitle file is empty, skipping subtitle burn")
-                        shutil.copy2(temp_video_path, output_path)
-                        return output_path
-                    
-                    logging.info("Burning subtitles into video using ffmpeg...")
-                    logging.info("Subtitle file path: %s (exists: %s, size: %d bytes)", 
-                               subtitle_file, subtitle_file.exists(), ass_file_size)
-                    
-                    # Read and validate ASS file content
-                    try:
-                        with open(subtitle_file, 'r', encoding='utf-8') as f:
-                            content = f.read()
-                            if 'Dialogue:' not in content:
-                                logging.error("ASS file does not contain Dialogue events, skipping subtitle burn")
-                                shutil.copy2(temp_video_path, output_path)
-                                return output_path
-                            
-                            # Count dialogue events
-                            dialogue_count = content.count('Dialogue:')
-                            logging.info("ASS file contains %d dialogue events", dialogue_count)
-                            
-                            # Log first few lines for debugging
-                            first_lines = content.split('\n')[:15]
-                            logging.debug("First 15 lines of ASS file:\n%s", "\n".join(first_lines))
-                    except Exception as e:
-                        logging.error("Could not read/validate ASS file: %s, skipping subtitle burn", e)
-                        shutil.copy2(temp_video_path, output_path)
-                        return output_path
-                    
-                    # Get font path for reference (ffmpeg uses fontconfig to find fonts by name)
-                    # The ASS file specifies the font name, and ffmpeg will look it up via fontconfig
-                    font_path_for_ffmpeg = get_coiny_font_path(config)
-                    if font_path_for_ffmpeg:
-                        logging.debug("Font file available at: %s (ffmpeg will use fontconfig to locate by name)", font_path_for_ffmpeg)
-                    else:
-                        logging.debug("Using system font fallback (Arial or default)")
-                    
-                    # Build ffmpeg command with proper font handling
-                    # Get fonts directory for custom fonts like Coiny
-                    fonts_dir = Path(__file__).parent / "fonts"
-                    
-                    # Use absolute path for ffmpeg
-                    # Convert backslashes to forward slashes (ffmpeg on Windows accepts forward slashes)
-                    subtitle_path_str = str(subtitle_file.resolve()).replace('\\', '/')
-                    
-                    # Import platform once
-                    import platform
-                    is_windows = platform.system() == "Windows"
-                    
-                    # On Windows, ffmpeg has trouble parsing colons in paths within filter strings
-                    # Solution: Use double backslashes to escape colons, or skip fontsdir
-                    if is_windows:
-                        # Windows: Escape colons in paths by doubling the backslash
-                        # C:/path becomes C\\:/path in the filter string
-                        def escape_windows_colon(path: str) -> str:
-                            """Escape colon in Windows drive letters for ffmpeg."""
-                            if len(path) >= 2 and path[1] == ':':
-                                return path[0] + '\\\\:' + path[2:]
-                            return path
-                        
-                        subtitle_path_escaped = escape_windows_colon(subtitle_path_str)
-                        
-                        if fonts_dir.exists() and font_path_for_ffmpeg:
-                            # Try with fontsdir using proper escaping
-                            fonts_dir_str = str(fonts_dir.resolve()).replace('\\', '/')
-                            fonts_dir_escaped = escape_windows_colon(fonts_dir_str)
-                            vf_filter = f"ass={subtitle_path_escaped}:fontsdir={fonts_dir_escaped}"
-                            logging.debug("Windows: Using fontsdir with escaped colons")
-                        else:
-                            # No fontsdir needed
-                            vf_filter = f"ass={subtitle_path_escaped}"
-                    else:
-                        # Linux/Mac: use quotes for paths with spaces
-                        if fonts_dir.exists() and font_path_for_ffmpeg:
-                            fonts_dir_str = str(fonts_dir.resolve()).replace('\\', '/')
-                            vf_filter = f"ass='{subtitle_path_str}':fontsdir='{fonts_dir_str}'"
-                        else:
-                            vf_filter = f"ass='{subtitle_path_str}'"
-                    
-                    ffmpeg_cmd = [
-                        "ffmpeg",
-                        "-i", str(temp_video_path),
-                        "-vf", vf_filter,
-                        "-c:v", "libx264",
-                        "-preset", "medium",
-                        "-crf", "23",
-                        "-c:a", "copy",  # Copy audio without re-encoding
-                        "-y",  # Overwrite output file
-                        str(output_path)
-                    ]
-                    
-                    logging.debug("Subtitle file path: %s", subtitle_path_str)
-                    logging.info("FFmpeg command: %s", " ".join(ffmpeg_cmd))
-                    
-                    result = subprocess.run(
-                        ffmpeg_cmd,
-                        capture_output=True,
-                        text=True,
-                        check=False
-                    )
-                    
-                    if result.returncode != 0:
-                        logging.error("ffmpeg subtitle burn failed with return code %d", result.returncode)
-                        logging.error("FFmpeg stderr: %s", result.stderr)
-                        logging.error("FFmpeg stdout: %s", result.stdout)
-                        
-                        # Try alternative approach: use subtitles filter as fallback
-                        logging.info("Attempting fallback: using subtitles filter instead of ass filter...")
-                        try:
-                            # The subtitles filter uses similar syntax
-                            if is_windows:
-                                # Use same escaping function
-                                def escape_windows_colon_fallback(path: str) -> str:
-                                    if len(path) >= 2 and path[1] == ':':
-                                        return path[0] + '\\\\:' + path[2:]
-                                    return path
-                                
-                                subtitle_path_escaped_fallback = escape_windows_colon_fallback(subtitle_path_str)
-                                
-                                if fonts_dir.exists() and font_path_for_ffmpeg:
-                                    fonts_dir_str_fallback = str(fonts_dir.resolve()).replace('\\', '/')
-                                    fonts_dir_escaped_fallback = escape_windows_colon_fallback(fonts_dir_str_fallback)
-                                    vf_filter_fallback = f"subtitles={subtitle_path_escaped_fallback}:fontsdir={fonts_dir_escaped_fallback}"
-                                else:
-                                    vf_filter_fallback = f"subtitles={subtitle_path_escaped_fallback}"
-                            else:
-                                # Linux/Mac
-                                if fonts_dir.exists() and font_path_for_ffmpeg:
-                                    fonts_dir_str_fallback = str(fonts_dir.resolve()).replace('\\', '/')
-                                    vf_filter_fallback = f"subtitles='{subtitle_path_str}':fontsdir='{fonts_dir_str_fallback}'"
-                                else:
-                                    vf_filter_fallback = f"subtitles='{subtitle_path_str}'"
-                            
-                            ffmpeg_cmd_fallback = [
-                                "ffmpeg",
-                                "-i", str(temp_video_path),
-                                "-vf", vf_filter_fallback,
-                                "-c:v", "libx264",
-                                "-preset", "medium",
-                                "-crf", "23",
-                                "-c:a", "copy",
-                                "-y",
-                                str(output_path)
-                            ]
-                            
-                            logging.info("FFmpeg fallback command: %s", " ".join(ffmpeg_cmd_fallback))
-                            result_fallback = subprocess.run(
-                                ffmpeg_cmd_fallback,
-                                capture_output=True,
-                                text=True,
-                                check=False
-                            )
-                            
-                            if result_fallback.returncode == 0:
-                                logging.info("Successfully burned subtitles using fallback subtitles filter")
-                            else:
-                                logging.error("Fallback also failed with return code %d", result_fallback.returncode)
-                                logging.error("FFmpeg fallback stderr: %s", result_fallback.stderr)
-                                logging.warning("Falling back to video without subtitles")
-                                shutil.copy2(temp_video_path, output_path)
-                        except Exception as fallback_exc:
-                            logging.error("Fallback attempt failed: %s", fallback_exc)
-                            logging.warning("Falling back to video without subtitles")
-                            shutil.copy2(temp_video_path, output_path)
-                    else:
-                        logging.info("Successfully burned subtitles into video")
-                        if result.stderr:
-                            # Check for warnings in stderr that might indicate issues
-                            stderr_lower = result.stderr.lower()
-                            if 'font' in stderr_lower or 'subtitle' in stderr_lower:
-                                logging.warning("FFmpeg output contains font/subtitle warnings: %s", result.stderr[:500])
-                            else:
-                                logging.debug("FFmpeg output: %s", result.stderr[:500])
-                except FileNotFoundError:
-                    logging.warning("ffmpeg not found, video will be created without subtitles")
-                    shutil.copy2(temp_video_path, output_path)
-                except Exception as exc:
-                    logging.warning("Failed to burn subtitles with ffmpeg: %s, using video without subtitles", exc)
-                    shutil.copy2(temp_video_path, output_path)
-            else:
-                logging.warning("Subtitle file not created, video will be without subtitles")
-                shutil.copy2(temp_video_path, output_path)
             
             # Verify output file
             if not output_path.exists():

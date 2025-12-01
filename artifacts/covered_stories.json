@@ -1,6 +1,6 @@
 {
   "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/": {
-    "title": "MIT Researchers Unveil “SEAL”: A New Step Towards Self-Improving AI",
+    "title": "MIT Researchers Unveil \"SEAL\": A New Step Towards Self-Improving AI",
     "date_covered": "2025-11-30T22:00:48.327139+00:00",
     "source": "Synced Review",
     "youtube_id": null,
@@ -21,7 +21,7 @@
     "tiktok_id": null
   },
   "https://www.artificialintelligence-news.com/news/new-microsoft-cloud-updates-support-indonesia-long-term-ai-goals/": {
-    "title": "Microsoft cloud updates support Indonesia’s long-term AI goals",
+    "title": "Microsoft cloud updates support Indonesia's long-term AI goals",
     "date_covered": "2025-12-01T01:33:36.426323+00:00",
     "source": "AI News",
     "youtube_id": "vBdkC7YVSs4",
@@ -48,8 +48,22 @@
     "youtube_id": "CLafo6DZTOk",
     "tiktok_id": null
   },
+  "https://the-decoder.com/black-forest-labs-secures-300-million-to-accelerate-its-vision-for-advanced-image-models/": {
+    "title": "Black Forest Labs secures $300 million to accelerate its vision for advanced image models",
+    "date_covered": "2025-12-01T13:35:48.246196+00:00",
+    "source": "The Decoder",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.technologyreview.com/2025/12/01/1128591/an-ai-model-trained-on-prison-phone-calls-is-now-being-used-to-surveil-inmates/": {
+    "title": "An AI model trained on prison phone calls now looks for planned crimes in those calls",
+    "date_covered": "2025-12-01T13:53:40.826332+00:00",
+    "source": "MIT Technology Review",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
   "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/": {
-    "title": "A conversation with Kevin Scott: What’s next in AI",
+    "title": "A conversation with Kevin Scott: What's next in AI",
     "date_covered": "2025-12-01T16:28:41.703300+00:00",
     "source": "Microsoft AI Blog",
     "youtube_id": "JOCZu6C6epE",
@@ -60,6 +74,48 @@
     "date_covered": "2025-12-01T20:23:11.012637+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "_L3l_u94KIw",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/sap-outlines-new-approach-to-european-ai-and-cloud-sovereignty/": {
+    "title": "SAP outlines new approach to European AI and cloud sovereignty",
+    "date_covered": "2025-12-01T22:46:35.542113+00:00",
+    "source": "AI News",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.technologyreview.com/2025/11/28/1128516/the-download-the-mysteries-surrounding-weight-loss-drugs-and-the-economic-effects-of-ai/": {
+    "title": "The Download: the mysteries surrounding weight-loss drugs, and the economic effects of AI",
+    "date_covered": "2025-12-01T22:52:03.754657+00:00",
+    "source": "MIT Technology Review",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.macrumors.com/2025/12/01/apple-ai-chief-retiring-after-siri-failure/": {
+    "title": "Apple AI Chief John Giannandrea Retiring After Siri Delays",
+    "date_covered": "2025-12-01T22:59:15.893971+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.instantdb.com/essays/agents_building_counterstrike": {
+    "title": "Codex, Opus, Gemini try to build Counter Strike",
+    "date_covered": "2025-12-01T23:15:52.424041+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.technologyreview.com/2025/12/01/1127872/the-state-of-ai-welcome-to-the-economic-singularity/": {
+    "title": "The State of AI: Welcome to the economic singularity",
+    "date_covered": "2025-12-01T23:22:16.196681+00:00",
+    "source": "MIT Technology Review",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.technologyreview.com/2025/11/26/1128459/the-download-ai-and-the-economy-and-slop-for-the-masses/": {
+    "title": "The Download: AI and the economy, and slop for the masses",
+    "date_covered": "2025-12-01T23:32:50.132109+00:00",
+    "source": "MIT Technology Review",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
