@@ -54,5 +54,12 @@
     "source": "Microsoft AI Blog",
     "youtube_id": "JOCZu6C6epE",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/": {
+    "title": "At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI",
+    "date_covered": "2025-12-01T20:23:11.012637+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "_L3l_u94KIw",
+    "tiktok_id": null
   }
 }
