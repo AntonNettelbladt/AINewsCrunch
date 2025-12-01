@@ -3669,6 +3669,114 @@ def create_subtitle_file(script: str, audio_path: Optional[Path], duration: floa
         return None
 
 
+def commit_and_push_video(video_path: Path, article_title: str) -> bool:
+    """Commit and push video file to git repository.
+    
+    Returns:
+        True if successful, False otherwise
+    """
+    if not video_path.exists():
+        logging.warning("Video file does not exist, cannot commit: %s", video_path)
+        return False
+    
+    try:
+        # Start from video path and work up to find git repository
+        search_path = video_path.resolve().parent
+        repo_root = None
+        
+        # Try to find git repository root by checking parent directories
+        for _ in range(10):  # Limit search to 10 levels up
+            git_dir = search_path / ".git"
+            if git_dir.exists():
+                repo_root = search_path
+                break
+            if search_path == search_path.parent:  # Reached filesystem root
+                break
+            search_path = search_path.parent
+        
+        if not repo_root:
+            # Fallback: try git rev-parse from current working directory
+            repo_root_result = subprocess.run(
+                ["git", "rev-parse", "--show-toplevel"],
+                capture_output=True,
+                text=True,
+                cwd=Path.cwd()
+            )
+            if repo_root_result.returncode == 0:
+                repo_root = Path(repo_root_result.stdout.strip())
+            else:
+                logging.debug("Not in a git repository, skipping commit/push")
+                return False
+        
+        # Get relative path from repository root
+        try:
+            relative_video_path = video_path.resolve().relative_to(repo_root.resolve())
+        except ValueError:
+            # Video is outside repository, use absolute path (shouldn't happen)
+            logging.warning("Video path is outside git repository: %s", video_path)
+            return False
+        
+        # Configure git user if not already configured (for GitHub Actions)
+        subprocess.run(
+            ["git", "config", "user.name", "TechNewsDaily Bot"],
+            capture_output=True,
+            cwd=repo_root
+        )
+        subprocess.run(
+            ["git", "config", "user.email", "technewsdaily@users.noreply.github.com"],
+            capture_output=True,
+            cwd=repo_root
+        )
+        
+        # Add video file
+        subprocess.run(
+            ["git", "add", str(relative_video_path)],
+            check=True,
+            capture_output=True,
+            cwd=repo_root
+        )
+        
+        # Commit with descriptive message
+        commit_message = f"Add video: {article_title[:60]}"
+        commit_result = subprocess.run(
+            ["git", "commit", "-m", commit_message],
+            capture_output=True,
+            text=True,
+            cwd=repo_root
+        )
+        
+        if commit_result.returncode == 0:
+            logging.info("Committed video to git: %s", relative_video_path)
+        elif "nothing to commit" in commit_result.stdout.lower() or "nothing to commit" in commit_result.stderr.lower():
+            logging.debug("Video already committed, nothing to commit")
+            return True
+        else:
+            logging.warning("Git commit failed: %s", commit_result.stderr)
+            return False
+        
+        # Push to remote
+        push_result = subprocess.run(
+            ["git", "push"],
+            capture_output=True,
+            text=True,
+            cwd=repo_root
+        )
+        
+        if push_result.returncode == 0:
+            logging.info("Pushed video to git repository")
+            return True
+        else:
+            logging.warning("Git push failed: %s", push_result.stderr)
+            return False
+            
+    except subprocess.CalledProcessError as exc:
+        logging.warning("Git operation failed: %s", exc)
+        return False
+    except Exception as exc:
+        logging.warning("Failed to commit/push video to git: %s", exc)
+        return False
+
+
 def assemble_video(article: ArticleCandidate, script: str, config: Config, video_index: int = 0) -> Path:
     # Generate unique filename based on story title and index
     # Sanitize title for filename
@@ -3959,14 +4067,39 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                     # Convert backslashes to forward slashes (ffmpeg on Windows accepts forward slashes)
                     subtitle_path_str = str(subtitle_file.resolve()).replace('\\', '/')
                     
-                    # Build the ass filter - include fontsdir if fonts exist
-                    if fonts_dir.exists() and font_path_for_ffmpeg:
-                        fonts_dir_str = str(fonts_dir.resolve()).replace('\\', '/')
-                        # On Linux (GitHub Actions), paths don't have drive letter colons
-                        # On Windows, we convert backslashes to forward slashes which ffmpeg accepts
-                        vf_filter = f"ass='{subtitle_path_str}':fontsdir='{fonts_dir_str}'"
+                    # Import platform once
+                    import platform
+                    is_windows = platform.system() == "Windows"
+                    
+                    # On Windows, ffmpeg has trouble parsing colons in paths within filter strings
+                    # Solution: Use double backslashes to escape colons, or skip fontsdir
+                    if is_windows:
+                        # Windows: Escape colons in paths by doubling the backslash
+                        # C:/path becomes C\\:/path in the filter string
+                        def escape_windows_colon(path: str) -> str:
+                            """Escape colon in Windows drive letters for ffmpeg."""
+                            if len(path) >= 2 and path[1] == ':':
+                                return path[0] + '\\\\:' + path[2:]
+                            return path
+                        
+                        subtitle_path_escaped = escape_windows_colon(subtitle_path_str)
+                        
+                        if fonts_dir.exists() and font_path_for_ffmpeg:
+                            # Try with fontsdir using proper escaping
+                            fonts_dir_str = str(fonts_dir.resolve()).replace('\\', '/')
+                            fonts_dir_escaped = escape_windows_colon(fonts_dir_str)
+                            vf_filter = f"ass={subtitle_path_escaped}:fontsdir={fonts_dir_escaped}"
+                            logging.debug("Windows: Using fontsdir with escaped colons")
+                        else:
+                            # No fontsdir needed
+                            vf_filter = f"ass={subtitle_path_escaped}"
                     else:
-                        vf_filter = f"ass='{subtitle_path_str}'"
+                        # Linux/Mac: use quotes for paths with spaces
+                        if fonts_dir.exists() and font_path_for_ffmpeg:
+                            fonts_dir_str = str(fonts_dir.resolve()).replace('\\', '/')
+                            vf_filter = f"ass='{subtitle_path_str}':fontsdir='{fonts_dir_str}'"
+                        else:
+                            vf_filter = f"ass='{subtitle_path_str}'"
                     
                     ffmpeg_cmd = [
                         "ffmpeg",
@@ -3999,12 +4132,28 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                         logging.info("Attempting fallback: using subtitles filter instead of ass filter...")
                         try:
                             # The subtitles filter uses similar syntax
-                            if fonts_dir.exists() and font_path_for_ffmpeg:
-                                # Ensure fonts_dir_str is defined with forward slashes
-                                fonts_dir_str_fallback = str(fonts_dir.resolve()).replace('\\', '/')
-                                vf_filter_fallback = f"subtitles='{subtitle_path_str}':fontsdir='{fonts_dir_str_fallback}'"
+                            if is_windows:
+                                # Use same escaping function
+                                def escape_windows_colon_fallback(path: str) -> str:
+                                    if len(path) >= 2 and path[1] == ':':
+                                        return path[0] + '\\\\:' + path[2:]
+                                    return path
+                                
+                                subtitle_path_escaped_fallback = escape_windows_colon_fallback(subtitle_path_str)
+                                
+                                if fonts_dir.exists() and font_path_for_ffmpeg:
+                                    fonts_dir_str_fallback = str(fonts_dir.resolve()).replace('\\', '/')
+                                    fonts_dir_escaped_fallback = escape_windows_colon_fallback(fonts_dir_str_fallback)
+                                    vf_filter_fallback = f"subtitles={subtitle_path_escaped_fallback}:fontsdir={fonts_dir_escaped_fallback}"
+                                else:
+                                    vf_filter_fallback = f"subtitles={subtitle_path_escaped_fallback}"
                             else:
-                                vf_filter_fallback = f"subtitles='{subtitle_path_str}'"
+                                # Linux/Mac
+                                if fonts_dir.exists() and font_path_for_ffmpeg:
+                                    fonts_dir_str_fallback = str(fonts_dir.resolve()).replace('\\', '/')
+                                    vf_filter_fallback = f"subtitles='{subtitle_path_str}':fontsdir='{fonts_dir_str_fallback}'"
+                                else:
+                                    vf_filter_fallback = f"subtitles='{subtitle_path_str}'"
                             
                             ffmpeg_cmd_fallback = [
                                 "ffmpeg",
@@ -4121,10 +4270,17 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
         try:
             shutil.copy2(output_path, artifacts_video_path)
             logging.info("Video also saved to artifacts folder: %s", artifacts_video_path)
+            output_path = artifacts_video_path  # Use artifacts path for git operations
         except Exception as exc:
             logging.warning("Failed to copy video to artifacts folder: %s", exc)
     elif output_path.resolve() == artifacts_video_path.resolve():
         logging.debug("Video already in artifacts folder: %s", output_path)
+    
+    # Commit and push video to git repository
+    try:
+        commit_and_push_video(output_path, article.title)
+    except Exception as exc:
+        logging.warning("Failed to commit and push video to git: %s", exc)
     
     return output_path
 
