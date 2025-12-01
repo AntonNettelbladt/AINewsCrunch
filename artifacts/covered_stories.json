@@ -26,5 +26,12 @@
     "source": "AI News",
     "youtube_id": "vBdkC7YVSs4",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/bioclip2-foundation-ai-model/": {
+    "title": "The Largest Digital Zoo: Biology Model Trained on NVIDIA GPUs Identifies Over a Million Species",
+    "date_covered": "2025-12-01T04:52:02.001046+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "n_ulCgBgd88",
+    "tiktok_id": null
   }
 }
