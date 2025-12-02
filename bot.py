@@ -2546,6 +2546,9 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
                                     progress = int((uploaded / total) * 100)
                                     if progress % 25 == 0 or progress == 100:  # Only log at 25%, 50%, 75%, 100%
                                         logging.info("Upload progress: %d%%", progress)
+                    except Exception:
+                        # Ignore errors when trying to get progress info
+                        pass
             
             if "id" in response:
                 video_id = response["id"]
