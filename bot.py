@@ -3729,16 +3729,18 @@ def generate_audio_with_gcloud_tts(script: str, output_path: Path, config: Confi
     logging.info("  Model: %s", tts_model)
     logging.info("  Voice Name: %s", voice_params["name"])
     logging.info("  Language/Locale: %s", config.gcloud_tts_language_code)
-    logging.info("  Audio Encoding: MP3")
+    logging.info("  Audio Encoding: LINEAR16")
+    logging.info("  Sample Rate: 44100 Hz")
     logging.info("  Speaking Rate: 1.0")
     logging.info("  Pitch: 0.0")
     logging.info("=" * 60)
     
     voice = texttospeech.VoiceSelectionParams(**voice_params)
     
-    # Configure audio encoding
+    # Configure audio encoding with LINEAR16 and 44100Hz sample rate
     audio_config = texttospeech.AudioConfig(
-        audio_encoding=texttospeech.AudioEncoding.MP3,
+        audio_encoding=texttospeech.AudioEncoding.LINEAR16,
+        sample_rate_hertz=44100,
         speaking_rate=1.0,
         pitch=0.0,
     )
@@ -3793,6 +3795,7 @@ def generate_audio_with_edge_tts(script: str, output_path: Path, config: Config)
         logging.info("Edge-TTS Configuration (Fallback):")
         logging.info("  Provider: Microsoft Edge TTS")
         logging.info("  Voice: %s", config.tts_voice)
+        logging.info("  Note: Output will be converted to LINEAR16 WAV (44100 Hz) during enhancement")
         logging.info("=" * 60)
         
         async def _generate():
@@ -3874,14 +3877,15 @@ def enhance_audio_professional(raw_audio_path: Path, output_path: Path) -> Optio
         # Join filter chain into single string
         filter_chain = "".join(filter_chain)
         
-        # Build FFmpeg command
+        # Build FFmpeg command with LINEAR16 (PCM WAV) encoding
         cmd = [
             "ffmpeg",
             "-i", str(raw_audio_path),
             "-af", filter_chain,
-            "-ar", "44100",  # Professional sample rate
+            "-ar", "44100",  # 44100 Hz sample rate
             "-ac", "1",  # Mono (voiceover doesn't need stereo)
-            "-b:a", "192k",  # High-quality bitrate
+            "-f", "wav",  # WAV format (LINEAR16 PCM encoding)
+            "-acodec", "pcm_s16le",  # LINEAR16 PCM encoding (16-bit little-endian)
             "-y",  # Overwrite output file
             str(output_path)
         ]
@@ -3954,9 +3958,10 @@ def enhance_audio_simple(raw_audio_path: Path, output_path: Path) -> Optional[Pa
             "ffmpeg",
             "-i", str(raw_audio_path),
             "-af", simple_filter,
-            "-ar", "44100",
-            "-ac", "1",
-            "-b:a", "192k",
+            "-ar", "44100",  # 44100 Hz sample rate
+            "-ac", "1",  # Mono
+            "-f", "wav",  # WAV format (LINEAR16 PCM encoding)
+            "-acodec", "pcm_s16le",  # LINEAR16 PCM encoding (16-bit little-endian)
             "-y",
             str(output_path)
         ]
@@ -4708,7 +4713,7 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
         tmp_path = Path(tmp_dir)
         
         # Generate audio first to determine duration
-        audio_path = tmp_path / "narration.mp3"
+        audio_path = tmp_path / "narration.wav"  # LINEAR16 WAV format
         audio_clip = None
         audio_duration = 40.0  # Default duration
         
