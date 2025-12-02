@@ -124,5 +124,12 @@
     "source": "AI News",
     "youtube_id": "CXH6CROx-tc",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-microsoft-ai-superfactories/": {
+    "title": "Powering AI Superfactories, NVIDIA and Microsoft Integrate Latest Technologies for Inference, Cybersecurity, Physical AI",
+    "date_covered": "2025-12-02T00:25:00.711972+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "5R6kj7kNVxQ",
+    "tiktok_id": null
   }
 }
