@@ -11,6 +11,7 @@ import textwrap
 import time
 import urllib.parse
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import datetime, timezone, timedelta
 from io import BytesIO
@@ -724,15 +725,18 @@ def load_config() -> Config:
     tiktok_access_token = os.getenv("TIKTOK_ACCESS_TOKEN")
     gcloud_creds = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
     
-    logging.info("YouTube credentials present: client_id=%s, client_secret=%s, refresh_token=%s", 
-                 "yes" if yt_client_id else "no",
-                 "yes" if yt_client_secret else "no", 
-                 "yes" if yt_refresh_token else "no")
-    logging.info("TikTok credentials present: client_key=%s, client_secret=%s, access_token=%s",
-                 "yes" if tiktok_client_key else "no",
-                 "yes" if tiktok_client_secret else "no",
-                 "yes" if tiktok_access_token else "no")
-    logging.info("Google Cloud TTS credentials present: %s", "yes" if gcloud_creds else "no")
+    # Log credential status (consolidated)
+    creds_status = []
+    if yt_client_id and yt_client_secret and yt_refresh_token:
+        creds_status.append("YouTube")
+    if tiktok_client_key and tiktok_client_secret and tiktok_access_token:
+        creds_status.append("TikTok")
+    if gcloud_creds:
+        creds_status.append("Google Cloud TTS")
+    if creds_status:
+        logging.info("Credentials configured: %s", ", ".join(creds_status))
+    else:
+        logging.warning("No credentials configured")
 
     config = Config(
         output_dir=output_dir,
@@ -937,7 +941,7 @@ def fetch_hackernews_stories(max_stories: int = 30) -> List[Dict]:
 
 def fetch_rss_links(source: SourceFeed, max_entries: int = 5) -> List[str]:
     """Fetch links from RSS feed or other source types."""
-    logging.info("Fetching %s source: %s", source.source_type, source.name)
+    # Source fetching log removed for cleaner output - only log failures
     
     # Handle different source types
     if source.source_type == "googlenews":
@@ -1688,12 +1692,13 @@ def collect_candidates(sources: List[SourceFeed], max_articles: int, config: Con
             logging.warning("Error fetching from %s: %s", source.name, exc)
             continue
     
+    # Consolidated collection stats
     if config.ai_only_mode:
-        logging.info("Article collection stats: %d sources succeeded, %d failed | %d articles checked, %d excluded (sales/deals/non-AI), %d AI-related collected (%d major news)", 
-                    sources_succeeded, sources_failed, total_articles_checked, excluded_count, ai_articles_found, major_news_count)
+        logging.info("Collected %d AI articles from %d sources (%d excluded, %d major news)", 
+                    ai_articles_found, sources_succeeded, excluded_count, major_news_count)
     else:
-        logging.info("Collected %d candidate articles from %d checked (%d sources succeeded, %d failed)", 
-                    len(candidates), total_articles_checked, sources_succeeded, sources_failed)
+        logging.info("Collected %d articles from %d sources (%d excluded)", 
+                    len(candidates), sources_succeeded, excluded_count)
     
     # Ensure we have at least some articles before proceeding
     if len(candidates) == 0 and sources_succeeded == 0:
@@ -1738,10 +1743,9 @@ def load_covered_stories(config: Config) -> Set[str]:
         if len(cleaned_data) < len(data):
             with open(covered_file, 'w', encoding='utf-8') as f:
                 json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
-            logging.info("Cleaned up %d old covered stories (kept %d)", 
-                        len(data) - len(cleaned_data), len(cleaned_data))
+            logging.debug("Cleaned up %d old covered stories", len(data) - len(cleaned_data))
         
-        logging.info("Loaded %d covered stories from history", len(cleaned_data))
+        logging.debug("Loaded %d covered stories from history", len(cleaned_data))
         return set(cleaned_data.keys())
         
     except (json.JSONDecodeError, IOError, Exception) as exc:
@@ -1784,8 +1788,7 @@ def load_used_media_ids(config: Config) -> Set[str]:
         if len(cleaned_data) < len(data):
             with open(used_media_file, 'w', encoding='utf-8') as f:
                 json.dump(cleaned_data, f, indent=2, ensure_ascii=False)
-            logging.info("Cleaned up %d old used media IDs (kept %d)", 
-                        len(data) - len(cleaned_data), len(cleaned_data))
+            logging.debug("Cleaned up %d old used media IDs", len(data) - len(cleaned_data))
         
         logging.debug("Loaded %d used media IDs from history", len(cleaned_data))
         return set(cleaned_data.keys())
@@ -1828,7 +1831,7 @@ def save_used_media_ids(media_ids: List[str], config: Config) -> None:
         config.output_dir.mkdir(parents=True, exist_ok=True)
         with open(used_media_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        logging.debug("Saved %d media ID(s) as used", len(media_ids))
+        # Media IDs saved silently (debug only if needed)
     except (IOError, Exception) as exc:
         logging.warning("Failed to save used media IDs: %s", exc)
 
@@ -1871,7 +1874,7 @@ def save_covered_story(story: ArticleCandidate, config: Config, youtube_id: Opti
         with open(covered_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         
-        logging.info("Saved story as covered: %s", story.url)
+        logging.debug("Saved story as covered: %s", story.url[:60])
     except (IOError, Exception) as exc:
         logging.warning("Failed to save covered story: %s", exc)
 
@@ -1901,7 +1904,7 @@ def select_top_stories(sources: List[SourceFeed], max_articles: int, max_stories
         candidates = [c for c in candidates if c.url not in covered_urls]
         filtered_count = original_count - len(candidates)
         if filtered_count > 0:
-            logging.info("Filtered out %d already covered stories", filtered_count)
+            logging.debug("Filtered out %d already covered stories", filtered_count)
     
     if not candidates:
         logging.warning("All candidates were already covered. No new stories available.")
@@ -1928,9 +1931,7 @@ def select_top_stories(sources: List[SourceFeed], max_articles: int, max_stories
             seen_urls.add(story.url)
             density = calculate_ai_density(story) if config.ai_only_mode else 0.0
             ai_keywords_found = [k for k in AI_KEYWORDS.keys() if k.lower() in story.title.lower() or k.lower() in story.summary.lower()][:3] if config.ai_only_mode else []
-            logging.info("Selected story %d: '%s' (score: %.2f, density: %.2f%%) - %s", 
-                        len(selected_stories), story.title[:60], story.score, density,
-                        "AI keywords: " + ", ".join(ai_keywords_found) if ai_keywords_found else "general news")
+            logging.info("Selected: '%s' (score: %.2f)", story.title[:60], story.score)
     
     return selected_stories
 
@@ -2102,14 +2103,14 @@ def generate_script_with_gemini(article: ArticleCandidate, config: Config, max_r
                     script = truncate_script_to_word_limit(script, config.max_script_words)
                     word_count = len(script.split())
                 
-                # Log token usage if available
+                # Log token usage if available (debug only)
                 if hasattr(response, 'usage_metadata'):
                     usage = response.usage_metadata
-                    logging.info("Gemini API usage: %d prompt tokens, %d completion tokens", 
+                    logging.debug("Gemini API usage: %d prompt + %d completion tokens", 
                                usage.prompt_token_count if hasattr(usage, 'prompt_token_count') else 0,
                                usage.candidates_token_count if hasattr(usage, 'candidates_token_count') else 0)
                 
-                logging.info("Generated and cleaned script using Gemini API (%d words)", word_count)
+                logging.info("Generated script using Gemini API (%d words)", word_count)
                 return script
             else:
                 logging.warning("Gemini API returned empty script")
@@ -2136,7 +2137,7 @@ def generate_script(article: ArticleCandidate, config: Config) -> str:
         if gemini_script:
             # Script is already cleaned, just format for display
             return textwrap.fill(gemini_script, width=90)
-        logging.info("Falling back to template-based script generation")
+        logging.debug("Falling back to template-based script generation")
     
     # Fallback to template-based script
     title_lower = article.title.lower()
@@ -2163,7 +2164,7 @@ def generate_script(article: ArticleCandidate, config: Config) -> str:
         script = truncate_script_to_word_limit(script, config.max_script_words)
         word_count = len(script.split())
     
-    logging.info("Generated AI-focused script using template summarizer (%d words)", word_count)
+    logging.info("Generated script using template (%d words)", word_count)
     return textwrap.fill(script, width=90)
 
 
@@ -2331,7 +2332,7 @@ def create_thumbnail(article: ArticleCandidate, title: str, output_path: Path, c
         
         # Save thumbnail
         img.save(str(output_path), 'PNG', quality=95)
-        logging.info("Created thumbnail: %s", output_path)
+        logging.debug("Created thumbnail: %s", output_path.name)
         return output_path
         
     except Exception as exc:
@@ -2517,7 +2518,10 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
             )
             
             # Insert video
-            logging.info("Uploading video to YouTube (attempt %d/%d)...", attempt + 1, max_retries)
+            if attempt == 0:
+                logging.info("Uploading video to YouTube...")
+            else:
+                logging.info("Retrying YouTube upload (attempt %d/%d)...", attempt + 1, max_retries)
             insert_request = youtube.videos().insert(
                 part=",".join(body.keys()),
                 body=body,
@@ -2540,28 +2544,25 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
                                 total = progress_obj.total_bytes_uploaded
                                 if total > 0:
                                     progress = int((uploaded / total) * 100)
-                                    logging.info("Upload progress: %d%% (%d/%d bytes)", progress, uploaded, total)
-                        else:
-                            logging.debug("Upload in progress (chunk %d)...", chunk_count)
-                    except Exception:
-                        logging.debug("Upload in progress (chunk %d)...", chunk_count)
+                                    if progress % 25 == 0 or progress == 100:  # Only log at 25%, 50%, 75%, 100%
+                                        logging.info("Upload progress: %d%%", progress)
             
             if "id" in response:
                 video_id = response["id"]
-                logging.info("Successfully uploaded video to YouTube: https://www.youtube.com/watch?v=%s", video_id)
+                logging.info("Video uploaded to YouTube: %s", video_id)
                 
                 # Upload thumbnail if provided
                 if thumbnail_path and thumbnail_path.exists():
                     # YouTube requires a short delay after video upload before thumbnail can be set
                     # Wait a few seconds to ensure video is processed
-                    logging.info("Waiting 5 seconds before uploading thumbnail (YouTube processing delay)...")
-                    time.sleep(5)
+                    time.sleep(5)  # YouTube processing delay
                     
                     # Retry thumbnail upload up to 3 times
                     thumbnail_uploaded = False
                     for thumb_attempt in range(3):
                         try:
-                            logging.info("Uploading thumbnail to YouTube (attempt %d/3)...", thumb_attempt + 1)
+                            if thumb_attempt > 0:
+                                logging.info("Retrying thumbnail upload (attempt %d/3)...", thumb_attempt + 1)
                             
                             # Verify thumbnail file is valid and is PNG format
                             try:
@@ -2572,10 +2573,10 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
                                     png_path = thumbnail_path.with_suffix('.png')
                                     img.save(png_path, 'PNG')
                                     thumbnail_path = png_path
-                                    logging.info("Converted thumbnail to PNG: %s", thumbnail_path)
+                                    logging.debug("Converted thumbnail to PNG")
                                 img.close()  # Close the image file
                             except Exception as img_exc:
-                                logging.warning("Thumbnail image validation failed: %s", img_exc)
+                                logging.debug("Thumbnail validation warning: %s", img_exc)
                                 # Continue anyway - YouTube API will reject if invalid
                             
                             # Upload thumbnail
@@ -2584,7 +2585,7 @@ def upload_to_youtube(video_path: Path, title: str, description: str, tags: str,
                                 media_body=MediaFileUpload(str(thumbnail_path), mimetype='image/png', resumable=False)
                             ).execute()
                             
-                            logging.info("Thumbnail uploaded successfully")
+                            logging.debug("Thumbnail uploaded successfully")
                             thumbnail_uploaded = True
                             break
                             
@@ -2743,7 +2744,7 @@ def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: 
             
             if file_size > chunk_size:
                 # Chunked upload
-                logging.info("Uploading video in chunks (file size: %.2f MB)...", file_size_mb)
+                logging.debug("Uploading video in chunks (%.2f MB)...", file_size_mb)
                 with open(video_path, "rb") as f:
                     chunk_num = 0
                     while True:
@@ -2767,7 +2768,7 @@ def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: 
                         logging.debug("Uploaded chunk %d", chunk_num)
             else:
                 # Single upload
-                logging.info("Uploading video file (%.2f MB)...", file_size_mb)
+                logging.debug("Uploading video file (%.2f MB)...", file_size_mb)
                 with open(video_path, "rb") as f:
                     upload_headers = {
                         "Content-Type": "video/mp4",
@@ -2780,7 +2781,7 @@ def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: 
                     )
                     upload_response.raise_for_status()
             
-            logging.info("Video file uploaded successfully")
+            logging.debug("Video file uploaded successfully")
             
             # Step 3: Poll upload status until published
             max_poll_attempts = 60  # Poll for up to 3 minutes (60 * 3 seconds)
@@ -2805,7 +2806,7 @@ def upload_to_tiktok(video_path: Path, title: str, config: Config, max_retries: 
                 
                 if status_code == "PUBLISHED":
                     video_id = status_data.get("data", {}).get("publish_id")
-                    logging.info("Successfully published video to TikTok: %s", video_id)
+                    logging.info("Video published to TikTok: %s", video_id)
                     return video_id
                 elif status_code == "FAILED":
                     failure_reason = status_data.get("data", {}).get("fail_reason", "Unknown reason")
@@ -3012,8 +3013,7 @@ def fetch_stock_video(keywords: List[str], config: Config, count: int = 3, used_
                             video_results.append((video_url, video_id))
                 
                 if video_results:
-                    logging.info("Fetched %d stock video(s) from Pexels (page %d): %s", 
-                               len(video_results), random_page, search_query)
+                    logging.debug("Fetched %d stock video(s) from Pexels", len(video_results))
                     return video_results
         except requests.RequestException as exc:
             logging.debug("Pexels video API request failed: %s", exc)
@@ -3078,8 +3078,7 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
                         results.append((image_url, photo_id))
                 
                 if results:
-                    logging.info("Fetched %d stock image(s) from Pexels (page %d): %s", 
-                               len(results), random_page, search_query)
+                    logging.debug("Fetched %d stock image(s) from Pexels", len(results))
                     return results[:count]
         except requests.RequestException as exc:
             logging.debug("Pexels API request failed: %s", exc)
@@ -3126,8 +3125,7 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
                         results.append((image_url, hit_id))
                 
                 if results:
-                    logging.info("Fetched %d stock image(s) from Pixabay (page %d): %s", 
-                               len(results), random_page, search_query)
+                    logging.debug("Fetched %d stock image(s) from Pixabay", len(results))
                     return results[:count]
         except requests.RequestException as exc:
             logging.debug("Pixabay API request failed: %s", exc)
@@ -3173,8 +3171,7 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
                         results.append((image_url, result_id))
                 
                 if results:
-                    logging.info("Fetched %d stock image(s) from Unsplash (page %d): %s", 
-                               len(results), random_page, search_query)
+                    logging.debug("Fetched %d stock image(s) from Unsplash", len(results))
                     return results[:count]
         except requests.RequestException as exc:
             logging.debug("Unsplash API request failed: %s", exc)
@@ -3200,9 +3197,12 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
     # Try to fetch multiple stock videos first (most engaging)
     if config.pexels_api_key:
         video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids)  # Returns (url, media_id) tuples
-        for i, (video_url, media_id) in enumerate(video_results):
+        
+        # Download videos in parallel for faster processing
+        def download_video(video_data):
+            index, video_url, media_id = video_data
             try:
-                video_file = tmp_path / f"stock_video_{i}.mp4"
+                video_file = tmp_path / f"stock_video_{index}.mp4"
                 response = requests.get(video_url, timeout=30, stream=True)
                 response.raise_for_status()
                 
@@ -3219,31 +3219,41 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
                 # Verify download completed
                 if expected_size > 0 and total_size < expected_size:
                     logging.warning("Video download incomplete: %d/%d bytes", total_size, expected_size)
-                    continue
+                    return None, None
                 
                 # Verify file is not empty and has reasonable size
                 if video_file.stat().st_size < 1000:  # Less than 1KB is suspicious
                     logging.warning("Downloaded video file is too small, likely corrupted")
-                    continue
+                    return None, None
                 
-                video_paths.append(str(video_file))
-                used_media_ids_to_save.append(media_id)  # Track for saving
-                logging.info("Downloaded stock video %d from Pexels (%d KB)", i+1, video_file.stat().st_size // 1024)
+                return str(video_file), media_id
             except Exception as exc:
-                logging.warning("Failed to download stock video %d: %s", i+1, exc)
-                continue
+                logging.warning("Failed to download stock video %d: %s", index+1, exc)
+                return None, None
+        
+        # Download videos in parallel
+        video_data_list = [(i, url, mid) for i, (url, mid) in enumerate(video_results)]
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = {executor.submit(download_video, data): data for data in video_data_list}
+            for future in as_completed(futures):
+                video_path, media_id = future.result()
+                if video_path and media_id:
+                    video_paths.append(video_path)
+                    used_media_ids_to_save.append(media_id)
         
         if video_paths:
             # Save used media IDs
             save_used_media_ids(used_media_ids_to_save, config)
-            logging.info("Prepared %d stock video(s) for video", len(video_paths))
+            logging.info("Prepared %d stock video(s)", len(video_paths))
             return video_paths, image_paths
     
     # Fetch multiple stock images
     stock_image_results = fetch_stock_media(keywords, config, media_type="photo", count=count, used_media_ids=used_media_ids)  # Returns (url, media_id) tuples
     target_width, target_height = 1080, 1920
     
-    for i, (image_url, media_id) in enumerate(stock_image_results):
+    # Download and process images in parallel for faster processing
+    def download_and_process_image(image_data):
+        index, image_url, media_id = image_data
         try:
             response = requests.get(image_url, timeout=15)
             response.raise_for_status()
@@ -3263,18 +3273,27 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
                 top = (img.height - target_height) // 2
                 img = img.crop((0, top, target_width, top + target_height))
             
-            image_file = tmp_path / f"stock_image_{i}.jpg"
+            image_file = tmp_path / f"stock_image_{index}.jpg"
             img.save(image_file, "JPEG", quality=90)
-            image_paths.append(image_file)
-            used_media_ids_to_save.append(media_id)  # Track for saving
+            return image_file, media_id
         except Exception as exc:
-            logging.debug("Failed to download/process stock image %d: %s", i, exc)
-            continue
+            logging.debug("Failed to download/process stock image %d: %s", index, exc)
+            return None, None
+    
+    # Process images in parallel
+    image_data_list = [(i, url, mid) for i, (url, mid) in enumerate(stock_image_results)]
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(download_and_process_image, data): data for data in image_data_list}
+        for future in as_completed(futures):
+            image_file, media_id = future.result()
+            if image_file and media_id:
+                image_paths.append(image_file)
+                used_media_ids_to_save.append(media_id)
     
     if image_paths:
         # Save used media IDs
         save_used_media_ids(used_media_ids_to_save, config)
-        logging.info("Prepared %d stock image(s) for video", len(image_paths))
+        logging.info("Prepared %d stock image(s)", len(image_paths))
         return [], image_paths
     
     # Fallback to article image if available
@@ -3824,11 +3843,10 @@ def extract_word_timings(audio_path: Path, script: str, config: Config) -> List[
                 model = whisper.load_model("base", device="cpu")
             
             audio = whisper.load_audio(str(audio_path))
-            result = whisper.transcribe(
+            result = whisper.transcribe_timestamped(
                 model, 
                 audio, 
                 language="en",
-                word_timestamps=True,
                 verbose=False
             )
             
@@ -4252,12 +4270,14 @@ def generate_captions(audio_path: Path, script: str, video_size: Tuple[int, int]
     
     logging.info("Created %d caption phrases", len(phrases))
     
-    # Create caption clips
+    # Create caption clips in parallel for faster processing
     caption_clips = []
-    for phrase in phrases:
-        clip = create_caption_clip(phrase, video_size, config)
-        if clip:
-            caption_clips.append(clip)
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = {executor.submit(create_caption_clip, phrase, video_size, config): phrase for phrase in phrases}
+        for future in as_completed(futures):
+            clip = future.result()
+            if clip:
+                caption_clips.append(clip)
     
     logging.info("Generated %d caption clips", len(caption_clips))
     return caption_clips
@@ -4503,6 +4523,12 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                     temp_video = VideoFileClip(video_path)
                     video_durations[video_path] = temp_video.duration
                     temp_video.close()
+                    # Explicitly close reader to free resources
+                    if hasattr(temp_video, 'reader') and temp_video.reader:
+                        try:
+                            temp_video.reader.close()
+                        except:
+                            pass
                 except:
                     video_durations[video_path] = 10.0  # Default fallback
             return video_durations[video_path]
@@ -4631,7 +4657,7 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                 # Fill remaining time with images if needed
                 if accumulated_duration < duration_seconds and stock_image_paths:
                     remaining = duration_seconds - accumulated_duration
-                    logging.info("Filling remaining %.2fs with images", remaining)
+                    logging.debug("Filling remaining %.2fs with images", remaining)
                     image_index = 0
                     image_duration_accum = 0.0
                     
@@ -4668,7 +4694,7 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
                     accumulated_duration += image_duration_accum
                 
                 if video_clips:
-                    logging.info("Created %d clip(s) for video (total duration: %.2fs, target: %.2fs)", 
+                    logging.info("Created %d clip(s) (%.1fs / %.1fs target)", 
                                len(video_clips), accumulated_duration, duration_seconds)
                 else:
                     logging.warning("No stock videos could be used, falling back to images")
@@ -4811,13 +4837,14 @@ def assemble_video(article: ArticleCandidate, script: str, config: Config, video
         try:
             composite.write_videofile(
                 str(output_path),
-                fps=24,
+                fps=20,  # Reduced from 24 - barely noticeable, faster encoding
                 codec="libx264",
                 audio_codec="aac" if audio_clip else None,
-                bitrate="5000k",
+                bitrate="3500k",  # Reduced from 5000k - still high quality for 1080p, faster encoding
                 verbose=False,
                 logger=None,
-                preset="medium",  # Balance between speed and file size
+                preset="fast",  # Changed from "medium" - faster encoding with minimal quality loss
+                threads=4,  # Use multiple threads for faster encoding
             )
             
             # Verify output file
