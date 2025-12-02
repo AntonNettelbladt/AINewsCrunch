@@ -2950,14 +2950,191 @@ def extract_keywords_for_search(article: ArticleCandidate) -> List[str]:
     return unique_keywords[:3]
 
 
-def fetch_stock_video(keywords: List[str], config: Config, count: int = 3, used_media_ids: Optional[Set[str]] = None) -> List[Tuple[str, str]]:
-    """Fetch multiple stock videos from Pexels API with randomization and reuse prevention.
+# Keywords that should exclude a video from being selected (contextually irrelevant)
+VIDEO_EXCLUSION_KEYWORDS = {
+    "fitness", "gym", "workout", "exercise", "training", "sport", "athlete", "muscle", 
+    "yoga", "running", "cycling", "swimming", "basketball", "football", "soccer",
+    "cooking", "recipe", "food", "restaurant", "chef", "kitchen",
+    "fashion", "makeup", "beauty", "cosmetics", "model",
+    "travel", "vacation", "beach", "tourism", "hotel",
+    "pets", "dog", "cat", "animal", "wildlife",
+    "nature", "landscape", "mountains", "ocean", "forest",
+    "medical", "hospital", "surgery", "doctor", "patient",
+    "education", "classroom", "student", "school", "teacher",
+    "entertainment", "movie", "music", "concert", "party",
+}
+
+
+def calculate_video_relevance_score(video: dict, article_keywords: List[str], article_text: str) -> float:
+    """Calculate relevance score for a video based on its metadata and article keywords.
+    
+    Args:
+        video: Video metadata dict from Pexels API
+        article_keywords: List of keywords extracted from article
+        article_text: Article title + summary for context matching
+        
+    Returns:
+        Relevance score (0.0 to 1.0), higher is better. Negative score means reject.
+    """
+    score = 0.0
+    
+    # Extract all available metadata from video object
+    video_metadata_parts = []
+    
+    # Video URL often contains descriptive paths
+    if "url" in video:
+        video_metadata_parts.append(str(video.get("url", "")))
+    
+    # User information
+    user = video.get("user", {})
+    if isinstance(user, dict):
+        if "name" in user:
+            video_metadata_parts.append(str(user.get("name", "")))
+    
+    # Video ID might be in URL format
+    if "id" in video:
+        video_metadata_parts.append(str(video.get("id", "")))
+    
+    # Check video_files for any metadata
+    video_files = video.get("video_files", [])
+    for vf in video_files:
+        if isinstance(vf, dict) and "link" in vf:
+            video_metadata_parts.append(str(vf.get("link", "")))
+    
+    # Video tags if available
+    if "tags" in video:
+        tags = video.get("tags", [])
+        if isinstance(tags, list):
+            video_metadata_parts.extend([str(tag).lower() for tag in tags if tag])
+    
+    # Combine all metadata into searchable string
+    video_metadata = " ".join(video_metadata_parts).lower()
+    
+    # Extract words from URL paths (Pexels URLs often have descriptive paths)
+    # e.g., /videos/technology-computer-screen-12345/
+    url_paths = [part for part in video_metadata.split("/") if len(part) > 2]
+    video_metadata += " " + " ".join(url_paths)
+    
+    # Check for exclusion keywords - if found, reject immediately
+    article_text_lower = article_text.lower()
+    for exclusion_kw in VIDEO_EXCLUSION_KEYWORDS:
+        exclusion_lower = exclusion_kw.lower()
+        if exclusion_lower in video_metadata:
+            # Check if article is actually about this topic (e.g., "AI fitness app")
+            # Only exclude if the article is NOT about this topic
+            if exclusion_lower not in article_text_lower:
+                logging.debug("Rejecting video: contains exclusion keyword '%s'", exclusion_kw)
+                return -1.0  # Reject immediately
+    
+    # Score based on keyword matches in video metadata
+    for keyword in article_keywords:
+        if not keyword:
+            continue
+            
+        keyword_lower = keyword.lower()
+        
+        # Exact keyword match in metadata (high score)
+        if keyword_lower in video_metadata:
+            score += 0.4
+        
+        # Partial keyword match (for compound terms like "machine learning")
+        keyword_parts = keyword_lower.split()
+        if len(keyword_parts) > 1:
+            matching_parts = sum(1 for part in keyword_parts if len(part) > 3 and part in video_metadata)
+            if matching_parts > 0:
+                score += 0.2 * (matching_parts / len(keyword_parts))
+        
+        # Check for keyword stems/partials
+        if len(keyword_lower) > 4:
+            # Check if significant parts of keyword appear
+            if keyword_lower[:4] in video_metadata or keyword_lower[-4:] in video_metadata:
+                score += 0.1
+    
+    # Boost score for technology-related terms in metadata
+    tech_terms = ["technology", "tech", "computer", "digital", "software", "ai", "artificial", "intelligence",
+                  "machine", "learning", "innovation", "data", "code", "programming", "robot", "neural",
+                  "algorithm", "chip", "processor", "screen", "device", "laptop", "smartphone", "code",
+                  "network", "internet", "cyber", "electronic", "circuit", "binary", "server"]
+    
+    tech_matches = sum(1 for term in tech_terms if term in video_metadata)
+    if tech_matches > 0:
+        # Only boost if article is actually tech-related
+        if any(tech in article_text_lower for tech in ["ai", "technology", "tech", "computer", "software", "digital", "artificial intelligence"]):
+            score += min(0.3, tech_matches * 0.1)  # Cap boost at 0.3
+    
+    # Penalize generic/abstract terms (unless we have no better options)
+    generic_terms = ["abstract", "pattern", "texture", "background", "gradient", "color", "art", "design"]
+    generic_matches = sum(1 for term in generic_terms if term in video_metadata)
+    if generic_matches > 0 and score < 0.3:
+        score -= 0.15 * generic_matches  # Only penalize if score is already low
+    
+    # Normalize score to 0.0-1.0 range
+    final_score = min(1.0, max(0.0, score))
+    
+    # Log low-scoring videos for debugging
+    if final_score < 0.3:
+        logging.debug("Low relevance video (score: %.2f): %s", final_score, video_metadata[:100])
+    
+    return final_score
+
+
+def generate_search_queries(article: ArticleCandidate, keywords: List[str]) -> List[str]:
+    """Generate multiple search query variations for better stock media matching.
+    
+    Args:
+        article: Article candidate
+        keywords: Extracted keywords
+        
+    Returns:
+        List of search queries ordered by specificity (most specific first)
+    """
+    queries = []
+    text_lower = f"{article.title} {article.summary}".lower()
+    
+    # Query 1: Most specific - combine keywords with tech context
+    if keywords:
+        specific_query = " ".join(keywords[:2])
+        if any(kw in text_lower for kw in ["ai", "artificial intelligence", "machine learning"]):
+            specific_query += " technology"
+        queries.append(specific_query)
+    
+    # Query 2: Tech-focused if AI-related
+    if any(kw in text_lower for kw in ["ai", "artificial intelligence", "machine learning", "gpt", "claude"]):
+        if keywords:
+            tech_query = f"{keywords[0]} artificial intelligence" if keywords else "artificial intelligence technology"
+            queries.append(tech_query)
+        else:
+            queries.append("artificial intelligence technology")
+    
+    # Query 3: Generic tech fallback
+    if keywords:
+        queries.append(keywords[0] if keywords else "technology")
+    else:
+        queries.append("technology computer")
+    
+    # Query 4: Ultra-generic fallback
+    queries.append("technology")
+    
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_queries = []
+    for q in queries:
+        if q not in seen:
+            seen.add(q)
+            unique_queries.append(q)
+    
+    return unique_queries[:4]  # Return up to 4 query variations
+
+
+def fetch_stock_video(keywords: List[str], config: Config, count: int = 3, used_media_ids: Optional[Set[str]] = None, article: Optional[ArticleCandidate] = None) -> List[Tuple[str, str]]:
+    """Fetch multiple stock videos from Pexels API with relevance filtering and reuse prevention.
     
     Args:
         keywords: Search keywords
         config: Config object with API keys
         count: Number of videos to fetch (default: 3)
         used_media_ids: Set of already-used media IDs to exclude
+        article: Optional article for relevance scoring
     
     Returns:
         List of tuples (video_url, media_id) for tracking
@@ -2965,63 +3142,110 @@ def fetch_stock_video(keywords: List[str], config: Config, count: int = 3, used_
     if used_media_ids is None:
         used_media_ids = set()
     
-    # Create more specific search query from keywords
-    search_query = " ".join(keywords) if keywords else "technology"
     video_results = []
+    article_text = ""
+    if article:
+        article_text = f"{article.title} {article.summary}".lower()
     
-    # Try Pexels videos
+    # Generate multiple search queries for better matching
+    search_queries = [ " ".join(keywords) if keywords else "technology" ]
+    if article:
+        search_queries = generate_search_queries(article, keywords)
+    
+    # Try Pexels videos with relevance filtering
     if config.pexels_api_key:
-        try:
-            url = "https://api.pexels.com/videos/search"
-            headers = {"Authorization": config.pexels_api_key}
-            
-            # Request more results to have options after filtering used ones
-            per_page = min(count * 5, 80)  # Request more to account for filtering
-            
-            # Add randomization: use random page (1-10) to get different results
-            # Pexels typically returns 15 per page, so page 1-10 gives us variety
-            random_page = random.randint(1, min(10, max(1, per_page // 15)))
-            
-            params = {
-                "query": search_query,
-                "per_page": per_page,
-                "orientation": "portrait",
-                "page": random_page
-            }
-            
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            response.raise_for_status()
-            if response.status_code == 200:
-                data = response.json()
-                videos = data.get("videos", [])
+        all_candidate_videos = []
+        
+        # Try multiple search queries
+        for search_query in search_queries:
+            try:
+                url = "https://api.pexels.com/videos/search"
+                headers = {"Authorization": config.pexels_api_key}
                 
-                # Shuffle videos to add more randomness
-                random.shuffle(videos)
+                # Request more results to have options after filtering
+                per_page = min(count * 10, 80)  # Request more for better filtering
                 
-                for video in videos:
-                    if len(video_results) >= count:
+                # Start from page 1 for most relevant results (only randomize if needed)
+                params = {
+                    "query": search_query,
+                    "per_page": per_page,
+                    "orientation": "portrait",
+                    "page": 1  # Start with most relevant results
+                }
+                
+                response = requests.get(url, headers=headers, params=params, timeout=10)
+                response.raise_for_status()
+                if response.status_code == 200:
+                    data = response.json()
+                    videos = data.get("videos", [])
+                    
+                    # Score and filter videos by relevance
+                    scored_videos = []
+                    for video in videos:
+                        video_id = f"pexels_{video.get('id', '')}"
+                        
+                        # Skip if already used
+                        if video_id in used_media_ids:
+                            continue
+                        
+                        # Calculate relevance score
+                        relevance_score = 0.5  # Default neutral score
+                        if article:
+                            relevance_score = calculate_video_relevance_score(video, keywords, article_text)
+                            # Reject videos with negative scores (excluded keywords)
+                            if relevance_score < 0:
+                                continue
+                        
+                        video_files = video.get("video_files", [])
+                        if video_files:
+                            # Prefer HD quality, fallback to any available
+                            hd_video = next((vf for vf in video_files if vf.get("quality") == "hd"), None)
+                            video_url = (hd_video or video_files[0]).get("link")
+                            if video_url:
+                                scored_videos.append((video, video_url, video_id, relevance_score))
+                    
+                    # Sort by relevance score (highest first)
+                    scored_videos.sort(key=lambda x: x[3], reverse=True)
+                    all_candidate_videos.extend(scored_videos)
+                    
+                    # If we found enough highly relevant videos, stop searching
+                    high_relevance = [v for v in scored_videos if v[3] >= 0.5]
+                    if len(high_relevance) >= count:
                         break
-                    
-                    video_id = f"pexels_{video.get('id', '')}"
-                    # Skip if already used
-                    if video_id in used_media_ids:
-                        continue
-                    
-                    video_files = video.get("video_files", [])
-                    if video_files:
-                        # Prefer HD quality, fallback to any available
-                        hd_video = next((vf for vf in video_files if vf.get("quality") == "hd"), None)
-                        video_url = (hd_video or video_files[0]).get("link")
-                        if video_url:
-                            video_results.append((video_url, video_id))
-                
-                if video_results:
-                    logging.debug("Fetched %d stock video(s) from Pexels", len(video_results))
-                    return video_results
-        except requests.RequestException as exc:
-            logging.debug("Pexels video API request failed: %s", exc)
-        except Exception as exc:
-            logging.debug("Pexels video API error: %s", exc)
+                        
+            except requests.RequestException as exc:
+                logging.debug("Pexels video API request failed for query '%s': %s", search_query, exc)
+                continue
+            except Exception as exc:
+                logging.debug("Pexels video API error for query '%s': %s", search_query, exc)
+                continue
+        
+        # Remove duplicates by video_id while preserving order
+        seen_ids = set()
+        unique_videos = []
+        for video, video_url, video_id, score in all_candidate_videos:
+            if video_id not in seen_ids:
+                seen_ids.add(video_id)
+                unique_videos.append((video, video_url, video_id, score))
+        
+        # Sort by relevance and take top results
+        unique_videos.sort(key=lambda x: x[3], reverse=True)
+        
+        # Filter out low-relevance videos (score < 0.2) unless we don't have enough
+        filtered_videos = [v for v in unique_videos if v[3] >= 0.2]
+        if len(filtered_videos) < count:
+            # If we don't have enough, include lower scoring ones
+            filtered_videos = unique_videos[:count * 2]
+        
+        # Take top N videos
+        for video, video_url, video_id, score in filtered_videos[:count]:
+            video_results.append((video_url, video_id))
+            if len(video_results) >= count:
+                break
+        
+        if video_results:
+            logging.info("Fetched %d relevant stock video(s) from Pexels (searched %d queries)", len(video_results), len(search_queries))
+            return video_results
     
     return video_results
 
@@ -3036,8 +3260,8 @@ def fetch_stock_media(keywords: List[str], config: Config, media_type: str = "ph
     results = []
     
     if media_type == "video":
-        # Try to fetch videos
-        video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids)
+        # Try to fetch videos (article parameter not available here, will use basic filtering)
+        video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids, article=None)
         return video_results
     
     # Fetch images
@@ -3199,7 +3423,7 @@ def prepare_stock_media(article: ArticleCandidate, config: Config, tmp_path: Pat
     
     # Try to fetch multiple stock videos first (most engaging)
     if config.pexels_api_key:
-        video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids)  # Returns (url, media_id) tuples
+        video_results = fetch_stock_video(keywords, config, count=count, used_media_ids=used_media_ids, article=article)  # Returns (url, media_id) tuples
         
         # Download videos in parallel for faster processing
         def download_video(video_data):
