@@ -152,7 +152,7 @@ class Config:
     caption_font_size: int = 60
     caption_max_chars_per_line: int = 40
     caption_fade_duration: float = 0.3
-    caption_position: str = "bottom"  # bottom/center/top
+    caption_position: str = "center"  # bottom/center/top
 
 
 DEFAULT_SOURCES: List[SourceFeed] = [
@@ -776,7 +776,7 @@ def load_config() -> Config:
         caption_font_size=int(os.getenv("CAPTION_FONT_SIZE", "60")),
         caption_max_chars_per_line=int(os.getenv("CAPTION_MAX_CHARS_PER_LINE", "40")),
         caption_fade_duration=float(os.getenv("CAPTION_FADE_DURATION", "0.3")),
-        caption_position=os.getenv("CAPTION_POSITION", "bottom"),
+        caption_position=os.getenv("CAPTION_POSITION", "center"),
     )
     logging.debug("Loaded config: %s", config)
     return config
