@@ -271,5 +271,12 @@
     "source": "AI News",
     "youtube_id": "pLNMK3lmnEQ",
     "tiktok_id": null
+  },
+  "https://openrouter.ai/state-of-ai": {
+    "title": "State of AI",
+    "date_covered": "2025-12-05T01:22:38.821276+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "OPg_piGbSUY",
+    "tiktok_id": null
   }
 }
