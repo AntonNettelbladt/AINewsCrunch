@@ -551,5 +551,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": null,
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/leading-models-nvidia/": {
+    "title": "As AI Grows More Complex, Model Builders Rely on NVIDIA",
+    "date_covered": "2025-12-12T01:24:34.547737+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "CcUFDLWfRdI",
+    "tiktok_id": null
   }
 }
