@@ -614,5 +614,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "vQ49dUDq3rA",
     "tiktok_id": null
+  },
+  "https://zknill.io/posts/sse-sucks-for-transporting-llm-tokens/": {
+    "title": "SSE sucks for transporting LLM tokens",
+    "date_covered": "2025-12-13T20:24:19.723463+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EA9kfFNKvgo",
+    "tiktok_id": null
   }
 }
