@@ -656,5 +656,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "Q2EG4EpmV-I",
     "tiktok_id": null
+  },
+  "https://github.com/loadingalias/cargo-rail": {
+    "title": "loadingalias/cargo-rail: Graph-aware monorepo orchestration for Rust workspaces",
+    "date_covered": "2025-12-14T20:24:20.944655+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "w81o4txG5_A",
+    "tiktok_id": null
   }
 }
