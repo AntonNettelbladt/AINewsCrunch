@@ -684,5 +684,12 @@
     "source": "NVIDIA Blog",
     "youtube_id": "jtv8w2WdkVE",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/rtx-ai-garage-fine-tuning-unsloth-dgx-spark/": {
+    "title": "How to Fine-Tune an LLM on NVIDIA GPUs With Unsloth",
+    "date_covered": "2025-12-15T16:31:16.010034+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Bhovw-YXSdI",
+    "tiktok_id": null
   }
 }
