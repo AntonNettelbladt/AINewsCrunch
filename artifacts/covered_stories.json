@@ -887,5 +887,12 @@
     "source": "AI News",
     "youtube_id": "LkUA5uyuDlU",
     "tiktok_id": null
+  },
+  "https://antirez.com/news/157": {
+    "title": "Reflections on AI at the end of 2025",
+    "date_covered": "2025-12-20T16:25:20.852445+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1r_O6SUmgTs",
+    "tiktok_id": null
   }
 }
