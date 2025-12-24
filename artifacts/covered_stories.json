@@ -999,5 +999,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "48Vh8SCQcoo",
     "tiktok_id": null
+  },
+  "https://github.com/humorless/fennel-fp-neovim": {
+    "title": "humorless/fennel-fp-neovim: A series of articles exploring Fennel and Functional Programming in Neovim",
+    "date_covered": "2025-12-24T04:38:56.968901+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "F0rv4mdCTYA",
+    "tiktok_id": null
   }
 }
