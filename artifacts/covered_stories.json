@@ -1062,5 +1062,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "Q2suY8MmjlU",
     "tiktok_id": null
+  },
+  "https://catalinionescu.dev/ai-agent/building-ai-agent-part-1/": {
+    "title": "Building an AI agent inside a 7-year old Rails application",
+    "date_covered": "2025-12-26T08:28:55.343211+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
   }
 }
