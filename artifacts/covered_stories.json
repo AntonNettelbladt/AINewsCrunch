@@ -1174,5 +1174,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "Ikyd868eW4E",
     "tiktok_id": null
+  },
+  "https://github.com/kenryu42/claude-code-safety-net": {
+    "title": "kenryu42/claude-code-safety-net: A Claude Code plugin that acts as a safety net, catching destructive git and filesystem commands before they execute.",
+    "date_covered": "2025-12-30T04:42:16.821266+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
   }
 }
