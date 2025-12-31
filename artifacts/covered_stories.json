@@ -1,11 +1,4 @@
 {
-  "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/": {
-    "title": "A conversation with Kevin Scott: What's next in AI",
-    "date_covered": "2025-12-01T16:28:41.703300+00:00",
-    "source": "Microsoft AI Blog",
-    "youtube_id": "JOCZu6C6epE",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/": {
     "title": "At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI",
     "date_covered": "2025-12-01T20:23:11.012637+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2025-12-31T16:27:52.460324+00:00",
     "source": "ZDNet AI",
     "youtube_id": "NhMNqpKecE4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/california-ai-law-crackdown-on-risks/": {
+    "title": "Can one state save us from AI disaster? Inside California's new legislative crackdown",
+    "date_covered": "2025-12-31T20:24:02.916437+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "_DtBT0a5WXc",
     "tiktok_id": null
   }
 }
