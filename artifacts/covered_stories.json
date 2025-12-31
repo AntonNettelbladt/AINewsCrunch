@@ -1,25 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/how-the-mcp-spec-update-boosts-security-as-infrastructure-scales/": {
-    "title": "How the MCP spec update boosts security as infrastructure scales",
-    "date_covered": "2025-12-01T12:40:50.900308+00:00",
-    "source": "AI News",
-    "youtube_id": "CLafo6DZTOk",
-    "tiktok_id": null
-  },
-  "https://the-decoder.com/black-forest-labs-secures-300-million-to-accelerate-its-vision-for-advanced-image-models/": {
-    "title": "Black Forest Labs secures $300 million to accelerate its vision for advanced image models",
-    "date_covered": "2025-12-01T13:35:48.246196+00:00",
-    "source": "The Decoder",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
-  "https://www.technologyreview.com/2025/12/01/1128591/an-ai-model-trained-on-prison-phone-calls-is-now-being-used-to-surveil-inmates/": {
-    "title": "An AI model trained on prison phone calls now looks for planned crimes in those calls",
-    "date_covered": "2025-12-01T13:53:40.826332+00:00",
-    "source": "MIT Technology Review",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/": {
     "title": "A conversation with Kevin Scott: What's next in AI",
     "date_covered": "2025-12-01T16:28:41.703300+00:00",
@@ -1187,6 +1166,13 @@
     "date_covered": "2025-12-31T12:41:13.956268+00:00",
     "source": "ZDNet AI",
     "youtube_id": "CdlAijbIca4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/aerynos-linux-distribution-atomic-challenging-install/": {
+    "title": "This fully atomic Linux distro is a challenge to install but a treat to use",
+    "date_covered": "2025-12-31T16:27:52.460324+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "NhMNqpKecE4",
     "tiktok_id": null
   }
 }
