@@ -1,11 +1,4 @@
 {
-  "https://www.theverge.com/news/836212/openai-code-red-chatgpt": {
-    "title": "OpenAI declares ‘code red’ as Google catches up in AI race",
-    "date_covered": "2025-12-02T16:28:44.615723+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "SB_9ZGxmIOM",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/deepseek-v3-2-matches-gpt-5-lower-training-costs/": {
     "title": "China’s DeepSeek V3.2 AI model achieves frontier performance on a fraction of the computing budget",
     "date_covered": "2025-12-02T20:26:31.410128+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-01-01T16:27:25.149074+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "kRBjqdFIglo",
+    "tiktok_id": null
+  },
+  "https://www.cnn.com/2025/12/31/europe/finland-estonia-undersea-cable-ship-detained-intl": {
+    "title": "Finland detains ship and its crew after critical undersea cable damaged",
+    "date_covered": "2026-01-01T20:25:05.501929+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mMngQP1FhPg",
     "tiktok_id": null
   }
 }
