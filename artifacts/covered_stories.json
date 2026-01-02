@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/mistral-frontier-open-models/": {
-    "title": "NVIDIA Partners With Mistral AI to Accelerate New Family of Open Models",
-    "date_covered": "2025-12-03T12:42:08.865645+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "BowXtfC_ia0",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/htb-ai-range-testing-ai-security-in-sandbox-agentic-ai-experiments/": {
     "title": "HTB AI Range offers experiments in cyber-resilience training",
     "date_covered": "2025-12-03T16:42:10.561435+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-01-02T12:39:21.551342+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "QBJMReIoBwg",
+    "tiktok_id": null
+  },
+  "https://standardebooks.org/blog/public-domain-day-2026": {
+    "title": "Public Domain Day 2026 in Literature - Blog",
+    "date_covered": "2026-01-02T16:26:39.945468+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hUzgtqVRaRc",
     "tiktok_id": null
   }
 }
