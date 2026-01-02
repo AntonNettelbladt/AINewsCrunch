@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ibm-quantum-cited-plus-agentic-ai-data-policies-as-2026-trends/": {
-    "title": "IBM cites agentic AI, data policies, and quantum as 2026 trends",
-    "date_covered": "2025-12-03T08:28:43.183794+00:00",
-    "source": "AI News",
-    "youtube_id": "q5TUtRdNcxU",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/mistral-frontier-open-models/": {
     "title": "NVIDIA Partners With Mistral AI to Accelerate New Family of Open Models",
     "date_covered": "2025-12-03T12:42:08.865645+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-01-02T08:31:41.217391+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xUhOBJdZ51w",
+    "tiktok_id": null
+  },
+  "https://sgoel.dev/posts/10-years-of-personal-finances-in-plain-text-files/": {
+    "title": "10 years of personal finances in plain text files",
+    "date_covered": "2026-01-02T12:39:21.551342+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "QBJMReIoBwg",
     "tiktok_id": null
   }
 }
