@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/frontier-ai-research-lab-tackles-enterprise-deployment-challenges/": {
-    "title": "Frontier AI research lab tackles enterprise deployment challenges",
-    "date_covered": "2025-12-03T01:25:01.256810+00:00",
-    "source": "AI News",
-    "youtube_id": "-TiCXwFvx0k",
-    "tiktok_id": null
-  },
-  "https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap/": {
-    "title": "Amazon releases an impressive new AI chip and teases an Nvidia-friendly roadmap",
-    "date_covered": "2025-12-03T04:31:19.918829+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "SvekEIaAya4",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ibm-quantum-cited-plus-agentic-ai-data-policies-as-2026-trends/": {
     "title": "IBM cites agentic AI, data policies, and quantum as 2026 trends",
     "date_covered": "2025-12-03T08:28:43.183794+00:00",
@@ -1068,6 +1054,13 @@
     "date_covered": "2026-01-01T20:25:05.501929+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "mMngQP1FhPg",
+    "tiktok_id": null
+  },
+  "https://publicdomainreview.org/blog/2026/01/public-domain-day-2026/": {
+    "title": "Happy Public Domain Day 2026!",
+    "date_covered": "2026-01-02T04:43:45.632991+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "B_8HFTr3gh8",
     "tiktok_id": null
   }
 }
