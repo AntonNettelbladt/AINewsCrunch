@@ -1062,5 +1062,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "B_8HFTr3gh8",
     "tiktok_id": null
+  },
+  "https://rtfm.co.ua/en/freebsd-home-nas-part-1-configuring-zfs-mirror-raid1/": {
+    "title": "FreeBSD: Home NAS, part 1 – configuring ZFS mirror (RAID1)",
+    "date_covered": "2026-01-02T08:31:41.217391+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xUhOBJdZ51w",
+    "tiktok_id": null
   }
 }
