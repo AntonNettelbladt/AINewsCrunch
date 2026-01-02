@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/htb-ai-range-testing-ai-security-in-sandbox-agentic-ai-experiments/": {
-    "title": "HTB AI Range offers experiments in cyber-resilience training",
-    "date_covered": "2025-12-03T16:42:10.561435+00:00",
-    "source": "AI News",
-    "youtube_id": "A5USNNqcPEI",
-    "tiktok_id": null
-  },
   "https://www.theregister.com/2025/12/02/zig_quits_github_microsoft_ai_obsession/": {
     "title": "Zig quits GitHub, gripes about Microsoft's AI obsession",
     "date_covered": "2025-12-03T20:26:15.872338+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-01-02T16:26:39.945468+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hUzgtqVRaRc",
+    "tiktok_id": null
+  },
+  "http://www.observationalhazard.com/2025/12/c-java-java-llm.html": {
+    "title": "C -> Java != Java -> LLM",
+    "date_covered": "2026-01-02T20:25:45.985768+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
