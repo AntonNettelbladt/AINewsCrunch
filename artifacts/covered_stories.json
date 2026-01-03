@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/openai-is-secretly-fast-tracking-garlic-to-fix-chatgpts-biggest-flaws-what-we-know/": {
-    "title": "OpenAI is secretly fast-tracking 'Garlic' to fix ChatGPT's biggest flaws: What we know",
-    "date_covered": "2025-12-04T01:22:28.800090+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "V3a7vIegpTs",
-    "tiktok_id": null
-  },
   "https://alexschapiro.com/security/vulnerability/2025/12/02/filevine-api-100k": {
     "title": "How I Reverse Engineered a Billion-Dollar Legal AI Tool and Found 100k+ Confidential Files",
     "date_covered": "2025-12-04T04:34:17.806931+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-01-03T01:21:51.538020+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "HnBQJUr8Mno",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/deepseek-research-training-models/": {
+    "title": "How DeepSeek's new way to train advanced AI models could disrupt everything - again",
+    "date_covered": "2026-01-03T04:35:06.244657+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "MMlGmLpypL8",
     "tiktok_id": null
   }
 }
