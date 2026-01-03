@@ -1,11 +1,4 @@
 {
-  "https://www.theregister.com/2025/12/02/zig_quits_github_microsoft_ai_obsession/": {
-    "title": "Zig quits GitHub, gripes about Microsoft's AI obsession",
-    "date_covered": "2025-12-03T20:26:15.872338+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "EK09D0go3MQ",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/openai-is-secretly-fast-tracking-garlic-to-fix-chatgpts-biggest-flaws-what-we-know/": {
     "title": "OpenAI is secretly fast-tracking 'Garlic' to fix ChatGPT's biggest flaws: What we know",
     "date_covered": "2025-12-04T01:22:28.800090+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-01-02T20:25:45.985768+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://github.com/bschaatsbergen/lix": {
+    "title": "bschaatsbergen/cek: List, inspect and explore OCI container images, their layers and contents.",
+    "date_covered": "2026-01-03T01:21:51.538020+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "HnBQJUr8Mno",
     "tiktok_id": null
   }
 }
