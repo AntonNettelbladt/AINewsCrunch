@@ -1034,5 +1034,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "lKNWRUlS5So",
     "tiktok_id": null
+  },
+  "https://karpathy.ai/zero-to-hero.html": {
+    "title": "Neural Networks: Zero to Hero",
+    "date_covered": "2026-01-04T08:28:34.619387+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EpPF6_8DIkQ",
+    "tiktok_id": null
   }
 }
