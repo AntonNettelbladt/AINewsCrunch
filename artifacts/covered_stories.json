@@ -1,11 +1,4 @@
 {
-  "https://www.sciencedaily.com/releases/2025/11/251130050717.htm": {
-    "title": "New 3D scan reveals a hidden network of moai carvers on Easter Island",
-    "date_covered": "2025-12-05T16:27:37.631229+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "bKzu_WGklFI",
-    "tiktok_id": null
-  },
   "https://blog.google/technology/developers/gemini-3-pro-vision/": {
     "title": "Gemini 3 Pro: the frontier of vision AI",
     "date_covered": "2025-12-05T20:25:28.100195+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-04T16:25:32.663681+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "MRo-Fk6C6Lc",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/trellis-ai/jobs/ngvfeaq-member-of-technical-staff-full-time": {
+    "title": "Member of Technical Staff (full-time) at Trellis AI",
+    "date_covered": "2026-01-04T20:25:47.281655+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "pnzCXbx1590",
     "tiktok_id": null
   }
 }
