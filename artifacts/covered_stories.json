@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/openai-is-training-models-to-confess-when-they-lie-what-it-means-for-future-ai/": {
-    "title": "OpenAI is training models to 'confess' when they lie - what it means for future AI",
-    "date_covered": "2025-12-05T08:35:18.810578+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "jKlvtebX_lA",
-    "tiktok_id": null
-  },
   "https://www.smithsonianmag.com/smart-news/rats-are-snatching-bats-out-of-the-air-and-eating-them-and-researchers-got-it-on-video-180987610/": {
     "title": "Rats Are Snatching Bats Out of the Air and Eating Them—and Researchers Got It on Video",
     "date_covered": "2025-12-05T12:40:57.420200+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-04T08:28:34.619387+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "EpPF6_8DIkQ",
+    "tiktok_id": null
+  },
+  "https://github.com/mprajyothreddy/brainkernel": {
+    "title": "mprajyothreddy/brainkernel: Replacing the OS process scheduler with an LLM",
+    "date_covered": "2026-01-04T12:38:50.106837+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "JoSvTUXv8vQ",
     "tiktok_id": null
   }
 }
