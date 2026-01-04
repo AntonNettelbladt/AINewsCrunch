@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/artificial-intelligence/how-to-scale-llm-usage-with-parallel-coding-agents": {
-    "title": "How to Scale LLM Usage with Parallel Coding Agents",
-    "date_covered": "2025-12-05T04:33:42.164130+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "Man2-cJ8kNc",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/openai-is-training-models-to-confess-when-they-lie-what-it-means-for-future-ai/": {
     "title": "OpenAI is training models to 'confess' when they lie - what it means for future AI",
     "date_covered": "2025-12-05T08:35:18.810578+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-03T16:26:05.689921+00:00",
     "source": "ZDNet AI",
     "youtube_id": "8RWT3mEOtN8",
+    "tiktok_id": null
+  },
+  "https://www.theguardian.com/books/2025/dec/31/the-master-of-contradictions-by-morten-hi-jensen-review-how-thomas-mann-wrote-the-magic-mountain": {
+    "title": "The Master of Contradictions by Morten Høi Jensen review – how Thomas Mann wrote The Magic Mountain",
+    "date_covered": "2026-01-04T04:51:35.693183+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "lKNWRUlS5So",
     "tiktok_id": null
   }
 }
