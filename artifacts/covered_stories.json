@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-orchestrated-cyberattacks-anthropic-discovery/": {
-    "title": "Anthropic just revealed how AI-orchestrated cyberattacks actually work—Here’s what enterprises need to know",
-    "date_covered": "2025-12-06T04:24:38.324179+00:00",
-    "source": "AI News",
-    "youtube_id": "HBf2XKu9D0M",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/tech-news/the-hidden-breakpoint-in-tech-ma-why-engineering-teams-stall-after-a-merger-and-how-gotara-is-fixing-the-integration-gap": {
     "title": "The Hidden Breakpoint in Tech M&A: Why Engineering Teams Stall After a Merger, And How Gotara is Fixing the Integration Gap",
     "date_covered": "2025-12-06T08:26:55.486965+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-05T01:32:43.120559+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "68v5B7Yef30",
+    "tiktok_id": null
+  },
+  "https://granda.org/en/2026/01/02/claude-code-on-the-go/": {
+    "title": "Claude Code On-The-Go",
+    "date_covered": "2026-01-05T04:59:42.917358+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
