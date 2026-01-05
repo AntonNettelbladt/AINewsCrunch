@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/tech-news/the-hidden-breakpoint-in-tech-ma-why-engineering-teams-stall-after-a-merger-and-how-gotara-is-fixing-the-integration-gap": {
-    "title": "The Hidden Breakpoint in Tech M&A: Why Engineering Teams Stall After a Merger, And How Gotara is Fixing the Integration Gap",
-    "date_covered": "2025-12-06T08:26:55.486965+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "8YckDx4I1Jk",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/how-chatbots-can-change-your-mind-a-new-study-reveals-what-makes-ai-so-persuasive/": {
     "title": "How chatbots can change your mind - a new study reveals what makes AI so persuasive",
     "date_covered": "2025-12-06T12:37:22.362726+00:00",
@@ -1031,6 +1024,13 @@
   "https://granda.org/en/2026/01/02/claude-code-on-the-go/": {
     "title": "Claude Code On-The-Go",
     "date_covered": "2026-01-05T04:59:42.917358+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "http://mpaxos.com/blog/rusty-cpp.html": {
+    "title": "The Story of Building a Rust-Style Static Analyzer for C++ with AI",
+    "date_covered": "2026-01-05T08:33:36.941590+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
     "tiktok_id": null
