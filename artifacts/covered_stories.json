@@ -1,11 +1,4 @@
 {
-  "https://www.bbc.com/news/articles/cwygqqll9k2o": {
-    "title": "Trains cancelled over fake bridge collapse image",
-    "date_covered": "2025-12-07T08:25:03.589499+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "tpt-t_7_enk",
-    "tiktok_id": null
-  },
   "https://rfd.shared.oxide.computer/rfd/0576": {
     "title": "Using LLMs at Oxide / RFD / Oxide",
     "date_covered": "2025-12-07T12:36:10.508474+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-01-06T04:42:29.012955+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "laHgzri3K9o",
+    "tiktok_id": null
+  },
+  "https://en.sedaily.com/technology/2025/12/15/unist-develops-raindrop-powered-generator-using-carbon": {
+    "title": "UNIST Develops Raindrop-Powered Generator Using Carbon Fiber Composites",
+    "date_covered": "2026-01-06T08:30:58.282914+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "led0XmowIjI",
     "tiktok_id": null
   }
 }
