@@ -1027,5 +1027,12 @@
     "source": "AI News",
     "youtube_id": "qv1rcTF96TE",
     "tiktok_id": null
+  },
+  "https://github.com/neilberkman/ccrider": {
+    "title": "neilberkman/ccrider: Search, browse, and resume your Claude Code sessions. Fast.",
+    "date_covered": "2026-01-06T20:26:04.834856+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
   }
 }
