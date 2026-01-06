@@ -1,11 +1,4 @@
 {
-  "https://rfd.shared.oxide.computer/rfd/0576": {
-    "title": "Using LLMs at Oxide / RFD / Oxide",
-    "date_covered": "2025-12-07T12:36:10.508474+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "H0EHHfgVmzQ",
-    "tiktok_id": null
-  },
   "https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/": {
     "title": "Titans + MIRAS: Helping AI have long-term memory",
     "date_covered": "2025-12-07T16:24:47.090850+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-01-06T08:30:58.282914+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "led0XmowIjI",
+    "tiktok_id": null
+  },
+  "https://eugene.kaspersky.com/2022/04/26/how-to-repair-the-underside-of-a-ships-hull-still-in-the-river-in-50%CB%9Ac-yakutsk/": {
+    "title": "How to repair the underside of a ship’s hull, still in the river, in -50˚C Yakutsk!",
+    "date_covered": "2026-01-06T12:43:00.096194+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "NI4ZZXKWS4w",
     "tiktok_id": null
   }
 }
