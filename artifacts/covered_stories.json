@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/": {
-    "title": "Mixture of Experts Powers the Most Intelligent Frontier AI Models, Runs 10x Faster on NVIDIA Blackwell NVL72",
-    "date_covered": "2025-12-08T01:23:27.815351+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "94H8uyoOMSo",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/stop-using-chatgpt-for-everything-ai-models-for-research-coding-images/": {
     "title": "Stop using ChatGPT for everything: The AI models I use for research, coding, and more (and which I avoid)",
     "date_covered": "2025-12-08T12:40:45.243144+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-07T01:26:33.579447+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "o82L4avGxME",
+    "tiktok_id": null
+  },
+  "https://github.com/x011/smtp-tunnel-proxy": {
+    "title": "x011/smtp-tunnel-proxy: A high-speed covert tunnel that disguises TCP traffic as SMTP email communication to bypass Deep Packet Inspection (DPI) firewalls.",
+    "date_covered": "2026-01-07T04:43:30.031618+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "8UIeZBL2A2w",
     "tiktok_id": null
   }
 }
