@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/agentic-ai-smartphones-enterprise-adoption/": {
-    "title": "Agentic AI Smartphones: What ByteDance's Launch Means for Enterprise",
-    "date_covered": "2025-12-08T16:31:40.070996+00:00",
-    "source": "AI News",
-    "youtube_id": "p8g2Cn2okak",
-    "tiktok_id": null
-  },
-  "https://www.windowscentral.com/artificial-intelligence/microsoft-has-a-problem-nobody-wants-to-buy-or-use-its-shoddy-ai": {
-    "title": "Microsoft has a problem: nobody wants its poor AI products",
-    "date_covered": "2025-12-08T20:25:11.705333+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "guRGOnCGdhA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/google-sony-and-okta-back-resemble-ai-push-into-deepfake-detection/": {
     "title": "Google, Sony Innovation Fund, and Okta back Resemble AI’s push into deepfake detection",
     "date_covered": "2025-12-09T01:21:38.323659+00:00",
@@ -1040,6 +1026,13 @@
     "date_covered": "2026-01-07T16:31:24.696945+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "_6NNeChNrEA",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/agentic-ai-scaling-requires-new-memory-architecture/": {
+    "title": "Agentic AI scaling requires new memory architecture",
+    "date_covered": "2026-01-07T20:29:20.969293+00:00",
+    "source": "AI News",
+    "youtube_id": "_o-Qjvl5NCk",
     "tiktok_id": null
   }
 }
