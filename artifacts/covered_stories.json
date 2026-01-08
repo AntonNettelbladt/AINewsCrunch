@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/google-sony-and-okta-back-resemble-ai-push-into-deepfake-detection/": {
-    "title": "Google, Sony Innovation Fund, and Okta back Resemble AI’s push into deepfake detection",
-    "date_covered": "2025-12-09T01:21:38.323659+00:00",
-    "source": "AI News",
-    "youtube_id": "xjARj4Xkrd8",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/chatgpt-saving-time-work/": {
     "title": "ChatGPT saves the average worker nearly an hour each day, says OpenAI - here's how",
     "date_covered": "2025-12-09T04:32:14.730370+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-07T20:29:20.969293+00:00",
     "source": "AI News",
     "youtube_id": "_o-Qjvl5NCk",
+    "tiktok_id": null
+  },
+  "https://surgehq.ai/blog/lmarena-is-a-plague-on-ai": {
+    "title": "LMArena is a cancer on AI",
+    "date_covered": "2026-01-08T01:27:20.305270+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Gp5ID4lsmr0",
     "tiktok_id": null
   }
 }
