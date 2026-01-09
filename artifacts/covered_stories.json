@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/fastest-growing-ai-chatbots-2025-gemini-grok/": {
-    "title": "The fastest-growing AI chatbot now isn't from OpenAI, Anthropic, or Google",
-    "date_covered": "2025-12-10T12:43:16.410362+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "hZ50X4E_ZKk",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/agentic-ai-foundation-fix-messy-agent-ecosystems/": {
     "title": "The fix for messy AI agent ecosystems might finally be here",
     "date_covered": "2025-12-10T16:29:34.340140+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-09T12:43:25.567878+00:00",
     "source": "AI News",
     "youtube_id": "7gSv8xOcguw",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/deloitte-survey-takes-cfo-and-it-temperature-around-technology-and-ai/": {
+    "title": "Optimism for AI-powered productivity: Deloitte",
+    "date_covered": "2026-01-09T16:29:47.604473+00:00",
+    "source": "AI News",
+    "youtube_id": "fjdCQhqrC0U",
     "tiktok_id": null
   }
 }
