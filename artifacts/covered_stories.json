@@ -1,18 +1,4 @@
 {
-  "https://block.xyz/inside/block-anthropic-and-openai-launch-the-agentic-ai-foundation": {
-    "title": "Block, Anthropic, and OpenAI Launch the Agentic AI Foundation",
-    "date_covered": "2025-12-10T01:24:51.419880+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "SW-D4-cCIEw",
-    "tiktok_id": null
-  },
-  "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation": {
-    "title": "Donating the Model Context Protocol and establishing the Agentic AI Foundation",
-    "date_covered": "2025-12-10T04:36:37.935324+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "-7NnSmeSPpk",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/reinventing-your-career-in-the-age-of-ai/": {
     "title": "Reinventing your career for the AI age? Your technical skill isn't your most valuable asset",
     "date_covered": "2025-12-10T08:30:21.708955+00:00",
@@ -1040,6 +1026,13 @@
     "date_covered": "2026-01-09T01:27:47.693226+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "zIyzBrwcIns",
+    "tiktok_id": null
+  },
+  "https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/": {
+    "title": "He was called a ‘terrorist sympathizer.’ Now his AI company is valued at $3B",
+    "date_covered": "2026-01-09T04:43:01.556933+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "TS4ABDUMPHQ",
     "tiktok_id": null
   }
 }
