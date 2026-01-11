@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-algorithmic-bias-in-digital-payments-leads-to-competition-win/": {
-    "title": "Platform corrects AI algorithmic bias for eKYC",
-    "date_covered": "2025-12-12T04:37:07.426282+00:00",
-    "source": "AI News",
-    "youtube_id": "Vs48DKOAWrI",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/copilot-usage-analysis-2am-philosophy-questions/": {
     "title": "Microsoft’s Copilot usage analysis exposes the 2 am philosophy question phenomenon",
     "date_covered": "2025-12-12T08:32:39.382749+00:00",
@@ -1019,6 +1012,13 @@
     "date_covered": "2026-01-11T01:34:04.179903+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "bGF1Waqt0hQ",
+    "tiktok_id": null
+  },
+  "https://dri.es/ai-is-a-business-model-stress-test": {
+    "title": "AI is a business model stress test",
+    "date_covered": "2026-01-11T04:50:30.403679+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "5qx7GCvcqaE",
     "tiktok_id": null
   }
 }
