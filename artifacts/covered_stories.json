@@ -1,18 +1,4 @@
 {
-  "https://github.com/privacyshield-ai/privacy-firewall": {
-    "title": "privacyshield-ai/privacy-firewall: A local AI-powered DLP solution",
-    "date_covered": "2025-12-11T20:28:24.826497+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
-  "https://blogs.nvidia.com/blog/leading-models-nvidia/": {
-    "title": "As AI Grows More Complex, Model Builders Rely on NVIDIA",
-    "date_covered": "2025-12-12T01:24:34.547737+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "CcUFDLWfRdI",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-algorithmic-bias-in-digital-payments-leads-to-competition-win/": {
     "title": "Platform corrects AI algorithmic bias for eKYC",
     "date_covered": "2025-12-12T04:37:07.426282+00:00",
@@ -1026,6 +1012,13 @@
     "date_covered": "2026-01-10T20:24:49.140289+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YsuHyG503kI",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/leading-models-nvidia/": {
+    "title": "As AI Grows More Complex, Model Builders Rely on NVIDIA",
+    "date_covered": "2026-01-11T01:34:04.179903+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "bGF1Waqt0hQ",
     "tiktok_id": null
   }
 }
