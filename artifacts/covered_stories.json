@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/copilot-usage-analysis-2am-philosophy-questions/": {
-    "title": "Microsoft’s Copilot usage analysis exposes the 2 am philosophy question phenomenon",
-    "date_covered": "2025-12-12T08:32:39.382749+00:00",
-    "source": "AI News",
-    "youtube_id": "TpqYZ2xV-tQ",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/disney-accuses-google-ai-of-copying-its-famous-characters-without-permission": {
     "title": "Disney Accuses Google AI of Copying Its Famous Characters Without Permission",
     "date_covered": "2025-12-12T12:42:42.793196+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-01-11T08:27:51.954402+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "HBIlnSy_8Hs",
+    "tiktok_id": null
+  },
+  "https://www.bbc.com/news/articles/c623r47d67lo": {
+    "title": "The battle over Canada's mystery brain disease",
+    "date_covered": "2026-01-11T12:39:05.253193+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1C_pNhii9i0",
     "tiktok_id": null
   }
 }
