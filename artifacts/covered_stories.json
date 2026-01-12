@@ -1013,5 +1013,12 @@
     "source": "NVIDIA Blog",
     "youtube_id": "InF2HYwlEVw",
     "tiktok_id": null
+  },
+  "https://github.com/ibehnam/shellock": {
+    "title": "ibehnam/shellock: Real-time CLI flag explainer for fish shell",
+    "date_covered": "2026-01-12T12:44:13.611546+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mwfbBesPuMM",
+    "tiktok_id": null
   }
 }
