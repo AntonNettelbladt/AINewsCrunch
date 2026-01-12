@@ -1020,5 +1020,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "mwfbBesPuMM",
     "tiktok_id": null
+  },
+  "https://github.com/haykgrigo3/TimeCapsuleLLM": {
+    "title": "haykgrigo3/TimeCapsuleLLM: A LLM trained only on data from certain time periods to reduce modern bias",
+    "date_covered": "2026-01-12T16:28:47.658023+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "tDfDO0eeIQA",
+    "tiktok_id": null
   }
 }
