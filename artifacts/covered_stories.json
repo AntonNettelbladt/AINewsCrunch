@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/adam-robot-vegas-golden-knights-thor/": {
-    "title": "Cheers to AI: ADAM Robot Bartender Makes Drinks at Vegas Golden Knights Game",
-    "date_covered": "2025-12-13T04:28:28.258754+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Vk3C9n6ZcYk",
-    "tiktok_id": null
-  },
   "https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/koralm-railway": {
     "title": "Koralm railway",
     "date_covered": "2025-12-13T08:26:23.375426+00:00",
@@ -1012,6 +1005,13 @@
     "date_covered": "2026-01-12T01:30:30.385019+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "OEZ3LdPR03Q",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/xgimi-memomind-smart-glasses-ces-2026/": {
+    "title": "Forget Meta Ray-Bans: These smart glasses are customizable from the lenses to the frames",
+    "date_covered": "2026-01-12T04:52:33.975149+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "TVKkny_X6_k",
     "tiktok_id": null
   }
 }
