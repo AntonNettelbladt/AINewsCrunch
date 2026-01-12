@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-in-2026-experimental-ai-concludes-autonomous-systems-rise/": {
-    "title": "AI in 2026: Experimental AI concludes as autonomous systems rise",
-    "date_covered": "2025-12-12T20:24:44.690691+00:00",
-    "source": "AI News",
-    "youtube_id": "EU9AEvFabXc",
-    "tiktok_id": null
-  },
-  "https://simonwillison.net/2025/Dec/12/openai-skills/": {
-    "title": "OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI",
-    "date_covered": "2025-12-13T01:20:14.236017+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "NEf8oLQWXds",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/adam-robot-vegas-golden-knights-thor/": {
     "title": "Cheers to AI: ADAM Robot Bartender Makes Drinks at Vegas Golden Knights Game",
     "date_covered": "2025-12-13T04:28:28.258754+00:00",
@@ -1019,6 +1005,13 @@
     "date_covered": "2026-01-11T16:25:50.036725+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "IsbWQehoTac",
+    "tiktok_id": null
+  },
+  "https://github.com/baturyilmaz/what-if-ai-agents-had-zodiac-personalities": {
+    "title": "baturyilmaz/what-if-ai-agents-had-zodiac-personalities: AI agents with different personalities responding to moral dilemmas",
+    "date_covered": "2026-01-12T01:30:30.385019+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "OEZ3LdPR03Q",
     "tiktok_id": null
   }
 }
