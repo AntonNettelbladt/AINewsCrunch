@@ -1,11 +1,4 @@
 {
-  "https://blog.appsignal.com/2025/12/10/create-a-markdown-editor-in-ruby-on-rails.html": {
-    "title": "Create a Markdown Editor in Ruby on Rails",
-    "date_covered": "2025-12-14T12:37:28.648132+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.ufried.com/blog/ironies_of_ai_2/": {
     "title": "AI and the ironies of automation - Part 2",
     "date_covered": "2025-12-14T16:24:37.791492+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-01-13T08:31:16.069597+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xBlqBQ8Vy98",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/how-shopify-bringing-agentic-ai-enterprise-commerce/": {
+    "title": "How Shopify is bringing agentic AI to enterprise commerce",
+    "date_covered": "2026-01-13T12:44:06.459590+00:00",
+    "source": "AI News",
+    "youtube_id": "-CCPuSxUJak",
     "tiktok_id": null
   }
 }
