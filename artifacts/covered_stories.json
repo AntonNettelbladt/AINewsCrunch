@@ -1,11 +1,4 @@
 {
-  "https://zknill.io/posts/sse-sucks-for-transporting-llm-tokens/": {
-    "title": "SSE sucks for transporting LLM tokens",
-    "date_covered": "2025-12-13T20:24:19.723463+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "EA9kfFNKvgo",
-    "tiktok_id": null
-  },
   "https://github.com/zoicware/RemoveWindowsAI": {
     "title": "zoicware/RemoveWindowsAI: Force Remove Copilot, Recall and More in Windows 11",
     "date_covered": "2025-12-14T01:29:12.570740+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-12T20:26:18.802886+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xCkFKnHzJ2k",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html": {
+    "title": "Apple picks Google's Gemini to run AI-powered Siri coming this year",
+    "date_covered": "2026-01-13T01:24:15.199813+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "6GVG4XU_F1s",
     "tiktok_id": null
   }
 }
