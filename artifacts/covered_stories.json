@@ -1,11 +1,4 @@
 {
-  "https://github.com/zoicware/RemoveWindowsAI": {
-    "title": "zoicware/RemoveWindowsAI: Force Remove Copilot, Recall and More in Windows 11",
-    "date_covered": "2025-12-14T01:29:12.570740+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "KplwRQnkAM0",
-    "tiktok_id": null
-  },
   "https://ipinfo.io/blog/vpn-location-mismatch-report": {
     "title": "Should You Trust Your VPN Location?",
     "date_covered": "2025-12-14T04:39:28.645305+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-13T01:24:15.199813+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "6GVG4XU_F1s",
+    "tiktok_id": null
+  },
+  "https://github.com/njbrake/agent-of-empires": {
+    "title": "njbrake/agent-of-empires: Manage all your agents",
+    "date_covered": "2026-01-13T04:42:50.291060+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "T2tAEAS-AS0",
     "tiktok_id": null
   }
 }
