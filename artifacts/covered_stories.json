@@ -1,11 +1,4 @@
 {
-  "https://github.com/loadingalias/cargo-rail": {
-    "title": "loadingalias/cargo-rail: Graph-aware monorepo orchestration for Rust workspaces",
-    "date_covered": "2025-12-14T20:24:20.944655+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "w81o4txG5_A",
-    "tiktok_id": null
-  },
   "https://english.elpais.com/technology/2025-11-30/if-ai-replaces-workers-should-it-also-pay-taxes.html": {
     "title": "If AI replaces workers, should it also pay taxes?",
     "date_covered": "2025-12-15T01:27:13.514372+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-13T20:26:18.184026+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "qA6h68r1p-4",
+    "tiktok_id": null
+  },
+  "https://blog.vllm.ai/2025/12/17/large-scale-serving.html": {
+    "title": "vLLM Large Scale Serving: DeepSeek @ 2.2k tok/s/H200 with Wide-EP",
+    "date_covered": "2026-01-14T01:29:39.413349+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "nBDRmRq6n5w",
     "tiktok_id": null
   }
 }
