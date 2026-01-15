@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-acquires-schedmd/": {
-    "title": "NVIDIA Acquires Open-Source Workload Management Provider SchedMD",
-    "date_covered": "2025-12-15T20:25:55.756018+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "koTIvvOYCYY",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/artificial-intelligence/how-to-make-a-chatgpt-wrapped-2025-recap-using-your-ai-activity": {
     "title": "How to Make a ChatGPT Wrapped 2025 Recap Using Your AI Activity",
     "date_covered": "2025-12-16T04:38:24.640952+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-14T20:24:25.471604+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "jsGXcTLD80M",
+    "tiktok_id": null
+  },
+  "https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files": {
+    "title": "Claude Cowork Exfiltrates Files",
+    "date_covered": "2026-01-15T01:25:21.850631+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "sJrYFx2wnV8",
     "tiktok_id": null
   }
 }
