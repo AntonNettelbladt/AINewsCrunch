@@ -1034,5 +1034,12 @@
     "source": "AI News",
     "youtube_id": "m3dCaZgGDlE",
     "tiktok_id": null
+  },
+  "https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild": {
+    "title": "CodeBreach: Supply Chain Vuln & AWS CodeBuild Misconfig",
+    "date_covered": "2026-01-15T20:27:13.345285+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "SP41ueLD9MM",
+    "tiktok_id": null
   }
 }
