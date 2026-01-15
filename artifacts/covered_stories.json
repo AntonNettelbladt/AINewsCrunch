@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/bnp-paribas-introduces-ai-tool-for-investment-banking/": {
-    "title": "BNP Paribas introduces AI tool for investment banking",
-    "date_covered": "2025-12-16T12:43:58.215362+00:00",
-    "source": "AI News",
-    "youtube_id": "sk9ms6MsI2w",
-    "tiktok_id": null
-  },
-  "https://github.com/mantisfury/ArkhamMirror": {
-    "title": "mantisfury/ArkhamMirror: Local-first AI-powered document intelligence platform for investigative journalism",
-    "date_covered": "2025-12-16T16:29:35.707068+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "amnGw9o7Ejk",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/jpmorgan-chase-ai-strategy-2025/": {
     "title": "JPMorgan Chase AI strategy: US$18B bet paying off",
     "date_covered": "2025-12-16T20:26:23.925371+00:00",
@@ -1040,6 +1026,13 @@
     "date_covered": "2026-01-15T12:43:30.259498+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "BGHAmlGh49M",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/mckinsey-tests-ai-chatbot-in-early-stages-of-graduate-recruitment/": {
+    "title": "McKinsey tests AI chatbot in early stages of graduate recruitment",
+    "date_covered": "2026-01-15T16:36:33.735507+00:00",
+    "source": "AI News",
+    "youtube_id": "m3dCaZgGDlE",
     "tiktok_id": null
   }
 }
