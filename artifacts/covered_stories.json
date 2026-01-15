@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/construction-industry-ai-success-potential/": {
-    "title": "Strong contractor belief in AI for industry-wide transformation",
-    "date_covered": "2025-12-16T08:31:29.176170+00:00",
-    "source": "AI News",
-    "youtube_id": "kbTID0kqz0M",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/bnp-paribas-introduces-ai-tool-for-investment-banking/": {
     "title": "BNP Paribas introduces AI tool for investment banking",
     "date_covered": "2025-12-16T12:43:58.215362+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-15T08:31:45.345326+00:00",
     "source": "AI News",
     "youtube_id": "mWSI2Vz__3k",
+    "tiktok_id": null
+  },
+  "https://www.jeffgeerling.com/blog/2026/raspberry-pi-ai-hat-2/": {
+    "title": "Raspberry Pi's new AI HAT adds 8GB of RAM for local LLMs",
+    "date_covered": "2026-01-15T12:43:30.259498+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "BGHAmlGh49M",
     "tiktok_id": null
   }
 }
