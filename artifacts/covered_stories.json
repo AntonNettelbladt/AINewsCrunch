@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/jpmorgan-chase-ai-strategy-2025/": {
-    "title": "JPMorgan Chase AI strategy: US$18B bet paying off",
-    "date_covered": "2025-12-16T20:26:23.925371+00:00",
-    "source": "AI News",
-    "youtube_id": "6-SgDJ34QBk",
-    "tiktok_id": null
-  },
-  "https://www.waterfox.com/blog/no-ai-here-response-to-mozilla/": {
-    "title": "A Response to Mozilla's Next Chapter",
-    "date_covered": "2025-12-17T01:20:44.520225+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "5Zs_X0BEJ84",
-    "tiktok_id": null
-  },
   "https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html": {
     "title": "Prediction: AI will make formal verification go mainstream — Martin Kleppmann’s blog",
     "date_covered": "2025-12-17T04:35:42.582316+00:00",
@@ -1040,6 +1026,13 @@
     "date_covered": "2026-01-15T20:27:13.345285+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "SP41ueLD9MM",
+    "tiktok_id": null
+  },
+  "https://github.com/rulebricks/claude-code-guardrails": {
+    "title": "rulebricks/claude-code-guardrails: Real-time guardrails for Claude Code tool calls.",
+    "date_covered": "2026-01-16T01:27:23.193826+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "RRjF2I9OMlU",
     "tiktok_id": null
   }
 }
