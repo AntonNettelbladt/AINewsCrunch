@@ -1,11 +1,4 @@
 {
-  "https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html": {
-    "title": "Prediction: AI will make formal verification go mainstream — Martin Kleppmann’s blog",
-    "date_covered": "2025-12-17T04:35:42.582316+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "t7NmNpk2Y_U",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-literacy-in-the-workplace-important-for-growth/": {
     "title": "AI literacy and continuous education are cornerstones",
     "date_covered": "2025-12-17T08:30:30.986278+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-01-16T01:27:23.193826+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "RRjF2I9OMlU",
+    "tiktok_id": null
+  },
+  "https://www.approachwithalacrity.com/claude-ne/": {
+    "title": "Claude is not a senior engineer (yet)",
+    "date_covered": "2026-01-16T04:42:35.204158+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "jy8Xd7EafME",
     "tiktok_id": null
   }
 }
