@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ucsd-generative-ai-research-dgx-b200/": {
-    "title": "UC San Diego Lab Advances Generative AI Research With NVIDIA DGX B200 System",
-    "date_covered": "2025-12-18T08:31:11.933755+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "iwEH9_wEDLU",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/wall-street-ai-gains-are-here-banks-plan-for-fewer-people/": {
     "title": "Wall Street’s AI gains are here — banks plan for fewer people",
     "date_covered": "2025-12-18T12:42:33.025367+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-17T08:27:54.329436+00:00",
     "source": "AI News",
     "youtube_id": "u1yzC3UBVxQ",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/jpmorgan-healthcare-nvidia-lilly/": {
+    "title": "CEOs of NVIDIA and Lilly Share ‘Blueprint for What Is Possible’ in AI and Drug Discovery",
+    "date_covered": "2026-01-17T12:38:06.613756+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "adIioY8jscA",
     "tiktok_id": null
   }
 }
