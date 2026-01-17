@@ -1,11 +1,4 @@
 {
-  "https://research.roundtable.ai/capabilities-humanness/": {
-    "title": "AI Capability isn't Humanness",
-    "date_covered": "2025-12-17T20:25:47.690237+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Qhj9lulfxWU",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/openusd-halos-safety-robotaxi-physical-ai/": {
     "title": "Into the Omniverse: OpenUSD and NVIDIA Halos Accelerate Safety for Robotaxis, Physical AI Systems",
     "date_covered": "2025-12-18T01:21:09.877482+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-16T20:25:00.422187+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "4r3reZFyHR4",
+    "tiktok_id": null
+  },
+  "https://nanonets.com/cookbooks/structured-llm-outputs": {
+    "title": "Structured LLM outputs",
+    "date_covered": "2026-01-17T01:23:42.259142+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "3ebvftYvPOA",
     "tiktok_id": null
   }
 }
