@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/wall-street-ai-gains-are-here-banks-plan-for-fewer-people/": {
-    "title": "Wall Street’s AI gains are here — banks plan for fewer people",
-    "date_covered": "2025-12-18T12:42:33.025367+00:00",
-    "source": "AI News",
-    "youtube_id": "tseooQU4lQA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/insurance-ai-use-operational-differences-experienced-by-the-big-players/": {
     "title": "Ensuring effective AI in insurance operations",
     "date_covered": "2025-12-18T16:29:18.622152+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-17T12:38:06.613756+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "adIioY8jscA",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/multiply-labs-isaac-omniverse/": {
+    "title": "AI’s Next Revolution: Multiply Labs Is Scaling Robotics-Driven Cell Therapy Biomanufacturing Labs",
+    "date_covered": "2026-01-17T16:24:54.055156+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "qLg4vPi8xlU",
     "tiktok_id": null
   }
 }
