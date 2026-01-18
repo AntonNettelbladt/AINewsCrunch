@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/service-provider-ai-implementations-india-enterprise-scale-copilot-rollouts/": {
-    "title": "50,000 Copilot licences for Indian service companies",
-    "date_covered": "2025-12-19T16:28:03.005573+00:00",
-    "source": "AI News",
-    "youtube_id": "m2pTwFXycMw",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/rtx-pro-5000-72gb-blackwell-gpu/": {
     "title": "Now Generally Available, NVIDIA RTX PRO 5000 72GB Blackwell GPU Expands Memory Options for Desktop Agentic AI",
     "date_covered": "2025-12-19T20:24:48.477840+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-01-18T16:25:54.658617+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-in-retail-cpg-survey-2026/": {
+    "title": "From Warehouse to Wallet: New State of AI in Retail and CPG Survey Uncovers How AI Is Rewiring Supply Chains and Customer Experiences",
+    "date_covered": "2026-01-18T20:26:00.098790+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "486x-_2V1Po",
     "tiktok_id": null
   }
 }
