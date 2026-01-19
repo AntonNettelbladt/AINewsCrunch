@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/hr-ai-in-human-resources-the-real-operational-impact/": {
-    "title": "AI in Human Resources: the real operational impact",
-    "date_covered": "2025-12-20T08:27:27.486798+00:00",
-    "source": "AI News",
-    "youtube_id": "PgAbqw2SzHc",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/roblox-brings-ai-into-the-studio-to-speed-up-game-creation/": {
     "title": "Roblox brings AI into the Studio to speed up game creation",
     "date_covered": "2025-12-20T12:40:01.606966+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-01-19T04:55:13.180920+00:00",
     "source": "ZDNet AI",
     "youtube_id": "yW_zXBwGvNk",
+    "tiktok_id": null
+  },
+  "https://www.joinformal.com/blog/using-proxies-to-hide-secrets-from-claude-code/": {
+    "title": "Using Proxies to Hide Secrets from Claude Code",
+    "date_covered": "2026-01-19T08:34:11.502186+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-W7aQjunARA",
     "tiktok_id": null
   }
 }
