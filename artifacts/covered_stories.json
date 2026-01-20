@@ -1,18 +1,4 @@
 {
-  "https://github.com/taylorsatula/mira-OSS": {
-    "title": "taylorsatula/mira-OSS: This is the public release of MIRA OS. Discrete memories decay through momentum loss, tools auto-configure when dropped into tools/ folder, and the system prompt composes from m",
-    "date_covered": "2025-12-21T01:29:18.012175+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "DOfu46HCdCU",
-    "tiktok_id": null
-  },
-  "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/": {
-    "title": "Measuring AI Ability to Complete Long Tasks",
-    "date_covered": "2025-12-21T04:39:57.520242+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "58e1DAI7OQA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/zara-use-of-ai-shows-how-retail-workflows-are-quietly-changing/": {
     "title": "Zara’s use of AI shows how retail workflows are quietly changing",
     "date_covered": "2025-12-21T08:26:37.571571+00:00",
@@ -1033,6 +1019,13 @@
     "date_covered": "2026-01-20T01:26:20.729362+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "3i_lUpmvOAg",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/chat-gpt-go/": {
+    "title": "ChatGPT's cheapest subscription comes to the US: I compared Go to Plus and Pro",
+    "date_covered": "2026-01-20T04:48:43.876400+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "_Y2qlBXJUMQ",
     "tiktok_id": null
   }
 }
