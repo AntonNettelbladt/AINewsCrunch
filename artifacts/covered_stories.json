@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/zara-use-of-ai-shows-how-retail-workflows-are-quietly-changing/": {
-    "title": "Zara’s use of AI shows how retail workflows are quietly changing",
-    "date_covered": "2025-12-21T08:26:37.571571+00:00",
-    "source": "AI News",
-    "youtube_id": "2ZUHWXHDt90",
-    "tiktok_id": null
-  },
   "https://www.asimov.press/p/aspirin": {
     "title": "The Uncertain Origins of Aspirin",
     "date_covered": "2025-12-21T12:38:26.987257+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-01-20T04:48:43.876400+00:00",
     "source": "ZDNet AI",
     "youtube_id": "_Y2qlBXJUMQ",
+    "tiktok_id": null
+  },
+  "https://github.com/jordanhubbard/nanolang": {
+    "title": "jordanhubbard/nanolang: A tiny experimental language designed to be targeted by coding LLMs",
+    "date_covered": "2026-01-20T08:34:25.856185+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "jLyHuEAC750",
     "tiktok_id": null
   }
 }
