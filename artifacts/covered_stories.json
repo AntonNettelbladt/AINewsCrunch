@@ -1048,5 +1048,12 @@
     "source": "AI News",
     "youtube_id": "rpwH6c1JbzE",
     "tiktok_id": null
+  },
+  "https://github.com/borenstein/yolo-cage": {
+    "title": "borenstein/yolo-cage: AI coding agents that can't exfiltrate secrets or merge their own PRs.",
+    "date_covered": "2026-01-21T16:43:31.891066+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "9q9gNHkRhy8",
+    "tiktok_id": null
   }
 }
