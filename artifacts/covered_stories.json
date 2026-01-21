@@ -1,11 +1,4 @@
 {
-  "https://reason.com/2025/12/19/jimmy-lai-is-a-martyr-for-freedom/": {
-    "title": "Jimmy Lai Is a Martyr for Freedom",
-    "date_covered": "2025-12-22T20:24:19.730670+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "5lJfGYiGn2c",
-    "tiktok_id": null
-  },
   "https://www.koi.ai/blog/npm-package-with-56k-downloads-malware-stealing-whatsapp-messages": {
     "title": "NPM Package With 56K Downloads Caught Stealing WhatsApp Messages",
     "date_covered": "2025-12-23T01:24:42.676928+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-01-21T16:43:31.891066+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "9q9gNHkRhy8",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/": {
+    "title": "“Largest Infrastructure Buildout in Human History”: Jensen Huang on AI’s “Five-Layer Cake” at Davos",
+    "date_covered": "2026-01-21T20:32:20.799472+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "XtZ2cd8PoaA",
     "tiktok_id": null
   }
 }
