@@ -1,11 +1,4 @@
 {
-  "https://www.koi.ai/blog/npm-package-with-56k-downloads-malware-stealing-whatsapp-messages": {
-    "title": "NPM Package With 56K Downloads Caught Stealing WhatsApp Messages",
-    "date_covered": "2025-12-23T01:24:42.676928+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "yojfnUOOu8g",
-    "tiktok_id": null
-  },
   "https://www.macrumors.com/2025/12/22/ios-26-3-dma-airpods-pairing/": {
     "title": "iOS 26.3 Brings AirPods-Like Pairing to Third-Party Devices in EU Under DMA",
     "date_covered": "2025-12-23T08:30:38.892638+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-01-21T20:32:20.799472+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "XtZ2cd8PoaA",
+    "tiktok_id": null
+  },
+  "https://borretti.me/article/letting-claude-play-text-adventures": {
+    "title": "Letting Claude Play Text Adventures",
+    "date_covered": "2026-01-22T01:29:31.607987+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
