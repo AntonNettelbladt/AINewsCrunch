@@ -1,18 +1,4 @@
 {
-  "https://www.theguardian.com/business/2025/dec/23/ryanair-fined-limit-online-travel-agencies-ticket-sales-ota": {
-    "title": "Ryanair fined €256m over ‘abusive strategy’ to limit ticket sales by online travel agencies",
-    "date_covered": "2025-12-23T20:25:01.254879+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "6UvZeD5gzZo",
-    "tiktok_id": null
-  },
-  "https://willmcgugan.github.io/toad-released/": {
-    "title": "Toad is a unified experience for AI in the terminal",
-    "date_covered": "2025-12-24T01:23:10.157488+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "48Vh8SCQcoo",
-    "tiktok_id": null
-  },
   "https://github.com/humorless/fennel-fp-neovim": {
     "title": "humorless/fennel-fp-neovim: A series of articles exploring Fennel and Functional Programming in Neovim",
     "date_covered": "2025-12-24T04:38:56.968901+00:00",
@@ -1068,6 +1054,13 @@
     "date_covered": "2026-01-22T20:27:20.170523+00:00",
     "source": "AI News",
     "youtube_id": "hVRYSPVuwfA",
+    "tiktok_id": null
+  },
+  "https://walters.app/blog/composing-apis-clis": {
+    "title": "The best code is no code: composing APIs and CLIs in the era of LLMs",
+    "date_covered": "2026-01-23T01:27:30.413751+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "P9-kbFPMh1w",
     "tiktok_id": null
   }
 }
