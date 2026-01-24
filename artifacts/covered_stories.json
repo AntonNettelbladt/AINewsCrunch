@@ -1,11 +1,4 @@
 {
-  "https://www.windowslatest.com/2025/12/24/microsoft-denies-rewriting-windows-11-using-ai-after-an-employees-one-engineer-one-month-one-million-code-post-on-linkedin-causes-outrage/": {
-    "title": "Microsoft denies rewriting Windows 11 using AI after an employee’s “one engineer, one month, one million code” post on LinkedIn causes outrage",
-    "date_covered": "2025-12-25T04:40:59.270749+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "19s69CMAUD8",
-    "tiktok_id": null
-  },
   "https://maarthandam.com/2025/12/25/salesforce-regrets-firing-4000-staff-ai/": {
     "title": "Salesforce regrets firing 4000 experienced staff and replacing them with AI",
     "date_covered": "2025-12-25T16:26:50.994023+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-01-24T04:39:24.584301+00:00",
     "source": "Microsoft AI Blog",
     "youtube_id": "b9nc0dkymFI",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/get-creative-with-ai-make-custom-memes-inside-google-photos": {
+    "title": "Get Creative with AI: Make Custom Memes Inside Google Photos!",
+    "date_covered": "2026-01-24T08:28:24.363047+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "Su1lU0pMwl8",
     "tiktok_id": null
   }
 }
