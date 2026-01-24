@@ -1,11 +1,4 @@
 {
-  "https://maarthandam.com/2025/12/25/salesforce-regrets-firing-4000-staff-ai/": {
-    "title": "Salesforce regrets firing 4000 experienced staff and replacing them with AI",
-    "date_covered": "2025-12-25T16:26:50.994023+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nY1UOSnFJO0",
-    "tiktok_id": null
-  },
   "https://cyata.ai/blog/langgrinch-langchain-core-cve-2025-68664/": {
     "title": "All I Want for Christmas Is Your Secrets: LangGrinch hits LangChain Core (CVE-2025-68664) - Cyata",
     "date_covered": "2025-12-25T20:24:51.346319+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-01-24T12:38:44.046292+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "_muOFpDbG7s",
+    "tiktok_id": null
+  },
+  "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/": {
+    "title": "How data and AI will transform contact centres for financial services",
+    "date_covered": "2026-01-24T20:24:22.804422+00:00",
+    "source": "Microsoft AI Blog",
+    "youtube_id": "oSH1Wkn4h7c",
     "tiktok_id": null
   }
 }
