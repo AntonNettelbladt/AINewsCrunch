@@ -1,11 +1,4 @@
 {
-  "https://catalinionescu.dev/ai-agent/building-ai-agent-part-1/": {
-    "title": "Building an AI agent inside a 7-year old Rails application",
-    "date_covered": "2025-12-26T08:28:55.343211+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://geneguessr.brinedew.bio/": {
     "title": "GeneGuessr - Daily Protein Guessing Game",
     "date_covered": "2025-12-26T12:41:22.721816+00:00",
@@ -1089,6 +1082,13 @@
     "date_covered": "2026-01-25T08:28:56.376765+00:00",
     "source": "Analytics Insight",
     "youtube_id": "mlEUC5etW4Q",
+    "tiktok_id": null
+  },
+  "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/": {
+    "title": "Microsoft open sources its ‘farm of the future’ toolkit",
+    "date_covered": "2026-01-25T12:42:30.302377+00:00",
+    "source": "Microsoft AI Blog",
+    "youtube_id": "QFvVdB2mY9E",
     "tiktok_id": null
   }
 }
