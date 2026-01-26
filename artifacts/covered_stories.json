@@ -1,11 +1,4 @@
 {
-  "https://www.eff.org/deeplinks/2025/12/ai-police-reports-year-review": {
-    "title": "AI Police Reports: Year In Review",
-    "date_covered": "2025-12-27T08:28:30.788408+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "l_SCqB9U9uo",
-    "tiktok_id": null
-  },
   "https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/": {
     "title": "Rainbow Six Siege Hacked as Players Get Billions of Credits and Random Bans",
     "date_covered": "2025-12-28T01:33:21.168257+00:00",
@@ -1089,6 +1082,13 @@
     "date_covered": "2026-01-26T04:58:46.961636+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "cf0OL009Yr8",
+    "tiktok_id": null
+  },
+  "https://www.sciencealert.com/scientists-identify-brain-waves-that-define-the-limits-of-you": {
+    "title": "Scientists Identify Brain Waves That Define The Limits of 'You'",
+    "date_covered": "2026-01-26T08:33:07.641255+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MODvd7nxBsU",
     "tiktok_id": null
   }
 }
