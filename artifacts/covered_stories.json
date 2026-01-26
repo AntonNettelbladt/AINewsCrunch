@@ -1,18 +1,4 @@
 {
-  "https://github.com/PwnFunction/sandbox": {
-    "title": "PwnFunction/sandbox: Run untrusted AI code safely, fast",
-    "date_covered": "2025-12-26T20:25:02.587441+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "oEkMEdXyOqk",
-    "tiktok_id": null
-  },
-  "https://ibrahimcesar.cloud/blog/grok-and-the-naked-king/": {
-    "title": "Grok and the Naked King: The Ultimate Argument Against AI Alignment — Ibrahim Cesar",
-    "date_covered": "2025-12-27T01:22:39.828585+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MvHktTqnZKk",
-    "tiktok_id": null
-  },
   "https://www.straightdope.com/21341789/what-happened-to-all-the-gold-spain-got-from-the-new-world": {
     "title": "What happened to all the gold Spain got from the New World?",
     "date_covered": "2025-12-27T04:35:51.612877+00:00",
@@ -1096,6 +1082,13 @@
     "date_covered": "2026-01-25T20:25:42.612519+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "k2UDCrucFro",
+    "tiktok_id": null
+  },
+  "https://tomaszmachnik.pl/case-study-math-en.html": {
+    "title": "Case Study: Creative Math - Faking the Proof",
+    "date_covered": "2026-01-26T01:33:07.130763+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
