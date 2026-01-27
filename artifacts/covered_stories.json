@@ -1,11 +1,4 @@
 {
-  "https://www.shanethegamer.com/esports-news/rainbow-six-siege-hacked-global-server-outage/": {
-    "title": "Rainbow Six Siege Hacked as Players Get Billions of Credits and Random Bans",
-    "date_covered": "2025-12-28T01:33:21.168257+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "X1Av1E40fw4",
-    "tiktok_id": null
-  },
   "https://ploum.net/2025-12-15-communication-entertainment.html": {
     "title": "How We Lost Communication to Entertainment",
     "date_covered": "2025-12-28T04:47:16.955718+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-01-27T01:32:46.977769+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "cJOqAHKczV8",
+    "tiktok_id": null
+  },
+  "https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/": {
+    "title": "Apple introduces new AirTag with expanded range and improved findability",
+    "date_covered": "2026-01-27T04:50:05.733264+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "KTm5YSjMZVA",
     "tiktok_id": null
   }
 }
