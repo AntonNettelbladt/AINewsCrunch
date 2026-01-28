@@ -1,11 +1,4 @@
 {
-  "https://balajmarius.com/writings/vibe-coding-a-bookshelf-with-claude-code/": {
-    "title": "Vibe coding a bookshelf with Claude Code",
-    "date_covered": "2025-12-29T20:26:03.310714+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "SUUCfBmrm4s",
-    "tiktok_id": null
-  },
   "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation": {
     "title": "Manus Joins Meta for Next Era of Innovation",
     "date_covered": "2025-12-30T01:25:20.191076+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-01-28T16:37:09.168592+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "a_k-nbVErJY",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/national-quantum-initiative/": {
+    "title": "Accelerating Science: A Blueprint for a Renewed National Quantum Initiative",
+    "date_covered": "2026-01-28T20:31:47.246742+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "WS8vD1Zod18",
     "tiktok_id": null
   }
 }
