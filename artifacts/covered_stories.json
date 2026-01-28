@@ -1132,5 +1132,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "7_UXKW2PFPg",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-earth-2-open-models/": {
+    "title": "NVIDIA Launches Earth-2 Family of Open Models — the World’s First Fully Open, Accelerated Set of Models and Tools for AI Weather",
+    "date_covered": "2026-01-28T01:28:42.695368+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "EO1xoW7A6nU",
+    "tiktok_id": null
   }
 }
