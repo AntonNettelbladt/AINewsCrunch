@@ -1,11 +1,4 @@
 {
-  "https://www.npr.org/2025/12/28/nx-s1-5656190/ai-chips-memory-prices-ram": {
-    "title": "Memory loss: As AI gobbles up chips, prices for devices may rise",
-    "date_covered": "2025-12-29T01:30:30.152081+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ELKoHW-dsL0",
-    "tiktok_id": null
-  },
   "https://medicine.yale.edu/news-article/molecular-difference-in-autistic-brains/": {
     "title": "Researchers Discover Molecular Difference in Autistic Brains",
     "date_covered": "2025-12-29T04:50:50.151002+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-01-28T01:28:42.695368+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "EO1xoW7A6nU",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/google-gemini-vs-chatgpt-which-ai-tool-is-better-in-2026": {
+    "title": "Google Gemini vs ChatGPT: Which AI Tool Is Better in 2026?",
+    "date_covered": "2026-01-28T04:47:08.443368+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "-HJ5H4UzbUI",
     "tiktok_id": null
   }
 }
