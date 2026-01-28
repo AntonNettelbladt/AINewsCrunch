@@ -1,11 +1,4 @@
 {
-  "https://bigdata.2minutestreaming.com/p/mongobleed-explained-simply": {
-    "title": "MongoBleed explained simply",
-    "date_covered": "2025-12-29T08:33:23.004732+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "xlyQ7Jh-0u0",
-    "tiktok_id": null
-  },
   "https://teodordyakov.github.io/brainfuck-agi/": {
     "title": "Brainf*ck: The Ultimate AGI Test",
     "date_covered": "2025-12-29T12:43:00.885419+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-01-28T08:33:56.353523+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hsLeOnFa81Q",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/how-standard-chartered-runs-ai-under-privacy-rules/": {
+    "title": "Inside Standard Chartered’s approach to running AI under privacy rules",
+    "date_covered": "2026-01-28T12:46:58.448576+00:00",
+    "source": "AI News",
+    "youtube_id": "RJrSVwdXibM",
     "tiktok_id": null
   }
 }
