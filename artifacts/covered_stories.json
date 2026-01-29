@@ -1,11 +1,4 @@
 {
-  "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation": {
-    "title": "Manus Joins Meta for Next Era of Innovation",
-    "date_covered": "2025-12-30T01:25:20.191076+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Ikyd868eW4E",
-    "tiktok_id": null
-  },
   "https://github.com/kenryu42/claude-code-safety-net": {
     "title": "kenryu42/claude-code-safety-net: A Claude Code plugin that acts as a safety net, catching destructive git and filesystem commands before they execute.",
     "date_covered": "2025-12-30T04:42:16.821266+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-01-28T20:31:47.246742+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "WS8vD1Zod18",
+    "tiktok_id": null
+  },
+  "https://github.com/jmuncor/sherlock": {
+    "title": "jmuncor/sherlock: Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs, debug prompts, and monitor context window usage across your AI development session",
+    "date_covered": "2026-01-29T01:50:26.356811+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Dlub8Bfy5i8",
     "tiktok_id": null
   }
 }
