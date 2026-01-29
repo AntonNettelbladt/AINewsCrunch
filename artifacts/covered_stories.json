@@ -1,11 +1,4 @@
 {
-  "https://github.com/mutable-state-inc/ensue-skill": {
-    "title": "mutable-state-inc/ensue-skill: https://ensue.dev",
-    "date_covered": "2025-12-30T08:30:06.732683+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ICtYaOSv6Fk",
-    "tiktok_id": null
-  },
   "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code": {
     "title": "AI Is Forcing Us To Write Good Code",
     "date_covered": "2025-12-30T12:42:04.716958+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-01-29T05:09:19.264233+00:00",
     "source": "AI News",
     "youtube_id": "os8j63CIFBo",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/masumi-network-how-ai-blockchain-fusion-adds-trust-to-burgeoning-agent-economy/": {
+    "title": "Masumi Network: How AI-blockchain fusion adds trust to burgeoning agent economy",
+    "date_covered": "2026-01-29T08:40:22.085110+00:00",
+    "source": "AI News",
+    "youtube_id": "MX210S_7oQ8",
     "tiktok_id": null
   }
 }
