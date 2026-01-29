@@ -1,11 +1,4 @@
 {
-  "https://baecher.dev/stdout/incremental-backups-of-gmail-takeouts/": {
-    "title": "Incremental backups of Gmail takeouts",
-    "date_covered": "2025-12-30T16:27:44.394069+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "sG9HbuNLkAw",
-    "tiktok_id": null
-  },
   "https://media.ccc.de/v/39c3-escaping-containment-a-security-analysis-of-freebsd-jails": {
     "title": "Escaping Containment: A Security Analysis of FreeBSD Jails",
     "date_covered": "2025-12-31T01:26:34.313008+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-01-29T12:53:42.959116+00:00",
     "source": "AI News",
     "youtube_id": "h1FuaDxyZhs",
+    "tiktok_id": null
+  },
+  "https://marginlab.ai/trackers/claude-code/": {
+    "title": "Claude Code Opus 4.5 Performance Tracker",
+    "date_covered": "2026-01-29T16:44:25.463638+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ewJtlh9My1o",
     "tiktok_id": null
   }
 }
