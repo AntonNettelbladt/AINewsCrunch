@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/google-pixel-display-p3-feature/": {
-    "title": "This hidden Pixel camera feature makes your photos more vibrant - how to enable it",
-    "date_covered": "2025-12-31T12:41:13.956268+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "CdlAijbIca4",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/aerynos-linux-distribution-atomic-challenging-install/": {
     "title": "This fully atomic Linux distro is a challenge to install but a treat to use",
     "date_covered": "2025-12-31T16:27:52.460324+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-01-30T08:39:31.038484+00:00",
     "source": "AI News",
     "youtube_id": "2NgaWeDMwMI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/china-hyperscalers-agentic-ai-commerce-battleground/": {
+    "title": "China’s hyperscalers bet billions on agentic AI as commerce becomes the new battleground",
+    "date_covered": "2026-01-30T12:50:51.222133+00:00",
+    "source": "AI News",
+    "youtube_id": "Bjri5ddSzWE",
     "tiktok_id": null
   }
 }
