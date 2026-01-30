@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/aerynos-linux-distribution-atomic-challenging-install/": {
-    "title": "This fully atomic Linux distro is a challenge to install but a treat to use",
-    "date_covered": "2025-12-31T16:27:52.460324+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "NhMNqpKecE4",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/california-ai-law-crackdown-on-risks/": {
     "title": "Can one state save us from AI disaster? Inside California's new legislative crackdown",
     "date_covered": "2025-12-31T20:24:02.916437+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-01-30T12:50:51.222133+00:00",
     "source": "AI News",
     "youtube_id": "Bjri5ddSzWE",
+    "tiktok_id": null
+  },
+  "https://github.com/amlalabs/amla-sandbox": {
+    "title": "amlalabs/amla-sandbox",
+    "date_covered": "2026-01-30T16:41:05.464735+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
