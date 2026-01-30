@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/samsung-brain-health-dementia-tracking-feature/": {
-    "title": "Samsung's next big health advancement is a feature that alerts you to early signs of dementia",
-    "date_covered": "2025-12-31T08:29:57.890141+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "0y4mxp6bDyk",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/google-pixel-display-p3-feature/": {
     "title": "This hidden Pixel camera feature makes your photos more vibrant - how to enable it",
     "date_covered": "2025-12-31T12:41:13.956268+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-01-30T05:12:45.602244+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "4qd0O2SfnkE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/accenture-report-on-ai-in-insurance-sector/": {
+    "title": "Insurers betting big on AI: Accenture",
+    "date_covered": "2026-01-30T08:39:31.038484+00:00",
+    "source": "AI News",
+    "youtube_id": "2NgaWeDMwMI",
     "tiktok_id": null
   }
 }
