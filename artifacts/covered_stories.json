@@ -1,18 +1,4 @@
 {
-  "https://rtfm.co.ua/en/freebsd-home-nas-part-1-configuring-zfs-mirror-raid1/": {
-    "title": "FreeBSD: Home NAS, part 1 – configuring ZFS mirror (RAID1)",
-    "date_covered": "2026-01-02T08:31:41.217391+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "xUhOBJdZ51w",
-    "tiktok_id": null
-  },
-  "https://sgoel.dev/posts/10-years-of-personal-finances-in-plain-text-files/": {
-    "title": "10 years of personal finances in plain text files",
-    "date_covered": "2026-01-02T12:39:21.551342+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "QBJMReIoBwg",
-    "tiktok_id": null
-  },
   "https://standardebooks.org/blog/public-domain-day-2026": {
     "title": "Public Domain Day 2026 in Literature - Blog",
     "date_covered": "2026-01-02T16:26:39.945468+00:00",
@@ -1180,6 +1166,13 @@
     "date_covered": "2026-02-01T08:33:44.247586+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "xdkNAomxfc4",
+    "tiktok_id": null
+  },
+  "https://henrikwarne.com/2026/01/31/in-praise-of-dry-run/": {
+    "title": "In Praise of –dry-run",
+    "date_covered": "2026-02-01T12:45:37.490969+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "H6wNj4p46D4",
     "tiktok_id": null
   }
 }
