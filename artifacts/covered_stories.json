@@ -1,18 +1,4 @@
 {
-  "http://www.observationalhazard.com/2025/12/c-java-java-llm.html": {
-    "title": "C -> Java != Java -> LLM",
-    "date_covered": "2026-01-02T20:25:45.985768+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
-  "https://github.com/bschaatsbergen/lix": {
-    "title": "bschaatsbergen/cek: List, inspect and explore OCI container images, their layers and contents.",
-    "date_covered": "2026-01-03T01:21:51.538020+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HnBQJUr8Mno",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/deepseek-research-training-models/": {
     "title": "How DeepSeek's new way to train advanced AI models could disrupt everything - again",
     "date_covered": "2026-01-03T04:35:06.244657+00:00",
@@ -1180,6 +1166,13 @@
     "date_covered": "2026-02-01T20:27:29.635880+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "DgJ71-Mlwe4",
+    "tiktok_id": null
+  },
+  "https://github.com/gavrielc/nanoclaw": {
+    "title": "gavrielc/nanoclaw: My personal Claude assistant that runs in Apple containers. Lightweight, secure, and built to be understood and customized for your own needs.",
+    "date_covered": "2026-02-02T01:56:06.954526+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FvFETPCWYCM",
     "tiktok_id": null
   }
 }
