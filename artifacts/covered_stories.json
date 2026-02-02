@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/deepseek-research-training-models/": {
-    "title": "How DeepSeek's new way to train advanced AI models could disrupt everything - again",
-    "date_covered": "2026-01-03T04:35:06.244657+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "MMlGmLpypL8",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/ai-data-training-jobs-opportunities-requirements-pay/": {
     "title": "Could you be an AI data trainer? How to prepare and what it pays",
     "date_covered": "2026-01-03T16:26:05.689921+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-02-02T01:56:06.954526+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FvFETPCWYCM",
+    "tiktok_id": null
+  },
+  "https://martinalderson.com/posts/two-kinds-of-ai-users-are-emerging/": {
+    "title": "Two kinds of AI users are emerging. The gap between them is astonishing.",
+    "date_covered": "2026-02-02T05:27:25.011461+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "cUVDntxcVok",
     "tiktok_id": null
   }
 }
