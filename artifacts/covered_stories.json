@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/ai-data-training-jobs-opportunities-requirements-pay/": {
-    "title": "Could you be an AI data trainer? How to prepare and what it pays",
-    "date_covered": "2026-01-03T16:26:05.689921+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "8RWT3mEOtN8",
-    "tiktok_id": null
-  },
   "https://www.theguardian.com/books/2025/dec/31/the-master-of-contradictions-by-morten-hi-jensen-review-how-thomas-mann-wrote-the-magic-mountain": {
     "title": "The Master of Contradictions by Morten Høi Jensen review – how Thomas Mann wrote The Magic Mountain",
     "date_covered": "2026-01-04T04:51:35.693183+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-02-02T12:57:34.512108+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "DopuuQwLoao",
+    "tiktok_id": null
+  },
+  "https://neutree.ai/blog/nano-vllm-part-1": {
+    "title": "Understanding LLM Inference Engines: Inside Nano-vLLM (Part 1)",
+    "date_covered": "2026-02-02T16:42:10.127576+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "UkaSarRf6Y4",
     "tiktok_id": null
   }
 }
