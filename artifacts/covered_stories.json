@@ -1,11 +1,4 @@
 {
-  "https://github.com/mprajyothreddy/brainkernel": {
-    "title": "mprajyothreddy/brainkernel: Replacing the OS process scheduler with an LLM",
-    "date_covered": "2026-01-04T12:38:50.106837+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "JoSvTUXv8vQ",
-    "tiktok_id": null
-  },
   "https://www.hillelwayne.com/post/what-comments/": {
     "title": "Maybe Comments SHOULD Explain 'What'",
     "date_covered": "2026-01-04T16:25:32.663681+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-02-03T08:37:52.036463+00:00",
     "source": "ZDNet AI",
     "youtube_id": "OhxzV3JAFjE",
+    "tiktok_id": null
+  },
+  "https://github.com/KrystianJonca/lnai": {
+    "title": "KrystianJonca/lnai: Unified AI configuration management CLI",
+    "date_covered": "2026-02-03T12:58:55.104183+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "RAFouReU58M",
     "tiktok_id": null
   }
 }
