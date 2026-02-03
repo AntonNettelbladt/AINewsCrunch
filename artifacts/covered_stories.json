@@ -1,11 +1,4 @@
 {
-  "https://www.ycombinator.com/companies/trellis-ai/jobs/ngvfeaq-member-of-technical-staff-full-time": {
-    "title": "Member of Technical Staff (full-time) at Trellis AI",
-    "date_covered": "2026-01-04T20:25:47.281655+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "pnzCXbx1590",
-    "tiktok_id": null
-  },
   "https://www.pentestpartners.com/security-blog/eurostar-ai-vulnerability-when-a-chatbot-goes-off-the-rails/": {
     "title": "Eurostar AI vulnerability: when a chatbot goes off the rails",
     "date_covered": "2026-01-05T01:32:43.120559+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-02-03T16:52:59.162876+00:00",
     "source": "AI News",
     "youtube_id": "2Qyif8VcgTY",
+    "tiktok_id": null
+  },
+  "https://blog.senko.net/sandboxing-ai-agents-in-linux": {
+    "title": "Sandboxing AI agents in Linux",
+    "date_covered": "2026-02-03T20:37:18.167906+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1W8Wn1a9ssg",
     "tiktok_id": null
   }
 }
