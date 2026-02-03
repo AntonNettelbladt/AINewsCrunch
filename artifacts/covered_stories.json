@@ -1,11 +1,4 @@
 {
-  "https://www.hillelwayne.com/post/what-comments/": {
-    "title": "Maybe Comments SHOULD Explain 'What'",
-    "date_covered": "2026-01-04T16:25:32.663681+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MRo-Fk6C6Lc",
-    "tiktok_id": null
-  },
   "https://www.ycombinator.com/companies/trellis-ai/jobs/ngvfeaq-member-of-technical-staff-full-time": {
     "title": "Member of Technical Staff (full-time) at Trellis AI",
     "date_covered": "2026-01-04T20:25:47.281655+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-02-03T12:58:55.104183+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "RAFouReU58M",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/how-sap-modernising-hmrc-tax-infrastructure-with-ai/": {
+    "title": "How SAP is modernising HMRC’s tax infrastructure with AI",
+    "date_covered": "2026-02-03T16:52:59.162876+00:00",
+    "source": "AI News",
+    "youtube_id": "2Qyif8VcgTY",
     "tiktok_id": null
   }
 }
