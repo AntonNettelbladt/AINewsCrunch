@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/loreal-brings-ai-into-everyday-digital-advertising-production/": {
-    "title": "L’Oréal brings AI into everyday digital advertising production",
-    "date_covered": "2026-01-05T12:44:12.577370+00:00",
-    "source": "AI News",
-    "youtube_id": "HlQqHvXfcPg",
-    "tiktok_id": null
-  },
   "https://idiallo.com/blog/all-ai-videos-are-harmful": {
     "title": "All AI Videos Are Harmful",
     "date_covered": "2026-01-05T16:31:43.511231+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-02-04T08:41:57.390033+00:00",
     "source": "AI News",
     "youtube_id": "b64NlyZbe5c",
+    "tiktok_id": null
+  },
+  "https://gist.github.com/LEX8888/0caac27b96fa164e2a8ac57e9a5f2365": {
+    "title": "No Money, No Honey: Anthropic charges $200/month, delivers 84% uptime, compensates $0",
+    "date_covered": "2026-02-04T12:56:58.915081+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EZFdm_fEOoc",
     "tiktok_id": null
   }
 }
