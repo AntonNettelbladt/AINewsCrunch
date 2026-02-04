@@ -1,11 +1,4 @@
 {
-  "https://idiallo.com/blog/all-ai-videos-are-harmful": {
-    "title": "All AI Videos Are Harmful",
-    "date_covered": "2026-01-05T16:31:43.511231+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "hZjb7UBsAzs",
-    "tiktok_id": null
-  },
   "https://torrentfreak.com/annas-archive-loses-org-domain-after-surprise-suspension/": {
     "title": "Anna's Archive Loses .Org Domain After Surprise Suspension * TorrentFreak",
     "date_covered": "2026-01-05T20:26:54.328112+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-02-04T12:56:58.915081+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "EZFdm_fEOoc",
+    "tiktok_id": null
+  },
+  "https://github.com/bethington/ghidra-mcp": {
+    "title": "bethington/ghidra-mcp: Production-grade Ghidra MCP Server — 132 endpoints, cross-binary documentation transfer, batch analysis, headless mode, and Docker deployment for AI-powered reverse engineering",
+    "date_covered": "2026-02-04T16:47:12.253350+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "4ktOeOGkC9s",
     "tiktok_id": null
   }
 }
