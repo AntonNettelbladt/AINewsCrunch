@@ -1,11 +1,4 @@
 {
-  "https://calnewport.com/why-didnt-ai-join-the-workforce-in-2025/": {
-    "title": "Why Didn’t AI “Join the Workforce” in 2025?",
-    "date_covered": "2026-01-06T04:42:29.012955+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "laHgzri3K9o",
-    "tiktok_id": null
-  },
   "https://en.sedaily.com/technology/2025/12/15/unist-develops-raindrop-powered-generator-using-carbon": {
     "title": "UNIST Develops Raindrop-Powered Generator Using Carbon Fiber Composites",
     "date_covered": "2026-01-06T08:30:58.282914+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-02-05T01:52:11.556392+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "7goVQsu2CrA",
+    "tiktok_id": null
+  },
+  "https://github.com/MaxBittker/rs-sdk": {
+    "title": "MaxBittker/rs-sdk: Runescape automation library, optimized for use by coding agents.",
+    "date_covered": "2026-02-05T05:20:47.341937+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "clEBdpqfq2s",
     "tiktok_id": null
   }
 }
