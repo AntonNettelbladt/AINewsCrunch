@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/agentic-ai-scaling-requires-new-memory-architecture/": {
-    "title": "Agentic AI scaling requires new memory architecture",
-    "date_covered": "2026-01-07T20:29:20.969293+00:00",
-    "source": "AI News",
-    "youtube_id": "_o-Qjvl5NCk",
-    "tiktok_id": null
-  },
   "https://surgehq.ai/blog/lmarena-is-a-plague-on-ai": {
     "title": "LMArena is a cancer on AI",
     "date_covered": "2026-01-08T01:27:20.305270+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-02-06T16:45:40.601681+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "k9-juo9EveQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/intuit-uber-and-state-farm-trial-ai-agents-inside-enterprise-workflows/": {
+    "title": "Intuit, Uber, and State Farm trial AI agents inside enterprise workflows",
+    "date_covered": "2026-02-06T20:34:18.068573+00:00",
+    "source": "AI News",
+    "youtube_id": "Rbgu_LbjPuY",
     "tiktok_id": null
   }
 }
