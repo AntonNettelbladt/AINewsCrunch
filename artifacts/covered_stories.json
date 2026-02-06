@@ -1,11 +1,4 @@
 {
-  "https://github.com/seer-engg/seer": {
-    "title": "seer-engg/seer: AI workflows",
-    "date_covered": "2026-01-07T08:30:57.520586+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://github.com/hanzili/comet-mcp": {
     "title": "hanzili/comet-mcp: MCP Server connecting to Perplexity Comet browser",
     "date_covered": "2026-01-07T16:31:24.696945+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-02-06T05:21:44.502504+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "r9rXiofo-O4",
+    "tiktok_id": null
+  },
+  "https://mitchellh.com/writing/my-ai-adoption-journey": {
+    "title": "My AI Adoption Journey",
+    "date_covered": "2026-02-06T08:42:07.683506+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "pbE_vV7YMIE",
     "tiktok_id": null
   }
 }
