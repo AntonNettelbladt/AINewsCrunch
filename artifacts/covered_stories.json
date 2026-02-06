@@ -1202,5 +1202,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "pbE_vV7YMIE",
     "tiktok_id": null
+  },
+  "https://github.com/labring/sealos": {
+    "title": "labring/sealos: Sealos is an AI-native Cloud Operating System built on Kubernetes that unifies the entire application lifecycle, from development in cloud IDEs to production deployment and management.",
+    "date_covered": "2026-02-06T12:57:42.407394+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Mn5fcUoPvRY",
+    "tiktok_id": null
   }
 }
