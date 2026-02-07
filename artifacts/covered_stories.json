@@ -1,11 +1,4 @@
 {
-  "https://surgehq.ai/blog/lmarena-is-a-plague-on-ai": {
-    "title": "LMArena is a cancer on AI",
-    "date_covered": "2026-01-08T01:27:20.305270+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Gp5ID4lsmr0",
-    "tiktok_id": null
-  },
   "https://github.com/tailwindlabs/tailwindcss.com/pull/2388": {
     "title": "feat: add llms.txt endpoint for LLM-optimized documentation by quantizor · Pull Request #2388 · tailwindlabs/tailwindcss.com",
     "date_covered": "2026-01-08T04:42:37.352257+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-02-06T20:34:18.068573+00:00",
     "source": "AI News",
     "youtube_id": "Rbgu_LbjPuY",
+    "tiktok_id": null
+  },
+  "https://red.anthropic.com/2026/zero-days/": {
+    "title": "0-Days \\ red.anthropic.com",
+    "date_covered": "2026-02-07T01:49:01.144698+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "vZVHkCiqinQ",
     "tiktok_id": null
   }
 }
