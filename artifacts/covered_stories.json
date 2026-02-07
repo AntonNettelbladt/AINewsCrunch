@@ -1,11 +1,4 @@
 {
-  "https://spectrum.ieee.org/ai-coding-degrades": {
-    "title": "AI Coding Degrades: Silent Failures Emerge",
-    "date_covered": "2026-01-08T16:30:28.875596+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MtbVzQ-mcqI",
-    "tiktok_id": null
-  },
   "https://www.promptarmor.com/resources/ibm-ai-(-bob-)-downloads-and-executes-malware": {
     "title": "IBM AI ('Bob') Downloads and Executes Malware",
     "date_covered": "2026-01-08T20:28:11.781610+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-07T16:30:22.336464+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "RnnezeKAoq4",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/how-cisco-builds-smart-systems-for-the-ai-era/": {
+    "title": "How Cisco builds smart systems for the AI era",
+    "date_covered": "2026-02-07T20:27:53.718030+00:00",
+    "source": "AI News",
+    "youtube_id": "AONSSTC4dt8",
     "tiktok_id": null
   }
 }
