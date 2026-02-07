@@ -1,18 +1,4 @@
 {
-  "https://www.emjreviews.com/radiology/news/ai-misses-nearly-one-third-of-breast-cancers-study-finds/": {
-    "title": "AI Misses Nearly One-Third of Breast Cancers, Study Finds",
-    "date_covered": "2026-01-08T08:31:35.807501+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "lFLiYFiI7ik",
-    "tiktok_id": null
-  },
-  "https://www.promptarmor.com/resources/notion-ai-unpatched-data-exfiltration": {
-    "title": "Notion AI: Unpatched Data Exfiltration",
-    "date_covered": "2026-01-08T12:44:25.882088+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://spectrum.ieee.org/ai-coding-degrades": {
     "title": "AI Coding Degrades: Silent Failures Emerge",
     "date_covered": "2026-01-08T16:30:28.875596+00:00",
@@ -1215,6 +1201,13 @@
     "date_covered": "2026-02-07T08:31:37.550771+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "X53zSsY_XsQ",
+    "tiktok_id": null
+  },
+  "https://github.com/pydantic/monty": {
+    "title": "pydantic/monty: A minimal, secure Python interpreter written in Rust for use by AI",
+    "date_covered": "2026-02-07T12:48:09.368380+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
