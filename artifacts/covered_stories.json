@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/bosch-e2-9-billion-ai-investment-and-shifting-manufacturing-priorities/": {
-    "title": "Bosch’s €2.9 billion AI investment and shifting manufacturing priorities",
-    "date_covered": "2026-01-09T08:31:16.849090+00:00",
-    "source": "AI News",
-    "youtube_id": "tURtHhWuVr0",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/agent-ai-as-the-intern-in-2026-prediction-by-nexos-ai/": {
     "title": "2026 to be the year of the agentic AI intern",
     "date_covered": "2026-01-09T12:43:25.567878+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-08T08:33:49.445762+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "cT8rufvCXOE",
+    "tiktok_id": null
+  },
+  "https://ezhik.jp/ai-slop-terrifies-me/": {
+    "title": "(AI) Slop Terrifies Me – ezhik.jp",
+    "date_covered": "2026-02-08T12:46:38.985579+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wsBk7U9tfoA",
     "tiktok_id": null
   }
 }
