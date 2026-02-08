@@ -1,11 +1,4 @@
 {
-  "https://sfstandard.com/2026/01/07/called-terrorist-sympathizer-now-ai-company-valued-3b/": {
-    "title": "He was called a ‘terrorist sympathizer.’ Now his AI company is valued at $3B",
-    "date_covered": "2026-01-09T04:43:01.556933+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "TS4ABDUMPHQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/bosch-e2-9-billion-ai-investment-and-shifting-manufacturing-priorities/": {
     "title": "Bosch’s €2.9 billion AI investment and shifting manufacturing priorities",
     "date_covered": "2026-01-09T08:31:16.849090+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-02-08T02:14:31.759209+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "bqBvG9cfkO0",
+    "tiktok_id": null
+  },
+  "https://federicopereiro.com/llm-high/": {
+    "title": "~fpereiro",
+    "date_covered": "2026-02-08T05:27:57.809612+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "2hxXX_38Nlg",
     "tiktok_id": null
   }
 }
