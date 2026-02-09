@@ -1,18 +1,4 @@
 {
-  "https://github.com/Hiepler/EuConform": {
-    "title": "Hiepler/EuConform: EU AI Act Compliance Tool",
-    "date_covered": "2026-01-09T20:26:10.379965+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "UcU0UbVi3wc",
-    "tiktok_id": null
-  },
-  "https://www.hsrail.org/blog/caltrain-shows-why-every-region-should-be-moving-toward-regional-rail/": {
-    "title": "Caltrain Shows Why Every Region Should Be Moving Toward Regional Rail",
-    "date_covered": "2026-01-10T01:26:05.961308+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Vf_ibAM6r0c",
-    "tiktok_id": null
-  },
   "https://phys.org/news/2026-01-eye-greenland-sharks-vision-centuries.html": {
     "title": "Eye-opening research: Greenland sharks maintain vision for centuries through DNA repair mechanism",
     "date_covered": "2026-01-10T04:37:42.311726+00:00",
@@ -1215,6 +1201,13 @@
     "date_covered": "2026-02-08T20:28:06.697361+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "SKMOMlrjye0",
+    "tiktok_id": null
+  },
+  "https://nullcathedral.com/posts/2026-02-08-roundcube-svg-feimage-remote-image-bypass/": {
+    "title": "Roundcube Webmail <1.5.13 / <1.6.13 allows attackers to force remote image loads via SVG feImage",
+    "date_covered": "2026-02-09T01:58:35.017322+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
