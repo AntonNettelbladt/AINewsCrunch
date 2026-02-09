@@ -1,11 +1,4 @@
 {
-  "https://phys.org/news/2026-01-eye-greenland-sharks-vision-centuries.html": {
-    "title": "Eye-opening research: Greenland sharks maintain vision for centuries through DNA repair mechanism",
-    "date_covered": "2026-01-10T04:37:42.311726+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "sPqABp_6ol8",
-    "tiktok_id": null
-  },
   "https://consciousdigital.org/chatgpt-health-is-a-marketplace-guess-who-is-the-product/": {
     "title": "ChatGPT Health is a Marketplace. Guess Who is the Product?",
     "date_covered": "2026-01-10T16:27:26.291808+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-02-09T01:58:35.017322+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://apnews.com/article/semiconductors-tsmc-japan-taiwan-ai-11256f2bfde73ca23d08331ad138d6d5": {
+    "title": "TSMC to make advanced AI semiconductors in Japan in boost for its chipmaking ambitions",
+    "date_covered": "2026-02-09T05:32:03.483116+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "nxzgYKNn0d0",
     "tiktok_id": null
   }
 }
