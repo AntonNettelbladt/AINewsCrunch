@@ -1,11 +1,4 @@
 {
-  "https://github.com/ibehnam/shellock": {
-    "title": "ibehnam/shellock: Real-time CLI flag explainer for fish shell",
-    "date_covered": "2026-01-12T12:44:13.611546+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "mwfbBesPuMM",
-    "tiktok_id": null
-  },
   "https://github.com/haykgrigo3/TimeCapsuleLLM": {
     "title": "haykgrigo3/TimeCapsuleLLM: A LLM trained only on data from certain time periods to reduce modern bias",
     "date_covered": "2026-01-12T16:28:47.658023+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-11T05:30:05.561421+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "b9UTDS6g9zs",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/chinese-hyperscalers-and-industry-specific-chinas-agentic-ai/": {
+    "title": "Chinese hyperscalers and industry-specific agentic AI",
+    "date_covered": "2026-02-11T13:07:43.303481+00:00",
+    "source": "AI News",
+    "youtube_id": "XMbLD2ums1w",
     "tiktok_id": null
   }
 }
