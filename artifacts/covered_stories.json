@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/how-shopify-bringing-agentic-ai-enterprise-commerce/": {
-    "title": "How Shopify is bringing agentic AI to enterprise commerce",
-    "date_covered": "2026-01-13T12:44:06.459590+00:00",
-    "source": "AI News",
-    "youtube_id": "-CCPuSxUJak",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/allister-frost-tackling-workforce-anxiety-for-ai-integration-success/": {
     "title": "Allister Frost: Tackling workforce anxiety for AI integration success",
     "date_covered": "2026-01-13T16:32:41.121281+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-12T08:46:52.422043+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Quj_7FerPGI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/barclays-bets-on-ai-to-cut-costs-and-boost-returns/": {
+    "title": "Barclays bets on AI to cut costs and boost returns",
+    "date_covered": "2026-02-12T13:05:05.982692+00:00",
+    "source": "AI News",
+    "youtube_id": "khOY1Z7nH4U",
     "tiktok_id": null
   }
 }
