@@ -1,11 +1,4 @@
 {
-  "https://www.cnbc.com/2026/01/12/apple-google-ai-siri-gemini.html": {
-    "title": "Apple picks Google's Gemini to run AI-powered Siri coming this year",
-    "date_covered": "2026-01-13T01:24:15.199813+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "6GVG4XU_F1s",
-    "tiktok_id": null
-  },
   "https://github.com/njbrake/agent-of-empires": {
     "title": "njbrake/agent-of-empires: Manage all your agents",
     "date_covered": "2026-01-13T04:42:50.291060+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-11T20:55:02.417560+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "v9leBDmYStA",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/red-hat-unifies-ai-tactical-edge-deployment-for-uk-mod/": {
+    "title": "Red Hat unifies AI and tactical edge deployment for UK MOD",
+    "date_covered": "2026-02-12T01:58:21.322564+00:00",
+    "source": "AI News",
+    "youtube_id": "5EGUkpd1u-A",
     "tiktok_id": null
   }
 }
