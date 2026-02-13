@@ -1,11 +1,4 @@
 {
-  "https://www.ycombinator.com/companies/sei/jobs/Rn0KPXR-devops-platform-ai-infrastructure-engineer": {
-    "title": "Devops / Platform / AI Infrastructure Engineer at Sei",
-    "date_covered": "2026-01-14T04:49:45.112901+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "uBGX8BPXjik",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/financial-advice-ai-powered-uk-fintech-market-possibilities/": {
     "title": "Research shows UK young adults would use AI for financial guidance",
     "date_covered": "2026-01-14T12:43:54.344750+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-13T01:59:53.142425+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "5PBvKn0-kn0",
+    "tiktok_id": null
+  },
+  "https://blog.mozilla.ai/evaluating-multilingual-context-aware-guardrails-evidence-from-a-humanitarian-llm-use-case/": {
+    "title": "Evaluating Multilingual Guardrails in Humanitarian AI",
+    "date_covered": "2026-02-13T05:26:22.482842+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "QYKrKk8NGTw",
     "tiktok_id": null
   }
 }
