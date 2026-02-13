@@ -1,11 +1,4 @@
 {
-  "https://blog.vllm.ai/2025/12/17/large-scale-serving.html": {
-    "title": "vLLM Large Scale Serving: DeepSeek @ 2.2k tok/s/H200 with Wide-EP",
-    "date_covered": "2026-01-14T01:29:39.413349+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nBDRmRq6n5w",
-    "tiktok_id": null
-  },
   "https://www.ycombinator.com/companies/sei/jobs/Rn0KPXR-devops-platform-ai-infrastructure-engineer": {
     "title": "Devops / Platform / AI Infrastructure Engineer at Sei",
     "date_covered": "2026-01-14T04:49:45.112901+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-12T20:38:45.859823+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "NdNJ4Omg_fk",
+    "tiktok_id": null
+  },
+  "https://atha.io/blog/2026-02-12-viva": {
+    "title": "Major European Payment Processor Can't Send Email to Google Workspace Users",
+    "date_covered": "2026-02-13T01:59:53.142425+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "5PBvKn0-kn0",
     "tiktok_id": null
   }
 }
