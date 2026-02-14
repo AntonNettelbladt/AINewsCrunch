@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/mckinsey-tests-ai-chatbot-in-early-stages-of-graduate-recruitment/": {
-    "title": "McKinsey tests AI chatbot in early stages of graduate recruitment",
-    "date_covered": "2026-01-15T16:36:33.735507+00:00",
-    "source": "AI News",
-    "youtube_id": "m3dCaZgGDlE",
-    "tiktok_id": null
-  },
   "https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild": {
     "title": "CodeBreach: Supply Chain Vuln & AWS CodeBuild Misconfig",
     "date_covered": "2026-01-15T20:27:13.345285+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-14T16:29:56.703861+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "GjHyxCDFJYc",
+    "tiktok_id": null
+  },
+  "https://blog.janestreet.com/fun-with-algebraic-effects-hardcaml/": {
+    "title": "from Toy Examples to Hardcaml Simulations",
+    "date_covered": "2026-02-14T20:27:04.157703+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
