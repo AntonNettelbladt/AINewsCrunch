@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-acquires-schedmd/": {
-    "title": "NVIDIA Acquires Open-Source Workload Management Provider SchedMD",
-    "date_covered": "2026-01-15T04:42:47.603576+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "mvzMjc0G6t0",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/medical-ai-diagnostics-openai-google-anthropic/": {
     "title": "Medical AI Diagnostics Race: OpenAI, Google, Anthropic Launch Tools",
     "date_covered": "2026-01-15T08:31:45.345326+00:00",
@@ -1222,6 +1215,13 @@
     "date_covered": "2026-02-14T01:50:17.393194+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "k1yhda60nd0",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-forecasting-model-targets-healthcare-resource-efficiency/": {
+    "title": "AI forecasting model targets healthcare resource efficiency",
+    "date_covered": "2026-02-14T05:12:48.813184+00:00",
+    "source": "AI News",
+    "youtube_id": "ygobjD1TsjM",
     "tiktok_id": null
   }
 }
