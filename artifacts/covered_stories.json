@@ -1,11 +1,4 @@
 {
-  "https://arstechnica.com/security/2026/01/signal-creator-moxie-marlinspike-wants-to-do-for-ai-what-he-did-for-messaging/": {
-    "title": "Signal creator Moxie Marlinspike wants to do for AI what he did for messaging",
-    "date_covered": "2026-01-16T12:43:14.175940+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "uAQn-kBi7pk",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/banks-operationalise-ai-as-plumery-ai-launches-standardised-integration/": {
     "title": "Banks operationalise as Plumery AI launches standardised integration",
     "date_covered": "2026-01-16T16:30:35.238238+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-15T12:46:34.481772+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "MrCyXgQMB-0",
+    "tiktok_id": null
+  },
+  "https://github.com/alibaba-damo-academy/RynnBrain": {
+    "title": "alibaba-damo-academy/RynnBrain: RynnBrain: Open Embodied Foundation Models",
+    "date_covered": "2026-02-15T16:30:29.529999+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1aqD1cbze7k",
     "tiktok_id": null
   }
 }
