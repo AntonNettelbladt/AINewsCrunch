@@ -1,18 +1,4 @@
 {
-  "https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild": {
-    "title": "CodeBreach: Supply Chain Vuln & AWS CodeBuild Misconfig",
-    "date_covered": "2026-01-15T20:27:13.345285+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "SP41ueLD9MM",
-    "tiktok_id": null
-  },
-  "https://github.com/rulebricks/claude-code-guardrails": {
-    "title": "rulebricks/claude-code-guardrails: Real-time guardrails for Claude Code tool calls.",
-    "date_covered": "2026-01-16T01:27:23.193826+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "RRjF2I9OMlU",
-    "tiktok_id": null
-  },
   "https://www.approachwithalacrity.com/claude-ne/": {
     "title": "Claude is not a senior engineer (yet)",
     "date_covered": "2026-01-16T04:42:35.204158+00:00",
@@ -1229,6 +1215,13 @@
     "date_covered": "2026-02-14T20:27:04.157703+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://github.com/alichherawalla/off-grid-mobile": {
+    "title": "Privacy First, Zero Internet. Download an LLM and use it on your mobile device. No data ever leaves your phone. Privacy first. Supports text-to-text, vision, text-to-image",
+    "date_covered": "2026-02-15T02:00:00.665868+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "bskDUxkGJ98",
     "tiktok_id": null
   }
 }
