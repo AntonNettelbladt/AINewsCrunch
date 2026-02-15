@@ -1,11 +1,4 @@
 {
-  "https://github.com/different-ai/openwork": {
-    "title": "different-ai/openwork: An open-source alternative to Claude Cowork, powered by OpenCode",
-    "date_covered": "2026-01-16T08:30:58.172936+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://arstechnica.com/security/2026/01/signal-creator-moxie-marlinspike-wants-to-do-for-ai-what-he-did-for-messaging/": {
     "title": "Signal creator Moxie Marlinspike wants to do for AI what he did for messaging",
     "date_covered": "2026-01-16T12:43:14.175940+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-15T08:33:31.771879+00:00",
     "source": "AI News",
     "youtube_id": "p--ZHbpVdgs",
+    "tiktok_id": null
+  },
+  "https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/": {
+    "title": "I love the work of the ArchWiki maintainers",
+    "date_covered": "2026-02-15T12:46:34.481772+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MrCyXgQMB-0",
     "tiktok_id": null
   }
 }
