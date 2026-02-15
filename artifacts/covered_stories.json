@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/banks-operationalise-ai-as-plumery-ai-launches-standardised-integration/": {
-    "title": "Banks operationalise as Plumery AI launches standardised integration",
-    "date_covered": "2026-01-16T16:30:35.238238+00:00",
-    "source": "AI News",
-    "youtube_id": "3MfXgNyG5Ks",
-    "tiktok_id": null
-  },
   "https://github.com/21st-dev/1code": {
     "title": "21st-dev/1code: Better UI app for running code agents in parallel (ClaudeCode, OpenCode, Codex)",
     "date_covered": "2026-01-16T20:25:00.422187+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-15T16:30:29.529999+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "1aqD1cbze7k",
+    "tiktok_id": null
+  },
+  "https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/": {
+    "title": "Editor’s Note: Retraction of article containing fabricated quotations",
+    "date_covered": "2026-02-15T20:27:50.591608+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EKfrRZA41FU",
     "tiktok_id": null
   }
 }
