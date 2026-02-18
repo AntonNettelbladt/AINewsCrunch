@@ -1,11 +1,4 @@
 {
-  "https://www.theregister.com/2026/01/19/copper_chief_cops_it_after/": {
-    "title": "West Midlands copper chief cops it after Copilot copped out",
-    "date_covered": "2026-01-19T16:30:24.104643+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "V66F6rLYLPA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/credit-union-ai-in-operational-settings-learnings-from-the-fintech-sector/": {
     "title": "Credit unions, fintech and the AI inflection of financial services",
     "date_covered": "2026-01-19T20:26:05.715338+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-18T13:02:30.185401+00:00",
     "source": "AI News",
     "youtube_id": "qKvm6KUTZ2c",
+    "tiktok_id": null
+  },
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/": {
+    "title": "Microsoft says bug causes Copilot to summarize confidential emails",
+    "date_covered": "2026-02-18T17:04:37.134932+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ZcRhIVOwHFU",
     "tiktok_id": null
   }
 }
