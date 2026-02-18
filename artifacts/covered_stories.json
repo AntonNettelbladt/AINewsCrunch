@@ -1,11 +1,4 @@
 {
-  "https://www.joinformal.com/blog/using-proxies-to-hide-secrets-from-claude-code/": {
-    "title": "Using Proxies to Hide Secrets from Claude Code",
-    "date_covered": "2026-01-19T08:34:11.502186+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "-W7aQjunARA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/jpmorgan-chase-treats-ai-spending-as-core-infrastructure/": {
     "title": "JPMorgan Chase treats AI spending as core infrastructure",
     "date_covered": "2026-01-19T12:46:07.602418+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-18T05:32:07.101851+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "N22qZZerPGU",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/what-aristotle-and-socrates-can-teach-us-about-using-generative-ai/": {
+    "title": "What Aristotle and Socrates can teach us about using generative AI",
+    "date_covered": "2026-02-18T08:50:36.120124+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "cGwMpmNGTgs",
     "tiktok_id": null
   }
 }
