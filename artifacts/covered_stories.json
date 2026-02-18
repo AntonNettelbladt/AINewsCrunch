@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/credit-union-ai-in-operational-settings-learnings-from-the-fintech-sector/": {
-    "title": "Credit unions, fintech and the AI inflection of financial services",
-    "date_covered": "2026-01-19T20:26:05.715338+00:00",
-    "source": "AI News",
-    "youtube_id": "ERON99H0Tus",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/research/assistant-axis": {
     "title": "The assistant axis: situating and stabilizing the character of large language models",
     "date_covered": "2026-01-20T01:26:20.729362+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-18T17:04:37.134932+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ZcRhIVOwHFU",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/": {
+    "title": "India Fuels Its AI Mission With NVIDIA",
+    "date_covered": "2026-02-18T20:41:29.893776+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "TZhDLwz8YMM",
     "tiktok_id": null
   }
 }
