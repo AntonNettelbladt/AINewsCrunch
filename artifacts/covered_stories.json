@@ -1,11 +1,4 @@
 {
-  "https://github.com/jordanhubbard/nanolang": {
-    "title": "jordanhubbard/nanolang: A tiny experimental language designed to be targeted by coding LLMs",
-    "date_covered": "2026-01-20T08:34:25.856185+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "jLyHuEAC750",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/scaling-ai-value-beyond-pilot-phase-purgatory/": {
     "title": "Scaling AI value beyond pilot phase purgatory",
     "date_covered": "2026-01-20T12:47:38.136242+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-19T05:25:20.843687+00:00",
     "source": "AI News",
     "youtube_id": "wq-pBAODjFY",
+    "tiktok_id": null
+  },
+  "https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe": {
+    "title": "How AI is affecting productivity and jobs in Europe",
+    "date_covered": "2026-02-19T08:43:59.275983+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "eDOW_oklW5E",
     "tiktok_id": null
   }
 }
