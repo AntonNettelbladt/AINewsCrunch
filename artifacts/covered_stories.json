@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/the-quiet-work-behind-citi-4000-person-internal-ai-rollout/": {
-    "title": "The quiet work behind Citi’s 4,000-person internal AI rollout",
-    "date_covered": "2026-01-21T12:46:35.086193+00:00",
-    "source": "AI News",
-    "youtube_id": "rpwH6c1JbzE",
-    "tiktok_id": null
-  },
   "https://github.com/borenstein/yolo-cage": {
     "title": "borenstein/yolo-cage: AI coding agents that can't exfiltrate secrets or merge their own PRs.",
     "date_covered": "2026-01-21T16:43:31.891066+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-20T08:41:47.144929+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FmV2oua3jx8",
+    "tiktok_id": null
+  },
+  "https://www.bhusalmanish.com.np/blog/posts/why-claude-wins-coding.html": {
+    "title": "Why Developers Keep Choosing Claude Over Every Other AI",
+    "date_covered": "2026-02-20T12:55:50.262090+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ga65qgXj6W0",
     "tiktok_id": null
   }
 }
