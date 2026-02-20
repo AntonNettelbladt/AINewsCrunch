@@ -1,11 +1,4 @@
 {
-  "https://github.com/borenstein/yolo-cage": {
-    "title": "borenstein/yolo-cage: AI coding agents that can't exfiltrate secrets or merge their own PRs.",
-    "date_covered": "2026-01-21T16:43:31.891066+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "9q9gNHkRhy8",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/": {
     "title": "“Largest Infrastructure Buildout in Human History”: Jensen Huang on AI’s “Five-Layer Cake” at Davos",
     "date_covered": "2026-01-21T20:32:20.799472+00:00",
@@ -1236,6 +1229,13 @@
     "date_covered": "2026-02-20T16:39:14.158770+00:00",
     "source": "AI News",
     "youtube_id": "hDCgQUAu_ak",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/claude-code-security": {
+    "title": "Making frontier cybersecurity capabilities available to defenders",
+    "date_covered": "2026-02-20T20:31:51.541900+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ELVzpvN0gH4",
     "tiktok_id": null
   }
 }
