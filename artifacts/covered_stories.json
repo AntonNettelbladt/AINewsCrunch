@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/sap-and-fresenius-build-sovereign-ai-backbone-for-healthcare/": {
-    "title": "SAP and Fresenius to build sovereign AI backbone for healthcare",
-    "date_covered": "2026-01-21T08:34:12.094115+00:00",
-    "source": "AI News",
-    "youtube_id": "bZN6h3EE4eY",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/the-quiet-work-behind-citi-4000-person-internal-ai-rollout/": {
     "title": "The quiet work behind Citi’s 4,000-person internal AI rollout",
     "date_covered": "2026-01-21T12:46:35.086193+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-20T05:20:31.535666+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "jXLKG9iPKiE",
+    "tiktok_id": null
+  },
+  "https://gist.github.com/interpiduser5/547d8a7baec436f24b7cce89dd4ae1ea": {
+    "title": "MuMu Player Pro (NetEase) silently runs 17 system reconnaissance commands every 30 minutes on macOS",
+    "date_covered": "2026-02-20T08:41:47.144929+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FmV2oua3jx8",
     "tiktok_id": null
   }
 }
