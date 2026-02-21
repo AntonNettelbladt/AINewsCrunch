@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/apple-turning-siri-into-chatgpt-chatbot-ai-ios-27-iphone-mac-ipad/": {
-    "title": "iOS 27 may be the death of Siri as we know it, but we'll be happy with what it becomes",
-    "date_covered": "2026-01-22T04:50:47.950763+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "HS-KywCH_mk",
-    "tiktok_id": null
-  },
   "https://www.media.mit.edu/publications/your-brain-on-chatgpt/": {
     "title": "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task — MIT Media Lab",
     "date_covered": "2026-01-22T08:33:02.728372+00:00",
@@ -1229,6 +1222,13 @@
     "date_covered": "2026-02-21T01:49:06.232127+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "iqZX7BNznkM",
+    "tiktok_id": null
+  },
+  "https://github.com/anthropics/claude-code/issues/16856": {
+    "title": "[Bug] Excessive token usage in Claude Code 2.1.1 - 4x+ faster rate consumption than previous versions · Issue #16856 · anthropics/claude-code",
+    "date_covered": "2026-02-21T05:09:52.496592+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "qRXgpsT976Y",
     "tiktok_id": null
   }
 }
