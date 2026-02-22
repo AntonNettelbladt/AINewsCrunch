@@ -1216,5 +1216,12 @@
     "source": "NVIDIA Blog",
     "youtube_id": "X7mnEd3leJU",
     "tiktok_id": null
+  },
+  "https://www.anuragk.com/blog/posts/Taalas.html": {
+    "title": "How Taalas \"prints\" LLM onto a chip?",
+    "date_covered": "2026-02-22T08:33:00.446261+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "kAtqTi131HU",
+    "tiktok_id": null
   }
 }
