@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-in-financial-services-survey-2026/": {
-    "title": "From Pilot to Profit: Survey Reveals the Financial Services Industry Is Doubling Down on AI Investment and Open Source",
-    "date_covered": "2026-01-24T12:38:44.046292+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "_muOFpDbG7s",
-    "tiktok_id": null
-  },
   "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/": {
     "title": "How data and AI will transform contact centres for financial services",
     "date_covered": "2026-01-24T20:24:22.804422+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-02-23T08:48:40.001018+00:00",
     "source": "AI News",
     "youtube_id": "pR4BhGF7ln4",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/amul-ai-dairy-farming-platform-india/": {
+    "title": "How Amul is using AI dairy farming to put 36 million farmers first",
+    "date_covered": "2026-02-23T13:00:32.944964+00:00",
+    "source": "AI News",
+    "youtube_id": "Nkb8G1mOuic",
     "tiktok_id": null
   }
 }
