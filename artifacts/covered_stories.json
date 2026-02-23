@@ -1,11 +1,4 @@
 {
-  "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/": {
-    "title": "How data and AI will transform contact centres for financial services",
-    "date_covered": "2026-01-24T20:24:22.804422+00:00",
-    "source": "Microsoft AI Blog",
-    "youtube_id": "oSH1Wkn4h7c",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/cryptocurrency-analytics-insight/while-pi-and-xrp-regain-balance-zkps-17b-raise-forecast-and-open-design-push-it-as-the-top-crypto-to-buy-today": {
     "title": "While Pi and XRP Regain Balance, ZKP’s $1.7B Raise Forecast and Open Design Push It as the Top Crypto to Buy Today",
     "date_covered": "2026-01-25T01:35:28.154430+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-23T16:58:19.595838+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2KY_6_lC4Mw",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-cybersecurity-operational-technology-industrial-control-systems/": {
+    "title": "NVIDIA Brings AI-Powered Cybersecurity to World’s Critical Infrastructure",
+    "date_covered": "2026-02-23T20:52:54.901488+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "CjGJ2r_Bgoc",
     "tiktok_id": null
   }
 }
