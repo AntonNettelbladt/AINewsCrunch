@@ -1,11 +1,4 @@
 {
-  "https://www.cnn.com/sport/live-news/taiwan-alex-honnold-climb-taipei-101-01-25-26-intl-hnk": {
-    "title": "Live updates: Alex Honnold summits Taipei 101 skyscraper in free solo climb",
-    "date_covered": "2026-01-25T04:54:54.820540+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "w3qPVGxRdrU",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/grokipedia-draws-attention-as-gpt-5-references-ai-generated-encyclopedia": {
     "title": "Grokipedia Draws Attention as GPT-5 References AI-Generated Encyclopedia",
     "date_covered": "2026-01-25T08:28:56.376765+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-24T01:53:51.715421+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "shKX1fgXw18",
+    "tiktok_id": null
+  },
+  "https://www.guidelabs.ai/post/steerling-8b-base-model-release/": {
+    "title": "Steerling-8B: The First Inherently Interpretable Language Model",
+    "date_covered": "2026-02-24T05:30:32.431412+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Vtl8469lkxY",
     "tiktok_id": null
   }
 }
