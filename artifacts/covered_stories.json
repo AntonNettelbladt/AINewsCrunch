@@ -1,11 +1,4 @@
 {
-  "https://www.bbc.com/news/articles/c1m77dmxlvlo": {
-    "title": "Spanish track was fractured before high-speed train disaster, report finds",
-    "date_covered": "2026-01-25T20:25:42.612519+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "k2UDCrucFro",
-    "tiktok_id": null
-  },
   "https://tomaszmachnik.pl/case-study-math-en.html": {
     "title": "Case Study: Creative Math - Faking the Proof",
     "date_covered": "2026-01-26T01:33:07.130763+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-24T17:08:08.567691+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "lfg5MKhGP4o",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-claude-faces-industrial-scale-ai-model-distillation/": {
+    "title": "Anthropic: Claude faces ‘industrial-scale’ AI model distillation",
+    "date_covered": "2026-02-24T20:36:05.175732+00:00",
+    "source": "AI News",
+    "youtube_id": "AdczEtFwGm8",
     "tiktok_id": null
   }
 }
