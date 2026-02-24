@@ -1,11 +1,4 @@
 {
-  "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/": {
-    "title": "Microsoft open sources its ‘farm of the future’ toolkit",
-    "date_covered": "2026-01-25T12:42:30.302377+00:00",
-    "source": "Microsoft AI Blog",
-    "youtube_id": "QFvVdB2mY9E",
-    "tiktok_id": null
-  },
   "https://github.com/steffest/DPaint-js": {
     "title": "steffest/DPaint-js: Webbased image editor, modeled after the legendary Deluxe Paint with a focus on retro Amiga file formats: read and write Amiga icon files and IFF ILBM images",
     "date_covered": "2026-01-25T16:27:03.871073+00:00",
@@ -1213,6 +1206,13 @@
   "https://github.com/GreatScott/enveil": {
     "title": "GreatScott/enveil: ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext.",
     "date_covered": "2026-02-24T08:47:13.507524+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/": {
+    "title": "Firefox 148 Launches with Exciting AI Kill Switch Feature and More Enhancements!",
+    "date_covered": "2026-02-24T13:02:26.344780+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
     "tiktok_id": null
