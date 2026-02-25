@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/technology/2026/jan/24/google-ai-overviews-youtube-medical-citations-study": {
-    "title": "Google AI Overviews cite YouTube more than any medical site for health queries, study suggests",
-    "date_covered": "2026-01-26T16:34:50.915030+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "QFex_3frmjc",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/how-formula-e-uses-google-cloud-ai-to-meet-net-zero-targets/": {
     "title": "How Formula E uses Google Cloud AI to meet net zero targets",
     "date_covered": "2026-01-26T20:27:23.593348+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-25T13:01:45.768717+00:00",
     "source": "AI News",
     "youtube_id": "KzztyVHbkns",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/trellis-ai/jobs/7ZlvQkN-lead-deployment-strategist": {
+    "title": "Lead Deployment Strategist at Trellis AI",
+    "date_covered": "2026-02-25T17:36:34.017031+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "cTn_MjlFj9A",
     "tiktok_id": null
   }
 }
