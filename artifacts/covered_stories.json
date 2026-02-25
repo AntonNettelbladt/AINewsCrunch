@@ -1,11 +1,4 @@
 {
-  "https://github.com/clawdbot/clawdbot": {
-    "title": "clawdbot/clawdbot: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
-    "date_covered": "2026-01-26T04:58:46.961636+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "cf0OL009Yr8",
-    "tiktok_id": null
-  },
   "https://www.sciencealert.com/scientists-identify-brain-waves-that-define-the-limits-of-you": {
     "title": "Scientists Identify Brain Waves That Define The Limits of 'You'",
     "date_covered": "2026-01-26T08:33:07.641255+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-25T01:56:11.632118+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "yM7UV4RcQHI",
+    "tiktok_id": null
+  },
+  "https://www.inceptionlabs.ai/blog/introducing-mercury-2": {
+    "title": "Introducing Mercury 2 – Inception",
+    "date_covered": "2026-02-25T05:26:54.331958+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "q6YtLES3wrQ",
     "tiktok_id": null
   }
 }
