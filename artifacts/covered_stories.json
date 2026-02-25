@@ -1,11 +1,4 @@
 {
-  "https://tomaszmachnik.pl/case-study-math-en.html": {
-    "title": "Case Study: Creative Math - Faking the Proof",
-    "date_covered": "2026-01-26T01:33:07.130763+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://github.com/clawdbot/clawdbot": {
     "title": "clawdbot/clawdbot: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
     "date_covered": "2026-01-26T04:58:46.961636+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-24T20:36:05.175732+00:00",
     "source": "AI News",
     "youtube_id": "AdczEtFwGm8",
+    "tiktok_id": null
+  },
+  "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai": {
+    "title": "US military leaders pressure Anthropic to bend Claude safeguards",
+    "date_covered": "2026-02-25T01:56:11.632118+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "yM7UV4RcQHI",
     "tiktok_id": null
   }
 }
