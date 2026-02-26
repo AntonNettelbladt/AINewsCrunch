@@ -1,11 +1,4 @@
 {
-  "https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/": {
-    "title": "Apple introduces new AirTag with expanded range and improved findability",
-    "date_covered": "2026-01-27T04:50:05.733264+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "KTm5YSjMZVA",
-    "tiktok_id": null
-  },
   "https://alexwennerberg.com/blog/2026-01-25-slop.html": {
     "title": "AI code and software craft",
     "date_covered": "2026-01-27T08:34:33.157612+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-26T01:52:00.020150+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "QzGYDI08HVk",
+    "tiktok_id": null
+  },
+  "https://github.com/Intrect-io/OpenSwarm": {
+    "title": "Intrect-io/OpenSwarm: OpenSwarm, CLI Code Agent Orchstrator",
+    "date_covered": "2026-02-26T05:23:53.298486+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "i8bpi8JAwUY",
     "tiktok_id": null
   }
 }
