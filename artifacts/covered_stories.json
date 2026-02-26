@@ -1,11 +1,4 @@
 {
-  "https://simonwillison.net/2026/Jan/26/chatgpt-containers/": {
-    "title": "ChatGPT Containers can now run bash, pip",
-    "date_covered": "2026-01-27T01:32:46.977769+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "cJOqAHKczV8",
-    "tiktok_id": null
-  },
   "https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/": {
     "title": "Apple introduces new AirTag with expanded range and improved findability",
     "date_covered": "2026-01-27T04:50:05.733264+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-25T20:37:07.301704+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "nL1FtZOdx7I",
+    "tiktok_id": null
+  },
+  "https://code.claude.com/docs/en/remote-control": {
+    "title": "Continue local sessions from any device with Remote Control",
+    "date_covered": "2026-02-26T01:52:00.020150+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "QzGYDI08HVk",
     "tiktok_id": null
   }
 }
