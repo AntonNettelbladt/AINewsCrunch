@@ -1,11 +1,4 @@
 {
-  "https://alexwennerberg.com/blog/2026-01-25-slop.html": {
-    "title": "AI code and software craft",
-    "date_covered": "2026-01-27T08:34:33.157612+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "x5gvcsteCGc",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/cold-snap-highlights-airlines-proactive-use-of-ai-airline-industrys-use-of-ai/": {
     "title": "Cold snap highlight's airlines' proactive use of AI",
     "date_covered": "2026-01-27T12:45:23.826664+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-26T05:23:53.298486+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "i8bpi8JAwUY",
+    "tiktok_id": null
+  },
+  "https://github.com/Zyora-Dev/zse": {
+    "title": "Zyora-Dev/zse: Zyora Server Inference Engine for LLM .",
+    "date_covered": "2026-02-26T08:47:22.979451+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "P-7wlxirqIE",
     "tiktok_id": null
   }
 }
