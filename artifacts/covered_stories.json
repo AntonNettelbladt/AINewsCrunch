@@ -1,11 +1,4 @@
 {
-  "https://github.com/trycua/cua": {
-    "title": "trycua/cua: Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
-    "date_covered": "2026-01-28T16:37:09.168592+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "a_k-nbVErJY",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/national-quantum-initiative/": {
     "title": "Accelerating Science: A Blueprint for a Renewed National Quantum Initiative",
     "date_covered": "2026-01-28T20:31:47.246742+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-27T12:56:28.431063+00:00",
     "source": "AI News",
     "youtube_id": "0wovh-KOjok",
+    "tiktok_id": null
+  },
+  "https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies": {
+    "title": "‘Unbelievably dangerous’: experts sound alarm after ChatGPT Health fails to recognise medical emergencies",
+    "date_covered": "2026-02-27T16:43:48.584595+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "w3T5buBwRe0",
     "tiktok_id": null
   }
 }
