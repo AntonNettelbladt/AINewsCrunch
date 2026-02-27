@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/artificial-intelligence/google-gemini-vs-chatgpt-which-ai-tool-is-better-in-2026": {
-    "title": "Google Gemini vs ChatGPT: Which AI Tool Is Better in 2026?",
-    "date_covered": "2026-01-28T04:47:08.443368+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "-HJ5H4UzbUI",
-    "tiktok_id": null
-  },
   "https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities": {
     "title": "AISLE Discovered 12 out of 12 OpenSSL Vulnerabilities",
     "date_covered": "2026-01-28T08:33:56.353523+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-02-27T01:50:38.899003+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "URt-LUhncq0",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/deploying-agentic-finance-ai-for-immediate-business-roi/": {
+    "title": "Deploying agentic finance AI for immediate business ROI",
+    "date_covered": "2026-02-27T05:19:08.011212+00:00",
+    "source": "AI News",
+    "youtube_id": "OSVGNUmjW6g",
     "tiktok_id": null
   }
 }
