@@ -1,11 +1,4 @@
 {
-  "https://github.com/jmuncor/sherlock": {
-    "title": "jmuncor/sherlock: Intercept LLM API traffic and visualize token usage in a real-time terminal dashboard. Track costs, debug prompts, and monitor context window usage across your AI development session",
-    "date_covered": "2026-01-29T01:50:26.356811+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Dlub8Bfy5i8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/white-house-predicts-ai-growth-with-comparison-industrial-and-artificial-intelligence-revolutions/": {
     "title": "White House predicts AI growth will boost GDP",
     "date_covered": "2026-01-29T05:09:19.264233+00:00",
@@ -1222,6 +1215,13 @@
     "date_covered": "2026-02-28T01:33:52.399355+00:00",
     "source": "AI News",
     "youtube_id": "7FyUeeA4hww",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/how-ai-agents-create-new-disasters-when-they-interact/": {
+    "title": "Destroyed servers and DoS attacks: What can happen when OpenClaw AI agents interact",
+    "date_covered": "2026-02-28T04:59:43.449748+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "31JqJ7ieKh4",
     "tiktok_id": null
   }
 }
