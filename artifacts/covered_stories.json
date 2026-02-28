@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/masumi-network-how-ai-blockchain-fusion-adds-trust-to-burgeoning-agent-economy/": {
-    "title": "Masumi Network: How AI-blockchain fusion adds trust to burgeoning agent economy",
-    "date_covered": "2026-01-29T08:40:22.085110+00:00",
-    "source": "AI News",
-    "youtube_id": "MX210S_7oQ8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/deloitte-agentic-ai-guidelines-published/": {
     "title": "Deloitte sounds alarm as AI agent deployment outruns safety frameworks",
     "date_covered": "2026-01-29T12:53:42.959116+00:00",
@@ -1222,6 +1215,13 @@
     "date_covered": "2026-02-28T08:31:37.703541+00:00",
     "source": "AI News",
     "youtube_id": "5b70YWMyp7A",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/ai-auditor-new-job-role-monitors-model-behavior/": {
+    "title": "Meet your AI auditor: How this new job role monitors model behavior",
+    "date_covered": "2026-02-28T12:43:03.720942+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "7t_mei7nPAo",
     "tiktok_id": null
   }
 }
