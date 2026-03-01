@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/china-hyperscalers-agentic-ai-commerce-battleground/": {
-    "title": "China’s hyperscalers bet billions on agentic AI as commerce becomes the new battleground",
-    "date_covered": "2026-01-30T12:50:51.222133+00:00",
-    "source": "AI News",
-    "youtube_id": "Bjri5ddSzWE",
-    "tiktok_id": null
-  },
   "https://github.com/amlalabs/amla-sandbox": {
     "title": "amlalabs/amla-sandbox",
     "date_covered": "2026-01-30T16:41:05.464735+00:00",
@@ -1215,6 +1208,13 @@
     "date_covered": "2026-03-01T08:31:26.312087+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "pDk99pG5lEQ",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/how-ai-designs-sudoku-games-and-puzzle-apps-that-keep-you-hooked": {
+    "title": "How AI Designs Sudoku Games and Puzzle Apps That Keep You Hooked",
+    "date_covered": "2026-03-01T16:28:03.932008+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "AXPFQoLVsFM",
     "tiktok_id": null
   }
 }
