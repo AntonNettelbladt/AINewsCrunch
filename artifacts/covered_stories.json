@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/pepsico-is-using-ai-to-rethink-how-factories-are-designed-and-updated/": {
-    "title": "PepsiCo uses AI to rethink how factories are designed and updated",
-    "date_covered": "2026-01-30T20:32:27.501161+00:00",
-    "source": "AI News",
-    "youtube_id": "Kpq5SOMXM0A",
-    "tiktok_id": null
-  },
-  "https://dalelane.co.uk/blog/?p=5847": {
-    "title": "How to explain Generative AI in the classroom",
-    "date_covered": "2026-01-31T01:35:54.926976+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "XFs39jh5Dkw",
-    "tiktok_id": null
-  },
   "https://www.techradar.com/pro/security/over-175-000-publicly-exposed-ollama-ai-servers-discovered-worldwide-so-fix-now": {
     "title": "Over 175,000 publicly exposed Ollama AI servers discovered worldwide - so fix now",
     "date_covered": "2026-01-31T05:05:44.135371+00:00",
@@ -1215,6 +1201,13 @@
     "date_covered": "2026-03-01T20:27:08.198152+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "qVPLzMZFRT4",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-agentic-ai-blueprints-telco-reasoning-models/": {
+    "title": "NVIDIA Advances Autonomous Networks With Agentic AI Blueprints and Telco Reasoning Models",
+    "date_covered": "2026-03-02T01:54:18.039894+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "8RJAAOkbnXY",
     "tiktok_id": null
   }
 }
