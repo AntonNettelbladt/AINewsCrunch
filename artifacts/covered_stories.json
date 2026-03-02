@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/how-to-learn-chatgpt-fast-free/": {
-    "title": "How to learn ChatGPT in an hour - for free",
-    "date_covered": "2026-01-31T12:44:23.002131+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "Cu5BIRnCS68",
-    "tiktok_id": null
-  },
   "https://www.theguardian.com/technology/2026/jan/31/us-authorities-reportedly-investigate-claims-that-meta-can-read-encrypted-whatsapp-messages": {
     "title": "US authorities reportedly investigate claims that Meta can read encrypted WhatsApp messages",
     "date_covered": "2026-01-31T16:28:29.493651+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-02T08:44:46.299723+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2w5a2hjbsLE",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/software-defined-ai-ran/": {
+    "title": "NVIDIA and Partners Show That Software-Defined AI-RAN Is the Next Wireless Generation",
+    "date_covered": "2026-03-02T12:54:40.169085+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "_VH4Ci1Pm9s",
     "tiktok_id": null
   }
 }
