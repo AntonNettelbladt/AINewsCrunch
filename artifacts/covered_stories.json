@@ -1,11 +1,4 @@
 {
-  "https://finance.yahoo.com/news/musks-starlink-updates-privacy-policy-230853500.html": {
-    "title": "Musk's Starlink updates privacy policy to allow consumer data to train AI",
-    "date_covered": "2026-01-31T08:32:06.959003+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "BV-sB95AvMk",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/how-to-learn-chatgpt-fast-free/": {
     "title": "How to learn ChatGPT in an hour - for free",
     "date_covered": "2026-01-31T12:44:23.002131+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-02T01:54:18.039894+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "8RJAAOkbnXY",
+    "tiktok_id": null
+  },
+  "https://www.bbc.com/future/article/20260226-how-ai-can-read-your-thoughts": {
+    "title": "How AI can read our scrambled inner thoughts",
+    "date_covered": "2026-03-02T08:44:46.299723+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "2w5a2hjbsLE",
     "tiktok_id": null
   }
 }
