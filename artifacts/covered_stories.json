@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/technology/2026/jan/31/us-authorities-reportedly-investigate-claims-that-meta-can-read-encrypted-whatsapp-messages": {
-    "title": "US authorities reportedly investigate claims that Meta can read encrypted WhatsApp messages",
-    "date_covered": "2026-01-31T16:28:29.493651+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "kS-4cIqhYcE",
-    "tiktok_id": null
-  },
   "https://github.com/rtvkiz/minimal": {
     "title": "rtvkiz/minimal: Minimal CVE Hardened container image collection",
     "date_covered": "2026-01-31T20:30:11.798318+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-02T12:54:40.169085+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "_VH4Ci1Pm9s",
+    "tiktok_id": null
+  },
+  "https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02": {
+    "title": "First-ever in-utero stem cell therapy for fetal spina bifida repair is safe, study finds",
+    "date_covered": "2026-03-02T16:46:31.477024+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "pIUq5q8327E",
     "tiktok_id": null
   }
 }
