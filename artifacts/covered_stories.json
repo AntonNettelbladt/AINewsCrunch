@@ -1,11 +1,4 @@
 {
-  "https://phys.org/news/2026-01-sprint-marathon-aging-muscle-stem.html": {
-    "title": "Sprint or marathon? Aging muscle stem cells shift from rapid repair to long-term survival",
-    "date_covered": "2026-02-01T20:27:29.635880+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "DgJ71-Mlwe4",
-    "tiktok_id": null
-  },
   "https://github.com/gavrielc/nanoclaw": {
     "title": "gavrielc/nanoclaw: My personal Claude assistant that runs in Apple containers. Lightweight, secure, and built to be understood and customized for your own needs.",
     "date_covered": "2026-02-02T01:56:06.954526+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-03T16:49:17.591447+00:00",
     "source": "AI News",
     "youtube_id": "yz18Vsu9cSc",
+    "tiktok_id": null
+  },
+  "https://leandojo.org/torchlean.html": {
+    "title": "TorchLean: Formalizing Neural Networks in Lean",
+    "date_covered": "2026-03-03T20:35:42.123364+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "fVzDEXDyHIo",
     "tiktok_id": null
   }
 }
