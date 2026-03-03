@@ -1,11 +1,4 @@
 {
-  "https://github.com/zuckermanai/zuckerman": {
-    "title": "zuckermanai/zuckerman: A personal AI that starts minimal, self-improves in real-time, and shares its discoveries with other agents.",
-    "date_covered": "2026-02-01T16:30:08.148804+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "swuw2MnW0hM",
-    "tiktok_id": null
-  },
   "https://phys.org/news/2026-01-sprint-marathon-aging-muscle-stem.html": {
     "title": "Sprint or marathon? Aging muscle stem cells shift from rapid repair to long-term survival",
     "date_covered": "2026-02-01T20:27:29.635880+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-03T08:41:51.722161+00:00",
     "source": "AI News",
     "youtube_id": "ROFJZxv9QoE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/santander-and-mastercard-run-europe-first-ai-executed-payment-pilot/": {
+    "title": "Santander and Mastercard run Europe’s first AI-executed payment pilot",
+    "date_covered": "2026-03-03T16:49:17.591447+00:00",
+    "source": "AI News",
+    "youtube_id": "yz18Vsu9cSc",
     "tiktok_id": null
   }
 }
