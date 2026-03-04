@@ -1,11 +1,4 @@
 {
-  "https://github.com/gavrielc/nanoclaw": {
-    "title": "gavrielc/nanoclaw: My personal Claude assistant that runs in Apple containers. Lightweight, secure, and built to be understood and customized for your own needs.",
-    "date_covered": "2026-02-02T01:56:06.954526+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "FvFETPCWYCM",
-    "tiktok_id": null
-  },
   "https://martinalderson.com/posts/two-kinds-of-ai-users-are-emerging/": {
     "title": "Two kinds of AI users are emerging. The gap between them is astonishing.",
     "date_covered": "2026-02-02T05:27:25.011461+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-04T01:49:41.036040+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "0vfvVCPzdmM",
+    "tiktok_id": null
+  },
+  "https://www.ifixit.com/News/115827/new-thinkpads-score-perfect-10-repairability": {
+    "title": "Lenovo’s New T-Series ThinkPads Score 10/10 for Repairability",
+    "date_covered": "2026-03-04T05:11:59.732900+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "OzhoaNQIOzk",
     "tiktok_id": null
   }
 }
