@@ -1,11 +1,4 @@
 {
-  "https://www.windowscentral.com/microsoft/windows-11/microsoft-is-reevaluating-its-ai-efforts-on-windows-11-plans-to-reduce-copilot-integrations-and-evolve-recall": {
-    "title": "You won: Microsoft is walking back Windows 11’s AI overload",
-    "date_covered": "2026-02-02T12:57:34.512108+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "DopuuQwLoao",
-    "tiktok_id": null
-  },
   "https://neutree.ai/blog/nano-vllm-part-1": {
     "title": "Understanding LLM Inference Engines: Inside Nano-vLLM (Part 1)",
     "date_covered": "2026-02-02T16:42:10.127576+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-04T12:52:11.858045+00:00",
     "source": "AI News",
     "youtube_id": "KJkYnzCNz9A",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/nanoclaw-security-guide/": {
+    "title": "Want to try OpenClaw? NanoClaw is a simpler, potentially safer AI agent - and it's open source",
+    "date_covered": "2026-03-04T16:44:01.497173+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "sudJPz3h1yU",
     "tiktok_id": null
   }
 }
