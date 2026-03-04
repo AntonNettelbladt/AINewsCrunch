@@ -1,11 +1,4 @@
 {
-  "https://neutree.ai/blog/nano-vllm-part-1": {
-    "title": "Understanding LLM Inference Engines: Inside Nano-vLLM (Part 1)",
-    "date_covered": "2026-02-02T16:42:10.127576+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "UkaSarRf6Y4",
-    "tiktok_id": null
-  },
   "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/": {
     "title": "Advancing AI benchmarking with Game Arena",
     "date_covered": "2026-02-03T01:55:36.115874+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-04T16:44:01.497173+00:00",
     "source": "ZDNet AI",
     "youtube_id": "sudJPz3h1yU",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/physical-ai-global-race-robots-manufacturing-2026/": {
+    "title": "Physical AI is having its moment and everyone wants a piece of it",
+    "date_covered": "2026-03-04T20:34:28.343631+00:00",
+    "source": "AI News",
+    "youtube_id": "GASuBi21buQ",
     "tiktok_id": null
   }
 }
