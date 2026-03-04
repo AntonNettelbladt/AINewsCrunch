@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/the-red-bull-leaks/": {
-    "title": "Revealed: Leaked Chats Expose the Daily Life of a Scam Compound’s Enslaved Workforce",
-    "date_covered": "2026-02-02T08:43:35.866168+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "eedrzmuAeFE",
-    "tiktok_id": null
-  },
   "https://www.windowscentral.com/microsoft/windows-11/microsoft-is-reevaluating-its-ai-efforts-on-windows-11-plans-to-reduce-copilot-integrations-and-evolve-recall": {
     "title": "You won: Microsoft is walking back Windows 11’s AI overload",
     "date_covered": "2026-02-02T12:57:34.512108+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-04T08:39:54.869298+00:00",
     "source": "AI News",
     "youtube_id": "QUz2QXvhbEw",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-agents-prefer-bitcoin-new-finance-architecture/": {
+    "title": "AI agents prefer Bitcoin shaping new finance architecture",
+    "date_covered": "2026-03-04T12:52:11.858045+00:00",
+    "source": "AI News",
+    "youtube_id": "KJkYnzCNz9A",
     "tiktok_id": null
   }
 }
