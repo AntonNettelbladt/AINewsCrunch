@@ -1,11 +1,4 @@
 {
-  "https://securelist.com/notepad-supply-chain-attack/118708/": {
-    "title": "The Notepad++ supply chain attack — unnoticed execution chains and new IoCs",
-    "date_covered": "2026-02-04T05:13:33.084839+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "PxS3hVPw5fA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/thoughtspot-on-the-new-fleet-of-agents-delivering-modern-analytics/": {
     "title": "ThoughtSpot: On the new fleet of agents delivering modern analytics",
     "date_covered": "2026-02-04T08:41:57.390033+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-03-06T05:14:03.188996+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "RiFq2yXhMKI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/dyna-ai-series-a-agentic-ai-financial-services/": {
+    "title": "Beyond the pilot: Dyna.Ai raises eight-figure Series A to put agentic AI in financial services to work",
+    "date_covered": "2026-03-06T08:38:35.131182+00:00",
+    "source": "AI News",
+    "youtube_id": "sISvvGIS0_Y",
     "tiktok_id": null
   }
 }
