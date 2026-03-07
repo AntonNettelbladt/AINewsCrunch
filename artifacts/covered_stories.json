@@ -1,11 +1,4 @@
 {
-  "https://github.com/MaxBittker/rs-sdk": {
-    "title": "MaxBittker/rs-sdk: Runescape automation library, optimized for use by coding agents.",
-    "date_covered": "2026-02-05T05:20:47.341937+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "clEBdpqfq2s",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/openai-ai-consultants-enterprise-adoption-challenges/": {
     "title": "OpenAI's Enterprise Push: Hiring Spree Reveals AI Sales War",
     "date_covered": "2026-02-05T08:42:49.153707+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-03-07T05:03:55.225644+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "e82O5842jZQ",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/how-to-target-your-ai-investments-gartner/": {
+    "title": "90% of AI projects fail - here are 3 ways to ensure yours doesn't",
+    "date_covered": "2026-03-07T08:32:12.841710+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "zop5FWHiZ_o",
     "tiktok_id": null
   }
 }
