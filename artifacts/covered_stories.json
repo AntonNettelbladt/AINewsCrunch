@@ -1,11 +1,4 @@
 {
-  "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/": {
-    "title": "Claude Code: connect to a local model when your quota runs out",
-    "date_covered": "2026-02-04T20:35:55.611283+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "IYW7jJpNVsE",
-    "tiktok_id": null
-  },
   "https://www.fluid.sh/": {
     "title": "fluid.sh",
     "date_covered": "2026-02-05T01:52:11.556392+00:00",
@@ -1208,6 +1201,13 @@
     "date_covered": "2026-03-06T20:33:36.944343+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "H1c25xxlV24",
+    "tiktok_id": null
+  },
+  "https://yasint.dev/we-might-all-be-ai-engineers-now/": {
+    "title": "We Might All Be AI Engineers Now — Yas",
+    "date_covered": "2026-03-07T01:46:32.285492+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "JQEonUVf4XA",
     "tiktok_id": null
   }
 }
