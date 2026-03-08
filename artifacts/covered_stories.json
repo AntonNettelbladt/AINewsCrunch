@@ -1,11 +1,4 @@
 {
-  "https://mitchellh.com/writing/my-ai-adoption-journey": {
-    "title": "My AI Adoption Journey",
-    "date_covered": "2026-02-06T08:42:07.683506+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "pbE_vV7YMIE",
-    "tiktok_id": null
-  },
   "https://github.com/labring/sealos": {
     "title": "labring/sealos: Sealos is an AI-native Cloud Operating System built on Kubernetes that unifies the entire application lifecycle, from development in cloud IDEs to production deployment and management.",
     "date_covered": "2026-02-06T12:57:42.407394+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-08T08:31:49.073546+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "JLaAPLZ9N_Q",
+    "tiktok_id": null
+  },
+  "https://beyondloom.com/blog/onwigglypaint.html": {
+    "title": "Untitled",
+    "date_covered": "2026-03-08T12:45:41.722476+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1YMow7S4868",
     "tiktok_id": null
   }
 }
