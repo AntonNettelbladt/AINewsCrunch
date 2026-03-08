@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/openai-frontier-manage-enterprise-ai-agents-like-palantir/": {
-    "title": "OpenAI's Frontier wants to manage your AI agents - it could upend enterprise software, too",
-    "date_covered": "2026-02-06T01:52:14.156456+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "TNT6ePVEaAU",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/claude-opus-4-6": {
     "title": "Claude Opus 4.6",
     "date_covered": "2026-02-06T05:21:44.502504+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-08T01:54:02.098682+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "6E5Q_1P5CnQ",
+    "tiktok_id": null
+  },
+  "https://www.lloydslist.com/LL1156532/They-all-said-Hormuz-closure-would-be-brief-What-if-they-were-wrong": {
+    "title": "They all said Hormuz closure would be brief. What if they were wrong?",
+    "date_covered": "2026-03-08T05:14:01.907334+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Q9lbi-2Kxu4",
     "tiktok_id": null
   }
 }
