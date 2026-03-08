@@ -1,11 +1,4 @@
 {
-  "https://www.anthropic.com/news/claude-opus-4-6": {
-    "title": "Claude Opus 4.6",
-    "date_covered": "2026-02-06T05:21:44.502504+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "r9rXiofo-O4",
-    "tiktok_id": null
-  },
   "https://mitchellh.com/writing/my-ai-adoption-journey": {
     "title": "My AI Adoption Journey",
     "date_covered": "2026-02-06T08:42:07.683506+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-08T05:14:01.907334+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Q9lbi-2Kxu4",
+    "tiktok_id": null
+  },
+  "https://www.infoq.com/news/2026/03/agents-context-file-value-review/": {
+    "title": "New Research Reassesses the Value of AGENTS.md Files for AI Coding",
+    "date_covered": "2026-03-08T08:31:49.073546+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "JLaAPLZ9N_Q",
     "tiktok_id": null
   }
 }
