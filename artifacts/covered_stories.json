@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/how-cisco-builds-smart-systems-for-the-ai-era/": {
-    "title": "How Cisco builds smart systems for the AI era",
-    "date_covered": "2026-02-07T20:27:53.718030+00:00",
-    "source": "AI News",
-    "youtube_id": "AONSSTC4dt8",
-    "tiktok_id": null
-  },
   "https://www.fda.gov/news-events/press-announcements/fda-intends-take-action-against-non-fda-approved-glp-1-drugs": {
     "title": "FDA Intends to Take Action Against Non-FDA-Approved GLP-1 Drugs",
     "date_covered": "2026-02-08T02:14:31.759209+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-09T17:03:50.223965+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "sg8m8Eoh6yQ",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/abb-robotics-omniverse/": {
+    "title": "ABB Robotics Taps NVIDIA Omniverse to Deliver Industrial‑Grade Physical AI at Scale",
+    "date_covered": "2026-03-09T20:38:20.365918+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "h39EyVD35Rc",
     "tiktok_id": null
   }
 }
