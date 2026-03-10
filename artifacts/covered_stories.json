@@ -1,11 +1,4 @@
 {
-  "https://ezhik.jp/ai-slop-terrifies-me/": {
-    "title": "(AI) Slop Terrifies Me – ezhik.jp",
-    "date_covered": "2026-02-08T12:46:38.985579+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "wsBk7U9tfoA",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/mercedes-benz-l4-s-class-drive-av-platform/": {
     "title": "Mercedes-Benz Unveils New S-Class Built on NVIDIA DRIVE AV, Which Enables an L4-Ready Architecture",
     "date_covered": "2026-02-08T16:32:19.520823+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-10T08:42:08.987438+00:00",
     "source": "AI News",
     "youtube_id": "-u0zoBtZwUg",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/ai-curse-and-blessing-to-open-source-software-deveopers/": {
+    "title": "Why AI is both a curse and a blessing to open-source software - according to developers",
+    "date_covered": "2026-03-10T12:58:54.629487+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "q6-DDSaKFmI",
     "tiktok_id": null
   }
 }
