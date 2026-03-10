@@ -1,18 +1,4 @@
 {
-  "https://federicopereiro.com/llm-high/": {
-    "title": "~fpereiro",
-    "date_covered": "2026-02-08T05:27:57.809612+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2hxXX_38Nlg",
-    "tiktok_id": null
-  },
-  "https://techcrunch.com/2026/02/05/substack-confirms-data-breach-affecting-email-addresses-and-phone-numbers/": {
-    "title": "Substack confirms data breach affects users’ email addresses and phone numbers",
-    "date_covered": "2026-02-08T08:33:49.445762+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "cT8rufvCXOE",
-    "tiktok_id": null
-  },
   "https://ezhik.jp/ai-slop-terrifies-me/": {
     "title": "(AI) Slop Terrifies Me – ezhik.jp",
     "date_covered": "2026-02-08T12:46:38.985579+00:00",
@@ -1180,6 +1166,13 @@
     "date_covered": "2026-03-10T05:13:03.657794+00:00",
     "source": "AI News",
     "youtube_id": "kvnmvIxLyIM",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/gradient-ai-cibc-ai-insurance-underwriting-growth-capital/": {
+    "title": "Why AI insurance underwriting is finally attracting institutional capital",
+    "date_covered": "2026-03-10T08:42:08.987438+00:00",
+    "source": "AI News",
+    "youtube_id": "-u0zoBtZwUg",
     "tiktok_id": null
   }
 }
