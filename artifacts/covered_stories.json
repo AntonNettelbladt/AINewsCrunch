@@ -1,11 +1,4 @@
 {
-  "https://www.blundergoat.com/articles/ai-makes-the-easy-part-easier-and-the-hard-part-harder": {
-    "title": "AI Makes the Easy Part Easier and the Hard Part Harder for Developers",
-    "date_covered": "2026-02-09T08:51:24.296617+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "4Axt2W4pdoU",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/artificial-intelligence/ai-in-education-use-cases-benefits-and-future-trends": {
     "title": "AI in Education: Use Cases, Benefits, and Future Trends",
     "date_covered": "2026-02-09T13:06:17.044812+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-11T08:41:49.881128+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "p9XhjulsriI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/manulife-moves-ai-agents-into-core-financial-workflows/": {
+    "title": "Manulife moves AI agents into core financial workflows",
+    "date_covered": "2026-03-11T12:57:23.511410+00:00",
+    "source": "AI News",
+    "youtube_id": "zG73pFQU92E",
     "tiktok_id": null
   }
 }
