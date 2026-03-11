@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/artificial-intelligence/ai-in-education-use-cases-benefits-and-future-trends": {
-    "title": "AI in Education: Use Cases, Benefits, and Future Trends",
-    "date_covered": "2026-02-09T13:06:17.044812+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "Os26x4cW35w",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/goldman-sachs-tests-autonomous-ai-agents-for-process-heavy-work/": {
     "title": "Goldman Sachs tests autonomous AI agents for process work",
     "date_covered": "2026-02-09T20:41:12.646047+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-11T12:57:23.511410+00:00",
     "source": "AI News",
     "youtube_id": "zG73pFQU92E",
+    "tiktok_id": null
+  },
+  "https://github.com/theredsix/agent-browser-protocol": {
+    "title": "GitHub - theredsix/agent-browser-protocol: Browsers are async. Agents are synchronous. ABP turns continuous browsing into discrete, atomic steps—so LLMs can reason about the web without racing against",
+    "date_covered": "2026-03-11T16:50:58.783770+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "JEjSH20Q03A",
     "tiktok_id": null
   }
 }
