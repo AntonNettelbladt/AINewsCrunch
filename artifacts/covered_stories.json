@@ -1,11 +1,4 @@
 {
-  "https://apnews.com/article/semiconductors-tsmc-japan-taiwan-ai-11256f2bfde73ca23d08331ad138d6d5": {
-    "title": "TSMC to make advanced AI semiconductors in Japan in boost for its chipmaking ambitions",
-    "date_covered": "2026-02-09T05:32:03.483116+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nxzgYKNn0d0",
-    "tiktok_id": null
-  },
   "https://www.blundergoat.com/articles/ai-makes-the-easy-part-easier-and-the-hard-part-harder": {
     "title": "AI Makes the Easy Part Easier and the Hard Part Harder for Developers",
     "date_covered": "2026-02-09T08:51:24.296617+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-11T05:14:26.051814+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "b-OTJe-VsL8",
+    "tiktok_id": null
+  },
+  "https://github.com/RunanywhereAI/rcli": {
+    "title": "GitHub - RunanywhereAI/RCLI: Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG",
+    "date_covered": "2026-03-11T08:41:49.881128+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "p9XhjulsriI",
     "tiktok_id": null
   }
 }
