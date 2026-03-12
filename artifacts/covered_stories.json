@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/chinese-ai-models-175k-unprotected-systems-western-retreat/": {
-    "title": "Exclusive: Why are Chinese AI models dominating open-source as Western labs step back?",
-    "date_covered": "2026-02-10T02:09:04.904739+00:00",
-    "source": "AI News",
-    "youtube_id": "XI9WkxVxtf4",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/stocks/types-of-stocks-you-should-know-before-investing-large-cap-mid-cap-penny-stocks": {
     "title": "Types of Stocks You Should Know Before Investing (Large-Cap, Mid-Cap, Penny Stocks)",
     "date_covered": "2026-02-10T05:33:14.130968+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-12T01:50:17.350703+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "HWcXNeqpJHw",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/": {
+    "title": "New NVIDIA Nemotron 3 Super Delivers 5x Higher Throughput for Agentic AI",
+    "date_covered": "2026-03-12T05:20:57.937694+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "EDcVcZJtPQo",
     "tiktok_id": null
   }
 }
