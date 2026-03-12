@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/stocks/types-of-stocks-you-should-know-before-investing-large-cap-mid-cap-penny-stocks": {
-    "title": "Types of Stocks You Should Know Before Investing (Large-Cap, Mid-Cap, Penny Stocks)",
-    "date_covered": "2026-02-10T05:33:14.130968+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "s2VwVoWwLXI",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/press-release/curapod-raises-20-cr-in-pre-series-a-led-by-v3-ventures-3i-partners-and-ideaspring-capital": {
     "title": "CURAPOD Raises ₹20 Cr in Pre-Series A Led by V3 Ventures, 3i Partners and Ideaspring Capital",
     "date_covered": "2026-02-10T08:51:11.836291+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-12T05:20:57.937694+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "EDcVcZJtPQo",
+    "tiktok_id": null
+  },
+  "https://www.theverge.com/featured-video/892850/i-was-interviewed-by-an-ai-bot-for-a-job": {
+    "title": "I was interviewed by an AI bot for a job",
+    "date_covered": "2026-03-12T08:42:55.508693+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mEJf21sY2TI",
     "tiktok_id": null
   }
 }
