@@ -1,11 +1,4 @@
 {
-  "https://oxide.computer/blog/our-200m-series-c": {
-    "title": "Our $200M Series C",
-    "date_covered": "2026-02-10T17:05:52.284847+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ZElBSxivxJM",
-    "tiktok_id": null
-  },
   "https://github.com/rowboatlabs/rowboat": {
     "title": "rowboatlabs/rowboat: Open-source AI coworker, with memory",
     "date_covered": "2026-02-10T20:45:23.673895+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-12T17:00:37.202300+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "UgAdWbfS01A",
+    "tiktok_id": null
+  },
+  "https://github.com/onecli/onecli": {
+    "title": "GitHub - onecli/onecli: Open-source credential vault, give your AI agents access to services without exposing keys.",
+    "date_covered": "2026-03-12T20:35:45.359866+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "dlyWXnxAa_I",
     "tiktok_id": null
   }
 }
