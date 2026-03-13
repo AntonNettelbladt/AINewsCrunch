@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/chinese-hyperscalers-and-industry-specific-chinas-agentic-ai/": {
-    "title": "Chinese hyperscalers and industry-specific agentic AI",
-    "date_covered": "2026-02-11T13:07:43.303481+00:00",
-    "source": "AI News",
-    "youtube_id": "XMbLD2ums1w",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/agentic-ai-healthcare-pharma-marketing-450b-value-2028/": {
     "title": "Agentic AI in healthcare: How Life Sciences marketing could achieve $450B in value by 2028",
     "date_covered": "2026-02-11T17:07:05.090381+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-13T12:55:50.583513+00:00",
     "source": "AI News",
     "youtube_id": "3tryH79yv6c",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai2-building-physical-ai-with-virtual-simulation-data/": {
+    "title": "Ai2: Building physical AI with virtual simulation data",
+    "date_covered": "2026-03-13T16:41:11.957372+00:00",
+    "source": "AI News",
+    "youtube_id": "Og6SwoVkY4s",
     "tiktok_id": null
   }
 }
