@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/3-easy-ways-to-upgrade-your-headphones-free/": {
-    "title": "My simple tweaks that bring dead-sounding headphones back to life - Sony and Bose included",
-    "date_covered": "2026-02-11T02:04:59.318293+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "q0MqXqZG3ro",
-    "tiktok_id": null
-  },
   "https://mitpress.mit.edu/9780262546379/the-little-learner/": {
     "title": "The Little Learner",
     "date_covered": "2026-02-11T05:30:05.561421+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-13T01:52:25.407917+00:00",
     "source": "AI News",
     "youtube_id": "Kg3NNE41_6M",
+    "tiktok_id": null
+  },
+  "https://www.systemverilog.io/design/ddr4-initialization-and-calibration/": {
+    "title": "Initialization, Training and Calibration",
+    "date_covered": "2026-03-13T05:17:06.491056+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "edi40jysfFg",
     "tiktok_id": null
   }
 }
