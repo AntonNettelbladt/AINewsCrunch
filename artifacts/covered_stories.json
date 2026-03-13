@@ -1,11 +1,4 @@
 {
-  "https://github.com/rowboatlabs/rowboat": {
-    "title": "rowboatlabs/rowboat: Open-source AI coworker, with memory",
-    "date_covered": "2026-02-10T20:45:23.673895+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "CFHnsfZ6BD4",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/3-easy-ways-to-upgrade-your-headphones-free/": {
     "title": "My simple tweaks that bring dead-sounding headphones back to life - Sony and Bose included",
     "date_covered": "2026-02-11T02:04:59.318293+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-12T20:35:45.359866+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "dlyWXnxAa_I",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/fifa-ai-world-cup-2026-lenovo/": {
+    "title": "FIFA is rebuilding world football operations on AI. The World Cup is just the first test",
+    "date_covered": "2026-03-13T01:52:25.407917+00:00",
+    "source": "AI News",
+    "youtube_id": "Kg3NNE41_6M",
     "tiktok_id": null
   }
 }
