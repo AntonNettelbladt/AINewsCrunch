@@ -1,11 +1,4 @@
 {
-  "https://symmetrybreak.ing/blog/claude-code-is-being-dumbed-down/": {
-    "title": "Claude Code Is Being Dumbed Down",
-    "date_covered": "2026-02-11T20:55:02.417560+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "v9leBDmYStA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/red-hat-unifies-ai-tactical-edge-deployment-for-uk-mod/": {
     "title": "Red Hat unifies AI and tactical edge deployment for UK MOD",
     "date_covered": "2026-02-12T01:58:21.322564+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-13T20:35:08.215174+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "s_bC9KnVa44",
+    "tiktok_id": null
+  },
+  "https://claude.com/blog/1m-context-ga": {
+    "title": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+    "date_covered": "2026-03-14T01:50:05.017079+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "sRPdezzCu6w",
     "tiktok_id": null
   }
 }
