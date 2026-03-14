@@ -1,11 +1,4 @@
 {
-  "http://blog.can.ac/2026/02/12/the-harness-problem/": {
-    "title": "I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed.",
-    "date_covered": "2026-02-12T16:59:08.354354+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "g16ogOLlzO8",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation": {
     "title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
     "date_covered": "2026-02-12T20:38:45.859823+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-14T16:32:36.944009+00:00",
     "source": "AI News",
     "youtube_id": "yLpfEd3r6wc",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/agentic-ai-in-finance-speeds-up-operational-automation/": {
+    "title": "Agentic AI in finance speeds up operational automation",
+    "date_covered": "2026-03-14T20:29:00.818366+00:00",
+    "source": "AI News",
+    "youtube_id": "lwMykQDSb_U",
     "tiktok_id": null
   }
 }
