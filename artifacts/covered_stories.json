@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/runway-ai-video-tool-motion-sketch/": {
-    "title": "Turn your doodles into video clips in minutes with this new AI tool - here's how",
-    "date_covered": "2026-02-14T08:33:13.255148+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "UOjRdx0GKPQ",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/press-release/indias-it-sector-is-successfully-navigating-genai-transition-icrier-openai-report": {
     "title": "India’s IT Sector is Successfully Navigating GenAI Transition: ICRIER & OpenAI Report",
     "date_covered": "2026-02-14T12:46:10.495244+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-16T05:53:15.227350+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "JVtz28zN1lI",
+    "tiktok_id": null
+  },
+  "https://www.salk.edu/news-release/cannabinoids-remove-plaque-forming-alzheimers-proteins-from-brain-cells/": {
+    "title": "Cannabinoids remove plaque-forming Alzheimer’s proteins from brain cells",
+    "date_covered": "2026-03-16T08:57:13.277590+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "8yjz-ri7HSc",
     "tiktok_id": null
   }
 }
