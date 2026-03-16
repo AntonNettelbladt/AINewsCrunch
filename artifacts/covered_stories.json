@@ -1,18 +1,4 @@
 {
-  "https://www.moltis.org": {
-    "title": "Moltis: Your Personal AI Assistant",
-    "date_covered": "2026-02-13T20:39:18.717747+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "8L8qMBTHm1g",
-    "tiktok_id": null
-  },
-  "https://theconversation.com/openai-has-deleted-the-word-safely-from-its-mission-and-its-new-structure-is-a-test-for-whether-ai-serves-society-or-shareholders-274467": {
-    "title": "OpenAI has deleted the word ‘safely’ from its mission – and its new structure is a test for whether AI serves society or shareholders",
-    "date_covered": "2026-02-14T01:50:17.393194+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "k1yhda60nd0",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-forecasting-model-targets-healthcare-resource-efficiency/": {
     "title": "AI forecasting model targets healthcare resource efficiency",
     "date_covered": "2026-02-14T05:12:48.813184+00:00",
@@ -1187,6 +1173,13 @@
     "date_covered": "2026-03-15T20:29:24.281656+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "Vaa2oxBbQYA",
+    "tiktok_id": null
+  },
+  "https://github.com/EvanZhouDev/openai-oauth": {
+    "title": "GitHub - EvanZhouDev/openai-oauth: Free OpenAI API access with your ChatGPT account.",
+    "date_covered": "2026-03-16T02:07:07.215558+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "fQO5SzABSOg",
     "tiktok_id": null
   }
 }
