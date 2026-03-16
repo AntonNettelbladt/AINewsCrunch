@@ -1,11 +1,4 @@
 {
-  "https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/": {
-    "title": "My smart sleep mask broadcasts users' brainwaves to an open MQTT broker",
-    "date_covered": "2026-02-14T16:29:56.703861+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "GjHyxCDFJYc",
-    "tiktok_id": null
-  },
   "https://blog.janestreet.com/fun-with-algebraic-effects-hardcaml/": {
     "title": "from Toy Examples to Hardcaml Simulations",
     "date_covered": "2026-02-14T20:27:04.157703+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-16T13:08:00.711707+00:00",
     "source": "AI News",
     "youtube_id": "6L2mJEYvqYw",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/us-treasury-publishes-ai-risk-governance-guidebook-for-financial-institutions/": {
+    "title": "US Treasury publishes AI risk Guidebook for financial institutions",
+    "date_covered": "2026-03-16T17:03:18.395705+00:00",
+    "source": "AI News",
+    "youtube_id": "XCDDHnMzFVo",
     "tiktok_id": null
   }
 }
