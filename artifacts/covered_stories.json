@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-forecasting-model-targets-healthcare-resource-efficiency/": {
-    "title": "AI forecasting model targets healthcare resource efficiency",
-    "date_covered": "2026-02-14T05:12:48.813184+00:00",
-    "source": "AI News",
-    "youtube_id": "ygobjD1TsjM",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/runway-ai-video-tool-motion-sketch/": {
     "title": "Turn your doodles into video clips in minutes with this new AI tool - here's how",
     "date_covered": "2026-02-14T08:33:13.255148+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-16T02:07:07.215558+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "fQO5SzABSOg",
+    "tiktok_id": null
+  },
+  "https://tomjohnell.com/llms-can-be-absolutely-exhausting/": {
+    "title": "LLMs can be absolutely exhausting",
+    "date_covered": "2026-03-16T05:53:15.227350+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "JVtz28zN1lI",
     "tiktok_id": null
   }
 }
