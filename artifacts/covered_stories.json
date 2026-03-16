@@ -1,11 +1,4 @@
 {
-  "https://blog.janestreet.com/fun-with-algebraic-effects-hardcaml/": {
-    "title": "from Toy Examples to Hardcaml Simulations",
-    "date_covered": "2026-02-14T20:27:04.157703+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://github.com/alichherawalla/off-grid-mobile": {
     "title": "Privacy First, Zero Internet. Download an LLM and use it on your mobile device. No data ever leaves your phone. Privacy first. Supports text-to-text, vision, text-to-image",
     "date_covered": "2026-02-15T02:00:00.665868+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-16T17:03:18.395705+00:00",
     "source": "AI News",
     "youtube_id": "XCDDHnMzFVo",
+    "tiktok_id": null
+  },
+  "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai": {
+    "title": "NVIDIA Launches Vera CPU, Purpose-Built for Agentic AI",
+    "date_covered": "2026-03-16T20:40:38.392401+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Ewj-LhuUW-4",
     "tiktok_id": null
   }
 }
