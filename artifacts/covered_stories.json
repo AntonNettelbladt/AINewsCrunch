@@ -1,11 +1,4 @@
 {
-  "https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/": {
-    "title": "I love the work of the ArchWiki maintainers",
-    "date_covered": "2026-02-15T12:46:34.481772+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MrCyXgQMB-0",
-    "tiktok_id": null
-  },
   "https://github.com/alibaba-damo-academy/RynnBrain": {
     "title": "alibaba-damo-academy/RynnBrain: RynnBrain: Open Embodied Foundation Models",
     "date_covered": "2026-02-15T16:30:29.529999+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-17T08:52:44.483241+00:00",
     "source": "AI News",
     "youtube_id": "w2k53dMBIWU",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/1password-introduces-unified-credential-security-platform/": {
+    "title": "As AI agents spread, 1Password's new tool tackles a rising security threat",
+    "date_covered": "2026-03-17T13:34:10.677623+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "n0n22-zckDw",
     "tiktok_id": null
   }
 }
