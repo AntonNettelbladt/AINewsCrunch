@@ -1,11 +1,4 @@
 {
-  "https://github.com/alibaba-damo-academy/RynnBrain": {
-    "title": "alibaba-damo-academy/RynnBrain: RynnBrain: Open Embodied Foundation Models",
-    "date_covered": "2026-02-15T16:30:29.529999+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "1aqD1cbze7k",
-    "tiktok_id": null
-  },
   "https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/": {
     "title": "Editor’s Note: Retraction of article containing fabricated quotations",
     "date_covered": "2026-02-15T20:27:50.591608+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-17T13:34:10.677623+00:00",
     "source": "ZDNet AI",
     "youtube_id": "n0n22-zckDw",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/goldman-sachs-sees-ai-investment-shift-to-data-centres/": {
+    "title": "Goldman Sachs sees AI investment shift to data centres",
+    "date_covered": "2026-03-17T17:06:14.802378+00:00",
+    "source": "AI News",
+    "youtube_id": "xfpQgTQgScY",
     "tiktok_id": null
   }
 }
