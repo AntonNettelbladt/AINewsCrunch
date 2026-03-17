@@ -1,11 +1,4 @@
 {
-  "https://arstechnica.com/staff/2026/02/editors-note-retraction-of-article-containing-fabricated-quotations/": {
-    "title": "Editor’s Note: Retraction of article containing fabricated quotations",
-    "date_covered": "2026-02-15T20:27:50.591608+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "EKfrRZA41FU",
-    "tiktok_id": null
-  },
   "https://github.com/klawsh/klaw.sh": {
     "title": "klawsh/klaw.sh: kubernetes for ai agents",
     "date_covered": "2026-02-16T01:56:42.617988+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-17T17:06:14.802378+00:00",
     "source": "AI News",
     "youtube_id": "xfpQgTQgScY",
+    "tiktok_id": null
+  },
+  "https://peterlavigne.com/writing/verifying-ai-generated-code": {
+    "title": "Toward automated verification of unreviewed AI-generated code",
+    "date_covered": "2026-03-17T20:40:49.257013+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "S5n4qeVamNY",
     "tiktok_id": null
   }
 }
