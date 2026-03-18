@@ -1,11 +1,4 @@
 {
-  "https://github.com/klawsh/klaw.sh": {
-    "title": "klawsh/klaw.sh: kubernetes for ai agents",
-    "date_covered": "2026-02-16T01:56:42.617988+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "vRDYoMPnj3E",
-    "tiktok_id": null
-  },
   "https://steipete.me/posts/2026/openclaw": {
     "title": "OpenClaw, OpenAI and the future",
     "date_covered": "2026-02-16T05:30:38.099927+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-18T01:59:28.761867+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "06eC_MLuzsQ",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/telecom-ai-grids-inference/": {
+    "title": "NVIDIA, Telecom Leaders Build AI Grids to Optimize Inference on Distributed Networks",
+    "date_covered": "2026-03-18T05:29:22.996114+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "l32Zk0w96v4",
     "tiktok_id": null
   }
 }
