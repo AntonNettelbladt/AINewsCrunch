@@ -1,11 +1,4 @@
 {
-  "https://www.theregister.com/2026/02/16/anthropic_claude_ai_edits/": {
-    "title": "Anthropic tries to hide Claude's AI actions. Devs hate it",
-    "date_covered": "2026-02-16T16:44:54.010983+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "41Clrf3ZFag",
-    "tiktok_id": null
-  },
   "https://github.com/HenryNdubuaku/maths-cs-ai-compendium": {
     "title": "HenryNdubuaku/maths-cs-ai-compendium: Learn maths, computing, and artificial intelligence with intuition.",
     "date_covered": "2026-02-16T20:31:44.272283+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-18T13:08:26.182556+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "G7qjeaZBD6s",
+    "tiktok_id": null
+  },
+  "https://www.promptarmor.com/resources/snowflake-ai-escapes-sandbox-and-executes-malware": {
+    "title": "Snowflake Cortex AI Escapes Sandbox and Executes Malware",
+    "date_covered": "2026-03-18T17:02:02.541510+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FeRigGuIQYU",
     "tiktok_id": null
   }
 }
