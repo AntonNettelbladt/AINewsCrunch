@@ -1,11 +1,4 @@
 {
-  "https://github.com/HenryNdubuaku/maths-cs-ai-compendium": {
-    "title": "HenryNdubuaku/maths-cs-ai-compendium: Learn maths, computing, and artificial intelligence with intuition.",
-    "date_covered": "2026-02-16T20:31:44.272283+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "iwQq2-qZHBo",
-    "tiktok_id": null
-  },
   "https://codemade.net/blog/building-for-one/": {
     "title": "Building for an audience of one: starting and finishing side projects with AI",
     "date_covered": "2026-02-17T01:55:21.298253+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-18T17:02:02.541510+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FeRigGuIQYU",
+    "tiktok_id": null
+  },
+  "https://notes.visaint.space/ai-coding-is-gambling/": {
+    "title": "AI Coding is Gambling",
+    "date_covered": "2026-03-18T21:00:27.020295+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "HEYQoQIgF2k",
     "tiktok_id": null
   }
 }
