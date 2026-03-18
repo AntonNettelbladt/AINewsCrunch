@@ -1181,5 +1181,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "S5n4qeVamNY",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-2026-nemoclaw/": {
+    "title": "GTC Spotlights NVIDIA RTX PCs and DGX Sparks Running Latest Open Models and AI Agents Locally",
+    "date_covered": "2026-03-18T01:59:28.761867+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "06eC_MLuzsQ",
+    "tiktok_id": null
   }
 }
