@@ -1,11 +1,4 @@
 {
-  "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/": {
-    "title": "AI is destroying Open Source, and it's not even good yet",
-    "date_covered": "2026-02-17T05:25:45.436356+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "zlGc7JbAMBM",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai/": {
     "title": "New SemiAnalysis InferenceX Data Shows NVIDIA Blackwell Ultra Delivers up to 50x Better Performance and 35x Lower Costs for Agentic AI",
     "date_covered": "2026-02-17T08:47:23.521193+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-19T05:26:30.901517+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "N_FbASW4Coo",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/for-effective-ai-insurance-needs-a-better-data-layer-and-integration/": {
+    "title": "For effective AI, insurance needs to get its data house in order",
+    "date_covered": "2026-03-19T08:43:08.815532+00:00",
+    "source": "AI News",
+    "youtube_id": "PuvHdXYHa5E",
     "tiktok_id": null
   }
 }
