@@ -1,11 +1,4 @@
 {
-  "https://codemade.net/blog/building-for-one/": {
-    "title": "Building for an audience of one: starting and finishing side projects with AI",
-    "date_covered": "2026-02-17T01:55:21.298253+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "S2mOa05suX0",
-    "tiktok_id": null
-  },
   "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/": {
     "title": "AI is destroying Open Source, and it's not even good yet",
     "date_covered": "2026-02-17T05:25:45.436356+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-18T21:00:27.020295+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "HEYQoQIgF2k",
+    "tiktok_id": null
+  },
+  "https://github.com/alainnothere/llm-circuit-finder": {
+    "title": "GitHub - alainnothere/llm-circuit-finder: I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B ",
+    "date_covered": "2026-03-19T02:01:25.746906+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-SyNMUz5sL4",
     "tiktok_id": null
   }
 }
