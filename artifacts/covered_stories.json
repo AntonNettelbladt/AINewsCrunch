@@ -1,11 +1,4 @@
 {
-  "https://essays.debugyourpain.com/p/you-are-not-just-your-brain": {
-    "title": "You are not (just) your brain",
-    "date_covered": "2026-02-17T13:00:35.402702+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "n_8xRHzXchc",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/custom-chatgpt-instructions-better-ai-results-faster/": {
     "title": "5 custom ChatGPT instructions I use to get better AI results - faster",
     "date_covered": "2026-02-17T16:59:02.159734+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-19T13:00:56.473015+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "RfyQGyH40fA",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/nvidia-agent-toolkit-enterprise-ai-agents/": {
+    "title": "NVIDIA Agent Toolkit Gives Enterprises a Framework to Deploy AI Agents at Scale",
+    "date_covered": "2026-03-19T17:00:45.676240+00:00",
+    "source": "AI News",
+    "youtube_id": "L3ev-JRkuCw",
     "tiktok_id": null
   }
 }
