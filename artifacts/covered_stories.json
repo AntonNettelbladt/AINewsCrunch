@@ -1,11 +1,4 @@
 {
-  "https://www.anthropic.com/news/claude-sonnet-4-6": {
-    "title": "Introducing Sonnet 4.6",
-    "date_covered": "2026-02-18T05:32:07.101851+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "N22qZZerPGU",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/what-aristotle-and-socrates-can-teach-us-about-using-generative-ai/": {
     "title": "What Aristotle and Socrates can teach us about using generative AI",
     "date_covered": "2026-02-18T08:50:36.120124+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-20T05:20:01.978807+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "-HVtzO8bW18",
+    "tiktok_id": null
+  },
+  "https://www.fsf.org/blogs/licensing/2026-anthropic-settlement": {
+    "title": "The FSF doesn't usually sue for copyright infringement, but when we do, we settle for freedom — Free Software Foundation — Working together for free software",
+    "date_covered": "2026-03-20T08:42:10.851767+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "tukHMlSDMU8",
     "tiktok_id": null
   }
 }
