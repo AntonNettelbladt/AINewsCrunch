@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/what-aristotle-and-socrates-can-teach-us-about-using-generative-ai/": {
-    "title": "What Aristotle and Socrates can teach us about using generative AI",
-    "date_covered": "2026-02-18T08:50:36.120124+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "cGwMpmNGTgs",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/urbn-tests-agentic-ai-to-automate-retail-reporting/": {
     "title": "URBN tests agentic AI to automate retail reporting",
     "date_covered": "2026-02-18T13:02:30.185401+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-20T08:42:10.851767+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "tukHMlSDMU8",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/mastercards-ltm-keeps-tabs-on-fraud-with-a-new-foundation-model/": {
+    "title": "Mastercard keeps tabs on fraud with new foundation model",
+    "date_covered": "2026-03-20T12:56:48.691008+00:00",
+    "source": "AI News",
+    "youtube_id": "CveKrc2C40g",
     "tiktok_id": null
   }
 }
