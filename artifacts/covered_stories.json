@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/insurance-giant-aig-deploys-agentic-ai-with-orchestration-layer/": {
-    "title": "Insurance giant AIG deploys agentic AI with orchestration layer",
-    "date_covered": "2026-02-17T20:37:36.731557+00:00",
-    "source": "AI News",
-    "youtube_id": "bjcC7S5EEgI",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/alibaba-qwen-challenging-proprietary-ai-model-economics/": {
     "title": "Alibaba Qwen is challenging proprietary AI model economics",
     "date_covered": "2026-02-18T01:57:31.523873+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-19T20:41:26.587193+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "MJ5E1V8vIG8",
+    "tiktok_id": null
+  },
+  "https://esolang-bench.vercel.app/": {
+    "title": "EsoLang-Bench: Evaluating LLMs via Esoteric Programming Languages",
+    "date_covered": "2026-03-20T01:53:25.777012+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "R3N1oVIqSTY",
     "tiktok_id": null
   }
 }
