@@ -1,11 +1,4 @@
 {
-  "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/": {
-    "title": "Microsoft says bug causes Copilot to summarize confidential emails",
-    "date_covered": "2026-02-18T17:04:37.134932+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ZcRhIVOwHFU",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/": {
     "title": "India Fuels Its AI Mission With NVIDIA",
     "date_covered": "2026-02-18T20:41:29.893776+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-20T16:45:39.986282+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "ciN0hwRLVks",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/build-robots-with-ai/": {
+    "title": "From Simulation to Production: How to Build Robots With AI",
+    "date_covered": "2026-03-20T20:33:40.721525+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "-J6YqM0R21A",
     "tiktok_id": null
   }
 }
