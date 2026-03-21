@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/how-financial-institutions-embedding-ai-decision-making/": {
-    "title": "How financial institutions are embedding AI decision-making",
-    "date_covered": "2026-02-19T05:25:20.843687+00:00",
-    "source": "AI News",
-    "youtube_id": "wq-pBAODjFY",
-    "tiktok_id": null
-  },
   "https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe": {
     "title": "How AI is affecting productivity and jobs in Europe",
     "date_covered": "2026-02-19T08:43:59.275983+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-21T05:11:42.629005+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "a_GDElgeTvo",
+    "tiktok_id": null
+  },
+  "https://therecord.media/man-pleads-guilty-8-million-ai-music-scheme": {
+    "title": "Man pleads guilty to $8 million AI-generated music scheme",
+    "date_covered": "2026-03-21T08:34:33.868566+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "SWMMrEeCkxU",
     "tiktok_id": null
   }
 }
