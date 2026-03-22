@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-impact-executives-optimism-for-the-future/": {
-    "title": "AI: Executives' optimism about the future",
-    "date_covered": "2026-02-20T16:39:14.158770+00:00",
-    "source": "AI News",
-    "youtube_id": "hDCgQUAu_ak",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/claude-code-security": {
     "title": "Making frontier cybersecurity capabilities available to defenders",
     "date_covered": "2026-02-20T20:31:51.541900+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-22T16:30:44.166831+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.mixfont.com/blog/learnings-from-training-a-font-recognition-model-from-scratch": {
+    "title": "Learnings from training a font recognition model from scratch — Mixfont Blog",
+    "date_covered": "2026-03-22T20:29:06.747304+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ab-MPmGSsfo",
     "tiktok_id": null
   }
 }
