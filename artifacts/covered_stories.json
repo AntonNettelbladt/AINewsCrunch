@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/google-gemini-3-1-pro-release-ai-model/": {
-    "title": "Google's Gemini 3.1 Pro is here, and it just doubled its reasoning score",
-    "date_covered": "2026-02-19T20:39:24.015180+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "t_zYmIkfxk4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ai-in-telco-survey-2026/": {
     "title": "Survey Reveals AI Advances in Telecom: Networks and Automation in Driver’s Seat as Return on Investment Climbs",
     "date_covered": "2026-02-20T01:57:04.296276+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-21T20:27:04.112930+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "faERPuWkHz0",
+    "tiktok_id": null
+  },
+  "https://signoregalilei.com/2026/03/08/the-paddle-wheel-aircraft-carriers-of-lake-michigan/": {
+    "title": "The paddle wheel aircraft carriers of Lake Michigan",
+    "date_covered": "2026-03-22T01:58:47.015636+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hZvzT5VCXLU",
     "tiktok_id": null
   }
 }
