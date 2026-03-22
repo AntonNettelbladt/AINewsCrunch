@@ -1,11 +1,4 @@
 {
-  "https://gist.github.com/interpiduser5/547d8a7baec436f24b7cce89dd4ae1ea": {
-    "title": "MuMu Player Pro (NetEase) silently runs 17 system reconnaissance commands every 30 minutes on macOS",
-    "date_covered": "2026-02-20T08:41:47.144929+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "FmV2oua3jx8",
-    "tiktok_id": null
-  },
   "https://www.bhusalmanish.com.np/blog/posts/why-claude-wins-coding.html": {
     "title": "Why Developers Keep Choosing Claude Over Every Other AI",
     "date_covered": "2026-02-20T12:55:50.262090+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-03-22T08:35:37.132772+00:00",
     "source": "ZDNet AI",
     "youtube_id": "lnujiPWOLYI",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/delete-me-review/": {
+    "title": "After getting hit by multiple data breaches, I gave DeleteMe a try - here's how it's paid off",
+    "date_covered": "2026-03-22T12:47:14.742837+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "OjKJOwCuEvM",
     "tiktok_id": null
   }
 }
