@@ -1,11 +1,4 @@
 {
-  "https://github.com/anthropics/claude-code/issues/16856": {
-    "title": "[Bug] Excessive token usage in Claude Code 2.1.1 - 4x+ faster rate consumption than previous versions · Issue #16856 · anthropics/claude-code",
-    "date_covered": "2026-02-21T05:09:52.496592+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "qRXgpsT976Y",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ssc-blue-prism-on-the-journey-from-rpa-to-agentic-automation/": {
     "title": "SS&C Blue Prism: On the journey from RPA to agentic automation",
     "date_covered": "2026-02-21T08:31:23.079031+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-23T02:00:33.220759+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "NjbPB6zXZaM",
+    "tiktok_id": null
+  },
+  "https://nesbitt.io/2026/03/21/how-to-attract-ai-bots-to-your-open-source-project.html": {
+    "title": "How to Attract AI Bots to Your Open Source Project",
+    "date_covered": "2026-03-23T05:33:32.279045+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "YNgPOOtOYNg",
     "tiktok_id": null
   }
 }
