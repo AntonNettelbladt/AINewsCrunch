@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ssc-blue-prism-on-the-journey-from-rpa-to-agentic-automation/": {
-    "title": "SS&C Blue Prism: On the journey from RPA to agentic automation",
-    "date_covered": "2026-02-21T08:31:23.079031+00:00",
-    "source": "AI News",
-    "youtube_id": "ZWSI-shCTiY",
-    "tiktok_id": null
-  },
   "https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/": {
     "title": "AI-equipped drones study dolphins on the edge of extinction",
     "date_covered": "2026-02-21T12:45:09.538558+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-23T05:33:32.279045+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YNgPOOtOYNg",
+    "tiktok_id": null
+  },
+  "https://dynomight.net/coffee/": {
+    "title": "LLMs predict my coffee",
+    "date_covered": "2026-03-23T08:56:57.472063+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "d5xY3yoUjbI",
     "tiktok_id": null
   }
 }
