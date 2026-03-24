@@ -1,11 +1,4 @@
 {
-  "https://www.anuragk.com/blog/posts/Taalas.html": {
-    "title": "How Taalas \"prints\" LLM onto a chip?",
-    "date_covered": "2026-02-22T08:33:00.446261+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "kAtqTi131HU",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/stocks/top-ai-resistant-software-stocks-to-invest-in-for-2026": {
     "title": "Top AI-Resistant Software Stocks to Invest in for 2026",
     "date_covered": "2026-02-22T12:46:21.633331+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-24T05:27:46.795690+00:00",
     "source": "ZDNet AI",
     "youtube_id": "YAsqG9cwdDg",
+    "tiktok_id": null
+  },
+  "https://github.com/michaelneale/mesh-llm": {
+    "title": "GitHub - michaelneale/mesh-llm: reference impl with llama.cpp compiled to distributed inference across machines, with real end to end demo",
+    "date_covered": "2026-03-24T08:52:37.384324+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ozp_GATCKCE",
     "tiktok_id": null
   }
 }
