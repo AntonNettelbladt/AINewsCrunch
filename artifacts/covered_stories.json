@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/india-global-industrial-software-leaders-manufacturers-ai/": {
-    "title": "NVIDIA and Global Industrial Software Leaders Partner With India’s Largest Manufacturers to Drive AI Boom",
-    "date_covered": "2026-02-22T05:21:35.485915+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "X7mnEd3leJU",
-    "tiktok_id": null
-  },
   "https://www.anuragk.com/blog/posts/Taalas.html": {
     "title": "How Taalas \"prints\" LLM onto a chip?",
     "date_covered": "2026-02-22T08:33:00.446261+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-03-24T01:52:10.308754+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ZCZyyMznhBM",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/security-leaders-not-ready-for-ai-attacks-4-actions-to-take/": {
+    "title": "1 in 2 security leaders say they're not ready for AI attacks - 4 actions to take now",
+    "date_covered": "2026-03-24T05:27:46.795690+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "YAsqG9cwdDg",
     "tiktok_id": null
   }
 }
