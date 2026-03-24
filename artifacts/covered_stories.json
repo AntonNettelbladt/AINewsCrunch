@@ -1188,5 +1188,12 @@
     "source": "AI News",
     "youtube_id": "nd69N4vYdkM",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-at-kubecon-2026/": {
+    "title": "Advancing Open Source AI, NVIDIA Donates Dynamic Resource Allocation Driver for GPUs to Kubernetes Community",
+    "date_covered": "2026-03-24T20:50:38.456645+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "WEHZQ8QI0MM",
+    "tiktok_id": null
   }
 }
