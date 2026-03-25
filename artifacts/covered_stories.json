@@ -1,11 +1,4 @@
 {
-  "https://github.com/quailyquaily/aqua": {
-    "title": "quailyquaily/aqua: Aqua, a cli message tool for AI agents",
-    "date_covered": "2026-02-23T05:30:11.780529+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/hitachi-physical-ai-industrial-expertise/": {
     "title": "Hitachi Wields Industrial Know-How to Compete in the Physical AI Race",
     "date_covered": "2026-02-23T08:48:40.001018+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-25T05:27:12.797125+00:00",
     "source": "AI News",
     "youtube_id": "EaEgGE6R0iE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/palantir-ai-to-support-uk-finance-operations/": {
+    "title": "Palantir AI to support UK finance operations",
+    "date_covered": "2026-03-25T08:49:30.301146+00:00",
+    "source": "AI News",
+    "youtube_id": "5G6yP2wGDHM",
     "tiktok_id": null
   }
 }
