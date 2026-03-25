@@ -1,11 +1,4 @@
 {
-  "https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778": {
-    "title": "Account Restricted Without WARNING– Google AI Ultra / OAuth via OpenClaw",
-    "date_covered": "2026-02-23T01:58:14.600806+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "xUkJNlvNUyc",
-    "tiktok_id": null
-  },
   "https://github.com/quailyquaily/aqua": {
     "title": "quailyquaily/aqua: Aqua, a cli message tool for AI agents",
     "date_covered": "2026-02-23T05:30:11.780529+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-25T01:57:03.999975+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "udAQpIOKSjc",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/automating-complex-finance-workflows-with-multimodal-ai/": {
+    "title": "Automating complex finance workflows with multimodal AI",
+    "date_covered": "2026-03-25T05:27:12.797125+00:00",
+    "source": "AI News",
+    "youtube_id": "EaEgGE6R0iE",
     "tiktok_id": null
   }
 }
