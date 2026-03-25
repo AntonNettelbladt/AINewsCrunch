@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/hitachi-physical-ai-industrial-expertise/": {
-    "title": "Hitachi Wields Industrial Know-How to Compete in the Physical AI Race",
-    "date_covered": "2026-02-23T08:48:40.001018+00:00",
-    "source": "AI News",
-    "youtube_id": "pR4BhGF7ln4",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/amul-ai-dairy-farming-platform-india/": {
-    "title": "How Amul is using AI dairy farming to put 36 million farmers first",
-    "date_covered": "2026-02-23T13:00:32.944964+00:00",
-    "source": "AI News",
-    "youtube_id": "Nkb8G1mOuic",
-    "tiktok_id": null
-  },
   "https://arstechnica.com/ai/2026/02/ais-can-generate-near-verbatim-copies-of-novels-from-training-data/": {
     "title": "AIs can generate near-verbatim copies of novels from training data",
     "date_covered": "2026-02-23T16:58:19.595838+00:00",
@@ -1201,6 +1187,13 @@
     "date_covered": "2026-03-25T08:49:30.301146+00:00",
     "source": "AI News",
     "youtube_id": "5G6yP2wGDHM",
+    "tiktok_id": null
+  },
+  "https://www.bbc.com/future/article/20260324-i-tried-to-prove-im-not-an-ai-deepfake": {
+    "title": "I tried to prove I'm not AI. My aunt wasn't convinced",
+    "date_covered": "2026-03-25T13:04:44.619776+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "_jJ-Fu7MsiQ",
     "tiktok_id": null
   }
 }
