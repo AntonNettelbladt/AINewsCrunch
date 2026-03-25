@@ -1,11 +1,4 @@
 {
-  "https://arstechnica.com/ai/2026/02/ais-can-generate-near-verbatim-copies-of-novels-from-training-data/": {
-    "title": "AIs can generate near-verbatim copies of novels from training data",
-    "date_covered": "2026-02-23T16:58:19.595838+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2KY_6_lC4Mw",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ai-cybersecurity-operational-technology-industrial-control-systems/": {
     "title": "NVIDIA Brings AI-Powered Cybersecurity to World’s Critical Infrastructure",
     "date_covered": "2026-02-23T20:52:54.901488+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-25T13:04:44.619776+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "_jJ-Fu7MsiQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ocorian-family-offices-ai-for-financial-data-insights/": {
+    "title": "Ocorian: Family offices turn to AI for financial data insights",
+    "date_covered": "2026-03-25T17:03:58.909121+00:00",
+    "source": "AI News",
+    "youtube_id": "8BaNz_HvA9I",
     "tiktok_id": null
   }
 }
