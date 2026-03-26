@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-in-healthcare-survey-2026/": {
-    "title": "From Radiology to Drug Discovery, Survey Reveals AI Is Delivering Clear Return on Investment in Healthcare",
-    "date_covered": "2026-02-24T17:08:08.567691+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "lfg5MKhGP4o",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/anthropic-claude-faces-industrial-scale-ai-model-distillation/": {
     "title": "Anthropic: Claude faces ‘industrial-scale’ AI model distillation",
     "date_covered": "2026-02-24T20:36:05.175732+00:00",
@@ -1201,6 +1194,13 @@
     "date_covered": "2026-03-26T17:01:40.825948+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hO2mMg8URw8",
+    "tiktok_id": null
+  },
+  "https://futuresearch.ai/blog/litellm-attack-transcript/": {
+    "title": "My minute-by-minute response to the LiteLLM malware attack",
+    "date_covered": "2026-03-26T20:38:11.911128+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wuIDnGYIhIM",
     "tiktok_id": null
   }
 }
