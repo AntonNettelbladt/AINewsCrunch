@@ -1,11 +1,4 @@
 {
-  "https://github.com/GreatScott/enveil": {
-    "title": "GreatScott/enveil: ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext.",
-    "date_covered": "2026-02-24T08:47:13.507524+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/": {
     "title": "Firefox 148 Launches with Exciting AI Kill Switch Feature and More Enhancements!",
     "date_covered": "2026-02-24T13:02:26.344780+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-26T05:45:03.709200+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "LSWs-VEl0EU",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/power-flexible-ai-factories-energy-grid/": {
+    "title": "Blowing Off Steam: How Power-Flexible AI Factories Can Stabilize the Global Energy Grid",
+    "date_covered": "2026-03-26T08:55:15.411496+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "7SUHFvYQgyc",
     "tiktok_id": null
   }
 }
