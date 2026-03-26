@@ -1,11 +1,4 @@
 {
-  "https://www.guidelabs.ai/post/steerling-8b-base-model-release/": {
-    "title": "Steerling-8B: The First Inherently Interpretable Language Model",
-    "date_covered": "2026-02-24T05:30:32.431412+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Vtl8469lkxY",
-    "tiktok_id": null
-  },
   "https://github.com/GreatScott/enveil": {
     "title": "GreatScott/enveil: ENVeil: Hide .env secrets from prAIng eyes: secrets live in local encrypted stores (per project) and are injected directly into apps at runtime, never touching disk as plaintext.",
     "date_covered": "2026-02-24T08:47:13.507524+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-26T02:03:29.263437+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xZV9qdUjyIM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-future-open-and-proprietary/": {
+    "title": "The Future of AI Is Open and Proprietary",
+    "date_covered": "2026-03-26T05:45:03.709200+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "LSWs-VEl0EU",
     "tiktok_id": null
   }
 }
