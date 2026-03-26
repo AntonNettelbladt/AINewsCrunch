@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-cybersecurity-operational-technology-industrial-control-systems/": {
-    "title": "NVIDIA Brings AI-Powered Cybersecurity to World’s Critical Infrastructure",
-    "date_covered": "2026-02-23T20:52:54.901488+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "CjGJ2r_Bgoc",
-    "tiktok_id": null
-  },
-  "https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/": {
-    "title": "FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me",
-    "date_covered": "2026-02-24T01:53:51.715421+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "shKX1fgXw18",
-    "tiktok_id": null
-  },
   "https://www.guidelabs.ai/post/steerling-8b-base-model-release/": {
     "title": "Steerling-8B: The First Inherently Interpretable Language Model",
     "date_covered": "2026-02-24T05:30:32.431412+00:00",
@@ -1201,6 +1187,13 @@
     "date_covered": "2026-03-25T20:39:48.679940+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "kw4pNg7OK9Q",
+    "tiktok_id": null
+  },
+  "https://www.rnz.co.nz/news/national/590645/health-nz-staff-told-to-stop-using-chatgpt-to-write-clinical-notes": {
+    "title": "Health NZ staff told to stop using ChatGPT to write clinical notes",
+    "date_covered": "2026-03-26T02:03:29.263437+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xZV9qdUjyIM",
     "tiktok_id": null
   }
 }
