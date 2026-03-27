@@ -1,11 +1,4 @@
 {
-  "https://www.inceptionlabs.ai/blog/introducing-mercury-2": {
-    "title": "Introducing Mercury 2 – Inception",
-    "date_covered": "2026-02-25T05:26:54.331958+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "q6YtLES3wrQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/invoicing-agentic-ai-baswares-ai-agents-from-invoicing-to-100-automated/": {
     "title": "Invoicing: Agentic AI from Basware is just the beginning",
     "date_covered": "2026-02-25T08:47:57.576049+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-27T02:04:00.885237+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "r4z6M5qZfWg",
+    "tiktok_id": null
+  },
+  "https://axeldelafosse.com/blog/agent-to-agent-pair-programming": {
+    "title": "Agent-to-agent pair programming",
+    "date_covered": "2026-03-27T05:45:34.456524+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "uyOUHYETDpc",
     "tiktok_id": null
   }
 }
