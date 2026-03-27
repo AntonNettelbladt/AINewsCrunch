@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/anthropic-claude-faces-industrial-scale-ai-model-distillation/": {
-    "title": "Anthropic: Claude faces ‘industrial-scale’ AI model distillation",
-    "date_covered": "2026-02-24T20:36:05.175732+00:00",
-    "source": "AI News",
-    "youtube_id": "AdczEtFwGm8",
-    "tiktok_id": null
-  },
-  "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai": {
-    "title": "US military leaders pressure Anthropic to bend Claude safeguards",
-    "date_covered": "2026-02-25T01:56:11.632118+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "yM7UV4RcQHI",
-    "tiktok_id": null
-  },
   "https://www.inceptionlabs.ai/blog/introducing-mercury-2": {
     "title": "Introducing Mercury 2 – Inception",
     "date_covered": "2026-02-25T05:26:54.331958+00:00",
@@ -1201,6 +1187,13 @@
     "date_covered": "2026-03-26T20:38:11.911128+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "wuIDnGYIhIM",
+    "tiktok_id": null
+  },
+  "https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk": {
+    "title": "Judge blocks Pentagon’s effort to ‘punish’ Anthropic by labeling it a supply chain risk",
+    "date_covered": "2026-03-27T02:04:00.885237+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "r4z6M5qZfWg",
     "tiktok_id": null
   }
 }
