@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/nokia-and-aws-pilot-ai-automation-for-real-time-5g-network-slicing/": {
-    "title": "Nokia and AWS pilot AI automation for real-time 5G network slicing",
-    "date_covered": "2026-02-25T13:01:45.768717+00:00",
-    "source": "AI News",
-    "youtube_id": "KzztyVHbkns",
-    "tiktok_id": null
-  },
   "https://www.ycombinator.com/companies/trellis-ai/jobs/7ZlvQkN-lead-deployment-strategist": {
     "title": "Lead Deployment Strategist at Trellis AI",
     "date_covered": "2026-02-25T17:36:34.017031+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-27T08:49:12.251336+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "IklgNuL5LdM",
+    "tiktok_id": null
+  },
+  "https://lara-aigmueller.at/thoughts/leaving-the-ai-party/": {
+    "title": "Why I am leaving the AI party after one drink",
+    "date_covered": "2026-03-27T16:55:26.165343+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "SuNJZe6mTXo",
     "tiktok_id": null
   }
 }
