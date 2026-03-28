@@ -1,11 +1,4 @@
 {
-  "https://code.claude.com/docs/en/remote-control": {
-    "title": "Continue local sessions from any device with Remote Control",
-    "date_covered": "2026-02-26T01:52:00.020150+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "QzGYDI08HVk",
-    "tiktok_id": null
-  },
   "https://github.com/Intrect-io/OpenSwarm": {
     "title": "Intrect-io/OpenSwarm: OpenSwarm, CLI Code Agent Orchstrator",
     "date_covered": "2026-02-26T05:23:53.298486+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-28T01:54:58.544321+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "BY4E0MkPf38",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/top-10-ai-testing-companies-in-2026": {
+    "title": "Top 10 AI Testing Companies in 2026",
+    "date_covered": "2026-03-28T05:25:46.973321+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "-0eMSmVphbY",
     "tiktok_id": null
   }
 }
