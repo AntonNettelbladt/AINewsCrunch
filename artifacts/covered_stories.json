@@ -1,11 +1,4 @@
 {
-  "https://www.newscientist.com/article/2516885-ais-cant-stop-recommending-nuclear-strikes-in-war-game-simulations/": {
-    "title": "AIs can’t stop recommending nuclear strikes in war game simulations",
-    "date_covered": "2026-02-25T20:37:07.301704+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nL1FtZOdx7I",
-    "tiktok_id": null
-  },
   "https://code.claude.com/docs/en/remote-control": {
     "title": "Continue local sessions from any device with Remote Control",
     "date_covered": "2026-02-26T01:52:00.020150+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-03-27T20:39:39.236979+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "oz52pqf9ZPU",
+    "tiktok_id": null
+  },
+  "https://arstechnica.com/tech-policy/2026/03/doj-confirms-fbi-director-kash-patels-personal-email-was-hacked/": {
+    "title": "DOJ confirms FBI Director Kash Patel’s personal email was hacked",
+    "date_covered": "2026-03-28T01:54:58.544321+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "BY4E0MkPf38",
     "tiktok_id": null
   }
 }
