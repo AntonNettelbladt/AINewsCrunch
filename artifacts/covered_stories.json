@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies": {
-    "title": "‘Unbelievably dangerous’: experts sound alarm after ChatGPT Health fails to recognise medical emergencies",
-    "date_covered": "2026-02-27T16:43:48.584595+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "w3T5buBwRe0",
-    "tiktok_id": null
-  },
   "https://www.cnn.com/2026/02/25/politics/chatgpt-china-intimidation-operation": {
     "title": "A Chinese official’s use of ChatGPT accidentally revealed a global intimidation operation",
     "date_covered": "2026-02-27T20:29:28.189112+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-29T16:35:38.674525+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "MKG-pe3JbFw",
+    "tiktok_id": null
+  },
+  "https://isp.netscape.com/news/story/0001/20260329/e4d8ea591b3b036142c2bf2dee7dff5a": {
+    "title": "Midnight train from Georgia: A view of America from the tracks as airports struggle in the shutdown",
+    "date_covered": "2026-03-29T20:31:27.702805+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "j-lAhBbOu40",
     "tiktok_id": null
   }
 }
