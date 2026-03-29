@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-workflows-need-human-in-the-loop-say-datatonic/": {
-    "title": "Poor implementation of AI may be behind workforce reduction",
-    "date_covered": "2026-02-27T12:56:28.431063+00:00",
-    "source": "AI News",
-    "youtube_id": "0wovh-KOjok",
-    "tiktok_id": null
-  },
   "https://www.theguardian.com/technology/2026/feb/26/chatgpt-health-fails-recognise-medical-emergencies": {
     "title": "‘Unbelievably dangerous’: experts sound alarm after ChatGPT Health fails to recognise medical emergencies",
     "date_covered": "2026-02-27T16:43:48.584595+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-29T12:49:19.341510+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition": {
+    "title": "Police used AI facial recognition to arrest a Tennessee woman for crimes committed in a state she says she’s never visited",
+    "date_covered": "2026-03-29T16:35:38.674525+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MKG-pe3JbFw",
     "tiktok_id": null
   }
 }
