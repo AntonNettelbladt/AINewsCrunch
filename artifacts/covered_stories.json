@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/cobol-modernization-ai-claude-ibm/": {
-    "title": "COBOL modernisation just got an AI shortcut–and the market noticed",
-    "date_covered": "2026-02-28T08:31:37.703541+00:00",
-    "source": "AI News",
-    "youtube_id": "5b70YWMyp7A",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/ai-auditor-new-job-role-monitors-model-behavior/": {
     "title": "Meet your AI auditor: How this new job role monitors model behavior",
     "date_covered": "2026-02-28T12:43:03.720942+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-03-30T06:03:13.114247+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "KXG36nULe2Y",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/geforce-now-thursday-screamer/": {
+    "title": "GFN Thursday: Five Games on GeForce NOW",
+    "date_covered": "2026-03-30T09:11:48.323421+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Sul3exfoEuE",
     "tiktok_id": null
   }
 }
