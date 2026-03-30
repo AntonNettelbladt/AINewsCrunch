@@ -1,18 +1,4 @@
 {
-  "https://www.cnn.com/2026/02/25/politics/chatgpt-china-intimidation-operation": {
-    "title": "A Chinese official’s use of ChatGPT accidentally revealed a global intimidation operation",
-    "date_covered": "2026-02-27T20:29:28.189112+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "o4fuuQETKPU",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/upgrading-agentic-ai-for-finance-workflows/": {
-    "title": "Upgrading agentic AI for finance workflows",
-    "date_covered": "2026-02-28T01:33:52.399355+00:00",
-    "source": "AI News",
-    "youtube_id": "7FyUeeA4hww",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/how-ai-agents-create-new-disasters-when-they-interact/": {
     "title": "Destroyed servers and DoS attacks: What can happen when OpenClaw AI agents interact",
     "date_covered": "2026-02-28T04:59:43.449748+00:00",
@@ -1173,6 +1159,13 @@
     "date_covered": "2026-03-29T20:31:27.702805+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "j-lAhBbOu40",
+    "tiktok_id": null
+  },
+  "https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/": {
+    "title": "AI Agents Could Make Free Software Matter Again",
+    "date_covered": "2026-03-30T02:10:07.860473+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ixSQuXqR9qY",
     "tiktok_id": null
   }
 }
