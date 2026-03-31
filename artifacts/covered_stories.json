@@ -1,11 +1,4 @@
 {
-  "https://growingswe.com/blog/microgpt": {
-    "title": "MicroGPT explained interactively",
-    "date_covered": "2026-03-01T20:27:08.198152+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "qVPLzMZFRT4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-agentic-ai-blueprints-telco-reasoning-models/": {
     "title": "NVIDIA Advances Autonomous Networks With Agentic AI Blueprints and Telco Reasoning Models",
     "date_covered": "2026-03-02T01:54:18.039894+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-31T16:59:06.751934+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "5hfioUvM8UA",
+    "tiktok_id": null
+  },
+  "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/": {
+    "title": "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode, and more",
+    "date_covered": "2026-03-31T20:44:52.866288+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Tt4cbqz4gcQ",
     "tiktok_id": null
   }
 }
