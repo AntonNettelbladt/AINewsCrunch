@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/artificial-intelligence/how-ai-designs-sudoku-games-and-puzzle-apps-that-keep-you-hooked": {
-    "title": "How AI Designs Sudoku Games and Puzzle Apps That Keep You Hooked",
-    "date_covered": "2026-03-01T16:28:03.932008+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "AXPFQoLVsFM",
-    "tiktok_id": null
-  },
   "https://growingswe.com/blog/microgpt": {
     "title": "MicroGPT explained interactively",
     "date_covered": "2026-03-01T20:27:08.198152+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-31T13:12:41.098196+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "WMvNeZQZiNk",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/energy-efficiency-ai-factories-grid/": {
+    "title": "Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power‑Flexible AI Factories to Fortify the Grid",
+    "date_covered": "2026-03-31T16:59:06.751934+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "5hfioUvM8UA",
     "tiktok_id": null
   }
 }
