@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-agentic-ai-blueprints-telco-reasoning-models/": {
-    "title": "NVIDIA Advances Autonomous Networks With Agentic AI Blueprints and Telco Reasoning Models",
-    "date_covered": "2026-03-02T01:54:18.039894+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "8RJAAOkbnXY",
-    "tiktok_id": null
-  },
   "https://www.bbc.com/future/article/20260226-how-ai-can-read-your-thoughts": {
     "title": "How AI can read our scrambled inner thoughts",
     "date_covered": "2026-03-02T08:44:46.299723+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-03-31T20:44:52.866288+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Tt4cbqz4gcQ",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html": {
+    "title": "OpenAI closes record-breaking $122 billion funding round as anticipation builds for IPO",
+    "date_covered": "2026-04-01T02:13:47.518223+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "LySJ3tnZE_w",
     "tiktok_id": null
   }
 }
