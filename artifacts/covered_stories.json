@@ -1,11 +1,4 @@
 {
-  "https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes": {
-    "title": "Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes",
-    "date_covered": "2026-03-03T05:18:40.588655+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "wPmZJqKTnOA",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-native-networks-mwc-2026/": {
     "title": "AI-Native Networks Arrive: What MWC 2026 Actually Proved",
     "date_covered": "2026-03-03T08:41:51.722161+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-04-02T02:00:36.643040+00:00",
     "source": "AI News",
     "youtube_id": "womhsHoegAI",
+    "tiktok_id": null
+  },
+  "https://build.ms/2026/4/1/the-claude-code-leak/": {
+    "title": "The Claude Code Leak",
+    "date_covered": "2026-04-02T05:44:40.251691+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-ap3T0MfZvc",
     "tiktok_id": null
   }
 }
