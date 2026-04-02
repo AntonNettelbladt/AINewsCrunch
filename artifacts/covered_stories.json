@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/santander-and-mastercard-run-europe-first-ai-executed-payment-pilot/": {
-    "title": "Santander and Mastercard run Europe’s first AI-executed payment pilot",
-    "date_covered": "2026-03-03T16:49:17.591447+00:00",
-    "source": "AI News",
-    "youtube_id": "yz18Vsu9cSc",
-    "tiktok_id": null
-  },
   "https://leandojo.org/torchlean.html": {
     "title": "TorchLean: Formalizing Neural Networks in Lean",
     "date_covered": "2026-03-03T20:35:42.123364+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-04-02T13:08:30.930635+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "dRi4tdmyfv4",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/kiloclaw-targets-shadow-ai-autonomous-agent-governance/": {
+    "title": "KiloClaw targets shadow AI with autonomous agent governance",
+    "date_covered": "2026-04-02T16:58:16.189705+00:00",
+    "source": "AI News",
+    "youtube_id": "0Yzn1wXe3ZI",
     "tiktok_id": null
   }
 }
