@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-agents-prefer-bitcoin-new-finance-architecture/": {
-    "title": "AI agents prefer Bitcoin shaping new finance architecture",
-    "date_covered": "2026-03-04T12:52:11.858045+00:00",
-    "source": "AI News",
-    "youtube_id": "KJkYnzCNz9A",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/nanoclaw-security-guide/": {
     "title": "Want to try OpenClaw? NanoClaw is a simpler, potentially safer AI agent - and it's open source",
     "date_covered": "2026-03-04T16:44:01.497173+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-04-03T08:52:47.797667+00:00",
     "source": "AI News",
     "youtube_id": "pUwf2vprkHA",
+    "tiktok_id": null
+  },
+  "https://apfel.franzai.com": {
+    "title": "Free AI on Your Mac",
+    "date_covered": "2026-04-03T13:00:03.279329+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DjXAZA1a4Do",
     "tiktok_id": null
   }
 }
