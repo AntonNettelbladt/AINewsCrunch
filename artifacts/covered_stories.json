@@ -1,11 +1,4 @@
 {
-  "https://www.ifixit.com/News/115827/new-thinkpads-score-perfect-10-repairability": {
-    "title": "Lenovo’s New T-Series ThinkPads Score 10/10 for Repairability",
-    "date_covered": "2026-03-04T05:11:59.732900+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "OzhoaNQIOzk",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/google-industrial-robotics-ai-physical-ai-intrinsic/": {
     "title": "Google makes its industrial robotics AI play official–and this time, it means business",
     "date_covered": "2026-03-04T08:39:54.869298+00:00",
@@ -1187,6 +1180,13 @@
     "date_covered": "2026-04-03T02:02:54.078665+00:00",
     "source": "AI News",
     "youtube_id": "WfiMXBclpoo",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/rtx-ai-garage-open-models-google-gemma-4/": {
+    "title": "From RTX to Spark: NVIDIA Accelerates Gemma 4 for Local Agentic AI",
+    "date_covered": "2026-04-03T05:45:05.474750+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "wmsSKfqXoGg",
     "tiktok_id": null
   }
 }
