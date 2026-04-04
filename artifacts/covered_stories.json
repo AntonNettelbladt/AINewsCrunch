@@ -1,11 +1,4 @@
 {
-  "https://acko.net/blog/the-l-in-llm-stands-for-lying/": {
-    "title": "The L in \"LLM\" Stands for Lying",
-    "date_covered": "2026-03-05T08:41:45.425318+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "8iSd3z8LiCc",
-    "tiktok_id": null
-  },
   "https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/": {
     "title": "Relicensing with AI-assisted rewrite",
     "date_covered": "2026-03-05T12:57:07.685123+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-04-04T08:41:04.528933+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ngYAWhDA0NQ",
+    "tiktok_id": null
+  },
+  "https://mtlynch.io/claude-code-found-linux-vulnerability/": {
+    "title": "Claude Code Found a Linux Vulnerability Hidden for 23 Years",
+    "date_covered": "2026-04-04T12:49:27.214739+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "KKKxHhH5Xe4",
     "tiktok_id": null
   }
 }
