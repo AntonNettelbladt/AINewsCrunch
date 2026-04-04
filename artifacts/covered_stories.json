@@ -1188,5 +1188,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "SOXHnWDX8Cg",
     "tiktok_id": null
+  },
+  "https://github.com/axios/axios/issues/10636": {
+    "title": "Post Mortem: axios npm supply chain compromise · Issue #10636 · axios/axios",
+    "date_covered": "2026-04-04T08:41:04.528933+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ngYAWhDA0NQ",
+    "tiktok_id": null
   }
 }
