@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/physical-ai-global-race-robots-manufacturing-2026/": {
-    "title": "Physical AI is having its moment and everyone wants a piece of it",
-    "date_covered": "2026-03-04T20:34:28.343631+00:00",
-    "source": "AI News",
-    "youtube_id": "GASuBi21buQ",
-    "tiktok_id": null
-  },
   "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/": {
     "title": "Anthropic CEO Dario Amodei calls OpenAI’s messaging around military deal ‘straight up lies,’ report says",
     "date_covered": "2026-03-05T01:52:50.184937+00:00",
@@ -1194,6 +1187,13 @@
     "date_covered": "2026-04-03T20:37:01.318753+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "6uHqx_zblWk",
+    "tiktok_id": null
+  },
+  "https://www.bigtechnology.com/p/iran-strikes-leave-amazon-availability": {
+    "title": "Iran Strikes Leave Amazon Availability Zones “Hard Down” in Bahrain and Dubai, Per Internal AWS Communication",
+    "date_covered": "2026-04-04T01:56:02.350835+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "AxzCmMOZC5I",
     "tiktok_id": null
   }
 }
