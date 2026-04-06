@@ -1,11 +1,4 @@
 {
-  "https://torrentfreak.com/uploading-pirated-books-via-bittorrent-qualifies-as-fair-use-meta/": {
-    "title": "Uploading Pirated Books via BitTorrent Qualifies as Fair Use, Meta Argues * TorrentFreak",
-    "date_covered": "2026-03-07T12:43:21.995639+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "M6LYJv_00sY",
-    "tiktok_id": null
-  },
   "https://www.smithsonianmag.com/smart-news/georges-seurat-is-most-famous-for-his-pointillist-painting-of-a-paris-park-but-more-than-half-of-his-canvases-were-stunning-seascapes-180988245/": {
     "title": "Georges Seurat Is Most Famous for His Pointillist Painting of a Paris Park. But More Than Half of His Canvases Were Stunning Seascapes",
     "date_covered": "2026-03-07T16:27:28.197843+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-06T09:09:04.390925+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "e4XIFY587zk",
+    "tiktok_id": null
+  },
+  "https://ben.page/microservices": {
+    "title": "Does coding with LLMs mean more microservices?",
+    "date_covered": "2026-04-06T13:07:25.604599+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "7hcEPESBIkY",
     "tiktok_id": null
   }
 }
