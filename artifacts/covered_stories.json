@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/how-to-target-your-ai-investments-gartner/": {
-    "title": "90% of AI projects fail - here are 3 ways to ensure yours doesn't",
-    "date_covered": "2026-03-07T08:32:12.841710+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "zop5FWHiZ_o",
-    "tiktok_id": null
-  },
   "https://torrentfreak.com/uploading-pirated-books-via-bittorrent-qualifies-as-fair-use-meta/": {
     "title": "Uploading Pirated Books via BitTorrent Qualifies as Fair Use, Meta Argues * TorrentFreak",
     "date_covered": "2026-03-07T12:43:21.995639+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-06T06:02:09.314651+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "F3wsMyogVPc",
+    "tiktok_id": null
+  },
+  "https://github.com/kessler/gemma-gem": {
+    "title": "GitHub - kessler/gemma-gem: Gemma Gem runs Google's Gemma 4 model entirely on-device via WebGPU — no API keys, no cloud, no data leaving your machine.",
+    "date_covered": "2026-04-06T09:09:04.390925+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "e4XIFY587zk",
     "tiktok_id": null
   }
 }
