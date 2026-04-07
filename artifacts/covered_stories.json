@@ -1,11 +1,4 @@
 {
-  "https://github.com/karpathy/autoresearch": {
-    "title": "GitHub - karpathy/autoresearch: AI agents running research on single-GPU nanochat training automatically",
-    "date_covered": "2026-03-08T01:54:02.098682+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "6E5Q_1P5CnQ",
-    "tiktok_id": null
-  },
   "https://www.lloydslist.com/LL1156532/They-all-said-Hormuz-closure-would-be-brief-What-if-they-were-wrong": {
     "title": "They all said Hormuz closure would be brief. What if they were wrong?",
     "date_covered": "2026-03-08T05:14:01.907334+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-06T20:38:57.332332+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "FxNXSTG0F5w",
+    "tiktok_id": null
+  },
+  "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign": {
+    "title": "The Team Behind a Pro-Iran, Lego-Themed Viral-Video Campaign",
+    "date_covered": "2026-04-07T02:06:13.108673+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EsSV6oIoXaQ",
     "tiktok_id": null
   }
 }
