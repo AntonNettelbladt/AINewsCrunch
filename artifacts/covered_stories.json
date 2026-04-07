@@ -1,11 +1,4 @@
 {
-  "https://beyondloom.com/blog/onwigglypaint.html": {
-    "title": "Untitled",
-    "date_covered": "2026-03-08T12:45:41.722476+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "1YMow7S4868",
-    "tiktok_id": null
-  },
   "https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/": {
     "title": "Phi-4-reasoning-vision and the lessons of training a multimodal reasoning model",
     "date_covered": "2026-03-08T16:28:46.414068+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-07T05:50:53.626875+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "5eoIS2ONegU",
+    "tiktok_id": null
+  },
+  "https://dornsife.usc.edu/news/stories/ai-may-be-making-us-think-and-write-more-alike/": {
+    "title": "AI may be making us think and write more alike",
+    "date_covered": "2026-04-07T13:15:16.173173+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "PzwX94ZWPdA",
     "tiktok_id": null
   }
 }
