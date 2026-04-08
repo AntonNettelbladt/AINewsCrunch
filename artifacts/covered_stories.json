@@ -1,11 +1,4 @@
 {
-  "https://quesma.com/blog/chromatron-recompiled/": {
-    "title": "Reviving a 20-year-old puzzle game Chromatron with Ghidra and AI",
-    "date_covered": "2026-03-09T05:24:28.854216+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "8id3kUKpj7k",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/city-union-bank-launches-ai-centre-to-support-banking-operations/": {
     "title": "City Union Bank launches AI centre to support banking operations",
     "date_covered": "2026-03-09T12:59:23.717518+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-08T02:08:51.040139+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "wvhvyKApEvs",
+    "tiktok_id": null
+  },
+  "http://acme.com/updates/archive/229.html": {
+    "title": "07Apr2026 https outage",
+    "date_covered": "2026-04-08T05:57:10.867276+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Z0WzZMtAIsE",
     "tiktok_id": null
   }
 }
