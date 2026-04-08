@@ -1167,5 +1167,12 @@
     "source": "AI News",
     "youtube_id": "uI9Q62CwRFc",
     "tiktok_id": null
+  },
+  "https://www.anthropic.com/glasswing": {
+    "title": "Project Glasswing: Securing critical software for the AI era",
+    "date_covered": "2026-04-08T02:08:51.040139+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wvhvyKApEvs",
+    "tiktok_id": null
   }
 }
