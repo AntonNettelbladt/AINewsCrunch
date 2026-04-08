@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/city-union-bank-launches-ai-centre-to-support-banking-operations/": {
-    "title": "City Union Bank launches AI centre to support banking operations",
-    "date_covered": "2026-03-09T12:59:23.717518+00:00",
-    "source": "AI News",
-    "youtube_id": "CHc9Ao2aMMA",
-    "tiktok_id": null
-  },
   "https://nypost.com/2026/03/04/business/anthropic-investors-urge-truce-with-pentagon-as-lockheed-martin-quietly-removes-ai-giants-tech/": {
     "title": "Anthropic investors grow frustrated with CEO after feds ban AI startup",
     "date_covered": "2026-03-09T17:03:50.223965+00:00",
@@ -1180,6 +1173,13 @@
     "date_covered": "2026-04-08T09:01:27.861901+00:00",
     "source": "AI News",
     "youtube_id": "YLwFx_hNImE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-workflows-developer-success-and-central-project-management-needs/": {
+    "title": "AI workflows for software developers and the need for oversight",
+    "date_covered": "2026-04-08T13:19:07.977621+00:00",
+    "source": "AI News",
+    "youtube_id": "JnFMEIKYAmg",
     "tiktok_id": null
   }
 }
