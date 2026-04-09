@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/ai-curse-and-blessing-to-open-source-software-deveopers/": {
-    "title": "Why AI is both a curse and a blessing to open-source software - according to developers",
-    "date_covered": "2026-03-10T12:58:54.629487+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "q6-DDSaKFmI",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-ltx-video-comfyui-gdc/": {
     "title": "NVIDIA and ComfyUI Streamline Local AI Video Generation for Game Developers and Creators at GDC",
     "date_covered": "2026-03-10T16:59:32.750452+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-09T09:07:59.162738+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "-B4vy0Mpl3I",
+    "tiktok_id": null
+  },
+  "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html": {
+    "title": "Claude mixes up who said what, and that's not OK",
+    "date_covered": "2026-04-09T13:21:54.560501+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "WAD0tVQVNtM",
     "tiktok_id": null
   }
 }
