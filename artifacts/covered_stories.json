@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/good-bad-ugly-of-ai-healthcare-according-to-a-doctor-who-uses-ai/": {
-    "title": "The good, bad, and ugly of AI healthcare, according to a doctor who uses AI",
-    "date_covered": "2026-03-10T01:49:25.843440+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "UWsvaaWfgl8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/uk-sovereign-ai-fund-build-domestic-computing-infrastructure/": {
     "title": "UK sovereign AI fund to build up domestic computing infrastructure",
     "date_covered": "2026-03-10T05:13:03.657794+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-08T20:42:58.259942+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "yYW5XUYJHSo",
+    "tiktok_id": null
+  },
+  "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/": {
+    "title": "I've been waiting over a month for Anthropic support to respond to my billing issue",
+    "date_covered": "2026-04-09T01:58:14.994012+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mf2SAwJhuTU",
     "tiktok_id": null
   }
 }
