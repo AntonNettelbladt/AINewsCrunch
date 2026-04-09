@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/uk-sovereign-ai-fund-build-domestic-computing-infrastructure/": {
-    "title": "UK sovereign AI fund to build up domestic computing infrastructure",
-    "date_covered": "2026-03-10T05:13:03.657794+00:00",
-    "source": "AI News",
-    "youtube_id": "kvnmvIxLyIM",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/gradient-ai-cibc-ai-insurance-underwriting-growth-capital/": {
     "title": "Why AI insurance underwriting is finally attracting institutional capital",
     "date_covered": "2026-03-10T08:42:08.987438+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-09T01:58:14.994012+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "mf2SAwJhuTU",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-uk-expansion-london-pentagon/": {
+    "title": "Anthropic's refusal to arm AI is exactly why the UK wants it",
+    "date_covered": "2026-04-09T05:51:39.243605+00:00",
+    "source": "AI News",
+    "youtube_id": "uUJ9e9vRZ2k",
     "tiktok_id": null
   }
 }
