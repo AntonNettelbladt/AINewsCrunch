@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/gradient-ai-cibc-ai-insurance-underwriting-growth-capital/": {
-    "title": "Why AI insurance underwriting is finally attracting institutional capital",
-    "date_covered": "2026-03-10T08:42:08.987438+00:00",
-    "source": "AI News",
-    "youtube_id": "-u0zoBtZwUg",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/ai-curse-and-blessing-to-open-source-software-deveopers/": {
     "title": "Why AI is both a curse and a blessing to open-source software - according to developers",
     "date_covered": "2026-03-10T12:58:54.629487+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-09T05:51:39.243605+00:00",
     "source": "AI News",
     "youtube_id": "uUJ9e9vRZ2k",
+    "tiktok_id": null
+  },
+  "https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement": {
+    "title": "John Deere to Pay $99 Million in Monumental Right-to-Repair Settlement",
+    "date_covered": "2026-04-09T09:07:59.162738+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-B4vy0Mpl3I",
     "tiktok_id": null
   }
 }
