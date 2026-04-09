@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-ltx-video-comfyui-gdc/": {
-    "title": "NVIDIA and ComfyUI Streamline Local AI Video Generation for Game Developers and Creators at GDC",
-    "date_covered": "2026-03-10T16:59:32.750452+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "zzWKhDQ7_iE",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/": {
     "title": "Yann LeCun Raises $1 Billion to Build AI That Understands the Physical World",
     "date_covered": "2026-03-10T20:34:46.021145+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-09T13:21:54.560501+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "WAD0tVQVNtM",
+    "tiktok_id": null
+  },
+  "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry": {
+    "title": "The Vercel Plugin on Claude Code wants to read all your prompts!",
+    "date_covered": "2026-04-09T17:58:58.250860+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xApgU4Zq9Y4",
     "tiktok_id": null
   }
 }
