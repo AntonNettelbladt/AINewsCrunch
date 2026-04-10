@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/manulife-moves-ai-agents-into-core-financial-workflows/": {
-    "title": "Manulife moves AI agents into core financial workflows",
-    "date_covered": "2026-03-11T12:57:23.511410+00:00",
-    "source": "AI News",
-    "youtube_id": "zG73pFQU92E",
-    "tiktok_id": null
-  },
   "https://github.com/theredsix/agent-browser-protocol": {
     "title": "GitHub - theredsix/agent-browser-protocol: Browsers are async. Agents are synchronous. ABP turns continuous browsing into discrete, atomic steps—so LLMs can reason about the web without racing against",
     "date_covered": "2026-03-11T16:50:58.783770+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-10T09:08:35.520549+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "sDZ1OOazo4E",
+    "tiktok_id": null
+  },
+  "https://github.com/marimo-team/marimo-pair": {
+    "title": "GitHub - marimo-team/marimo-pair: Drop agents inside running marimo notebook sessions",
+    "date_covered": "2026-04-10T13:06:20.545976+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mfIf297Pvvc",
     "tiktok_id": null
   }
 }
