@@ -1,11 +1,4 @@
 {
-  "https://github.com/theredsix/agent-browser-protocol": {
-    "title": "GitHub - theredsix/agent-browser-protocol: Browsers are async. Agents are synchronous. ABP turns continuous browsing into discrete, atomic steps—so LLMs can reason about the web without racing against",
-    "date_covered": "2026-03-11T16:50:58.783770+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "JEjSH20Q03A",
-    "tiktok_id": null
-  },
   "https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform": {
     "title": "How We Hacked McKinsey's AI Platform",
     "date_covered": "2026-03-11T20:36:33.836258+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-04-10T16:49:48.495319+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "lG_gfl9BlSM",
+    "tiktok_id": null
+  },
+  "https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst": {
+    "title": "linux/Documentation/process/coding-assistants.rst at master · torvalds/linux",
+    "date_covered": "2026-04-10T20:35:10.979538+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "jQilu-A9C3w",
     "tiktok_id": null
   }
 }
