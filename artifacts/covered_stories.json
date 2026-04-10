@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/jetson-generative-ai-edge-oss/": {
-    "title": "As Open Models Spark AI Boom, NVIDIA Jetson Brings It to Life at the Edge",
-    "date_covered": "2026-03-11T05:14:26.051814+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "b-OTJe-VsL8",
-    "tiktok_id": null
-  },
   "https://github.com/RunanywhereAI/rcli": {
     "title": "GitHub - RunanywhereAI/RCLI: Talk to your Mac, query your docs, no cloud required. On-device voice AI + RAG",
     "date_covered": "2026-03-11T08:41:49.881128+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-09T20:49:24.671922+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "7ASsOu7nEKI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-keeps-new-ai-model-private-after-it-finds-thousands-of-external-vulnerabilities/": {
+    "title": "Anthropic keeps new AI model private after it finds thousands of external vulnerabilities",
+    "date_covered": "2026-04-10T06:00:23.210001+00:00",
+    "source": "AI News",
+    "youtube_id": "iWgkeYJtpAI",
     "tiktok_id": null
   }
 }
