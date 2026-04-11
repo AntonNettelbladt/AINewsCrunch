@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nemotron-3-super-agentic-ai/": {
-    "title": "New NVIDIA Nemotron 3 Super Delivers 5x Higher Throughput for Agentic AI",
-    "date_covered": "2026-03-12T05:20:57.937694+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "EDcVcZJtPQo",
-    "tiktok_id": null
-  },
   "https://www.theverge.com/featured-video/892850/i-was-interviewed-by-an-ai-bot-for-a-job": {
     "title": "I was interviewed by an AI bot for a job",
     "date_covered": "2026-03-12T08:42:55.508693+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-11T01:59:35.735124+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "B9T3RH4UQUo",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/meta-muse-spark-ai-model-open-source/": {
+    "title": "Did Meta Sacrifice Its Open-Source Identity for a Competitive AI Model?",
+    "date_covered": "2026-04-11T05:27:45.860762+00:00",
+    "source": "AI News",
+    "youtube_id": "xZOfSk7S32I",
     "tiktok_id": null
   }
 }
