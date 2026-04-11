@@ -1,11 +1,4 @@
 {
-  "https://github.com/obsessiondb/rudel": {
-    "title": "GitHub - obsessiondb/rudel: Claude Code Session Analytics",
-    "date_covered": "2026-03-12T17:00:37.202300+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "UgAdWbfS01A",
-    "tiktok_id": null
-  },
   "https://github.com/onecli/onecli": {
     "title": "GitHub - onecli/onecli: Open-source credential vault, give your AI agents access to services without exposing keys.",
     "date_covered": "2026-03-12T20:35:45.359866+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-11T16:37:25.373033+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YvtFBM8_q70",
+    "tiktok_id": null
+  },
+  "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/": {
+    "title": "Center for Responsible, Decentralized Intelligence at Berkeley",
+    "date_covered": "2026-04-11T20:32:58.185592+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "B48K28-iIiQ",
     "tiktok_id": null
   }
 }
