@@ -1,11 +1,4 @@
 {
-  "https://www.theverge.com/featured-video/892850/i-was-interviewed-by-an-ai-bot-for-a-job": {
-    "title": "I was interviewed by an AI bot for a job",
-    "date_covered": "2026-03-12T08:42:55.508693+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "mEJf21sY2TI",
-    "tiktok_id": null
-  },
   "https://github.com/microsoft/BitNet": {
     "title": "GitHub - microsoft/BitNet: Official inference framework for 1-bit LLMs",
     "date_covered": "2026-03-12T12:57:13.202913+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-11T05:27:45.860762+00:00",
     "source": "AI News",
     "youtube_id": "xZOfSk7S32I",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/why-companies-like-apple-are-building-ai-agents-with-limits/": {
+    "title": "Why companies like Apple are building AI agents with limits",
+    "date_covered": "2026-04-11T12:53:03.794718+00:00",
+    "source": "AI News",
+    "youtube_id": "6QVYvckr_84",
     "tiktok_id": null
   }
 }
