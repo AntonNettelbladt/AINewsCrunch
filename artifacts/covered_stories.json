@@ -1,11 +1,4 @@
 {
-  "https://backnotprop.com/blog/do-not-ab-test-my-workflow/": {
-    "title": "Please Do Not A/B Test My Workflow",
-    "date_covered": "2026-03-14T12:47:31.481490+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HkZ-dVOJUOQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/abb-physical-ai-simulation-secures-factory-automation-roi/": {
     "title": "ABB: Physical AI simulation boosts ROI for factory automation",
     "date_covered": "2026-03-14T16:32:36.944009+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-04-13T06:16:02.552999+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "CMGpqLHWYQE",
+    "tiktok_id": null
+  },
+  "https://thenextwavefutures.wordpress.com/2026/04/07/ai-end-digital-wave-technology-innovation-perez/": {
+    "title": "AI could be the end of the digital wave, not the next big thing",
+    "date_covered": "2026-04-13T13:22:37.644414+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "eQkJ_ArXC2g",
     "tiktok_id": null
   }
 }
