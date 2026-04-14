@@ -1,11 +1,4 @@
 {
-  "https://r2d3.us/visual-intro-to-machine-learning-part-1/": {
-    "title": "A Visual Introduction to Machine Learning",
-    "date_covered": "2026-03-15T16:33:01.043296+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Htkz0Pe9d7k",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/": {
     "title": "Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries",
     "date_covered": "2026-03-15T20:29:24.281656+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-14T13:22:26.982226+00:00",
     "source": "AI News",
     "youtube_id": "60HTNohKAAY",
+    "tiktok_id": null
+  },
+  "https://github.com/kontext-dev/kontext-cli": {
+    "title": "GitHub - kontext-security/kontext-cli: Open-source CLI for AI coding agents. Give your coding agents access to services without exposing keys.",
+    "date_covered": "2026-04-14T17:06:27.390770+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "iZmP8vfG8yQ",
     "tiktok_id": null
   }
 }
