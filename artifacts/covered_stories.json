@@ -1,11 +1,4 @@
 {
-  "https://www.anthropic.com/news/claude-partner-network": {
-    "title": "Anthropic invests $100 million into the Claude Partner Network",
-    "date_covered": "2026-03-15T02:05:26.067339+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "1lmOnnt6qKg",
-    "tiktok_id": null
-  },
   "https://www.airbus.com/en/newsroom/press-releases/2026-03-airbus-is-preparing-two-uncrewed-combat-aircraft-from-kratos-for-first-flight-with-a-european": {
     "title": "Airbus is preparing two uncrewed combat aircraft from Kratos for first flight with a European mission system",
     "date_covered": "2026-03-15T05:32:08.765749+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-04-13T20:55:57.849492+00:00",
     "source": "AI News",
     "youtube_id": "5EqFD4DPpdg",
+    "tiktok_id": null
+  },
+  "https://www.quantamagazine.org/the-ai-revolution-in-math-has-arrived-20260413/": {
+    "title": "The AI Revolution in Math Has Arrived",
+    "date_covered": "2026-04-14T02:14:51.895322+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "AvnhSCufRyM",
     "tiktok_id": null
   }
 }
