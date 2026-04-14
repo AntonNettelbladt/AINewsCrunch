@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/medical-advice-ai-healthcare-microsoft-openai/": {
-    "title": "Asking AI for medical advice? There's a right and wrong way, one doctor explains",
-    "date_covered": "2026-03-15T12:47:47.612442+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "Z3ko5WKTo_c",
-    "tiktok_id": null
-  },
   "https://r2d3.us/visual-intro-to-machine-learning-part-1/": {
     "title": "A Visual Introduction to Machine Learning",
     "date_covered": "2026-03-15T16:33:01.043296+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-14T09:18:23.814448+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "BWY0l3hqMPM",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/canadas-scotiabank-preps-for-its-ai-future/": {
+    "title": "Canada's Scotiabank preps for its AI future",
+    "date_covered": "2026-04-14T13:22:26.982226+00:00",
+    "source": "AI News",
+    "youtube_id": "60HTNohKAAY",
     "tiktok_id": null
   }
 }
