@@ -1,11 +1,4 @@
 {
-  "https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai": {
-    "title": "NVIDIA Launches Vera CPU, Purpose-Built for Agentic AI",
-    "date_covered": "2026-03-16T20:40:38.392401+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Ewj-LhuUW-4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/roche-ai-factories-omniverse/": {
     "title": "Roche Scales NVIDIA AI Factories Globally to Accelerate Drug Discovery, Diagnostic Solutions and Manufacturing Breakthroughs",
     "date_covered": "2026-03-17T01:54:24.435335+00:00",
@@ -1157,6 +1150,13 @@
   "https://github.com/saffron-health/libretto": {
     "title": "GitHub - saffron-health/libretto: The AI toolkit for building and maintaining browser automations",
     "date_covered": "2026-04-15T17:21:39.421733+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://github.com/robinovitch61/jeeves": {
+    "title": "GitHub - robinovitch61/jeeves: AI agent conversation history browser",
+    "date_covered": "2026-04-15T20:48:27.225843+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
     "tiktok_id": null
