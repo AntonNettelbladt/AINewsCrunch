@@ -1,18 +1,4 @@
 {
-  "https://github.com/EvanZhouDev/openai-oauth": {
-    "title": "GitHub - EvanZhouDev/openai-oauth: Free OpenAI API access with your ChatGPT account.",
-    "date_covered": "2026-03-16T02:07:07.215558+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "fQO5SzABSOg",
-    "tiktok_id": null
-  },
-  "https://tomjohnell.com/llms-can-be-absolutely-exhausting/": {
-    "title": "LLMs can be absolutely exhausting",
-    "date_covered": "2026-03-16T05:53:15.227350+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "JVtz28zN1lI",
-    "tiktok_id": null
-  },
   "https://www.salk.edu/news-release/cannabinoids-remove-plaque-forming-alzheimers-proteins-from-brain-cells/": {
     "title": "Cannabinoids remove plaque-forming Alzheimer’s proteins from brain cells",
     "date_covered": "2026-03-16T08:57:13.277590+00:00",
@@ -1166,6 +1152,13 @@
     "date_covered": "2026-04-15T02:10:14.109617+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "XspoQJ6zKCE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/hyundai-expands-into-robotics-and-physical-ai-systems/": {
+    "title": "Hyundai expands into robotics and physical AI systems",
+    "date_covered": "2026-04-15T06:03:06.064281+00:00",
+    "source": "AI News",
+    "youtube_id": "q2bMXQxiJOg",
     "tiktok_id": null
   }
 }
