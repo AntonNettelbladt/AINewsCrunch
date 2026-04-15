@@ -1,11 +1,4 @@
 {
-  "https://www.salk.edu/news-release/cannabinoids-remove-plaque-forming-alzheimers-proteins-from-brain-cells/": {
-    "title": "Cannabinoids remove plaque-forming Alzheimer’s proteins from brain cells",
-    "date_covered": "2026-03-16T08:57:13.277590+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "8yjz-ri7HSc",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/openai-frontier-enterprise-ai-agents-saas/": {
     "title": "OpenAI Frontier puts enterprise AI agents on a collision course with SaaS",
     "date_covered": "2026-03-16T13:08:00.711707+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-15T06:03:06.064281+00:00",
     "source": "AI News",
     "youtube_id": "q2bMXQxiJOg",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/mdalgorithms-inc/jobs/LVODKN7-growth-marketer-for-a-rapidly-growing-consumer-ai-healthcare-startup": {
+    "title": "Growth Marketer for a Rapidly Growing Consumer AI Healthcare Startup 🚀 at MDalgorithms Inc.",
+    "date_covered": "2026-04-15T09:19:20.371393+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "PooN1dNrl9g",
     "tiktok_id": null
   }
 }
