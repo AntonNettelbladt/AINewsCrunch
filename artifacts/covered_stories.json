@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ntt-data-nvidia-enterprise-ai-factories-production/": {
-    "title": "Enterprise AI factories are here and NTT DATA is building them with NVIDIA",
-    "date_covered": "2026-03-17T08:52:44.483241+00:00",
-    "source": "AI News",
-    "youtube_id": "w2k53dMBIWU",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/1password-introduces-unified-credential-security-platform/": {
     "title": "As AI agents spread, 1Password's new tool tackles a rising security threat",
     "date_covered": "2026-03-17T13:34:10.677623+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-16T06:04:20.636695+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Ab3cQLaSo80",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/citizen-developers-now-have-their-own-wingman/": {
+    "title": "Citizen developers now have their own Wingman",
+    "date_covered": "2026-04-16T09:19:17.497080+00:00",
+    "source": "AI News",
+    "youtube_id": "BwWGEew8H00",
     "tiktok_id": null
   }
 }
