@@ -1160,5 +1160,12 @@
     "source": "AI News",
     "youtube_id": "BwWGEew8H00",
     "tiktok_id": null
+  },
+  "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262": {
+    "title": "Unexpected €54k billing spike in 13 hours: Firebase browser key without API restrictions used for Gemini requests",
+    "date_covered": "2026-04-16T13:27:04.513905+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "heplYGixP5Q",
+    "tiktok_id": null
   }
 }
