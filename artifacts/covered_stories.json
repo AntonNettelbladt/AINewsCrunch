@@ -1,11 +1,4 @@
 {
-  "https://mistral.ai/news/forge": {
-    "title": "Introducing Forge",
-    "date_covered": "2026-03-18T08:49:38.151664+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "7lAOgr64Gjo",
-    "tiktok_id": null
-  },
   "https://phys.org/news/2026-03-ryugu-asteroid-samples-dna-rna.html": {
     "title": "Ryugu asteroid samples contain all DNA and RNA building blocks, bolstering origin-of-life theories",
     "date_covered": "2026-03-18T13:08:26.182556+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-17T06:06:29.380596+00:00",
     "source": "AI News",
     "youtube_id": "_IsGyznegZQ",
+    "tiktok_id": null
+  },
+  "https://tomtunguz.com/ai-compute-crisis-2026/": {
+    "title": "The Beginning of Scarcity in AI",
+    "date_covered": "2026-04-17T09:18:39.138911+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "G4nUFZaEnmY",
     "tiktok_id": null
   }
 }
