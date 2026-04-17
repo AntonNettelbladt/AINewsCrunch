@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/telecom-ai-grids-inference/": {
-    "title": "NVIDIA, Telecom Leaders Build AI Grids to Optimize Inference on Distributed Networks",
-    "date_covered": "2026-03-18T05:29:22.996114+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "l32Zk0w96v4",
-    "tiktok_id": null
-  },
   "https://mistral.ai/news/forge": {
     "title": "Introducing Forge",
     "date_covered": "2026-03-18T08:49:38.151664+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-04-17T02:12:59.551570+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "pS152pS957o",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/openai-agents-sdk-improves-governance-sandbox-execution/": {
+    "title": "OpenAI Agents SDK improves governance with sandbox execution",
+    "date_covered": "2026-04-17T06:06:29.380596+00:00",
+    "source": "AI News",
+    "youtube_id": "_IsGyznegZQ",
     "tiktok_id": null
   }
 }
