@@ -1,11 +1,4 @@
 {
-  "https://notes.visaint.space/ai-coding-is-gambling/": {
-    "title": "AI Coding is Gambling",
-    "date_covered": "2026-03-18T21:00:27.020295+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HEYQoQIgF2k",
-    "tiktok_id": null
-  },
   "https://github.com/alainnothere/llm-circuit-finder": {
     "title": "GitHub - alainnothere/llm-circuit-finder: I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B ",
     "date_covered": "2026-03-19T02:01:25.746906+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-04-17T20:45:18.113117+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "tNiPUAmV_JU",
+    "tiktok_id": null
+  },
+  "https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/": {
+    "title": "How to Host a Blog on a Subdirectory instead of a Subdomain with Cloudflare Workers",
+    "date_covered": "2026-04-18T02:04:44.757569+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mX3cJZuDIqg",
     "tiktok_id": null
   }
 }
