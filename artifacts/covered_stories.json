@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/nvidia-agent-toolkit-enterprise-ai-agents/": {
-    "title": "NVIDIA Agent Toolkit Gives Enterprises a Framework to Deploy AI Agents at Scale",
-    "date_covered": "2026-03-19T17:00:45.676240+00:00",
-    "source": "AI News",
-    "youtube_id": "L3ev-JRkuCw",
-    "tiktok_id": null
-  },
   "https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident": {
     "title": "A rogue AI led to a serious security incident at Meta",
     "date_covered": "2026-03-19T20:41:26.587193+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-04-18T08:47:41.745223+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "42O64S-PtGo",
+    "tiktok_id": null
+  },
+  "https://spectrum.ieee.org/state-of-ai-index-2026": {
+    "title": "Stanford's AI Index for 2026 Shows the State of AI",
+    "date_covered": "2026-04-18T20:37:08.069702+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "OvXYxurWY5A",
     "tiktok_id": null
   }
 }
