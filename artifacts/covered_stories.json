@@ -1,18 +1,4 @@
 {
-  "https://github.com/alainnothere/llm-circuit-finder": {
-    "title": "GitHub - alainnothere/llm-circuit-finder: I replicated Ng's RYS method and found that duplicating 3 specific layers in Qwen2.5-32B boosts reasoning by 17% and duplicating layers 12-14 in Devstral-24B ",
-    "date_covered": "2026-03-19T02:01:25.746906+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "-SyNMUz5sL4",
-    "tiktok_id": null
-  },
-  "https://om.co/2026/03/17/openai-has-new-focus-on-the-ipo/": {
-    "title": "OpenAI Has New Focus (on the IPO)",
-    "date_covered": "2026-03-19T05:26:30.901517+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "N_FbASW4Coo",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/for-effective-ai-insurance-needs-a-better-data-layer-and-integration/": {
     "title": "For effective AI, insurance needs to get its data house in order",
     "date_covered": "2026-03-19T08:43:08.815532+00:00",
@@ -1166,6 +1152,13 @@
     "date_covered": "2026-04-18T02:04:44.757569+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "mX3cJZuDIqg",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/why-prolonged-ai-use-risks-your-health-4-ways-to-stay-safe/": {
+    "title": "Prolonged AI use can be hazardous to your health and work: 4 ways to stay safe",
+    "date_covered": "2026-04-18T05:44:58.477281+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "pke-Q8SI9Zs",
     "tiktok_id": null
   }
 }
