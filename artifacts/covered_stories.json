@@ -1139,5 +1139,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "baQectNVmSI",
     "tiktok_id": null
+  },
+  "https://simonwillison.net/2026/Apr/18/opus-system-prompt/": {
+    "title": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+    "date_covered": "2026-04-19T12:57:53.666487+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "LmVvhRDfIsY",
+    "tiktok_id": null
   }
 }
