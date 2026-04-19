@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-cloudxr-apple-vision-pro/": {
-    "title": "More Than Meets the Eye: NVIDIA RTX-Accelerated Computers Now Connect Directly to Apple Vision Pro",
-    "date_covered": "2026-03-20T16:45:39.986282+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "ciN0hwRLVks",
-    "tiktok_id": null
-  },
-  "https://blogs.nvidia.com/blog/build-robots-with-ai/": {
-    "title": "From Simulation to Production: How to Build Robots With AI",
-    "date_covered": "2026-03-20T20:33:40.721525+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "-J6YqM0R21A",
-    "tiktok_id": null
-  },
   "https://github.com/FormerLab/shadow-fleet-tracker-light": {
     "title": "GitHub - FormerLab/shadow-fleet-tracker-light: Open source Baltic Sea shadow fleet tracker. 1200+ vessels, live AIS, cable proximity alerts. No cloud, no subscription, runs locally",
     "date_covered": "2026-03-21T01:47:40.990161+00:00",
@@ -1145,6 +1131,13 @@
     "date_covered": "2026-04-19T16:40:50.952398+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YNB1C1IXQRA",
+    "tiktok_id": null
+  },
+  "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/": {
+    "title": "Blue Origin’s rocket reuse achievement marred by upper stage failure",
+    "date_covered": "2026-04-19T20:37:34.049006+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FI-_yWEo85Y",
     "tiktok_id": null
   }
 }
