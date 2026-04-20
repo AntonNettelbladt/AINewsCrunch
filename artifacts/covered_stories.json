@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/4-tips-for-building-better-ai-agents-business-can-count-on/": {
-    "title": "4 tips for building better AI agents that your business can trust",
-    "date_covered": "2026-03-21T12:45:29.695780+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "MUB42Z1PVBQ",
-    "tiktok_id": null
-  },
   "https://github.com/CronusL-1141/AI-company": {
     "title": "GitHub - CronusL-1141/AI-company: AI Team OS — Multi-Agent Team Operating System for Claude Code. 40+ MCP tools, 22 agent templates, task wall, meeting system, dashboard.",
     "date_covered": "2026-03-21T16:30:49.423063+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-20T06:17:05.501219+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xTawAJZgHX8",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/bobyard-2-0-offers-improved-takeoffs-and-unified-ai-for-estimators/": {
+    "title": "Bobyard 2.0 offers improved takeoffs and unified AI for estimators",
+    "date_covered": "2026-04-20T13:27:21.178728+00:00",
+    "source": "AI News",
+    "youtube_id": "iyJBI1zTNR8",
     "tiktok_id": null
   }
 }
