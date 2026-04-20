@@ -1,11 +1,4 @@
 {
-  "https://www.smithsonianmag.com/air-space-magazine/ugliest-airplane-appreciation-180978708/": {
-    "title": "The Ugliest Airplane: An Appreciation",
-    "date_covered": "2026-03-21T05:11:42.629005+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "a_GDElgeTvo",
-    "tiktok_id": null
-  },
   "https://therecord.media/man-pleads-guilty-8-million-ai-music-scheme": {
     "title": "Man pleads guilty to $8 million AI-generated music scheme",
     "date_covered": "2026-03-21T08:34:33.868566+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-04-20T02:18:08.231883+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "vpxsc9UteRs",
+    "tiktok_id": null
+  },
+  "https://www.swiss-ai.org": {
+    "title": "Swiss AI",
+    "date_covered": "2026-04-20T06:17:05.501219+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xTawAJZgHX8",
     "tiktok_id": null
   }
 }
