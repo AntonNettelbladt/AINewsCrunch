@@ -1,11 +1,4 @@
 {
-  "https://github.com/FormerLab/shadow-fleet-tracker-light": {
-    "title": "GitHub - FormerLab/shadow-fleet-tracker-light: Open source Baltic Sea shadow fleet tracker. 1200+ vessels, live AIS, cable proximity alerts. No cloud, no subscription, runs locally",
-    "date_covered": "2026-03-21T01:47:40.990161+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "lp-7wzczlV0",
-    "tiktok_id": null
-  },
   "https://www.smithsonianmag.com/air-space-magazine/ugliest-airplane-appreciation-180978708/": {
     "title": "The Ugliest Airplane: An Appreciation",
     "date_covered": "2026-03-21T05:11:42.629005+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-04-19T20:37:34.049006+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FI-_yWEo85Y",
+    "tiktok_id": null
+  },
+  "https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html": {
+    "title": "Uber's Anthropic AI Push Hits A Wall—CTO Says Budget Struggles Despite $3.4B Spend",
+    "date_covered": "2026-04-20T02:18:08.231883+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "vpxsc9UteRs",
     "tiktok_id": null
   }
 }
