@@ -1,11 +1,4 @@
 {
-  "https://www.mixfont.com/blog/learnings-from-training-a-font-recognition-model-from-scratch": {
-    "title": "Learnings from training a font recognition model from scratch — Mixfont Blog",
-    "date_covered": "2026-03-22T20:29:06.747304+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ab-MPmGSsfo",
-    "tiktok_id": null
-  },
   "https://christophermeiklejohn.com/ai/zabriskie/development/android/ios/2026/03/22/teaching-claude-to-qa-a-mobile-app.html": {
     "title": "Teaching Claude to QA a Mobile App",
     "date_covered": "2026-03-23T02:00:33.220759+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-21T17:01:25.987574+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "t3zQLe5_6xw",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/trellis-ai/jobs/SvzJaTH-member-of-technical-staff-product-engineering-full-time": {
+    "title": "Member of Technical Staff, Product Engineering (full-time) at Trellis AI",
+    "date_covered": "2026-04-21T20:51:18.344825+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hbBDB7Sc_EQ",
     "tiktok_id": null
   }
 }
