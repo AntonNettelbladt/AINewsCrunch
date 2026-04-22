@@ -1,11 +1,4 @@
 {
-  "https://christophermeiklejohn.com/ai/zabriskie/development/android/ios/2026/03/22/teaching-claude-to-qa-a-mobile-app.html": {
-    "title": "Teaching Claude to QA a Mobile App",
-    "date_covered": "2026-03-23T02:00:33.220759+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "NjbPB6zXZaM",
-    "tiktok_id": null
-  },
   "https://nesbitt.io/2026/03/21/how-to-attract-ai-bots-to-your-open-source-project.html": {
     "title": "How to Attract AI Bots to Your Open Source Project",
     "date_covered": "2026-03-23T05:33:32.279045+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-21T20:51:18.344825+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hbBDB7Sc_EQ",
+    "tiktok_id": null
+  },
+  "https://www.brex.com/crabtrap": {
+    "title": "CrabTrap: Secure Agents in Production",
+    "date_covered": "2026-04-22T02:12:20.282675+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mKQNuHz5sUM",
     "tiktok_id": null
   }
 }
