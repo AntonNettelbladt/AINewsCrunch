@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/": {
-    "title": "How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell",
-    "date_covered": "2026-03-23T17:00:22.222371+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "20yU5jobPTQ",
-    "tiktok_id": null
-  },
-  "https://www.asimov.press/p/ai-science": {
-    "title": "Designing AI for Disruptive Science",
-    "date_covered": "2026-03-23T20:39:28.015140+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "byEZbjEAhcI",
-    "tiktok_id": null
-  },
   "https://www.theguardian.com/technology/2026/mar/23/ai-boom-risks-widening-wealth-divide-blackrock-larry-fink": {
     "title": "AI boom risks widening wealth divide, says BlackRock’s Larry Fink",
     "date_covered": "2026-03-24T01:52:10.308754+00:00",
@@ -1138,6 +1124,13 @@
     "date_covered": "2026-04-22T16:59:41.278486+00:00",
     "source": "AI News",
     "youtube_id": "7t-tJPuNMtM",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/siemens-ai-automation-engineering-workflows/": {
+    "title": "Siemens introduces AI system for automation engineering",
+    "date_covered": "2026-04-22T20:55:41.602005+00:00",
+    "source": "AI News",
+    "youtube_id": "eolRrlZ7X0U",
     "tiktok_id": null
   }
 }
