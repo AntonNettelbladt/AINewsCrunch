@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/samsung-adopting-airdrop-compatibility/": {
-    "title": "Samsung adopting AirDrop compatibility is exactly what Android needs right now",
-    "date_covered": "2026-03-23T13:04:35.514112+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "su3AwIILeus",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/": {
     "title": "How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell",
     "date_covered": "2026-03-23T17:00:22.222371+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-22T09:20:39.090364+00:00",
     "source": "AI News",
     "youtube_id": "AJekAPaoy44",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/how-to-prepare-for-and-remediate-an-ai-system-incident/": {
+    "title": "How to prepare for and remediate an AI system incident",
+    "date_covered": "2026-04-22T13:23:42.214590+00:00",
+    "source": "AI News",
+    "youtube_id": "B0vJy3q0zeU",
     "tiktok_id": null
   }
 }
