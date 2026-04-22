@@ -1,11 +1,4 @@
 {
-  "https://nesbitt.io/2026/03/21/how-to-attract-ai-bots-to-your-open-source-project.html": {
-    "title": "How to Attract AI Bots to Your Open Source Project",
-    "date_covered": "2026-03-23T05:33:32.279045+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YNgPOOtOYNg",
-    "tiktok_id": null
-  },
   "https://dynomight.net/coffee/": {
     "title": "LLMs predict my coffee",
     "date_covered": "2026-03-23T08:56:57.472063+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-22T02:12:20.282675+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "mKQNuHz5sUM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-manufacturing-hannover-messe/": {
+    "title": "NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026",
+    "date_covered": "2026-04-22T06:17:09.865597+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "_VElb9yNT3w",
     "tiktok_id": null
   }
 }
