@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/technology/2026/mar/23/ai-boom-risks-widening-wealth-divide-blackrock-larry-fink": {
-    "title": "AI boom risks widening wealth divide, says BlackRock’s Larry Fink",
-    "date_covered": "2026-03-24T01:52:10.308754+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ZCZyyMznhBM",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/security-leaders-not-ready-for-ai-attacks-4-actions-to-take/": {
     "title": "1 in 2 security leaders say they're not ready for AI attacks - 4 actions to take now",
     "date_covered": "2026-03-24T05:27:46.795690+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-22T20:55:41.602005+00:00",
     "source": "AI News",
     "youtube_id": "eolRrlZ7X0U",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/": {
+    "title": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
+    "date_covered": "2026-04-23T02:16:03.139513+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "5MIUlT80KXQ",
     "tiktok_id": null
   }
 }
