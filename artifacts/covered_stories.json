@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/automating-complex-finance-workflows-with-multimodal-ai/": {
-    "title": "Automating complex finance workflows with multimodal AI",
-    "date_covered": "2026-03-25T05:27:12.797125+00:00",
-    "source": "AI News",
-    "youtube_id": "EaEgGE6R0iE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/palantir-ai-to-support-uk-finance-operations/": {
     "title": "Palantir AI to support UK finance operations",
     "date_covered": "2026-03-25T08:49:30.301146+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-04-24T02:15:57.697037+00:00",
     "source": "AI News",
     "youtube_id": "-g83spzY1eM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/": {
+    "title": "OpenAI’s New GPT-5.5 Powers Codex on NVIDIA Infrastructure — and NVIDIA Is Already Putting It to Work",
+    "date_covered": "2026-04-24T06:10:30.911713+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "N4K3yc6l_ik",
     "tiktok_id": null
   }
 }
