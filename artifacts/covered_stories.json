@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/rpa-still-matters-but-ai-is-changing-how-automation-works/": {
-    "title": "RPA matters, but AI changes how automation works",
-    "date_covered": "2026-03-26T13:10:27.086964+00:00",
-    "source": "AI News",
-    "youtube_id": "nRFERDKYONY",
-    "tiktok_id": null
-  },
   "https://github.com/salespeak-ai/buyer-eval-skill": {
     "title": "GitHub - salespeak-ai/buyer-eval-skill: B2B software vendor evaluation skill for Claude Code — domain-expert questions, vendor AI agent conversations, evidence-based scoring",
     "date_covered": "2026-03-26T17:01:40.825948+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-25T08:51:47.406453+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "-7R1e7lTTRw",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/claude-ai-connectors-hands-on-planning-a-trip/": {
+    "title": "How I used Claude AI to plan an entire hiking trip to the Adirondacks in 30 minutes - for free",
+    "date_covered": "2026-04-25T16:41:47.399573+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "P2jklzrYz0k",
     "tiktok_id": null
   }
 }
