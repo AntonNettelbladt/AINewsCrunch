@@ -1,11 +1,4 @@
 {
-  "https://github.com/salespeak-ai/buyer-eval-skill": {
-    "title": "GitHub - salespeak-ai/buyer-eval-skill: B2B software vendor evaluation skill for Claude Code — domain-expert questions, vendor AI agent conversations, evidence-based scoring",
-    "date_covered": "2026-03-26T17:01:40.825948+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "hO2mMg8URw8",
-    "tiktok_id": null
-  },
   "https://futuresearch.ai/blog/litellm-attack-transcript/": {
     "title": "My minute-by-minute response to the LiteLLM malware attack",
     "date_covered": "2026-03-26T20:38:11.911128+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-25T16:41:47.399573+00:00",
     "source": "ZDNet AI",
     "youtube_id": "P2jklzrYz0k",
+    "tiktok_id": null
+  },
+  "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/": {
+    "title": "A conversation with Kevin Scott: What’s next in AI",
+    "date_covered": "2026-04-25T20:40:16.058154+00:00",
+    "source": "Microsoft AI Blog",
+    "youtube_id": "4d0AAYbTILY",
     "tiktok_id": null
   }
 }
