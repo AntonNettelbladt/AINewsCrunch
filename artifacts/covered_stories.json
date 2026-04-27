@@ -1,18 +1,4 @@
 {
-  "https://standupforme.app/blog/some-uncomfortable-truths-about-ai-coding-agents/": {
-    "title": "Some uncomfortable truths about AI coding agents – Standup for Me",
-    "date_covered": "2026-03-27T20:39:39.236979+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "oz52pqf9ZPU",
-    "tiktok_id": null
-  },
-  "https://arstechnica.com/tech-policy/2026/03/doj-confirms-fbi-director-kash-patels-personal-email-was-hacked/": {
-    "title": "DOJ confirms FBI Director Kash Patel’s personal email was hacked",
-    "date_covered": "2026-03-28T01:54:58.544321+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "BY4E0MkPf38",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/artificial-intelligence/top-10-ai-testing-companies-in-2026": {
     "title": "Top 10 AI Testing Companies in 2026",
     "date_covered": "2026-03-28T05:25:46.973321+00:00",
@@ -1110,6 +1096,13 @@
     "date_covered": "2026-04-26T20:40:04.934794+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "spvl_ER0id4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/chatgpt-privacy-settings-guide/": {
+    "title": "How to audit what ChatGPT knows about you - and reclaim your data privacy",
+    "date_covered": "2026-04-27T02:31:41.057997+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
