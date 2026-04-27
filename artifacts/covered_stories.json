@@ -1,11 +1,4 @@
 {
-  "https://www.theregister.com/2026/03/27/sycophantic_ai_risks/": {
-    "title": "Sycophantic behavior in AI affects us all, say researchers",
-    "date_covered": "2026-03-28T16:34:30.444943+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "7lhjdoOXSkI",
-    "tiktok_id": null
-  },
   "https://lzon.ca/posts/other/thoughts-ai-era/": {
     "title": "The first 40 months of the AI era",
     "date_covered": "2026-03-28T20:31:11.857122+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-04-27T13:35:24.128247+00:00",
     "source": "Analytics Insight",
     "youtube_id": "0XNozGGlXsY",
+    "tiktok_id": null
+  },
+  "https://deepmind.google/blog/decoupled-diloco/": {
+    "title": "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale",
+    "date_covered": "2026-04-27T17:22:54.578741+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "CjL5XNKnl_A",
     "tiktok_id": null
   }
 }
