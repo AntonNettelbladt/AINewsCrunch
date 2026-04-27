@@ -1,11 +1,4 @@
 {
-  "https://lzon.ca/posts/other/thoughts-ai-era/": {
-    "title": "The first 40 months of the AI era",
-    "date_covered": "2026-03-28T20:31:11.857122+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "jlY2EmooM2I",
-    "tiktok_id": null
-  },
   "https://github.com/austin-weeks/miasma": {
     "title": "GitHub - austin-weeks/miasma: Trap AI web scrapers in an endless poison pit.",
     "date_covered": "2026-03-29T12:49:19.341510+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-04-27T17:22:54.578741+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "CjL5XNKnl_A",
+    "tiktok_id": null
+  },
+  "https://app.oravys.com/blog/mercor-breach-2026": {
+    "title": "4TB of voice samples stolen from 40,000 AI contractors -- how to verify if yours is being weaponized",
+    "date_covered": "2026-04-27T21:04:01.998908+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Pmrjtn14D50",
     "tiktok_id": null
   }
 }
