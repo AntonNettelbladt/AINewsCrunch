@@ -1,11 +1,4 @@
 {
-  "https://grid.iamkate.com/": {
-    "title": "National Grid: Live",
-    "date_covered": "2026-03-28T12:49:27.482297+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "yIwOjmNveNI",
-    "tiktok_id": null
-  },
   "https://www.theregister.com/2026/03/27/sycophantic_ai_risks/": {
     "title": "Sycophantic behavior in AI affects us all, say researchers",
     "date_covered": "2026-03-28T16:34:30.444943+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-04-27T10:16:31.290902+00:00",
     "source": "Microsoft AI Blog",
     "youtube_id": "uES5uUMiq20",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/startup-news-china-blocks-metas-2b-acquisition-of-ai-startup-manus": {
+    "title": "Startup News: China Blocks Meta’s $2B Acquisition of AI Startup Manus",
+    "date_covered": "2026-04-27T13:35:24.128247+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "0XNozGGlXsY",
     "tiktok_id": null
   }
 }
