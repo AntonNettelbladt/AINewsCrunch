@@ -1,11 +1,4 @@
 {
-  "https://isp.netscape.com/news/story/0001/20260329/e4d8ea591b3b036142c2bf2dee7dff5a": {
-    "title": "Midnight train from Georgia: A view of America from the tracks as airports struggle in the shutdown",
-    "date_covered": "2026-03-29T20:31:27.702805+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "j-lAhBbOu40",
-    "tiktok_id": null
-  },
   "https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/": {
     "title": "AI Agents Could Make Free Software Matter Again",
     "date_covered": "2026-03-30T02:10:07.860473+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-28T17:49:25.162467+00:00",
     "source": "AI News",
     "youtube_id": "_7ZIDgLjFAc",
+    "tiktok_id": null
+  },
+  "https://github.com/microsoft/VibeVoice": {
+    "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
+    "date_covered": "2026-04-28T21:10:09.528510+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wVkoVTBIzWc",
     "tiktok_id": null
   }
 }
