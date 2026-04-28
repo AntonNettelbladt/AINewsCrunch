@@ -1,11 +1,4 @@
 {
-  "https://www.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition": {
-    "title": "Police used AI facial recognition to arrest a Tennessee woman for crimes committed in a state she says she’s never visited",
-    "date_covered": "2026-03-29T16:35:38.674525+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MKG-pe3JbFw",
-    "tiktok_id": null
-  },
   "https://isp.netscape.com/news/story/0001/20260329/e4d8ea591b3b036142c2bf2dee7dff5a": {
     "title": "Midnight train from Georgia: A view of America from the tracks as airports struggle in the shutdown",
     "date_covered": "2026-03-29T20:31:27.702805+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-28T14:00:56.593821+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "lgBH8XnxkO8",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ibm-launches-ai-platform-bob-to-regulate-sdlc-costs/": {
+    "title": "IBM launches AI platform Bob to regulate SDLC costs",
+    "date_covered": "2026-04-28T17:49:25.162467+00:00",
+    "source": "AI News",
+    "youtube_id": "_7ZIDgLjFAc",
     "tiktok_id": null
   }
 }
