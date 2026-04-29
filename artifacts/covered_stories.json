@@ -1,11 +1,4 @@
 {
-  "https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/": {
-    "title": "ChatGPT Won't Let You Type Until Cloudflare Reads Your React State. I Decrypted the Program That Does It.",
-    "date_covered": "2026-03-30T06:03:13.114247+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "KXG36nULe2Y",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/geforce-now-thursday-screamer/": {
     "title": "GFN Thursday: Five Games on GeForce NOW",
     "date_covered": "2026-03-30T09:11:48.323421+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-29T02:38:15.533939+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "3E-5VB1V6IQ",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/claude-for-creative-work": {
+    "title": "Claude for Creative Work",
+    "date_covered": "2026-04-29T06:25:27.761934+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "bsmuWAEqbPs",
     "tiktok_id": null
   }
 }
