@@ -1,11 +1,4 @@
 {
-  "https://arkoinad.com/posts/apple_keychain_recovery.html": {
-    "title": "Recover Apple Keychain",
-    "date_covered": "2026-03-30T20:45:11.824717+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YQRjyjS036I",
-    "tiktok_id": null
-  },
   "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-takes-action-against-match-okcupid-deceiving-users-sharing-personal-data-third-party": {
     "title": "FTC Takes Action Against Match and OkCupid for Deceiving Users by Sharing Personal Data with Third Party",
     "date_covered": "2026-03-31T02:05:12.004290+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-29T17:31:06.027112+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "iEW9hrSgnFA",
+    "tiktok_id": null
+  },
+  "https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials": {
+    "title": "Ramp’s Sheets AI Exfiltrates Financials",
+    "date_covered": "2026-04-29T21:06:00.072947+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "7mPVI5m0SOY",
     "tiktok_id": null
   }
 }
