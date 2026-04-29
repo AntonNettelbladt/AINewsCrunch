@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/glia-wins-excellence-award-for-safer-ai-in-banking/": {
-    "title": "Glia wins Excellence Award for safer AI in banking",
-    "date_covered": "2026-03-30T16:57:13.556832+00:00",
-    "source": "AI News",
-    "youtube_id": "7IDcgrFNRWA",
-    "tiktok_id": null
-  },
   "https://arkoinad.com/posts/apple_keychain_recovery.html": {
     "title": "Recover Apple Keychain",
     "date_covered": "2026-03-30T20:45:11.824717+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-29T13:51:32.447895+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.theguardian.com/technology/2026/apr/29/making-ai-chatbots-more-friendly-mistakes-support-false-beliefs-conspiracy-theories-study": {
+    "title": "Friendly AI chatbots more likely to support conspiracy theories, study finds",
+    "date_covered": "2026-04-29T17:31:06.027112+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "iEW9hrSgnFA",
     "tiktok_id": null
   }
 }
