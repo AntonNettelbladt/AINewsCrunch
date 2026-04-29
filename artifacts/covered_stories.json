@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/geforce-now-thursday-screamer/": {
-    "title": "GFN Thursday: Five Games on GeForce NOW",
-    "date_covered": "2026-03-30T09:11:48.323421+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Sul3exfoEuE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/jpmorgan-begins-tracking-how-employees-use-ai-at-work/": {
     "title": "JPMorgan begins tracking how employees use AI at work",
     "date_covered": "2026-03-30T13:14:56.415979+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-29T06:25:27.761934+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "bsmuWAEqbPs",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/": {
+    "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
+    "date_covered": "2026-04-29T10:07:04.312127+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "SjKi23IgkPM",
     "tiktok_id": null
   }
 }
