@@ -1,11 +1,4 @@
 {
-  "https://simonwillison.net/2026/Mar/30/mr-chatterbox/": {
-    "title": "Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can run on your own computer",
-    "date_covered": "2026-03-31T05:48:11.306524+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "m2gK3I7Be2Q",
-    "tiktok_id": null
-  },
   "https://www.ycombinator.com/companies/ramain/jobs/jezgwo5-ai-ml-research-engineer": {
     "title": "Founding AI/ML Research Engineer at RamAIn",
     "date_covered": "2026-03-31T08:58:09.384276+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-30T02:39:49.850984+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "s9M8F-gERbk",
+    "tiktok_id": null
+  },
+  "https://copy.fail/": {
+    "title": "Copy Fail — CVE-2026-31431",
+    "date_covered": "2026-04-30T06:30:43.166571+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ackRe5VtoHE",
     "tiktok_id": null
   }
 }
