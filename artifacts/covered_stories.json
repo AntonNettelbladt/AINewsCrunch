@@ -1,11 +1,4 @@
 {
-  "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-takes-action-against-match-okcupid-deceiving-users-sharing-personal-data-third-party": {
-    "title": "FTC Takes Action Against Match and OkCupid for Deceiving Users by Sharing Personal Data with Third Party",
-    "date_covered": "2026-03-31T02:05:12.004290+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MbdlJccIW-Q",
-    "tiktok_id": null
-  },
   "https://simonwillison.net/2026/Mar/30/mr-chatterbox/": {
     "title": "Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can run on your own computer",
     "date_covered": "2026-03-31T05:48:11.306524+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-04-29T21:06:00.072947+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "7mPVI5m0SOY",
+    "tiktok_id": null
+  },
+  "https://www.flyingmag.com/joby-nyc-electric-air-taxi-jfk-airport/": {
+    "title": "Joby Kicks Off NYC Electric Air Taxi Demos With Historic JFK Flight",
+    "date_covered": "2026-04-30T02:39:49.850984+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "s9M8F-gERbk",
     "tiktok_id": null
   }
 }
