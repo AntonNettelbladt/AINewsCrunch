@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/energy-efficiency-ai-factories-grid/": {
-    "title": "Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power‑Flexible AI Factories to Fortify the Grid",
-    "date_covered": "2026-03-31T16:59:06.751934+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "5hfioUvM8UA",
-    "tiktok_id": null
-  },
   "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/": {
     "title": "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode, and more",
     "date_covered": "2026-03-31T20:44:52.866288+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-04-30T10:07:46.203268+00:00",
     "source": "ZDNet AI",
     "youtube_id": "WcpCAx1Xc2I",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-agent-governance-control-gaps/": {
+    "title": "AI agent governance takes focus as regulators flag control gaps",
+    "date_covered": "2026-04-30T17:22:46.946087+00:00",
+    "source": "AI News",
+    "youtube_id": "czwS4SBdLVA",
     "tiktok_id": null
   }
 }
