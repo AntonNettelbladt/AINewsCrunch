@@ -1,11 +1,4 @@
 {
-  "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/": {
-    "title": "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode, and more",
-    "date_covered": "2026-03-31T20:44:52.866288+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Tt4cbqz4gcQ",
-    "tiktok_id": null
-  },
   "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html": {
     "title": "OpenAI closes record-breaking $122 billion funding round as anticipation builds for IPO",
     "date_covered": "2026-04-01T02:13:47.518223+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-04-30T17:22:46.946087+00:00",
     "source": "AI News",
     "youtube_id": "czwS4SBdLVA",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization/": {
+    "title": "Nemotron Labs: What OpenClaw Agents Mean for Every Organization",
+    "date_covered": "2026-04-30T21:02:51.133883+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "W5kebiu7or0",
     "tiktok_id": null
   }
 }
