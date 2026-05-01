@@ -1,11 +1,4 @@
 {
-  "https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/": {
-    "title": "AI for American-Produced Cement and Concrete",
-    "date_covered": "2026-04-01T20:45:26.850358+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "55EozHbpQOQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/hershey-applies-ai-across-its-supply-chain-operations/": {
     "title": "Hershey applies AI across its supply chain operations",
     "date_covered": "2026-04-02T02:00:36.643040+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-05-01T16:58:28.512472+00:00",
     "source": "AI News",
     "youtube_id": "ofPcNcKpxJ8",
+    "tiktok_id": null
+  },
+  "https://github.com/xodn348/destiny": {
+    "title": "GitHub - xodn348/destiny: 오늘의 운세 — daily fortune Claude Code plugin (/destiny)",
+    "date_covered": "2026-05-01T20:51:58.812838+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FbOC_YjagXo",
     "tiktok_id": null
   }
 }
