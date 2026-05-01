@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/secure-governance-accelerates-financial-ai-revenue-growth/": {
-    "title": "Secure governance accelerates financial AI revenue growth",
-    "date_covered": "2026-04-01T09:06:01.176893+00:00",
-    "source": "AI News",
-    "youtube_id": "GPb7guoIfZE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/deepls-borderless-business-report-reveals-83-of-enterprises-are-still-behind-on-language-ai/": {
     "title": "DeepL’s Borderless Business report reveals 83% of enterprises are still behind on language AI",
     "date_covered": "2026-04-01T13:17:04.930325+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-05-01T06:40:07.901500+00:00",
     "source": "AI News",
     "youtube_id": "00wXFPXYfBQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/idc-how-emea-cios-can-jumpstart-ai-rollouts/": {
+    "title": "IDC: How EMEA CIOs can jumpstart AI rollouts",
+    "date_covered": "2026-05-01T09:34:49.193917+00:00",
+    "source": "AI News",
+    "youtube_id": "F80ACLR4-2Y",
     "tiktok_id": null
   }
 }
