@@ -1,11 +1,4 @@
 {
-  "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html": {
-    "title": "OpenAI closes record-breaking $122 billion funding round as anticipation builds for IPO",
-    "date_covered": "2026-04-01T02:13:47.518223+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "LySJ3tnZE_w",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/sap-and-anybotics-drive-industrial-adoption-physical-ai/": {
     "title": "SAP and ANYbotics drive industrial adoption of physical AI",
     "date_covered": "2026-04-01T05:58:07.699628+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-04-30T21:02:51.133883+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "W5kebiu7or0",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/a-guide-to-apis-and-mcps-and-mcp-gateways/": {
+    "title": "A guide to APIs, MCPs, and MCP Gateways",
+    "date_covered": "2026-05-01T02:46:37.376652+00:00",
+    "source": "AI News",
+    "youtube_id": "bELSN_HaYk0",
     "tiktok_id": null
   }
 }
