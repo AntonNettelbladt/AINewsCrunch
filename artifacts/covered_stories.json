@@ -1,11 +1,4 @@
 {
-  "https://apfel.franzai.com": {
-    "title": "Free AI on Your Mac",
-    "date_covered": "2026-04-03T13:00:03.279329+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "DjXAZA1a4Do",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/geforce-now-thursday-april-2026-games-list/": {
     "title": "Press Start on April: GeForce NOW Brings 10 Games to the Cloud",
     "date_covered": "2026-04-03T16:40:44.950934+00:00",
@@ -1089,6 +1082,13 @@
     "date_covered": "2026-05-03T09:24:02.017830+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "P9GDPY4R_yU",
+    "tiktok_id": null
+  },
+  "https://med.stanford.edu/news/all-news/2026/04/brain-scans-individual-versus-group.html": {
+    "title": "Group averages obscure how an individual’s brain controls behavior, Stanford Medicine study finds",
+    "date_covered": "2026-05-03T13:06:07.560757+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "2FcPlNoBp5I",
     "tiktok_id": null
   }
 }
