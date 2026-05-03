@@ -1,11 +1,4 @@
 {
-  "https://www.empirical.health/blog/saturated-fats-cholesterol-heart-disease/": {
-    "title": "Three main saturated fats raise your cholesterol",
-    "date_covered": "2026-04-03T20:37:01.318753+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "6uHqx_zblWk",
-    "tiktok_id": null
-  },
   "https://www.bigtechnology.com/p/iran-strikes-leave-amazon-availability": {
     "title": "Iran Strikes Leave Amazon Availability Zones “Hard Down” in Bahrain and Dubai, Per Internal AWS Communication",
     "date_covered": "2026-04-04T01:56:02.350835+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-03T13:06:07.560757+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2FcPlNoBp5I",
+    "tiktok_id": null
+  },
+  "https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses": {
+    "title": "AI outperforms doctors in Harvard trial of emergency triage diagnoses",
+    "date_covered": "2026-05-03T20:42:54.287293+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "4aweQdmtguc",
     "tiktok_id": null
   }
 }
