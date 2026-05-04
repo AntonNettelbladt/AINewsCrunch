@@ -1,11 +1,4 @@
 {
-  "https://github.com/ExTV/Podroid": {
-    "title": "GitHub - ExTV/Podroid: Rootless Podman for Android — run Linux containers on your phone",
-    "date_covered": "2026-04-04T16:36:01.937603+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/job-scam-3-warning-signs-and-what-to-do/": {
     "title": "FTC reports a surge in $220M job fraud - here's how to vet listings, according to recruiters",
     "date_covered": "2026-04-05T02:08:42.171059+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-04T13:54:14.256995+00:00",
     "source": "ZDNet AI",
     "youtube_id": "z0Y53LmJqMA",
+    "tiktok_id": null
+  },
+  "https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/": {
+    "title": "OpenAI, Google, and Microsoft Back Bill to Fund ‘AI Literacy’ in Schools",
+    "date_covered": "2026-05-04T17:31:33.292395+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "UNT9BSFO38o",
     "tiktok_id": null
   }
 }
