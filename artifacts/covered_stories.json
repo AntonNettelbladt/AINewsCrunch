@@ -1076,5 +1076,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "UNT9BSFO38o",
     "tiktok_id": null
+  },
+  "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/": {
+    "title": "How OpenAI delivers low-latency voice AI at scale",
+    "date_covered": "2026-05-04T21:10:48.032250+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "nCUNONw2h8E",
+    "tiktok_id": null
   }
 }
