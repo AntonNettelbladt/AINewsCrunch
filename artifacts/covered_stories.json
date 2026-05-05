@@ -1,11 +1,4 @@
 {
-  "https://lalitm.com/post/building-syntaqlite-ai/": {
-    "title": "Eight years of wanting, three months of building with AI",
-    "date_covered": "2026-04-05T16:36:32.263244+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "u-rjDgfWBxg",
-    "tiktok_id": null
-  },
   "https://www.kavliprize.org/nancy-kanwisher-autobiography": {
     "title": "Nancy Kanwisher life story",
     "date_covered": "2026-04-05T20:33:29.394014+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-05-05T13:33:52.934920+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "NbheMGLn_Rk",
+    "tiktok_id": null
+  },
+  "https://susam.net/inverse-laws-of-robotics.html": {
+    "title": "Three Inverse Laws of AI",
+    "date_covered": "2026-05-05T17:45:59.634471+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "U_JQLWbYthI",
     "tiktok_id": null
   }
 }
