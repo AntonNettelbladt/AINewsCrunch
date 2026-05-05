@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/job-scam-3-warning-signs-and-what-to-do/": {
-    "title": "FTC reports a surge in $220M job fraud - here's how to vet listings, according to recruiters",
-    "date_covered": "2026-04-05T02:08:42.171059+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "rnLdoFcOs5A",
-    "tiktok_id": null
-  },
   "https://lalitm.com/post/building-syntaqlite-ai/": {
     "title": "Eight years of wanting, three months of building with AI",
     "date_covered": "2026-04-05T16:36:32.263244+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-04T21:10:48.032250+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "nCUNONw2h8E",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/5-ways-to-upgrade-bluetooth-speakers-instead-of-replacing-them/": {
+    "title": "Forget the soundbar: How I upgraded my TV audio with spare Bluetooth speakers",
+    "date_covered": "2026-05-05T02:30:24.364955+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "8Jnb4w8ajvw",
     "tiktok_id": null
   }
 }
