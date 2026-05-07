@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/physical-ai-security-at-the-enterprise-perimeter-takes-a-step-closer/": {
-    "title": "Asylon and Thrive Logic bring physical AI to enterprise perimeter security",
-    "date_covered": "2026-04-07T20:46:48.768613+00:00",
-    "source": "AI News",
-    "youtube_id": "uI9Q62CwRFc",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/glasswing": {
     "title": "Project Glasswing: Securing critical software for the AI era",
     "date_covered": "2026-04-08T02:08:51.040139+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-07T17:49:19.801921+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "DlsdplVwE7M",
+    "tiktok_id": null
+  },
+  "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/": {
+    "title": "AI Slop is Killing Online Communities",
+    "date_covered": "2026-05-07T21:06:41.044927+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
