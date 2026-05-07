@@ -1,11 +1,4 @@
 {
-  "https://github.com/anthropics/claude-code/issues/44257": {
-    "title": "[BUG] Claude Code login fails with OAuth timeout on Windows · Issue #44257 · anthropics/claude-code",
-    "date_covered": "2026-04-07T16:59:03.796568+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "XCFQsYdi5c8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/physical-ai-security-at-the-enterprise-perimeter-takes-a-step-closer/": {
     "title": "Asylon and Thrive Logic bring physical AI to enterprise perimeter security",
     "date_covered": "2026-04-07T20:46:48.768613+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-07T14:01:32.583247+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "V09gnW9I2NI",
+    "tiktok_id": null
+  },
+  "https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers": {
+    "title": "Motherboard sales 'collapse' by more than 25% as chipmakers strangle enthusiast PC market to build more AI chips — Asus projected to sell 5 million fewer boards in 2025, Gigabyte, MSI, and ASRock also",
+    "date_covered": "2026-05-07T17:49:19.801921+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DlsdplVwE7M",
     "tiktok_id": null
   }
 }
