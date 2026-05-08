@@ -1,11 +1,4 @@
 {
-  "https://www.anthropic.com/glasswing": {
-    "title": "Project Glasswing: Securing critical software for the AI era",
-    "date_covered": "2026-04-08T02:08:51.040139+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "wvhvyKApEvs",
-    "tiktok_id": null
-  },
   "http://acme.com/updates/archive/229.html": {
     "title": "07Apr2026 https outage",
     "date_covered": "2026-04-08T05:57:10.867276+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-07T21:06:41.044927+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/energy-secretary-chris-wright-ian-buck/": {
+    "title": "Powering the Next American Century: US Energy Secretary Chris Wright and NVIDIA’s Ian Buck on the Genesis Mission",
+    "date_covered": "2026-05-08T02:43:22.164543+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "bqTM92R5Cfo",
     "tiktok_id": null
   }
 }
