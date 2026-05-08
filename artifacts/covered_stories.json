@@ -1,18 +1,4 @@
 {
-  "http://acme.com/updates/archive/229.html": {
-    "title": "07Apr2026 https outage",
-    "date_covered": "2026-04-08T05:57:10.867276+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Z0WzZMtAIsE",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/boomi-agentic-ai-data-activation-missing-step/": {
-    "title": "Boomi calls it “data activation” and says it’s the missing step in every AI deployment",
-    "date_covered": "2026-04-08T09:01:27.861901+00:00",
-    "source": "AI News",
-    "youtube_id": "YLwFx_hNImE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-workflows-developer-success-and-central-project-management-needs/": {
     "title": "AI workflows for software developers and the need for oversight",
     "date_covered": "2026-04-08T13:19:07.977621+00:00",
