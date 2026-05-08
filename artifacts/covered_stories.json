@@ -1,11 +1,4 @@
 {
-  "https://claude.com/blog/claude-managed-agents": {
-    "title": "Claude Managed Agents: get to production 10x faster",
-    "date_covered": "2026-04-08T20:42:58.259942+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "yYW5XUYJHSo",
-    "tiktok_id": null
-  },
   "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/": {
     "title": "I've been waiting over a month for Anthropic support to respond to my billing issue",
     "date_covered": "2026-04-09T01:58:14.994012+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-08T17:17:08.795469+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ZBJIoAqeqqw",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/geforce-now-thursday-gaijin-sso/": {
+    "title": "Linked and Loaded: Gaijin Single Sign-On Now Available on GeForce NOW",
+    "date_covered": "2026-05-08T21:00:37.222389+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "lfuBBMvHQQU",
     "tiktok_id": null
   }
 }
