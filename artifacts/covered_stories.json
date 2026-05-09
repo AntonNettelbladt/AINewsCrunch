@@ -1,11 +1,4 @@
 {
-  "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html": {
-    "title": "Claude mixes up who said what, and that's not OK",
-    "date_covered": "2026-04-09T13:21:54.560501+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "WAD0tVQVNtM",
-    "tiktok_id": null
-  },
   "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry": {
     "title": "The Vercel Plugin on Claude Code wants to read all your prompts!",
     "date_covered": "2026-04-09T17:58:58.250860+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-09T13:11:44.562087+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "3MG40EUFwPo",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ringcentral-ai-adds-shopify-calendly-and-whatsapp-to-ai-receptionist/": {
+    "title": "RingCentral adds Shopify, Calendly, and WhatsApp to AI Receptionist",
+    "date_covered": "2026-05-09T16:55:09.222171+00:00",
+    "source": "AI News",
+    "youtube_id": "B1VNYsSHcKs",
     "tiktok_id": null
   }
 }
