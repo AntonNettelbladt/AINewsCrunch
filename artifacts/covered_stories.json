@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/anthropic-uk-expansion-london-pentagon/": {
-    "title": "Anthropic's refusal to arm AI is exactly why the UK wants it",
-    "date_covered": "2026-04-09T05:51:39.243605+00:00",
-    "source": "AI News",
-    "youtube_id": "uUJ9e9vRZ2k",
-    "tiktok_id": null
-  },
   "https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement": {
     "title": "John Deere to Pay $99 Million in Monumental Right-to-Repair Settlement",
     "date_covered": "2026-04-09T09:07:59.162738+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-09T02:35:57.451504+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "M6EJJthyd1s",
+    "tiktok_id": null
+  },
+  "https://moq.dev/blog/webrtc-is-the-problem/": {
+    "title": "OpenAI’s WebRTC Problem",
+    "date_covered": "2026-05-09T06:18:53.448959+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "IKJ8xrWyAY0",
     "tiktok_id": null
   }
 }
