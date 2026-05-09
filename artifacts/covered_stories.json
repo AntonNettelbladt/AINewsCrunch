@@ -1,11 +1,4 @@
 {
-  "https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement": {
-    "title": "John Deere to Pay $99 Million in Monumental Right-to-Repair Settlement",
-    "date_covered": "2026-04-09T09:07:59.162738+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "-B4vy0Mpl3I",
-    "tiktok_id": null
-  },
   "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html": {
     "title": "Claude mixes up who said what, and that's not OK",
     "date_covered": "2026-04-09T13:21:54.560501+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-09T06:18:53.448959+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "IKJ8xrWyAY0",
+    "tiktok_id": null
+  },
+  "https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md": {
+    "title": "All my clients wanted a carousel, now it's an AI chatbot!",
+    "date_covered": "2026-05-09T09:19:52.587607+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "INiY4ictR0A",
     "tiktok_id": null
   }
 }
