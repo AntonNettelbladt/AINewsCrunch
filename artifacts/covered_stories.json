@@ -1,11 +1,4 @@
 {
-  "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/": {
-    "title": "I've been waiting over a month for Anthropic support to respond to my billing issue",
-    "date_covered": "2026-04-09T01:58:14.994012+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "mf2SAwJhuTU",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/anthropic-uk-expansion-london-pentagon/": {
     "title": "Anthropic's refusal to arm AI is exactly why the UK wants it",
     "date_covered": "2026-04-09T05:51:39.243605+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-08T21:00:37.222389+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "lfuBBMvHQQU",
+    "tiktok_id": null
+  },
+  "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/": {
+    "title": "Can LLMs model real-world systems in TLA+?",
+    "date_covered": "2026-05-09T02:35:57.451504+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "M6EJJthyd1s",
     "tiktok_id": null
   }
 }
