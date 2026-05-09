@@ -1,11 +1,4 @@
 {
-  "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry": {
-    "title": "The Vercel Plugin on Claude Code wants to read all your prompts!",
-    "date_covered": "2026-04-09T17:58:58.250860+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "xApgU4Zq9Y4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/geforce-now-thursday-samson-a-tyndalston-story/": {
     "title": "Strength and Destiny Collide: ‘Samson: A Tyndalston Story’ Arrives in the Cloud",
     "date_covered": "2026-04-09T20:49:24.671922+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-09T16:55:09.222171+00:00",
     "source": "AI News",
     "youtube_id": "B1VNYsSHcKs",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/samsung-galaxy-watch-faintng-detection-study-caveats/": {
+    "title": "Samsung watches can predict if you're about to faint - but there are big caveats",
+    "date_covered": "2026-05-09T20:47:11.283092+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "NgSCL-aYnig",
     "tiktok_id": null
   }
 }
