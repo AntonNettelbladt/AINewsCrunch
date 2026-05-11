@@ -1,11 +1,4 @@
 {
-  "https://cirruslabs.org/": {
-    "title": "Cirrus Labs to join OpenAI",
-    "date_covered": "2026-04-11T16:37:25.373033+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YvtFBM8_q70",
-    "tiktok_id": null
-  },
   "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/": {
     "title": "Center for Responsible, Decentralized Intelligence at Berkeley",
     "date_covered": "2026-04-11T20:32:58.185592+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-11T14:46:36.131650+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://duarteocarmo.com/blog/amalia-and-the-future-of-european-portuguese-llms": {
+    "title": "AMÁLIA and the future of European Portuguese LLMs",
+    "date_covered": "2026-05-11T17:56:32.098754+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "iq3BhUUhano",
     "tiktok_id": null
   }
 }
