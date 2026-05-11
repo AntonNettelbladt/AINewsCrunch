@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/why-companies-like-apple-are-building-ai-agents-with-limits/": {
-    "title": "Why companies like Apple are building AI agents with limits",
-    "date_covered": "2026-04-11T12:53:03.794718+00:00",
-    "source": "AI News",
-    "youtube_id": "6QVYvckr_84",
-    "tiktok_id": null
-  },
   "https://cirruslabs.org/": {
     "title": "Cirrus Labs to join OpenAI",
     "date_covered": "2026-04-11T16:37:25.373033+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-11T11:02:50.718863+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "Crws4N4LEmQ",
+    "tiktok_id": null
+  },
+  "https://dunkels.com/adam/claude-user-space-ip-stack-ping/": {
+    "title": "How Fast Does Claude, Acting as a User Space IP Stack, Respond to Pings?",
+    "date_covered": "2026-05-11T14:46:36.131650+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
