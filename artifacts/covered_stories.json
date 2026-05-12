@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ibm-how-robust-ai-governance-protects-enterprise-margins/": {
-    "title": "IBM: How robust AI governance protects enterprise margins",
-    "date_covered": "2026-04-12T16:37:59.992933+00:00",
-    "source": "AI News",
-    "youtube_id": "DYxsXxpjwsk",
-    "tiktok_id": null
-  },
   "https://github.com/halfwhey/claudraband": {
     "title": "GitHub - halfwhey/claudraband: Control Claude Code programmatically",
     "date_covered": "2026-04-12T20:35:27.756942+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-12T14:27:54.967676+00:00",
     "source": "AI News",
     "youtube_id": "kJWZ-rXOMIQ",
+    "tiktok_id": null
+  },
+  "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/": {
+    "title": "Amazon employees are “tokenmaxxing” due to pressure to use AI tools",
+    "date_covered": "2026-05-12T18:04:28.287558+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Nz5-ds2_ds8",
     "tiktok_id": null
   }
 }
