@@ -1,11 +1,4 @@
 {
-  "https://github.com/halfwhey/claudraband": {
-    "title": "GitHub - halfwhey/claudraband: Control Claude Code programmatically",
-    "date_covered": "2026-04-12T20:35:27.756942+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "0D1P9qGQoEs",
-    "tiktok_id": null
-  },
   "https://www.apollo.com/wealth/the-daily-spark/tech-valuations-back-to-pre-ai-boom-levels": {
     "title": "Tech Valuations Back to Pre-AI Boom Levels",
     "date_covered": "2026-04-13T02:17:33.252788+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-12T18:04:28.287558+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Nz5-ds2_ds8",
+    "tiktok_id": null
+  },
+  "https://deepmind.google/blog/ai-pointer/": {
+    "title": "Shaping the future of AI interaction by reimagining the mouse pointer",
+    "date_covered": "2026-05-12T21:39:44.620463+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-GTd_MlME5Y",
     "tiktok_id": null
   }
 }
