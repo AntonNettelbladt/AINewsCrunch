@@ -1,11 +1,4 @@
 {
-  "https://www.thealgorithmicbridge.com/p/ai-will-be-met-with-violence-and": {
-    "title": "AI Will Be Met With Violence, and Nothing Good Will Come of It",
-    "date_covered": "2026-04-12T12:58:01.004568+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "dIstUc44npo",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ibm-how-robust-ai-governance-protects-enterprise-margins/": {
     "title": "IBM: How robust AI governance protects enterprise margins",
     "date_covered": "2026-04-12T16:37:59.992933+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-12T10:33:57.450217+00:00",
     "source": "AI News",
     "youtube_id": "3t4KRhWz97A",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/malware-on-hugging-face-malicious-software-masquerading-as-openai-release/": {
+    "title": "Hugging Face hosted malicious software masquerading as OpenAI release",
+    "date_covered": "2026-05-12T14:27:54.967676+00:00",
+    "source": "AI News",
+    "youtube_id": "kJWZ-rXOMIQ",
     "tiktok_id": null
   }
 }
