@@ -1,11 +1,4 @@
 {
-  "https://www.electronicspecifier.com/products/sensors/how-a-dancer-with-als-used-brainwaves-to-perform-live/": {
-    "title": "How a dancer with ALS used brainwaves to perform live",
-    "date_covered": "2026-04-12T05:56:28.155702+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "bGBo6dzsXP8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/agentic-ais-governance-challenges-under-the-eu-ai-act-in-2026/": {
     "title": "Agentic AI's governance challenges under the EU AI Act in 2026",
     "date_covered": "2026-04-12T08:46:47.841722+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-12T02:42:28.524663+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "GKCXw8i1sv4",
+    "tiktok_id": null
+  },
+  "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/": {
+    "title": "I Let AI Build a Tool to Help Me Figure Out What Was Waking Me Up at Night",
+    "date_covered": "2026-05-12T06:39:49.846874+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "H8jO5DXSp0M",
     "tiktok_id": null
   }
 }
