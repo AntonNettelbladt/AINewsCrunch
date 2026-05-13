@@ -1,11 +1,4 @@
 {
-  "https://servo.org/blog/2026/04/13/servo-0.1.0-release/": {
-    "title": "Servo is now available on crates.io",
-    "date_covered": "2026-04-13T17:07:35.860994+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HNLrwyGslLI",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/companies-expand-ai-adoption-while-keeping-control/": {
     "title": "Companies expand AI adoption while keeping control",
     "date_covered": "2026-04-13T20:55:57.849492+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-13T14:29:03.196279+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hjx3_Vu62VE",
+    "tiktok_id": null
+  },
+  "https://fredchan.org/blog/locality-domains-guide/": {
+    "title": "Setting up a free *.city.state.us locality domain",
+    "date_covered": "2026-05-13T18:04:43.735288+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "3HVO8CKneZM",
     "tiktok_id": null
   }
 }
