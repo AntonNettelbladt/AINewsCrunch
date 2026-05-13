@@ -1,11 +1,4 @@
 {
-  "https://thenextwavefutures.wordpress.com/2026/04/07/ai-end-digital-wave-technology-innovation-perez/": {
-    "title": "AI could be the end of the digital wave, not the next big thing",
-    "date_covered": "2026-04-13T13:22:37.644414+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "eQkJ_ArXC2g",
-    "tiktok_id": null
-  },
   "https://servo.org/blog/2026/04/13/servo-0.1.0-release/": {
     "title": "Servo is now available on crates.io",
     "date_covered": "2026-04-13T17:07:35.860994+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-13T10:27:02.938515+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "vY-KX8sNwSw",
+    "tiktok_id": null
+  },
+  "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/": {
+    "title": "Software Developers Say AI Is Rotting Their Brains",
+    "date_covered": "2026-05-13T14:29:03.196279+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hjx3_Vu62VE",
     "tiktok_id": null
   }
 }
