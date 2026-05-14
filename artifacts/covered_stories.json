@@ -1,11 +1,4 @@
 {
-  "https://www.tobru.ch/an-ai-vibe-coding-horror-story/": {
-    "title": "An AI Vibe Coding Horror Story",
-    "date_covered": "2026-04-14T09:18:23.814448+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "BWY0l3hqMPM",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/canadas-scotiabank-preps-for-its-ai-future/": {
     "title": "Canada's Scotiabank preps for its AI future",
     "date_covered": "2026-04-14T13:22:26.982226+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-14T06:48:39.060291+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "8LNPFhBBjOA",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/claude-for-small-business": {
+    "title": "Introducing Claude for Small Business",
+    "date_covered": "2026-05-14T10:17:48.796408+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "tlQK7Lhs-B0",
     "tiktok_id": null
   }
 }
