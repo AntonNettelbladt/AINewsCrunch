@@ -1,11 +1,4 @@
 {
-  "https://www.quantamagazine.org/the-ai-revolution-in-math-has-arrived-20260413/": {
-    "title": "The AI Revolution in Math Has Arrived",
-    "date_covered": "2026-04-14T02:14:51.895322+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "AvnhSCufRyM",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/strengthening-enterprise-governance-for-rising-edge-ai-workloads/": {
     "title": "Strengthening enterprise governance for rising edge AI workloads",
     "date_covered": "2026-04-14T06:03:09.342115+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-05-13T21:29:54.088352+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "JX_FzLumGFg",
+    "tiktok_id": null
+  },
+  "https://www.theverge.com/tech/929091/meta-ai-threads-account-block": {
+    "title": "Meta won’t let you block its AI account on Threads",
+    "date_covered": "2026-05-14T02:48:36.684769+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EvlVNhxcMQY",
     "tiktok_id": null
   }
 }
