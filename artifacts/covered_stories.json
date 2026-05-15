@@ -1,11 +1,4 @@
 {
-  "https://github.com/dropseed/plain": {
-    "title": "GitHub - dropseed/plain: The Python web framework for building apps.",
-    "date_covered": "2026-04-15T02:10:14.109617+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "XspoQJ6zKCE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/hyundai-expands-into-robotics-and-physical-ai-systems/": {
     "title": "Hyundai expands into robotics and physical AI systems",
     "date_covered": "2026-04-15T06:03:06.064281+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-14T21:12:27.615746+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "7AppYdhtDK4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/uk-ai-safety-institute-updates-its-testing-on-mythos/": {
+    "title": "Anthropic's Mythos is evolving faster than expected, reports AI safety agency",
+    "date_covered": "2026-05-15T02:50:54.031090+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "Yfy4GLLGu9g",
     "tiktok_id": null
   }
 }
