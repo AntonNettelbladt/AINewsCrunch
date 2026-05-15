@@ -1,11 +1,4 @@
 {
-  "https://github.com/saffron-health/libretto": {
-    "title": "GitHub - saffron-health/libretto: The AI toolkit for building and maintaining browser automations",
-    "date_covered": "2026-04-15T17:21:39.421733+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://github.com/robinovitch61/jeeves": {
     "title": "GitHub - robinovitch61/jeeves: AI agent conversation history browser",
     "date_covered": "2026-04-15T20:48:27.225843+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-15T14:01:51.440707+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "3MtRQ1IVaPY",
+    "tiktok_id": null
+  },
+  "https://firethering.com/chatgpt-bank-account-plaid-openai/": {
+    "title": "ChatGPT Wants Access to Your Bank Account",
+    "date_covered": "2026-05-15T17:30:09.185077+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Cqb5aePyRjM",
     "tiktok_id": null
   }
 }
