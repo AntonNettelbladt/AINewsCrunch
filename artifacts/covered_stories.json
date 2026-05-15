@@ -1,11 +1,4 @@
 {
-  "https://github.com/robinovitch61/jeeves": {
-    "title": "GitHub - robinovitch61/jeeves: AI agent conversation history browser",
-    "date_covered": "2026-04-15T20:48:27.225843+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/commvault-launches-ctrl-z-for-cloud-ai-workloads/": {
     "title": "Commvault launches a ‘Ctrl-Z’ for cloud AI workloads",
     "date_covered": "2026-04-16T02:18:57.912220+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-15T17:30:09.185077+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Cqb5aePyRjM",
+    "tiktok_id": null
+  },
+  "https://projectzero.google/2026/05/pixel-10-exploit.html": {
+    "title": "A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens",
+    "date_covered": "2026-05-15T21:02:28.081740+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "rqeLR8N2xJc",
     "tiktok_id": null
   }
 }
