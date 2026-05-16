@@ -1,11 +1,4 @@
 {
-  "https://www.chalkbeat.org/2026/04/09/sal-khan-reflects-on-ai-in-schools-and-khanmigo/": {
-    "title": "Why Sal Khan is rethinking how AI will change schools",
-    "date_covered": "2026-04-16T06:04:20.636695+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Ab3cQLaSo80",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/citizen-developers-now-have-their-own-wingman/": {
     "title": "Citizen developers now have their own Wingman",
     "date_covered": "2026-04-16T09:19:17.497080+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-05-15T21:02:28.081740+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "rqeLR8N2xJc",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/physical-ai-humanoid-robots-factories/": {
+    "title": "Physical AI moves closer to factory floors as companies test humanoid robots",
+    "date_covered": "2026-05-16T06:23:59.835023+00:00",
+    "source": "AI News",
+    "youtube_id": "_5ZpSH7Zx5o",
     "tiktok_id": null
   }
 }
