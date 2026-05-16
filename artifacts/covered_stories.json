@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/citizen-developers-now-have-their-own-wingman/": {
-    "title": "Citizen developers now have their own Wingman",
-    "date_covered": "2026-04-16T09:19:17.497080+00:00",
-    "source": "AI News",
-    "youtube_id": "BwWGEew8H00",
-    "tiktok_id": null
-  },
   "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262": {
     "title": "Unexpected €54k billing spike in 13 hours: Firebase browser key without API restrictions used for Gemini requests",
     "date_covered": "2026-04-16T13:27:04.513905+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-05-16T06:23:59.835023+00:00",
     "source": "AI News",
     "youtube_id": "_5ZpSH7Zx5o",
+    "tiktok_id": null
+  },
+  "https://petapixel.com/2026/05/14/someone-shared-a-real-monet-painting-as-ai-and-asked-for-critiques/": {
+    "title": "Someone Shared a Real Monet Painting as AI and Asked for Critiques",
+    "date_covered": "2026-05-16T09:31:42.570069+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "VdsOu2QPJFw",
     "tiktok_id": null
   }
 }
