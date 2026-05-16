@@ -1,11 +1,4 @@
 {
-  "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262": {
-    "title": "Unexpected €54k billing spike in 13 hours: Firebase browser key without API restrictions used for Gemini requests",
-    "date_covered": "2026-04-16T13:27:04.513905+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "heplYGixP5Q",
-    "tiktok_id": null
-  },
   "https://github.com/SeanFDZ/macmind": {
     "title": "GitHub - SeanFDZ/macmind: Single-layer transformer in HyperTalk for the classic Macintosh",
     "date_covered": "2026-04-16T17:15:58.499808+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-16T13:19:09.926783+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "jdJBbBP19gU",
+    "tiktok_id": null
+  },
+  "https://www.seangoedecke.com/steering-vectors/": {
+    "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
+    "date_covered": "2026-05-16T16:59:02.380964+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "sszPcOl7Dps",
     "tiktok_id": null
   }
 }
