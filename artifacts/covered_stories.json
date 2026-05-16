@@ -1,11 +1,4 @@
 {
-  "https://github.com/SeanFDZ/macmind": {
-    "title": "GitHub - SeanFDZ/macmind: Single-layer transformer in HyperTalk for the classic Macintosh",
-    "date_covered": "2026-04-16T17:15:58.499808+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "vcEy3yXhWsk",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/cadence-expands-ai-and-robotics-partnerships-with-nvidia-google-cloud/": {
     "title": "Cadence expands AI and robotic partnerships with Nvidia, Google Cloud",
     "date_covered": "2026-04-16T21:05:31.715496+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-05-16T16:59:02.380964+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "sszPcOl7Dps",
+    "tiktok_id": null
+  },
+  "https://openai.com/index/malta-chatgpt-plus-partnership/": {
+    "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+    "date_covered": "2026-05-16T20:46:15.405962+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "qtS0-b74cFM",
     "tiktok_id": null
   }
 }
