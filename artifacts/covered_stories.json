@@ -1,11 +1,4 @@
 {
-  "https://lucasgerads.com/blog/lecroy-mcp-spice-demo/": {
-    "title": "SPICE simulation → oscilloscope → verification with Claude Code — Lucas Gerads",
-    "date_covered": "2026-04-17T13:14:44.866694+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "hDSfDco6RCA",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/claude-design-anthropic-labs": {
     "title": "Introducing Claude Design by Anthropic Labs",
     "date_covered": "2026-04-17T16:57:39.790627+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-05-16T20:46:15.405962+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "qtS0-b74cFM",
+    "tiktok_id": null
+  },
+  "https://github.com/ShurikenTrade/shuriken-skills": {
+    "title": "GitHub - ShurikenTrade/shuriken-skills: Agent-consumable integration skills for the Shuriken platform 🥷",
+    "date_covered": "2026-05-17T16:58:17.494563+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "_pw5RCYTYXU",
     "tiktok_id": null
   }
 }
