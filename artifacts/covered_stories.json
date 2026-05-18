@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/geforce-now-thursday-pragmata/": {
-    "title": "No Need for Space Gear — Capcom’s ‘PRAGMATA’ Joins GeForce NOW on Launch Day",
-    "date_covered": "2026-04-18T08:47:41.745223+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "42O64S-PtGo",
-    "tiktok_id": null
-  },
   "https://spectrum.ieee.org/state-of-ai-index-2026": {
     "title": "Stanford's AI Index for 2026 Shows the State of AI",
     "date_covered": "2026-04-18T20:37:08.069702+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-18T08:04:23.614017+00:00",
     "source": "Analytics Insight",
     "youtube_id": "xeXoeY_D5Vg",
+    "tiktok_id": null
+  },
+  "https://spacedaily.com/nasa-still-maintains-some-of-the-voyager-spacecraft-code-in-a-1970s-era-programming-language-that-almost-nobody-on-earth-fully-understands-anymore-and-the-handful-of-engineers-who-do-are-now-in-their/": {
+    "title": "NASA still maintains some of the Voyager spacecraft code in a 1970s-era programming language that almost nobody on Earth fully understands anymore, and the handful of engineers who do are now in their",
+    "date_covered": "2026-05-18T11:52:02.974999+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "nvq1sInNt_E",
     "tiktok_id": null
   }
 }
