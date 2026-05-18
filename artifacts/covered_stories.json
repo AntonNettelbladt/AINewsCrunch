@@ -1,18 +1,4 @@
 {
-  "https://electrek.co/2026/04/17/tesla-hw3-owners-be-patient-7-years-fsd/": {
-    "title": "Tesla tells HW3 owner to ‘be patient’ after 7 years of waiting for FSD",
-    "date_covered": "2026-04-17T20:45:18.113117+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "tNiPUAmV_JU",
-    "tiktok_id": null
-  },
-  "https://www.davidma.org/blog/2025-11-14-host-your-blog-on-a-subdirectory/": {
-    "title": "How to Host a Blog on a Subdirectory instead of a Subdomain with Cloudflare Workers",
-    "date_covered": "2026-04-18T02:04:44.757569+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "mX3cJZuDIqg",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/why-prolonged-ai-use-risks-your-health-4-ways-to-stay-safe/": {
     "title": "Prolonged AI use can be hazardous to your health and work: 4 ways to stay safe",
     "date_covered": "2026-04-18T05:44:58.477281+00:00",
@@ -1047,6 +1033,13 @@
     "date_covered": "2026-05-17T20:48:47.192840+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "6ZsLTo82sv8",
+    "tiktok_id": null
+  },
+  "https://idahonews.com/news/local/two-f-18-fighter-jets-have-crashed-during-an-airshow-at-mountain-home-air-force-base": {
+    "title": "Two F-18 fighter jets have crashed during an airshow at Mountain Home Air Force Base",
+    "date_covered": "2026-05-18T02:57:43.159777+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "aM-a5v5pi88",
     "tiktok_id": null
   }
 }
