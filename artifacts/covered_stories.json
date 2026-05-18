@@ -1,11 +1,4 @@
 {
-  "https://spectrum.ieee.org/state-of-ai-index-2026": {
-    "title": "Stanford's AI Index for 2026 Shows the State of AI",
-    "date_covered": "2026-04-18T20:37:08.069702+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "OvXYxurWY5A",
-    "tiktok_id": null
-  },
   "https://samhenri.gold/blog/20260418-claude-design/": {
     "title": "Thoughts and Feelings around Claude Design · Sam Henri Gold",
     "date_covered": "2026-04-19T02:18:40.684783+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-05-18T18:02:05.258908+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "f96UQ6tNTjU",
+    "tiktok_id": null
+  },
+  "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/": {
+    "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
+    "date_covered": "2026-05-18T21:12:59.254314+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "7FmZaPXscJI",
     "tiktok_id": null
   }
 }
