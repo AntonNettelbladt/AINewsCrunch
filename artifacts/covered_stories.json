@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/why-prolonged-ai-use-risks-your-health-4-ways-to-stay-safe/": {
-    "title": "Prolonged AI use can be hazardous to your health and work: 4 ways to stay safe",
-    "date_covered": "2026-04-18T05:44:58.477281+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "pke-Q8SI9Zs",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/geforce-now-thursday-pragmata/": {
     "title": "No Need for Space Gear — Capcom’s ‘PRAGMATA’ Joins GeForce NOW on Launch Day",
     "date_covered": "2026-04-18T08:47:41.745223+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-18T02:57:43.159777+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "aM-a5v5pi88",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-btc-slides-below-77k-ethereum-stays-above-2100-as-iran-tensions-rattle-markets": {
+    "title": "Crypto Prices Today: BTC Slides Below $77K, Ethereum Stays Above $2,100 as Iran Tensions Rattle Markets",
+    "date_covered": "2026-05-18T08:04:23.614017+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "xeXoeY_D5Vg",
     "tiktok_id": null
   }
 }
