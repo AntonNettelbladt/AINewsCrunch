@@ -1,11 +1,4 @@
 {
-  "https://www.lbc.co.uk/article/dubai-police-spied-private-whatsapp-5HjdXwr_2/": {
-    "title": "Dubai police arrest airline worker after accessing private WhatsApp group",
-    "date_covered": "2026-04-19T16:40:50.952398+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YNB1C1IXQRA",
-    "tiktok_id": null
-  },
   "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/": {
     "title": "Blue Origin’s rocket reuse achievement marred by upper stage failure",
     "date_covered": "2026-04-19T20:37:34.049006+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-05-19T11:03:58.022593+00:00",
     "source": "AI News",
     "youtube_id": "j1BPd7InhCI",
+    "tiktok_id": null
+  },
+  "https://apnews.com/article/ai-college-commencement-anxiety-boo-35aec9bac660eaeb05c5b8d392db2cac": {
+    "title": "Graduates are booing pep talks on AI at college commencements",
+    "date_covered": "2026-05-19T18:06:34.479152+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "lz9eEH2DjUk",
     "tiktok_id": null
   }
 }
