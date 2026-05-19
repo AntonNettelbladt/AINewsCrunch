@@ -1,11 +1,4 @@
 {
-  "https://samhenri.gold/blog/20260418-claude-design/": {
-    "title": "Thoughts and Feelings around Claude Design · Sam Henri Gold",
-    "date_covered": "2026-04-19T02:18:40.684783+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "17NEfNSLXR8",
-    "tiktok_id": null
-  },
   "https://sentinelcolorado.com/uncategorized/a-college-instructor-turns-to-typewriters-to-curb-ai-written-work-and-teach-life-lessons/": {
     "title": "A college instructor turns to typewriters to curb AI-written work and teach life lessons",
     "date_covered": "2026-04-19T06:00:24.068794+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-05-18T21:12:59.254314+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "7FmZaPXscJI",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/vera-cpu-delivery/": {
+    "title": "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs",
+    "date_covered": "2026-05-19T02:54:13.758417+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "L_sgKjet-1A",
     "tiktok_id": null
   }
 }
