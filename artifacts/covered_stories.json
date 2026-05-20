@@ -1,11 +1,4 @@
 {
-  "https://martinalderson.com/posts/figmas-woes-compound-with-claude-design/": {
-    "title": "Figma's woes compound with Claude Design",
-    "date_covered": "2026-04-20T20:46:15.431327+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "3WtAupCzcTo",
-    "tiktok_id": null
-  },
   "https://prismml.com/news/ternary-bonsai": {
     "title": "PrismML — Introducing Ternary Bonsai: Top Intelligence at 1.58 Bits",
     "date_covered": "2026-04-21T06:05:14.293987+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-20T18:19:37.753201+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YaGAXuHLsCA",
+    "tiktok_id": null
+  },
+  "https://openai.com/index/model-disproves-discrete-geometry-conjecture/": {
+    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+    "date_covered": "2026-05-20T21:53:19.237947+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
