@@ -1,11 +1,4 @@
 {
-  "https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html": {
-    "title": "Uber's Anthropic AI Push Hits A Wall—CTO Says Budget Struggles Despite $3.4B Spend",
-    "date_covered": "2026-04-20T02:18:08.231883+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "vpxsc9UteRs",
-    "tiktok_id": null
-  },
   "https://www.swiss-ai.org": {
     "title": "Swiss AI",
     "date_covered": "2026-04-20T06:17:05.501219+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-05-19T21:21:04.444014+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "9rg4VKzj-6k",
+    "tiktok_id": null
+  },
+  "https://github.com/wiltodelta/remove-ai-watermarks": {
+    "title": "GitHub - wiltodelta/remove-ai-watermarks: CLI and library for removing visible (Gemini) and invisible (SynthID, C2PA, EXIF) AI watermarks from images",
+    "date_covered": "2026-05-20T02:54:28.402426+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1CO2FqHaY4M",
     "tiktok_id": null
   }
 }
