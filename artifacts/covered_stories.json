@@ -1,11 +1,4 @@
 {
-  "https://www.swiss-ai.org": {
-    "title": "Swiss AI",
-    "date_covered": "2026-04-20T06:17:05.501219+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "xTawAJZgHX8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/bobyard-2-0-offers-improved-takeoffs-and-unified-ai-for-estimators/": {
     "title": "Bobyard 2.0 offers improved takeoffs and unified AI for estimators",
     "date_covered": "2026-04-20T13:27:21.178728+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-05-20T02:54:28.402426+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "1CO2FqHaY4M",
+    "tiktok_id": null
+  },
+  "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai": {
+    "title": "Untitled",
+    "date_covered": "2026-05-20T07:44:21.400462+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "lWXrAdhH_Qg",
     "tiktok_id": null
   }
 }
