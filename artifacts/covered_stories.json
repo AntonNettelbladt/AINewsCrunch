@@ -1,11 +1,4 @@
 {
-  "https://surfacedby.com/blog/nginx-logs-ai-traffic-vs-referral-traffic": {
-    "title": "AI traffic vs referral traffic: what nginx logs prove",
-    "date_covered": "2026-04-20T17:04:36.423906+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "mKzHgn6jzVw",
-    "tiktok_id": null
-  },
   "https://martinalderson.com/posts/figmas-woes-compound-with-claude-design/": {
     "title": "Figma's woes compound with Claude Design",
     "date_covered": "2026-04-20T20:46:15.431327+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-20T14:57:48.943698+00:00",
     "source": "AI News",
     "youtube_id": "iH6huhHiV18",
+    "tiktok_id": null
+  },
+  "https://github.com/shenli/distributed-system-testing": {
+    "title": "GitHub - shenli/distributed-system-testing: AI-agent skills for distributed-systems testing",
+    "date_covered": "2026-05-20T18:19:37.753201+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "YaGAXuHLsCA",
     "tiktok_id": null
   }
 }
