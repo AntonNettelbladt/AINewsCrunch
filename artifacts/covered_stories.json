@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/bobyard-2-0-offers-improved-takeoffs-and-unified-ai-for-estimators/": {
-    "title": "Bobyard 2.0 offers improved takeoffs and unified AI for estimators",
-    "date_covered": "2026-04-20T13:27:21.178728+00:00",
-    "source": "AI News",
-    "youtube_id": "iyJBI1zTNR8",
-    "tiktok_id": null
-  },
   "https://surfacedby.com/blog/nginx-logs-ai-traffic-vs-referral-traffic": {
     "title": "AI traffic vs referral traffic: what nginx logs prove",
     "date_covered": "2026-04-20T17:04:36.423906+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-20T10:59:03.113189+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "R2DIGcf5lfY",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/alibaba-zhenwu-m890-ai-agent-chip-roadmap/": {
+    "title": "Alibaba is designing AI chips around agents, and that changes what the race is actually about",
+    "date_covered": "2026-05-20T14:57:48.943698+00:00",
+    "source": "AI News",
+    "youtube_id": "iH6huhHiV18",
     "tiktok_id": null
   }
 }
