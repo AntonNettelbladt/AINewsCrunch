@@ -1062,5 +1062,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": null,
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/google-cloud-developer-community-ai-builders/": {
+    "title": "NVIDIA and Google Cloud Empower the Next Wave of AI Builders",
+    "date_covered": "2026-05-21T02:57:36.230930+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "hc089grma20",
+    "tiktok_id": null
   }
 }
