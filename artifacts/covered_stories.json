@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/reversing-enterprise-security-costs-with-ai-vulnerability-discovery/": {
-    "title": "Reversing enterprise security costs with AI vulnerability discovery",
-    "date_covered": "2026-04-22T16:59:41.278486+00:00",
-    "source": "AI News",
-    "youtube_id": "7t-tJPuNMtM",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/siemens-ai-automation-engineering-workflows/": {
     "title": "Siemens introduces AI system for automation engineering",
     "date_covered": "2026-04-22T20:55:41.602005+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-22T14:34:20.740091+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "iBgmYlmIdWg",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-energy-grid-mapping-china/": {
+    "title": "China’s AI just mapped its entire renewable energy grid. Here’s why the rest of the world should pay attention",
+    "date_covered": "2026-05-22T17:53:54.676133+00:00",
+    "source": "AI News",
+    "youtube_id": "WLOdLYhNf4Q",
     "tiktok_id": null
   }
 }
