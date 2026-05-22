@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-manufacturing-hannover-messe/": {
-    "title": "NVIDIA and Partners Showcase the Future of AI-Driven Manufacturing at Hannover Messe 2026",
-    "date_covered": "2026-04-22T06:17:09.865597+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "_VElb9yNT3w",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/snowflake-expands-its-technical-and-mainstream-ai-platforms/": {
     "title": "Snowflake expands its technical and mainstream AI platforms",
     "date_covered": "2026-04-22T09:20:39.090364+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-21T21:30:05.157605+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "_TnI2vjMNq4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/96-of-it-pros-use-ai-now-their-top-7-agentic-applications-and-biggest-implementation-roadblocks/": {
+    "title": "96% of IT pros use AI now: Their top 7 agentic applications and biggest implementation roadblocks",
+    "date_covered": "2026-05-22T07:45:15.624425+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "JkhO7l_mAzA",
     "tiktok_id": null
   }
 }
