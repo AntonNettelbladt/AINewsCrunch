@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/siemens-ai-automation-engineering-workflows/": {
-    "title": "Siemens introduces AI system for automation engineering",
-    "date_covered": "2026-04-22T20:55:41.602005+00:00",
-    "source": "AI News",
-    "youtube_id": "eolRrlZ7X0U",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/": {
     "title": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
     "date_covered": "2026-04-23T02:16:03.139513+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-22T17:53:54.676133+00:00",
     "source": "AI News",
     "youtube_id": "WLOdLYhNf4Q",
+    "tiktok_id": null
+  },
+  "https://annas-archive.gl/blog/llms-txt.html": {
+    "title": "If you’re an LLM, please read this",
+    "date_covered": "2026-05-22T21:11:05.397500+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
