@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/nvidia-and-google-infrastructure-cuts-ai-inference-costs/": {
-    "title": "NVIDIA and Google infrastructure cuts AI inference costs",
-    "date_covered": "2026-04-23T13:23:25.245283+00:00",
-    "source": "AI News",
-    "youtube_id": "eUob8krvIpk",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/the-billion-dollar-startup-with-a-different-idea-for-ai-ami-labs-yann-lecun/": {
     "title": "The billion-dollar startup with a different idea for AI",
     "date_covered": "2026-04-23T17:20:05.233486+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-05-23T06:35:49.678342+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ztadt-tet64",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/getac-g14-windows-ai-tablet-review/": {
+    "title": "This rugged Windows tablet handles mud and rain - but didn't impress with the basics",
+    "date_covered": "2026-05-23T17:00:50.895201+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "vzYYA-rZqGk",
     "tiktok_id": null
   }
 }
