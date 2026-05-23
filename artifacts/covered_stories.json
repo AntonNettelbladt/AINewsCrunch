@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/": {
-    "title": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
-    "date_covered": "2026-04-23T02:16:03.139513+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "5MIUlT80KXQ",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/earth-day-2026-ai-accelerated-computing/": {
     "title": "From Rainforests to Recycling Plants: 5 Ways NVIDIA AI Is Protecting the Planet",
     "date_covered": "2026-04-23T06:08:24.784869+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-05-22T21:11:05.397500+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.cringely.com/2026/05/21/im-writing-again/": {
+    "title": "I’m writing again…",
+    "date_covered": "2026-05-23T02:43:07.101998+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "jFA1fBPrzG8",
     "tiktok_id": null
   }
 }
