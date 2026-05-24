@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/why-ai-agents-need-interaction-infrastructure/": {
-    "title": "Why AI agents need interaction infrastructure",
-    "date_covered": "2026-04-24T20:46:31.694833+00:00",
-    "source": "AI News",
-    "youtube_id": "1Zayr9dkSQY",
-    "tiktok_id": null
-  },
   "https://buttondown.com/blog/x400-vs-smtp-email": {
     "title": "Email could have been X.400 times better",
     "date_covered": "2026-04-25T02:06:26.541428+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-05-24T17:01:33.605225+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2kfzPVEYel4",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/flick/jobs/Tdu6FH6-senior-frontend-engineer": {
+    "title": "Senior Frontend Engineer at Flick",
+    "date_covered": "2026-05-24T20:55:19.584835+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "sWW6HzpnXG8",
     "tiktok_id": null
   }
 }
