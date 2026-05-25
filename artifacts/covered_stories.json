@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/claude-ai-connectors-hands-on-planning-a-trip/": {
-    "title": "How I used Claude AI to plan an entire hiking trip to the Adirondacks in 30 minutes - for free",
-    "date_covered": "2026-04-25T16:41:47.399573+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "P2jklzrYz0k",
-    "tiktok_id": null
-  },
   "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/": {
     "title": "A conversation with Kevin Scott: What’s next in AI",
     "date_covered": "2026-04-25T20:40:16.058154+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-05-25T14:51:35.604569+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "6PtOZh7Msr0",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/tech-news/wwdc-2026-apple-to-unveil-ios-27-macos-and-deeper-cross-device-ai-integration": {
+    "title": "WWDC 2026: Apple to Unveil iOS 27, macOS, and Deeper Cross-Device AI Integration",
+    "date_covered": "2026-05-25T17:45:26.490264+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "oDbkRGb7AMg",
     "tiktok_id": null
   }
 }
