@@ -1,11 +1,4 @@
 {
-  "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5479-raiders-of-the-lost-hard-drive/": {
-    "title": "Raiders of the lost hard drive",
-    "date_covered": "2026-04-26T16:44:31.795820+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "qe-0E-Ez17Y",
-    "tiktok_id": null
-  },
   "https://news.mit.edu/2026/plants-can-sense-sound-rain-new-study-finds-0422": {
     "title": "Plants can sense the sound of rain, a new study finds",
     "date_covered": "2026-04-26T20:40:04.934794+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-26T15:02:46.299816+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "VTAoZwhu3A4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/google-fitbit-air-review/": {
+    "title": "I wore Google's Fitbit Air for a week, and it gives the Whoop a serious run for its money",
+    "date_covered": "2026-05-26T18:27:44.420707+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "jtKHIht04AM",
     "tiktok_id": null
   }
 }
