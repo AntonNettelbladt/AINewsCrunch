@@ -1,11 +1,4 @@
 {
-  "https://www.hypertalking.com/2023/05/08/1-bit-pixel-art-of-hokusais-the-great-wave-off-kanagawa/": {
-    "title": "1-bit Hokusai’s ”The Great Wave” – Hypertalking",
-    "date_covered": "2026-04-26T02:29:15.197694+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "O_jK4pBTX2I",
-    "tiktok_id": null
-  },
   "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5479-raiders-of-the-lost-hard-drive/": {
     "title": "Raiders of the lost hard drive",
     "date_covered": "2026-04-26T16:44:31.795820+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-05-25T21:07:10.611537+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Dct6c-_1aO8",
+    "tiktok_id": null
+  },
+  "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/": {
+    "title": "Using AI to write better code more slowly",
+    "date_covered": "2026-05-26T02:51:33.736771+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DVO8s7Sghvw",
     "tiktok_id": null
   }
 }
