@@ -1,11 +1,4 @@
 {
-  "https://news.mit.edu/2026/plants-can-sense-sound-rain-new-study-finds-0422": {
-    "title": "Plants can sense the sound of rain, a new study finds",
-    "date_covered": "2026-04-26T20:40:04.934794+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "spvl_ER0id4",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/chatgpt-privacy-settings-guide/": {
     "title": "How to audit what ChatGPT knows about you - and reclaim your data privacy",
     "date_covered": "2026-04-27T02:31:41.057997+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-26T18:27:44.420707+00:00",
     "source": "ZDNet AI",
     "youtube_id": "jtKHIht04AM",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/proving-the-case-on-day-two-at-techex-north-america/": {
+    "title": "Proving the case on day two at TechEx North America",
+    "date_covered": "2026-05-26T21:45:22.322612+00:00",
+    "source": "AI News",
+    "youtube_id": "df-mT7C49eM",
     "tiktok_id": null
   }
 }
