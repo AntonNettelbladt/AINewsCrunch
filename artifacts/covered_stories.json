@@ -1,11 +1,4 @@
 {
-  "https://app.oravys.com/blog/mercor-breach-2026": {
-    "title": "4TB of voice samples stolen from 40,000 AI contractors -- how to verify if yours is being weaponized",
-    "date_covered": "2026-04-27T21:04:01.998908+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Pmrjtn14D50",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/it-managers-say-ai-agents-are-out-of-control/": {
     "title": "77% of IT managers say their AI agents are out of control - 5 ways to rein in yours",
     "date_covered": "2026-04-28T02:38:58.620995+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-27T18:28:06.477831+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "vjN0hm4072w",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-factories-the-new-infrastructure-of-intelligence/": {
+    "title": "AI Factories: The New Infrastructure of Intelligence",
+    "date_covered": "2026-05-27T21:55:03.060254+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "1AbGuoF_3VQ",
     "tiktok_id": null
   }
 }
