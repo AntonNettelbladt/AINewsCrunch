@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/chatgpt-privacy-settings-guide/": {
-    "title": "How to audit what ChatGPT knows about you - and reclaim your data privacy",
-    "date_covered": "2026-04-27T02:31:41.057997+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://jordanlord.co.uk/blog/3-constraints/": {
     "title": "3 constraints before I build anything",
     "date_covered": "2026-04-27T06:31:02.285266+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-26T21:45:22.322612+00:00",
     "source": "AI News",
     "youtube_id": "df-mT7C49eM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/vera-cpu-phoronix/": {
+    "title": "NVIDIA Vera CPU Is ‘Packing a Heavy-Hitting Punch’ Against Competition",
+    "date_covered": "2026-05-27T03:01:46.585809+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "_kthR1UzP2Y",
     "tiktok_id": null
   }
 }
