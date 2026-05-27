@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/startup-news-china-blocks-metas-2b-acquisition-of-ai-startup-manus": {
-    "title": "Startup News: China Blocks Meta’s $2B Acquisition of AI Startup Manus",
-    "date_covered": "2026-04-27T13:35:24.128247+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "0XNozGGlXsY",
-    "tiktok_id": null
-  },
   "https://deepmind.google/blog/decoupled-diloco/": {
     "title": "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale",
     "date_covered": "2026-04-27T17:22:54.578741+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-27T11:45:52.343261+00:00",
     "source": "ZDNet AI",
     "youtube_id": "TGW6fVJm9eo",
+    "tiktok_id": null
+  },
+  "https://orchidfiles.com/im-tired-of-ai-generated-answers/": {
+    "title": "I’m tired of talking to AI",
+    "date_covered": "2026-05-27T15:32:41.405519+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Q5xPhH2R0k0",
     "tiktok_id": null
   }
 }
