@@ -1,11 +1,4 @@
 {
-  "https://deepmind.google/blog/decoupled-diloco/": {
-    "title": "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale",
-    "date_covered": "2026-04-27T17:22:54.578741+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "CjL5XNKnl_A",
-    "tiktok_id": null
-  },
   "https://app.oravys.com/blog/mercor-breach-2026": {
     "title": "4TB of voice samples stolen from 40,000 AI contractors -- how to verify if yours is being weaponized",
     "date_covered": "2026-04-27T21:04:01.998908+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-27T15:32:41.405519+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Q5xPhH2R0k0",
+    "tiktok_id": null
+  },
+  "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/": {
+    "title": "Tech CEOs are apparently suffering from AI psychosis",
+    "date_covered": "2026-05-27T18:28:06.477831+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "vjN0hm4072w",
     "tiktok_id": null
   }
 }
