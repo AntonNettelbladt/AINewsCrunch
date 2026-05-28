@@ -1,11 +1,4 @@
 {
-  "https://www.vice.com/en/article/openai-ceo-identity-verification-company-fake-bruno-mars-partnership-mistaken-identity/": {
-    "title": "OpenAI CEO’s Identity Verification Company Announced Fake Bruno Mars Partnership Due To Mistaken Identity",
-    "date_covered": "2026-04-28T14:00:56.593821+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "lgBH8XnxkO8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ibm-launches-ai-platform-bob-to-regulate-sdlc-costs/": {
     "title": "IBM launches AI platform Bob to regulate SDLC costs",
     "date_covered": "2026-04-28T17:49:25.162467+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-28T11:39:16.624681+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "zLB8RrQqrE8",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/": {
+    "title": "NVIDIA Research Advances Robotics From Simulation to the Real World",
+    "date_covered": "2026-05-28T15:46:04.973448+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "kraFiob7FeU",
     "tiktok_id": null
   }
 }
