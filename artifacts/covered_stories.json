@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/lightelligence-ipo-optical-interconnect-ai-infrastructure/": {
-    "title": "Lightelligence’s 400% debut is a bet that AI’s next bottleneck is the optical interconnect",
-    "date_covered": "2026-04-28T10:16:21.585694+00:00",
-    "source": "AI News",
-    "youtube_id": "ajh7YG-g-bM",
-    "tiktok_id": null
-  },
   "https://www.vice.com/en/article/openai-ceo-identity-verification-company-fake-bruno-mars-partnership-mistaken-identity/": {
     "title": "OpenAI CEO’s Identity Verification Company Announced Fake Bruno Mars Partnership Due To Mistaken Identity",
     "date_covered": "2026-04-28T14:00:56.593821+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-28T07:58:46.457797+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "GEzLDzJQFSk",
+    "tiktok_id": null
+  },
+  "https://iisc.ac.in/a-eureka-machine-that-thinks-like-nature-and-explores-what-ai-cannot/": {
+    "title": "Indian Institute of Science",
+    "date_covered": "2026-05-28T11:39:16.624681+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "zLB8RrQqrE8",
     "tiktok_id": null
   }
 }
