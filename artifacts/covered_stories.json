@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/it-managers-say-ai-agents-are-out-of-control/": {
-    "title": "77% of IT managers say their AI agents are out of control - 5 ways to rein in yours",
-    "date_covered": "2026-04-28T02:38:58.620995+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "pq6xJWMO1tc",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/google-warns-malicious-web-pages-poisoning-ai-agents/": {
     "title": "Google warns malicious web pages are poisoning AI agents",
     "date_covered": "2026-04-28T06:34:06.244003+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-27T21:55:03.060254+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "1AbGuoF_3VQ",
+    "tiktok_id": null
+  },
+  "https://rajveerbachkaniwala.com/blog/2026/05/24/on-the-difficulty-of-pasting-a-picture/": {
+    "title": "Why Ctrl+V won't paste images in Claude Code on WSL, with a fix",
+    "date_covered": "2026-05-28T02:49:52.819561+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "HiWdEFvdVHc",
     "tiktok_id": null
   }
 }
