@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/google-warns-malicious-web-pages-poisoning-ai-agents/": {
-    "title": "Google warns malicious web pages are poisoning AI agents",
-    "date_covered": "2026-04-28T06:34:06.244003+00:00",
-    "source": "AI News",
-    "youtube_id": "M4oBUWqmw9g",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/lightelligence-ipo-optical-interconnect-ai-infrastructure/": {
     "title": "Lightelligence’s 400% debut is a bet that AI’s next bottleneck is the optical interconnect",
     "date_covered": "2026-04-28T10:16:21.585694+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-28T02:49:52.819561+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "HiWdEFvdVHc",
+    "tiktok_id": null
+  },
+  "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/": {
+    "title": "DuckDuckGo's AI-free search saw nearly 28% more visits in the week following Google's insistence that people love AI mode",
+    "date_covered": "2026-05-28T07:58:46.457797+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "GEzLDzJQFSk",
     "tiktok_id": null
   }
 }
