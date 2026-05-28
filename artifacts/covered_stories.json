@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ibm-launches-ai-platform-bob-to-regulate-sdlc-costs/": {
-    "title": "IBM launches AI platform Bob to regulate SDLC costs",
-    "date_covered": "2026-04-28T17:49:25.162467+00:00",
-    "source": "AI News",
-    "youtube_id": "_7ZIDgLjFAc",
-    "tiktok_id": null
-  },
   "https://github.com/microsoft/VibeVoice": {
     "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
     "date_covered": "2026-04-28T21:10:09.528510+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-28T15:46:04.973448+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "kraFiob7FeU",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/series-h": {
+    "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+    "date_covered": "2026-05-28T18:40:06.666758+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "p_uVAFRFLMo",
     "tiktok_id": null
   }
 }
