@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/": {
-    "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and Language for up to 9x More Efficient AI Agents",
-    "date_covered": "2026-04-29T10:07:04.312127+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "SjKi23IgkPM",
-    "tiktok_id": null
-  },
   "https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/": {
     "title": "I Asked AI to Count My Carbs 27,000 Times. It Couldn’t Give Me the Same Answer Twice.",
     "date_covered": "2026-04-29T13:51:32.447895+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-29T07:56:24.242069+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ffH0d4rncSc",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/": {
+    "title": "Anthropic releases Claude Opus 4.8",
+    "date_covered": "2026-05-29T11:28:49.477898+00:00",
+    "source": "AI News",
+    "youtube_id": "l3-3LAhk1cY",
     "tiktok_id": null
   }
 }
