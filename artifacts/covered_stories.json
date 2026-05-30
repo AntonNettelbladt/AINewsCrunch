@@ -1034,5 +1034,12 @@
     "source": "ZDNet AI",
     "youtube_id": "H0PcWxQb1Po",
     "tiktok_id": null
+  },
+  "https://www.liquid.ai/blog/lfm2-5-8b-a1b": {
+    "title": "LFM2.5-8B-A1B: an Even Better on-Device Mixture-of-Experts",
+    "date_covered": "2026-05-30T10:00:09.551306+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Qy2sGI-2Zn0",
+    "tiktok_id": null
   }
 }
