@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/rumors-of-the-software-developers-ai-induced-demise-are-greatly-exaggerated/": {
-    "title": "The case against an imminent software developer apocalypse",
-    "date_covered": "2026-04-30T10:07:46.203268+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "WcpCAx1Xc2I",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-agent-governance-control-gaps/": {
     "title": "AI agent governance takes focus as regulators flag control gaps",
     "date_covered": "2026-04-30T17:22:46.946087+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-30T10:00:09.551306+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Qy2sGI-2Zn0",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/google-search-alternatives-no-ai/": {
+    "title": "Tired of AI Overviews? I found 9 Google Search alternatives that showed me links again",
+    "date_covered": "2026-05-30T13:24:49.040358+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "IXzSEABjfkQ",
     "tiktok_id": null
   }
 }
