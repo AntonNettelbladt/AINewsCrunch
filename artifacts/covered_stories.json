@@ -1,11 +1,4 @@
 {
-  "https://www.flyingmag.com/joby-nyc-electric-air-taxi-jfk-airport/": {
-    "title": "Joby Kicks Off NYC Electric Air Taxi Demos With Historic JFK Flight",
-    "date_covered": "2026-04-30T02:39:49.850984+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "s9M8F-gERbk",
-    "tiktok_id": null
-  },
   "https://copy.fail/": {
     "title": "Copy Fail — CVE-2026-31431",
     "date_covered": "2026-04-30T06:30:43.166571+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-29T21:57:05.429392+00:00",
     "source": "AI News",
     "youtube_id": "4-BWwEAeE94",
+    "tiktok_id": null
+  },
+  "https://koenvangilst.nl/lab/mistral-ai-now-summit": {
+    "title": "Notes from the AI Now Summit by Mistral",
+    "date_covered": "2026-05-30T02:47:27.447366+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "QwGcwM4ba6M",
     "tiktok_id": null
   }
 }
