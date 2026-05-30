@@ -1,11 +1,4 @@
 {
-  "https://copy.fail/": {
-    "title": "Copy Fail — CVE-2026-31431",
-    "date_covered": "2026-04-30T06:30:43.166571+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ackRe5VtoHE",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/rumors-of-the-software-developers-ai-induced-demise-are-greatly-exaggerated/": {
     "title": "The case against an imminent software developer apocalypse",
     "date_covered": "2026-04-30T10:07:46.203268+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-30T02:47:27.447366+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "QwGcwM4ba6M",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/open-source-security-is-a-mess-ibm-and-red-hat-bet-5-billion-to-fix-it/": {
+    "title": "Open-source security is a mess - IBM and Red Hat bet $5 billion and 20,000 engineers can fix it",
+    "date_covered": "2026-05-30T06:48:09.556207+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "H0PcWxQb1Po",
     "tiktok_id": null
   }
 }
