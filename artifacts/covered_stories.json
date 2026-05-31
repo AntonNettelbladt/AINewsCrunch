@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/idc-how-emea-cios-can-jumpstart-ai-rollouts/": {
-    "title": "IDC: How EMEA CIOs can jumpstart AI rollouts",
-    "date_covered": "2026-05-01T09:34:49.193917+00:00",
-    "source": "AI News",
-    "youtube_id": "F80ACLR4-2Y",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/moving-from-ai-pilots-to-business-wide-value-accenture-research/": {
     "title": "Moving from AI pilots to business-wide value requires a superhighway - how to ramp up",
     "date_covered": "2026-05-01T13:16:30.018432+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-05-31T07:45:55.761088+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "p033WYYvzyo",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/metas-internal-monitoring-tool-raises-gdpr-concerns-across-european-privacy-regulators": {
+    "title": "Meta's Internal Monitoring Tool Raises GDPR Concerns Across European Privacy Regulators",
+    "date_covered": "2026-05-31T10:16:21.843658+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "rClFzVjfEro",
     "tiktok_id": null
   }
 }
