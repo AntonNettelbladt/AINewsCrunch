@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/per-token-ai-charging-comes-to-github-copilot/": {
-    "title": "Per-token AI charges come to GitHub Copilot",
-    "date_covered": "2026-05-01T16:58:28.512472+00:00",
-    "source": "AI News",
-    "youtube_id": "ofPcNcKpxJ8",
-    "tiktok_id": null
-  },
   "https://github.com/xodn348/destiny": {
     "title": "GitHub - xodn348/destiny: 오늘의 운세 — daily fortune Claude Code plugin (/destiny)",
     "date_covered": "2026-05-01T20:51:58.812838+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-05-31T10:16:21.843658+00:00",
     "source": "Analytics Insight",
     "youtube_id": "rClFzVjfEro",
+    "tiktok_id": null
+  },
+  "https://github.com/pewdiepie-archdaemon/odysseus": {
+    "title": "GitHub - pewdiepie-archdaemon/odysseus: Self-hosted AI workspace.",
+    "date_covered": "2026-05-31T17:06:33.765802+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xBVA1kPdf-Q",
     "tiktok_id": null
   }
 }
