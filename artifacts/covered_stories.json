@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/technology/2026/apr/30/ai-outperforms-doctors-in-harvard-trial-of-emergency-triage-diagnoses": {
-    "title": "AI outperforms doctors in Harvard trial of emergency triage diagnoses",
-    "date_covered": "2026-05-03T20:42:54.287293+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "4aweQdmtguc",
-    "tiktok_id": null
-  },
   "https://www.lelanthran.com/chap15/content.html": {
     "title": "LLMs Are Not a Higher Level of Abstraction",
     "date_covered": "2026-05-04T02:35:10.772384+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-06-02T16:19:26.515864+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "u-tv7CsKqfw",
+    "tiktok_id": null
+  },
+  "https://microsoft.ai/news/introducingmai-code-1-flash/": {
+    "title": "Introducing MAI-Code-1-Flash",
+    "date_covered": "2026-06-02T22:25:06.316979+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "f3xJ-DOeYUM",
     "tiktok_id": null
   }
 }
