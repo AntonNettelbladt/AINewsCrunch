@@ -1,11 +1,4 @@
 {
-  "https://www.lelanthran.com/chap15/content.html": {
-    "title": "LLMs Are Not a Higher Level of Abstraction",
-    "date_covered": "2026-05-04T02:35:10.772384+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Y8iv9VeRJfI",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/meta-warns-more-layoffs-coming-after-10-cut-as-hr-drops-assurances": {
     "title": "Meta Warns More Layoffs Coming After 10% Cut as HR Drops Assurances",
     "date_covered": "2026-05-04T10:15:08.391168+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-06-02T22:25:06.316979+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "f3xJ-DOeYUM",
+    "tiktok_id": null
+  },
+  "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/": {
+    "title": "AI Outperforms Law Professors in Stanford Law Study",
+    "date_covered": "2026-06-03T03:44:19.744662+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "IbqbgS8RtXc",
     "tiktok_id": null
   }
 }
