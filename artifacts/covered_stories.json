@@ -1,11 +1,4 @@
 {
-  "https://susam.net/inverse-laws-of-robotics.html": {
-    "title": "Three Inverse Laws of AI",
-    "date_covered": "2026-05-05T17:45:59.634471+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "U_JQLWbYthI",
-    "tiktok_id": null
-  },
   "https://status.denic.de/pages/incident/592577eab611ce1e0d00046f/69fa60ef9d12f5057a974f38": {
     "title": "DENIC Status",
     "date_covered": "2026-05-06T10:17:47.020657+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-06-04T14:54:06.210595+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "InaQmMKmiGE",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training/": {
+    "title": "NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale",
+    "date_covered": "2026-06-04T18:17:00.417042+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "uScoTqMZNr8",
     "tiktok_id": null
   }
 }
