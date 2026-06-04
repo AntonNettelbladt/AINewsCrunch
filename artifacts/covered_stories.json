@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/agentic-ai-governance-enterprise-readiness-google/": {
-    "title": "Google made agentic AI governance a product. Enterprises still have to catch up.",
-    "date_covered": "2026-05-05T10:04:37.944715+00:00",
-    "source": "AI News",
-    "youtube_id": "Se7rG6JjVt8",
-    "tiktok_id": null
-  },
-  "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/": {
-    "title": "When everyone has AI and the company still learns nothing",
-    "date_covered": "2026-05-05T13:33:52.934920+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "NbheMGLn_Rk",
-    "tiktok_id": null
-  },
   "https://susam.net/inverse-laws-of-robotics.html": {
     "title": "Three Inverse Laws of AI",
     "date_covered": "2026-05-05T17:45:59.634471+00:00",
@@ -1033,6 +1019,13 @@
     "date_covered": "2026-06-04T08:21:12.611785+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "pD5ewBP9Nmk",
+    "tiktok_id": null
+  },
+  "https://medium.com/@Koukyosyumei/claude-code-and-codex-can-have-real-time-conversation-via-git-f95b696c1c05": {
+    "title": "Claude Code and Codex Can Have Real-Time Conversation via Git",
+    "date_covered": "2026-06-04T14:54:06.210595+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "InaQmMKmiGE",
     "tiktok_id": null
   }
 }
