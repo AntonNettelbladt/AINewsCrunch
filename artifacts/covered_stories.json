@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/5-ways-to-upgrade-bluetooth-speakers-instead-of-replacing-them/": {
-    "title": "Forget the soundbar: How I upgraded my TV audio with spare Bluetooth speakers",
-    "date_covered": "2026-05-05T02:30:24.364955+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "8Jnb4w8ajvw",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/physical-ai-governance-autonomous-systems/": {
     "title": "Physical AI raises governance questions for autonomous systems",
     "date_covered": "2026-05-05T06:17:29.636019+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-06-03T22:31:21.989610+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "esUMblkTNqU",
+    "tiktok_id": null
+  },
+  "https://simonwillison.net/2026/Jun/3/uber-caps-usage/": {
+    "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+    "date_covered": "2026-06-04T03:39:52.146888+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Ad0OrHIAfI8",
     "tiktok_id": null
   }
 }
