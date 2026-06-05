@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc/": {
-    "title": "NVIDIA Spectrum-X — the Open, AI-Native Ethernet Fabric — Sets the Standard for Gigascale AI, Now With MRC",
-    "date_covered": "2026-05-06T21:13:25.800648+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "zCAKxFVkhac",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/": {
     "title": "NVIDIA and ServiceNow Partner on New Autonomous AI Agents for Enterprises",
     "date_covered": "2026-05-07T06:38:04.294390+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-06-05T17:57:04.532977+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "oquFNMeQsQY",
+    "tiktok_id": null
+  },
+  "https://github.com/zdk/lowfat": {
+    "title": "GitHub - zdk/lowfat: lowfat - slim your command output. strips noise, saves tokens.",
+    "date_covered": "2026-06-05T21:27:14.266604+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hN7Mie4ZkoU",
     "tiktok_id": null
   }
 }
