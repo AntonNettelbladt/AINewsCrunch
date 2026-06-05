@@ -1,18 +1,4 @@
 {
-  "https://status.denic.de/pages/incident/592577eab611ce1e0d00046f/69fa60ef9d12f5057a974f38": {
-    "title": "DENIC Status",
-    "date_covered": "2026-05-06T10:17:47.020657+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "AtfZC2etGl8",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/us-government-increases-ai-in-defence-suppliers-roster-and-rethinks-anthropics-role/": {
-    "title": "US government increases AI suppliers and rethinks Anthropic's role",
-    "date_covered": "2026-05-06T14:03:31.591657+00:00",
-    "source": "AI News",
-    "youtube_id": "1wRFrwheSos",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/higher-limits-spacex": {
     "title": "Higher usage limits for Claude and a compute deal with SpaceX",
     "date_covered": "2026-05-06T17:32:03.803297+00:00",
@@ -1047,6 +1033,13 @@
     "date_covered": "2026-06-05T08:08:54.007599+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "PbjNadCzCUE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/github-copilots-billing-changes-users-see-use-based-price-hikes/": {
+    "title": "GitHub Copilot users see token-based price hikes",
+    "date_covered": "2026-06-05T14:44:52.937915+00:00",
+    "source": "AI News",
+    "youtube_id": "ElKVqwwdex4",
     "tiktok_id": null
   }
 }
