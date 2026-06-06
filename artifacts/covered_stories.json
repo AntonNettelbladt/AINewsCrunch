@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/": {
-    "title": "NVIDIA and ServiceNow Partner on New Autonomous AI Agents for Enterprises",
-    "date_covered": "2026-05-07T06:38:04.294390+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "FRlpPnmgX2Y",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-in-the-nhs-helping-ease-doctors-burdens/": {
     "title": "AI helping ease the UK's NHS burden",
     "date_covered": "2026-05-07T10:42:08.498494+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-06T02:49:04.269788+00:00",
     "source": "AI News",
     "youtube_id": "QafcuFFW0gs",
+    "tiktok_id": null
+  },
+  "https://www.bbc.com/news/live/c4g44ew3g1kt": {
+    "title": "Astronauts told to return to International Space Station after sheltering over air leak repairs",
+    "date_covered": "2026-06-06T06:54:55.660779+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "zBIcdqFvu40",
     "tiktok_id": null
   }
 }
