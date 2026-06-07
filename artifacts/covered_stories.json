@@ -1,11 +1,4 @@
 {
-  "https://www.citizen.co.za/news/home-affairs-officials-suspended-ai-hallucinations/": {
-    "title": "Two Home Affairs officials suspended after AI ‘hallucinations’ found in policy paper",
-    "date_covered": "2026-05-08T05:58:53.489001+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "g_L6H6-j1zw",
-    "tiktok_id": null
-  },
   "https://www.theverge.com/tech/926458/canvas-shinyhunters-breach": {
     "title": "Canvas is online again after ShinyHunters threaten to leak schools’ data",
     "date_covered": "2026-05-08T17:17:08.795469+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-07T03:32:14.765214+00:00",
     "source": "AI News",
     "youtube_id": "DEFg0j-3di0",
+    "tiktok_id": null
+  },
+  "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/": {
+    "title": "I design with Claude more than Figma now",
+    "date_covered": "2026-06-07T07:55:45.593091+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "2Pr_WZzn-cw",
     "tiktok_id": null
   }
 }
