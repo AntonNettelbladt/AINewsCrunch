@@ -1,11 +1,4 @@
 {
-  "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/": {
-    "title": "Can LLMs model real-world systems in TLA+?",
-    "date_covered": "2026-05-09T02:35:57.451504+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "M6EJJthyd1s",
-    "tiktok_id": null
-  },
   "https://moq.dev/blog/webrtc-is-the-problem/": {
     "title": "OpenAI’s WebRTC Problem",
     "date_covered": "2026-05-09T06:18:53.448959+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-07T21:13:02.303819+00:00",
     "source": "Microsoft AI Blog",
     "youtube_id": "gXh71MaD_QU",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/": {
+    "title": "NVIDIA and Doosan Group Collaborate to Advance Physical AI and AI Factory Infrastructure",
+    "date_covered": "2026-06-08T03:38:23.720595+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "YXGLr9rhW0M",
     "tiktok_id": null
   }
 }
