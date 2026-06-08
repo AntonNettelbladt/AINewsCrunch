@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/samsung-galaxy-watch-faintng-detection-study-caveats/": {
-    "title": "Samsung watches can predict if you're about to faint - but there are big caveats",
-    "date_covered": "2026-05-09T20:47:11.283092+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "NgSCL-aYnig",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/how-to-get-microsoft-365-free/": {
     "title": "Yes, you can get Microsoft 365 free - here's how",
     "date_covered": "2026-05-10T09:31:14.160720+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-08T18:28:29.184096+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "EVe45hLXApg",
+    "tiktok_id": null
+  },
+  "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/": {
+    "title": "Apple Reveals New AI Architecture Built Around Google Gemini Models",
+    "date_covered": "2026-06-08T21:52:33.977702+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mJ8EdoNJ8yI",
     "tiktok_id": null
   }
 }
