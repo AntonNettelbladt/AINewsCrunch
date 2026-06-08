@@ -1,18 +1,4 @@
 {
-  "https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md": {
-    "title": "All my clients wanted a carousel, now it's an AI chatbot!",
-    "date_covered": "2026-05-09T09:19:52.587607+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "INiY4ictR0A",
-    "tiktok_id": null
-  },
-  "https://yosefk.com/blog/all-means-are-fair-except-solving-the-problem.html": {
-    "title": "All means are fair except solving the problem",
-    "date_covered": "2026-05-09T13:11:44.562087+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "3MG40EUFwPo",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ringcentral-ai-adds-shopify-calendly-and-whatsapp-to-ai-receptionist/": {
     "title": "RingCentral adds Shopify, Calendly, and WhatsApp to AI Receptionist",
     "date_covered": "2026-05-09T16:55:09.222171+00:00",
@@ -1061,6 +1047,13 @@
     "date_covered": "2026-06-08T08:55:20.617250+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "YuHzPlFMTPk",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/chatgpt-lockdown-mode-data-theft-prompt-injection/": {
+    "title": "How ChatGPT's new Lockdown mode protects you from data theft (and what else it does)",
+    "date_covered": "2026-06-08T15:45:24.435026+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "lOrX3ERx130",
     "tiktok_id": null
   }
 }
