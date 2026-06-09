@@ -1,11 +1,4 @@
 {
-  "https://unix.foo/posts/local-ai-needs-to-be-norm/": {
-    "title": "Local AI Needs to be the Norm .",
-    "date_covered": "2026-05-10T20:47:11.407683+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "PiKgERNSxbE",
-    "tiktok_id": null
-  },
   "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs": {
     "title": "James Shore: You Need AI That Reduces Maintenance Costs",
     "date_covered": "2026-05-11T02:48:42.171603+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-09T18:02:26.567943+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "To7R6ED5PCc",
+    "tiktok_id": null
+  },
+  "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/": {
+    "title": "CEOs Who Think AI Replaces Their Employees Are Just Bad CEOs",
+    "date_covered": "2026-06-09T21:49:28.810233+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "9tgXrVU-gAo",
     "tiktok_id": null
   }
 }
