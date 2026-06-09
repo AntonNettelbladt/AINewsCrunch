@@ -1,11 +1,4 @@
 {
-  "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features": {
-    "title": "Chrome’s AI features may be hogging 4GB of your computer storage",
-    "date_covered": "2026-05-10T16:54:31.297876+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "zuLoGqqMLoc",
-    "tiktok_id": null
-  },
   "https://unix.foo/posts/local-ai-needs-to-be-norm/": {
     "title": "Local AI Needs to be the Norm .",
     "date_covered": "2026-05-10T20:47:11.407683+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-09T14:44:34.024409+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "LfdZDXDbjWg",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/claude-fable-5-mythos-5": {
+    "title": "Claude Fable 5 and Claude Mythos 5",
+    "date_covered": "2026-06-09T18:02:26.567943+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "To7R6ED5PCc",
     "tiktok_id": null
   }
 }
