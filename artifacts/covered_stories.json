@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/how-to-get-microsoft-365-free/": {
-    "title": "Yes, you can get Microsoft 365 free - here's how",
-    "date_covered": "2026-05-10T09:31:14.160720+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "CeMYunEQego",
-    "tiktok_id": null
-  },
   "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html": {
     "title": "Task Paralysis & AI",
     "date_covered": "2026-05-10T13:14:54.442560+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-09T07:47:32.711642+00:00",
     "source": "AI News",
     "youtube_id": "WPKJfo-vp_U",
+    "tiktok_id": null
+  },
+  "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/": {
+    "title": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
+    "date_covered": "2026-06-09T11:02:27.878715+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "zipCLjI8Q4Q",
     "tiktok_id": null
   }
 }
