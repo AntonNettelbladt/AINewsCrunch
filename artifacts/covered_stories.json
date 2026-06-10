@@ -1,11 +1,4 @@
 {
-  "https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-repair-brain-damage": {
-    "title": "UCLA discovers first stroke rehabilitation drug to repair brain damage",
-    "date_covered": "2026-05-11T21:18:12.676228+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "psobJ2BoE5I",
-    "tiktok_id": null
-  },
   "https://claude.com/blog/claude-platform-on-aws": {
     "title": "Introducing the Claude Platform on AWS",
     "date_covered": "2026-05-12T02:42:28.524663+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-10T18:32:38.426802+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "x9U3Sm44h4w",
+    "tiktok_id": null
+  },
+  "https://blue41.com/blog/how-we-helped-bunq-secure-their-financial-ai-assistant/": {
+    "title": "How we helped Bunq secure their financial AI assistant",
+    "date_covered": "2026-06-10T22:01:12.613739+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Kq7kLmwXq9o",
     "tiktok_id": null
   }
 }
