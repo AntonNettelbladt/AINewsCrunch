@@ -1,11 +1,4 @@
 {
-  "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs": {
-    "title": "James Shore: You Need AI That Reduces Maintenance Costs",
-    "date_covered": "2026-05-11T02:48:42.171603+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "LmjXA55nzlA",
-    "tiktok_id": null
-  },
   "https://www.openculture.com/2024/10/the-greatest-shot-in-television.html": {
     "title": "The Greatest Shot in Television: Science Historian James Burke Had One Chance to Nail This Scene … and Nailed It",
     "date_covered": "2026-05-11T07:42:24.331471+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-09T21:49:28.810233+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "9tgXrVU-gAo",
+    "tiktok_id": null
+  },
+  "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html": {
+    "title": "If Claude Fable stops helping you, you'll never know — Jonathon Ready",
+    "date_covered": "2026-06-10T03:01:13.187071+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "D1FZTKxlPXE",
     "tiktok_id": null
   }
 }
