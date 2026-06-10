@@ -1,11 +1,4 @@
 {
-  "https://www.openculture.com/2024/10/the-greatest-shot-in-television.html": {
-    "title": "The Greatest Shot in Television: Science Historian James Burke Had One Chance to Nail This Scene … and Nailed It",
-    "date_covered": "2026-05-11T07:42:24.331471+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2jLz5sDmQ0I",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address/": {
     "title": "‘Your Career Starts at the Beginning of the AI Revolution,’ NVIDIA CEO Tells Graduates",
     "date_covered": "2026-05-11T11:02:50.718863+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-10T03:01:13.187071+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "D1FZTKxlPXE",
+    "tiktok_id": null
+  },
+  "https://twitter.com/RichardSSutton/status/2061216087744946656": {
+    "title": "Richard Sutton on X: \"A new and possibly controversial perspective: In this video, I explain the sense in which generative AI trained by supervised learning is incapable of making novel discoveries. h",
+    "date_covered": "2026-06-10T08:09:16.972747+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Vl-ngi86EbE",
     "tiktok_id": null
   }
 }
