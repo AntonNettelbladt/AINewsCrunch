@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/laserfiche-ai-agents-act-autonomously-for-the-platforms-users/": {
-    "title": "Laserfiche unveils AI agents for natural language workflows",
-    "date_covered": "2026-05-12T10:33:57.450217+00:00",
-    "source": "AI News",
-    "youtube_id": "3t4KRhWz97A",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/malware-on-hugging-face-malicious-software-masquerading-as-openai-release/": {
-    "title": "Hugging Face hosted malicious software masquerading as OpenAI release",
-    "date_covered": "2026-05-12T14:27:54.967676+00:00",
-    "source": "AI News",
-    "youtube_id": "kJWZ-rXOMIQ",
-    "tiktok_id": null
-  },
   "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/": {
     "title": "Amazon employees are “tokenmaxxing” due to pressure to use AI tools",
     "date_covered": "2026-05-12T18:04:28.287558+00:00",
@@ -1061,6 +1047,13 @@
     "date_covered": "2026-06-11T08:45:31.460127+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hc46popco5M",
+    "tiktok_id": null
+  },
+  "https://medium.com/@rogi23696/build-a-basic-ai-agent-from-scratch-long-task-planning-14e803f9bd6d": {
+    "title": "Build A Basic AI Agent From Scratch: Long Task Planning",
+    "date_covered": "2026-06-11T15:55:38.623929+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Gk1A1JY2bng",
     "tiktok_id": null
   }
 }
