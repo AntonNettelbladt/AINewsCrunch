@@ -1,11 +1,4 @@
 {
-  "https://claude.com/blog/claude-platform-on-aws": {
-    "title": "Introducing the Claude Platform on AWS",
-    "date_covered": "2026-05-12T02:42:28.524663+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "GKCXw8i1sv4",
-    "tiktok_id": null
-  },
   "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/": {
     "title": "I Let AI Build a Tool to Help Me Figure Out What Was Waking Me Up at Night",
     "date_covered": "2026-05-12T06:39:49.846874+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-10T22:01:12.613739+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Kq7kLmwXq9o",
+    "tiktok_id": null
+  },
+  "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/": {
+    "title": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
+    "date_covered": "2026-06-11T03:35:45.783420+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "fEbCypG8KhE",
     "tiktok_id": null
   }
 }
