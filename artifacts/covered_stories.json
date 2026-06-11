@@ -1,11 +1,4 @@
 {
-  "https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/": {
-    "title": "I Let AI Build a Tool to Help Me Figure Out What Was Waking Me Up at Night",
-    "date_covered": "2026-05-12T06:39:49.846874+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "H8jO5DXSp0M",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/laserfiche-ai-agents-act-autonomously-for-the-platforms-users/": {
     "title": "Laserfiche unveils AI agents for natural language workflows",
     "date_covered": "2026-05-12T10:33:57.450217+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-11T03:35:45.783420+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "fEbCypG8KhE",
+    "tiktok_id": null
+  },
+  "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/": {
+    "title": "AI agent runs amok in Fedora and elsewhere",
+    "date_covered": "2026-06-11T08:45:31.460127+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hc46popco5M",
     "tiktok_id": null
   }
 }
