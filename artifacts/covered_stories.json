@@ -1,11 +1,4 @@
 {
-  "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/": {
-    "title": "Amazon employees are “tokenmaxxing” due to pressure to use AI tools",
-    "date_covered": "2026-05-12T18:04:28.287558+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Nz5-ds2_ds8",
-    "tiktok_id": null
-  },
   "https://deepmind.google/blog/ai-pointer/": {
     "title": "Shaping the future of AI interaction by reimagining the mouse pointer",
     "date_covered": "2026-05-12T21:39:44.620463+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-11T15:55:38.623929+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Gk1A1JY2bng",
+    "tiktok_id": null
+  },
+  "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail": {
+    "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+    "date_covered": "2026-06-11T18:49:29.726977+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "5sSfWswCjuM",
     "tiktok_id": null
   }
 }
