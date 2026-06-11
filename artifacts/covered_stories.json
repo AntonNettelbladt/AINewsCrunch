@@ -1,11 +1,4 @@
 {
-  "https://deepmind.google/blog/ai-pointer/": {
-    "title": "Shaping the future of AI interaction by reimagining the mouse pointer",
-    "date_covered": "2026-05-12T21:39:44.620463+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "-GTd_MlME5Y",
-    "tiktok_id": null
-  },
   "https://github.com/statewright/statewright": {
     "title": "GitHub - statewright/statewright: State machine guardrails for AI agents",
     "date_covered": "2026-05-13T02:47:12.442673+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-11T18:49:29.726977+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "5sSfWswCjuM",
+    "tiktok_id": null
+  },
+  "https://www.kennethpayne.uk/p/shall-we-play-a-game": {
+    "title": "Shall we play a game?",
+    "date_covered": "2026-06-11T22:04:45.938781+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "fax7FSsSnAc",
     "tiktok_id": null
   }
 }
