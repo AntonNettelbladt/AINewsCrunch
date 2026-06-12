@@ -1,18 +1,4 @@
 {
-  "https://www.sciencedaily.com/releases/2026/05/260510030950.htm": {
-    "title": "“Cannot be explained” – New ultra stainless steel stuns researchers",
-    "date_covered": "2026-05-13T10:27:02.938515+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "vY-KX8sNwSw",
-    "tiktok_id": null
-  },
-  "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/": {
-    "title": "Software Developers Say AI Is Rotting Their Brains",
-    "date_covered": "2026-05-13T14:29:03.196279+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "hjx3_Vu62VE",
-    "tiktok_id": null
-  },
   "https://fredchan.org/blog/locality-domains-guide/": {
     "title": "Setting up a free *.city.state.us locality domain",
     "date_covered": "2026-05-13T18:04:43.735288+00:00",
@@ -1054,6 +1040,13 @@
     "date_covered": "2026-06-12T08:26:46.900742+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "4u95DUrXhbQ",
+    "tiktok_id": null
+  },
+  "https://tonedear.com/": {
+    "title": "Ear Training",
+    "date_covered": "2026-06-12T14:54:23.378752+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "A1kq5gesqcU",
     "tiktok_id": null
   }
 }
