@@ -1,11 +1,4 @@
 {
-  "https://fredchan.org/blog/locality-domains-guide/": {
-    "title": "Setting up a free *.city.state.us locality domain",
-    "date_covered": "2026-05-13T18:04:43.735288+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "3HVO8CKneZM",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ineffable-intelligence-reinforcement-learning-infrastructure/": {
     "title": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure",
     "date_covered": "2026-05-13T21:29:54.088352+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-12T18:08:45.269057+00:00",
     "source": "ZDNet AI",
     "youtube_id": "DSWlAJXVydk",
+    "tiktok_id": null
+  },
+  "https://correresmidestino.com/dont-you-just-upload-it-to-chatgpt/": {
+    "title": "“Don’t You Just Upload It to ChatGPT?”",
+    "date_covered": "2026-06-12T21:34:10.429769+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ayI_YrffK9M",
     "tiktok_id": null
   }
 }
