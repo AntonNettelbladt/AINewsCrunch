@@ -1,11 +1,4 @@
 {
-  "https://www.anthropic.com/news/claude-for-small-business": {
-    "title": "Introducing Claude for Small Business",
-    "date_covered": "2026-05-14T10:17:48.796408+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "tlQK7Lhs-B0",
-    "tiktok_id": null
-  },
   "https://www.tomshardware.com/tech-industry/cryptocurrency/bitcoin-trader-recovers-usd400-000-using-claude-ai-after-losing-wallet-password-11-years-ago-bot-tried-3-5-trillion-passwords-before-decrypting-an-old-wallet-backup": {
     "title": "Bitcoin trader recovers $400,000 using Claude AI after getting 'stoned' and losing wallet password 11 years ago — bot tried 3.5 trillion passwords before decrypting an old wallet backup",
     "date_covered": "2026-05-14T17:50:53.813284+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-13T07:48:05.880756+00:00",
     "source": "ZDNet AI",
     "youtube_id": "iRoRhRiMiao",
+    "tiktok_id": null
+  },
+  "https://github.com/Paca-AI/paca": {
+    "title": "GitHub - Paca-AI/paca: AI-native, free, open-source alternative to Jira, Trello, ClickUp & Monday. Built for Scrum teams where humans and AI agents collaborate as equals — on the same board, the same ",
+    "date_covered": "2026-06-13T10:29:28.878646+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "6myd_AvfYlg",
     "tiktok_id": null
   }
 }
