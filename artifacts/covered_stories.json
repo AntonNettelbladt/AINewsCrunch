@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/": {
-    "title": "Hermes Unlocks Self-Improving AI Agents, Powered by NVIDIA RTX PCs and DGX Spark",
-    "date_covered": "2026-05-14T06:48:39.060291+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "8LNPFhBBjOA",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/claude-for-small-business": {
     "title": "Introducing Claude for Small Business",
     "date_covered": "2026-05-14T10:17:48.796408+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-13T03:01:07.343180+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "xjwNlP1Awos",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/enterprises-scrapping-ai-agents-how-to-ensure-yours-dont-fail/": {
+    "title": "40% of enterprises will scrap AI agents - 3 ways to ensure yours don't fail",
+    "date_covered": "2026-06-13T07:48:05.880756+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "iRoRhRiMiao",
     "tiktok_id": null
   }
 }
