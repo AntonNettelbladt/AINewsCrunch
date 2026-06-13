@@ -1048,5 +1048,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "6myd_AvfYlg",
     "tiktok_id": null
+  },
+  "https://github.com/tensorzero/tensorzero": {
+    "title": "GitHub - tensorzero/tensorzero: TensorZero is an open-source LLMOps platform that unifies an LLM gateway, observability, evaluation, optimization, and experimentation.",
+    "date_covered": "2026-06-13T13:55:25.894050+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "zTBqIZqvV4U",
+    "tiktok_id": null
   }
 }
