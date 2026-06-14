@@ -1,18 +1,4 @@
 {
-  "https://danieltan.weblog.lol/2026/05/you-dont-align-an-ai-you-align-with-it": {
-    "title": "Daniel's Blog · You Don’t Align An AI, You Align With It",
-    "date_covered": "2026-05-14T21:12:27.615746+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "7AppYdhtDK4",
-    "tiktok_id": null
-  },
-  "https://www.zdnet.com/article/uk-ai-safety-institute-updates-its-testing-on-mythos/": {
-    "title": "Anthropic's Mythos is evolving faster than expected, reports AI safety agency",
-    "date_covered": "2026-05-15T02:50:54.031090+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "Yfy4GLLGu9g",
-    "tiktok_id": null
-  },
   "https://github.com/rust-lang/rust-forge/pull/1040": {
     "title": "Add an LLM policy for `rust-lang/rust` by jyn514 · Pull Request #1040 · rust-lang/rust-forge",
     "date_covered": "2026-05-15T06:59:03.502381+00:00",
@@ -1061,6 +1047,13 @@
     "date_covered": "2026-06-13T21:15:58.303677+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "bSmj21PAn44",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/why-this-decade-old-idea-still-powers-all-of-ai-and-why-its-a-problem/": {
+    "title": "Why Decade-Old Residual Connections Still Power All of AI (And Why That’s a Problem)",
+    "date_covered": "2026-06-14T03:39:41.221145+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "swt7Bm6dXT8",
     "tiktok_id": null
   }
 }
