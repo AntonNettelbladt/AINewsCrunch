@@ -1,11 +1,4 @@
 {
-  "https://github.com/GlycemicGPT/GlycemicGPT": {
-    "title": "GitHub - GlycemicGPT/GlycemicGPT: Because no one should manage diabetes alone 💙",
-    "date_covered": "2026-05-15T10:23:55.611271+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nI93wXAzG68",
-    "tiktok_id": null
-  },
   "https://turso.tech/blog/the-wonders-of-ai": {
     "title": "The Wonders of AI: We Are Retiring Our Bug Bounty Program",
     "date_covered": "2026-05-15T14:01:51.440707+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-14T08:19:14.701493+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "IVpc9DajBjU",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/siri-ai-google-gemini-rollout/": {
+    "title": "Siri AI arrives with Google inside, and much of the world is locked out",
+    "date_covered": "2026-06-14T13:58:45.712873+00:00",
+    "source": "AI News",
+    "youtube_id": "lYm3kyO9ZHc",
     "tiktok_id": null
   }
 }
