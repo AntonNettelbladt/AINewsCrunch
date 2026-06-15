@@ -1,11 +1,4 @@
 {
-  "https://openai.com/index/malta-chatgpt-plus-partnership/": {
-    "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
-    "date_covered": "2026-05-16T20:46:15.405962+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "qtS0-b74cFM",
-    "tiktok_id": null
-  },
   "https://github.com/ShurikenTrade/shuriken-skills": {
     "title": "GitHub - ShurikenTrade/shuriken-skills: Agent-consumable integration skills for the Shuriken platform 🥷",
     "date_covered": "2026-05-17T16:58:17.494563+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-06-15T17:14:51.360231+00:00",
     "source": "Towards Data Science",
     "youtube_id": "bbpKQmZNzfM",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/harmonyos-7-china-ai-apple-gap/": {
+    "title": "HarmonyOS 7: Huawei Fills the AI Gap Apple Left in China",
+    "date_covered": "2026-06-15T22:21:07.878645+00:00",
+    "source": "AI News",
+    "youtube_id": "uBBkXyXwDXA",
     "tiktok_id": null
   }
 }
