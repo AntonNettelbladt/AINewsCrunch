@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/physical-ai-humanoid-robots-factories/": {
-    "title": "Physical AI moves closer to factory floors as companies test humanoid robots",
-    "date_covered": "2026-05-16T06:23:59.835023+00:00",
-    "source": "AI News",
-    "youtube_id": "_5ZpSH7Zx5o",
-    "tiktok_id": null
-  },
-  "https://petapixel.com/2026/05/14/someone-shared-a-real-monet-painting-as-ai-and-asked-for-critiques/": {
-    "title": "Someone Shared a Real Monet Painting as AI and Asked for Critiques",
-    "date_covered": "2026-05-16T09:31:42.570069+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "VdsOu2QPJFw",
-    "tiktok_id": null
-  },
   "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/": {
     "title": "Moving away from Tailwind, and learning to structure my CSS",
     "date_covered": "2026-05-16T13:19:09.926783+00:00",
@@ -1054,6 +1040,13 @@
     "date_covered": "2026-06-15T03:48:16.640409+00:00",
     "source": "ZDNet AI",
     "youtube_id": "qyc2ZusKY2A",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-export-controls-ai-sovereignty/": {
+    "title": "The AI off switch: How Anthropic’s export controls sparked a global AI sovereignty scramble",
+    "date_covered": "2026-06-15T10:03:50.796648+00:00",
+    "source": "AI News",
+    "youtube_id": "QGifRHoMVIo",
     "tiktok_id": null
   }
 }
