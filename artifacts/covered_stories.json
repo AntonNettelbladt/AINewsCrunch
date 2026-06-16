@@ -1,18 +1,4 @@
 {
-  "https://github.com/ShurikenTrade/shuriken-skills": {
-    "title": "GitHub - ShurikenTrade/shuriken-skills: Agent-consumable integration skills for the Shuriken platform 🥷",
-    "date_covered": "2026-05-17T16:58:17.494563+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "_pw5RCYTYXU",
-    "tiktok_id": null
-  },
-  "https://daringfireball.net/2026/05/ai_is_technology_not_a_product": {
-    "title": "AI Is Technology, Not a Product",
-    "date_covered": "2026-05-17T20:48:47.192840+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "6ZsLTo82sv8",
-    "tiktok_id": null
-  },
   "https://idahonews.com/news/local/two-f-18-fighter-jets-have-crashed-during-an-airshow-at-mountain-home-air-force-base": {
     "title": "Two F-18 fighter jets have crashed during an airshow at Mountain Home Air Force Base",
     "date_covered": "2026-05-18T02:57:43.159777+00:00",
@@ -1061,6 +1047,13 @@
     "date_covered": "2026-06-16T16:48:10.714809+00:00",
     "source": "AI News",
     "youtube_id": "G2nZK9Hk7fA",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/": {
+    "title": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0",
+    "date_covered": "2026-06-16T22:13:35.109316+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "pyXuEreACSo",
     "tiktok_id": null
   }
 }
