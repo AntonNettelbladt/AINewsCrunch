@@ -1041,5 +1041,12 @@
     "source": "AI News",
     "youtube_id": "uBBkXyXwDXA",
     "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/claude-corps": {
+    "title": "Introducing Claude Corps",
+    "date_covered": "2026-06-16T03:42:58.317339+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "HS3ctueoG2U",
+    "tiktok_id": null
   }
 }
