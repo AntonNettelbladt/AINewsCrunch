@@ -1,11 +1,4 @@
 {
-  "https://idahonews.com/news/local/two-f-18-fighter-jets-have-crashed-during-an-airshow-at-mountain-home-air-force-base": {
-    "title": "Two F-18 fighter jets have crashed during an airshow at Mountain Home Air Force Base",
-    "date_covered": "2026-05-18T02:57:43.159777+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "aM-a5v5pi88",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-btc-slides-below-77k-ethereum-stays-above-2100-as-iran-tensions-rattle-markets": {
     "title": "Crypto Prices Today: BTC Slides Below $77K, Ethereum Stays Above $2,100 as Iran Tensions Rattle Markets",
     "date_covered": "2026-05-18T08:04:23.614017+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-16T22:13:35.109316+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "pyXuEreACSo",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-xr-ai/": {
+    "title": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
+    "date_covered": "2026-06-17T03:43:01.440591+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "hef9fE34t3Y",
     "tiktok_id": null
   }
 }
