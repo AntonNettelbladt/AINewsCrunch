@@ -1,18 +1,4 @@
 {
-  "https://spectrum.ieee.org/voice-ai-audio-attacks": {
-    "title": "Hidden Signals Can Hijack AI Voice Systems",
-    "date_covered": "2026-05-18T15:25:30.259491+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "LQG8PQ6OV1U",
-    "tiktok_id": null
-  },
-  "https://www.anthropic.com/news/anthropic-acquires-stainless": {
-    "title": "Anthropic acquires Stainless",
-    "date_covered": "2026-05-18T18:02:05.258908+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "f96UQ6tNTjU",
-    "tiktok_id": null
-  },
   "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/": {
     "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
     "date_covered": "2026-05-18T21:12:59.254314+00:00",
@@ -1054,6 +1040,13 @@
     "date_covered": "2026-06-17T15:21:50.600811+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "_o3tFBwRwdw",
+    "tiktok_id": null
+  },
+  "https://techcrunch.com/2026/06/17/only-16-percent-of-americans-think-ai-will-have-a-positive-impact-on-society-a-new-study-shows/": {
+    "title": "Only 16 percent of Americans think AI will have a positive impact on society, a new study shows",
+    "date_covered": "2026-06-17T19:24:26.783930+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "uIEjSdD2pZA",
     "tiktok_id": null
   }
 }
