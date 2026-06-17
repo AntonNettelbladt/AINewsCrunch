@@ -1,11 +1,4 @@
 {
-  "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/": {
-    "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
-    "date_covered": "2026-05-18T21:12:59.254314+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "7FmZaPXscJI",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/vera-cpu-delivery/": {
     "title": "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs",
     "date_covered": "2026-05-19T02:54:13.758417+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-17T19:24:26.783930+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "uIEjSdD2pZA",
+    "tiktok_id": null
+  },
+  "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/": {
+    "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+    "date_covered": "2026-06-17T22:02:27.618523+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1xxJgiWW8wQ",
     "tiktok_id": null
   }
 }
