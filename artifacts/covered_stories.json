@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-btc-slides-below-77k-ethereum-stays-above-2100-as-iran-tensions-rattle-markets": {
-    "title": "Crypto Prices Today: BTC Slides Below $77K, Ethereum Stays Above $2,100 as Iran Tensions Rattle Markets",
-    "date_covered": "2026-05-18T08:04:23.614017+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "xeXoeY_D5Vg",
-    "tiktok_id": null
-  },
   "https://spacedaily.com/nasa-still-maintains-some-of-the-voyager-spacecraft-code-in-a-1970s-era-programming-language-that-almost-nobody-on-earth-fully-understands-anymore-and-the-handful-of-engineers-who-do-are-now-in-their/": {
     "title": "NASA still maintains some of the Voyager spacecraft code in a 1970s-era programming language that almost nobody on Earth fully understands anymore, and the handful of engineers who do are now in their",
     "date_covered": "2026-05-18T11:52:02.974999+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-17T03:43:01.440591+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "hef9fE34t3Y",
+    "tiktok_id": null
+  },
+  "https://claude.com/blog/the-founders-playbook": {
+    "title": "The founder's playbook: Building an AI-native startup",
+    "date_covered": "2026-06-17T09:03:09.277252+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Pgx8rV6fM1w",
     "tiktok_id": null
   }
 }
