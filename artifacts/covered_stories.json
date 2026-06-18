@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/vera-cpu-delivery/": {
-    "title": "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs",
-    "date_covered": "2026-05-19T02:54:13.758417+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "L_sgKjet-1A",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/": {
     "title": "NVIDIA CEO Jensen Huang at Dell Technologies World: ‘Demand Is Going Parabolic, Utterly Parabolic’",
     "date_covered": "2026-05-19T07:49:02.783266+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-17T22:02:27.618523+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "1xxJgiWW8wQ",
+    "tiktok_id": null
+  },
+  "https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt": {
+    "title": "ChatGPT Spontaneously Generates Sexual Violence and Hardcore Snuff Imagery",
+    "date_covered": "2026-06-18T03:35:26.407143+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "04YmP4fYkpI",
     "tiktok_id": null
   }
 }
