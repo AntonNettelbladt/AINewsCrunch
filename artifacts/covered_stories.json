@@ -1,11 +1,4 @@
 {
-  "https://openai.com/index/advancing-content-provenance/": {
-    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
-    "date_covered": "2026-05-19T21:21:04.444014+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "9rg4VKzj-6k",
-    "tiktok_id": null
-  },
   "https://github.com/wiltodelta/remove-ai-watermarks": {
     "title": "GitHub - wiltodelta/remove-ai-watermarks: CLI and library for removing visible (Gemini) and invisible (SynthID, C2PA, EXIF) AI watermarks from images",
     "date_covered": "2026-05-20T02:54:28.402426+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-18T18:42:48.121687+00:00",
     "source": "AI News",
     "youtube_id": "EXj-3Llci6s",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/france-advances-europes-ai-future/": {
+    "title": "France Advances Europe’s AI Future With NVIDIA Technologies",
+    "date_covered": "2026-06-18T22:09:44.766421+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "DJVdoxXnqY4",
     "tiktok_id": null
   }
 }
