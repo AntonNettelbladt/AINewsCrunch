@@ -1,11 +1,4 @@
 {
-  "https://apnews.com/article/ai-college-commencement-anxiety-boo-35aec9bac660eaeb05c5b8d392db2cac": {
-    "title": "Graduates are booing pep talks on AI at college commencements",
-    "date_covered": "2026-05-19T18:06:34.479152+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "lz9eEH2DjUk",
-    "tiktok_id": null
-  },
   "https://openai.com/index/advancing-content-provenance/": {
     "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
     "date_covered": "2026-05-19T21:21:04.444014+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-18T15:38:17.559306+00:00",
     "source": "AI News",
     "youtube_id": "Q2351UdyN98",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/microsoft-sells-openai-models-china/": {
+    "title": "OpenAI models in China: The deal OpenAI itself won't make",
+    "date_covered": "2026-06-18T18:42:48.121687+00:00",
+    "source": "AI News",
+    "youtube_id": "EXj-3Llci6s",
     "tiktok_id": null
   }
 }
