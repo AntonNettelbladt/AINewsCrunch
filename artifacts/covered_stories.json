@@ -1,11 +1,4 @@
 {
-  "https://github.com/shenli/distributed-system-testing": {
-    "title": "GitHub - shenli/distributed-system-testing: AI-agent skills for distributed-systems testing",
-    "date_covered": "2026-05-20T18:19:37.753201+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YaGAXuHLsCA",
-    "tiktok_id": null
-  },
   "https://openai.com/index/model-disproves-discrete-geometry-conjecture/": {
     "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
     "date_covered": "2026-05-20T21:53:19.237947+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-19T17:56:57.101186+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "0opv1wFIYRk",
+    "tiktok_id": null
+  },
+  "https://www.the-independent.com/arts-entertainment/films/news/sam-altman-biopic-amazon-openai-deal-b2999321.html": {
+    "title": "Amazon drops Sam Altman movie after announcing OpenAI partnership",
+    "date_covered": "2026-06-19T21:11:21.891874+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "3IVIhoXzRas",
     "tiktok_id": null
   }
 }
