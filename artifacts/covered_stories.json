@@ -1,11 +1,4 @@
 {
-  "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai": {
-    "title": "Untitled",
-    "date_covered": "2026-05-20T07:44:21.400462+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "lWXrAdhH_Qg",
-    "tiktok_id": null
-  },
   "https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html": {
     "title": "Learnings from 100K Lines of Rust with AI",
     "date_covered": "2026-05-20T10:59:03.113189+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-19T03:58:19.846737+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "kp4hM0Z1YlE",
+    "tiktok_id": null
+  },
+  "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning": {
+    "title": "Zen and the Art of Machine Learning Research",
+    "date_covered": "2026-06-19T09:09:41.397512+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "1VqNz7S-XYk",
     "tiktok_id": null
   }
 }
