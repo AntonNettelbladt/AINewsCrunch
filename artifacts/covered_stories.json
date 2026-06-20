@@ -1,11 +1,4 @@
 {
-  "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/": {
-    "title": "AI is just unauthorised plagiarism at a bigger scale",
-    "date_covered": "2026-05-21T15:00:46.844710+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "R3XQJzjF2tI",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/": {
     "title": "NVIDIA GTC Taipei at COMPUTEX: Live Updates on What’s Next in AI",
     "date_covered": "2026-05-21T17:58:58.538741+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-20T13:56:49.190305+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "I9MXiGscQ5Q",
+    "tiktok_id": null
+  },
+  "https://blog.cloudflare.com/temporary-accounts/": {
+    "title": "Temporary Cloudflare Accounts for AI agents",
+    "date_covered": "2026-06-20T17:27:09.919136+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "pBNo5-IIxWQ",
     "tiktok_id": null
   }
 }
