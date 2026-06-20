@@ -1,11 +1,4 @@
 {
-  "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html": {
-    "title": "OpenAI to confidentially file for IPO as soon as Friday: Source",
-    "date_covered": "2026-05-21T07:49:53.783454+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "irpUwYXHBzI",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/tech-ex-north-america-day-two-roundup-of-themes-issues-discussions/": {
     "title": "Enterprise AI roadblocks and roadmaps, security and physical AI: Day two at TechEx",
     "date_covered": "2026-05-21T11:23:09.281486+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-20T07:52:28.906925+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "lCXETHOq2ug",
+    "tiktok_id": null
+  },
+  "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/": {
+    "title": "LLMs are complicated now",
+    "date_covered": "2026-06-20T10:34:30.777620+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "kUfF6zNx_yY",
     "tiktok_id": null
   }
 }
