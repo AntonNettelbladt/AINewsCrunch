@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/": {
-    "title": "NVIDIA GTC Taipei at COMPUTEX: Live Updates on What’s Next in AI",
-    "date_covered": "2026-05-21T17:58:58.538741+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Q5SXawtRCgU",
-    "tiktok_id": null
-  },
   "https://www.0xsid.com/blog/antigravity-bait-n-switch": {
     "title": "Google's Antigravity Bait and Switch",
     "date_covered": "2026-05-21T21:30:05.157605+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-20T17:27:09.919136+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "pBNo5-IIxWQ",
+    "tiktok_id": null
+  },
+  "https://www.publictechnology.net/2026/06/15/public-order-justice-and-rights/home-office-launches-75m-policeai-to-capitalise-on-artificial-intelligence/": {
+    "title": "Home Office launches £75m ‘PoliceAI’ to capitalise on artificial intelligence",
+    "date_covered": "2026-06-20T21:17:19.225559+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "d-4qfR0YJ60",
     "tiktok_id": null
   }
 }
