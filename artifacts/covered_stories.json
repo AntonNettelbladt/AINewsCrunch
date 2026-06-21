@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/openai-singapore-ai-lab-imda-agentic-ai-framework/": {
-    "title": "OpenAI opens Singapore AI lab as IMDA updates AI framework",
-    "date_covered": "2026-05-22T10:52:53.236479+00:00",
-    "source": "AI News",
-    "youtube_id": "zFC0s261ptM",
-    "tiktok_id": null
-  },
   "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/": {
     "title": "The elephant in the room • Josh W. Comeau",
     "date_covered": "2026-05-22T14:34:20.740091+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-21T08:30:31.823520+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "KlLn-OrI6n8",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/sennheiser-momentum-5-battery-repair/": {
+    "title": "Sennheiser just gave me a compelling reason to retire my Bose and Sony headphones",
+    "date_covered": "2026-06-21T14:04:32.760408+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "RI2PSCO-_Io",
     "tiktok_id": null
   }
 }
