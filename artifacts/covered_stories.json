@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-energy-grid-mapping-china/": {
-    "title": "China’s AI just mapped its entire renewable energy grid. Here’s why the rest of the world should pay attention",
-    "date_covered": "2026-05-22T17:53:54.676133+00:00",
-    "source": "AI News",
-    "youtube_id": "WLOdLYhNf4Q",
-    "tiktok_id": null
-  },
-  "https://annas-archive.gl/blog/llms-txt.html": {
-    "title": "If you’re an LLM, please read this",
-    "date_covered": "2026-05-22T21:11:05.397500+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.cringely.com/2026/05/21/im-writing-again/": {
     "title": "I’m writing again…",
     "date_covered": "2026-05-23T02:43:07.101998+00:00",
@@ -1047,6 +1033,13 @@
     "date_covered": "2026-06-21T17:29:49.625423+00:00",
     "source": "Analytics Insight",
     "youtube_id": "qeZmcjgsPFA",
+    "tiktok_id": null
+  },
+  "https://github.com/nikitadoudikov/claude-pulse": {
+    "title": "GitHub - nikitadoudikov/claude-pulse: Local, zero-dependency dashboard for Claude Code: live token usage and context, lost-session recovery, full-text search, and approve tool calls from your phone.",
+    "date_covered": "2026-06-21T21:15:26.572134+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FDyvnbUNWtA",
     "tiktok_id": null
   }
 }
