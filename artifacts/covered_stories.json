@@ -1,11 +1,4 @@
 {
-  "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/": {
-    "title": "The elephant in the room • Josh W. Comeau",
-    "date_covered": "2026-05-22T14:34:20.740091+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "iBgmYlmIdWg",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/ai-energy-grid-mapping-china/": {
     "title": "China’s AI just mapped its entire renewable energy grid. Here’s why the rest of the world should pay attention",
     "date_covered": "2026-05-22T17:53:54.676133+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-21T14:04:32.760408+00:00",
     "source": "ZDNet AI",
     "youtube_id": "RI2PSCO-_Io",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/why-ai-chatbots-are-emerging-as-powerful-learning-coaches": {
+    "title": "Why AI Chatbots Are Emerging as Powerful Learning Coaches?",
+    "date_covered": "2026-06-21T17:29:49.625423+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "qeZmcjgsPFA",
     "tiktok_id": null
   }
 }
