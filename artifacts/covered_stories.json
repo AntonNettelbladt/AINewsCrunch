@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/getac-g14-windows-ai-tablet-review/": {
-    "title": "This rugged Windows tablet handles mud and rain - but didn't impress with the basics",
-    "date_covered": "2026-05-23T17:00:50.895201+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "vzYYA-rZqGk",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/gaming/free-fire-max-redeem-codes-for-may-24-grab-premium-skins-bundles-and-more-rewards": {
     "title": "Free Fire Max Redeem Codes for May 24: Grab Premium Skins, Bundles, and More Rewards!",
     "date_covered": "2026-05-24T07:01:46.100700+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-06-22T16:54:24.113536+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "-ZE3y4oPd8w",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/ai-troubleshooting-secrets-my-interview-with-copilot-chatgpt/": {
+    "title": "How to troubleshoot your PC problems with Copilot or ChatGPT - effectively",
+    "date_covered": "2026-06-22T22:05:32.348382+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "_RzJKvxF5V0",
     "tiktok_id": null
   }
 }
