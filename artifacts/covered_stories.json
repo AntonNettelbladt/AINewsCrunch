@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/gaming/free-fire-max-redeem-codes-for-may-24-grab-premium-skins-bundles-and-more-rewards": {
-    "title": "Free Fire Max Redeem Codes for May 24: Grab Premium Skins, Bundles, and More Rewards!",
-    "date_covered": "2026-05-24T07:01:46.100700+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "Cyf7p5kabbU",
-    "tiktok_id": null
-  },
   "https://fs.blog/knowledge-project-podcast/greg-brockman/": {
     "title": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
     "date_covered": "2026-05-24T13:22:09.276796+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-23T02:54:04.383491+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "cG3nNcSiHTA",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/mitigating-vendor-lock-in-sakana-ai-fugu-multi-agent-models/": {
+    "title": "Mitigating vendor lock-in with Sakana AI Fugu multi-agent models",
+    "date_covered": "2026-06-23T07:49:19.109021+00:00",
+    "source": "AI News",
+    "youtube_id": "48lMfM8cqOY",
     "tiktok_id": null
   }
 }
