@@ -1,11 +1,4 @@
 {
-  "https://fs.blog/knowledge-project-podcast/greg-brockman/": {
-    "title": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
-    "date_covered": "2026-05-24T13:22:09.276796+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ET3tZBpRdVQ",
-    "tiktok_id": null
-  },
   "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand": {
     "title": "‘AI washing’: firms are scrambling to rebrand themselves as tech-focused",
     "date_covered": "2026-05-24T17:01:33.605225+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-23T11:03:52.579651+00:00",
     "source": "ZDNet AI",
     "youtube_id": "ToPHygyYuAE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats/": {
+    "title": "Why Five Eyes Spy Agencies Warn AI Cyber Threats Will Hit You This Year",
+    "date_covered": "2026-06-23T14:44:24.543358+00:00",
+    "source": "AI News",
+    "youtube_id": "gfxnZ5Rl5d0",
     "tiktok_id": null
   }
 }
