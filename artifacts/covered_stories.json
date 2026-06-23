@@ -1,11 +1,4 @@
 {
-  "https://www.ycombinator.com/companies/flick/jobs/Tdu6FH6-senior-frontend-engineer": {
-    "title": "Senior Frontend Engineer at Flick",
-    "date_covered": "2026-05-24T20:55:19.584835+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "sWW6HzpnXG8",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/tech-news/three-strategies-from-subhani-shaik-for-organizations-at-scale-to-fix-fragmented-data-and-make-ai-deliver": {
     "title": "Three strategies from Subhani Shaik for organizations at scale to fix fragmented data and make AI deliver",
     "date_covered": "2026-05-25T08:22:37.987485+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-23T17:54:08.016554+00:00",
     "source": "AI News",
     "youtube_id": "Q_FPx4Rbd-A",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/introducing-claude-tag": {
+    "title": "Introducing Claude Tag",
+    "date_covered": "2026-06-23T21:35:10.926508+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "NIfDePCKsLc",
     "tiktok_id": null
   }
 }
