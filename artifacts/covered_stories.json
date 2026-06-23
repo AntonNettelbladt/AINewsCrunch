@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand": {
-    "title": "‘AI washing’: firms are scrambling to rebrand themselves as tech-focused",
-    "date_covered": "2026-05-24T17:01:33.605225+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2kfzPVEYel4",
-    "tiktok_id": null
-  },
   "https://www.ycombinator.com/companies/flick/jobs/Tdu6FH6-senior-frontend-engineer": {
     "title": "Senior Frontend Engineer at Flick",
     "date_covered": "2026-05-24T20:55:19.584835+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-06-23T14:44:24.543358+00:00",
     "source": "AI News",
     "youtube_id": "gfxnZ5Rl5d0",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/omio-scales-travel-product-development-using-openai-models/": {
+    "title": "Omio scales travel product development using OpenAI models",
+    "date_covered": "2026-06-23T17:54:08.016554+00:00",
+    "source": "AI News",
+    "youtube_id": "Q_FPx4Rbd-A",
     "tiktok_id": null
   }
 }
