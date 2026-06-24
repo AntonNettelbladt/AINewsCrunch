@@ -1,11 +1,4 @@
 {
-  "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910": {
-    "title": "Norway’s 2 petabytes of Huawei flash storage and LLM training",
-    "date_covered": "2026-05-25T21:07:10.611537+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Dct6c-_1aO8",
-    "tiktok_id": null
-  },
   "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/": {
     "title": "Using AI to write better code more slowly",
     "date_covered": "2026-05-26T02:51:33.736771+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-06-24T17:55:24.192097+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "eZzUkktASxc",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/samsung-chatgpt-enterprise-codex-employee-ai-use/": {
+    "title": "Samsung opens ChatGPT Enterprise and Codex access after AI restrictions",
+    "date_covered": "2026-06-24T21:25:15.106366+00:00",
+    "source": "AI News",
+    "youtube_id": "81k8q9rSfhw",
     "tiktok_id": null
   }
 }
