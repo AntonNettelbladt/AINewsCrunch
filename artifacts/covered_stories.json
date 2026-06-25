@@ -1,11 +1,4 @@
 {
-  "https://jry.io/writing/use-boring-languages-with-llms/": {
-    "title": "Use boring languages with LLMs",
-    "date_covered": "2026-05-26T07:46:20.199025+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "gQ7Q8-x0g28",
-    "tiktok_id": null
-  },
   "https://vllm.ai/blog/2026-05-26-eagle-3-1": {
     "title": "EAGLE 3.1: Advancing Speculative Decoding Through Collaboration Between the EAGLE Team, vLLM, and TorchSpec",
     "date_covered": "2026-05-26T15:02:46.299816+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-06-25T07:44:09.897597+00:00",
     "source": "AI News",
     "youtube_id": "Df2ISA8w2E4",
+    "tiktok_id": null
+  },
+  "https://rubyllm.com/": {
+    "title": "RubyLLM",
+    "date_covered": "2026-06-25T10:43:46.170621+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
