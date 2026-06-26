@@ -1,11 +1,4 @@
 {
-  "https://orchidfiles.com/im-tired-of-ai-generated-answers/": {
-    "title": "I’m tired of talking to AI",
-    "date_covered": "2026-05-27T15:32:41.405519+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Q5xPhH2R0k0",
-    "tiktok_id": null
-  },
   "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/": {
     "title": "Tech CEOs are apparently suffering from AI psychosis",
     "date_covered": "2026-05-27T18:28:06.477831+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-06-26T14:19:37.045858+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "vEiaj6BonmA",
+    "tiktok_id": null
+  },
+  "https://github.com/workweave/router": {
+    "title": "GitHub - workweave/router: Model router for agentic systems. Routes every prompt to the right model in <50ms. Cut costs 40-70% with just an endpoint change.",
+    "date_covered": "2026-06-26T17:50:01.927913+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
