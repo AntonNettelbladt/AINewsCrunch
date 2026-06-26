@@ -1,11 +1,4 @@
 {
-  "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/": {
-    "title": "Tech CEOs are apparently suffering from AI psychosis",
-    "date_covered": "2026-05-27T18:28:06.477831+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "vjN0hm4072w",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ai-factories-the-new-infrastructure-of-intelligence/": {
     "title": "AI Factories: The New Infrastructure of Intelligence",
     "date_covered": "2026-05-27T21:55:03.060254+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-06-26T17:50:01.927913+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://alephneuro.com/blog/ultrasound-brain": {
+    "title": "Ultrasound imaging of the brain — Aleph",
+    "date_covered": "2026-06-26T21:20:16.816261+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "cXfYMjFpyq4",
     "tiktok_id": null
   }
 }
