@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/vera-cpu-phoronix/": {
-    "title": "NVIDIA Vera CPU Is ‘Packing a Heavy-Hitting Punch’ Against Competition",
-    "date_covered": "2026-05-27T03:01:46.585809+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "_kthR1UzP2Y",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/google-omni-ai-tool-video-gemini/": {
     "title": "I was intrigued by Google's new video-cloning Omni AI - then I considered the implications",
     "date_covered": "2026-05-27T11:45:52.343261+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-06-25T21:33:15.806529+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "XGlICAwTckM",
+    "tiktok_id": null
+  },
+  "https://www.fernandoi.cl/posts/hackmyclaw/": {
+    "title": "What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval",
+    "date_covered": "2026-06-26T07:52:54.254613+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DCgcFkKeqMk",
     "tiktok_id": null
   }
 }
