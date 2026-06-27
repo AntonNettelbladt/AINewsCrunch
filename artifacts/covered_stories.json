@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/": {
-    "title": "NVIDIA Research Advances Robotics From Simulation to the Real World",
-    "date_covered": "2026-05-28T15:46:04.973448+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "kraFiob7FeU",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/series-h": {
     "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
     "date_covered": "2026-05-28T18:40:06.666758+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-27T06:56:16.567272+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "_AIhTjXGqAk",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/how-to-build-a-powerful-llm-knowledge-base/": {
+    "title": "How to Build a Powerful LLM Knowledge Base",
+    "date_covered": "2026-06-27T17:11:02.689663+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "J4cQDYYJ0n0",
     "tiktok_id": null
   }
 }
