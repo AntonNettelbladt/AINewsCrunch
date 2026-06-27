@@ -1,11 +1,4 @@
 {
-  "https://rajveerbachkaniwala.com/blog/2026/05/24/on-the-difficulty-of-pasting-a-picture/": {
-    "title": "Why Ctrl+V won't paste images in Claude Code on WSL, with a fix",
-    "date_covered": "2026-05-28T02:49:52.819561+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HiWdEFvdVHc",
-    "tiktok_id": null
-  },
   "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/": {
     "title": "DuckDuckGo's AI-free search saw nearly 28% more visits in the week following Google's insistence that people love AI mode",
     "date_covered": "2026-05-28T07:58:46.457797+00:00",
@@ -1082,6 +1075,13 @@
     "date_covered": "2026-06-27T02:49:00.417826+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://blog.doubleword.ai/frontier-os-llm": {
+    "title": "Prediction: A Frontier Open Source LLM Will Be Released On 3rd December 2026",
+    "date_covered": "2026-06-27T06:56:16.567272+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "_AIhTjXGqAk",
     "tiktok_id": null
   }
 }
