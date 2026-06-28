@@ -1,18 +1,4 @@
 {
-  "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/": {
-    "title": "Sam Altman and Dario Amodei are both walking back AI jobs apocalypse predictions as they eye IPOs",
-    "date_covered": "2026-05-28T21:58:43.768342+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "uHtvBb5y5GY",
-    "tiktok_id": null
-  },
-  "https://www.anthropic.com/news/claude-opus-4-8": {
-    "title": "Introducing Claude Opus 4.8",
-    "date_covered": "2026-05-29T02:52:41.217899+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "4o2zWphhJmU",
-    "tiktok_id": null
-  },
   "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/": {
     "title": "Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code",
     "date_covered": "2026-05-29T07:56:24.242069+00:00",
@@ -1068,6 +1054,13 @@
     "date_covered": "2026-06-27T21:03:39.920161+00:00",
     "source": "Towards Data Science",
     "youtube_id": "7mzTEituzSQ",
+    "tiktok_id": null
+  },
+  "https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis": {
+    "title": "What Ozempic Does to the Gut-Brain Axis",
+    "date_covered": "2026-06-28T03:04:27.762640+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "b_VU-_QHzic",
     "tiktok_id": null
   }
 }
