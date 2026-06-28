@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/": {
-    "title": "Anthropic releases Claude Opus 4.8",
-    "date_covered": "2026-05-29T11:28:49.477898+00:00",
-    "source": "AI News",
-    "youtube_id": "l3-3LAhk1cY",
-    "tiktok_id": null
-  },
   "https://github.com/scanaislop/aislop": {
     "title": "GitHub - scanaislop/aislop: Catch the slop AI coding agents leave in your code. 40+ rules, 7 languages, sub-second, deterministic, no LLM. MIT.",
     "date_covered": "2026-05-29T14:59:10.584731+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-28T10:31:09.138421+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "MF0Y8LFJ6dU",
+    "tiktok_id": null
+  },
+  "https://www.cbc.ca/radio/ideas/humboldt-education-system-bildung-1.7172093": {
+    "title": "How the origins of the school system aimed to produce independent, critical thinkers",
+    "date_covered": "2026-06-28T13:33:18.280676+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xKkdVBnuX1s",
     "tiktok_id": null
   }
 }
