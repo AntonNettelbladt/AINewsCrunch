@@ -1,11 +1,4 @@
 {
-  "https://github.com/scanaislop/aislop": {
-    "title": "GitHub - scanaislop/aislop: Catch the slop AI coding agents leave in your code. 40+ rules, 7 languages, sub-second, deterministic, no LLM. MIT.",
-    "date_covered": "2026-05-29T14:59:10.584731+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "i4d5HzpPBvs",
-    "tiktok_id": null
-  },
   "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/": {
     "title": "Robinhood now lets your AI agents trade stocks",
     "date_covered": "2026-05-29T18:34:01.042187+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-06-28T13:33:18.280676+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xKkdVBnuX1s",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html": {
+    "title": "Google limits Meta’s use of its Gemini AI models, FT reports",
+    "date_covered": "2026-06-28T17:09:01.602327+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "kDkHM-8eQfM",
     "tiktok_id": null
   }
 }
