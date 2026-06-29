@@ -1,11 +1,4 @@
 {
-  "https://openrouter.ai/announcements/series-b": {
-    "title": "OpenRouter Raises $113M Series B",
-    "date_covered": "2026-05-30T20:56:42.291775+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "gJbivl9BHR0",
-    "tiktok_id": null
-  },
   "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/": {
     "title": "Domain Expertise Has Always Been the Real Moat",
     "date_covered": "2026-05-31T03:04:47.041646+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-29T18:11:39.730550+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "NzzWeKIFq4o",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/hp-accelerates-enterprise-workflows-openai-frontier/": {
+    "title": "HP accelerates enterprise workflows with OpenAI Frontier",
+    "date_covered": "2026-06-29T21:27:31.887133+00:00",
+    "source": "AI News",
+    "youtube_id": "dofy1XYa1yU",
     "tiktok_id": null
   }
 }
