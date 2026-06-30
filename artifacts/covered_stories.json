@@ -1055,5 +1055,12 @@
     "source": "AI News",
     "youtube_id": "dofy1XYa1yU",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/palantir-secure-ai-us-agencies-nemotron-open-models/": {
+    "title": "Open Models, Closed Environments: Palantir Brings Secure AI to US Agencies With NVIDIA Nemotron",
+    "date_covered": "2026-06-30T02:58:53.954907+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "eMOu7kVkNXM",
+    "tiktok_id": null
   }
 }
