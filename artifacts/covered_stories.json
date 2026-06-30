@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/metas-internal-monitoring-tool-raises-gdpr-concerns-across-european-privacy-regulators": {
-    "title": "Meta's Internal Monitoring Tool Raises GDPR Concerns Across European Privacy Regulators",
-    "date_covered": "2026-05-31T10:16:21.843658+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "rClFzVjfEro",
-    "tiktok_id": null
-  },
   "https://github.com/pewdiepie-archdaemon/odysseus": {
     "title": "GitHub - pewdiepie-archdaemon/odysseus: Self-hosted AI workspace.",
     "date_covered": "2026-05-31T17:06:33.765802+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-06-30T07:55:53.946357+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/trading/mexc-lists-ondos-tokenized-strategy-preferred-stock-on-spot-market": {
+    "title": "MEXC Lists Ondo's Tokenized Strategy Preferred Stock on Spot Market",
+    "date_covered": "2026-06-30T11:01:14.577948+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "ByZ2ZvFcgcc",
     "tiktok_id": null
   }
 }
