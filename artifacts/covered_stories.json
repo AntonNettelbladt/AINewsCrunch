@@ -1055,5 +1055,12 @@
     "source": "Analytics Insight",
     "youtube_id": "ByZ2ZvFcgcc",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/vision-ai-agent-skills-omniverse-metropolis/": {
+    "title": "Into the Omniverse: Three Workflows for Improving Vision AI Agent Accuracy With Synthetic Data and Fine-Tuning",
+    "date_covered": "2026-06-30T14:14:59.638393+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "tNGTZhwTIVU",
+    "tiktok_id": null
   }
 }
