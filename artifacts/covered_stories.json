@@ -1,11 +1,4 @@
 {
-  "https://github.com/stanford-cs336/assignment1-basics/blob/main/CLAUDE.md": {
-    "title": "assignment1-basics/CLAUDE.md at main · stanford-cs336/assignment1-basics",
-    "date_covered": "2026-06-01T17:34:38.491179+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "-JL-yKSfTco",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ai-cloud-ecosystem/": {
     "title": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
     "date_covered": "2026-06-01T22:36:22.698276+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-07-01T14:31:23.076789+00:00",
     "source": "ZDNet AI",
     "youtube_id": "YSCq1ZGn1Ws",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-life-jaiveer-singh/": {
+    "title": "How Jaiveer Singh Is Helping Robots — and Developers — Move Faster",
+    "date_covered": "2026-07-01T17:57:08.694248+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Nh-JA-sJR7I",
     "tiktok_id": null
   }
 }
