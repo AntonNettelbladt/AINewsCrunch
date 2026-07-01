@@ -1062,5 +1062,12 @@
     "source": "ZDNet AI",
     "youtube_id": "mBDrkyGzlcE",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/": {
+    "title": "NVIDIA BioNeMo Agent Toolkit Brings Accelerated AI to Life Sciences Researchers in Claude Science",
+    "date_covered": "2026-07-01T03:04:27.792123+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Hj3NHamuImY",
+    "tiktok_id": null
   }
 }
