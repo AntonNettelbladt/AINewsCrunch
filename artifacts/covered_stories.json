@@ -1069,5 +1069,12 @@
     "source": "NVIDIA Blog",
     "youtube_id": "Nh-JA-sJR7I",
     "tiktok_id": null
+  },
+  "https://github.com/Division-36/Z-Jail/": {
+    "title": "GitHub - Division-36/Z-Jail: A lightweight, multi-layer Linux sandbox combining namespaces, pivot_root, seccomp-bpf, capability dropping, and an evidence-based verdict engine (Truthimatics Public Vers",
+    "date_covered": "2026-07-01T21:29:19.751148+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
   }
 }
