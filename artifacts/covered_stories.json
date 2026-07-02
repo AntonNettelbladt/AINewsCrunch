@@ -1083,5 +1083,12 @@
     "source": "Analytics Insight",
     "youtube_id": "SGXcenJWPU4",
     "tiktok_id": null
+  },
+  "https://github.com/HUANGCHIHHUNGLeo/claude-real-video": {
+    "title": "GitHub - HUANGCHIHHUNGLeo/claude-real-video: Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT.",
+    "date_covered": "2026-07-02T21:05:27.656059+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "tAWMv3jacKk",
+    "tiktok_id": null
   }
 }
