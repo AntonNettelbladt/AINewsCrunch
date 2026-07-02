@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-cloud-ecosystem/": {
-    "title": "NVIDIA AI Cloud Ecosystem Expands Worldwide to Meet Global AI Compute Demand",
-    "date_covered": "2026-06-01T22:36:22.698276+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "8UNmWXqGcOI",
-    "tiktok_id": null
-  },
   "https://github.com/cyberpapiii/chipotlai-max": {
     "title": "GitHub - cyberpapiii/chipotlai-max: The AI coding agent that runs on stolen Chipotle compute 🌯 Fork of OpenCode with Pepper AI as default model. Community project to add providers from Home Depot, Low",
     "date_covered": "2026-06-02T03:37:21.173600+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-07-01T21:29:19.751148+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/anthropic-deploys-claude-sonnet-5-fable-and-mythos-restored/": {
+    "title": "Anthropic deploys Claude Sonnet 5, Fable and Mythos restored",
+    "date_covered": "2026-07-02T02:53:53.727904+00:00",
+    "source": "AI News",
+    "youtube_id": "KwR9PG3zP5o",
     "tiktok_id": null
   }
 }
