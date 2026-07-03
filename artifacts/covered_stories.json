@@ -1,11 +1,4 @@
 {
-  "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device": {
-    "title": "U of T researchers demonstrate AI worm could target any online device",
-    "date_covered": "2026-06-03T16:34:38.830653+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "1MGx84UKExk",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/": {
     "title": "NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI",
     "date_covered": "2026-06-03T22:31:21.989610+00:00",
@@ -1096,6 +1089,13 @@
     "date_covered": "2026-07-03T13:59:22.393148+00:00",
     "source": "AI News",
     "youtube_id": "TogQRf94pLI",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/tokenminning-how-to-get-more-from-your-chatbot-for-less/": {
+    "title": "Tokenminning: How to Get More from Your Chatbot for Less",
+    "date_covered": "2026-07-03T17:26:26.769772+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
