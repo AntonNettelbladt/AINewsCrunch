@@ -1104,5 +1104,12 @@
     "source": "ZDNet AI",
     "youtube_id": "aSvpRNPstdw",
     "tiktok_id": null
+  },
+  "https://github.com/adam-s/car-diagnosis": {
+    "title": "GitHub - adam-s/car-diagnosis: Diagnose a car fault from its sound — an honest, end-to-end audio-ML pipeline (scrape → clean → CLAP → calibrated triage). Proof of concept.",
+    "date_covered": "2026-07-04T13:19:37.082888+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "T44PAJ_ijUU",
+    "tiktok_id": null
   }
 }
