@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/": {
-    "title": "NVIDIA Enables the Next Era Of Physical AI Research With Agent Skills For Autonomous Vehicles, Robotics And Vision AI",
-    "date_covered": "2026-06-03T22:31:21.989610+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "esUMblkTNqU",
-    "tiktok_id": null
-  },
   "https://simonwillison.net/2026/Jun/3/uber-caps-usage/": {
     "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
     "date_covered": "2026-06-04T03:39:52.146888+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-07-03T21:04:35.475677+00:00",
     "source": "AI News",
     "youtube_id": "Cy-iWN3QZ9A",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/time-series-llms-explained-with-t0-alpha/": {
+    "title": "Time-Series LLMs, Explained with t0-alpha",
+    "date_covered": "2026-07-04T02:35:32.969829+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "JW9ElXWDqAE",
     "tiktok_id": null
   }
 }
