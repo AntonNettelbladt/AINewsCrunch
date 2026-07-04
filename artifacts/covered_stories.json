@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training/": {
-    "title": "NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale",
-    "date_covered": "2026-06-04T18:17:00.417042+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "uScoTqMZNr8",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw/": {
     "title": "Industrial Software Leaders Build Secure, Autonomous AI Engineers With NVIDIA NemoClaw",
     "date_covered": "2026-06-04T21:33:12.003632+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-04T17:06:31.779418+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Wm5_8D7_Eaw",
+    "tiktok_id": null
+  },
+  "https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/": {
+    "title": "Neural Render Proxies for Interactive and Differentiable Lighting",
+    "date_covered": "2026-07-04T20:56:21.683412+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ypqs5Y4VoJw",
     "tiktok_id": null
   }
 }
