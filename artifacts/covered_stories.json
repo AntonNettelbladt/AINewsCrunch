@@ -1,11 +1,4 @@
 {
-  "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/": {
-    "title": "No, Artificial Intelligence Is Not Conscious",
-    "date_covered": "2026-06-04T08:21:12.611785+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "pD5ewBP9Nmk",
-    "tiktok_id": null
-  },
   "https://medium.com/@Koukyosyumei/claude-code-and-codex-can-have-real-time-conversation-via-git-f95b696c1c05": {
     "title": "Claude Code and Codex Can Have Real-Time Conversation via Git",
     "date_covered": "2026-06-04T14:54:06.210595+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-07-04T06:50:38.494975+00:00",
     "source": "AI News",
     "youtube_id": "UqWVhTr1SCA",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/anthropic-fable-5-freelance-work-performance-record/": {
+    "title": "Fable 5 just set a new AI freelance work performance record - but it can't replace humans yet",
+    "date_covered": "2026-07-04T10:09:07.522191+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "aSvpRNPstdw",
     "tiktok_id": null
   }
 }
