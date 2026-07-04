@@ -1,11 +1,4 @@
 {
-  "https://medium.com/@Koukyosyumei/claude-code-and-codex-can-have-real-time-conversation-via-git-f95b696c1c05": {
-    "title": "Claude Code and Codex Can Have Real-Time Conversation via Git",
-    "date_covered": "2026-06-04T14:54:06.210595+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "InaQmMKmiGE",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/cvpr-research-grasping-driving-agent-training/": {
     "title": "NVIDIA Research Unlocks Advanced Grasping, Smarter Autonomous Driving and Agent Training at Scale",
     "date_covered": "2026-06-04T18:17:00.417042+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-04T13:19:37.082888+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "T44PAJ_ijUU",
+    "tiktok_id": null
+  },
+  "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/": {
+    "title": "The bottleneck might be the air in the room",
+    "date_covered": "2026-07-04T17:06:31.779418+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Wm5_8D7_Eaw",
     "tiktok_id": null
   }
 }
