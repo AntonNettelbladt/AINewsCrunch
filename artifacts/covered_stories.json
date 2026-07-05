@@ -1,11 +1,4 @@
 {
-  "https://www.alexedwards.net/blog/go-experiments-explained": {
-    "title": "Go Experiments Explained– Alex Edwards",
-    "date_covered": "2026-06-05T08:08:54.007599+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "PbjNadCzCUE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/github-copilots-billing-changes-users-see-use-based-price-hikes/": {
     "title": "GitHub Copilot users see token-based price hikes",
     "date_covered": "2026-06-05T14:44:52.937915+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-05T07:26:18.738231+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "sPsWBR8cBSw",
+    "tiktok_id": null
+  },
+  "https://www.hawaiinewsnow.com/2026/07/04/record-breaking-solo-rower-kelsey-pfendler-arrives-hawaii/": {
+    "title": "Record-breaking solo rower Kelsey Pfendler arrives in Hawaii",
+    "date_covered": "2026-07-05T10:12:15.256216+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "VPcTupJWSYk",
     "tiktok_id": null
   }
 }
