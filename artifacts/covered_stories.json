@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/": {
-    "title": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
-    "date_covered": "2026-06-05T17:57:04.532977+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "oquFNMeQsQY",
-    "tiktok_id": null
-  },
   "https://github.com/zdk/lowfat": {
     "title": "GitHub - zdk/lowfat: lowfat - slim your command output. strips noise, saves tokens.",
     "date_covered": "2026-06-05T21:27:14.266604+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-05T17:10:37.384950+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "P_7ck4YbKR4",
+    "tiktok_id": null
+  },
+  "https://github.com/langchain-ai/openwiki": {
+    "title": "GitHub - langchain-ai/openwiki: OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+    "date_covered": "2026-07-05T21:00:01.034851+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "xZBGnZenN6I",
     "tiktok_id": null
   }
 }
