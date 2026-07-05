@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/github-copilots-billing-changes-users-see-use-based-price-hikes/": {
-    "title": "GitHub Copilot users see token-based price hikes",
-    "date_covered": "2026-06-05T14:44:52.937915+00:00",
-    "source": "AI News",
-    "youtube_id": "ElKVqwwdex4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain/": {
     "title": "NVIDIA Factory Operations Blueprint Gives Factories a New AI Brain",
     "date_covered": "2026-06-05T17:57:04.532977+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-05T13:28:16.774096+00:00",
     "source": "Wired AI",
     "youtube_id": "z9hqnERlXBI",
+    "tiktok_id": null
+  },
+  "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm": {
+    "title": "List and map of airplane boneyards in the United States and worldwide, including a list of post-WWII boneyards and modern-day airliner storage facilities",
+    "date_covered": "2026-07-05T17:10:37.384950+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "P_7ck4YbKR4",
     "tiktok_id": null
   }
 }
