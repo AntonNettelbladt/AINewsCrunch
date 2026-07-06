@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/microsoft-discovery-agentic-ai-majorana-2/": {
-    "title": "Microsoft’s Majorana 2 quantum chip is also a case study for agentic AI in R&D",
-    "date_covered": "2026-06-06T02:49:04.269788+00:00",
-    "source": "AI News",
-    "youtube_id": "QafcuFFW0gs",
-    "tiktok_id": null
-  },
-  "https://www.bbc.com/news/live/c4g44ew3g1kt": {
-    "title": "Astronauts told to return to International Space Station after sheltering over air leak repairs",
-    "date_covered": "2026-06-06T06:54:55.660779+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "zBIcdqFvu40",
-    "tiktok_id": null
-  },
   "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391": {
     "title": "The back cover of C++: The Programming Language also raises questions not answered by the front cover",
     "date_covered": "2026-06-06T10:04:42.133726+00:00",
@@ -1117,6 +1103,13 @@
     "date_covered": "2026-07-06T02:50:20.462622+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "tx6s8M_HfkM",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/ampstories/stocks/stock-market-today-sensex-jumps-403-points-nifty50-crosses-24388-as-bank-stocks-rally": {
+    "title": "Stock Market Today: Sensex Jumps 403 Points, Nifty50 Crosses 24,388 as Bank Stocks Rally",
+    "date_covered": "2026-07-06T08:21:10.329854+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "eUDyBys-Szs",
     "tiktok_id": null
   }
 }
