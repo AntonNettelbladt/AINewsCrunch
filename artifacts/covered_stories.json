@@ -1,18 +1,4 @@
 {
-  "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391": {
-    "title": "The back cover of C++: The Programming Language also raises questions not answered by the front cover",
-    "date_covered": "2026-06-06T10:04:42.133726+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ZqDv4_j7JHU",
-    "tiktok_id": null
-  },
-  "https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/": {
-    "title": "The Smart TV in Your LivingRoom Is a Node in the AIScraping Economy",
-    "date_covered": "2026-06-06T13:27:35.852454+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer": {
     "title": "Founding Machine Learning Engineer at Mbodi AI",
     "date_covered": "2026-06-06T17:12:14.836924+00:00",
@@ -1110,6 +1096,13 @@
     "date_covered": "2026-07-06T08:21:10.329854+00:00",
     "source": "Analytics Insight",
     "youtube_id": "eUDyBys-Szs",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/china-ai-companion-rules/": {
+    "title": "China's AI companion rules: what Beijing is really banning",
+    "date_covered": "2026-07-06T15:27:35.275726+00:00",
+    "source": "AI News",
+    "youtube_id": "fqr5xQIm-eQ",
     "tiktok_id": null
   }
 }
