@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/": {
-    "title": "Aviva deploys AI to stop £230M in sophisticated insurance fraud",
-    "date_covered": "2026-06-09T07:47:32.711642+00:00",
-    "source": "AI News",
-    "youtube_id": "WPKJfo-vp_U",
-    "tiktok_id": null
-  },
   "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/": {
     "title": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
     "date_covered": "2026-06-09T11:02:27.878715+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-09T07:38:48.542310+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "IgYCrVkc3A0",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/": {
+    "title": "NHS AI blood test could reduce invasive womb cancer checks",
+    "date_covered": "2026-07-09T11:00:43.775657+00:00",
+    "source": "AI News",
+    "youtube_id": "NMtP-4z621k",
     "tiktok_id": null
   }
 }
