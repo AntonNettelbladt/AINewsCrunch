@@ -1,11 +1,4 @@
 {
-  "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/": {
-    "title": "Apple bets cheaper AI will woo small developers",
-    "date_covered": "2026-06-09T02:47:50.322865+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "dU7S7_Dgr5M",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/": {
     "title": "Aviva deploys AI to stop £230M in sophisticated insurance fraud",
     "date_covered": "2026-06-09T07:47:32.711642+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-09T02:37:19.896210+00:00",
     "source": "ZDNet AI",
     "youtube_id": "CSj34ZsrMsI",
+    "tiktok_id": null
+  },
+  "https://thetruthasiseeitnow.com/ai-slop-starts-with-the-codebase-itself/": {
+    "title": "AI slop starts with the codebase itself. · the truth as I see it now",
+    "date_covered": "2026-07-09T07:38:48.542310+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "IgYCrVkc3A0",
     "tiktok_id": null
   }
 }
