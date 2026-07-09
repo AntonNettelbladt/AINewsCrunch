@@ -1,18 +1,4 @@
 {
-  "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/": {
-    "title": "Microsoft’s open source tools were hacked to steal passwords of AI developers",
-    "date_covered": "2026-06-09T11:02:27.878715+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "zipCLjI8Q4Q",
-    "tiktok_id": null
-  },
-  "https://blogs.nvidia.com/blog/uk-sovereign-ai-advancements/": {
-    "title": "How the UK Is Turning Sovereign AI Ambition Into Action With NVIDIA Technologies",
-    "date_covered": "2026-06-09T14:44:34.024409+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "LfdZDXDbjWg",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/claude-fable-5-mythos-5": {
     "title": "Claude Fable 5 and Claude Mythos 5",
     "date_covered": "2026-06-09T18:02:26.567943+00:00",
@@ -1117,6 +1103,13 @@
     "date_covered": "2026-07-09T11:00:43.775657+00:00",
     "source": "AI News",
     "youtube_id": "NMtP-4z621k",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/meta-muse-ai-feature-instagram-posts-opting-out/": {
+    "title": "Meta's new AI tool lets others use your Instagram posts for image generation - how to opt out",
+    "date_covered": "2026-07-09T14:53:13.654085+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "6luhr9NzYfw",
     "tiktok_id": null
   }
 }
