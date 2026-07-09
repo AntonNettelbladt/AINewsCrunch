@@ -1,11 +1,4 @@
 {
-  "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/": {
-    "title": "Apple Reveals New AI Architecture Built Around Google Gemini Models",
-    "date_covered": "2026-06-08T21:52:33.977702+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "mJ8EdoNJ8yI",
-    "tiktok_id": null
-  },
   "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/": {
     "title": "Apple bets cheaper AI will woo small developers",
     "date_covered": "2026-06-09T02:47:50.322865+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-08T21:08:35.543727+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "QnuFfuOUzn4",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/open-source-summit-linus-torvalds/": {
+    "title": "'I'm not a programmer' anymore: Linus Torvalds on the only two tools he uses now",
+    "date_covered": "2026-07-09T02:37:19.896210+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "CSj34ZsrMsI",
     "tiktok_id": null
   }
 }
