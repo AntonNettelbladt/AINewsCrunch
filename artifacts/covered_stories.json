@@ -1,11 +1,4 @@
 {
-  "https://github.com/grzegorz-raczek-unit8/claude-quota": {
-    "title": "GitHub - grzegorz-raczek-unit8/claude-quota: Menu bar gauges for Claude Code quota (SwiftBar plugin)",
-    "date_covered": "2026-06-10T15:28:23.580516+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Vf2g0GkJDn0",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion/": {
     "title": "NVIDIA Accelerates Google DeepMind’s DiffusionGemma for Local AI",
     "date_covered": "2026-06-10T18:32:38.426802+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-07-10T14:16:02.335777+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "KfAW0FmlUuU",
+    "tiktok_id": null
+  },
+  "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/": {
+    "title": "Snails’ Teeth Beats Spider Silk As Nature’s Strongest Material",
+    "date_covered": "2026-07-10T17:49:21.373542+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "RSRxycZx8pA",
     "tiktok_id": null
   }
 }
