@@ -1,11 +1,4 @@
 {
-  "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail": {
-    "title": "Anthropic apologizes for invisible Claude Fable guardrails",
-    "date_covered": "2026-06-11T18:49:29.726977+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "5sSfWswCjuM",
-    "tiktok_id": null
-  },
   "https://www.kennethpayne.uk/p/shall-we-play-a-game": {
     "title": "Shall we play a game?",
     "date_covered": "2026-06-11T22:04:45.938781+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-11T16:57:39.767250+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "dBrQis1uzvI",
+    "tiktok_id": null
+  },
+  "https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/": {
+    "title": "AI Can't Recreate Thrust (But It Can Help You Understand It)",
+    "date_covered": "2026-07-11T20:47:34.721161+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hvQDMbafx38",
     "tiktok_id": null
   }
 }
