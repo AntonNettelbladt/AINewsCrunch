@@ -1,11 +1,4 @@
 {
-  "https://medium.com/@rogi23696/build-a-basic-ai-agent-from-scratch-long-task-planning-14e803f9bd6d": {
-    "title": "Build A Basic AI Agent From Scratch: Long Task Planning",
-    "date_covered": "2026-06-11T15:55:38.623929+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Gk1A1JY2bng",
-    "tiktok_id": null
-  },
   "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail": {
     "title": "Anthropic apologizes for invisible Claude Fable guardrails",
     "date_covered": "2026-06-11T18:49:29.726977+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-11T13:13:41.914741+00:00",
     "source": "ZDNet AI",
     "youtube_id": "6LgQsAj9m_0",
+    "tiktok_id": null
+  },
+  "https://www.mixfont.com/ghost-font": {
+    "title": "Ghost Font: The Anti-AI Font Only Humans Can Read",
+    "date_covered": "2026-07-11T16:57:39.767250+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "dBrQis1uzvI",
     "tiktok_id": null
   }
 }
