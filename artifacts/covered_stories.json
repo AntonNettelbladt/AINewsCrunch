@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/xebia-on-building-the-data-foundation-for-ai-agents-and-then-accelerating/": {
-    "title": "Xebia: Why AI agents fail without the right data foundation",
-    "date_covered": "2026-06-12T03:35:07.708936+00:00",
-    "source": "AI News",
-    "youtube_id": "ZUj1pTCYKY4",
-    "tiktok_id": null
-  },
   "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype": {
     "title": "Claude Fable 5: Mythos-grade hype, record cheating, and a few hall-of-fame entries",
     "date_covered": "2026-06-12T08:26:46.900742+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-12T02:19:31.102594+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "q3XxzU6xQyg",
+    "tiktok_id": null
+  },
+  "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/": {
+    "title": "qMLX: Maximising my AI psychosis by minmaxing my Mac Studio",
+    "date_covered": "2026-07-12T06:34:57.460286+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "X82fd1Jsa6o",
     "tiktok_id": null
   }
 }
