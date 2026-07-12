@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/claude-fable-5-secretly-throttled/": {
-    "title": "Claude Fable 5 secretly throttled AI researchers, and the internet went wild",
-    "date_covered": "2026-06-12T18:08:45.269057+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "DSWlAJXVydk",
-    "tiktok_id": null
-  },
   "https://correresmidestino.com/dont-you-just-upload-it-to-chatgpt/": {
     "title": "“Don’t You Just Upload It to ChatGPT?”",
     "date_covered": "2026-06-12T21:34:10.429769+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-12T16:59:54.402671+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Mx1fPESh_HQ",
+    "tiktok_id": null
+  },
+  "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html": {
+    "title": "I love LLMs, I hate hype",
+    "date_covered": "2026-07-12T20:44:34.252624+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "kf_iT7QQe2k",
     "tiktok_id": null
   }
 }
