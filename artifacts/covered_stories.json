@@ -1,11 +1,4 @@
 {
-  "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/": {
-    "title": "AI Coding at Home Without Going Broke",
-    "date_covered": "2026-06-13T17:24:07.559692+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "iLhQK7uRZj8",
-    "tiktok_id": null
-  },
   "https://fortune.com/2026/06/12/ai-making-medical-bills-higher/": {
     "title": "AI is making your medical bills higher, not lower, PwC report shows",
     "date_covered": "2026-06-13T21:15:58.303677+00:00",
@@ -1096,6 +1089,13 @@
     "date_covered": "2026-07-13T14:30:06.292168+00:00",
     "source": "Towards Data Science",
     "youtube_id": "XtKOewZyUjU",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/stepx-neo-debuts-as-worlds-first-agentic-ai-smartphone-before-openai": {
+    "title": "StepX Neo Debuts as World’s First Agentic AI Smartphone Before OpenAI",
+    "date_covered": "2026-07-13T17:59:20.491639+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "KtKgT94Ul3I",
     "tiktok_id": null
   }
 }
