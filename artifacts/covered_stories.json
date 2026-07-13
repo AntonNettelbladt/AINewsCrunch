@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/": {
-    "title": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
-    "date_covered": "2026-06-13T03:01:07.343180+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "xjwNlP1Awos",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/enterprises-scrapping-ai-agents-how-to-ensure-yours-dont-fail/": {
     "title": "40% of enterprises will scrap AI agents - 3 ways to ensure yours don't fail",
     "date_covered": "2026-06-13T07:48:05.880756+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-07-12T20:44:34.252624+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "kf_iT7QQe2k",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/how-to-improve-ai-agent-performance-proven-strategies-to-build-smarter-faster-and-more-reliable-ai-agents": {
+    "title": "How to Improve AI Agent Performance: Proven Strategies to Build Smarter, Faster, and More Reliable AI Agents",
+    "date_covered": "2026-07-13T06:55:05.845677+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "3z1I8gbs984",
     "tiktok_id": null
   }
 }
