@@ -1,18 +1,4 @@
 {
-  "https://www.zdnet.com/article/enterprises-scrapping-ai-agents-how-to-ensure-yours-dont-fail/": {
-    "title": "40% of enterprises will scrap AI agents - 3 ways to ensure yours don't fail",
-    "date_covered": "2026-06-13T07:48:05.880756+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "iRoRhRiMiao",
-    "tiktok_id": null
-  },
-  "https://github.com/Paca-AI/paca": {
-    "title": "GitHub - Paca-AI/paca: AI-native, free, open-source alternative to Jira, Trello, ClickUp & Monday. Built for Scrum teams where humans and AI agents collaborate as equals — on the same board, the same ",
-    "date_covered": "2026-06-13T10:29:28.878646+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "6myd_AvfYlg",
-    "tiktok_id": null
-  },
   "https://github.com/tensorzero/tensorzero": {
     "title": "GitHub - tensorzero/tensorzero: TensorZero is an open-source LLMOps platform that unifies an LLM gateway, observability, evaluation, optimization, and experimentation.",
     "date_covered": "2026-06-13T13:55:25.894050+00:00",
@@ -1103,6 +1089,13 @@
     "date_covered": "2026-07-13T06:55:05.845677+00:00",
     "source": "Analytics Insight",
     "youtube_id": "3z1I8gbs984",
+    "tiktok_id": null
+  },
+  "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547": {
+    "title": "What xAI Grok Build CLI actually sends to xAI - a wire-level analysis (grok 0.2.93)",
+    "date_covered": "2026-07-13T11:01:17.855009+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "acyRnhiFuDc",
     "tiktok_id": null
   }
 }
