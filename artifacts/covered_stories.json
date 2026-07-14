@@ -1,11 +1,4 @@
 {
-  "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they": {
-    "title": "No, everyone is not using AI for everything.",
-    "date_covered": "2026-06-14T17:21:10.626464+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "JAz4AqfnF_w",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/bitcoin-price-today-wall-street-banks-standard-chartered-and-charles-schwab-point-to-60k-as-btcs-market-floor": {
     "title": "Bitcoin Price Today: Wall Street Banks Standard Chartered and Charles Schwab Point to $60K as BTC’s Market Floor",
     "date_covered": "2026-06-14T21:12:27.169399+00:00",
@@ -1096,6 +1089,13 @@
     "date_covered": "2026-07-14T17:15:12.423653+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "8jNxAnEjN3g",
+    "tiktok_id": null
+  },
+  "https://prismml.com/news/bonsai-27b": {
+    "title": "PrismML — Announcing Bonsai 27B: The First 27B-Class Model to Run on a Phone",
+    "date_covered": "2026-07-14T21:01:35.645845+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DYsfxa22KYs",
     "tiktok_id": null
   }
 }
