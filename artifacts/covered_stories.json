@@ -1,11 +1,4 @@
 {
-  "https://fortune.com/2026/06/12/ai-making-medical-bills-higher/": {
-    "title": "AI is making your medical bills higher, not lower, PwC report shows",
-    "date_covered": "2026-06-13T21:15:58.303677+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "bSmj21PAn44",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/why-this-decade-old-idea-still-powers-all-of-ai-and-why-its-a-problem/": {
     "title": "Why Decade-Old Residual Connections Still Power All of AI (And Why That’s a Problem)",
     "date_covered": "2026-06-14T03:39:41.221145+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-07-13T20:58:56.328966+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "f956-1rhUN0",
+    "tiktok_id": null
+  },
+  "https://neow.in/cWsyMTV3": {
+    "title": "Samsung will delete your health data if you don't let them use it to train AI",
+    "date_covered": "2026-07-14T02:07:12.738708+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "8cOl0klow_Y",
     "tiktok_id": null
   }
 }
