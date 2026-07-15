@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/how-to-effectively-align-with-claude-code/": {
-    "title": "How to Effectively Align with Claude Code",
-    "date_covered": "2026-06-15T17:14:51.360231+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "bbpKQmZNzfM",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/harmonyos-7-china-ai-apple-gap/": {
     "title": "HarmonyOS 7: Huawei Fills the AI Gap Apple Left in China",
     "date_covered": "2026-06-15T22:21:07.878645+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-07-15T13:31:56.511474+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "XRtLNepie94",
+    "tiktok_id": null
+  },
+  "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143/": {
+    "title": "OpenAI loses trademark dispute at EU court",
+    "date_covered": "2026-07-15T17:19:45.341463+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Q8u99mHQaRI",
     "tiktok_id": null
   }
 }
