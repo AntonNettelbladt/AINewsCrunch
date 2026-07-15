@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/health-trackers-are-disappearing-thats-the-point/": {
-    "title": "Our favorite health trackers are disappearing - and that's the point",
-    "date_covered": "2026-06-15T03:48:16.640409+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "qyc2ZusKY2A",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/anthropic-export-controls-ai-sovereignty/": {
     "title": "The AI off switch: How Anthropic’s export controls sparked a global AI sovereignty scramble",
     "date_covered": "2026-06-15T10:03:50.796648+00:00",
@@ -1096,6 +1089,13 @@
     "date_covered": "2026-07-15T02:04:24.713698+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "X4BWEJ1uvBQ",
+    "tiktok_id": null
+  },
+  "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing": {
+    "title": "How to stop Claude from saying load-bearing",
+    "date_covered": "2026-07-15T06:15:31.915614+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "bqFCVzEYH_s",
     "tiktok_id": null
   }
 }
