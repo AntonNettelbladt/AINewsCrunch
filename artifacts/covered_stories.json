@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/bitcoin-price-today-wall-street-banks-standard-chartered-and-charles-schwab-point-to-60k-as-btcs-market-floor": {
-    "title": "Bitcoin Price Today: Wall Street Banks Standard Chartered and Charles Schwab Point to $60K as BTC’s Market Floor",
-    "date_covered": "2026-06-14T21:12:27.169399+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "7v9By8Gq0Mw",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/health-trackers-are-disappearing-thats-the-point/": {
     "title": "Our favorite health trackers are disappearing - and that's the point",
     "date_covered": "2026-06-15T03:48:16.640409+00:00",
@@ -1096,6 +1089,13 @@
     "date_covered": "2026-07-14T21:01:35.645845+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "DYsfxa22KYs",
+    "tiktok_id": null
+  },
+  "https://gwern.net/guardian-angel": {
+    "title": "Guardian Angels: LLM Personalization for Productivity and Security",
+    "date_covered": "2026-07-15T02:04:24.713698+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "X4BWEJ1uvBQ",
     "tiktok_id": null
   }
 }
