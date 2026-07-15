@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/anthropic-export-controls-ai-sovereignty/": {
-    "title": "The AI off switch: How Anthropic’s export controls sparked a global AI sovereignty scramble",
-    "date_covered": "2026-06-15T10:03:50.796648+00:00",
-    "source": "AI News",
-    "youtube_id": "QGifRHoMVIo",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/how-to-effectively-align-with-claude-code/": {
     "title": "How to Effectively Align with Claude Code",
     "date_covered": "2026-06-15T17:14:51.360231+00:00",
@@ -1103,6 +1096,13 @@
     "date_covered": "2026-07-15T10:04:06.905207+00:00",
     "source": "AI News",
     "youtube_id": "j1hXKtzdUnQ",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nemotron-open-models-ai-trust-control-customize/": {
+    "title": "Nemotron Labs: How Open Models Give Enterprises and Nations AI They Can Trust, Control and Customize",
+    "date_covered": "2026-07-15T13:31:56.511474+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "XRtLNepie94",
     "tiktok_id": null
   }
 }
