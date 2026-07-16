@@ -1,11 +1,4 @@
 {
-  "https://www.anthropic.com/news/claude-corps": {
-    "title": "Introducing Claude Corps",
-    "date_covered": "2026-06-16T03:42:58.317339+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HS3ctueoG2U",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/i-built-11-models-to-predict-the-2026-world-cup-they-crown-four-different-champions/": {
     "title": "I Built 11 Models to Predict the 2026 World Cup. They Crown Four Different Champions.",
     "date_covered": "2026-06-16T09:28:07.780185+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-16T02:14:20.671747+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "Whi2rO6tgXI",
+    "tiktok_id": null
+  },
+  "https://github.com/PrestigePvP/Voicebox": {
+    "title": "GitHub - PrestigePvP/Voicebox",
+    "date_covered": "2026-07-16T06:18:18.677132+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "i5RfiGGt71E",
     "tiktok_id": null
   }
 }
