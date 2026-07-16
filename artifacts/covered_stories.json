@@ -1111,5 +1111,12 @@
     "source": "ZDNet AI",
     "youtube_id": "o4McYYmFqt4",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/": {
+    "title": "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
+    "date_covered": "2026-07-16T13:46:16.524216+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "XUqM-zRKrhI",
+    "tiktok_id": null
   }
 }
