@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/i-built-11-models-to-predict-the-2026-world-cup-they-crown-four-different-champions/": {
-    "title": "I Built 11 Models to Predict the 2026 World Cup. They Crown Four Different Champions.",
-    "date_covered": "2026-06-16T09:28:07.780185+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "cEVqzxDVr9Y",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting/": {
     "title": "Insurers pivot AI strategy toward core risk underwriting",
     "date_covered": "2026-06-16T16:48:10.714809+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-16T06:18:18.677132+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "i5RfiGGt71E",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/73-of-tech-job-listings-require-ai-skills-show-off-yours/": {
+    "title": "73% of tech job listings require AI skills now: How to show off yours",
+    "date_covered": "2026-07-16T10:10:01.646517+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "o4McYYmFqt4",
     "tiktok_id": null
   }
 }
