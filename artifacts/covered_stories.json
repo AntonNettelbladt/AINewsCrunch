@@ -1,11 +1,4 @@
 {
-  "https://claude.com/blog/the-founders-playbook": {
-    "title": "The founder's playbook: Building an AI-native startup",
-    "date_covered": "2026-06-17T09:03:09.277252+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Pgx8rV6fM1w",
-    "tiktok_id": null
-  },
   "https://wpvip.com/future-of-the-web-2026/": {
     "title": "Future of the Web 2026: AI Brand Visibility Research",
     "date_covered": "2026-06-17T15:21:50.600811+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-07-17T06:16:33.926374+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "GxzFPjQcMKw",
+    "tiktok_id": null
+  },
+  "https://antoine.vandecreme.net/blog/exhaustive-destructuring-praise/": {
+    "title": "In praise of exhaustive destructuring",
+    "date_covered": "2026-07-17T09:58:33.727652+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
