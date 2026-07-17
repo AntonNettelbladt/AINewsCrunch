@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/": {
-    "title": "Fastest, Largest, Strongest: NVIDIA Blackwell Sweeps MLPerf Training 6.0",
-    "date_covered": "2026-06-16T22:13:35.109316+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "pyXuEreACSo",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-xr-ai/": {
     "title": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
     "date_covered": "2026-06-17T03:43:01.440591+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-07-16T20:58:28.475769+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "KqLPAyKVbrA",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/": {
+    "title": "Neko Health raises $700 million to expand AI body scans in the US",
+    "date_covered": "2026-07-17T02:16:13.350266+00:00",
+    "source": "AI News",
+    "youtube_id": "tsHVEEYomzI",
     "tiktok_id": null
   }
 }
