@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-xr-ai/": {
-    "title": "Hands Free, AIs Forward: NVIDIA XR AI Brings Agents to AR Glasses",
-    "date_covered": "2026-06-17T03:43:01.440591+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "hef9fE34t3Y",
-    "tiktok_id": null
-  },
   "https://claude.com/blog/the-founders-playbook": {
     "title": "The founder's playbook: Building an AI-native startup",
     "date_covered": "2026-06-17T09:03:09.277252+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-07-17T02:16:13.350266+00:00",
     "source": "AI News",
     "youtube_id": "tsHVEEYomzI",
+    "tiktok_id": null
+  },
+  "https://github.com/Center-for-AI-Innovation/ai-teaching-assistant-uiuc": {
+    "title": "GitHub - Center-for-AI-Innovation/ai-teaching-assistant-uiuc: The UX & driver code for the multi-model TA_Chatbot",
+    "date_covered": "2026-07-17T06:16:33.926374+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "GxzFPjQcMKw",
     "tiktok_id": null
   }
 }
