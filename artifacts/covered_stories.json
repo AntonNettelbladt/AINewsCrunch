@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership/": {
-    "title": "HSBC expands AI banking partnership with Google Cloud",
-    "date_covered": "2026-06-18T15:38:17.559306+00:00",
-    "source": "AI News",
-    "youtube_id": "Q2351UdyN98",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/microsoft-sells-openai-models-china/": {
     "title": "OpenAI models in China: The deal OpenAI itself won't make",
     "date_covered": "2026-06-18T18:42:48.121687+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-18T13:11:13.017164+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2jICCP1AbHA",
+    "tiktok_id": null
+  },
+  "https://ykdojo.github.io/claude-controls-mac/": {
+    "title": "How to set up your spare Mac for Claude Code to fully control - a step-by-step guide",
+    "date_covered": "2026-07-18T16:57:31.385280+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "EoYLqJVA7tY",
     "tiktok_id": null
   }
 }
