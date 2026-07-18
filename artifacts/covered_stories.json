@@ -1,11 +1,4 @@
 {
-  "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/": {
-    "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
-    "date_covered": "2026-06-17T22:02:27.618523+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "1xxJgiWW8wQ",
-    "tiktok_id": null
-  },
   "https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt": {
     "title": "ChatGPT Spontaneously Generates Sexual Violence and Hardcore Snuff Imagery",
     "date_covered": "2026-06-18T03:35:26.407143+00:00",
@@ -1124,6 +1117,13 @@
     "date_covered": "2026-07-17T20:54:42.551977+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2rvf5YnGDT0",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/07/17/faa-boeing-737-max-787.html": {
+    "title": "FAA lets Boeing sign off on 737 Max, 787 airworthiness certificates again",
+    "date_covered": "2026-07-18T02:06:28.453297+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "SnLYhTzjbMQ",
     "tiktok_id": null
   }
 }
