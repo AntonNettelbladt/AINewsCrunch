@@ -1118,5 +1118,12 @@
     "source": "AI News",
     "youtube_id": "TWD8lhmWMzo",
     "tiktok_id": null
+  },
+  "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/": {
+    "title": "Claude Code uses Bun written in Rust now",
+    "date_covered": "2026-07-19T13:11:23.813588+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
   }
 }
