@@ -1,11 +1,4 @@
 {
-  "https://www.the-independent.com/arts-entertainment/films/news/sam-altman-biopic-amazon-openai-deal-b2999321.html": {
-    "title": "Amazon drops Sam Altman movie after announcing OpenAI partnership",
-    "date_covered": "2026-06-19T21:11:21.891874+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "3IVIhoXzRas",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/reasons-to-use-android-auto-over-your-car-infotainment-system/": {
     "title": "5 reasons I'm using Android Auto instead of my car's own infotainment system - and can't go back",
     "date_covered": "2026-06-20T03:00:05.749884+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-19T20:47:14.820752+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "vJAsZNZHOWE",
+    "tiktok_id": null
+  },
+  "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study": {
+    "title": "AI advice made people three times less accurate but twice as confident, researchers found",
+    "date_covered": "2026-07-20T02:38:15.081687+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wwUJU1Nd6g4",
     "tiktok_id": null
   }
 }
