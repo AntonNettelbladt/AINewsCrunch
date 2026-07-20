@@ -1,18 +1,4 @@
 {
-  "https://arrowtsx.dev/bigger-models/": {
-    "title": "Bigger models are not the way",
-    "date_covered": "2026-06-20T07:52:28.906925+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "lCXETHOq2ug",
-    "tiktok_id": null
-  },
-  "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/": {
-    "title": "LLMs are complicated now",
-    "date_covered": "2026-06-20T10:34:30.777620+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "kUfF6zNx_yY",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/hpe-ai-factory-agentic-enterprise/": {
     "title": "HPE AI Factory With NVIDIA Expands for the Era of Agents",
     "date_covered": "2026-06-20T13:56:49.190305+00:00",
@@ -1117,6 +1103,13 @@
     "date_covered": "2026-07-20T06:48:48.858455+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FAyEW5IWV3E",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/openai-anthropic-public-health-ai/": {
+    "title": "US public health agencies to test OpenAI and Anthropic AI models",
+    "date_covered": "2026-07-20T10:51:59.789294+00:00",
+    "source": "AI News",
+    "youtube_id": "fP9Pn0UVDI0",
     "tiktok_id": null
   }
 }
