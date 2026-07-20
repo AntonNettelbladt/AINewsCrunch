@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/reasons-to-use-android-auto-over-your-car-infotainment-system/": {
-    "title": "5 reasons I'm using Android Auto instead of my car's own infotainment system - and can't go back",
-    "date_covered": "2026-06-20T03:00:05.749884+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "_s8koAcmnoM",
-    "tiktok_id": null
-  },
   "https://arrowtsx.dev/bigger-models/": {
     "title": "Bigger models are not the way",
     "date_covered": "2026-06-20T07:52:28.906925+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-20T02:38:15.081687+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "wwUJU1Nd6g4",
+    "tiktok_id": null
+  },
+  "https://blog.documentfoundation.org/blog/2026/07/17/microsofts-main-tool-for-lock-in/": {
+    "title": "How proprietary formats have become Microsoft’s main tool for lock-in",
+    "date_covered": "2026-07-20T06:48:48.858455+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FAyEW5IWV3E",
     "tiktok_id": null
   }
 }
