@@ -1,11 +1,4 @@
 {
-  "https://blog.cloudflare.com/temporary-accounts/": {
-    "title": "Temporary Cloudflare Accounts for AI agents",
-    "date_covered": "2026-06-20T17:27:09.919136+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "pBNo5-IIxWQ",
-    "tiktok_id": null
-  },
   "https://www.publictechnology.net/2026/06/15/public-order-justice-and-rights/home-office-launches-75m-policeai-to-capitalise-on-artificial-intelligence/": {
     "title": "Home Office launches £75m ‘PoliceAI’ to capitalise on artificial intelligence",
     "date_covered": "2026-06-20T21:17:19.225559+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-20T14:02:00.943477+00:00",
     "source": "AI News",
     "youtube_id": "tcaONDgeRsk",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/siggraph-news-2026/": {
+    "title": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
+    "date_covered": "2026-07-20T18:03:19.619485+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Uw7NBF57Rsw",
     "tiktok_id": null
   }
 }
