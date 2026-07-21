@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/artificial-intelligence/why-ai-chatbots-are-emerging-as-powerful-learning-coaches": {
-    "title": "Why AI Chatbots Are Emerging as Powerful Learning Coaches?",
-    "date_covered": "2026-06-21T17:29:49.625423+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "qeZmcjgsPFA",
-    "tiktok_id": null
-  },
   "https://github.com/nikitadoudikov/claude-pulse": {
     "title": "GitHub - nikitadoudikov/claude-pulse: Local, zero-dependency dashboard for Claude Code: live token usage and context, lost-session recovery, full-text search, and approve tool calls from your phone.",
     "date_covered": "2026-06-21T21:15:26.572134+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-21T17:18:40.192847+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "a8NKUBG36CE",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs/": {
+    "title": "Google's Gemini 3.6 Flash targets enterprise agent token costs",
+    "date_covered": "2026-07-21T21:08:09.668592+00:00",
+    "source": "AI News",
+    "youtube_id": "FuXiiI0AZKY",
     "tiktok_id": null
   }
 }
