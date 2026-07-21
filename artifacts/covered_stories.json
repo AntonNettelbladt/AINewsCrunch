@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/sennheiser-momentum-5-battery-repair/": {
-    "title": "Sennheiser just gave me a compelling reason to retire my Bose and Sony headphones",
-    "date_covered": "2026-06-21T14:04:32.760408+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "RI2PSCO-_Io",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/artificial-intelligence/why-ai-chatbots-are-emerging-as-powerful-learning-coaches": {
     "title": "Why AI Chatbots Are Emerging as Powerful Learning Coaches?",
     "date_covered": "2026-06-21T17:29:49.625423+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-21T13:33:21.881769+00:00",
     "source": "ZDNet AI",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/": {
+    "title": "Built for Vera Rubin, NVIDIA Spectrum-6 Arrives in Gigascale AI Factories",
+    "date_covered": "2026-07-21T17:18:40.192847+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "a8NKUBG36CE",
     "tiktok_id": null
   }
 }
