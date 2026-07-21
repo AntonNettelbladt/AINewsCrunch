@@ -1,11 +1,4 @@
 {
-  "https://www.satisfice.com/blog/archives/488148": {
-    "title": "Public Service Announcement: Don’t Say You Use AI for Writing",
-    "date_covered": "2026-06-21T08:30:31.823520+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "KlLn-OrI6n8",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/sennheiser-momentum-5-battery-repair/": {
     "title": "Sennheiser just gave me a compelling reason to retire my Bose and Sony headphones",
     "date_covered": "2026-06-21T14:04:32.760408+00:00",
@@ -1110,6 +1103,13 @@
     "date_covered": "2026-07-21T02:16:36.712662+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "oXkENmKYVbM",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/bristol-myers-squibb-nvidia-ai-system-drug-discovery/": {
+    "title": "Bristol Myers Squibb buys Nvidia AI system for drug discovery",
+    "date_covered": "2026-07-21T10:26:21.157501+00:00",
+    "source": "AI News",
+    "youtube_id": "Vh8pU--kTlg",
     "tiktok_id": null
   }
 }
