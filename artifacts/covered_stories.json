@@ -1125,5 +1125,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "95eN_xiADpA",
     "tiktok_id": null
+  },
+  "https://towardsdatascience.com/i-tried-fine-tuning-a-robot-ai-model-on-colab-here-is-what-worked/": {
+    "title": "I Tried Fine-Tuning a Robot AI Model on Colab. Here Is What Worked",
+    "date_covered": "2026-07-22T21:06:14.310841+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "gUYnSrBoQ5A",
+    "tiktok_id": null
   }
 }
