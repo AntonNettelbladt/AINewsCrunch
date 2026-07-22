@@ -1,11 +1,4 @@
 {
-  "https://support.claude.com/en/articles/14328960-identity-verification-on-claude": {
-    "title": "Identity verification on Claude",
-    "date_covered": "2026-06-22T09:50:40.476068+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "vHwp7mkh2bo",
-    "tiktok_id": null
-  },
   "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html": {
     "title": "Munich 1991: the Roots of the Current AI Boom",
     "date_covered": "2026-06-22T16:54:24.113536+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-22T06:29:19.056295+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "3qgEu9gpJlY",
+    "tiktok_id": null
+  },
+  "https://openaim.pramit.gg/": {
+    "title": "OpenAim",
+    "date_covered": "2026-07-22T10:26:20.295708+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "r7rar6UaJqQ",
     "tiktok_id": null
   }
 }
