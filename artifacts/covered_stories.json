@@ -1,11 +1,4 @@
 {
-  "https://mcipetition.com/": {
-    "title": "Petition against the Model Capability Initiative",
-    "date_covered": "2026-06-22T03:48:56.502892+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "GFLhtpQuiv4",
-    "tiktok_id": null
-  },
   "https://support.claude.com/en/articles/14328960-identity-verification-on-claude": {
     "title": "Identity verification on Claude",
     "date_covered": "2026-06-22T09:50:40.476068+00:00",
@@ -1117,6 +1110,13 @@
     "date_covered": "2026-07-22T02:14:17.180486+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ZTvYZxuPDrM",
+    "tiktok_id": null
+  },
+  "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
+    "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+    "date_covered": "2026-07-22T06:29:19.056295+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "3qgEu9gpJlY",
     "tiktok_id": null
   }
 }
