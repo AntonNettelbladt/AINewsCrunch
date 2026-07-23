@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/ai-troubleshooting-secrets-my-interview-with-copilot-chatgpt/": {
-    "title": "How to troubleshoot your PC problems with Copilot or ChatGPT - effectively",
-    "date_covered": "2026-06-22T22:05:32.348382+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "_RzJKvxF5V0",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nairr-scientific-research-ai-infrastructure/": {
     "title": "NAIRR Science Program Reshapes Scientific Research, Powered by NVIDIA AI Infrastructure",
     "date_covered": "2026-06-23T02:54:04.383491+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-22T21:06:14.310841+00:00",
     "source": "Towards Data Science",
     "youtube_id": "gUYnSrBoQ5A",
+    "tiktok_id": null
+  },
+  "https://www.cole-k.com/2026/07/21/reddit/": {
+    "title": "So Reddit has decided that plain HTML is unsafe",
+    "date_covered": "2026-07-23T02:26:29.102363+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "_bzOIgdExyM",
     "tiktok_id": null
   }
 }
