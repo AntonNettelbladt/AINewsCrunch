@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/": {
-    "title": "How Businesses Are Building Specialized AI They Can Trust",
-    "date_covered": "2026-06-24T07:41:11.383837+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "YNIJwgAGlXw",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ai-for-science-software-cuda/": {
     "title": "From Materials Simulation to Experimental Astronomy, New NVIDIA AI Software Unlocks Scientific Discoveries",
     "date_covered": "2026-06-24T10:50:26.910487+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-24T06:26:46.088342+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "lt1DZdKr7ko",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-summit-korea-partners-and-nvidia/": {
+    "title": "At AI Summit, South Korea Outlines Its AI Future With NVIDIA and Partners",
+    "date_covered": "2026-07-24T10:17:34.608734+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "SOOo8MCDDAI",
     "tiktok_id": null
   }
 }
