@@ -1,11 +1,4 @@
 {
-  "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/": {
-    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-    "date_covered": "2026-06-24T17:55:24.192097+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "eZzUkktASxc",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/samsung-chatgpt-enterprise-codex-employee-ai-use/": {
     "title": "Samsung opens ChatGPT Enterprise and Codex access after AI restrictions",
     "date_covered": "2026-06-24T21:25:15.106366+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-24T17:30:31.877985+00:00",
     "source": "AI News",
     "youtube_id": "nEaqExaEmH4",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html": {
+    "title": "Nvidia, Microsoft, Meta warn against 'premature restrictions' of open-weight models",
+    "date_covered": "2026-07-24T21:04:23.477909+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "3QJljAXMoXo",
     "tiktok_id": null
   }
 }
