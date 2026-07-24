@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/": {
-    "title": "NVIDIA Powers Over 400 of the World’s 500 Fastest Supercomputers",
-    "date_covered": "2026-06-24T02:53:52.199872+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "PCQhlsnyCrg",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/": {
     "title": "How Businesses Are Building Specialized AI They Can Trust",
     "date_covered": "2026-06-24T07:41:11.383837+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-24T02:17:40.751145+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "nKaslXYndnI",
+    "tiktok_id": null
+  },
+  "https://github.com/onecli/onecli": {
+    "title": "GitHub - onecli/onecli: Open-source credential gateway with a built-in vault. give your AI agents access to services without exposing keys.",
+    "date_covered": "2026-07-24T06:26:46.088342+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "lt1DZdKr7ko",
     "tiktok_id": null
   }
 }
