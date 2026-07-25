@@ -1,11 +1,4 @@
 {
-  "https://utaw.tech/news/wikipedia-recognition": {
-    "title": "UTAW: UK Wikipedia Workers seek union recognition",
-    "date_covered": "2026-06-25T14:27:09.102047+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "jj68e39JQ0M",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/": {
     "title": "NVIDIA and AWS Collaborate to Bring AI to Production at Scale",
     "date_covered": "2026-06-25T18:11:43.630879+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-25T13:19:54.427899+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "Cis2uehkdng",
+    "tiktok_id": null
+  },
+  "https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits": {
+    "title": "Struggling farmers unlock $20,000 in credit by putting cows on the blockchain",
+    "date_covered": "2026-07-25T16:57:19.808068+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "prNFuQAkIQY",
     "tiktok_id": null
   }
 }
