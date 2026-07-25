@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/": {
-    "title": "NVIDIA and AWS Collaborate to Bring AI to Production at Scale",
-    "date_covered": "2026-06-25T18:11:43.630879+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "SBrSfckYRlE",
-    "tiktok_id": null
-  },
   "https://github.com/inkeep/open-knowledge": {
     "title": "GitHub - inkeep/open-knowledge: Beautiful, AI-native markdown editor and LLM Wiki",
     "date_covered": "2026-06-25T21:33:15.806529+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-25T16:57:19.808068+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "prNFuQAkIQY",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/world-foundation-raises-525m-as-pantera-backs-global-world-id-expansion": {
+    "title": "World Foundation Raises $52.5M as Pantera Backs Global World ID Expansion",
+    "date_covered": "2026-07-25T20:49:14.302180+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "F7brnN9Oi48",
     "tiktok_id": null
   }
 }
