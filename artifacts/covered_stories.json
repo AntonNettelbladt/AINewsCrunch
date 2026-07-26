@@ -1,11 +1,4 @@
 {
-  "https://github.com/inkeep/open-knowledge": {
-    "title": "GitHub - inkeep/open-knowledge: Beautiful, AI-native markdown editor and LLM Wiki",
-    "date_covered": "2026-06-25T21:33:15.806529+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "XGlICAwTckM",
-    "tiktok_id": null
-  },
   "https://www.fernandoi.cl/posts/hackmyclaw/": {
     "title": "What happened after 2,000 people tried to hack my AI assistant — Fernando Irarrázaval",
     "date_covered": "2026-06-26T07:52:54.254613+00:00",
@@ -1131,6 +1124,13 @@
     "date_covered": "2026-07-25T20:49:14.302180+00:00",
     "source": "Analytics Insight",
     "youtube_id": "F7brnN9Oi48",
+    "tiktok_id": null
+  },
+  "https://www.law.uchicago.edu/news/ai-strategy-statement": {
+    "title": "Rethinking Legal Education in the AI Era",
+    "date_covered": "2026-07-26T02:27:23.188265+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "2sthYp3GAHU",
     "tiktok_id": null
   }
 }
