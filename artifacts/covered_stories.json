@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-vera-cpu-los-alamos-national-laboratory/": {
-    "title": "NVIDIA Vera CPU Opens the Way for Agentic Scientific AI at Los Alamos National Laboratory",
-    "date_covered": "2026-06-26T14:19:37.045858+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "vEiaj6BonmA",
-    "tiktok_id": null
-  },
   "https://github.com/workweave/router": {
     "title": "GitHub - workweave/router: Model router for agentic systems. Routes every prompt to the right model in <50ms. Cut costs 40-70% with just an endpoint change.",
     "date_covered": "2026-06-26T17:50:01.927913+00:00",
@@ -1145,6 +1138,13 @@
     "date_covered": "2026-07-26T13:15:04.701268+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "1ZC-DJ_Cg0g",
+    "tiktok_id": null
+  },
+  "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/": {
+    "title": "London Gatwick introduces robotic parking service",
+    "date_covered": "2026-07-26T16:59:07.399390+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DU9aW_zIvZw",
     "tiktok_id": null
   }
 }
