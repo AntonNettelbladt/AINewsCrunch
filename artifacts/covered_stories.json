@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/from-local-llm-to-tool-using-agent/": {
-    "title": "From Local LLM to Tool-Using Agent",
-    "date_covered": "2026-06-27T21:03:39.920161+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "7mzTEituzSQ",
-    "tiktok_id": null
-  },
   "https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis": {
     "title": "What Ozempic Does to the Gut-Brain Axis",
     "date_covered": "2026-06-28T03:04:27.762640+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-07-27T17:45:10.269751+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "jlwwyTEQ1co",
+    "tiktok_id": null
+  },
+  "https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html": {
+    "title": "Professor's invisible prompt trap catches 32 students cheating on their midterm with AI",
+    "date_covered": "2026-07-27T21:10:54.106235+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ajOgoVmneog",
     "tiktok_id": null
   }
 }
