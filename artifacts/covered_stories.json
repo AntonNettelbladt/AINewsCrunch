@@ -1,11 +1,4 @@
 {
-  "https://alephneuro.com/blog/ultrasound-brain": {
-    "title": "Ultrasound imaging of the brain — Aleph",
-    "date_covered": "2026-06-26T21:20:16.816261+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "cXfYMjFpyq4",
-    "tiktok_id": null
-  },
   "https://spectrum.ieee.org/ai-in-mathematics": {
     "title": "What it Means to Be a Mathematician When AI Does the Math",
     "date_covered": "2026-06-27T02:49:00.417826+00:00",
@@ -1145,6 +1138,13 @@
     "date_covered": "2026-07-26T20:58:23.601739+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "rP5TYyruxYU",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/vera-cpu-eda/": {
+    "title": "NVIDIA Harnesses Vera CPU to Speed Up Design of Next-Generation CPUs and GPUs",
+    "date_covered": "2026-07-27T02:35:38.227227+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "k1z87nlss_Q",
     "tiktok_id": null
   }
 }
