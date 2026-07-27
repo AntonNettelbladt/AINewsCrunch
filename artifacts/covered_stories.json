@@ -1,18 +1,4 @@
 {
-  "https://spectrum.ieee.org/ai-in-mathematics": {
-    "title": "What it Means to Be a Mathematician When AI Does the Math",
-    "date_covered": "2026-06-27T02:49:00.417826+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
-  "https://blog.doubleword.ai/frontier-os-llm": {
-    "title": "Prediction: A Frontier Open Source LLM Will Be Released On 3rd December 2026",
-    "date_covered": "2026-06-27T06:56:16.567272+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "_AIhTjXGqAk",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/how-to-build-a-powerful-llm-knowledge-base/": {
     "title": "How to Build a Powerful LLM Knowledge Base",
     "date_covered": "2026-06-27T17:11:02.689663+00:00",
@@ -1145,6 +1131,13 @@
     "date_covered": "2026-07-27T02:35:38.227227+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "k1z87nlss_Q",
+    "tiktok_id": null
+  },
+  "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html": {
+    "title": "US prosecutors charge Atlanta man after GrapheneOS phone wipes itself during airport search",
+    "date_covered": "2026-07-27T07:03:31.776170+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MiNC_JaHIss",
     "tiktok_id": null
   }
 }
