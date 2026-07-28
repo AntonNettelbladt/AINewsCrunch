@@ -1,11 +1,4 @@
 {
-  "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html": {
-    "title": "Google limits Meta’s use of its Gemini AI models, FT reports",
-    "date_covered": "2026-06-28T17:09:01.602327+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "kDkHM-8eQfM",
-    "tiktok_id": null
-  },
   "https://github.com/JustVugg/nanoeuler": {
     "title": "GitHub - JustVugg/nanoeuler: GPT-2-style LLM built from scratch in C/CUDA with hand-written backprop, BPE tokenizer, FlashAttention, pretraining, and SFT.",
     "date_covered": "2026-06-28T21:02:15.180331+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-07-28T13:58:59.830576+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Fwkl3y0sCOE",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/": {
+    "title": "Powerful Compute So Compact, It’s Clutch — Build AI Anywhere With NVIDIA Jetson",
+    "date_covered": "2026-07-28T17:28:00.084243+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "KaPQq04RaAw",
     "tiktok_id": null
   }
 }
