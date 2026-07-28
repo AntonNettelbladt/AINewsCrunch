@@ -1,11 +1,4 @@
 {
-  "https://www.psychologytoday.com/au/blog/mood-by-microbe/202606/what-ozempic-does-to-the-gut-brain-axis": {
-    "title": "What Ozempic Does to the Gut-Brain Axis",
-    "date_covered": "2026-06-28T03:04:27.762640+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "b_VU-_QHzic",
-    "tiktok_id": null
-  },
   "https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html": {
     "title": "Ford hired AI and sacked humans. It backfired badly",
     "date_covered": "2026-06-28T07:52:23.713181+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-07-28T02:10:45.506188+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "tKBy4TMIE7A",
+    "tiktok_id": null
+  },
+  "https://blog.coderspirit.xyz/blog/2026/07/06/securing-services-with-rootless-containers/": {
+    "title": "Securing services with Rootless Containers",
+    "date_covered": "2026-07-28T06:59:54.558420+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "qtqsKcqm3Po",
     "tiktok_id": null
   }
 }
