@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/": {
-    "title": "Claude Meets Blackwell Ultra: Anthropic’s Models Now Run on NVIDIA GB300 in Azure",
-    "date_covered": "2026-06-29T18:11:39.730550+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "NzzWeKIFq4o",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/hp-accelerates-enterprise-workflows-openai-frontier/": {
     "title": "HP accelerates enterprise workflows with OpenAI Frontier",
     "date_covered": "2026-06-29T21:27:31.887133+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-07-29T17:15:09.053174+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "pcWbumEoGAI",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/open-weight-ai-civil-war/": {
+    "title": "Open weights vs. closed: An AI civil war's afoot, and the stakes are existential",
+    "date_covered": "2026-07-29T20:56:55.288847+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "oXrBuAubQcI",
     "tiktok_id": null
   }
 }
