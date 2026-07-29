@@ -1,11 +1,4 @@
 {
-  "https://aleph-alpha.com/en/blog/model-training-as-code/": {
-    "title": "Model Training as Code — Aleph Alpha",
-    "date_covered": "2026-06-29T03:32:04.454670+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "TgKC9eNDPoo",
-    "tiktok_id": null
-  },
   "https://antoine.fi/mri-analysis-using-claude-code-opus": {
     "title": "Using Opus 4.8 to get a second opinion on an MRI and where it leaves me",
     "date_covered": "2026-06-29T08:59:58.734829+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-07-29T02:13:11.681308+00:00",
     "source": "AI News",
     "youtube_id": "G4F2hn1MIug",
+    "tiktok_id": null
+  },
+  "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html": {
+    "title": "Truth is not a direction: a Tarski attack on LLM probes",
+    "date_covered": "2026-07-29T06:31:59.346249+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "GfywJW7QOtc",
     "tiktok_id": null
   }
 }
