@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/hp-accelerates-enterprise-workflows-openai-frontier/": {
-    "title": "HP accelerates enterprise workflows with OpenAI Frontier",
-    "date_covered": "2026-06-29T21:27:31.887133+00:00",
-    "source": "AI News",
-    "youtube_id": "dofy1XYa1yU",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/palantir-secure-ai-us-agencies-nemotron-open-models/": {
     "title": "Open Models, Closed Environments: Palantir Brings Secure AI to US Agencies With NVIDIA Nemotron",
     "date_covered": "2026-06-30T02:58:53.954907+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-07-29T20:56:55.288847+00:00",
     "source": "ZDNet AI",
     "youtube_id": "oXrBuAubQcI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/openai-report-coding-agents-faster-science-software-builds/": {
+    "title": "OpenAI report links coding agents to faster science software builds",
+    "date_covered": "2026-07-30T02:02:54.228891+00:00",
+    "source": "AI News",
+    "youtube_id": "5xgb5J3TxAw",
     "tiktok_id": null
   }
 }
