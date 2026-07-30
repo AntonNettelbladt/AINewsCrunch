@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/trading/mexc-lists-ondos-tokenized-strategy-preferred-stock-on-spot-market": {
-    "title": "MEXC Lists Ondo's Tokenized Strategy Preferred Stock on Spot Market",
-    "date_covered": "2026-06-30T11:01:14.577948+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "ByZ2ZvFcgcc",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/vision-ai-agent-skills-omniverse-metropolis/": {
     "title": "Into the Omniverse: Three Workflows for Improving Vision AI Agent Accuracy With Synthetic Data and Fine-Tuning",
     "date_covered": "2026-06-30T14:14:59.638393+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-07-30T10:25:32.836402+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FVKhIsqH8Bo",
+    "tiktok_id": null
+  },
+  "https://lwn.net/Articles/1086041/": {
+    "title": "GCC steering committee announces AI policy",
+    "date_covered": "2026-07-30T13:54:11.607964+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "qp9Dhow2H-U",
     "tiktok_id": null
   }
 }
