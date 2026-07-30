@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/palantir-secure-ai-us-agencies-nemotron-open-models/": {
-    "title": "Open Models, Closed Environments: Palantir Brings Secure AI to US Agencies With NVIDIA Nemotron",
-    "date_covered": "2026-06-30T02:58:53.954907+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "eMOu7kVkNXM",
-    "tiktok_id": null
-  },
   "https://htmx.org/essays/working-with-ai/": {
     "title": "> htmx ~ Working With AI: A Concrete Example",
     "date_covered": "2026-06-30T07:55:53.946357+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-07-30T02:02:54.228891+00:00",
     "source": "AI News",
     "youtube_id": "5xgb5J3TxAw",
+    "tiktok_id": null
+  },
+  "https://llm2human.pages.dev/": {
+    "title": "★ LLM2HUMAN CLINIC ★ Official Homestead ★",
+    "date_covered": "2026-07-30T06:27:28.707813+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wkpSYBQh2n8",
     "tiktok_id": null
   }
 }
