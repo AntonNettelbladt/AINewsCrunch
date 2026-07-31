@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/massive-wordpress-spam-attack-stopped-with-codex-and-claude/": {
-    "title": "How I stopped a massive WordPress spam attack with 4,700 lines of code in two days - thanks to Codex and Claude",
-    "date_covered": "2026-07-01T14:31:23.076789+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "YSCq1ZGn1Ws",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-life-jaiveer-singh/": {
     "title": "How Jaiveer Singh Is Helping Robots — and Developers — Move Faster",
     "date_covered": "2026-07-01T17:57:08.694248+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-07-31T13:57:20.431779+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "p1HXeosVx8A",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/": {
+    "title": "OpenAI aligns safety practices with EU AI Act's GPAI Code",
+    "date_covered": "2026-07-31T17:30:11.835776+00:00",
+    "source": "AI News",
+    "youtube_id": "WX8lmUsdSqM",
     "tiktok_id": null
   }
 }
