@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-life-jaiveer-singh/": {
-    "title": "How Jaiveer Singh Is Helping Robots — and Developers — Move Faster",
-    "date_covered": "2026-07-01T17:57:08.694248+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Nh-JA-sJR7I",
-    "tiktok_id": null
-  },
   "https://github.com/Division-36/Z-Jail/": {
     "title": "GitHub - Division-36/Z-Jail: A lightweight, multi-layer Linux sandbox combining namespaces, pivot_root, seccomp-bpf, capability dropping, and an evidence-based verdict engine (Truthimatics Public Vers",
     "date_covered": "2026-07-01T21:29:19.751148+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-07-31T17:30:11.835776+00:00",
     "source": "AI News",
     "youtube_id": "WX8lmUsdSqM",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/anthropic-claude-ai-hacked-organizations-during-security-tests/": {
+    "title": "Not just OpenAI - Anthropic says Claude's hacking spree 'falls short of ideal behavior'",
+    "date_covered": "2026-07-31T21:04:53.229590+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "chzb97l04O0",
     "tiktok_id": null
   }
 }
