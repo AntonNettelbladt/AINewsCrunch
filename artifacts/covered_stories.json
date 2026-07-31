@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/ai-model-release-tracker/": {
-    "title": "AI Model Release Tracker: Anthropic releases Sonnet 5",
-    "date_covered": "2026-06-30T21:29:46.629921+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "mBDrkyGzlcE",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/": {
     "title": "NVIDIA BioNeMo Agent Toolkit Brings Accelerated AI to Life Sciences Researchers in Claude Science",
     "date_covered": "2026-07-01T03:04:27.792123+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-07-30T21:07:19.841012+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "eqXQiEurIsc",
+    "tiktok_id": null
+  },
+  "https://blog.jim-nielsen.com/2026/ai-aesthetic/": {
+    "title": "The AI Aesthetic",
+    "date_covered": "2026-07-31T02:27:21.877970+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "YntsG4V6T_U",
     "tiktok_id": null
   }
 }
