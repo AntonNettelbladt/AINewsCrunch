@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/": {
-    "title": "NVIDIA BioNeMo Agent Toolkit Brings Accelerated AI to Life Sciences Researchers in Claude Science",
-    "date_covered": "2026-07-01T03:04:27.792123+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Hj3NHamuImY",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/apple-rushed-software-fixes-over-ai-threats-update-iphone-asap/": {
     "title": "Apple rushed to squash 29 bugs because AI is supercharging hackers - update ASAP",
     "date_covered": "2026-07-01T08:12:42.256759+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-07-31T02:27:21.877970+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YntsG4V6T_U",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/": {
+    "title": "Zuckerberg explains Meta's personal AI superintelligence strategy",
+    "date_covered": "2026-07-31T06:47:11.414169+00:00",
+    "source": "AI News",
+    "youtube_id": "Md3fCPva_Yw",
     "tiktok_id": null
   }
 }
