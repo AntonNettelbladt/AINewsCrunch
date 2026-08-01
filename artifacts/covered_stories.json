@@ -1,11 +1,4 @@
 {
-  "https://www.martenscentre.eu/media-mentions/in-the-age-of-algorithms-and-ai-is-traditional-media-democracys-last-line-of-defence/": {
-    "title": "In the age of algorithms and AI, is traditional media democracy’s last line of defence?",
-    "date_covered": "2026-07-02T13:54:21.280843+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "zZvtVfaukko",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/cxo-insights/top-leadership-skills-every-business-leader-needs-in-2026": {
     "title": "Top Leadership Skills Every Business Leader Needs in 2026",
     "date_covered": "2026-07-02T17:47:57.059998+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-01T09:59:39.703944+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ikA9IaMODLw",
+    "tiktok_id": null
+  },
+  "https://alexiglad.github.io/blog/2026/explorative_modeling/": {
+    "title": "Explorative Modeling -- Unlocking a Third Pretraining Axis and End-to-End Generation",
+    "date_covered": "2026-08-01T17:01:00.234442+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wkP51x1v8pY",
     "tiktok_id": null
   }
 }
