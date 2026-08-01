@@ -1,11 +1,4 @@
 {
-  "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/": {
-    "title": "Kimi K2.7 Code is generally available in GitHub Copilot",
-    "date_covered": "2026-07-02T07:32:06.910770+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "u3YXTNBSif4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/": {
     "title": "NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout",
     "date_covered": "2026-07-02T10:39:13.183952+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-01T06:29:30.955403+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "_q8kdoJNTpc",
+    "tiktok_id": null
+  },
+  "https://weeraman.com/the-prototype-isnt-the-product/": {
+    "title": "The Prototype Isn't the Product",
+    "date_covered": "2026-08-01T09:59:39.703944+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ikA9IaMODLw",
     "tiktok_id": null
   }
 }
