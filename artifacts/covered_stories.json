@@ -1,11 +1,4 @@
 {
-  "https://github.com/Division-36/Z-Jail/": {
-    "title": "GitHub - Division-36/Z-Jail: A lightweight, multi-layer Linux sandbox combining namespaces, pivot_root, seccomp-bpf, capability dropping, and an evidence-based verdict engine (Truthimatics Public Vers",
-    "date_covered": "2026-07-01T21:29:19.751148+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/anthropic-deploys-claude-sonnet-5-fable-and-mythos-restored/": {
     "title": "Anthropic deploys Claude Sonnet 5, Fable and Mythos restored",
     "date_covered": "2026-07-02T02:53:53.727904+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-07-31T21:04:53.229590+00:00",
     "source": "ZDNet AI",
     "youtube_id": "chzb97l04O0",
+    "tiktok_id": null
+  },
+  "https://tailscale.com/blog/hugging-face-intrusion": {
+    "title": "Tailscale in the Hugging Face intrusion: The good news and the bad news",
+    "date_covered": "2026-08-01T02:30:16.490889+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MQVbzURKByE",
     "tiktok_id": null
   }
 }
