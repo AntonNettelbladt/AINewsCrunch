@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/cxo-insights/top-leadership-skills-every-business-leader-needs-in-2026": {
-    "title": "Top Leadership Skills Every Business Leader Needs in 2026",
-    "date_covered": "2026-07-02T17:47:57.059998+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "SGXcenJWPU4",
-    "tiktok_id": null
-  },
   "https://github.com/HUANGCHIHHUNGLeo/claude-real-video": {
     "title": "GitHub - HUANGCHIHHUNGLeo/claude-real-video: Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT.",
     "date_covered": "2026-07-02T21:05:27.656059+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-01T17:01:00.234442+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "wkP51x1v8pY",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/windows-installation-files-getting-bigger-blame-ai/": {
+    "title": "Why your Windows installation files keep getting bigger - AI is filling up smaller drives",
+    "date_covered": "2026-08-01T20:49:58.277695+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "4lfB5Nx-nQ4",
     "tiktok_id": null
   }
 }
