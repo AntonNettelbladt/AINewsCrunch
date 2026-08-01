@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/anthropic-deploys-claude-sonnet-5-fable-and-mythos-restored/": {
-    "title": "Anthropic deploys Claude Sonnet 5, Fable and Mythos restored",
-    "date_covered": "2026-07-02T02:53:53.727904+00:00",
-    "source": "AI News",
-    "youtube_id": "KwR9PG3zP5o",
-    "tiktok_id": null
-  },
   "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/": {
     "title": "Kimi K2.7 Code is generally available in GitHub Copilot",
     "date_covered": "2026-07-02T07:32:06.910770+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-01T02:30:16.490889+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "MQVbzURKByE",
+    "tiktok_id": null
+  },
+  "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/": {
+    "title": "Is AI Reasoning Right for the Wrong Reasons?",
+    "date_covered": "2026-08-01T06:29:30.955403+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "_q8kdoJNTpc",
     "tiktok_id": null
   }
 }
