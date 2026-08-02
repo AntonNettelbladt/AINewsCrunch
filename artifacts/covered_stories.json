@@ -1,11 +1,4 @@
 {
-  "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail": {
-    "title": "Reality has a surprising amount of detail",
-    "date_covered": "2026-07-03T10:36:01.912760+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2ian40p75D8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/japan-ai-robots-2040-national-ai-model/": {
     "title": "Japan’s answer to its worker shortage: An AI model for 10 million robots",
     "date_covered": "2026-07-03T13:59:22.393148+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-02T09:57:38.724510+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "lmcv7aAlu84",
+    "tiktok_id": null
+  },
+  "https://publicdomainreview.org/essay/ars-notoria/": {
+    "title": "Artificial Intelligence Ars Notoria and the Promise of Instant Knowledge",
+    "date_covered": "2026-08-02T13:15:39.943442+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FyYAZrqO5hQ",
     "tiktok_id": null
   }
 }
