@@ -1,11 +1,4 @@
 {
-  "https://github.com/HUANGCHIHHUNGLeo/claude-real-video": {
-    "title": "GitHub - HUANGCHIHHUNGLeo/claude-real-video: Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT.",
-    "date_covered": "2026-07-02T21:05:27.656059+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "tAWMv3jacKk",
-    "tiktok_id": null
-  },
   "https://blog.okturtles.org/2026/07/short-leash-ai-method/": {
     "title": "The Short Leash AI Coding Method For Beating Fable",
     "date_covered": "2026-07-03T02:37:09.009162+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-01T20:49:58.277695+00:00",
     "source": "ZDNet AI",
     "youtube_id": "4lfB5Nx-nQ4",
+    "tiktok_id": null
+  },
+  "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions": {
+    "title": "AI financial advice is surprisingly good — especially if you ask the right questions",
+    "date_covered": "2026-08-02T02:25:47.355803+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Chl_U5SbLJ8",
     "tiktok_id": null
   }
 }
