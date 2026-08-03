@@ -1,18 +1,4 @@
 {
-  "https://towardsdatascience.com/time-series-llms-explained-with-t0-alpha/": {
-    "title": "Time-Series LLMs, Explained with t0-alpha",
-    "date_covered": "2026-07-04T02:35:32.969829+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "JW9ElXWDqAE",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/wimbledon-ibm-ai-tools-live-match-coverage/": {
-    "title": "Wimbledon adds IBM AI tools for live match coverage",
-    "date_covered": "2026-07-04T06:50:38.494975+00:00",
-    "source": "AI News",
-    "youtube_id": "UqWVhTr1SCA",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/anthropic-fable-5-freelance-work-performance-record/": {
     "title": "Fable 5 just set a new AI freelance work performance record - but it can't replace humans yet",
     "date_covered": "2026-07-04T10:09:07.522191+00:00",
@@ -1159,6 +1145,13 @@
     "date_covered": "2026-08-03T02:29:06.764460+00:00",
     "source": "Towards Data Science",
     "youtube_id": "oRUx0fB8gs0",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/us-proposes-ai-kill-switch-act-to-regulate-high-risk-ai": {
+    "title": "US Proposes AI Kill Switch Act to Regulate High-Risk AI",
+    "date_covered": "2026-08-03T07:01:36.422996+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "F5-GzTdhTn0",
     "tiktok_id": null
   }
 }
