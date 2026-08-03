@@ -1,11 +1,4 @@
 {
-  "https://github.com/adam-s/car-diagnosis": {
-    "title": "GitHub - adam-s/car-diagnosis: Diagnose a car fault from its sound — an honest, end-to-end audio-ML pipeline (scrape → clean → CLAP → calibrated triage). Proof of concept.",
-    "date_covered": "2026-07-04T13:19:37.082888+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "T44PAJ_ijUU",
-    "tiktok_id": null
-  },
   "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/": {
     "title": "The bottleneck might be the air in the room",
     "date_covered": "2026-07-04T17:06:31.779418+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-03T11:24:58.310267+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "WITR-A19YjY",
+    "tiktok_id": null
+  },
+  "https://github.com/lyogavin/airllm": {
+    "title": "GitHub - lyogavin/airllm: AirLLM 70B inference with single 4GB GPU",
+    "date_covered": "2026-08-03T14:33:42.140539+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "I1aGLbRV80Q",
     "tiktok_id": null
   }
 }
