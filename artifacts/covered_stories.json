@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/bank-of-england-agentic-ai-finance-rules/": {
-    "title": "Bank of England reviews AI rules for agentic AI in finance",
-    "date_covered": "2026-07-03T21:04:35.475677+00:00",
-    "source": "AI News",
-    "youtube_id": "Cy-iWN3QZ9A",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/time-series-llms-explained-with-t0-alpha/": {
     "title": "Time-Series LLMs, Explained with t0-alpha",
     "date_covered": "2026-07-04T02:35:32.969829+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-08-02T16:58:58.924579+00:00",
     "source": "ZDNet AI",
     "youtube_id": "Qk0QrN9KBhA",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/the-python-ecosystem-that-changed-ai-development/": {
+    "title": "The Python Ecosystem That Changed AI Development",
+    "date_covered": "2026-08-03T02:29:06.764460+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "oRUx0fB8gs0",
     "tiktok_id": null
   }
 }
