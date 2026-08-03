@@ -1,11 +1,4 @@
 {
-  "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/": {
-    "title": "The bottleneck might be the air in the room",
-    "date_covered": "2026-07-04T17:06:31.779418+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Wm5_8D7_Eaw",
-    "tiktok_id": null
-  },
   "https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/": {
     "title": "Neural Render Proxies for Interactive and Differentiable Lighting",
     "date_covered": "2026-07-04T20:56:21.683412+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-03T14:33:42.140539+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "I1aGLbRV80Q",
+    "tiktok_id": null
+  },
+  "https://epoch.ai/MirrorCode": {
+    "title": "MirrorCode: What's the largest software project AI can complete on its own? | Epoch AI",
+    "date_covered": "2026-08-03T17:52:42.267654+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "JzNv6l5RE-c",
     "tiktok_id": null
   }
 }
