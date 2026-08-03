@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/anthropic-fable-5-freelance-work-performance-record/": {
-    "title": "Fable 5 just set a new AI freelance work performance record - but it can't replace humans yet",
-    "date_covered": "2026-07-04T10:09:07.522191+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "aSvpRNPstdw",
-    "tiktok_id": null
-  },
   "https://github.com/adam-s/car-diagnosis": {
     "title": "GitHub - adam-s/car-diagnosis: Diagnose a car fault from its sound — an honest, end-to-end audio-ML pipeline (scrape → clean → CLAP → calibrated triage). Proof of concept.",
     "date_covered": "2026-07-04T13:19:37.082888+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-03T07:01:36.422996+00:00",
     "source": "Analytics Insight",
     "youtube_id": "F5-GzTdhTn0",
+    "tiktok_id": null
+  },
+  "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/": {
+    "title": "Prevent cognitive debt by manually retyping LLM-generated code — Ankur Sethi's Lab Notebook",
+    "date_covered": "2026-08-03T11:24:58.310267+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "WITR-A19YjY",
     "tiktok_id": null
   }
 }
