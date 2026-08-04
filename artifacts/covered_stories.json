@@ -1,18 +1,4 @@
 {
-  "https://www.caltech.edu/about/news/reading-minds-with-ultrasound-a-less-invasive-technique-to-decode-the-brains-intentions": {
-    "title": "Reading Minds with Ultrasound: A Less-Invasive Technique to Decode the Brain's Intentions",
-    "date_covered": "2026-07-05T07:26:18.738231+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "sPsWBR8cBSw",
-    "tiktok_id": null
-  },
-  "https://www.hawaiinewsnow.com/2026/07/04/record-breaking-solo-rower-kelsey-pfendler-arrives-hawaii/": {
-    "title": "Record-breaking solo rower Kelsey Pfendler arrives in Hawaii",
-    "date_covered": "2026-07-05T10:12:15.256216+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "VPcTupJWSYk",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/": {
     "title": "Google DeepMind Unionization Talks Are Off to a Rocky Start",
     "date_covered": "2026-07-05T13:28:16.774096+00:00",
@@ -1159,6 +1145,13 @@
     "date_covered": "2026-08-04T06:28:57.636842+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://ochagavia.nl/blog/that-time-when-i-failed-the-microsoft-interview/": {
+    "title": "That time when I failed the Microsoft interview",
+    "date_covered": "2026-08-04T10:39:25.133803+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ziv5KnkwzEE",
     "tiktok_id": null
   }
 }
