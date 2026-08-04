@@ -1,11 +1,4 @@
 {
-  "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm": {
-    "title": "List and map of airplane boneyards in the United States and worldwide, including a list of post-WWII boneyards and modern-day airliner storage facilities",
-    "date_covered": "2026-07-05T17:10:37.384950+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "P_7ck4YbKR4",
-    "tiktok_id": null
-  },
   "https://github.com/langchain-ai/openwiki": {
     "title": "GitHub - langchain-ai/openwiki: OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
     "date_covered": "2026-07-05T21:00:01.034851+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-04T14:06:09.877544+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "SUtowzYqMQI",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program/": {
+    "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+    "date_covered": "2026-08-04T17:45:58.664003+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "gxgaxr8_0SI",
     "tiktok_id": null
   }
 }
