@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/": {
-    "title": "Google DeepMind Unionization Talks Are Off to a Rocky Start",
-    "date_covered": "2026-07-05T13:28:16.774096+00:00",
-    "source": "Wired AI",
-    "youtube_id": "z9hqnERlXBI",
-    "tiktok_id": null
-  },
   "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm": {
     "title": "List and map of airplane boneyards in the United States and worldwide, including a list of post-WWII boneyards and modern-day airliner storage facilities",
     "date_covered": "2026-07-05T17:10:37.384950+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-04T10:39:25.133803+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ziv5KnkwzEE",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/open-secure-ai-alliance-contributions/": {
+    "title": "AI Leaders Propose SAFE Guidelines for Cybersecurity Transparency",
+    "date_covered": "2026-08-04T14:06:09.877544+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "SUtowzYqMQI",
     "tiktok_id": null
   }
 }
