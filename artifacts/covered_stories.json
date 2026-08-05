@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/ampstories/stocks/stock-market-today-sensex-jumps-403-points-nifty50-crosses-24388-as-bank-stocks-rally": {
-    "title": "Stock Market Today: Sensex Jumps 403 Points, Nifty50 Crosses 24,388 as Bank Stocks Rally",
-    "date_covered": "2026-07-06T08:21:10.329854+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "eUDyBys-Szs",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/china-ai-companion-rules/": {
     "title": "China's AI companion rules: what Beijing is really banning",
     "date_covered": "2026-07-06T15:27:35.275726+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-08-05T06:28:37.189257+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "2kpDCGHp-Zg",
+    "tiktok_id": null
+  },
+  "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/": {
+    "title": "AI fuels more than half of cybercrime in Africa as digital scams surge, INTERPOL",
+    "date_covered": "2026-08-05T11:15:38.516345+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "jHzxyqyT_Io",
     "tiktok_id": null
   }
 }
