@@ -1,11 +1,4 @@
 {
-  "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals": {
-    "title": "Small Language Models Power Life-Saving Small AI",
-    "date_covered": "2026-07-07T02:46:30.933833+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "wAMbl15Ie1U",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/": {
     "title": "NVIDIA and Hugging Face Bring New Models and Frameworks to LeRobot for the Open Robotics Community",
     "date_covered": "2026-07-07T07:39:48.024000+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-06T02:12:11.544066+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "E2kJS0FvJKs",
+    "tiktok_id": null
+  },
+  "https://github.com/pradipta/wallfacer": {
+    "title": "GitHub - pradipta/wallfacer: A terminal session manager for Claude Code, and more",
+    "date_covered": "2026-08-06T06:30:17.012085+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
