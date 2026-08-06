@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nations-deploy-ai-strategic-priorities/": {
-    "title": "How Nations Are Deploying AI for Strategic Priorities",
-    "date_covered": "2026-07-06T21:30:41.981367+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "oBZvubZfSdc",
-    "tiktok_id": null
-  },
   "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals": {
     "title": "Small Language Models Power Life-Saving Small AI",
     "date_covered": "2026-07-07T02:46:30.933833+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-05T21:08:40.258638+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "65dCAy-k7fs",
+    "tiktok_id": null
+  },
+  "https://blog.fogus.me/llm/born-against.html": {
+    "title": "Born Against, or why hobby programming communities are aggressively against LLM usage",
+    "date_covered": "2026-08-06T02:12:11.544066+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "E2kJS0FvJKs",
     "tiktok_id": null
   }
 }
