@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/how-to-run-end-to-end-tests-with-claude-code/": {
-    "title": "How to Run End-to-End Tests with Claude Code",
-    "date_covered": "2026-07-07T10:56:57.580862+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "QVeg0McQA8o",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/i-tested-mophie-ugreen-esr-wireless-chargers-to-see-which-keeps-phones-cool/": {
     "title": "I tested 3 wireless chargers to see which keeps my phones cool - what I learned surprised me",
     "date_covered": "2026-07-07T14:27:23.046378+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-06T10:38:45.342838+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "-ZnZQWTIMpU",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/open-world-models-physical-ai/": {
+    "title": "Into the Omniverse: How Open World Models Push the Frontier of Physical AI",
+    "date_covered": "2026-08-06T13:59:43.209138+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "ceEQUeaTl7Y",
     "tiktok_id": null
   }
 }
