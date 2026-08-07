@@ -1,11 +1,4 @@
 {
-  "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/": {
-    "title": "GitLost: How We Tricked GitHub’s AI Agent into Leaking Private Repos",
-    "date_covered": "2026-07-08T06:28:24.364552+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "33cUcI5aygI",
-    "tiktok_id": null
-  },
   "https://github.com/dekart-xyz/geosql": {
     "title": "GitHub - dekart-xyz/geosql: Turn Claude/Codex into geospatial analytics agent.",
     "date_covered": "2026-07-08T10:17:43.581470+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-07T05:41:58.453141+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "c__Y6qKfZ0Y",
+    "tiktok_id": null
+  },
+  "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/": {
+    "title": "New Orleans will use AI to answer 911 calls instead of a human",
+    "date_covered": "2026-08-07T08:57:54.400143+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "qaYq1oEl6vA",
     "tiktok_id": null
   }
 }
