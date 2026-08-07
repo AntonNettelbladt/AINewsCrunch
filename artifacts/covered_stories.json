@@ -1,11 +1,4 @@
 {
-  "https://openai.com/index/introducing-gpt-live/": {
-    "title": "Introducing GPT-Live",
-    "date_covered": "2026-07-08T17:29:49.864073+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "U5BQJmGYp94",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/": {
     "title": "NVIDIA Nemotron Achieves Benchmark-Leading Performance With LangChain Deep Agents Harness",
     "date_covered": "2026-07-08T21:08:35.543727+00:00",
@@ -1145,6 +1138,13 @@
     "date_covered": "2026-08-07T16:54:46.642968+00:00",
     "source": "ZDNet AI",
     "youtube_id": "fgpd3Ym72ss",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/this-chatbot-is-just-a-random-guy-lol/": {
+    "title": "The Hottest New AI Chatbot Is Just a Guy Answering Your Questions",
+    "date_covered": "2026-08-07T20:41:26.628038+00:00",
+    "source": "Wired AI",
+    "youtube_id": "IAnsk3jjE_o",
     "tiktok_id": null
   }
 }
