@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/meta-muse-ai-feature-instagram-posts-opting-out/": {
-    "title": "Meta's new AI tool lets others use your Instagram posts for image generation - how to opt out",
-    "date_covered": "2026-07-09T14:53:13.654085+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "6luhr9NzYfw",
-    "tiktok_id": null
-  },
   "https://www.pangram.com/blog/ai-in-your-feed": {
     "title": "AI Content Is Everywhere on Social Media, Especially LinkedIn",
     "date_covered": "2026-07-09T17:57:05.270848+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-08-08T12:43:40.687064+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "33zghE7irhY",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/": {
+    "title": "Sensitive Info Goes Into ‘No Reply’ Emails Constantly. This Guy Sees It All",
+    "date_covered": "2026-08-08T16:33:30.442108+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "KHjihVZ6Crg",
     "tiktok_id": null
   }
 }
