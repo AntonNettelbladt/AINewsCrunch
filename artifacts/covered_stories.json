@@ -1,11 +1,4 @@
 {
-  "https://thetruthasiseeitnow.com/ai-slop-starts-with-the-codebase-itself/": {
-    "title": "AI slop starts with the codebase itself. · the truth as I see it now",
-    "date_covered": "2026-07-09T07:38:48.542310+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "IgYCrVkc3A0",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/": {
     "title": "NHS AI blood test could reduce invasive womb cancer checks",
     "date_covered": "2026-07-09T11:00:43.775657+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-08-08T01:20:37.559560+00:00",
     "source": "Towards Data Science",
     "youtube_id": "v6x0Fp4rbAg",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/": {
+    "title": "Alibaba tests new business model for Qwen open-source AI",
+    "date_covered": "2026-08-08T08:39:00.389589+00:00",
+    "source": "AI News",
+    "youtube_id": "J6Fj0AgJlRY",
     "tiktok_id": null
   }
 }
