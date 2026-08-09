@@ -1,11 +1,4 @@
 {
-  "https://www.macrumors.com/2026/07/06/apple-silicon-exec-explains-mac-mini-ai-demand/": {
-    "title": "Apple Silicon Exec Explains Mac Mini AI Demand and On-Device Future",
-    "date_covered": "2026-07-10T07:38:12.879958+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "RG6-LHWB68M",
-    "tiktok_id": null
-  },
   "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02": {
     "title": "John Deere owners will get the right to repair their own equipment under a new FTC settlement",
     "date_covered": "2026-07-10T10:53:36.690524+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-08-09T05:04:43.781257+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "776FI9sfvOg",
+    "tiktok_id": null
+  },
+  "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/": {
+    "title": "Fastmail offers EU data region",
+    "date_covered": "2026-08-09T08:41:40.205333+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "rMLBzXukxhk",
     "tiktok_id": null
   }
 }
