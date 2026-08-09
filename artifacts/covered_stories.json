@@ -1,11 +1,4 @@
 {
-  "https://www.ello.com/blog/teaching-a-child-in-1000-ms": {
-    "title": "Teaching a child in <1000 ms: the architecture behind a real-time tutor",
-    "date_covered": "2026-07-10T02:40:42.266840+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.macrumors.com/2026/07/06/apple-silicon-exec-explains-mac-mini-ai-demand/": {
     "title": "Apple Silicon Exec Explains Mac Mini AI Demand and On-Device Future",
     "date_covered": "2026-07-10T07:38:12.879958+00:00",
@@ -1138,6 +1131,13 @@
     "date_covered": "2026-08-09T01:24:01.551209+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "IgqhfgDvOYI",
+    "tiktok_id": null
+  },
+  "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/": {
+    "title": "ChatGPT starts blocking direct requests to copy an author’s style",
+    "date_covered": "2026-08-09T05:04:43.781257+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "776FI9sfvOg",
     "tiktok_id": null
   }
 }
