@@ -1,11 +1,4 @@
 {
-  "https://www.mixfont.com/ghost-font": {
-    "title": "Ghost Font: The Anti-AI Font Only Humans Can Read",
-    "date_covered": "2026-07-11T16:57:39.767250+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "dBrQis1uzvI",
-    "tiktok_id": null
-  },
   "https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/": {
     "title": "AI Can't Recreate Thrust (But It Can Help You Understand It)",
     "date_covered": "2026-07-11T20:47:34.721161+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-10T16:55:39.062782+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "VRpblypAkLI",
+    "tiktok_id": null
+  },
+  "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb": {
+    "title": "Humanising LLM Outputs is Dumb",
+    "date_covered": "2026-08-10T20:41:59.248092+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "dWnmQzBxnZM",
     "tiktok_id": null
   }
 }
