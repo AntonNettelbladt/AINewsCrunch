@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/heart-rate-tracking-fitbit-air-accuracy-chest-strap-monitor/": {
-    "title": "My Fitbit Air test revealed the flaws of calorie counting with a health tracker - here's why",
-    "date_covered": "2026-07-11T13:13:41.914741+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "6LgQsAj9m_0",
-    "tiktok_id": null
-  },
   "https://www.mixfont.com/ghost-font": {
     "title": "Ghost Font: The Anti-AI Font Only Humans Can Read",
     "date_covered": "2026-07-11T16:57:39.767250+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-10T13:00:53.432731+00:00",
     "source": "AI News",
     "youtube_id": "vK61QGoT5H0",
+    "tiktok_id": null
+  },
+  "https://blog.sshh.io/p/exploring-claudegpt-knowledge-cutoffs": {
+    "title": "Exploring Claude/GPT Knowledge Cutoffs",
+    "date_covered": "2026-08-10T16:55:39.062782+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "VRpblypAkLI",
     "tiktok_id": null
   }
 }
