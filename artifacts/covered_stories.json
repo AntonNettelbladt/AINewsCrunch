@@ -1,11 +1,4 @@
 {
-  "https://www.iroh.computer/blog/mesh-llm": {
-    "title": "Mesh LLM: distributed AI computing on iroh",
-    "date_covered": "2026-07-12T02:19:31.102594+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "q3XxzU6xQyg",
-    "tiktok_id": null
-  },
   "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/": {
     "title": "qMLX: Maximising my AI psychosis by minmaxing my Mac Studio",
     "date_covered": "2026-07-12T06:34:57.460286+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-11T01:23:28.521699+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "bEepK-TND7E",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/prism2-model-clinical-dialogue-interpret-pathology-slides/": {
+    "title": "PRISM2 model uses clinical dialogue to interpret pathology slides",
+    "date_covered": "2026-08-11T05:08:49.005501+00:00",
+    "source": "AI News",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
