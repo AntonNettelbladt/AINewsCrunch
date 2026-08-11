@@ -1,11 +1,4 @@
 {
-  "https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/": {
-    "title": "Autoresearch, Claude and Constrained Optimization",
-    "date_covered": "2026-07-12T16:59:54.402671+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Mx1fPESh_HQ",
-    "tiktok_id": null
-  },
   "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html": {
     "title": "I love LLMs, I hate hype",
     "date_covered": "2026-07-12T20:44:34.252624+00:00",
@@ -1159,6 +1152,13 @@
     "date_covered": "2026-08-11T16:58:42.546705+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ckspJmdYYho",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron/": {
+    "title": "NVIDIA and Local AI Community Fuel Open Source Models and Intelligent Agents",
+    "date_covered": "2026-08-11T20:43:12.477407+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "L0yyLS0T0bU",
     "tiktok_id": null
   }
 }
