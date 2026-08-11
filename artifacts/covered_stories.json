@@ -1,11 +1,4 @@
 {
-  "https://www.jamesdrandall.com/posts/thrust_ai_powered_software_archaeology/": {
-    "title": "AI Can't Recreate Thrust (But It Can Help You Understand It)",
-    "date_covered": "2026-07-11T20:47:34.721161+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "hvQDMbafx38",
-    "tiktok_id": null
-  },
   "https://www.iroh.computer/blog/mesh-llm": {
     "title": "Mesh LLM: distributed AI computing on iroh",
     "date_covered": "2026-07-12T02:19:31.102594+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-10T20:41:59.248092+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "dWnmQzBxnZM",
+    "tiktok_id": null
+  },
+  "https://lwn.net/Articles/1034703/": {
+    "title": "Tail-call optimization in C is relatively recent [LWN.net]",
+    "date_covered": "2026-08-11T01:23:28.521699+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "bEepK-TND7E",
     "tiktok_id": null
   }
 }
