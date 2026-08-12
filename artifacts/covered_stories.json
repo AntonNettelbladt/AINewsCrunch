@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/artificial-intelligence/how-to-improve-ai-agent-performance-proven-strategies-to-build-smarter-faster-and-more-reliable-ai-agents": {
-    "title": "How to Improve AI Agent Performance: Proven Strategies to Build Smarter, Faster, and More Reliable AI Agents",
-    "date_covered": "2026-07-13T06:55:05.845677+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "3z1I8gbs984",
-    "tiktok_id": null
-  },
   "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547": {
     "title": "What xAI Grok Build CLI actually sends to xAI - a wire-level analysis (grok 0.2.93)",
     "date_covered": "2026-07-13T11:01:17.855009+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-12T05:32:49.270378+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "E5FYkH4bdY4",
+    "tiktok_id": null
+  },
+  "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/": {
+    "title": "Why Go is an Ideal Language for AI-Assisted Software Engineering",
+    "date_covered": "2026-08-12T09:15:30.080531+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Wtok6jqrfVU",
     "tiktok_id": null
   }
 }
