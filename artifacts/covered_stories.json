@@ -1,11 +1,4 @@
 {
-  "https://bytecode.news/posts/2026/07/user-submission-ai-is-a-bad-tool": {
-    "title": "User Submission: AI is a Bad Tool",
-    "date_covered": "2026-07-13T20:58:56.328966+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "f956-1rhUN0",
-    "tiktok_id": null
-  },
   "https://neow.in/cWsyMTV3": {
     "title": "Samsung will delete your health data if you don't let them use it to train AI",
     "date_covered": "2026-07-14T02:07:12.738708+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-12T20:43:16.731813+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "fUmWyX5i36s",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/": {
+    "title": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class",
+    "date_covered": "2026-08-13T01:35:04.539440+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "7NZKuGTMH5w",
     "tiktok_id": null
   }
 }
