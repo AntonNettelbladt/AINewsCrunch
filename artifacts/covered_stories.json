@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/dont-let-an-ai-chatbot-pick-your-password-ever/": {
-    "title": "Don't let an AI chatbot pick your password, ever",
-    "date_covered": "2026-07-14T13:29:15.235403+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "ntL3Ye--1hc",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/performance-per-watt-ai-infrastructure-efficiency/": {
     "title": "Why Performance per Watt Is the Ultimate Metric for AI Infrastructure Efficiency",
     "date_covered": "2026-07-14T17:15:12.423653+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-13T13:03:56.940974+00:00",
     "source": "AI News",
     "youtube_id": "jRv0HMBulIY",
+    "tiktok_id": null
+  },
+  "https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/": {
+    "title": "Graduate Student Proves the Fractal Uncertainty Principle",
+    "date_covered": "2026-08-13T16:57:11.533967+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "lGnItw3p0tU",
     "tiktok_id": null
   }
 }
