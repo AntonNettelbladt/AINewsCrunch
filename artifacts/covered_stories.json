@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nemotron-open-models-ai-trust-control-customize/": {
-    "title": "Nemotron Labs: How Open Models Give Enterprises and Nations AI They Can Trust, Control and Customize",
-    "date_covered": "2026-07-15T13:31:56.511474+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "XRtLNepie94",
-    "tiktok_id": null
-  },
   "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143/": {
     "title": "OpenAI loses trademark dispute at EU court",
     "date_covered": "2026-07-15T17:19:45.341463+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-14T13:00:49.915713+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "cIBlXg__SIQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/samsung-health-ai-models-analyse-wearable-biosignal-data/": {
+    "title": "Samsung health AI models analyse wearable biosignal data",
+    "date_covered": "2026-08-14T16:54:39.721835+00:00",
+    "source": "AI News",
+    "youtube_id": "FwbQFt3jPI0",
     "tiktok_id": null
   }
 }
