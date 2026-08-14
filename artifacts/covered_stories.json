@@ -1,11 +1,4 @@
 {
-  "https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143/": {
-    "title": "OpenAI loses trademark dispute at EU court",
-    "date_covered": "2026-07-15T17:19:45.341463+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Q8u99mHQaRI",
-    "tiktok_id": null
-  },
   "https://briarproject.org/news/2026-maintenance-mode/": {
     "title": "Briar is in maintenance mode",
     "date_covered": "2026-07-15T21:01:09.132887+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-14T16:54:39.721835+00:00",
     "source": "AI News",
     "youtube_id": "FwbQFt3jPI0",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/google-ai-health-coach-abbott-glucose-data/": {
+    "title": "Google AI health coach to use Abbott glucose data",
+    "date_covered": "2026-08-14T20:31:28.992292+00:00",
+    "source": "AI News",
+    "youtube_id": "-b6vGVfxC9w",
     "tiktok_id": null
   }
 }
