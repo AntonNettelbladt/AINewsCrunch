@@ -1,11 +1,4 @@
 {
-  "https://prismml.com/news/bonsai-27b": {
-    "title": "PrismML — Announcing Bonsai 27B: The First 27B-Class Model to Run on a Phone",
-    "date_covered": "2026-07-14T21:01:35.645845+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "DYsfxa22KYs",
-    "tiktok_id": null
-  },
   "https://gwern.net/guardian-angel": {
     "title": "Guardian Angels: LLM Personalization for Productivity and Security",
     "date_covered": "2026-07-15T02:04:24.713698+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-13T20:42:18.291940+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "we7S4GKqcss",
+    "tiktok_id": null
+  },
+  "https://declaude.org/watermarking/": {
+    "title": "How AI text watermarking works .",
+    "date_covered": "2026-08-14T01:32:56.486887+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MwqEStejzD0",
     "tiktok_id": null
   }
 }
