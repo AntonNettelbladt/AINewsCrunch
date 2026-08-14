@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/": {
-    "title": "Nokia’s AI-RAN platform: a radio comeback that runs on NVIDIA",
-    "date_covered": "2026-07-15T10:04:06.905207+00:00",
-    "source": "AI News",
-    "youtube_id": "j1hXKtzdUnQ",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nemotron-open-models-ai-trust-control-customize/": {
     "title": "Nemotron Labs: How Open Models Give Enterprises and Nations AI They Can Trust, Control and Customize",
     "date_covered": "2026-07-15T13:31:56.511474+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-14T09:08:01.686882+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "UntzwRHOvcA",
+    "tiktok_id": null
+  },
+  "https://current.org/2026/08/nine-pbs-sues-iron-mountain-over-blocked-access-to-archival-data/": {
+    "title": "Nine PBS sues Iron Mountain over blocked access to archival data",
+    "date_covered": "2026-08-14T13:00:49.915713+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "cIBlXg__SIQ",
     "tiktok_id": null
   }
 }
