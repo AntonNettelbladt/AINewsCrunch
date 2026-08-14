@@ -1,11 +1,4 @@
 {
-  "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing": {
-    "title": "How to stop Claude from saying load-bearing",
-    "date_covered": "2026-07-15T06:15:31.915614+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "bqFCVzEYH_s",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/": {
     "title": "Nokia’s AI-RAN platform: a radio comeback that runs on NVIDIA",
     "date_covered": "2026-07-15T10:04:06.905207+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-14T05:33:13.463368+00:00",
     "source": "ZDNet AI",
     "youtube_id": "MViBb1RmzxA",
+    "tiktok_id": null
+  },
+  "https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain": {
+    "title": "Ruby 4.0 Universal RCE Deserialization Gadget Chain",
+    "date_covered": "2026-08-14T09:08:01.686882+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "UntzwRHOvcA",
     "tiktok_id": null
   }
 }
