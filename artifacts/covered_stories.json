@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/japan-ecosystem-2026/": {
-    "title": "NVIDIA and Japan Bring Full-Stack AI and Robotics to Every Industry",
-    "date_covered": "2026-07-16T02:14:20.671747+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Whi2rO6tgXI",
-    "tiktok_id": null
-  },
   "https://github.com/PrestigePvP/Voicebox": {
     "title": "GitHub - PrestigePvP/Voicebox",
     "date_covered": "2026-07-16T06:18:18.677132+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-15T01:03:29.367532+00:00",
     "source": "ZDNet AI",
     "youtube_id": "8pB07hXc4bI",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/": {
+    "title": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
+    "date_covered": "2026-08-15T04:30:38.092872+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "56KEODkp9k0",
     "tiktok_id": null
   }
 }
