@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/73-of-tech-job-listings-require-ai-skills-show-off-yours/": {
-    "title": "73% of tech job listings require AI skills now: How to show off yours",
-    "date_covered": "2026-07-16T10:10:01.646517+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "o4McYYmFqt4",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/": {
     "title": "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
     "date_covered": "2026-07-16T13:46:16.524216+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-15T04:30:38.092872+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "56KEODkp9k0",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/": {
+    "title": "NVIDIA Nemotron 3.5 Lightning and NeMo Switchyard Deliver Faster, Smarter, More Efficient Agentic AI",
+    "date_covered": "2026-08-15T12:34:14.968552+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "HD_Uryp5SN0",
     "tiktok_id": null
   }
 }
