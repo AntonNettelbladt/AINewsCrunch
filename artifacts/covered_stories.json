@@ -1,11 +1,4 @@
 {
-  "https://blog.lyc8503.net/en/post/llm-classifier/": {
-    "title": "Detecting LLM-Generated Web Fiction with \"Classical\" Machine Learning (AIGC Text Detection)",
-    "date_covered": "2026-07-16T17:15:55.782716+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/": {
     "title": "NotebookLM is now Gemini Notebook",
     "date_covered": "2026-07-16T20:58:28.475769+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-15T16:25:38.504857+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "bpvjmqOFMxI",
+    "tiktok_id": null
+  },
+  "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians": {
+    "title": "AI Isn’t Outthinking Mathematicians. It’s Out-Remembering Them.",
+    "date_covered": "2026-08-15T20:22:07.500359+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "pm-Pn_7ifL8",
     "tiktok_id": null
   }
 }
