@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/": {
-    "title": "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
-    "date_covered": "2026-07-16T13:46:16.524216+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "XUqM-zRKrhI",
-    "tiktok_id": null
-  },
   "https://blog.lyc8503.net/en/post/llm-classifier/": {
     "title": "Detecting LLM-Generated Web Fiction with \"Classical\" Machine Learning (AIGC Text Detection)",
     "date_covered": "2026-07-16T17:15:55.782716+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-15T12:34:14.968552+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "HD_Uryp5SN0",
+    "tiktok_id": null
+  },
+  "http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html": {
+    "title": "Yadda 3.0.0: BDD in the Age of AI Agents",
+    "date_covered": "2026-08-15T16:25:38.504857+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "bpvjmqOFMxI",
     "tiktok_id": null
   }
 }
