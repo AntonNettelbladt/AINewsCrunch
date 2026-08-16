@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/": {
-    "title": "Neko Health raises $700 million to expand AI body scans in the US",
-    "date_covered": "2026-07-17T02:16:13.350266+00:00",
-    "source": "AI News",
-    "youtube_id": "tsHVEEYomzI",
-    "tiktok_id": null
-  },
   "https://github.com/Center-for-AI-Innovation/ai-teaching-assistant-uiuc": {
     "title": "GitHub - Center-for-AI-Innovation/ai-teaching-assistant-uiuc: The UX & driver code for the multi-model TA_Chatbot",
     "date_covered": "2026-07-17T06:16:33.926374+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-16T01:05:30.777092+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "pPdddQAQTPw",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/voltair/jobs/sSOD2Ox-flight-test-engineer": {
+    "title": "Flight Test Engineer at Voltair",
+    "date_covered": "2026-08-16T04:35:31.205248+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ZSI1A889Oqg",
     "tiktok_id": null
   }
 }
