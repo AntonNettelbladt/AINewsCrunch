@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/": {
-    "title": "NVIDIA Vera Rubin Maximizes Intelligence per Dollar for Post-Training Workloads — a Key Metric for Agentic AI",
-    "date_covered": "2026-07-17T17:13:00.080149+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "FrxyxBt20tg",
-    "tiktok_id": null
-  },
   "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/": {
     "title": "VulnHunter: an open-source, agentic AI code security tool",
     "date_covered": "2026-07-17T20:54:42.551977+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-16T16:24:06.716448+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "nP4zGcMj1KA",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/apple-warns-targetted-spyware-attacks-what-to-do/": {
+    "title": "Apple is warning users of new spyware attacks - what to do if you're a target",
+    "date_covered": "2026-08-16T20:21:48.515824+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "TmBHLAu4Cgc",
     "tiktok_id": null
   }
 }
