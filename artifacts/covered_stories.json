@@ -1,11 +1,4 @@
 {
-  "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/": {
-    "title": "VulnHunter: an open-source, agentic AI code security tool",
-    "date_covered": "2026-07-17T20:54:42.551977+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2rvf5YnGDT0",
-    "tiktok_id": null
-  },
   "https://www.cnbc.com/2026/07/17/faa-boeing-737-max-787.html": {
     "title": "FAA lets Boeing sign off on 737 Max, 787 airworthiness certificates again",
     "date_covered": "2026-07-18T02:06:28.453297+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-16T20:21:48.515824+00:00",
     "source": "ZDNet AI",
     "youtube_id": "TmBHLAu4Cgc",
+    "tiktok_id": null
+  },
+  "https://ivan-gavran.github.io/0-social-processes-paper": {
+    "title": "The Case Against Formal Verification, 50 Years Later",
+    "date_covered": "2026-08-17T01:03:46.585562+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ymLrNL1so2I",
     "tiktok_id": null
   }
 }
