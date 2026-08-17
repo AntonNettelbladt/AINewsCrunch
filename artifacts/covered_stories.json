@@ -1,11 +1,4 @@
 {
-  "https://www.cnbc.com/2026/07/17/faa-boeing-737-max-787.html": {
-    "title": "FAA lets Boeing sign off on 737 Max, 787 airworthiness certificates again",
-    "date_covered": "2026-07-18T02:06:28.453297+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "SnLYhTzjbMQ",
-    "tiktok_id": null
-  },
   "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/": {
     "title": "Kaiser nurses say AI, workplace surveillance are making their jobs and patient care worse",
     "date_covered": "2026-07-18T06:06:28.929387+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-17T01:03:46.585562+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ymLrNL1so2I",
+    "tiktok_id": null
+  },
+  "https://blog.racket-lang.org/2026/08/rhombus-v1.1.html": {
+    "title": "Rhombus v1.1",
+    "date_covered": "2026-08-17T04:41:07.091680+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Zn45ZHi3WNg",
     "tiktok_id": null
   }
 }
