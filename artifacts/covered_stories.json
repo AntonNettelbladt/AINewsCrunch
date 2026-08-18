@@ -1160,5 +1160,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "JDMZZGDQhqs",
     "tiktok_id": null
+  },
+  "https://engineering.myhoai.com/posts/a-simple-fix-for-llm-tail-latency/": {
+    "title": "A simple fix for LLM tail latency",
+    "date_covered": "2026-08-18T01:02:39.528461+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "7-BEf4Gt2yc",
+    "tiktok_id": null
   }
 }
