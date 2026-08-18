@@ -1,11 +1,4 @@
 {
-  "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/": {
-    "title": "Claude Code uses Bun written in Rust now",
-    "date_covered": "2026-07-19T13:11:23.813588+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://dornsife.usc.edu/news/stories/heavy-tv-watching-associated-with-smaller-brain-structures/": {
     "title": "Heavy TV watching associated with smaller brain structures, study finds",
     "date_covered": "2026-07-19T20:47:14.820752+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-18T12:41:57.894880+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "gzyF07RRnXQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/zhipu-glm-5-3-benchmarks-explained/": {
+    "title": "Reading Zhipu’s GLM-5.3 results past the headline number",
+    "date_covered": "2026-08-18T16:33:58.130536+00:00",
+    "source": "AI News",
+    "youtube_id": "59m1UxdL4Eo",
     "tiktok_id": null
   }
 }
