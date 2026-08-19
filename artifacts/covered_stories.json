@@ -1,11 +1,4 @@
 {
-  "https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study": {
-    "title": "AI advice made people three times less accurate but twice as confident, researchers found",
-    "date_covered": "2026-07-20T02:38:15.081687+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "wwUJU1Nd6g4",
-    "tiktok_id": null
-  },
   "https://blog.documentfoundation.org/blog/2026/07/17/microsofts-main-tool-for-lock-in/": {
     "title": "How proprietary formats have become Microsoft’s main tool for lock-in",
     "date_covered": "2026-07-20T06:48:48.858455+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-18T20:22:36.939613+00:00",
     "source": "ZDNet AI",
     "youtube_id": "p_B1m2s8-B8",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/microsoft-customizable-context-menu-windows-11/": {
+    "title": "Microsoft reveals customizable context menu for Windows users - how to try it out",
+    "date_covered": "2026-08-19T04:41:47.571243+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "V61aZ_b2_nA",
     "tiktok_id": null
   }
 }
