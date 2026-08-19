@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/openai-anthropic-public-health-ai/": {
-    "title": "US public health agencies to test OpenAI and Anthropic AI models",
-    "date_covered": "2026-07-20T10:51:59.789294+00:00",
-    "source": "AI News",
-    "youtube_id": "fP9Pn0UVDI0",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/kimi-k3-open-weight-model-memory-compute-china/": {
     "title": "Kimi K3 open-weight model: China’s biggest AI is a bet on memory, not compute",
     "date_covered": "2026-07-20T14:02:00.943477+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-19T08:42:21.016978+00:00",
     "source": "AI News",
     "youtube_id": "l9ViHDObpew",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/htx-faces-scrutiny-after-unexplained-usdt-transfers-hit-users": {
+    "title": "HTX Faces Scrutiny After Unexplained USDT Transfers Hit Users",
+    "date_covered": "2026-08-19T12:51:06.620352+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "xKK01HRDKbY",
     "tiktok_id": null
   }
 }
