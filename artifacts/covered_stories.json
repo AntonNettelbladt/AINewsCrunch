@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/kimi-k3-open-weight-model-memory-compute-china/": {
-    "title": "Kimi K3 open-weight model: China’s biggest AI is a bet on memory, not compute",
-    "date_covered": "2026-07-20T14:02:00.943477+00:00",
-    "source": "AI News",
-    "youtube_id": "tcaONDgeRsk",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/siggraph-news-2026/": {
     "title": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
     "date_covered": "2026-07-20T18:03:19.619485+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-19T12:51:06.620352+00:00",
     "source": "Analytics Insight",
     "youtube_id": "xKK01HRDKbY",
+    "tiktok_id": null
+  },
+  "https://github.com/vixhal-baraiya/microgpt-c": {
+    "title": "GitHub - vixhal-baraiya/microgpt-c: The most atomic way to train and inference a GPT in pure, dependency-free C",
+    "date_covered": "2026-08-19T16:34:42.623192+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "roJAsZFkQPE",
     "tiktok_id": null
   }
 }
