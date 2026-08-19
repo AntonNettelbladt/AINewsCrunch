@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/siggraph-news-2026/": {
-    "title": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
-    "date_covered": "2026-07-20T18:03:19.619485+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Uw7NBF57Rsw",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/how-to-check-if-chatgpt-ai-tools-cite-website-improve-chances/": {
     "title": "How to check if ChatGPT and other AI tools cite your website - and improve your chances in 2026",
     "date_covered": "2026-07-20T21:11:50.853640+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-19T16:34:42.623192+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "roJAsZFkQPE",
+    "tiktok_id": null
+  },
+  "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/": {
+    "title": "How a joke domain purchase turned in geopolitical warfare",
+    "date_covered": "2026-08-19T20:28:29.409941+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "XSaY1lcm-rg",
     "tiktok_id": null
   }
 }
