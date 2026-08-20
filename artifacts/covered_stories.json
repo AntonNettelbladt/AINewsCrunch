@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/": {
-    "title": "Built for Vera Rubin, NVIDIA Spectrum-6 Arrives in Gigascale AI Factories",
-    "date_covered": "2026-07-21T17:18:40.192847+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "a8NKUBG36CE",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs/": {
     "title": "Google's Gemini 3.6 Flash targets enterprise agent token costs",
     "date_covered": "2026-07-21T21:08:09.668592+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-20T16:34:37.149212+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/honeybook-bets-on-agentic-ai-to-streamline-small-business-operations-with-its-new-claude-connector/": {
+    "title": "HoneyBook bets on agentic AI to streamline small business operations with its new Claude connector",
+    "date_covered": "2026-08-20T20:27:46.589610+00:00",
+    "source": "AI News",
+    "youtube_id": "J3L4Mmkc57Y",
     "tiktok_id": null
   }
 }
