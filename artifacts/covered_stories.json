@@ -1,11 +1,4 @@
 {
-  "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63": {
-    "title": "Judge approves a $1.5B Anthropic settlement over pirated books used to train the Claude chatbot",
-    "date_covered": "2026-07-22T02:14:17.180486+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ZTvYZxuPDrM",
-    "tiktok_id": null
-  },
   "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
     "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
     "date_covered": "2026-07-22T06:29:19.056295+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-21T01:06:12.827460+00:00",
     "source": "AI News",
     "youtube_id": "4VslZQmSVSc",
+    "tiktok_id": null
+  },
+  "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/": {
+    "title": "Artificial Intelligence Policy",
+    "date_covered": "2026-08-21T04:37:29.466045+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wGcUT9P4_A4",
     "tiktok_id": null
   }
 }
