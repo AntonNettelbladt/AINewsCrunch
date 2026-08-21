@@ -1,11 +1,4 @@
 {
-  "https://www.airbus.com/en/newsroom/press-releases/2026-07-airbus-launches-new-flight-test-programme-for-wing-of-tomorrow": {
-    "title": "Airbus launches new flight test programme for Wing of Tomorrow",
-    "date_covered": "2026-07-22T17:18:35.020145+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "95eN_xiADpA",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/i-tried-fine-tuning-a-robot-ai-model-on-colab-here-is-what-worked/": {
     "title": "I Tried Fine-Tuning a Robot AI Model on Colab. Here Is What Worked",
     "date_covered": "2026-07-22T21:06:14.310841+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-21T16:32:00.577047+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "kT2olNJt0qQ",
+    "tiktok_id": null
+  },
+  "https://github.com/adnanakil/nobuzz/blob/main/README.md": {
+    "title": "nobuzz/README.md at main · adnanakil/nobuzz",
+    "date_covered": "2026-08-21T20:24:57.780320+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
