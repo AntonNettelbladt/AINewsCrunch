@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs/": {
-    "title": "Google's Gemini 3.6 Flash targets enterprise agent token costs",
-    "date_covered": "2026-07-21T21:08:09.668592+00:00",
-    "source": "AI News",
-    "youtube_id": "FuXiiI0AZKY",
-    "tiktok_id": null
-  },
   "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63": {
     "title": "Judge approves a $1.5B Anthropic settlement over pirated books used to train the Claude chatbot",
     "date_covered": "2026-07-22T02:14:17.180486+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-20T20:27:46.589610+00:00",
     "source": "AI News",
     "youtube_id": "J3L4Mmkc57Y",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/agentic-ai-in-government-uae-classification/": {
+    "title": "Agentic AI in government: the UAE decides what machines decide",
+    "date_covered": "2026-08-21T01:06:12.827460+00:00",
+    "source": "AI News",
+    "youtube_id": "4VslZQmSVSc",
     "tiktok_id": null
   }
 }
