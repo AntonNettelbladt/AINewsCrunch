@@ -1,11 +1,4 @@
 {
-  "https://openaim.pramit.gg/": {
-    "title": "OpenAim",
-    "date_covered": "2026-07-22T10:26:20.295708+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "r7rar6UaJqQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/sensetimes-galaxy-project-targets-domestic-ai-chip-scale-up/": {
     "title": "SenseTime's Galaxy Project targets domestic AI chip scale-up",
     "date_covered": "2026-07-22T13:45:18.584706+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-21T08:39:56.477851+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hdmj9Ze03sA",
+    "tiktok_id": null
+  },
+  "https://annas-archive.pk/blog/physical-destruction.html": {
+    "title": "AI companies destroy physical books — let’s scan rare books before it’s too late",
+    "date_covered": "2026-08-21T12:41:19.489367+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "LfHUDkKUMHU",
     "tiktok_id": null
   }
 }
