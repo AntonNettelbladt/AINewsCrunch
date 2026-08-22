@@ -1,11 +1,4 @@
 {
-  "https://simonwillison.net/2026/Jul/22/openai-cyberattack/": {
-    "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
-    "date_covered": "2026-07-23T17:24:24.860781+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "_RHPc8-LryI",
-    "tiktok_id": null
-  },
   "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16": {
     "title": "DARPA, U.S. Air Force fly AI-controlled F-16",
     "date_covered": "2026-07-23T21:02:11.336952+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-22T16:23:39.153892+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "DDv_8tYRamU",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/i-cant-stop-80-of-developers-find-ai-coding-more-addictive-than-helpful/": {
+    "title": "'I can't stop': 80% of developers find AI coding more addictive than helpful",
+    "date_covered": "2026-08-22T20:23:24.251652+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "mu5AURvz8hg",
     "tiktok_id": null
   }
 }
