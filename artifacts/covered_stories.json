@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/nvidia-bets-physical-ai-solve-healthcare-robotics-data-problem/": {
-    "title": "Nvidia bets physical AI can solve healthcare robotics' data problem",
-    "date_covered": "2026-07-23T13:51:14.780553+00:00",
-    "source": "AI News",
-    "youtube_id": "gKGiGXQxQCE",
-    "tiktok_id": null
-  },
   "https://simonwillison.net/2026/Jul/22/openai-cyberattack/": {
     "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
     "date_covered": "2026-07-23T17:24:24.860781+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-22T08:27:38.641380+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "XsvHSLmEGUY",
+    "tiktok_id": null
+  },
+  "https://nostarch.com/embedded-ai": {
+    "title": "Embedded AI",
+    "date_covered": "2026-08-22T16:23:39.153892+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "DDv_8tYRamU",
     "tiktok_id": null
   }
 }
