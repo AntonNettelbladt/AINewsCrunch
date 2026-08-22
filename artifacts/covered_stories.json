@@ -1,11 +1,4 @@
 {
-  "https://www.cole-k.com/2026/07/21/reddit/": {
-    "title": "So Reddit has decided that plain HTML is unsafe",
-    "date_covered": "2026-07-23T02:26:29.102363+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "_bzOIgdExyM",
-    "tiktok_id": null
-  },
   "https://petals.dev/": {
     "title": "Petals – Run LLMs at home, BitTorrent-style",
     "date_covered": "2026-07-23T06:31:57.313161+00:00",
@@ -1173,6 +1166,13 @@
     "date_covered": "2026-08-22T01:03:47.102874+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "NZgDfypgY8M",
+    "tiktok_id": null
+  },
+  "https://medicine.washu.edu/news/how-early-life-stress-leaves-a-scar-inside-brain-cells/": {
+    "title": "How early-life stress leaves a ‘scar’ inside brain cells – WashU Medicine",
+    "date_covered": "2026-08-22T04:32:50.108892+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "8eKpMhPSSQA",
     "tiktok_id": null
   }
 }
