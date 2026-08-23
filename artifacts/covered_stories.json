@@ -1,11 +1,4 @@
 {
-  "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16": {
-    "title": "DARPA, U.S. Air Force fly AI-controlled F-16",
-    "date_covered": "2026-07-23T21:02:11.336952+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "3P_6Bmlu2Mo",
-    "tiktok_id": null
-  },
   "https://github.com/palmier-io/palmier-pro": {
     "title": "GitHub - palmier-io/palmier-pro: macOS video editor built for AI",
     "date_covered": "2026-07-24T02:17:40.751145+00:00",
@@ -1166,6 +1159,13 @@
     "date_covered": "2026-08-22T20:23:24.251652+00:00",
     "source": "ZDNet AI",
     "youtube_id": "mu5AURvz8hg",
+    "tiktok_id": null
+  },
+  "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/": {
+    "title": "Quick impressions: A week of using Codex more than Claude",
+    "date_covered": "2026-08-23T01:06:38.641870+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "rfSKCeA-Ve4",
     "tiktok_id": null
   }
 }
