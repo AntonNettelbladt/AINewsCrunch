@@ -1,11 +1,4 @@
 {
-  "https://openai.com/index/health-in-chatgpt/": {
-    "title": "Launching Health in ChatGPT",
-    "date_covered": "2026-07-24T13:31:40.718138+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "8TdSV2pvxbs",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/openai-pushes-chatgpt-into-patient-health-records/": {
     "title": "OpenAI pushes ChatGPT into patient health records",
     "date_covered": "2026-07-24T17:30:31.877985+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-23T04:39:07.499393+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "vL6cCIv4EtA",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/pixel-watch-4-vs-pixel-watch-5/": {
+    "title": "Pixel Watch 4 vs. Pixel Watch 5: Is Google's new model worth it? It comes down to this",
+    "date_covered": "2026-08-23T16:24:27.337654+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "6qoJpVZarrE",
     "tiktok_id": null
   }
 }
