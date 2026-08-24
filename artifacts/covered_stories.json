@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/wistron-manufacturing-texas/": {
-    "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
-    "date_covered": "2026-07-25T13:19:54.427899+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "Cis2uehkdng",
-    "tiktok_id": null
-  },
   "https://www.coindesk.com/markets/2026/07/24/brazilian-farmers-tokenized-dairy-cows-to-get-loans-bypassing-bank-lending-limits": {
     "title": "Struggling farmers unlock $20,000 in credit by putting cows on the blockchain",
     "date_covered": "2026-07-25T16:57:19.808068+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-24T12:44:37.455299+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Kc9-wvAIk6A",
+    "tiktok_id": null
+  },
+  "https://larsfaye.com/articles/ai-coding-will-prevent-expertise": {
+    "title": "AI Coding will Prevent Expertise",
+    "date_covered": "2026-08-24T16:36:09.187106+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Bvysnz3p0Kw",
     "tiktok_id": null
   }
 }
