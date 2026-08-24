@@ -1,11 +1,4 @@
 {
-  "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html": {
-    "title": "Nvidia, Microsoft, Meta warn against 'premature restrictions' of open-weight models",
-    "date_covered": "2026-07-24T21:04:23.477909+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "3QJljAXMoXo",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/": {
     "title": "NVIDIA and Partners Build in America, for America",
     "date_covered": "2026-07-25T02:17:13.810595+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-23T20:22:08.868649+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "8gEXeR-t_lk",
+    "tiktok_id": null
+  },
+  "https://www.cntraveler.com/story/this-rural-village-in-spain-is-welcoming-digital-nomads-with-open-arms": {
+    "title": "This Rural Village in Spain is Welcoming Digital Nomads With Open Arms",
+    "date_covered": "2026-08-24T01:04:47.149742+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "eJ026f594Ck",
     "tiktok_id": null
   }
 }
