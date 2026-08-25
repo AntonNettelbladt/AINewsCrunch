@@ -1,11 +1,4 @@
 {
-  "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices": {
-    "title": "GrapheneOS protections against data extraction from locked devices",
-    "date_covered": "2026-07-26T13:15:04.701268+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "1ZC-DJ_Cg0g",
-    "tiktok_id": null
-  },
   "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/": {
     "title": "London Gatwick introduces robotic parking service",
     "date_covered": "2026-07-26T16:59:07.399390+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-25T12:42:44.362075+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "lbqiaoe7eVY",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/mit-ai-forecasts-extreme-weather-without-historical-data/": {
+    "title": "MIT AI forecasts extreme weather without historical data",
+    "date_covered": "2026-08-25T16:36:05.135234+00:00",
+    "source": "AI News",
+    "youtube_id": "vo7OXCQ9slw",
     "tiktok_id": null
   }
 }
