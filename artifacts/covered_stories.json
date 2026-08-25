@@ -1,11 +1,4 @@
 {
-  "https://www.debian.org/vote/2026/vote_002": {
-    "title": "General Resolution: LLM usage in Debian",
-    "date_covered": "2026-07-26T06:38:46.340132+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ovGGKO6XSNw",
-    "tiktok_id": null
-  },
   "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality": {
     "title": "What is really happening to jobs? Separating AI hype from reality",
     "date_covered": "2026-07-26T09:59:55.461757+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-25T04:41:09.750393+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "EDSxebZQEzo",
+    "tiktok_id": null
+  },
+  "https://www.zdnet.com/article/businesses-must-reinvent-their-processes-and-workforce-to-scale-agentic-ai-adoption/": {
+    "title": "Businesses must reinvent their processes and workforce to scale agentic AI adoption",
+    "date_covered": "2026-08-25T08:40:48.722616+00:00",
+    "source": "ZDNet AI",
+    "youtube_id": "HFRyTtBZgvI",
     "tiktok_id": null
   }
 }
