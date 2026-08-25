@@ -1,11 +1,4 @@
 {
-  "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality": {
-    "title": "What is really happening to jobs? Separating AI hype from reality",
-    "date_covered": "2026-07-26T09:59:55.461757+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Xo6lJnh8-1U",
-    "tiktok_id": null
-  },
   "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices": {
     "title": "GrapheneOS protections against data extraction from locked devices",
     "date_covered": "2026-07-26T13:15:04.701268+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-25T08:40:48.722616+00:00",
     "source": "ZDNet AI",
     "youtube_id": "HFRyTtBZgvI",
+    "tiktok_id": null
+  },
+  "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/": {
+    "title": "Microsoft Paint and Photos Embed Server-Issued GUIDs as Invisible Watermarks in Locally-Generated Images",
+    "date_covered": "2026-08-25T12:42:44.362075+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "lbqiaoe7eVY",
     "tiktok_id": null
   }
 }
