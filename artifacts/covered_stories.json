@@ -1,11 +1,4 @@
 {
-  "https://www.law.uchicago.edu/news/ai-strategy-statement": {
-    "title": "Rethinking Legal Education in the AI Era",
-    "date_covered": "2026-07-26T02:27:23.188265+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "2sthYp3GAHU",
-    "tiktok_id": null
-  },
   "https://www.debian.org/vote/2026/vote_002": {
     "title": "General Resolution: LLM usage in Debian",
     "date_covered": "2026-07-26T06:38:46.340132+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-25T01:05:20.741099+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "NpOzKV_ZjN0",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/": {
+    "title": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
+    "date_covered": "2026-08-25T04:41:09.750393+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "EDSxebZQEzo",
     "tiktok_id": null
   }
 }
