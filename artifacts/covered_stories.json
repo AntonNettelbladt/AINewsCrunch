@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/open-secure-ai-alliance/": {
-    "title": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
-    "date_covered": "2026-07-27T11:20:55.439237+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "b7WUv2IfUqM",
-    "tiktok_id": null
-  },
   "https://xcancel.com/HedgieMarkets/status/2081534588485296565": {
     "title": "Hedgie (@HedgieMarkets)",
     "date_covered": "2026-07-27T14:29:30.938929+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-26T08:42:55.851773+00:00",
     "source": "Analytics Insight",
     "youtube_id": "mNwcKdREpWY",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/": {
+    "title": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
+    "date_covered": "2026-08-26T12:47:25.131393+00:00",
+    "source": "Wired AI",
+    "youtube_id": "rRHqH-zyf28",
     "tiktok_id": null
   }
 }
