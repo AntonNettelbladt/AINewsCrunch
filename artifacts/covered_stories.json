@@ -1,18 +1,4 @@
 {
-  "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/": {
-    "title": "Introducing MAI-Cyber-1-Flash inside MDASH",
-    "date_covered": "2026-07-27T17:45:10.269751+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "jlwwyTEQ1co",
-    "tiktok_id": null
-  },
-  "https://www.techspot.com/news/113243-professor-invisible-prompt-trap-catches-32-students-cheating.html": {
-    "title": "Professor's invisible prompt trap catches 32 students cheating on their midterm with AI",
-    "date_covered": "2026-07-27T21:10:54.106235+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ajOgoVmneog",
-    "tiktok_id": null
-  },
   "https://telnyx.com/release-notes/kimi-k3-telnyx-inference": {
     "title": "Kimi K3 Now Available on Telnyx Inference",
     "date_covered": "2026-07-28T02:10:45.506188+00:00",
@@ -1152,6 +1138,13 @@
     "date_covered": "2026-08-26T16:49:48.249618+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "c-aJPkMU8yw",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/bankchain-alliance-plans-shared-blockchain-for-us-community-banks": {
+    "title": "BankChain Alliance Plans Shared Blockchain for U.S. Community Banks",
+    "date_covered": "2026-08-26T22:46:19.524191+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "DIFheqECga0",
     "tiktok_id": null
   }
 }
