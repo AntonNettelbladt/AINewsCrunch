@@ -1,11 +1,4 @@
 {
-  "https://xcancel.com/HedgieMarkets/status/2081534588485296565": {
-    "title": "Hedgie (@HedgieMarkets)",
-    "date_covered": "2026-07-27T14:29:30.938929+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "fALsxa2dL5M",
-    "tiktok_id": null
-  },
   "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/": {
     "title": "Introducing MAI-Cyber-1-Flash inside MDASH",
     "date_covered": "2026-07-27T17:45:10.269751+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-26T12:47:25.131393+00:00",
     "source": "Wired AI",
     "youtube_id": "rRHqH-zyf28",
+    "tiktok_id": null
+  },
+  "https://www.ssp.sh/brain/using-obsidian-with-ai/": {
+    "title": "Keep AI Out of Your (Obsidian) Vault",
+    "date_covered": "2026-08-26T16:49:48.249618+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "c-aJPkMU8yw",
     "tiktok_id": null
   }
 }
