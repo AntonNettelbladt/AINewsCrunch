@@ -1,11 +1,4 @@
 {
-  "https://davidnicholaswilliams.com/its-not-empowering-to-hand-off-the-details/": {
-    "title": "David Nicholas Williams",
-    "date_covered": "2026-07-26T20:58:23.601739+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "rP5TYyruxYU",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/vera-cpu-eda/": {
     "title": "NVIDIA Harnesses Vera CPU to Speed Up Design of Next-Generation CPUs and GPUs",
     "date_covered": "2026-07-27T02:35:38.227227+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-25T20:30:04.592063+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "imrFcUhkVs0",
+    "tiktok_id": null
+  },
+  "https://github.com/swimmingbrain/texbrain": {
+    "title": "GitHub - swimmingbrain/texbrain: FOSS browser-based latex editor with live preview, real-time collaboration, and git integration.",
+    "date_covered": "2026-08-26T01:05:56.742097+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "yX9_tHc4Zxs",
     "tiktok_id": null
   }
 }
