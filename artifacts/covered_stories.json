@@ -1,11 +1,4 @@
 {
-  "https://www.techspot.com/news/113236-us-prosecutors-charge-atlanta-man-after-grapheneos-phone.html": {
-    "title": "US prosecutors charge Atlanta man after GrapheneOS phone wipes itself during airport search",
-    "date_covered": "2026-07-27T07:03:31.776170+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MiNC_JaHIss",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/open-secure-ai-alliance/": {
     "title": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
     "date_covered": "2026-07-27T11:20:55.439237+00:00",
@@ -1152,6 +1145,13 @@
     "date_covered": "2026-08-26T04:41:03.794784+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "AbwdCCBaULI",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/ai-feedback-loops-explained-how-artificial-intelligence-learns-improves": {
+    "title": "AI Feedback Loops Explained: How Artificial Intelligence Learns, Improves",
+    "date_covered": "2026-08-26T08:42:55.851773+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "mNwcKdREpWY",
     "tiktok_id": null
   }
 }
