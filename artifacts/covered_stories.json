@@ -1,11 +1,4 @@
 {
-  "https://telnyx.com/release-notes/kimi-k3-telnyx-inference": {
-    "title": "Kimi K3 Now Available on Telnyx Inference",
-    "date_covered": "2026-07-28T02:10:45.506188+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "tKBy4TMIE7A",
-    "tiktok_id": null
-  },
   "https://blog.coderspirit.xyz/blog/2026/07/06/securing-services-with-rootless-containers/": {
     "title": "Securing services with Rootless Containers",
     "date_covered": "2026-07-28T06:59:54.558420+00:00",
@@ -1145,6 +1138,13 @@
     "date_covered": "2026-08-26T22:46:19.524191+00:00",
     "source": "Analytics Insight",
     "youtube_id": "DIFheqECga0",
+    "tiktok_id": null
+  },
+  "https://github.com/SenteLabsAI/OpenExecutive": {
+    "title": "GitHub - SenteLabsAI/OpenExecutive: AI-powered virtual executive team — a single coherent executive persona backed by 8 specialist Claude agents (FastAPI + Next.js).",
+    "date_covered": "2026-08-27T07:00:45.170138+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FAkq_Kzf-aE",
     "tiktok_id": null
   }
 }
