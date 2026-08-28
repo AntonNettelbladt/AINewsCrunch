@@ -1,18 +1,4 @@
 {
-  "https://www.zdnet.com/article/remap-copilot-key/": {
-    "title": "How to remap the Copilot key on your keyboard to something more helpful",
-    "date_covered": "2026-07-28T21:09:04.395063+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "gZz67JoXgz4",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/guardoc-health-processes-clinical-documentation-using-amazon-nova-models/": {
-    "title": "Guardoc Health processes clinical documentation using Amazon Nova models",
-    "date_covered": "2026-07-29T02:13:11.681308+00:00",
-    "source": "AI News",
-    "youtube_id": "G4F2hn1MIug",
-    "tiktok_id": null
-  },
   "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html": {
     "title": "Truth is not a direction: a Tarski attack on LLM probes",
     "date_covered": "2026-07-29T06:31:59.346249+00:00",
@@ -1124,6 +1110,13 @@
     "date_covered": "2026-08-27T18:51:26.633095+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/": {
+    "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+    "date_covered": "2026-08-28T04:05:00.956339+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "QfFbyCqkxsk",
     "tiktok_id": null
   }
 }
