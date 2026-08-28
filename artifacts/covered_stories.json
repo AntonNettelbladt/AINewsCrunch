@@ -1,25 +1,4 @@
 {
-  "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html": {
-    "title": "Truth is not a direction: a Tarski attack on LLM probes",
-    "date_covered": "2026-07-29T06:31:59.346249+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "GfywJW7QOtc",
-    "tiktok_id": null
-  },
-  "https://www.bbc.co.uk/news/articles/c2el319vzr3o": {
-    "title": "OpenAI says its rogue AI tried to hack other companies",
-    "date_covered": "2026-07-29T10:39:50.510932+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "C0JIiXDuR3k",
-    "tiktok_id": null
-  },
-  "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/": {
-    "title": "Context Collapse, Part 3 - AI Worming through Word",
-    "date_covered": "2026-07-29T14:03:56.928964+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "7Tqy3em5DbA",
-    "tiktok_id": null
-  },
   "https://www.newscientist.com/article/2580119-hunter-gatherers-introduced-fish-to-a-mountain-lake-7000-years-ago/": {
     "title": "Hunter-gatherers introduced fish to a mountain lake 7000 years ago",
     "date_covered": "2026-07-29T17:15:09.053174+00:00",
@@ -1117,6 +1096,13 @@
     "date_covered": "2026-08-28T04:05:00.956339+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "QfFbyCqkxsk",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight/": {
+    "title": "Gatik raises $200M to scale AI-powered autonomous freight",
+    "date_covered": "2026-08-28T16:34:59.160042+00:00",
+    "source": "AI News",
+    "youtube_id": "TviqrMZU3uI",
     "tiktok_id": null
   }
 }
