@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/": {
-    "title": "OpenAI aligns safety practices with EU AI Act's GPAI Code",
-    "date_covered": "2026-07-31T17:30:11.835776+00:00",
-    "source": "AI News",
-    "youtube_id": "WX8lmUsdSqM",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/anthropic-claude-ai-hacked-organizations-during-security-tests/": {
     "title": "Not just OpenAI - Anthropic says Claude's hacking spree 'falls short of ideal behavior'",
     "date_covered": "2026-07-31T21:04:53.229590+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-08-30T16:01:16.982838+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "uAK77aiH4zQ",
+    "tiktok_id": null
+  },
+  "https://www.scientificamerican.com/article/electric-rain-can-eat-through-metal/": {
+    "title": "Electric rain can eat through metal",
+    "date_covered": "2026-08-30T19:06:15.633733+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mzcptYPksyE",
     "tiktok_id": null
   }
 }
