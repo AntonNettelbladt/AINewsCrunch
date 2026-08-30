@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/anthropic-claude-ai-hacked-organizations-during-security-tests/": {
-    "title": "Not just OpenAI - Anthropic says Claude's hacking spree 'falls short of ideal behavior'",
-    "date_covered": "2026-07-31T21:04:53.229590+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "chzb97l04O0",
-    "tiktok_id": null
-  },
   "https://tailscale.com/blog/hugging-face-intrusion": {
     "title": "Tailscale in the Hugging Face intrusion: The good news and the bad news",
     "date_covered": "2026-08-01T02:30:16.490889+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-08-30T19:06:15.633733+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "mzcptYPksyE",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/jensen-huang-rejects-bill-gates-plan-to-tax-ai-workplace-robots": {
+    "title": "Jensen Huang Rejects Bill Gates Plan to Tax AI, Workplace Robots",
+    "date_covered": "2026-08-30T22:25:28.094413+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "GKTY_QPpWms",
     "tiktok_id": null
   }
 }
