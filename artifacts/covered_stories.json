@@ -1,11 +1,4 @@
 {
-  "https://blog.jim-nielsen.com/2026/ai-aesthetic/": {
-    "title": "The AI Aesthetic",
-    "date_covered": "2026-07-31T02:27:21.877970+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YntsG4V6T_U",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/": {
     "title": "Zuckerberg explains Meta's personal AI superintelligence strategy",
     "date_covered": "2026-07-31T06:47:11.414169+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-08-29T22:21:07.430884+00:00",
     "source": "Wired AI",
     "youtube_id": "FspcuqrwX9U",
+    "tiktok_id": null
+  },
+  "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity": {
+    "title": "Good Culture is the Biggest Productivity Hack, Not AI",
+    "date_covered": "2026-08-30T03:20:50.545903+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "5wK4Rg8ACew",
     "tiktok_id": null
   }
 }
