@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/": {
-    "title": "Zuckerberg explains Meta's personal AI superintelligence strategy",
-    "date_covered": "2026-07-31T06:47:11.414169+00:00",
-    "source": "AI News",
-    "youtube_id": "Md3fCPva_Yw",
-    "tiktok_id": null
-  },
   "https://blog.google/security/chrome-stronger-with-every-update/": {
     "title": "Stronger with every update: How we’re making Chrome and the web safer in the AI Era",
     "date_covered": "2026-07-31T10:38:46.901447+00:00",
@@ -1075,6 +1068,13 @@
     "date_covered": "2026-08-30T03:20:50.545903+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "5wK4Rg8ACew",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots/": {
+    "title": "NVIDIA Jetson Orin Nano 2 brings physical AI to drones and robots",
+    "date_covered": "2026-08-30T09:46:18.570706+00:00",
+    "source": "AI News",
+    "youtube_id": "UE-9lUSK8RA",
     "tiktok_id": null
   }
 }
