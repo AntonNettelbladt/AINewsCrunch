@@ -1,18 +1,4 @@
 {
-  "https://blog.google/security/chrome-stronger-with-every-update/": {
-    "title": "Stronger with every update: How we’re making Chrome and the web safer in the AI Era",
-    "date_covered": "2026-07-31T10:38:46.901447+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "cPGy1JJfGaA",
-    "tiktok_id": null
-  },
-  "https://whatever.scalzi.com/2026/07/31/another-reason-not-to-use-ai-for-your-writing/": {
-    "title": "Another Reason Not to Use “AI” For Your Writing",
-    "date_covered": "2026-07-31T13:57:20.431779+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "p1HXeosVx8A",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/": {
     "title": "OpenAI aligns safety practices with EU AI Act's GPAI Code",
     "date_covered": "2026-07-31T17:30:11.835776+00:00",
@@ -1075,6 +1061,13 @@
     "date_covered": "2026-08-30T09:46:18.570706+00:00",
     "source": "AI News",
     "youtube_id": "UE-9lUSK8RA",
+    "tiktok_id": null
+  },
+  "https://askmike.org/articles/ai-coding-lessons-in-the-90s-from-my-dad/": {
+    "title": "What my dad taught me about AI coding in the 90s",
+    "date_covered": "2026-08-30T16:01:16.982838+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "uAK77aiH4zQ",
     "tiktok_id": null
   }
 }
