@@ -1,18 +1,4 @@
 {
-  "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/": {
-    "title": "Is AI Reasoning Right for the Wrong Reasons?",
-    "date_covered": "2026-08-01T06:29:30.955403+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "_q8kdoJNTpc",
-    "tiktok_id": null
-  },
-  "https://weeraman.com/the-prototype-isnt-the-product/": {
-    "title": "The Prototype Isn't the Product",
-    "date_covered": "2026-08-01T09:59:39.703944+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ikA9IaMODLw",
-    "tiktok_id": null
-  },
   "https://alexiglad.github.io/blog/2026/explorative_modeling/": {
     "title": "Explorative Modeling -- Unlocking a Third Pretraining Axis and End-to-End Generation",
     "date_covered": "2026-08-01T17:01:00.234442+00:00",
@@ -1068,6 +1054,13 @@
     "date_covered": "2026-08-31T03:14:41.744139+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "FxUP_BpdnGw",
+    "tiktok_id": null
+  },
+  "https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails": {
+    "title": "Meta Security Researcher's AI Agent Accidentally Deleted Her Emails",
+    "date_covered": "2026-08-31T10:31:13.380699+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "5PRzAHTr3Oc",
     "tiktok_id": null
   }
 }
