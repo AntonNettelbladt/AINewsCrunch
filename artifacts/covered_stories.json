@@ -1,11 +1,4 @@
 {
-  "https://tailscale.com/blog/hugging-face-intrusion": {
-    "title": "Tailscale in the Hugging Face intrusion: The good news and the bad news",
-    "date_covered": "2026-08-01T02:30:16.490889+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "MQVbzURKByE",
-    "tiktok_id": null
-  },
   "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/": {
     "title": "Is AI Reasoning Right for the Wrong Reasons?",
     "date_covered": "2026-08-01T06:29:30.955403+00:00",
@@ -1068,6 +1061,13 @@
     "date_covered": "2026-08-30T22:25:28.094413+00:00",
     "source": "Analytics Insight",
     "youtube_id": "GKTY_QPpWms",
+    "tiktok_id": null
+  },
+  "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/": {
+    "title": "Understanding ChatGPT Work",
+    "date_covered": "2026-08-31T03:14:41.744139+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "FxUP_BpdnGw",
     "tiktok_id": null
   }
 }
