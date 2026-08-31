@@ -1,11 +1,4 @@
 {
-  "https://alexiglad.github.io/blog/2026/explorative_modeling/": {
-    "title": "Explorative Modeling -- Unlocking a Third Pretraining Axis and End-to-End Generation",
-    "date_covered": "2026-08-01T17:01:00.234442+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "wkP51x1v8pY",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/windows-installation-files-getting-bigger-blame-ai/": {
     "title": "Why your Windows installation files keep getting bigger - AI is filling up smaller drives",
     "date_covered": "2026-08-01T20:49:58.277695+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-08-31T10:31:13.380699+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "5PRzAHTr3Oc",
+    "tiktok_id": null
+  },
+  "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/": {
+    "title": "Apple Caught Off Guard by AI Demand for Mac Mini and Mac Studio",
+    "date_covered": "2026-08-31T18:44:45.677182+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "YZHYwNDI-cA",
     "tiktok_id": null
   }
 }
