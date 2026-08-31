@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/windows-installation-files-getting-bigger-blame-ai/": {
-    "title": "Why your Windows installation files keep getting bigger - AI is filling up smaller drives",
-    "date_covered": "2026-08-01T20:49:58.277695+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "4lfB5Nx-nQ4",
-    "tiktok_id": null
-  },
   "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions": {
     "title": "AI financial advice is surprisingly good — especially if you ask the right questions",
     "date_covered": "2026-08-02T02:25:47.355803+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-08-31T18:44:45.677182+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YZHYwNDI-cA",
+    "tiktok_id": null
+  },
+  "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/": {
+    "title": "Breaking Claude Code Opus 5 Auto Mode · Embrace The Red",
+    "date_covered": "2026-08-31T23:41:43.694447+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "MvwC5WJEKfQ",
     "tiktok_id": null
   }
 }
