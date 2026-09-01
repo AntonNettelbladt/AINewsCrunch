@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/ai-in-formula-one-competitive-advantage-is-all-about-the-human-in-the-loop/": {
-    "title": "AI in Formula One: Competitive advantage is all about the human in the loop",
-    "date_covered": "2026-08-02T16:58:58.924579+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "Qk0QrN9KBhA",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/the-python-ecosystem-that-changed-ai-development/": {
     "title": "The Python Ecosystem That Changed AI Development",
     "date_covered": "2026-08-03T02:29:06.764460+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-01T16:06:07.351492+00:00",
     "source": "Analytics Insight",
     "youtube_id": "PkX38yyqvzs",
+    "tiktok_id": null
+  },
+  "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/": {
+    "title": "Dwarf Fortress creator says the industry's in shambles over AI and layoff-happy CEOs: 'Everyone I know, their bosses are slowly getting psychosis'",
+    "date_covered": "2026-09-01T19:31:20.279522+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "8LzJdDo9CC4",
     "tiktok_id": null
   }
 }
