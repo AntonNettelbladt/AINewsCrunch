@@ -1,11 +1,4 @@
 {
-  "https://epoch.ai/MirrorCode": {
-    "title": "MirrorCode: What's the largest software project AI can complete on its own? | Epoch AI",
-    "date_covered": "2026-08-03T17:52:42.267654+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "JzNv6l5RE-c",
-    "tiktok_id": null
-  },
   "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/": {
     "title": "SQLite Critical CVEs or LLM Slop?",
     "date_covered": "2026-08-03T21:04:22.123962+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-02T16:06:31.127142+00:00",
     "source": "Analytics Insight",
     "youtube_id": "iLegwGVB9kE",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit/": {
+    "title": "Trump Administration Sides With OpenAI in New York Times Copyright Lawsuit",
+    "date_covered": "2026-09-02T19:18:42.550297+00:00",
+    "source": "Wired AI",
+    "youtube_id": "kGAMW9K-6tY",
     "tiktok_id": null
   }
 }
