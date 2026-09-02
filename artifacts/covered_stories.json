@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/the-python-ecosystem-that-changed-ai-development/": {
-    "title": "The Python Ecosystem That Changed AI Development",
-    "date_covered": "2026-08-03T02:29:06.764460+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "oRUx0fB8gs0",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/us-proposes-ai-kill-switch-act-to-regulate-high-risk-ai": {
     "title": "US Proposes AI Kill Switch Act to Regulate High-Risk AI",
     "date_covered": "2026-08-03T07:01:36.422996+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-09-01T22:27:17.080872+00:00",
     "source": "Wired AI",
     "youtube_id": "94TiDwlKdFg",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/apple-vs-openai-new-circuit-plan-allegations-against-chang-liu": {
+    "title": "Apple vs OpenAI: New Circuit-Plan Allegations Against Chang Liu",
+    "date_covered": "2026-09-02T02:38:57.485536+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "RkVHQKOzU5g",
     "tiktok_id": null
   }
 }
