@@ -1,11 +1,4 @@
 {
-  "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/": {
-    "title": "SQLite Critical CVEs or LLM Slop?",
-    "date_covered": "2026-08-03T21:04:22.123962+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "zlGM13qN4ZU",
-    "tiktok_id": null
-  },
   "https://www.seangoedecke.com/llms-reward-expertise/": {
     "title": "LLMs reward expertise",
     "date_covered": "2026-08-04T02:08:45.448120+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-02T19:18:42.550297+00:00",
     "source": "Wired AI",
     "youtube_id": "kGAMW9K-6tY",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/your-json-is-valid-but-your-data-is-wrong-five-failure-modes-llm-structured-outputs-wont-catch/": {
+    "title": "Your JSON Is Valid but Your Data Is Wrong: Five Failure Modes LLM Structured Outputs Won't Catch",
+    "date_covered": "2026-09-02T22:26:05.470572+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "dxgnLq9aBaQ",
     "tiktok_id": null
   }
 }
