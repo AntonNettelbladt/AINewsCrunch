@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/us-proposes-ai-kill-switch-act-to-regulate-high-risk-ai": {
-    "title": "US Proposes AI Kill Switch Act to Regulate High-Risk AI",
-    "date_covered": "2026-08-03T07:01:36.422996+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "F5-GzTdhTn0",
-    "tiktok_id": null
-  },
   "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/": {
     "title": "Prevent cognitive debt by manually retyping LLM-generated code — Ankur Sethi's Lab Notebook",
     "date_covered": "2026-08-03T11:24:58.310267+00:00",
@@ -1061,6 +1054,13 @@
     "date_covered": "2026-09-02T02:38:57.485536+00:00",
     "source": "Analytics Insight",
     "youtube_id": "RkVHQKOzU5g",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/anthropic-launches-claude-fable-51-to-handle-long-complex-work": {
+    "title": "Anthropic Launches Claude Fable 5.1 to Handle Long, Complex Work",
+    "date_covered": "2026-09-02T08:27:03.893082+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "iWwuc3ChmH4",
     "tiktok_id": null
   }
 }
