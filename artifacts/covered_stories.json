@@ -1,11 +1,4 @@
 {
-  "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/": {
-    "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
-    "date_covered": "2026-08-04T21:12:04.163323+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Bqpl-iU-CSw",
-    "tiktok_id": null
-  },
   "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/": {
     "title": "Third-party cyber evaluations involving OpenAI models",
     "date_covered": "2026-08-05T02:07:09.651617+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-09-03T19:11:59.698168+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Nm882tBnp-k",
+    "tiktok_id": null
+  },
+  "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007": {
+    "title": "Go grandmaster Shin defeats AI KataGo in historic human victory",
+    "date_covered": "2026-09-03T22:16:38.922749+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "m59tBi0HjO8",
     "tiktok_id": null
   }
 }
