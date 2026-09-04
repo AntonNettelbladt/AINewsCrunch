@@ -1,11 +1,4 @@
 {
-  "https://naomibashkansky.com/blog/telepathy/": {
-    "title": "Why I’m leaving OpenAI to build telepathy",
-    "date_covered": "2026-08-05T21:08:40.258638+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "65dCAy-k7fs",
-    "tiktok_id": null
-  },
   "https://blog.fogus.me/llm/born-against.html": {
     "title": "Born Against, or why hobby programming communities are aggressively against LLM usage",
     "date_covered": "2026-08-06T02:12:11.544066+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-09-04T18:56:28.427800+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "D5xNQdB0bMY",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/mt-bank-enterprise-ai-15000-employees/": {
+    "title": "M&T Bank expands enterprise AI after years of technology overhaul",
+    "date_covered": "2026-09-04T22:08:29.998638+00:00",
+    "source": "AI News",
+    "youtube_id": "pKVzjwi3kac",
     "tiktok_id": null
   }
 }
