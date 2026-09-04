@@ -1,11 +1,4 @@
 {
-  "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/": {
-    "title": "The next chapter of our AI momentum",
-    "date_covered": "2026-08-05T17:29:14.278113+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "BJUwvKDAxz4",
-    "tiktok_id": null
-  },
   "https://naomibashkansky.com/blog/telepathy/": {
     "title": "Why I’m leaving OpenAI to build telepathy",
     "date_covered": "2026-08-05T21:08:40.258638+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-09-04T15:45:40.151986+00:00",
     "source": "Analytics Insight",
     "youtube_id": "LwiYcHlRrYU",
+    "tiktok_id": null
+  },
+  "https://collusion.wiki/": {
+    "title": "Discovery of a new OpenAI agent message board",
+    "date_covered": "2026-09-04T18:56:28.427800+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "D5xNQdB0bMY",
     "tiktok_id": null
   }
 }
