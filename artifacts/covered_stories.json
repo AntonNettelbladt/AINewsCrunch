@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/": {
-    "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
-    "date_covered": "2026-08-05T06:28:37.189257+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "2kpDCGHp-Zg",
-    "tiktok_id": null
-  },
   "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/": {
     "title": "AI fuels more than half of cybercrime in Africa as digital scams surge, INTERPOL",
     "date_covered": "2026-08-05T11:15:38.516345+00:00",
@@ -1047,6 +1040,13 @@
     "date_covered": "2026-09-04T02:42:52.098651+00:00",
     "source": "Wired AI",
     "youtube_id": "r70EejuVCs0",
+    "tiktok_id": null
+  },
+  "https://inference-docs.cerebras.ai/models/overview": {
+    "title": "Cerebras Inference",
+    "date_covered": "2026-09-04T08:33:11.484211+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "3I2vH3BaWcw",
     "tiktok_id": null
   }
 }
