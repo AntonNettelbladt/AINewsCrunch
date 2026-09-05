@@ -1041,5 +1041,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "YWVFKxxVhcY",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/": {
+    "title": "Sparks Fly: NVIDIA Accelerates Local AI at IFA 2026",
+    "date_covered": "2026-09-05T18:00:01.770865+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "GDX7YZPun3I",
+    "tiktok_id": null
   }
 }
