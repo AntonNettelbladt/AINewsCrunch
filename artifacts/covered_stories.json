@@ -1,11 +1,4 @@
 {
-  "https://blog.fogus.me/llm/born-against.html": {
-    "title": "Born Against, or why hobby programming communities are aggressively against LLM usage",
-    "date_covered": "2026-08-06T02:12:11.544066+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "E2kJS0FvJKs",
-    "tiktok_id": null
-  },
   "https://github.com/pradipta/wallfacer": {
     "title": "GitHub - pradipta/wallfacer: A terminal session manager for Claude Code, and more",
     "date_covered": "2026-08-06T06:30:17.012085+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-09-04T22:08:29.998638+00:00",
     "source": "AI News",
     "youtube_id": "pKVzjwi3kac",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/": {
+    "title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
+    "date_covered": "2026-09-05T02:44:02.610196+00:00",
+    "source": "Wired AI",
+    "youtube_id": "3BNoevL9eSs",
     "tiktok_id": null
   }
 }
