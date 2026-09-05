@@ -1048,5 +1048,12 @@
     "source": "NVIDIA Blog",
     "youtube_id": "GDX7YZPun3I",
     "tiktok_id": null
+  },
+  "https://sofiabelen.github.io/projects/visualizing-rusts-vtables-how-dyn-trait-works-in-memory/": {
+    "title": "Visualizing Rust's Vtables: How dyn Trait Works In Memory",
+    "date_covered": "2026-09-05T21:57:09.140578+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
+    "tiktok_id": null
   }
 }
