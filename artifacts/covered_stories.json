@@ -1,11 +1,4 @@
 {
-  "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/": {
-    "title": "New Orleans will use AI to answer 911 calls instead of a human",
-    "date_covered": "2026-08-07T08:57:54.400143+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "qaYq1oEl6vA",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/i-read-microsofts-windows-11-quality-progress-report-and-the-subtext-says-it-all/": {
     "title": "I read Microsoft's Windows 11 'quality' progress report - and the subtext says it all",
     "date_covered": "2026-08-07T16:54:46.642968+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-06T08:28:08.568576+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "TfM7zdLeKjU",
+    "tiktok_id": null
+  },
+  "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation": {
+    "title": "AI, tools and transformation — Benedict Evans",
+    "date_covered": "2026-09-06T14:55:03.127269+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Ag_15FQ7CkE",
     "tiktok_id": null
   }
 }
