@@ -1,11 +1,4 @@
 {
-  "https://scalex.dev/blog/ai-agent-permissions-stats/": {
-    "title": "Humans missed 1 in 3 threats approving AI agent commands across 40,000 plays",
-    "date_covered": "2026-08-07T00:56:53.524588+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "05TJIb6OlcE",
-    "tiktok_id": null
-  },
   "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/": {
     "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT‑5.6 Luna for free users",
     "date_covered": "2026-08-07T05:41:58.453141+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-05T21:57:09.140578+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://openai.robocurve.org/gpt-6-astra/": {
+    "title": "GPT‑6 Astra on robotic manipulation",
+    "date_covered": "2026-09-06T02:41:25.014706+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ZteYh5HP-zw",
     "tiktok_id": null
   }
 }
