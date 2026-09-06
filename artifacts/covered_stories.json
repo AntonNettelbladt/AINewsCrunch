@@ -1,11 +1,4 @@
 {
-  "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/": {
-    "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT‑5.6 Luna for free users",
-    "date_covered": "2026-08-07T05:41:58.453141+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "c__Y6qKfZ0Y",
-    "tiktok_id": null
-  },
   "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/": {
     "title": "New Orleans will use AI to answer 911 calls instead of a human",
     "date_covered": "2026-08-07T08:57:54.400143+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-06T02:41:25.014706+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ZteYh5HP-zw",
+    "tiktok_id": null
+  },
+  "https://lapcatsoftware.com/articles/2026/9/1.html": {
+    "title": "Chrome again exempts Google from user site data settings",
+    "date_covered": "2026-09-06T08:28:08.568576+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "TfM7zdLeKjU",
     "tiktok_id": null
   }
 }
