@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/china-ai-model-race-alibaba-deepseek-costs/": {
-    "title": "Alibaba, DeepSeek push China’s AI model race towards lower costs",
-    "date_covered": "2026-08-08T20:28:28.849060+00:00",
-    "source": "AI News",
-    "youtube_id": "VuJ1D3l0lE8",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/": {
     "title": "Firebird Launches CIS Region’s Largest AI Factory in Armenia",
     "date_covered": "2026-08-09T01:24:01.551209+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-09-07T17:14:34.039743+00:00",
     "source": "Analytics Insight",
     "youtube_id": "xNl2dBEeq0A",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/mg-ship-ai-route-optimisation-logistics-returns-accelerate/": {
+    "title": "MG Ship adds AI route optimisation as logistics returns accelerate",
+    "date_covered": "2026-09-07T22:33:44.928982+00:00",
+    "source": "AI News",
+    "youtube_id": "2Nn_ON_GLoM",
     "tiktok_id": null
   }
 }
