@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/my-fall-detection-model-scored-94-and-it-was-lying-to-me/": {
-    "title": "My Fall-Detection Model Scored 94%, and It Was Lying to Me",
-    "date_covered": "2026-08-08T01:20:37.559560+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "v6x0Fp4rbAg",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/": {
     "title": "Alibaba tests new business model for Qwen open-source AI",
     "date_covered": "2026-08-08T08:39:00.389589+00:00",
@@ -1054,6 +1047,13 @@
     "date_covered": "2026-09-06T22:01:12.804902+00:00",
     "source": "AI News",
     "youtube_id": "c09GTdCdJnA",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/": {
+    "title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
+    "date_covered": "2026-09-07T02:38:57.963837+00:00",
+    "source": "Wired AI",
+    "youtube_id": "0AXUWLa3v4M",
     "tiktok_id": null
   }
 }
