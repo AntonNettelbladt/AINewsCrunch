@@ -1,11 +1,4 @@
 {
-  "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/": {
-    "title": "How I use LLMs to learn complex topics · Laurentiu Raducu",
-    "date_covered": "2026-08-09T20:31:11.585837+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "0ZGYdhDcWBQ",
-    "tiktok_id": null
-  },
   "https://tuxedono2.com": {
     "title": "A Cocktail Companion",
     "date_covered": "2026-08-10T01:24:42.915935+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-09-08T19:18:47.947561+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "0wPos58gxRk",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-weather-forecasting-google-weathernext-3-energy/": {
+    "title": "AI weather forecasting enters the energy market as Google targets grid operators with WeatherNext 3",
+    "date_covered": "2026-09-08T22:26:02.293980+00:00",
+    "source": "AI News",
+    "youtube_id": "-EDQPF2wUIQ",
     "tiktok_id": null
   }
 }
