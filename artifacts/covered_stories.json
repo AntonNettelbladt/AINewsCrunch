@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/": {
-    "title": "Firebird Launches CIS Region’s Largest AI Factory in Armenia",
-    "date_covered": "2026-08-09T01:24:01.551209+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "IgqhfgDvOYI",
-    "tiktok_id": null
-  },
   "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/": {
     "title": "ChatGPT starts blocking direct requests to copy an author’s style",
     "date_covered": "2026-08-09T05:04:43.781257+00:00",
@@ -1040,6 +1033,13 @@
     "date_covered": "2026-09-07T22:33:44.928982+00:00",
     "source": "AI News",
     "youtube_id": "2Nn_ON_GLoM",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/": {
+    "title": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
+    "date_covered": "2026-09-08T02:52:06.090727+00:00",
+    "source": "Wired AI",
+    "youtube_id": "DFCrMlyYJho",
     "tiktok_id": null
   }
 }
