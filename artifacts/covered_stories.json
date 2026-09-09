@@ -1,11 +1,4 @@
 {
-  "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb": {
-    "title": "Humanising LLM Outputs is Dumb",
-    "date_covered": "2026-08-10T20:41:59.248092+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "dWnmQzBxnZM",
-    "tiktok_id": null
-  },
   "https://lwn.net/Articles/1034703/": {
     "title": "Tail-call optimization in C is relatively recent [LWN.net]",
     "date_covered": "2026-08-11T01:23:28.521699+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-09-09T19:07:55.929385+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "9dL0P7NNL0s",
+    "tiktok_id": null
+  },
+  "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3": {
+    "title": "HN: https://news.ycombinator.com/edit?id=49630026",
+    "date_covered": "2026-09-09T22:17:04.984076+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "yzjq-Nitbgk",
     "tiktok_id": null
   }
 }
