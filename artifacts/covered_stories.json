@@ -1,11 +1,4 @@
 {
-  "https://tuxedono2.com": {
-    "title": "A Cocktail Companion",
-    "date_covered": "2026-08-10T01:24:42.915935+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "QsUkfSI2fNo",
-    "tiktok_id": null
-  },
   "https://claude.com/blog/auto-mode-default-in-claude-code": {
     "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
     "date_covered": "2026-08-10T05:27:23.461612+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-09-08T22:26:02.293980+00:00",
     "source": "AI News",
     "youtube_id": "-EDQPF2wUIQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/arm-total-design-for-physical-ai-and-robotics-framework/": {
+    "title": "Arm launches Total Design for Physical AI and robotics framework",
+    "date_covered": "2026-09-09T02:53:06.690581+00:00",
+    "source": "AI News",
+    "youtube_id": "6Q9QYpt3Yvw",
     "tiktok_id": null
   }
 }
