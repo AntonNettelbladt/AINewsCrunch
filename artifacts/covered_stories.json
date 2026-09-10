@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/prism2-model-clinical-dialogue-interpret-pathology-slides/": {
-    "title": "PRISM2 model uses clinical dialogue to interpret pathology slides",
-    "date_covered": "2026-08-11T05:08:49.005501+00:00",
-    "source": "AI News",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content": {
     "title": "How Claude marks AI-generated content",
     "date_covered": "2026-08-11T08:55:20.883515+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-09-10T02:54:16.213881+00:00",
     "source": "Wired AI",
     "youtube_id": "84FO6XgYPsQ",
+    "tiktok_id": null
+  },
+  "https://www.thelec.net/news/articleView.html?idxno=12835": {
+    "title": "Samsung Debuts zHBM Prototype, Stacking Memory Directly on AI Accelerators < Semiconductor < 기사본문",
+    "date_covered": "2026-09-10T08:42:24.432830+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": null,
     "tiktok_id": null
   }
 }
