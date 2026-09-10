@@ -1,11 +1,4 @@
 {
-  "https://lwn.net/Articles/1034703/": {
-    "title": "Tail-call optimization in C is relatively recent [LWN.net]",
-    "date_covered": "2026-08-11T01:23:28.521699+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "bEepK-TND7E",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/prism2-model-clinical-dialogue-interpret-pathology-slides/": {
     "title": "PRISM2 model uses clinical dialogue to interpret pathology slides",
     "date_covered": "2026-08-11T05:08:49.005501+00:00",
@@ -1033,6 +1026,13 @@
     "date_covered": "2026-09-09T22:17:04.984076+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "yzjq-Nitbgk",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/anthropic-researcher-quits-jacob-coxon-ai-fears-humanity/": {
+    "title": "The AI Researcher Who Just Quit Anthropic Says It’s ‘Crunch Time for Humanity’",
+    "date_covered": "2026-09-10T02:54:16.213881+00:00",
+    "source": "Wired AI",
+    "youtube_id": "84FO6XgYPsQ",
     "tiktok_id": null
   }
 }
