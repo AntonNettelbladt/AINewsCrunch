@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron/": {
-    "title": "NVIDIA and Local AI Community Fuel Open Source Models and Intelligent Agents",
-    "date_covered": "2026-08-11T20:43:12.477407+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "L0yyLS0T0bU",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/": {
     "title": "Why Scaling AI Compute Performance Requires a New Power Architecture",
     "date_covered": "2026-08-12T01:33:16.270667+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-09-10T19:00:47.496703+00:00",
     "source": "AI News",
     "youtube_id": "hSW-g-6piZE",
+    "tiktok_id": null
+  },
+  "https://towardsdatascience.com/how-to-5x-your-communication-effectiveness-with-claude-code/": {
+    "title": "How to 5x Your Communication Effectiveness with Claude Code",
+    "date_covered": "2026-09-10T22:21:18.010166+00:00",
+    "source": "Towards Data Science",
+    "youtube_id": "lfx8l633BSs",
     "tiktok_id": null
   }
 }
