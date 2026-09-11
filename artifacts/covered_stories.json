@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/google-tests-amie-for-clinical-video-consultations/": {
-    "title": "Google tests AMIE for clinical video consultations",
-    "date_covered": "2026-08-12T16:58:53.511559+00:00",
-    "source": "AI News",
-    "youtube_id": "aemeoPwq31Q",
-    "tiktok_id": null
-  },
   "https://lovable.dev/blog/series-c": {
     "title": "We just raised $400M in Series C funding to help people run their businesses",
     "date_covered": "2026-08-12T20:43:16.731813+00:00",
@@ -1019,6 +1012,13 @@
     "date_covered": "2026-09-11T15:51:13.933126+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "1hkmjoNg2kY",
+    "tiktok_id": null
+  },
+  "https://github.com/kennethwolters/litelm": {
+    "title": "GitHub - kennethwolters/litelm: litellm without the bloat",
+    "date_covered": "2026-09-11T19:04:00.411118+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "LyQS1Lhbw7g",
     "tiktok_id": null
   }
 }
