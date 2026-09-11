@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/": {
-    "title": "Why Scaling AI Compute Performance Requires a New Power Architecture",
-    "date_covered": "2026-08-12T01:33:16.270667+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "rE8yF88g25c",
-    "tiktok_id": null
-  },
   "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/": {
     "title": "Company Offering ‘100% Human-Written, Never AI’ Medical Research Is Entirely AI",
     "date_covered": "2026-08-12T05:32:49.270378+00:00",
@@ -1026,6 +1019,13 @@
     "date_covered": "2026-09-10T22:21:18.010166+00:00",
     "source": "Towards Data Science",
     "youtube_id": "lfx8l633BSs",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/": {
+    "title": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
+    "date_covered": "2026-09-11T02:47:04.194252+00:00",
+    "source": "Wired AI",
+    "youtube_id": "3o_PXyitc0Y",
     "tiktok_id": null
   }
 }
