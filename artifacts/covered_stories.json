@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/okta-targets-ai-agent-token-costs-with-mcp-scoping/": {
-    "title": "Okta targets AI agent token costs with MCP scoping",
-    "date_covered": "2026-08-13T13:03:56.940974+00:00",
-    "source": "AI News",
-    "youtube_id": "jRv0HMBulIY",
-    "tiktok_id": null
-  },
   "https://www.quantamagazine.org/graduate-student-proves-the-fractal-uncertainty-principle-20260812/": {
     "title": "Graduate Student Proves the Fractal Uncertainty Principle",
     "date_covered": "2026-08-13T16:57:11.533967+00:00",
@@ -1019,6 +1012,13 @@
     "date_covered": "2026-09-12T08:24:32.240523+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "k09Ej0oPYnc",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/why-so-many-ai-researchers-think-the-machines-could-kill-everyone/": {
+    "title": "Why So Many AI Researchers Think the Machines Could Kill Everyone",
+    "date_covered": "2026-09-12T15:00:51.393544+00:00",
+    "source": "Wired AI",
+    "youtube_id": "fbyWa9Femz0",
     "tiktok_id": null
   }
 }
