@@ -1,11 +1,4 @@
 {
-  "https://tailscale.com/blog/sqlite-wal-reset-bug": {
-    "title": "How Tailscale helped find the SQLite WAL-Reset bug",
-    "date_covered": "2026-08-13T05:42:55.931358+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "iV20RXDYWe8",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/okta-targets-ai-agent-token-costs-with-mcp-scoping/": {
     "title": "Okta targets AI agent token costs with MCP scoping",
     "date_covered": "2026-08-13T13:03:56.940974+00:00",
@@ -1019,6 +1012,13 @@
     "date_covered": "2026-09-12T02:55:34.417829+00:00",
     "source": "AI News",
     "youtube_id": "aPqalH_Hm8E",
+    "tiktok_id": null
+  },
+  "https://www.rubyhack.ai/": {
+    "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+    "date_covered": "2026-09-12T08:24:32.240523+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "k09Ej0oPYnc",
     "tiktok_id": null
   }
 }
