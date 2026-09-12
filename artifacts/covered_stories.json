@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/": {
-    "title": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class",
-    "date_covered": "2026-08-13T01:35:04.539440+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "7NZKuGTMH5w",
-    "tiktok_id": null
-  },
   "https://tailscale.com/blog/sqlite-wal-reset-bug": {
     "title": "How Tailscale helped find the SQLite WAL-Reset bug",
     "date_covered": "2026-08-13T05:42:55.931358+00:00",
@@ -1019,6 +1012,13 @@
     "date_covered": "2026-09-11T22:15:56.027985+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "iUGdJgaZzuQ",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/samsung-mistral-ai-models-for-semiconductor-manufacturing/": {
+    "title": "Samsung taps Mistral AI models for semiconductor manufacturing",
+    "date_covered": "2026-09-12T02:55:34.417829+00:00",
+    "source": "AI News",
+    "youtube_id": "aPqalH_Hm8E",
     "tiktok_id": null
   }
 }
