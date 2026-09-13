@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/google-ai-health-coach-abbott-glucose-data/": {
-    "title": "Google AI health coach to use Abbott glucose data",
-    "date_covered": "2026-08-14T20:31:28.992292+00:00",
-    "source": "AI News",
-    "youtube_id": "-b6vGVfxC9w",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/chatgpt-computer-history/": {
     "title": "ChatGPT's new Computer History tracks your Mac activity to create a timeline - but should you let it?",
     "date_covered": "2026-08-15T01:03:29.367532+00:00",
@@ -1012,6 +1005,13 @@
     "date_covered": "2026-09-13T18:37:01.700309+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "tIbkhbV92t8",
+    "tiktok_id": null
+  },
+  "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/": {
+    "title": "AI’s recursive self-improvement might not come so quickly after all",
+    "date_covered": "2026-09-13T22:07:47.885804+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "GEI17qhqzkU",
     "tiktok_id": null
   }
 }
