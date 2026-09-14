@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/chatgpt-computer-history/": {
-    "title": "ChatGPT's new Computer History tracks your Mac activity to create a timeline - but should you let it?",
-    "date_covered": "2026-08-15T01:03:29.367532+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "8pB07hXc4bI",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/": {
     "title": "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop Local AI Talent",
     "date_covered": "2026-08-15T04:30:38.092872+00:00",
@@ -1012,6 +1005,13 @@
     "date_covered": "2026-09-13T22:07:47.885804+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "GEI17qhqzkU",
+    "tiktok_id": null
+  },
+  "https://www.interconnects.ai/p/open-source-ai-reading-list": {
+    "title": "Open-Source AI & Open Models Reading List",
+    "date_covered": "2026-09-14T03:07:57.428216+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "10HxHFaODsM",
     "tiktok_id": null
   }
 }
