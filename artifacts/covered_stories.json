@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/": {
-    "title": "NVIDIA Nemotron 3.5 Lightning and NeMo Switchyard Deliver Faster, Smarter, More Efficient Agentic AI",
-    "date_covered": "2026-08-15T12:34:14.968552+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "HD_Uryp5SN0",
-    "tiktok_id": null
-  },
-  "http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html": {
-    "title": "Yadda 3.0.0: BDD in the Age of AI Agents",
-    "date_covered": "2026-08-15T16:25:38.504857+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "bpvjmqOFMxI",
-    "tiktok_id": null
-  },
   "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians": {
     "title": "AI Isn’t Outthinking Mathematicians. It’s Out-Remembering Them.",
     "date_covered": "2026-08-15T20:22:07.500359+00:00",
@@ -1012,6 +998,13 @@
     "date_covered": "2026-09-14T09:37:02.781351+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "RF2lUurnsXA",
+    "tiktok_id": null
+  },
+  "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit": {
+    "title": "Why don’t machine learning research agents overfit?",
+    "date_covered": "2026-09-14T17:35:45.831194+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "mlFpJRLHwWg",
     "tiktok_id": null
   }
 }
