@@ -1,18 +1,4 @@
 {
-  "https://www.ycombinator.com/companies/voltair/jobs/sSOD2Ox-flight-test-engineer": {
-    "title": "Flight Test Engineer at Voltair",
-    "date_covered": "2026-08-16T04:35:31.205248+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ZSI1A889Oqg",
-    "tiktok_id": null
-  },
-  "https://blog.pickcode.io/program-with-paint-brushes-not-pencils/": {
-    "title": "Program with Paint Brushes, Not Pencils",
-    "date_covered": "2026-08-16T08:27:45.081425+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "gZ9G4g1X3DY",
-    "tiktok_id": null
-  },
   "https://platform.claude.com/docs/en/release-notes/system-prompts": {
     "title": "System Prompts",
     "date_covered": "2026-08-16T16:24:06.716448+00:00",
@@ -1005,6 +991,13 @@
     "date_covered": "2026-09-15T03:12:16.913609+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "yuxVRqc0elM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/": {
+    "title": "Perplexity Portable Computer Is Now Available on Windows, Powered by NVIDIA RTX",
+    "date_covered": "2026-09-15T09:15:59.120410+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "M4snczce_c4",
     "tiktok_id": null
   }
 }
