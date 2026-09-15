@@ -1,18 +1,4 @@
 {
-  "https://platform.claude.com/docs/en/release-notes/system-prompts": {
-    "title": "System Prompts",
-    "date_covered": "2026-08-16T16:24:06.716448+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nP4zGcMj1KA",
-    "tiktok_id": null
-  },
-  "https://www.zdnet.com/article/apple-warns-targetted-spyware-attacks-what-to-do/": {
-    "title": "Apple is warning users of new spyware attacks - what to do if you're a target",
-    "date_covered": "2026-08-16T20:21:48.515824+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "TmBHLAu4Cgc",
-    "tiktok_id": null
-  },
   "https://ivan-gavran.github.io/0-social-processes-paper": {
     "title": "The Case Against Formal Verification, 50 Years Later",
     "date_covered": "2026-08-17T01:03:46.585562+00:00",
@@ -1005,6 +991,13 @@
     "date_covered": "2026-09-15T16:12:25.274770+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ni0tQ9tvXtQ",
+    "tiktok_id": null
+  },
+  "https://www.effort.news/irregular": {
+    "title": "A Single Firm is Behind OpenAI, Anthropic, and Meta Hacking Scandals — Effort",
+    "date_covered": "2026-09-15T22:46:56.879177+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "WmU3rZnnaVM",
     "tiktok_id": null
   }
 }
