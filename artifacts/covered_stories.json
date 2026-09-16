@@ -1,11 +1,4 @@
 {
-  "https://ivan-gavran.github.io/0-social-processes-paper": {
-    "title": "The Case Against Formal Verification, 50 Years Later",
-    "date_covered": "2026-08-17T01:03:46.585562+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ymLrNL1so2I",
-    "tiktok_id": null
-  },
   "https://blog.racket-lang.org/2026/08/rhombus-v1.1.html": {
     "title": "Rhombus v1.1",
     "date_covered": "2026-08-17T04:41:07.091680+00:00",
@@ -998,6 +991,13 @@
     "date_covered": "2026-09-15T22:46:56.879177+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "WmU3rZnnaVM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/": {
+    "title": "AI Infra Summit: NVIDIA Vera Rubin and DSX Platform Advancements Showcase Energy Efficiencies of Optimizing Tokens Per Watt for AI Factories",
+    "date_covered": "2026-09-16T03:09:26.259389+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "YTeZw2JcIEc",
     "tiktok_id": null
   }
 }
