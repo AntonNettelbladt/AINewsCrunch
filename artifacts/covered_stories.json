@@ -1,11 +1,4 @@
 {
-  "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/": {
-    "title": "Amazon, which started off selling books, is destroying rare texts to train AI",
-    "date_covered": "2026-08-17T20:36:06.776960+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "JDMZZGDQhqs",
-    "tiktok_id": null
-  },
   "https://engineering.myhoai.com/posts/a-simple-fix-for-llm-tail-latency/": {
     "title": "A simple fix for LLM tail latency",
     "date_covered": "2026-08-18T01:02:39.528461+00:00",
@@ -998,6 +991,13 @@
     "date_covered": "2026-09-16T19:34:41.661073+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "JW4n2kx09e4",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/microsoft-ai-ceo-criticises-anthropic-over-model-rights/": {
+    "title": "Microsoft AI CEO criticises Anthropic over model ‘rights’",
+    "date_covered": "2026-09-16T22:42:30.401941+00:00",
+    "source": "AI News",
+    "youtube_id": "8USI8lKSbwg",
     "tiktok_id": null
   }
 }
