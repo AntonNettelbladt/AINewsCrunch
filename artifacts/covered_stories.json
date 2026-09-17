@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/zhipu-glm-5-3-benchmarks-explained/": {
-    "title": "Reading Zhipu’s GLM-5.3 results past the headline number",
-    "date_covered": "2026-08-18T16:33:58.130536+00:00",
-    "source": "AI News",
-    "youtube_id": "59m1UxdL4Eo",
-    "tiktok_id": null
-  },
-  "https://www.zdnet.com/article/googles-ai-can-see-your-business-data-by-default-in-workspace-unless-you-disable-it/": {
-    "title": "Google's AI can see your business data by default in Workspace - unless you disable it",
-    "date_covered": "2026-08-18T20:22:36.939613+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "p_B1m2s8-B8",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/microsoft-customizable-context-menu-windows-11/": {
     "title": "Microsoft reveals customizable context menu for Windows users - how to try it out",
     "date_covered": "2026-08-19T04:41:47.571243+00:00",
@@ -991,6 +977,13 @@
     "date_covered": "2026-09-17T16:13:53.667383+00:00",
     "source": "AI News",
     "youtube_id": "Snr1hwdgb4o",
+    "tiktok_id": null
+  },
+  "https://prismml.com/news/bonsai-2-27b": {
+    "title": "PrismML — Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+    "date_covered": "2026-09-17T22:43:55.319315+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "oH2PQ0Hww_E",
     "tiktok_id": null
   }
 }
