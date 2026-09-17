@@ -1,11 +1,4 @@
 {
-  "https://moddedbear.com/an-update-on-leaving-gmail-for-fastmail/": {
-    "title": "An Update on Leaving Gmail for Fastmail",
-    "date_covered": "2026-08-18T12:41:57.894880+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "gzyF07RRnXQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/zhipu-glm-5-3-benchmarks-explained/": {
     "title": "Reading Zhipu’s GLM-5.3 results past the headline number",
     "date_covered": "2026-08-18T16:33:58.130536+00:00",
@@ -991,6 +984,13 @@
     "date_covered": "2026-09-17T09:14:36.910446+00:00",
     "source": "Wired AI",
     "youtube_id": "zRCa9WQHQnI",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/chatgpt-pioneer-launches-jev-model-for-programmatic-logic/": {
+    "title": "ChatGPT pioneer launches Jev model for programmatic logic",
+    "date_covered": "2026-09-17T16:13:53.667383+00:00",
+    "source": "AI News",
+    "youtube_id": "Snr1hwdgb4o",
     "tiktok_id": null
   }
 }
