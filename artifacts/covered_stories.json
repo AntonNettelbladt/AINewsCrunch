@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/": {
-    "title": "Securing the Infrastructure of Intelligence",
-    "date_covered": "2026-08-18T04:35:32.148502+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "fBhG_IB71pA",
-    "tiktok_id": null
-  },
-  "https://responsiblestatecraft.org/israel-influence-chatgpt/": {
-    "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
-    "date_covered": "2026-08-18T08:35:54.541731+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "NKNH-dewIu4",
-    "tiktok_id": null
-  },
   "https://moddedbear.com/an-update-on-leaving-gmail-for-fastmail/": {
     "title": "An Update on Leaving Gmail for Fastmail",
     "date_covered": "2026-08-18T12:41:57.894880+00:00",
@@ -998,6 +984,13 @@
     "date_covered": "2026-09-17T03:13:05.834011+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "JKR6A1rkP4I",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/": {
+    "title": "OpenAI Creates a New Framework to Disclose Bad AI Behavior",
+    "date_covered": "2026-09-17T09:14:36.910446+00:00",
+    "source": "Wired AI",
+    "youtube_id": "zRCa9WQHQnI",
     "tiktok_id": null
   }
 }
