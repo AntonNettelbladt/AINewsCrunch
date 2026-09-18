@@ -1,18 +1,4 @@
 {
-  "https://www.zdnet.com/article/microsoft-customizable-context-menu-windows-11/": {
-    "title": "Microsoft reveals customizable context menu for Windows users - how to try it out",
-    "date_covered": "2026-08-19T04:41:47.571243+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "V61aZ_b2_nA",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/alvys-ai-agents-freight-tms/": {
-    "title": "Alvys launches AI agents for freight TMS workflows",
-    "date_covered": "2026-08-19T08:42:21.016978+00:00",
-    "source": "AI News",
-    "youtube_id": "l9ViHDObpew",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/htx-faces-scrutiny-after-unexplained-usdt-transfers-hit-users": {
     "title": "HTX Faces Scrutiny After Unexplained USDT Transfers Hit Users",
     "date_covered": "2026-08-19T12:51:06.620352+00:00",
@@ -991,6 +977,13 @@
     "date_covered": "2026-09-18T02:59:19.316110+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "TrsUkA6GIXE",
+    "tiktok_id": null
+  },
+  "https://www.hacktron.ai/blog/hacking-openai": {
+    "title": "Hacking OpenAI",
+    "date_covered": "2026-09-18T08:48:14.043113+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "tLfE62n_WL0",
     "tiktok_id": null
   }
 }
