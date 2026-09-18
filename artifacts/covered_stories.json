@@ -1,11 +1,4 @@
 {
-  "https://github.com/vixhal-baraiya/microgpt-c": {
-    "title": "GitHub - vixhal-baraiya/microgpt-c: The most atomic way to train and inference a GPT in pure, dependency-free C",
-    "date_covered": "2026-08-19T16:34:42.623192+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "roJAsZFkQPE",
-    "tiktok_id": null
-  },
   "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/": {
     "title": "How a joke domain purchase turned in geopolitical warfare",
     "date_covered": "2026-08-19T20:28:29.409941+00:00",
@@ -984,6 +977,13 @@
     "date_covered": "2026-09-18T15:50:39.065919+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "jUNkRdMlhl0",
+    "tiktok_id": null
+  },
+  "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship": {
+    "title": "Exclusive: US military had close call after using AI for false intelligence report, sources say",
+    "date_covered": "2026-09-18T18:56:46.290486+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "yGNjjNznxNo",
     "tiktok_id": null
   }
 }
