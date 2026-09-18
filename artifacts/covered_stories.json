@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/htx-faces-scrutiny-after-unexplained-usdt-transfers-hit-users": {
-    "title": "HTX Faces Scrutiny After Unexplained USDT Transfers Hit Users",
-    "date_covered": "2026-08-19T12:51:06.620352+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "xKK01HRDKbY",
-    "tiktok_id": null
-  },
   "https://github.com/vixhal-baraiya/microgpt-c": {
     "title": "GitHub - vixhal-baraiya/microgpt-c: The most atomic way to train and inference a GPT in pure, dependency-free C",
     "date_covered": "2026-08-19T16:34:42.623192+00:00",
@@ -984,6 +977,13 @@
     "date_covered": "2026-09-18T08:48:14.043113+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "tLfE62n_WL0",
+    "tiktok_id": null
+  },
+  "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/": {
+    "title": "How To Write With An LLM",
+    "date_covered": "2026-09-18T15:50:39.065919+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "jUNkRdMlhl0",
     "tiktok_id": null
   }
 }
