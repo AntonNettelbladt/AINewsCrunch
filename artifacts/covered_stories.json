@@ -1,11 +1,4 @@
 {
-  "https://github.com/zachahn/vomit": {
-    "title": "GitHub - zachahn/vomit: Clean up Claude 5's token vomit with a separate LLM. Save your tokens, Claude 5 is hopeless",
-    "date_covered": "2026-08-20T16:34:37.149212+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/honeybook-bets-on-agentic-ai-to-streamline-small-business-operations-with-its-new-claude-connector/": {
     "title": "HoneyBook bets on agentic AI to streamline small business operations with its new Claude connector",
     "date_covered": "2026-08-20T20:27:46.589610+00:00",
@@ -984,6 +977,13 @@
     "date_covered": "2026-09-19T15:20:38.525054+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "KQ-hPD3bXWA",
+    "tiktok_id": null
+  },
+  "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html": {
+    "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+    "date_covered": "2026-09-19T18:29:07.581627+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "hFQzoyo1B5o",
     "tiktok_id": null
   }
 }
