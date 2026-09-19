@@ -1,18 +1,4 @@
 {
-  "https://devblogs.microsoft.com/oldnewthing/20260818-00/?p=112621": {
-    "title": "Why did the Microsoft Entertainment Pack for Windows have a special sticker announcing that it also had Tetris?",
-    "date_covered": "2026-08-20T08:43:23.504234+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "nUaikA-ucj8",
-    "tiktok_id": null
-  },
-  "https://franciscotrindade.me/blog/the-kids-are-really-alright/": {
-    "title": "The Kids Are Really Alright",
-    "date_covered": "2026-08-20T12:43:29.130978+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "EJpQEyCnehg",
-    "tiktok_id": null
-  },
   "https://github.com/zachahn/vomit": {
     "title": "GitHub - zachahn/vomit: Clean up Claude 5's token vomit with a separate LLM. Save your tokens, Claude 5 is hopeless",
     "date_covered": "2026-08-20T16:34:37.149212+00:00",
@@ -991,6 +977,13 @@
     "date_covered": "2026-09-19T08:36:07.139033+00:00",
     "source": "Wired AI",
     "youtube_id": "5TSw7NekECg",
+    "tiktok_id": null
+  },
+  "https://john.hartnup.uk/2026/06/07/ai-event-posters.html": {
+    "title": "AI-generated posters don’t have to be horrible",
+    "date_covered": "2026-09-19T15:20:38.525054+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "KQ-hPD3bXWA",
     "tiktok_id": null
   }
 }
