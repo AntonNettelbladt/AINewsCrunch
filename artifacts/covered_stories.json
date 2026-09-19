@@ -985,5 +985,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "wQuupT-NuQc",
     "tiktok_id": null
+  },
+  "https://spectrum.ieee.org/llms-for-chip-design": {
+    "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+    "date_covered": "2026-09-19T02:57:57.573340+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "iDJRqqoALiU",
+    "tiktok_id": null
   }
 }
