@@ -1,11 +1,4 @@
 {
-  "https://www.zdnet.com/article/i-cant-stop-80-of-developers-find-ai-coding-more-addictive-than-helpful/": {
-    "title": "'I can't stop': 80% of developers find AI coding more addictive than helpful",
-    "date_covered": "2026-08-22T20:23:24.251652+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "mu5AURvz8hg",
-    "tiktok_id": null
-  },
   "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/": {
     "title": "Quick impressions: A week of using Codex more than Claude",
     "date_covered": "2026-08-23T01:06:38.641870+00:00",
@@ -963,6 +956,13 @@
     "date_covered": "2026-09-21T17:51:02.181910+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "0qv5S3tE2JQ",
+    "tiktok_id": null
+  },
+  "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/": {
+    "title": "Announcing the Advisory Group on Mathematics and Artificial Intelligence",
+    "date_covered": "2026-09-21T23:05:05.119584+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "fS2DiAp3iBI",
     "tiktok_id": null
   }
 }
