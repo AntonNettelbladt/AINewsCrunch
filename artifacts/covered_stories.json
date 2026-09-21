@@ -1,11 +1,4 @@
 {
-  "https://nostarch.com/embedded-ai": {
-    "title": "Embedded AI",
-    "date_covered": "2026-08-22T16:23:39.153892+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "DDv_8tYRamU",
-    "tiktok_id": null
-  },
   "https://www.zdnet.com/article/i-cant-stop-80-of-developers-find-ai-coding-more-addictive-than-helpful/": {
     "title": "'I can't stop': 80% of developers find AI coding more addictive than helpful",
     "date_covered": "2026-08-22T20:23:24.251652+00:00",
@@ -963,6 +956,13 @@
     "date_covered": "2026-09-21T09:39:26.864880+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "QyGE8oFviA8",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem/": {
+    "title": "From Enablement to Execution, Egypt’s AI Ecosystem Reaches Production Scale",
+    "date_covered": "2026-09-21T17:51:02.181910+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "0qv5S3tE2JQ",
     "tiktok_id": null
   }
 }
