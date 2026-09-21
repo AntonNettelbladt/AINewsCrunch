@@ -1,11 +1,4 @@
 {
-  "https://ozbrain.com": {
-    "title": "OzBrain: shared brain every AI agent reads and writes",
-    "date_covered": "2026-08-22T01:03:47.102874+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "NZgDfypgY8M",
-    "tiktok_id": null
-  },
   "https://medicine.washu.edu/news/how-early-life-stress-leaves-a-scar-inside-brain-cells/": {
     "title": "How early-life stress leaves a ‘scar’ inside brain cells – WashU Medicine",
     "date_covered": "2026-08-22T04:32:50.108892+00:00",
@@ -970,6 +963,13 @@
     "date_covered": "2026-09-20T22:16:08.274727+00:00",
     "source": "Wired AI",
     "youtube_id": "z59QrmVeqoA",
+    "tiktok_id": null
+  },
+  "https://amigaux.org/": {
+    "title": "amigaux.org",
+    "date_covered": "2026-09-21T03:07:29.758938+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Dzw2ZPZWOJk",
     "tiktok_id": null
   }
 }
