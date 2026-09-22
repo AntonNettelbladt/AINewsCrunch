@@ -1,18 +1,4 @@
 {
-  "https://www.zdnet.com/article/pixel-watch-4-vs-pixel-watch-5/": {
-    "title": "Pixel Watch 4 vs. Pixel Watch 5: Is Google's new model worth it? It comes down to this",
-    "date_covered": "2026-08-23T16:24:27.337654+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "6qoJpVZarrE",
-    "tiktok_id": null
-  },
-  "https://en.andros.dev/blog/09a21bdd/i-turned-unix-talk-from-1983-into-the-interface-for-my-ai/": {
-    "title": "I turned Unix talk from 1983 into the interface for my AI",
-    "date_covered": "2026-08-23T20:22:08.868649+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "8gEXeR-t_lk",
-    "tiktok_id": null
-  },
   "https://www.cntraveler.com/story/this-rural-village-in-spain-is-welcoming-digital-nomads-with-open-arms": {
     "title": "This Rural Village in Spain is Welcoming Digital Nomads With Open Arms",
     "date_covered": "2026-08-24T01:04:47.149742+00:00",
@@ -970,6 +956,13 @@
     "date_covered": "2026-09-22T16:15:32.849020+00:00",
     "source": "AI News",
     "youtube_id": "mgf1AGx6g7o",
+    "tiktok_id": null
+  },
+  "https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/": {
+    "title": "Did OpenAI solve the wrong Navier-Stokes problem?",
+    "date_covered": "2026-09-22T22:47:08.747181+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "OYcAGGzSqSk",
     "tiktok_id": null
   }
 }
