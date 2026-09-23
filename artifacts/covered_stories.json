@@ -1,18 +1,4 @@
 {
-  "https://fabiensanglard.net/agent.md/index.html": {
-    "title": "My agent.md to improve LLM-assisted code quality",
-    "date_covered": "2026-08-24T04:44:26.368161+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "HqFoNZXr5fc",
-    "tiktok_id": null
-  },
-  "https://www.rte.ie/news/business/2026/0824/1588931-repair-rules/": {
-    "title": "New EU-wide product repair rules come into force",
-    "date_covered": "2026-08-24T08:46:36.319783+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "kfEypM7scfg",
-    "tiktok_id": null
-  },
   "https://www.theguardian.com/uk-news/2026/aug/24/woman-stranded-spain-uk-evisa-system-mistakes-twin-sister": {
     "title": "Woman stranded in Spain after UK’s eVisa system mistakes her for twin sister",
     "date_covered": "2026-08-24T12:44:37.455299+00:00",
@@ -963,6 +949,13 @@
     "date_covered": "2026-09-23T03:07:05.746809+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "UZ0W1ADoXhc",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/ai-agents-are-becoming-a-new-malware-distribution-channel/": {
+    "title": "AI Agents Are Becoming a New Malware Distribution Channel",
+    "date_covered": "2026-09-23T09:07:20.839878+00:00",
+    "source": "AI News",
+    "youtube_id": "HnznAebasZo",
     "tiktok_id": null
   }
 }
