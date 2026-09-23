@@ -1,11 +1,4 @@
 {
-  "https://www.theguardian.com/uk-news/2026/aug/24/woman-stranded-spain-uk-evisa-system-mistakes-twin-sister": {
-    "title": "Woman stranded in Spain after UK’s eVisa system mistakes her for twin sister",
-    "date_covered": "2026-08-24T12:44:37.455299+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Kc9-wvAIk6A",
-    "tiktok_id": null
-  },
   "https://larsfaye.com/articles/ai-coding-will-prevent-expertise": {
     "title": "AI Coding will Prevent Expertise",
     "date_covered": "2026-08-24T16:36:09.187106+00:00",
@@ -956,6 +949,13 @@
     "date_covered": "2026-09-23T09:07:20.839878+00:00",
     "source": "AI News",
     "youtube_id": "HnznAebasZo",
+    "tiktok_id": null
+  },
+  "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/": {
+    "title": "U.S. TRANSCOM deploys randomised AI to secure military logistics",
+    "date_covered": "2026-09-23T16:05:33.005448+00:00",
+    "source": "AI News",
+    "youtube_id": "6ptE2bb05FY",
     "tiktok_id": null
   }
 }
