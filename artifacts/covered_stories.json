@@ -1,11 +1,4 @@
 {
-  "https://larsfaye.com/articles/ai-coding-will-prevent-expertise": {
-    "title": "AI Coding will Prevent Expertise",
-    "date_covered": "2026-08-24T16:36:09.187106+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Bvysnz3p0Kw",
-    "tiktok_id": null
-  },
   "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines": {
     "title": "LLMs could control their host machines by exploiting inference engines",
     "date_covered": "2026-08-24T20:28:52.736760+00:00",
@@ -956,6 +949,13 @@
     "date_covered": "2026-09-23T16:05:33.005448+00:00",
     "source": "AI News",
     "youtube_id": "6ptE2bb05FY",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system": {
+    "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+    "date_covered": "2026-09-23T19:40:11.019543+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "M781awBQZS8",
     "tiktok_id": null
   }
 }
