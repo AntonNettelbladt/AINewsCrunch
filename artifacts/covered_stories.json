@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/mit-ai-forecasts-extreme-weather-without-historical-data/": {
-    "title": "MIT AI forecasts extreme weather without historical data",
-    "date_covered": "2026-08-25T16:36:05.135234+00:00",
-    "source": "AI News",
-    "youtube_id": "vo7OXCQ9slw",
-    "tiktok_id": null
-  },
-  "https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory/": {
-    "title": "How XPUs Meet a World-Class AI Factory",
-    "date_covered": "2026-08-25T20:30:04.592063+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "imrFcUhkVs0",
-    "tiktok_id": null
-  },
   "https://github.com/swimmingbrain/texbrain": {
     "title": "GitHub - swimmingbrain/texbrain: FOSS browser-based latex editor with live preview, real-time collaboration, and git integration.",
     "date_covered": "2026-08-26T01:05:56.742097+00:00",
@@ -942,6 +928,13 @@
     "date_covered": "2026-09-24T16:29:19.583303+00:00",
     "source": "AI News",
     "youtube_id": "O-2tSsMOUFE",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/": {
+    "title": "I Think I Found an AI Agent Worth the Risk",
+    "date_covered": "2026-09-24T23:05:02.648103+00:00",
+    "source": "Wired AI",
+    "youtube_id": "EADr2Ufy1M8",
     "tiktok_id": null
   }
 }
