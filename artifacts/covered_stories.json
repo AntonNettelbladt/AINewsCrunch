@@ -1,18 +1,4 @@
 {
-  "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines": {
-    "title": "LLMs could control their host machines by exploiting inference engines",
-    "date_covered": "2026-08-24T20:28:52.736760+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "FB5F0zR_-iI",
-    "tiktok_id": null
-  },
-  "https://blog.archive.org/2026/08/16/vintage-artificial-intelligence-before-it-got-awkward/": {
-    "title": "Vintage Artificial Intelligence: Before It Got Awkward",
-    "date_covered": "2026-08-25T01:05:20.741099+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "NpOzKV_ZjN0",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/": {
     "title": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
     "date_covered": "2026-08-25T04:41:09.750393+00:00",
@@ -956,6 +942,13 @@
     "date_covered": "2026-09-23T19:40:11.019543+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "M781awBQZS8",
+    "tiktok_id": null
+  },
+  "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411": {
+    "title": "Australia says OpenAI agent hacked into government website",
+    "date_covered": "2026-09-24T02:58:29.778962+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "64iHnYE4d88",
     "tiktok_id": null
   }
 }
