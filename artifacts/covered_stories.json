@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/": {
-    "title": "With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents",
-    "date_covered": "2026-08-25T04:41:09.750393+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "EDSxebZQEzo",
-    "tiktok_id": null
-  },
-  "https://www.zdnet.com/article/businesses-must-reinvent-their-processes-and-workforce-to-scale-agentic-ai-adoption/": {
-    "title": "Businesses must reinvent their processes and workforce to scale agentic AI adoption",
-    "date_covered": "2026-08-25T08:40:48.722616+00:00",
-    "source": "ZDNet AI",
-    "youtube_id": "HFRyTtBZgvI",
-    "tiktok_id": null
-  },
   "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/": {
     "title": "Microsoft Paint and Photos Embed Server-Issued GUIDs as Invisible Watermarks in Locally-Generated Images",
     "date_covered": "2026-08-25T12:42:44.362075+00:00",
@@ -949,6 +935,13 @@
     "date_covered": "2026-09-24T02:58:29.778962+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "64iHnYE4d88",
+    "tiktok_id": null
+  },
+  "https://www.bbc.com/news/live/cvgl73pxgndwt": {
+    "title": "Australia launches urgent review after OpenAI program hacks government health portal",
+    "date_covered": "2026-09-24T09:05:54.440734+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "CXFWw9iwZbg",
     "tiktok_id": null
   }
 }
