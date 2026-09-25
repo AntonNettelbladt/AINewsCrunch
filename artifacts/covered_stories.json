@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/": {
-    "title": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
-    "date_covered": "2026-08-26T12:47:25.131393+00:00",
-    "source": "Wired AI",
-    "youtube_id": "rRHqH-zyf28",
-    "tiktok_id": null
-  },
   "https://www.ssp.sh/brain/using-obsidian-with-ai/": {
     "title": "Keep AI Out of Your (Obsidian) Vault",
     "date_covered": "2026-08-26T16:49:48.249618+00:00",
@@ -928,6 +921,13 @@
     "date_covered": "2026-09-25T09:25:45.297318+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "zmAbubekqeU",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html": {
+    "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
+    "date_covered": "2026-09-25T16:30:35.742585+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-4R9YnBo-jY",
     "tiktok_id": null
   }
 }
