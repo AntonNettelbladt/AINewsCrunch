@@ -1,18 +1,4 @@
 {
-  "https://github.com/runetes/maiao": {
-    "title": "GitHub - runetes/maiao: Seamless GitHub PR management from the command-line",
-    "date_covered": "2026-08-26T04:41:03.794784+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "AbwdCCBaULI",
-    "tiktok_id": null
-  },
-  "https://www.analyticsinsight.net/artificial-intelligence/ai-feedback-loops-explained-how-artificial-intelligence-learns-improves": {
-    "title": "AI Feedback Loops Explained: How Artificial Intelligence Learns, Improves",
-    "date_covered": "2026-08-26T08:42:55.851773+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "mNwcKdREpWY",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/generalist-ai-robots-learn-like-clever-toddlers/": {
     "title": "I Saw the Future of AI in a Robot That Can Learn on the Spot",
     "date_covered": "2026-08-26T12:47:25.131393+00:00",
@@ -935,6 +921,13 @@
     "date_covered": "2026-09-25T03:14:49.299519+00:00",
     "source": "Wired AI",
     "youtube_id": "gNex7B3cLrQ",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/ai-day-singapore/": {
+    "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
+    "date_covered": "2026-09-25T09:25:45.297318+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "zmAbubekqeU",
     "tiktok_id": null
   }
 }
