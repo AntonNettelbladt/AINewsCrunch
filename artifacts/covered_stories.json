@@ -922,5 +922,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "fn5WrPPuKfU",
     "tiktok_id": null
+  },
+  "https://swarmtraces.org/": {
+    "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+    "date_covered": "2026-09-26T03:18:17.492555+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "kD8UhfgAz6g",
+    "tiktok_id": null
   }
 }
