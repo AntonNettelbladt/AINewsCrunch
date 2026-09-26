@@ -1,11 +1,4 @@
 {
-  "https://github.com/jameskomo/config-drift-checker": {
-    "title": "GitHub - jameskomo/config-drift-checker: Config Drift Checker for coding-agent setups: CI for your Claude Code configuration (CLAUDE.md, skills, hooks) — eval cases, release-watch, regression alerts",
-    "date_covered": "2026-08-27T18:51:26.633095+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/": {
     "title": "Intelligent transcription with Gemini 3.5 Transcribe",
     "date_covered": "2026-08-28T04:05:00.956339+00:00",
@@ -935,6 +928,13 @@
     "date_covered": "2026-09-26T15:45:07.363670+00:00",
     "source": "Analytics Insight",
     "youtube_id": "iELcuzEIIME",
+    "tiktok_id": null
+  },
+  "https://github.com/brumar/chess-postmortem-skills": {
+    "title": "GitHub - brumar/chess-postmortem-skills: Claude Code skills for chess post-mortems: Stockfish-backed annotated PGN, HTML viewer, narrated video",
+    "date_covered": "2026-09-26T19:03:31.916309+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "t8pMtEKmxXE",
     "tiktok_id": null
   }
 }
