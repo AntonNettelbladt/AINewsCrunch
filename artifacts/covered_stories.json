@@ -1,11 +1,4 @@
 {
-  "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/": {
-    "title": "Intelligent transcription with Gemini 3.5 Transcribe",
-    "date_covered": "2026-08-28T04:05:00.956339+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "QfFbyCqkxsk",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight/": {
     "title": "Gatik raises $200M to scale AI-powered autonomous freight",
     "date_covered": "2026-08-28T16:34:59.160042+00:00",
@@ -949,6 +942,13 @@
     "date_covered": "2026-09-27T03:27:25.967200+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "rAszpmVS9kk",
+    "tiktok_id": null
+  },
+  "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/": {
+    "title": "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI: Top Execs Knew Their Mass Book Piracy Was Illegal And Would Put Authors Out of Work",
+    "date_covered": "2026-09-27T09:53:20.886896+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "-Zl-QO6C-Ns",
     "tiktok_id": null
   }
 }
