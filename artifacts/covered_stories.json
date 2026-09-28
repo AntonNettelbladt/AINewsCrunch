@@ -1,11 +1,4 @@
 {
-  "https://towardsdatascience.com/why-claude-code-time-estimates-are-poor/": {
-    "title": "Why Claude Code Time Estimates Are Poor",
-    "date_covered": "2026-08-29T02:45:03.368772+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "aelcyBa9dIw",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/": {
     "title": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
     "date_covered": "2026-08-29T10:48:34.273523+00:00",
@@ -942,6 +935,13 @@
     "date_covered": "2026-09-27T09:53:20.886896+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "-Zl-QO6C-Ns",
+    "tiktok_id": null
+  },
+  "https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/E_POWER_GEN3/": {
+    "title": "Third generation ​​e-POWER",
+    "date_covered": "2026-09-28T03:22:16.619186+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "q1gQrnPYk0Q",
     "tiktok_id": null
   }
 }
