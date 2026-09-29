@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/": {
-    "title": "This Is How Anthropic Thinks AI Agents Should Navigate the Physical World",
-    "date_covered": "2026-08-29T22:21:07.430884+00:00",
-    "source": "Wired AI",
-    "youtube_id": "FspcuqrwX9U",
-    "tiktok_id": null
-  },
   "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity": {
     "title": "Good Culture is the Biggest Productivity Hack, Not AI",
     "date_covered": "2026-08-30T03:20:50.545903+00:00",
@@ -942,6 +935,13 @@
     "date_covered": "2026-09-28T19:17:16.866372+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2h7rnb5pWwA",
+    "tiktok_id": null
+  },
+  "https://www.cnbc.com/2026/09/28/nvidia-releases.html": {
+    "title": "Nvidia releases software platform to stop AI agents from misbehaving",
+    "date_covered": "2026-09-29T00:15:57.203397+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "9wQ3AGDjwLI",
     "tiktok_id": null
   }
 }
