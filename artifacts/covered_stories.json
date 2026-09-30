@@ -1,11 +1,4 @@
 {
-  "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/": {
-    "title": "Apple Caught Off Guard by AI Demand for Mac Mini and Mac Studio",
-    "date_covered": "2026-08-31T18:44:45.677182+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "YZHYwNDI-cA",
-    "tiktok_id": null
-  },
   "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/": {
     "title": "Breaking Claude Code Opus 5 Auto Mode · Embrace The Red",
     "date_covered": "2026-08-31T23:41:43.694447+00:00",
@@ -935,6 +928,13 @@
     "date_covered": "2026-09-30T17:38:30.051610+00:00",
     "source": "Analytics Insight",
     "youtube_id": "TFuNpi-AqR4",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/interview/turning-data-into-decisions-saddam-hussain-on-ai-data-engineering-mlops-and-intelligent-industry": {
+    "title": "Turning Data Into Decisions: Saddam Hussain on AI, Data Engineering, MLOps, and Intelligent Industry",
+    "date_covered": "2026-09-30T23:31:32.554447+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "fiJukgH2_xA",
     "tiktok_id": null
   }
 }
