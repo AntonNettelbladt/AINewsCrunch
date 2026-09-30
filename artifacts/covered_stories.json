@@ -1,11 +1,4 @@
 {
-  "https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails": {
-    "title": "Meta Security Researcher's AI Agent Accidentally Deleted Her Emails",
-    "date_covered": "2026-08-31T10:31:13.380699+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "5PRzAHTr3Oc",
-    "tiktok_id": null
-  },
   "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/": {
     "title": "Apple Caught Off Guard by AI Demand for Mac Mini and Mac Studio",
     "date_covered": "2026-08-31T18:44:45.677182+00:00",
@@ -935,6 +928,13 @@
     "date_covered": "2026-09-30T10:23:08.970028+00:00",
     "source": "Analytics Insight",
     "youtube_id": "OQdUe4IsN3I",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/crimson-desert-charting-the-unknown-delayed-new-release-date-details-and-more": {
+    "title": "Crimson Desert Charting the Unknown Delayed: New Release Date, Details and More",
+    "date_covered": "2026-09-30T17:38:30.051610+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "TFuNpi-AqR4",
     "tiktok_id": null
   }
 }
