@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/apple-vs-openai-new-circuit-plan-allegations-against-chang-liu": {
-    "title": "Apple vs OpenAI: New Circuit-Plan Allegations Against Chang Liu",
-    "date_covered": "2026-09-02T02:38:57.485536+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "RkVHQKOzU5g",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/anthropic-launches-claude-fable-51-to-handle-long-complex-work": {
     "title": "Anthropic Launches Claude Fable 5.1 to Handle Long, Complex Work",
     "date_covered": "2026-09-02T08:27:03.893082+00:00",
@@ -921,6 +914,13 @@
     "date_covered": "2026-10-01T23:47:49.225526+00:00",
     "source": "Analytics Insight",
     "youtube_id": "CTOzTrtcax8",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/": {
+    "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+    "date_covered": "2026-10-02T03:54:31.185090+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "JH49Pb8adhg",
     "tiktok_id": null
   }
 }
