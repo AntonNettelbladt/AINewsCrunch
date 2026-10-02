@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/anthropic-launches-claude-fable-51-to-handle-long-complex-work": {
-    "title": "Anthropic Launches Claude Fable 5.1 to Handle Long, Complex Work",
-    "date_covered": "2026-09-02T08:27:03.893082+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "iWwuc3ChmH4",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/meta-launches-muse-voice-transcribe-with-multilingual-ai-support": {
     "title": "Meta Launches Muse Voice Transcribe with Multilingual AI Support",
     "date_covered": "2026-09-02T16:06:31.127142+00:00",
@@ -921,6 +914,13 @@
     "date_covered": "2026-10-02T03:54:31.185090+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "JH49Pb8adhg",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/": {
+    "title": "From Training to Production, NVIDIA and CoreWeave Close the Loop on Agentic AI",
+    "date_covered": "2026-10-02T10:24:08.010262+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Uy-9xuhFm_o",
     "tiktok_id": null
   }
 }
