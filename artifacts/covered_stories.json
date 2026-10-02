@@ -1,18 +1,4 @@
 {
-  "https://www.wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit/": {
-    "title": "Trump Administration Sides With OpenAI in New York Times Copyright Lawsuit",
-    "date_covered": "2026-09-02T19:18:42.550297+00:00",
-    "source": "Wired AI",
-    "youtube_id": "kGAMW9K-6tY",
-    "tiktok_id": null
-  },
-  "https://towardsdatascience.com/your-json-is-valid-but-your-data-is-wrong-five-failure-modes-llm-structured-outputs-wont-catch/": {
-    "title": "Your JSON Is Valid but Your Data Is Wrong: Five Failure Modes LLM Structured Outputs Won't Catch",
-    "date_covered": "2026-09-02T22:26:05.470572+00:00",
-    "source": "Towards Data Science",
-    "youtube_id": "dxgnLq9aBaQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/motional-and-mit-ai-explains-self-driving-car-decisions/": {
     "title": "Motional and MIT AI explains self-driving car decisions",
     "date_covered": "2026-09-03T02:45:58.513086+00:00",
@@ -921,6 +907,13 @@
     "date_covered": "2026-10-02T17:29:31.366006+00:00",
     "source": "Wired AI",
     "youtube_id": "NAUxAYwYNTY",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/uncanny-valley-podcast-trumps-pinky-swear-ai-safety-accord-an-ai-agent-worth-the-risk/": {
+    "title": "Trump’s ‘Morally Binding’ AI ‘Accord,’ the Rise of AI Agents, and Extremists on the Ballot",
+    "date_covered": "2026-10-02T23:38:29.797359+00:00",
+    "source": "Wired AI",
+    "youtube_id": "SbYkTlc41ng",
     "tiktok_id": null
   }
 }
