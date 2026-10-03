@@ -1,11 +1,4 @@
 {
-  "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/": {
-    "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-    "date_covered": "2026-09-03T15:47:07.350592+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "S-YjKKALV-M",
-    "tiktok_id": null
-  },
   "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html": {
     "title": "OpenAI begins rolling out Astra model after warning of its advanced cyber capabilities",
     "date_covered": "2026-09-03T19:11:59.698168+00:00",
@@ -921,6 +914,13 @@
     "date_covered": "2026-10-03T15:45:58.861350+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "rWWzXVioMl8",
+    "tiktok_id": null
+  },
+  "https://www.ycombinator.com/companies/retailready/jobs/bFcgIe4-implementations": {
+    "title": "Implementations at RetailReady",
+    "date_covered": "2026-10-03T19:05:19.048842+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "My43vXrgTxA",
     "tiktok_id": null
   }
 }
