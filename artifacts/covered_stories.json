@@ -1,18 +1,4 @@
 {
-  "https://collusion.wiki/": {
-    "title": "Discovery of a new OpenAI agent message board",
-    "date_covered": "2026-09-04T18:56:28.427800+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "D5xNQdB0bMY",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/mt-bank-enterprise-ai-15000-employees/": {
-    "title": "M&T Bank expands enterprise AI after years of technology overhaul",
-    "date_covered": "2026-09-04T22:08:29.998638+00:00",
-    "source": "AI News",
-    "youtube_id": "pKVzjwi3kac",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/": {
     "title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
     "date_covered": "2026-09-05T02:44:02.610196+00:00",
@@ -914,6 +900,13 @@
     "date_covered": "2026-10-04T16:28:04.753783+00:00",
     "source": "Analytics Insight",
     "youtube_id": "lASQH0v3rFU",
+    "tiktok_id": null
+  },
+  "https://jacobg.co/emails-at-jacobg-co/": {
+    "title": "emails [at] jacobg.co · Jacob Goldstein",
+    "date_covered": "2026-10-04T22:48:54.913867+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "qKHsruPe3mk",
     "tiktok_id": null
   }
 }
