@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/bytedance-secures-usd-296b-loan-ai-expansion-goes-global": {
-    "title": "ByteDance Secures USD 29.6B Loan: AI Expansion Goes Global",
-    "date_covered": "2026-09-04T15:45:40.151986+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "LwiYcHlRrYU",
-    "tiktok_id": null
-  },
   "https://collusion.wiki/": {
     "title": "Discovery of a new OpenAI agent message board",
     "date_covered": "2026-09-04T18:56:28.427800+00:00",
@@ -914,6 +907,13 @@
     "date_covered": "2026-10-04T10:36:12.657599+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "hOJy74P2Ekw",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/south-korea-crypto-trading-falls-20-as-tokenized-securities-rules-advance": {
+    "title": "South Korea Crypto Trading Falls 20% as Tokenized Securities Rules Advance",
+    "date_covered": "2026-10-04T16:28:04.753783+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "lASQH0v3rFU",
     "tiktok_id": null
   }
 }
