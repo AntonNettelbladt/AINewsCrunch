@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/openai-elon-musk-cursor-billion-revenue/": {
-    "title": "OpenAI Cut Off a Billion-Dollar Customer to Avoid Elon Musk",
-    "date_covered": "2026-09-04T02:42:52.098651+00:00",
-    "source": "Wired AI",
-    "youtube_id": "r70EejuVCs0",
-    "tiktok_id": null
-  },
   "https://inference-docs.cerebras.ai/models/overview": {
     "title": "Cerebras Inference",
     "date_covered": "2026-09-04T08:33:11.484211+00:00",
@@ -914,6 +907,13 @@
     "date_covered": "2026-10-03T22:45:36.717604+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ETezySbmLCw",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/geforce-now-thursday-october-2026-games-list/": {
+    "title": "Fall Into 25 New Games on GeForce NOW This October",
+    "date_covered": "2026-10-04T04:06:14.607148+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "35nTENiYNhQ",
     "tiktok_id": null
   }
 }
