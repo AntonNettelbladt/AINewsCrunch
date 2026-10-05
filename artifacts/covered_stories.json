@@ -1,11 +1,4 @@
 {
-  "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90": {
-    "title": "Portal by Spotify cut my Claude Code token usage by 90%",
-    "date_covered": "2026-09-05T08:06:04.073211+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "l0s9elyKRf8",
-    "tiktok_id": null
-  },
   "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md": {
     "title": "NPC-Forge/docs/development.md at main · gioblu/NPC-Forge",
     "date_covered": "2026-09-05T11:59:18.454096+00:00",
@@ -907,6 +900,13 @@
     "date_covered": "2026-10-05T03:49:55.560394+00:00",
     "source": "Analytics Insight",
     "youtube_id": "U7r1u9SvJa4",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/bitcoin/how-bitcoin-payment-apis-work-where-businesses-can-use-them": {
+    "title": "How Bitcoin Payment APIs Work, Where Businesses Can Use Them",
+    "date_covered": "2026-10-05T11:17:14.611674+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "4vTGOH-4xDM",
     "tiktok_id": null
   }
 }
