@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/huawei-mate-xt2-launch-raises-foldable-phone-competition": {
-    "title": "Huawei Mate XT2 Launch Raises Foldable Phone Competition",
-    "date_covered": "2026-09-07T17:14:34.039743+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "xNl2dBEeq0A",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/mg-ship-ai-route-optimisation-logistics-returns-accelerate/": {
     "title": "MG Ship adds AI route optimisation as logistics returns accelerate",
     "date_covered": "2026-09-07T22:33:44.928982+00:00",
@@ -872,6 +865,13 @@
     "date_covered": "2026-10-07T10:59:09.368611+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "DyRzX1R47pM",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/telecom-operators-open-models/": {
+    "title": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
+    "date_covered": "2026-10-07T18:30:10.037500+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "Hrye3KssCSc",
     "tiktok_id": null
   }
 }
