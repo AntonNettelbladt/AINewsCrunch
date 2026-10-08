@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/": {
-    "title": "Meta Pushes Its New AI Agent on Employees—but Eases Off on Tokenmaxxing",
-    "date_covered": "2026-09-08T02:52:06.090727+00:00",
-    "source": "Wired AI",
-    "youtube_id": "DFCrMlyYJho",
-    "tiktok_id": null
-  },
   "https://www.middleeastainews.com/p/uae-ai-model-tops-50-million-monthly": {
     "title": "UAE AI model tops 50 million monthly downloads",
     "date_covered": "2026-09-08T08:36:54.989443+00:00",
@@ -872,6 +865,13 @@
     "date_covered": "2026-10-08T00:07:07.988173+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "YvaqxNmYdiY",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/what-do-data-scientists-say-about-ais-financial-prospects": {
+    "title": "What do Data Scientists Say About AI’s Financial Prospects?",
+    "date_covered": "2026-10-08T05:31:48.275293+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "dj8ATCLJqFw",
     "tiktok_id": null
   }
 }
