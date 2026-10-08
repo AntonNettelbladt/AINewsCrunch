@@ -1,11 +1,4 @@
 {
-  "https://www.middleeastainews.com/p/uae-ai-model-tops-50-million-monthly": {
-    "title": "UAE AI model tops 50 million monthly downloads",
-    "date_covered": "2026-09-08T08:36:54.989443+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Ty4goNoJ1WU",
-    "tiktok_id": null
-  },
   "https://manualdousuario.net/en/libreoffice-download-record-no-ai/": {
     "title": "LibreOffice breaks download records after declaring it has no AI features",
     "date_covered": "2026-09-08T16:14:35.336090+00:00",
@@ -872,6 +865,13 @@
     "date_covered": "2026-10-08T05:31:48.275293+00:00",
     "source": "Analytics Insight",
     "youtube_id": "dj8ATCLJqFw",
+    "tiktok_id": null
+  },
+  "https://github.com/openai/math/blob/main/history.md": {
+    "title": "math/history.md at main · openai/math",
+    "date_covered": "2026-10-08T15:17:44.883467+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "y2Jj3CW5M0U",
     "tiktok_id": null
   }
 }
