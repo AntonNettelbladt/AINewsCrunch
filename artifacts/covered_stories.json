@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/cloudnc-aims-to-accelerate-ai-supply-chain-machining/": {
-    "title": "CloudNC aims to accelerate AI supply chain machining",
-    "date_covered": "2026-09-09T15:55:49.473788+00:00",
-    "source": "AI News",
-    "youtube_id": "SNtulgz5AWs",
-    "tiktok_id": null
-  },
-  "https://github.com/OtoDock/oto-dock": {
-    "title": "GitHub - OtoDock/oto-dock: Your personal AI agent platform — self-hosted, BYO Claude/Codex subscription",
-    "date_covered": "2026-09-09T19:07:55.929385+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "9dL0P7NNL0s",
-    "tiktok_id": null
-  },
   "https://gist.github.com/wsxiaoys/e0286dc6bb624ff5fdf49e7f4c528ba3": {
     "title": "HN: https://news.ycombinator.com/edit?id=49630026",
     "date_covered": "2026-09-09T22:17:04.984076+00:00",
@@ -858,6 +844,13 @@
     "date_covered": "2026-10-09T15:02:25.563532+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2Kjw8vWbBsk",
+    "tiktok_id": null
+  },
+  "https://typesafe.ai/blog/series-ai": {
+    "title": "TypeSafe A raises Series AI",
+    "date_covered": "2026-10-09T20:36:54.980621+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ZgPwyNQ5gaw",
     "tiktok_id": null
   }
 }
