@@ -1,18 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-weather-forecasting-google-weathernext-3-energy/": {
-    "title": "AI weather forecasting enters the energy market as Google targets grid operators with WeatherNext 3",
-    "date_covered": "2026-09-08T22:26:02.293980+00:00",
-    "source": "AI News",
-    "youtube_id": "-EDQPF2wUIQ",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/arm-total-design-for-physical-ai-and-robotics-framework/": {
-    "title": "Arm launches Total Design for Physical AI and robotics framework",
-    "date_covered": "2026-09-09T02:53:06.690581+00:00",
-    "source": "AI News",
-    "youtube_id": "6Q9QYpt3Yvw",
-    "tiktok_id": null
-  },
   "https://openai.com/index/codex-quantum-computing-experiments/": {
     "title": "How GPT‑5.6 Sol helps run quantum computing experiments",
     "date_covered": "2026-09-09T08:40:46.535005+00:00",
@@ -865,6 +851,13 @@
     "date_covered": "2026-10-08T21:05:39.855760+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "8IZGdduqxl8",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": {
+    "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+    "date_covered": "2026-10-09T04:24:30.978214+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "McptTbAQSLA",
     "tiktok_id": null
   }
 }
