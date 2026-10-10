@@ -1,18 +1,4 @@
 {
-  "https://magic.dev/blog/pretraining#": {
-    "title": "Magic",
-    "date_covered": "2026-09-10T15:52:12.418566+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "UCkaCbsSNlo",
-    "tiktok_id": null
-  },
-  "https://www.artificialintelligence-news.com/news/jd-com-physical-ai-logistics-3-million-robots/": {
-    "title": "JD.com expands physical AI in logistics with 3 million robots",
-    "date_covered": "2026-09-10T19:00:47.496703+00:00",
-    "source": "AI News",
-    "youtube_id": "hSW-g-6piZE",
-    "tiktok_id": null
-  },
   "https://towardsdatascience.com/how-to-5x-your-communication-effectiveness-with-claude-code/": {
     "title": "How to 5x Your Communication Effectiveness with Claude Code",
     "date_covered": "2026-09-10T22:21:18.010166+00:00",
@@ -844,6 +830,13 @@
     "date_covered": "2026-10-10T14:17:29.485237+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "v2aXjtALIs8",
+    "tiktok_id": null
+  },
+  "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/": {
+    "title": "Microsoft Execution Containers: Policy-driven containment for AI agents",
+    "date_covered": "2026-10-10T19:47:48.621776+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "OPIKeByAzLE",
     "tiktok_id": null
   }
 }
