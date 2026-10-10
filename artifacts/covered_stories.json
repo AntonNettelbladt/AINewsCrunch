@@ -1,11 +1,4 @@
 {
-  "https://www.thelec.net/news/articleView.html?idxno=12835": {
-    "title": "Samsung Debuts zHBM Prototype, Stacking Memory Directly on AI Accelerators < Semiconductor < 기사본문",
-    "date_covered": "2026-09-10T08:42:24.432830+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": null,
-    "tiktok_id": null
-  },
   "https://magic.dev/blog/pretraining#": {
     "title": "Magic",
     "date_covered": "2026-09-10T15:52:12.418566+00:00",
@@ -844,6 +837,13 @@
     "date_covered": "2026-10-10T04:08:49.050663+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Gm6Bzm78sNQ",
+    "tiktok_id": null
+  },
+  "https://github.com/rociiu/talorys": {
+    "title": "GitHub - rociiu/talorys: Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier frie",
+    "date_covered": "2026-10-10T14:17:29.485237+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "v2aXjtALIs8",
     "tiktok_id": null
   }
 }
