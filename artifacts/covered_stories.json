@@ -1,18 +1,4 @@
 {
-  "https://github.com/kennethwolters/litelm": {
-    "title": "GitHub - kennethwolters/litelm: litellm without the bloat",
-    "date_covered": "2026-09-11T19:04:00.411118+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "LyQS1Lhbw7g",
-    "tiktok_id": null
-  },
-  "https://www.getzep.com/careers/": {
-    "title": "Careers | Zep",
-    "date_covered": "2026-09-11T22:15:56.027985+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "iUGdJgaZzuQ",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/samsung-mistral-ai-models-for-semiconductor-manufacturing/": {
     "title": "Samsung taps Mistral AI models for semiconductor manufacturing",
     "date_covered": "2026-09-12T02:55:34.417829+00:00",
@@ -837,6 +823,13 @@
     "date_covered": "2026-10-11T17:22:23.032091+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Re5Jomgw2Tk",
+    "tiktok_id": null
+  },
+  "https://twitter.com/karpathy/status/2109361546505966046": {
+    "title": "Andrej Karpathy on X: \"Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and mor",
+    "date_covered": "2026-10-11T23:33:04.487675+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "G9BlXwyDctg",
     "tiktok_id": null
   }
 }
