@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/": {
-    "title": "OpenAI Wants to Know if an AI Industry Slowdown Would Even Be Legal",
-    "date_covered": "2026-09-11T02:47:04.194252+00:00",
-    "source": "Wired AI",
-    "youtube_id": "3o_PXyitc0Y",
-    "tiktok_id": null
-  },
   "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/": {
     "title": "The Gemini app is now available for Windows",
     "date_covered": "2026-09-11T08:36:32.603659+00:00",
@@ -837,6 +830,13 @@
     "date_covered": "2026-10-10T23:17:17.895948+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "e1Kw3h_HKPg",
+    "tiktok_id": null
+  },
+  "https://news.vt.edu/articles/2026/10/research_fralinbiomed_upfhutelin.html": {
+    "title": "Food processing influences metabolism and brain activity",
+    "date_covered": "2026-10-11T03:43:30.087336+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "VCX-thERtOc",
     "tiktok_id": null
   }
 }
