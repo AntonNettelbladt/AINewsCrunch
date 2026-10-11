@@ -1,11 +1,4 @@
 {
-  "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/": {
-    "title": "The Gemini app is now available for Windows",
-    "date_covered": "2026-09-11T08:36:32.603659+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "60cELYrbDEA",
-    "tiktok_id": null
-  },
   "https://developers.openai.com/api/docs/guides/agents-api/overview": {
     "title": "Agents API",
     "date_covered": "2026-09-11T15:51:13.933126+00:00",
@@ -837,6 +830,13 @@
     "date_covered": "2026-10-11T03:43:30.087336+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "VCX-thERtOc",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/": {
+    "title": "NVIDIA DGX Spark 64GB Gives Developers More Ways to Build and Scale Local AI",
+    "date_covered": "2026-10-11T10:39:27.762056+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "BY6CAn0g7Tw",
     "tiktok_id": null
   }
 }
