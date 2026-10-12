@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/samsung-mistral-ai-models-for-semiconductor-manufacturing/": {
-    "title": "Samsung taps Mistral AI models for semiconductor manufacturing",
-    "date_covered": "2026-09-12T02:55:34.417829+00:00",
-    "source": "AI News",
-    "youtube_id": "aPqalH_Hm8E",
-    "tiktok_id": null
-  },
   "https://www.rubyhack.ai/": {
     "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
     "date_covered": "2026-09-12T08:24:32.240523+00:00",
@@ -830,6 +823,13 @@
     "date_covered": "2026-10-11T23:33:04.487675+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "G9BlXwyDctg",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/ai-is-driving-cars-now-oh-boy/": {
+    "title": "These Researchers Made AI Drive a Toyota Corolla to Get In-N-Out",
+    "date_covered": "2026-10-12T04:09:07.190135+00:00",
+    "source": "Wired AI",
+    "youtube_id": "Fnp4wJukug8",
     "tiktok_id": null
   }
 }
