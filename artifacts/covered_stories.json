@@ -1,11 +1,4 @@
 {
-  "https://www.bbc.co.uk/news/articles/cq635037g18o": {
-    "title": "Insider warnings over AI fall flat with some in Silicon Valley",
-    "date_covered": "2026-09-13T08:51:00.568626+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "FCyHQRo9VU8",
-    "tiktok_id": null
-  },
   "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo": {
     "title": "Houthis Used Claude Code to Develop Missile Guidance Software: Anthropic · Clash Report",
     "date_covered": "2026-09-13T15:38:33.357049+00:00",
@@ -816,6 +809,13 @@
     "date_covered": "2026-10-13T05:15:06.314681+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "xoNjVYXtvMY",
+    "tiktok_id": null
+  },
+  "https://yyhh.org/blog/2026/10/ai-is-a-tool/": {
+    "title": "AI Is a Tool. Using It Well Takes Skill.",
+    "date_covered": "2026-10-13T15:38:27.041471+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "SIwdd48oAiw",
     "tiktok_id": null
   }
 }
