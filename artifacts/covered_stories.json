@@ -803,5 +803,12 @@
     "source": "Hacker News AI Stories",
     "youtube_id": "X-jWxK-lTpk",
     "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/": {
+    "title": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
+    "date_covered": "2026-10-14T09:22:03.482574+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "ST7vjMpYGJg",
+    "tiktok_id": null
   }
 }
