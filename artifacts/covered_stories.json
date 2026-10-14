@@ -1,18 +1,4 @@
 {
-  "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/": {
-    "title": "AI’s recursive self-improvement might not come so quickly after all",
-    "date_covered": "2026-09-13T22:07:47.885804+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "GEI17qhqzkU",
-    "tiktok_id": null
-  },
-  "https://www.interconnects.ai/p/open-source-ai-reading-list": {
-    "title": "Open-Source AI & Open Models Reading List",
-    "date_covered": "2026-09-14T03:07:57.428216+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "10HxHFaODsM",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/ibc-news-2026/": {
     "title": "NVIDIA Brings Real-Time AI to Broadcast, Sports and Global Streaming at IBC",
     "date_covered": "2026-09-14T09:37:02.781351+00:00",
@@ -809,6 +795,13 @@
     "date_covered": "2026-10-13T21:06:56.170804+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Zfd8W0l1Sck",
+    "tiktok_id": null
+  },
+  "https://jobs.lever.co/postera/c7d50a36-db0a-4574-bfe4-8700b74a22c0": {
+    "title": "Machine Learning Researcher",
+    "date_covered": "2026-10-14T03:21:43.972753+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "X-jWxK-lTpk",
     "tiktok_id": null
   }
 }
