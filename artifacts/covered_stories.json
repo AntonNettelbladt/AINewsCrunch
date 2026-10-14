@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ibc-news-2026/": {
-    "title": "NVIDIA Brings Real-Time AI to Broadcast, Sports and Global Streaming at IBC",
-    "date_covered": "2026-09-14T09:37:02.781351+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "RF2lUurnsXA",
-    "tiktok_id": null
-  },
   "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit": {
     "title": "Why don’t machine learning research agents overfit?",
     "date_covered": "2026-09-14T17:35:45.831194+00:00",
@@ -809,6 +802,13 @@
     "date_covered": "2026-10-14T09:22:03.482574+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "ST7vjMpYGJg",
+    "tiktok_id": null
+  },
+  "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work/": {
+    "title": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+    "date_covered": "2026-10-14T16:30:49.846507+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "E4GLC4ROraM",
     "tiktok_id": null
   }
 }
