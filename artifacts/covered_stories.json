@@ -1,11 +1,4 @@
 {
-  "https://pluralistic.net/2026/09/12/god-in-the-box/#llms-are-fake": {
-    "title": "Pluralistic: LLMs are real, AI is fake (12 Sep 2026) – Pluralistic: Daily links from Cory Doctorow",
-    "date_covered": "2026-09-14T23:01:29.491847+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Fa2FWy2Cexg",
-    "tiktok_id": null
-  },
   "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/": {
     "title": "What a time to be alive",
     "date_covered": "2026-09-15T03:12:16.913609+00:00",
@@ -809,6 +802,13 @@
     "date_covered": "2026-10-14T23:06:00.614029+00:00",
     "source": "Wired AI",
     "youtube_id": "Zy8GdML6lSg",
+    "tiktok_id": null
+  },
+  "https://clova.email/": {
+    "title": "Clova.Email — a new email address for every company",
+    "date_covered": "2026-10-15T03:02:37.840269+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "RrtbbI8cpBI",
     "tiktok_id": null
   }
 }
