@@ -1,18 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/": {
-    "title": "Perplexity Portable Computer Is Now Available on Windows, Powered by NVIDIA RTX",
-    "date_covered": "2026-09-15T09:15:59.120410+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "M4snczce_c4",
-    "tiktok_id": null
-  },
-  "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/": {
-    "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
-    "date_covered": "2026-09-15T16:12:25.274770+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "ni0tQ9tvXtQ",
-    "tiktok_id": null
-  },
   "https://www.effort.news/irregular": {
     "title": "A Single Firm is Behind OpenAI, Anthropic, and Meta Hacking Scandals — Effort",
     "date_covered": "2026-09-15T22:46:56.879177+00:00",
@@ -809,6 +795,13 @@
     "date_covered": "2026-10-15T08:55:12.752830+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": null,
+    "tiktok_id": null
+  },
+  "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/": {
+    "title": "Simons Foundation Launches $15M Effort To Help Mathematicians Navigate AI Era",
+    "date_covered": "2026-10-15T16:19:45.837216+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "wqEmMcKMdj4",
     "tiktok_id": null
   }
 }
