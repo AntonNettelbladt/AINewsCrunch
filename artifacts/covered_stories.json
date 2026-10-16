@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/": {
-    "title": "NVIDIA Vera Rubin NVL72 Delivers Leading Performance in MLPerf Inference v6.1 Debut",
-    "date_covered": "2026-09-16T19:34:41.661073+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "JW4n2kx09e4",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/microsoft-ai-ceo-criticises-anthropic-over-model-rights/": {
     "title": "Microsoft AI CEO criticises Anthropic over model ‘rights’",
     "date_covered": "2026-09-16T22:42:30.401941+00:00",
@@ -809,6 +802,13 @@
     "date_covered": "2026-10-16T19:31:07.618714+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "59oM8sDe5WU",
+    "tiktok_id": null
+  },
+  "https://github.com/cobanov/PS5LM": {
+    "title": "GitHub - cobanov/PS5LM: llama.cpp on a jailbroken PS5: run any GGUF model natively on the console, starting with Qwen 3.8",
+    "date_covered": "2026-10-16T22:34:14.241644+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "AFrcTiJ-W5Y",
     "tiktok_id": null
   }
 }
