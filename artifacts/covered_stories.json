@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/": {
-    "title": "AI Infra Summit: NVIDIA Vera Rubin and DSX Platform Advancements Showcase Energy Efficiencies of Optimizing Tokens Per Watt for AI Factories",
-    "date_covered": "2026-09-16T03:09:26.259389+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "YTeZw2JcIEc",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/chatbot-generated-fiction-i-like-my-big-rat-wife/": {
     "title": "‘I Like My Big Rat Wife’: Meet the People Using Chatbots to Write Custom Fiction",
     "date_covered": "2026-09-16T09:07:27.472022+00:00",
@@ -809,6 +802,13 @@
     "date_covered": "2026-10-16T03:01:14.173179+00:00",
     "source": "Wired AI",
     "youtube_id": "iCiWKDzW8Lk",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/": {
+    "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
+    "date_covered": "2026-10-16T08:50:17.064052+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "93AiM-T45to",
     "tiktok_id": null
   }
 }
