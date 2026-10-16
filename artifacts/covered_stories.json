@@ -1,11 +1,4 @@
 {
-  "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo": {
-    "title": "Microsoft says AI rival Anthropic could have 'disastrous impact' on humanity",
-    "date_covered": "2026-09-16T16:06:54.218163+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "cyu5BArw3VM",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/": {
     "title": "NVIDIA Vera Rubin NVL72 Delivers Leading Performance in MLPerf Inference v6.1 Debut",
     "date_covered": "2026-09-16T19:34:41.661073+00:00",
@@ -809,6 +802,13 @@
     "date_covered": "2026-10-16T16:04:57.200295+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "0BRyMXNgl4A",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/": {
+    "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
+    "date_covered": "2026-10-16T19:31:07.618714+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "59oM8sDe5WU",
     "tiktok_id": null
   }
 }
