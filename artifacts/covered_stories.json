@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/": {
-    "title": "OpenAI Creates a New Framework to Disclose Bad AI Behavior",
-    "date_covered": "2026-09-17T09:14:36.910446+00:00",
-    "source": "Wired AI",
-    "youtube_id": "zRCa9WQHQnI",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/chatgpt-pioneer-launches-jev-model-for-programmatic-logic/": {
     "title": "ChatGPT pioneer launches Jev model for programmatic logic",
     "date_covered": "2026-09-17T16:13:53.667383+00:00",
@@ -809,6 +802,13 @@
     "date_covered": "2026-10-17T08:20:33.337543+00:00",
     "source": "Analytics Insight",
     "youtube_id": "Y1wdxnT-DEs",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/best-ai-workflow-automation-builders": {
+    "title": "8 Best AI Workflow Automation Builders for Teams in 2026",
+    "date_covered": "2026-10-17T15:00:06.021330+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "qmWHNg-dsOM",
     "tiktok_id": null
   }
 }
