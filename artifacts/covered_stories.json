@@ -1,11 +1,4 @@
 {
-  "https://prismml.com/news/bonsai-2-27b": {
-    "title": "PrismML — Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
-    "date_covered": "2026-09-17T22:43:55.319315+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "oH2PQ0Hww_E",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/": {
     "title": "University of Manchester Uses NVIDIA Earth-2 to Forecast Air Pollution Across the UK",
     "date_covered": "2026-09-18T02:59:19.316110+00:00",
@@ -816,6 +809,13 @@
     "date_covered": "2026-10-17T22:05:18.338306+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "2uRO7_pfU8M",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/": {
+    "title": "An OpenAI Employee Allegedly Used a Chatbot to Help Plant a Recording Device at the Office",
+    "date_covered": "2026-10-18T02:51:57.878829+00:00",
+    "source": "Wired AI",
+    "youtube_id": "XalDPo8stYw",
     "tiktok_id": null
   }
 }
