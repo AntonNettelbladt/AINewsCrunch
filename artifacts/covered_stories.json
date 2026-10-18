@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/": {
-    "title": "University of Manchester Uses NVIDIA Earth-2 to Forecast Air Pollution Across the UK",
-    "date_covered": "2026-09-18T02:59:19.316110+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "TrsUkA6GIXE",
-    "tiktok_id": null
-  },
   "https://www.hacktron.ai/blog/hacking-openai": {
     "title": "Hacking OpenAI",
     "date_covered": "2026-09-18T08:48:14.043113+00:00",
@@ -816,6 +809,13 @@
     "date_covered": "2026-10-18T02:51:57.878829+00:00",
     "source": "Wired AI",
     "youtube_id": "XalDPo8stYw",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/": {
+    "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+    "date_covered": "2026-10-18T08:37:40.285713+00:00",
+    "source": "Wired AI",
+    "youtube_id": "mszJ6jPkaMU",
     "tiktok_id": null
   }
 }
