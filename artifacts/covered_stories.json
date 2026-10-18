@@ -1,11 +1,4 @@
 {
-  "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship": {
-    "title": "Exclusive: US military had close call after using AI for false intelligence report, sources say",
-    "date_covered": "2026-09-18T18:56:46.290486+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "yGNjjNznxNo",
-    "tiktok_id": null
-  },
   "https://www.koreajoongangdaily.com/business/korea-raises-data-breach-fines-to-10-of-revenue/12869899": {
     "title": "Korea raises data breach fines to 10% of revenue",
     "date_covered": "2026-09-18T22:19:59.554216+00:00",
@@ -816,6 +809,13 @@
     "date_covered": "2026-10-18T18:34:14.105152+00:00",
     "source": "Analytics Insight",
     "youtube_id": "3kErJGE2mmQ",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/men-cant-stop-faking-how-much-they-know-about-ai/": {
+    "title": "Men Can’t Stop Faking How Much They Know About AI",
+    "date_covered": "2026-10-18T22:19:13.536789+00:00",
+    "source": "Wired AI",
+    "youtube_id": "VVBjS8adDN0",
     "tiktok_id": null
   }
 }
