@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work/": {
-    "title": "Here’s How an AI Slowdown Could Actually Be Enforced",
-    "date_covered": "2026-09-19T08:36:07.139033+00:00",
-    "source": "Wired AI",
-    "youtube_id": "5TSw7NekECg",
-    "tiktok_id": null
-  },
   "https://john.hartnup.uk/2026/06/07/ai-event-posters.html": {
     "title": "AI-generated posters don’t have to be horrible",
     "date_covered": "2026-09-19T15:20:38.525054+00:00",
@@ -802,6 +795,13 @@
     "date_covered": "2026-10-18T22:19:13.536789+00:00",
     "source": "Wired AI",
     "youtube_id": "VVBjS8adDN0",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/meta-blames-claude-for-instagram-suspension-what-users-should-know": {
+    "title": "Meta Blames Claude for Instagram Suspension: What Users Should Know",
+    "date_covered": "2026-10-19T09:39:58.120067+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "Id6F-Tf_yAs",
     "tiktok_id": null
   }
 }
