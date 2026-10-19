@@ -1,11 +1,4 @@
 {
-  "https://john.hartnup.uk/2026/06/07/ai-event-posters.html": {
-    "title": "AI-generated posters don’t have to be horrible",
-    "date_covered": "2026-09-19T15:20:38.525054+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "KQ-hPD3bXWA",
-    "tiktok_id": null
-  },
   "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html": {
     "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
     "date_covered": "2026-09-19T18:29:07.581627+00:00",
@@ -802,6 +795,13 @@
     "date_covered": "2026-10-19T09:39:58.120067+00:00",
     "source": "Analytics Insight",
     "youtube_id": "Id6F-Tf_yAs",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/news/minimax-claims-major-ai-leap-as-m31-flash-speeds-up-coding-tasks": {
+    "title": "MiniMax Claims Major AI Leap as M3.1 Flash Speeds Up Coding Tasks",
+    "date_covered": "2026-10-19T18:22:58.047754+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "5ImvfNx0dPs",
     "tiktok_id": null
   }
 }
