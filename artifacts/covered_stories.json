@@ -1,11 +1,4 @@
 {
-  "https://amigaux.org/": {
-    "title": "amigaux.org",
-    "date_covered": "2026-09-21T03:07:29.758938+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "Dzw2ZPZWOJk",
-    "tiktok_id": null
-  },
   "https://softwarecrisis.dev/letters/llmentalist/": {
     "title": "The LLMentalist Effect: how chat-based Large Language Models replicate the mechanisms of a psychic’s con",
     "date_covered": "2026-09-21T09:39:26.864880+00:00",
@@ -795,6 +788,13 @@
     "date_covered": "2026-10-21T03:09:21.660291+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "Z-TFPqbBvUk",
+    "tiktok_id": null
+  },
+  "https://www.anthropic.com/research/attack-surface-reduction": {
+    "title": "Using Claude to reduce the attack surface of code",
+    "date_covered": "2026-10-21T09:11:03.070290+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "XHChW-7qC18",
     "tiktok_id": null
   }
 }
