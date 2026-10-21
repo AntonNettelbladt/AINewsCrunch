@@ -1,11 +1,4 @@
 {
-  "https://softwarecrisis.dev/letters/llmentalist/": {
-    "title": "The LLMentalist Effect: how chat-based Large Language Models replicate the mechanisms of a psychic’s con",
-    "date_covered": "2026-09-21T09:39:26.864880+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "QyGE8oFviA8",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem/": {
     "title": "From Enablement to Execution, Egypt’s AI Ecosystem Reaches Production Scale",
     "date_covered": "2026-09-21T17:51:02.181910+00:00",
@@ -795,6 +788,13 @@
     "date_covered": "2026-10-21T09:11:03.070290+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "XHChW-7qC18",
+    "tiktok_id": null
+  },
+  "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/": {
+    "title": "GTC Berlin 2026: Live Updates From NVIDIA CEO Jensen Huang’s Keynote",
+    "date_covered": "2026-10-21T16:38:21.332323+00:00",
+    "source": "NVIDIA Blog",
+    "youtube_id": "7uXDPTJBDLo",
     "tiktok_id": null
   }
 }
