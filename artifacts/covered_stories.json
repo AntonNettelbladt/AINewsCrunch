@@ -1,11 +1,4 @@
 {
-  "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/": {
-    "title": "Announcing the Advisory Group on Mathematics and Artificial Intelligence",
-    "date_covered": "2026-09-21T23:05:05.119584+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "fS2DiAp3iBI",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai/": {
     "title": "5 Companies Using NVIDIA AI for Clean Energy",
     "date_covered": "2026-09-22T03:07:24.589774+00:00",
@@ -795,6 +788,13 @@
     "date_covered": "2026-10-21T23:07:34.445413+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "PcRLjWuaVtQ",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/": {
+    "title": "This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good",
+    "date_covered": "2026-10-22T03:10:21.824936+00:00",
+    "source": "Wired AI",
+    "youtube_id": "XIuf6yunSLc",
     "tiktok_id": null
   }
 }
