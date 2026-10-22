@@ -1,11 +1,4 @@
 {
-  "https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/": {
-    "title": "Did OpenAI solve the wrong Navier-Stokes problem?",
-    "date_covered": "2026-09-22T22:47:08.747181+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "OYcAGGzSqSk",
-    "tiktok_id": null
-  },
   "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/": {
     "title": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
     "date_covered": "2026-09-23T03:07:05.746809+00:00",
@@ -788,6 +781,13 @@
     "date_covered": "2026-10-22T16:37:18.399067+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "4g52fV3M0aM",
+    "tiktok_id": null
+  },
+  "https://github.com/NVIDIA/OpenShell": {
+    "title": "GitHub - NVIDIA/OpenShell: OpenShell is the safe, private runtime for autonomous AI agents.",
+    "date_covered": "2026-10-22T23:02:17.978008+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "RVQb5bm5DaE",
     "tiktok_id": null
   }
 }
