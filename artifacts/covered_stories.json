@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/": {
-    "title": "U.S. TRANSCOM deploys randomised AI to secure military logistics",
-    "date_covered": "2026-09-23T16:05:33.005448+00:00",
-    "source": "AI News",
-    "youtube_id": "6ptE2bb05FY",
-    "tiktok_id": null
-  },
   "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system": {
     "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
     "date_covered": "2026-09-23T19:40:11.019543+00:00",
@@ -788,6 +781,13 @@
     "date_covered": "2026-10-23T09:57:11.572671+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "ZSz_y7Rfyiw",
+    "tiktok_id": null
+  },
+  "https://www.analyticsinsight.net/artificial-intelligence/top-ai-models-in-2026-features-capabilities-and-how-to-choose-the-right-one": {
+    "title": "Top AI Models in 2026: Features, Capabilities, and How to Choose the Right One",
+    "date_covered": "2026-10-23T17:15:34.448801+00:00",
+    "source": "Analytics Insight",
+    "youtube_id": "qlCxied3FJM",
     "tiktok_id": null
   }
 }
