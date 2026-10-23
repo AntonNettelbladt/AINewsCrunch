@@ -1,11 +1,4 @@
 {
-  "https://www.artificialintelligence-news.com/news/ai-agents-are-becoming-a-new-malware-distribution-channel/": {
-    "title": "AI Agents Are Becoming a New Malware Distribution Channel",
-    "date_covered": "2026-09-23T09:07:20.839878+00:00",
-    "source": "AI News",
-    "youtube_id": "HnznAebasZo",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/": {
     "title": "U.S. TRANSCOM deploys randomised AI to secure military logistics",
     "date_covered": "2026-09-23T16:05:33.005448+00:00",
@@ -788,6 +781,13 @@
     "date_covered": "2026-10-23T03:35:08.791951+00:00",
     "source": "Analytics Insight",
     "youtube_id": "E-tM5ZfDvnk",
+    "tiktok_id": null
+  },
+  "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans": {
+    "title": "Every AI model has the same “controversial” take on humans",
+    "date_covered": "2026-10-23T09:57:11.572671+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ZSz_y7Rfyiw",
     "tiktok_id": null
   }
 }
