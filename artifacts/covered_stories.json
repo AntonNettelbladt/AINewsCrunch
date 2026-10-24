@@ -1,11 +1,4 @@
 {
-  "https://www.bbc.com/news/live/cvgl73pxgndwt": {
-    "title": "Australia launches urgent review after OpenAI program hacks government health portal",
-    "date_covered": "2026-09-24T09:05:54.440734+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "CXFWw9iwZbg",
-    "tiktok_id": null
-  },
   "https://www.artificialintelligence-news.com/news/google-gemini-3-8-flash-tts-voice-models/": {
     "title": "Google launches Gemini 3.8 Flash TTS voice models",
     "date_covered": "2026-09-24T16:29:19.583303+00:00",
@@ -795,6 +788,13 @@
     "date_covered": "2026-10-24T08:43:08.892724+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "xfp5yX57qIg",
+    "tiktok_id": null
+  },
+  "https://github.com/mottopanikeiku/doomformer": {
+    "title": "GitHub - mottopanikeiku/doomformer: Neural networks computed by DOOM's game mechanics: voodoo dolls, conveyor belts, lava and doors. Every value checked bit-exact.",
+    "date_covered": "2026-10-24T15:26:03.920034+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "ZpMedwwsCEM",
     "tiktok_id": null
   }
 }
