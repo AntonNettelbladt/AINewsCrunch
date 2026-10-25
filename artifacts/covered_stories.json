@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/ai-day-singapore/": {
-    "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
-    "date_covered": "2026-09-25T09:25:45.297318+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "zmAbubekqeU",
-    "tiktok_id": null
-  },
   "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html": {
     "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
     "date_covered": "2026-09-25T16:30:35.742585+00:00",
@@ -802,6 +795,13 @@
     "date_covered": "2026-10-25T09:03:03.890725+00:00",
     "source": "NVIDIA Blog",
     "youtube_id": "gztTveH5vM0",
+    "tiktok_id": null
+  },
+  "https://twitter.com/boneGPT/status/2114035719853265264": {
+    "title": "bone on X: \"imagine a fully integrated AI future where being banned means you are now economically useless. everybody around you is a superhuman living in the future but you violated TOS and now are c",
+    "date_covered": "2026-10-25T15:35:17.611534+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "Lt1uidKukD0",
     "tiktok_id": null
   }
 }
