@@ -1,11 +1,4 @@
 {
-  "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/": {
-    "title": "I Think I Found an AI Agent Worth the Risk",
-    "date_covered": "2026-09-24T23:05:02.648103+00:00",
-    "source": "Wired AI",
-    "youtube_id": "EADr2Ufy1M8",
-    "tiktok_id": null
-  },
   "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets/": {
     "title": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting Harder to Spot",
     "date_covered": "2026-09-25T03:14:49.299519+00:00",
@@ -802,6 +795,13 @@
     "date_covered": "2026-10-24T22:21:42.841319+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "SJj198eEkuU",
+    "tiktok_id": null
+  },
+  "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras": {
+    "title": "How Cerebras Deploys Trillion-Parameter AI Models",
+    "date_covered": "2026-10-25T03:01:42.604112+00:00",
+    "source": "Hacker News AI Stories",
+    "youtube_id": "zEagKwB3NP8",
     "tiktok_id": null
   }
 }
