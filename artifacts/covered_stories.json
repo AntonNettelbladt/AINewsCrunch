@@ -1,18 +1,4 @@
 {
-  "https://swarmtraces.org/": {
-    "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-    "date_covered": "2026-09-26T03:18:17.492555+00:00",
-    "source": "Hacker News AI Stories",
-    "youtube_id": "kD8UhfgAz6g",
-    "tiktok_id": null
-  },
-  "https://blogs.nvidia.com/blog/ai-security-agent-stack/": {
-    "title": "AI Security Is an Engineering Problem — How to Solve It at Every Layer of the Agent Stack",
-    "date_covered": "2026-09-26T09:08:28.608019+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "T0_iVSLa-tw",
-    "tiktok_id": null
-  },
   "https://www.analyticsinsight.net/news/rlusd-gains-as-ai-agents-drive-xrp-ledger-settlement-shift": {
     "title": "RLUSD Gains as AI Agents Drive XRP Ledger Settlement Shift",
     "date_covered": "2026-09-26T15:45:07.363670+00:00",
@@ -809,6 +795,13 @@
     "date_covered": "2026-10-26T03:02:17.880703+00:00",
     "source": "Analytics Insight",
     "youtube_id": "cUBtwCa7P_s",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/": {
+    "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
+    "date_covered": "2026-10-26T09:44:56.122842+00:00",
+    "source": "Wired AI",
+    "youtube_id": "_qYsiT1bE08",
     "tiktok_id": null
   }
 }
