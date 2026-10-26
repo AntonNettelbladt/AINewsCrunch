@@ -1,11 +1,4 @@
 {
-  "https://www.analyticsinsight.net/news/rlusd-gains-as-ai-agents-drive-xrp-ledger-settlement-shift": {
-    "title": "RLUSD Gains as AI Agents Drive XRP Ledger Settlement Shift",
-    "date_covered": "2026-09-26T15:45:07.363670+00:00",
-    "source": "Analytics Insight",
-    "youtube_id": "iELcuzEIIME",
-    "tiktok_id": null
-  },
   "https://github.com/brumar/chess-postmortem-skills": {
     "title": "GitHub - brumar/chess-postmortem-skills: Claude Code skills for chess post-mortems: Stockfish-backed annotated PGN, HTML viewer, narrated video",
     "date_covered": "2026-09-26T19:03:31.916309+00:00",
@@ -802,6 +795,13 @@
     "date_covered": "2026-10-26T09:44:56.122842+00:00",
     "source": "Wired AI",
     "youtube_id": "_qYsiT1bE08",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/the-anthropic-ipo-is-also-a-doomsday-primer/": {
+    "title": "The Anthropic S-1 Filing Is Also an AI Doomsday Primer",
+    "date_covered": "2026-10-26T18:16:30.347891+00:00",
+    "source": "Wired AI",
+    "youtube_id": "3Bfrcs-arnw",
     "tiktok_id": null
   }
 }
