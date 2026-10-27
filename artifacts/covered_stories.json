@@ -1,11 +1,4 @@
 {
-  "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/": {
-    "title": "NVIDIA Launches DSX Ready to Qualify Power and Cooling Products for AI Factories",
-    "date_covered": "2026-09-27T03:27:25.967200+00:00",
-    "source": "NVIDIA Blog",
-    "youtube_id": "rAszpmVS9kk",
-    "tiktok_id": null
-  },
   "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/": {
     "title": "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI: Top Execs Knew Their Mass Book Piracy Was Illegal And Would Put Authors Out of Work",
     "date_covered": "2026-09-27T09:53:20.886896+00:00",
@@ -795,6 +788,13 @@
     "date_covered": "2026-10-26T23:42:17.685764+00:00",
     "source": "Hacker News AI Stories",
     "youtube_id": "aTxEWm4C3Gs",
+    "tiktok_id": null
+  },
+  "https://www.wired.com/story/anthropic-prospectus-leaves-out-some-numbers/": {
+    "title": "Why Anthropic’s IPO Prospectus Is Missing So Many Key Figures",
+    "date_covered": "2026-10-27T03:42:25.505030+00:00",
+    "source": "Wired AI",
+    "youtube_id": "Ze-zPCttWjc",
     "tiktok_id": null
   }
 }
